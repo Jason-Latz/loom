@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Loom · A Cartographer’s Atlas of the Human Story</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23efe3c8'/%3E%3Cg stroke='%232c2318' fill='none' stroke-width='6'%3E%3Cpath d='M30 82 V 18 M50 82 V 18 M70 82 V 18' stroke='%23a67c1e'/%3E%3Cpath d='M18 34 H 82 M18 52 H 82 M18 70 H 82'/%3E%3C/g%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header id="bar">
+    <div class="bar-title">
+      <h1>LOOM</h1>
+      <span class="bar-sub">an atlas of the human story</span>
+    </div>
+    <div class="bar-search">
+      <input id="search" type="search" placeholder="Search the chart…" autocomplete="off" spellcheck="false" />
+      <div id="search-results" hidden></div>
+    </div>
+    <div class="bar-tools">
+      <div id="thread-chips" title="Filter by thread"></div>
+      <span id="progress" class="bar-progress"></span>
+      <button id="continue-btn" class="btn btn-gilt">Continue</button>
+      <button id="lamp-btn" class="btn btn-ghost" title="Lamplight (night) mode">◐</button>
+      <button id="help-btn" class="btn btn-ghost" title="About this chart">?</button>
+    </div>
+  </header>
+
+  <main id="chart-wrap">
+    <svg id="chart" role="application" aria-label="The Loom chart"></svg>
+
+    <nav id="era-rail" aria-label="Voyage to an era"></nav>
+
+    <div id="compass" aria-hidden="true">
+      <svg viewBox="0 0 100 100">
+        <circle cx="50" cy="50" r="34" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".8"/>
+        <circle cx="50" cy="50" r="3" fill="currentColor"/>
+        <path d="M50 8 L56 44 L50 50 L44 44 Z" fill="currentColor"/>
+        <path d="M50 92 L56 56 L50 50 L44 56 Z" fill="none" stroke="currentColor" stroke-width="1.2"/>
+        <path d="M8 50 L44 44 L50 50 L44 56 Z M92 50 L56 44 L50 50 L56 56 Z" fill="none" stroke="currentColor" stroke-width="1"/>
+      </svg>
+      <span class="compass-now">Now</span>
+      <span class="compass-origins">Origins</span>
+    </div>
+
+    <div id="cartouche">
+      <div class="cart-title">A Cartographer’s Atlas<br/>of the Human Story</div>
+      <div class="cart-rule"></div>
+      <div class="cart-legend" id="legend"></div>
+    </div>
+
+    <div id="zoom-tools">
+      <button id="zoom-in" class="btn btn-ghost" title="Zoom in">+</button>
+      <button id="zoom-out" class="btn btn-ghost" title="Zoom out">−</button>
+      <button id="zoom-fit" class="btn btn-ghost" title="See the whole chart">▢</button>
+    </div>
+
+    <div id="tip" hidden></div>
+  </main>
+
+  <aside id="dossier" hidden></aside>
+
+  <div id="reader" hidden></div>
+
+  <div id="intro" hidden></div>
+
+  <!-- data -->
+  <script src="data/graph-core.js"></script>
+  <script src="data/eras/01-long-dawn.js"></script>
+  <script src="data/eras/02-seeds-and-cities.js"></script>
+  <script src="data/eras/03-axial-age.js"></script>
+  <script src="data/eras/04-empires-and-faiths.js"></script>
+  <script src="data/eras/05-believing-world.js"></script>
+  <script src="data/eras/06-woven-world.js"></script>
+  <script src="data/eras/07-great-convergence.js"></script>
+  <script src="data/eras/08-great-divergence.js"></script>
+  <script src="data/eras/09-world-machine.js"></script>
+  <script src="data/eras/10-unfinished-present.js"></script>
+  <script src="data/lessons/_manifest.js"></script>
+
+  <!-- app -->
+  <script src="js/map.js"></script>
+  <script src="js/reader.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/boot.js"></script>
+</body>
+</html>
