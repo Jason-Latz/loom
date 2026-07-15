@@ -1,0 +1,198 @@
+LOOM.era({
+  n: 4,
+  title: 'Empires & Faiths',
+  span: 'c. 200 BCE to 600 CE',
+  blurb: 'Two colossal empires anchor the ends of Eurasia, a road of silk and germs runs between them, and salvation religions go global.',
+});
+
+LOOM.node([
+  {
+    id: 'han-mandate',
+    era: 4,
+    title: 'The Han Synthesis',
+    date: 'c. 140 BCE',
+    sort: -140,
+    region: 'easia',
+    x: 88,
+    threads: ['power', 'ideas'],
+    hook: 'China finds its formula: a Legalist engine wearing Confucian robes, staffed by men who passed an exam.',
+    summary:
+      'The Han kept Qin’s centralized machinery but ruled in Confucian language: the emperor as moral exemplar, officials as cultivated scholars. Recruiting by recommendation and examination created something new on earth, a career bureaucracy loyal to the state and its classics rather than to blood. The formula proved so stable China reran it for two thousand years.',
+    edges: [
+      { to: 'silk-road-pulse', type: 'enables', why: 'Han expansion west opened the corridor that became the Silk Road.' },
+      { to: 'tang-golden-network', type: 'transforms', why: 'After four centuries of division, the Tang rebuild the Han formula at larger scale.' },
+    ],
+  },
+  {
+    id: 'silk-road-pulse',
+    era: 4,
+    title: 'The Silk Road’s Pulse',
+    date: 'c. 100 BCE',
+    sort: -100,
+    region: 'sasia',
+    x: 78,
+    threads: ['wealth'],
+    hook: 'No caravan walks the whole way, yet silk leaves Chang’an and settles on shoulders in Rome.',
+    summary:
+      'The Silk Road was a relay, not a highway: goods, coins, technologies, faiths, and pathogens passed hand to hand across oasis towns and steppe empires. Rome bled silver for silk it could not explain; Buddhism rode the caravans into China. The lesson recurs throughout this atlas: connection moves everything at once, wanted and unwanted alike.',
+    edges: [
+      { to: 'tang-golden-network', type: 'enables', why: 'The road pours faiths and fashions into cosmopolitan Chang’an.' },
+      { to: 'genghis-exchange', type: 'echoes', why: 'The Mongols will fuse the relay into a single protected system.' },
+    ],
+  },
+  {
+    id: 'roman-republic-breaks',
+    era: 4,
+    title: 'The Republic Breaks',
+    date: '49 BCE',
+    sort: -49,
+    region: 'europe',
+    x: 30,
+    threads: ['power'],
+    hook: 'Rome conquers the world and discovers that its own constitution is the last thing left to loot.',
+    summary:
+      'Rome’s republic balanced consuls, senate, and assemblies with elaborate checks, then empire broke it: conquest wealth corrupted elections, slave estates displaced citizen farmers, and armies grew loyal to generals who paid them. Caesar crossed the Rubicon; his heir Augustus kept every republican form and hollowed out the substance. It is the classic case study in how republics die.',
+    edges: [
+      { to: 'pax-romana-machine', type: 'transforms', why: 'Augustus rebuilt the broken republic as a disguised monarchy.' },
+      { to: 'american-experiment', type: 'echoes', why: 'The framers designed their constitution staring at Rome’s corpse.' },
+    ],
+  },
+  {
+    id: 'pax-romana-machine',
+    era: 4,
+    title: 'The Roman Machine',
+    date: '27 BCE to 180 CE',
+    sort: 1,
+    region: 'europe',
+    x: 32,
+    threads: ['power', 'wealth'],
+    hook: 'Eighty thousand kilometers of road, one law, one coin, and citizenship you could earn: empire as operating system.',
+    summary:
+      'At its height Rome governed a quarter of humanity with a few hundred senior officials, because it ran on infrastructure: roads, ports, aqueducts, standard coinage, and a law of contracts and property that strangers could trust. Above all it expanded citizenship outward for centuries. Rome became the West’s permanent template of what large-scale order looks like.',
+    edges: [
+      { to: 'jesus-to-constantine', type: 'enables', why: 'Roman roads and common tongues carried the gospel it would try to kill.' },
+      { to: 'steppe-hammer', type: 'collides', why: 'The machine met migrations it could no longer absorb.' },
+      { to: 'byzantium-endures', type: 'transforms', why: 'The empire’s richer eastern half carried Rome forward a thousand years.' },
+    ],
+  },
+  {
+    id: 'jesus-to-constantine',
+    era: 4,
+    title: 'From Cross to Crown',
+    date: 'c. 30 to 312 CE',
+    sort: 30,
+    region: 'swasia',
+    x: 58,
+    threads: ['ideas', 'power'],
+    hook: 'A preacher executed by Rome becomes, within three centuries, the god of Rome’s own emperor.',
+    summary:
+      'Christianity began as a Jewish movement around an executed messiah and spread through Roman cities via Paul’s letters, house churches, charity, and martyrdom. It offered strangers a family and slaves a dignity. When Constantine adopted it in 312, faith and empire fused: the church inherited Rome’s structures, and Europe its central tension between God and Caesar.',
+    edges: [
+      { to: 'byzantium-endures', type: 'enables', why: 'Constantine’s city became Christianity’s imperial capital.' },
+      { to: 'recitation-in-the-desert', type: 'echoes', why: 'Another revelation will fuse faith and rule even more completely.' },
+      { to: 'great-schism', type: 'enables', why: 'One church wedded to two empires will eventually become two churches.' },
+    ],
+  },
+  {
+    id: 'teotihuacan-maya',
+    era: 4,
+    title: 'City of the Gods, Cities of the Jungle',
+    date: 'c. 250 CE',
+    sort: 250,
+    region: 'americas',
+    x: 10,
+    threads: ['power', 'craft', 'ideas'],
+    hook: 'While Rome rules the Mediterranean, a city larger than Rome’s rivals rises in the Valley of Mexico.',
+    summary:
+      'Teotihuacan housed perhaps 125,000 people in planned apartment compounds beneath colossal pyramids, apparently without kings’ tombs or portraits. The Maya, in contrast, carved dynasties, dates, and wars into stone in the Americas’ only full writing system, with astronomy rivaling anyone’s. Urban civilization here owed nothing to Eurasia, and its collapse debates echo ours.',
+    edges: [
+      { to: 'fifth-sun-aztecs', type: 'enables', why: 'The Aztecs built their legitimacy on Teotihuacan’s awe-inspiring ruins.' },
+      { to: 'mound-and-mountain', type: 'echoes', why: 'American urbanism keeps arising in utterly different forms.' },
+    ],
+  },
+  {
+    id: 'pacific-navigators',
+    era: 4,
+    title: 'Navigators of the Great Ocean',
+    date: 'c. 300 CE',
+    sort: 300,
+    region: 'easia',
+    x: 95,
+    threads: ['craft'],
+    hook: 'In double-hulled canoes, reading stars and swells, families sail into the largest emptiness on Earth and find every island in it.',
+    summary:
+      'Austronesian voyagers spread from Taiwan through Indonesia and then, as Polynesians, across the open Pacific to Hawaii, Rapa Nui, and finally New Zealand, navigating by stars, swells, and birds without metal or writing. It is the most audacious feat of exploration before spaceflight, and it stitched the last uninhabited habitable places into the human world.',
+    edges: [
+      { to: 'iberian-wager', type: 'echoes', why: 'Ocean navigation is mastered here a thousand years before Europe dares it.' },
+    ],
+  },
+  {
+    id: 'bantu-and-aksum',
+    era: 4,
+    title: 'Bantu Roads and the Throne of Aksum',
+    date: 'c. 350 CE',
+    sort: 350,
+    region: 'africa',
+    x: 46,
+    threads: ['wealth', 'ideas'],
+    hook: 'One migration reshapes half a continent’s languages; one African kingdom mints coins and adopts Christ before Rome does.',
+    summary:
+      'Over two millennia, Bantu-speaking farmers and ironworkers spread from West Africa across the continent’s southern half, seeding its modern linguistic map. Meanwhile Aksum in Ethiopia taxed Red Sea trade, minted its own coinage, and made Christianity a state religion in the 330s. Africa’s deep history is movement, iron, and connection, not isolation.',
+    edges: [
+      { to: 'golden-sahara', type: 'enables', why: 'African trade networks mature into the gold roads of the Sahara.' },
+      { to: 'recitation-in-the-desert', type: 'collides', why: 'Islam’s rise will encircle Christian Ethiopia and reroute Red Sea trade.' },
+    ],
+  },
+  {
+    id: 'gupta-zero',
+    era: 4,
+    title: 'The Age of Zero',
+    date: 'c. 400 CE',
+    sort: 400,
+    region: 'sasia',
+    x: 72,
+    threads: ['craft', 'ideas'],
+    hook: 'Indian mathematicians treat nothing as a number, and accidentally hand the future its operating system.',
+    summary:
+      'Under the Guptas, India flourished: Kalidasa’s poetry, university-monasteries like Nalanda, astronomy computing the earth’s circumference, and above all decimal place-value numerals with zero as a full number. Transmitted through the Islamic world as Arabic numerals, this notation became the silent infrastructure of all later science, commerce, and computation.',
+    edges: [
+      { to: 'house-of-wisdom', type: 'enables', why: 'Indian numerals travel to Baghdad and become the world’s mathematics.' },
+      { to: 'monsoon-marketplace', type: 'enables', why: 'Sanskrit learning and Indian religion sail the monsoon routes east.' },
+    ],
+  },
+  {
+    id: 'steppe-hammer',
+    era: 4,
+    title: 'The Steppe Hammer Falls',
+    date: 'c. 450 CE',
+    sort: 450,
+    region: 'europe',
+    x: 35,
+    threads: ['power'],
+    hook: 'Refugees from horsemen out of the east press against Rome’s borders until the borders are all that is left.',
+    summary:
+      'The Huns’ westward drive shoved Goths and Vandals into Roman territory; within a century the western empire dissolved into kingdoms that still spoke its language and prayed its faith. Was Rome murdered, or transformed? Taxes, cities, and literacy shrank while the church preserved the shell. Western Europe began its long, fragmented reboot.',
+    edges: [
+      { to: 'europe-reboots', type: 'transforms', why: 'From Rome’s fragments, a poorer but stranger Europe assembles itself.' },
+      { to: 'byzantium-endures', type: 'collides', why: 'The east paid, fought, and diplomatically absorbed what broke the west.' },
+    ],
+  },
+  {
+    id: 'byzantium-endures',
+    era: 4,
+    title: 'Byzantium Endures',
+    date: 'c. 537 CE',
+    sort: 537,
+    region: 'europe',
+    x: 39,
+    threads: ['power', 'ideas'],
+    hook: 'Rome does not fall; it moves east, speaks Greek, and lasts another thousand years.',
+    summary:
+      'From Constantinople, Justinian reconquered lost provinces, built Hagia Sophia, and codified Roman law into the Corpus Juris that underlies most European legal systems today. Byzantium banked civilization through the west’s dark centuries: Greek texts, icon theology, and the model of a Christian autocracy it would export to the Slavs and Russia.',
+    edges: [
+      { to: 'caliphate-lightning', type: 'collides', why: 'Exhausted by Persia, Byzantium met Islam’s armies at its weakest hour.' },
+      { to: 'great-schism', type: 'enables', why: 'Greek east and Latin west drift toward formal divorce.' },
+      { to: 'fall-of-constantinople', type: 'transforms', why: 'The thousand-year city finally passes to the Ottomans.' },
+    ],
+  },
+]);

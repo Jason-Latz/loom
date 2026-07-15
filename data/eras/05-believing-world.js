@@ -1,0 +1,196 @@
+LOOM.era({
+  n: 5,
+  title: 'The Believing World',
+  span: 'c. 600 to 1100 CE',
+  blurb: 'Islam erupts and builds a civilization of the book, China perfects the examination state, and Europe reboots in fragments.',
+});
+
+LOOM.node([
+  {
+    id: 'recitation-in-the-desert',
+    era: 5,
+    title: 'The Recitation',
+    date: '610 CE',
+    sort: 610,
+    region: 'swasia',
+    x: 61,
+    threads: ['ideas'],
+    hook: 'A merchant in a cave outside Mecca is commanded: Recite. What follows reorders half the known world.',
+    summary:
+      'Muhammad’s revelations fused Abrahamic monotheism with Arab society into something new: the umma, a community where faith replaced tribe, with law, charity, and scripture at its center. Islam was civic from birth, a religion that governed. Within his lifetime it unified Arabia; within a century it stretched from Spain to the Indus.',
+    edges: [
+      { to: 'caliphate-lightning', type: 'transforms', why: 'The community of believers becomes an empire within a single generation.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'A faith centered on a book builds a civilization of books.' },
+    ],
+  },
+  {
+    id: 'caliphate-lightning',
+    era: 5,
+    title: 'The Caliphate’s Lightning',
+    date: '632 to 750 CE',
+    sort: 640,
+    region: 'swasia',
+    x: 58,
+    threads: ['power'],
+    hook: 'Two exhausted superpowers watch desert armies take half of one and all of the other in a few decades.',
+    summary:
+      'Byzantium and Persia had bled each other white; Arab armies, mobile and motivated, took Syria, Egypt, Persia, North Africa, and Spain with startling speed, generally tolerating Christians and Jews as protected taxpayers. The Umayyad and then Abbasid caliphates joined the Mediterranean and Indian Ocean worlds into one vast trading, praying, translating space.',
+    edges: [
+      { to: 'golden-sahara', type: 'enables', why: 'Islam and its trade cross the desert with the camel caravans.' },
+      { to: 'monsoon-marketplace', type: 'enables', why: 'Muslim merchants and law knit the Indian Ocean into one market.' },
+      { to: 'crusading-fever', type: 'collides', why: 'Latin Christendom eventually answers with armed pilgrimage.' },
+    ],
+  },
+  {
+    id: 'tang-golden-network',
+    era: 5,
+    title: 'Tang: The Open Empire',
+    date: 'c. 700 CE',
+    sort: 700,
+    region: 'easia',
+    x: 88,
+    threads: ['power', 'wealth'],
+    hook: 'Chang’an, a city of a million, where Persian merchants, Buddhist monks, and Nestorian priests pass in the streets.',
+    summary:
+      'The Tang rebuilt the Han formula at greater scale and openness: the examination system matured, poetry became a civil service skill, and the capital hosted every faith of Asia. The An Lushan rebellion of 755 broke its confidence and killed millions, a hinge after which China turned gradually inward and commerce moved south.',
+    edges: [
+      { to: 'house-of-wisdom', type: 'collides', why: 'After Talas in 751, captured Chinese papermakers gave Islam its paper.' },
+      { to: 'song-economic-miracle', type: 'transforms', why: 'Tang cosmopolitanism matures into Song commercial genius.' },
+    ],
+  },
+  {
+    id: 'europe-reboots',
+    era: 5,
+    title: 'Europe Reboots',
+    date: '800 CE',
+    sort: 800,
+    region: 'europe',
+    x: 28,
+    threads: ['power', 'wealth'],
+    hook: 'On Christmas Day a Frankish king is crowned Roman Emperor, in a Europe of forests, manors, and memories.',
+    summary:
+      'Post-Roman Europe was poor and fragmented: power devolved to armed landholders, wealth to self-sufficient manors, learning to monasteries. Charlemagne’s empire flared and split, leaving a patchwork of lords, bishops, and kings all checking one another. That very fragmentation, wretched at the time, left space where towns, charters, and rival powers could later grow.',
+    edges: [
+      { to: 'northmen-networks', type: 'collides', why: 'Viking raids batter the new kingdoms and force them to organize.' },
+      { to: 'charter-and-parliament', type: 'enables', why: 'A world of bargaining lords seeds constitutional habits.' },
+    ],
+  },
+  {
+    id: 'house-of-wisdom',
+    era: 5,
+    title: 'The House of Wisdom',
+    date: 'c. 820 CE',
+    sort: 820,
+    region: 'swasia',
+    x: 63,
+    threads: ['craft', 'ideas'],
+    hook: 'In Baghdad, the caliph pays a book’s weight in gold for translations, and Greek, Indian, and Persian learning fuse.',
+    summary:
+      'Abbasid Baghdad funded the greatest translation movement in history: Aristotle, Euclid, Galen, and Indian mathematics rendered into Arabic and extended. Al-Khwarizmi’s algebra (and his name, as algorithm), Ibn al-Haytham’s optics, hospitals and observatories. On Chinese paper, Islamic civilization banked and improved the ancient world’s knowledge, later wiring it to Europe.',
+    edges: [
+      { to: 'first-universities', type: 'enables', why: 'Arabic learning flows through Spain and Sicily into Latin schools.' },
+      { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Algebra, optics, and star tables underwrite Europe’s later revolution.' },
+    ],
+  },
+  {
+    id: 'northmen-networks',
+    era: 5,
+    title: 'The Northmen’s Networks',
+    date: 'c. 850 CE',
+    sort: 850,
+    region: 'europe',
+    x: 25,
+    threads: ['wealth', 'power'],
+    hook: 'The monks pray for deliverance from the fury of the Northmen, who are also founding Dublin, Normandy, and Russia.',
+    summary:
+      'Viking longships raided monasteries and cities, but the same ships ran trade from Baghdad silver to Greenland walrus ivory, founded the Rus states that became Russia, settled Iceland with its assembly, and briefly touched North America. Raiders became traders became states: violence and commerce as two faces of one expansion.',
+    edges: [
+      { to: 'crusading-fever', type: 'transforms', why: 'Christianized Norse energy turns outward again as Norman conquest and crusade.' },
+    ],
+  },
+  {
+    id: 'golden-sahara',
+    era: 5,
+    title: 'Gold Roads of the Sahara',
+    date: 'c. 900 CE',
+    sort: 900,
+    region: 'africa',
+    x: 44,
+    threads: ['wealth'],
+    hook: 'Camel caravans cross a sea of sand carrying salt north and gold south, and empires rise at the ports of that sea.',
+    summary:
+      'The camel made the Sahara crossable, and Ghana, then Mali, grew rich taxing the exchange of Saharan salt for West African gold, which minted the coins of the Islamic world and Europe alike. Islam traveled with the caravans, blending with local kingship. West Africa was a pillar of the medieval world economy, not its margin.',
+    edges: [
+      { to: 'mansa-musa-hajj', type: 'transforms', why: 'Ghana’s routes mature into Mali’s golden imperial age.' },
+      { to: 'middle-passage', type: 'collides', why: 'Atlantic ships will one day bypass the desert and upend these kingdoms.' },
+    ],
+  },
+  {
+    id: 'monsoon-marketplace',
+    era: 5,
+    title: 'The Monsoon Marketplace',
+    date: 'c. 950 CE',
+    sort: 950,
+    region: 'sasia',
+    x: 76,
+    threads: ['wealth'],
+    hook: 'The winds blow reliably one way half the year and back the other half, so the ocean itself becomes a trade machine.',
+    summary:
+      'The Indian Ocean was the medieval world’s economic center: dhows riding seasonal monsoons between East Africa, Arabia, India, and Southeast Asia, carrying pepper, cotton, porcelain, and horses. Srivijaya and Chola taxed the straits; merchant diasporas of many faiths shared ports and credit. It was globalization before Europe, run without a hegemon.',
+    edges: [
+      { to: 'treasure-fleets', type: 'enables', why: 'Zheng He’s fleets sail routes Muslim and Indian merchants built.' },
+      { to: 'iberian-wager', type: 'enables', why: 'Da Gama did not open the Indian Ocean; he barged into it.' },
+    ],
+  },
+  {
+    id: 'song-economic-miracle',
+    era: 5,
+    title: 'The Song Economic Miracle',
+    date: 'c. 1000 CE',
+    sort: 1000,
+    region: 'easia',
+    x: 90,
+    threads: ['wealth', 'craft'],
+    hook: 'Paper money, blast furnaces, printed books, cities of a million: China arrives at the edge of the modern.',
+    summary:
+      'Song China ran the most advanced economy on earth: iron output unmatched until industrial Britain, paper currency, water-powered mills, movable-type printing, champa rice doubling harvests, and exams staffing a meritocratic state. Historians still argue why this near-industrial revolution plateaued, a question that shadows every explanation of the West’s later rise.',
+    edges: [
+      { to: 'song-gifts-go-west', type: 'enables', why: 'Its inventions leak westward along the roads the Mongols will secure.' },
+      { to: 'treasure-fleets', type: 'enables', why: 'Song shipwrights and compasses make the great fleets buildable.' },
+      { to: 'great-convergence', type: 'echoes', why: 'A millennium later, China resumes its place as the world’s workshop.' },
+    ],
+  },
+  {
+    id: 'mound-and-mountain',
+    era: 5,
+    title: 'Mound and Mountain',
+    date: 'c. 1050 CE',
+    sort: 1050,
+    region: 'americas',
+    x: 11,
+    threads: ['power', 'wealth'],
+    hook: 'A city of earthen pyramids rises by the Mississippi while Andean lords weave states out of labor and thread.',
+    summary:
+      'Cahokia, near modern St. Louis, was a planned city of thousands with plazas and mounds rivaling Egypt’s footprint in earth. In the Andes, Wari and Tiwanaku pioneered labor taxation, terraced agriculture, and knotted-cord records. The Americas kept inventing statecraft in their own idioms, without wheels, iron, or writing as Eurasia knew it.',
+    edges: [
+      { to: 'inka-threads', type: 'enables', why: 'Andean traditions of labor tax and roadcraft climax in the Inka.' },
+    ],
+  },
+  {
+    id: 'great-schism',
+    era: 5,
+    title: 'The Great Schism',
+    date: '1054 CE',
+    sort: 1054,
+    region: 'europe',
+    x: 37,
+    threads: ['ideas'],
+    hook: 'Two bishops excommunicate each other over bread, beards, and a single Latin word, and Christendom splits for good.',
+    summary:
+      'Centuries of drift between Greek East and Latin West, over papal authority, the filioque clause, and rival empires, hardened into formal schism in 1054. Orthodoxy and Catholicism became distinct civilizations: different alphabets, church-state models, and destinies for the Slavic world and Russia. Cultural fault lines drawn here still shape geopolitics.',
+    edges: [
+      { to: 'crusading-fever', type: 'collides', why: 'Crusaders sack Christian Constantinople in 1204, sealing the divorce.' },
+      { to: 'luthers-hammer', type: 'echoes', why: 'The first great fracture of Christendom prefigures the second.' },
+    ],
+  },
+]);
