@@ -214,7 +214,7 @@ LOOM.map = (function () {
     vb.x = Math.max(minX, Math.min(maxX, vb.x));
     vb.y = Math.max(minY, Math.min(maxY, vb.y));
     svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
-    svg.classList.toggle('far', vb.w > 1150);
+    svg.classList.toggle('far', vb.w > 2000);
     if (api.onEraChange) api.onEraChange(currentEra());
   }
   function currentEra() {
@@ -296,7 +296,9 @@ LOOM.map = (function () {
 
     var drag = null;
     svg.addEventListener('pointerdown', function (ev) {
-      drag = { x: ev.clientX, y: ev.clientY, vx: vb.x, vy: vb.y, moved: false };
+      // capture retargets later events to the svg, so remember the true target now
+      var g = ev.target.closest ? ev.target.closest('.node') : null;
+      drag = { x: ev.clientX, y: ev.clientY, vx: vb.x, vy: vb.y, moved: false, node: g };
       svg.setPointerCapture(ev.pointerId);
     });
     svg.addEventListener('pointermove', function (ev) {
@@ -315,8 +317,7 @@ LOOM.map = (function () {
     svg.addEventListener('pointerup', function (ev) {
       svg.classList.remove('panning');
       if (drag && !drag.moved) {
-        var g = ev.target.closest('.node');
-        select(g ? g.dataset.id : null, { pan: false });
+        select(drag.node ? drag.node.dataset.id : null, { pan: false });
       }
       drag = null;
     });
