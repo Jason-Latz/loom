@@ -1,0 +1,213 @@
+LOOM.era({
+  n: 2,
+  title: 'Seeds & Cities',
+  span: 'c. 10,000 to 1200 BCE',
+  blurb: 'Farms become villages, villages become cities, and cities invent kings, gods, taxes, and writing to run themselves.',
+});
+
+LOOM.node([
+  {
+    id: 'uruk-first-city',
+    era: 2,
+    title: 'Uruk, the First City',
+    date: 'c. 3500 BCE',
+    sort: -3500,
+    region: 'swasia',
+    x: 59,
+    threads: ['wealth', 'power'],
+    hook: 'Fifty thousand strangers, one temple, and a new kind of human habitat that has never stopped growing.',
+    summary:
+      'In southern Mesopotamia, irrigation farming packed unprecedented numbers into Uruk, a city organized around temple storehouses that collected, recorded, and redistributed grain. The city is a machine for making strangers cooperate: specialists, priests, and laborers locked into mutual dependence. Every metropolis since is a variation on this experiment.',
+    edges: [
+      { to: 'invention-of-writing', type: 'enables', why: 'Temple accounting at this scale demanded records no memory could hold.' },
+      { to: 'surplus-and-the-state', type: 'transforms', why: 'The city concentrated grain and labor until administration hardened into rule.' },
+    ],
+  },
+  {
+    id: 'invention-of-writing',
+    era: 2,
+    title: 'The Invention of Writing',
+    date: 'c. 3200 BCE',
+    sort: -3200,
+    region: 'swasia',
+    x: 56,
+    threads: ['craft', 'ideas'],
+    hook: 'Literature’s ancestor is a warehouse receipt: five sheep, pressed into wet clay.',
+    summary:
+      'Cuneiform began as accounting tokens for temple stores and only slowly became capable of poetry, prayer, and law. Writing let memory outlive the rememberer and commands travel without the commander, which is why early literacy belonged to states and scribes. Independent inventions in China and Mesoamerica confirm the pattern: complexity summons script.',
+    edges: [
+      { to: 'code-of-hammurabi', type: 'enables', why: 'Written law can outlive the lawgiver and bind his successors.' },
+      { to: 'gutenberg-explosion', type: 'echoes', why: 'Every leap in copying words rewires who holds power over ideas.' },
+    ],
+  },
+  {
+    id: 'surplus-and-the-state',
+    era: 2,
+    title: 'Surplus and the State',
+    date: 'c. 3000 BCE',
+    sort: -3000,
+    region: 'swasia',
+    x: 62,
+    threads: ['power', 'wealth'],
+    hook: 'The state was not founded by a social contract. It grew out of a granary with guards.',
+    summary:
+      'Storable grain could be measured, skimmed, and stockpiled, so those who controlled the stores became priests, then kings. Early states were extraction machines: censuses, corvée labor, walls that kept people in as much as out. Rulers offered protection and irrigation in exchange, a bargain, or a racket, that political philosophy still argues about.',
+    edges: [
+      { to: 'gift-of-the-nile', type: 'transforms', why: 'The taxing temple-state reached its most complete form along the Nile.' },
+      { to: 'code-of-hammurabi', type: 'enables', why: 'Rule over strangers needs rules that strangers can know.' },
+    ],
+  },
+  {
+    id: 'gift-of-the-nile',
+    era: 2,
+    title: 'The Gift of the Nile',
+    date: 'c. 2600 BCE',
+    sort: -2600,
+    region: 'africa',
+    x: 46,
+    threads: ['power', 'ideas'],
+    hook: 'A river so reliable it made kings into gods and stone into eternity.',
+    summary:
+      'The Nile flooded on schedule, feeding a unified kingdom under a pharaoh who was not merely appointed by heaven but was himself divine. The pyramids are what total state capacity looked like at 2600 BCE: tens of thousands of organized, fed, and recorded workers. Egypt set the template of sacred kingship that empires would imitate for millennia.',
+    edges: [
+      { to: 'gods-of-the-city', type: 'echoes', why: 'God-kings and god-serving kings: two templates of sacred rule take shape.' },
+      { to: 'bronze-web', type: 'enables', why: 'Egypt’s grain and gold anchored the first international system.' },
+    ],
+  },
+  {
+    id: 'indus-enigma',
+    era: 2,
+    title: 'The Indus Enigma',
+    date: 'c. 2500 BCE',
+    sort: -2500,
+    region: 'sasia',
+    x: 71,
+    threads: ['wealth', 'power'],
+    hook: 'Great cities with sewers and standard weights, and no palaces, no tombs, no visible kings at all.',
+    summary:
+      'Harappa and Mohenjo-daro ran sophisticated urban grids, plumbing, and standardized trade across a million square kilometers, yet show no royal tombs or monuments to rulers. Their script is undeciphered; their politics a mystery. The Indus proves early urban life did not require god-kings, an unsettling counterexample to the Mesopotamian and Egyptian pattern.',
+    edges: [
+      { to: 'monsoon-marketplace', type: 'echoes', why: 'The Indian Ocean’s trading world begins with Indus merchants sailing to Mesopotamia.' },
+      { to: 'buddha-middle-path', type: 'enables', why: 'The Indus world and its steppe successors compost into Vedic India.' },
+    ],
+  },
+  {
+    id: 'gods-of-the-city',
+    era: 2,
+    title: 'Gods of the City',
+    date: 'c. 2100 BCE',
+    sort: -2100,
+    region: 'swasia',
+    x: 57,
+    threads: ['ideas'],
+    hook: 'Each city belonged to a god, and humans were created, the myths said, to do the gods’ chores.',
+    summary:
+      'Mesopotamian religion imagined humans as labor for the gods, kings as stewards of divine estates, and catastrophe as heaven’s audit. Ziggurats, omens, and the flood story in Gilgamesh organized meaning for the first mass societies. This theology of service and anxiety is the deep background against which later, more personal faiths revolted.',
+    edges: [
+      { to: 'israel-one-god', type: 'transforms', why: 'Exiles in Babylon forged many local gods into one universal God.' },
+      { to: 'code-of-hammurabi', type: 'enables', why: 'Kings claimed their laws descended from the gods themselves.' },
+    ],
+  },
+  {
+    id: 'horse-and-wheel',
+    era: 2,
+    title: 'The Horse and the Wheel',
+    date: 'c. 2000 BCE',
+    sort: -2000,
+    region: 'sasia',
+    x: 75,
+    threads: ['craft', 'power'],
+    hook: 'On the grass sea between the civilizations, someone tames speed itself.',
+    summary:
+      'Steppe peoples domesticated the horse, built the spoked-wheel chariot, and carried Indo-European languages from Ireland to India. For three thousand years the steppe remained history’s accelerator: a highway for warriors, herders, tongues, and plagues connecting worlds that did not know each other’s names. Most languages in this atlas descend from these migrations.',
+    edges: [
+      { to: 'yellow-river-bronze', type: 'enables', why: 'Chariot technology crossed the steppe into Shang China’s wars.' },
+      { to: 'buddha-middle-path', type: 'enables', why: 'Indo-Aryan Vedic culture is the soil where Indian philosophy grew.' },
+      { to: 'genghis-exchange', type: 'echoes', why: 'The steppe returns again and again to redraw the settled world.' },
+    ],
+  },
+  {
+    id: 'code-of-hammurabi',
+    era: 2,
+    title: 'The Code of Hammurabi',
+    date: 'c. 1754 BCE',
+    sort: -1754,
+    region: 'swasia',
+    x: 60,
+    threads: ['power', 'ideas'],
+    hook: 'A king writes the rules on a stone taller than a man, so that the strong shall not wrong the weak.',
+    summary:
+      'Hammurabi of Babylon published 282 laws on public stone: prices, wages, marriage, malpractice, an eye for an eye. Law as technology does two things at once: it protects subjects from arbitrary power and it extends the king’s reach into every dispute. That double nature, shield and instrument, runs through all legal history.',
+    edges: [
+      { to: 'israel-one-god', type: 'echoes', why: 'Covenant law in the Bible speaks in forms Babylon pioneered.' },
+      { to: 'qin-hammer', type: 'echoes', why: 'Law as the state’s sharpest instrument reaches its extreme in Legalist China.' },
+    ],
+  },
+  {
+    id: 'yellow-river-bronze',
+    era: 2,
+    title: 'Bronze on the Yellow River',
+    date: 'c. 1500 BCE',
+    sort: -1500,
+    region: 'easia',
+    x: 87,
+    threads: ['power', 'ideas'],
+    hook: 'Chinese history opens with questions scratched on burnt bones, asking the ancestors about rain and war.',
+    summary:
+      'Shang kings cast bronze vessels for ancestor rites, divined by cracking oracle bones, and left the earliest Chinese writing as questions to the dead. When the Zhou overthrew them, they justified it with a doctrine that would govern China ever after: heaven grants a mandate to the worthy and revokes it from the corrupt.',
+    edges: [
+      { to: 'hundred-schools', type: 'enables', why: 'The Mandate of Heaven frames every later argument about Chinese rule.' },
+    ],
+  },
+  {
+    id: 'bronze-web',
+    era: 2,
+    title: 'The Bronze Web',
+    date: 'c. 1400 BCE',
+    sort: -1400,
+    region: 'world',
+    x: 52,
+    threads: ['wealth', 'craft'],
+    hook: 'Bronze needs tin, tin comes from far away, and suddenly every kingdom’s fate depends on its neighbors.',
+    summary:
+      'Bronze demands copper and tin from sources often thousands of kilometers apart, so the Late Bronze Age became the first international system: Egyptian, Hittite, and Babylonian kings exchanging envoys, brides, and gold in the Amarna letters. Interdependence created wealth and a shared elite culture, and also a system that could fail together.',
+    edges: [
+      { to: 'sea-peoples-collapse', type: 'transforms', why: 'Interdependence curdled into fragility when the web began to tear.' },
+      { to: 'silk-road-pulse', type: 'echoes', why: 'Eurasia will keep reweaving itself into ever larger webs.' },
+    ],
+  },
+  {
+    id: 'maize-and-the-americas',
+    era: 2,
+    title: 'Maize and the Other World',
+    date: 'c. 7000 to 1200 BCE',
+    sort: -1300,
+    region: 'americas',
+    x: 9,
+    threads: ['wealth', 'ideas'],
+    hook: 'On continents sealed off from all the rest, history runs the experiment again from scratch.',
+    summary:
+      'Mesoamericans bred teosinte, a grass with seeds like gravel, into maize over millennia: the most impressive feat of genetic engineering before the modern era. On its surplus rose the Olmec, with pyramids, calendars, and ritual ballgames. The Americas developed cities, states, and writing with zero contact with Eurasia: civilization is no accident.',
+    edges: [
+      { to: 'teotihuacan-maya', type: 'enables', why: 'Maize surplus underwrites every American city that follows.' },
+      { to: 'columbian-exchange', type: 'collides', why: 'Two worlds bred apart for 15,000 years are on course to meet.' },
+    ],
+  },
+  {
+    id: 'sea-peoples-collapse',
+    era: 2,
+    title: 'The First Systems Collapse',
+    date: 'c. 1177 BCE',
+    sort: -1177,
+    region: 'swasia',
+    x: 55,
+    threads: ['power', 'wealth'],
+    hook: 'Within a single lifetime, nearly every palace in the eastern Mediterranean burns.',
+    summary:
+      'Around 1200 BCE the Bronze Age world imploded: cities burned from Greece to the Levant, trade and literacy vanished in places, and Egypt barely repelled the mysterious Sea Peoples. Drought, earthquakes, migration, and severed supply chains likely compounded. It is antiquity’s warning about tightly coupled systems: connection multiplies wealth, and failure.',
+    edges: [
+      { to: 'iron-and-alphabet', type: 'enables', why: 'Bronze’s collapse cleared the stage for cheap iron and the simple alphabet.' },
+      { to: 'roaring-and-crashing', type: 'echoes', why: 'Interlinked systems crash together, in 1177 BCE as in 1929 CE.' },
+    ],
+  },
+]);
