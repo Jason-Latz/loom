@@ -2,7 +2,40 @@
 LOOM.app = (function () {
   var h = LOOM.ui.h;
   var KEY = 'loom.v1';
-  var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false };
+  var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false, streak: null };
+
+  // ---------------- streak ----------------
+  // Consecutive days on which you charted something. Kept deliberately quiet: a
+  // single mark in the header, and nothing at all when there is no streak.
+  function pad2(n) { return (n < 10 ? '0' : '') + n; }
+  function dayKey(d) { return d.getFullYear() + '-' + pad2(d.getMonth() + 1) + '-' + pad2(d.getDate()); }
+  function yesterdayKey() {
+    var d = new Date();
+    d.setDate(d.getDate() - 1); // stepping the date field is daylight-saving safe
+    return dayKey(d);
+  }
+  function touchStreak() {
+    var s = state.streak || (state.streak = { count: 0, last: null });
+    var today = dayKey(new Date());
+    if (s.last === today) return;                       // already counted today
+    s.count = s.last === yesterdayKey() ? s.count + 1 : 1;
+    s.last = today;
+  }
+  function currentStreak() {
+    var s = state.streak;
+    if (!s || !s.last) return 0;
+    // a streak only stands if it reaches today or yesterday; otherwise it broke
+    return s.last === dayKey(new Date()) || s.last === yesterdayKey() ? s.count : 0;
+  }
+  function renderStreak() {
+    var el = document.getElementById('streak');
+    var n = currentStreak();
+    if (!n) { el.hidden = true; return; }
+    el.textContent = '✦ ' + n;
+    el.title = n + (n === 1 ? ' day running.' : ' days running.') +
+      ' Chart a lesson today to keep it.';
+    el.hidden = false;
+  }
 
   function load() {
     try {
@@ -18,6 +51,7 @@ LOOM.app = (function () {
   function isRead(id) { return !!state.read[id]; }
   function markRead(id) {
     state.read[id] = Date.now();
+    touchStreak();
     save();
     refresh();
     pressSeal();
@@ -55,6 +89,7 @@ LOOM.app = (function () {
     var written = Object.keys(LOOM.lessons).length;
     document.getElementById('progress').textContent =
       done + ' of ' + LOOM.nodes.length + ' charted · ' + written + ' lessons ready';
+    renderStreak();
   }
 
   function pressSeal() {
@@ -225,6 +260,38 @@ LOOM.app = (function () {
     }
   }
 
+  // ---------------- keyboard ----------------
+  // The whole chart is walkable without a mouse: up and down follow the reading
+  // sequence (up is later, because time rises here), left and right jump across
+  // to the nearest neighbour, and Enter opens the lesson.
+  function bindKeys() {
+    var NAV = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
+    document.addEventListener('keydown', function (ev) {
+      if (ev.metaKey || ev.ctrlKey || ev.altKey) return;
+      var t = ev.target;
+      if (t && (t.tagName === 'INPUT' || t.tagName === 'TEXTAREA' || t.isContentEditable)) return;
+      // overlays own the keyboard while they are up
+      if (!document.getElementById('reader').hidden) return;
+      if (!document.getElementById('paths').hidden) return;
+      if (!document.getElementById('intro').hidden) return;
+
+      if (ev.key === 'Enter') {
+        var sel = LOOM.map.selected();
+        if (sel && LOOM.lessons[sel]) { ev.preventDefault(); LOOM.reader.openLesson(sel); }
+        return;
+      }
+      if (NAV.indexOf(ev.key) === -1) return;
+      // a live path owns left/right for stepping along itself
+      if (LOOM.paths.isActive() && (ev.key === 'ArrowLeft' || ev.key === 'ArrowRight')) return;
+      ev.preventDefault();
+
+      var cur = LOOM.map.selected();
+      if (!cur) { LOOM.map.select(nextId() || LOOM.nodes[0].id); return; }
+      var nid = LOOM.map.neighbor(cur, ev.key);
+      if (nid) LOOM.map.select(nid);
+    });
+  }
+
   // ---------------- init ----------------
   function init() {
     load();
@@ -242,6 +309,7 @@ LOOM.app = (function () {
     buildLegend();
     buildEraRail();
     buildSearch();
+    bindKeys();
     refresh();
 
     document.getElementById('continue-btn').addEventListener('click', function () {

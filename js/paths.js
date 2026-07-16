@@ -185,5 +185,12 @@ LOOM.paths = (function () {
     });
   }
 
-  return { init: init, open: openPanel, stop: stop, threadPath: threadPath, rootsPath: rootsPath };
+  return {
+    init: init,
+    open: openPanel,
+    stop: stop,
+    isActive: function () { return !!active; },
+    threadPath: threadPath,
+    rootsPath: rootsPath,
+  };
 })();

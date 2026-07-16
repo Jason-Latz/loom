@@ -248,6 +248,31 @@ LOOM.map = (function () {
     if (api.onSelect) api.onSelect(id);
   }
 
+  // Arrow-key traversal. Up and down walk the main reading sequence, and since
+  // time rises on this chart, up is later. Left and right jump to the nearest
+  // node on that side, strongly preferring one on a similar row so the move
+  // matches what the eye expects.
+  function neighbor(id, key) {
+    var idx = LOOM.nodes.findIndex(function (n) { return n.id === id; });
+    if (idx < 0) return null;
+    if (key === 'ArrowUp') return LOOM.nodes[idx + 1] ? LOOM.nodes[idx + 1].id : null;
+    if (key === 'ArrowDown') return LOOM.nodes[idx - 1] ? LOOM.nodes[idx - 1].id : null;
+
+    var from = pos[id];
+    if (!from) return null;
+    var want = key === 'ArrowRight' ? 1 : -1;
+    var best = null, bestScore = Infinity;
+    LOOM.nodes.forEach(function (n) {
+      if (n.id === id) return;
+      var p = pos[n.id];
+      var dx = (p.x - from.x) * want;
+      if (dx <= 1) return; // must actually be on the side we are heading
+      var score = dx + Math.abs(p.y - from.y) * 3;
+      if (score < bestScore) { bestScore = score; best = n.id; }
+    });
+    return best;
+  }
+
   // ---------- node state classes ----------
   function refreshStates(readMap, nextId) {
     LOOM.nodes.forEach(function (n) {
@@ -448,6 +473,8 @@ LOOM.map = (function () {
   return {
     init: init,
     select: select,
+    selected: function () { return pinned; },
+    neighbor: neighbor,
     refreshStates: refreshStates,
     setFilters: setFilters,
     setPath: setPath,
