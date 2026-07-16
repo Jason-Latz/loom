@@ -231,6 +231,7 @@ LOOM.app = (function () {
     if (state.lamplight) document.body.classList.add('lamplight');
     LOOM.map.init();
     LOOM.reader.init();
+    LOOM.paths.init();
 
     LOOM.map.api.onSelect = function (id) {
       if (id) LOOM.reader.showDossier(id);

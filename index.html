@@ -20,6 +20,7 @@
     <div class="bar-tools">
       <div id="thread-chips" title="Filter by thread"></div>
       <span id="progress" class="bar-progress"></span>
+      <button id="paths-btn" class="btn" title="Other ways through the chart">Paths</button>
       <button id="continue-btn" class="btn btn-gilt">Continue</button>
       <button id="lamp-btn" class="btn btn-ghost" title="Lamplight (night) mode">◐</button>
       <button id="help-btn" class="btn btn-ghost" title="About this chart">?</button>
@@ -56,7 +57,10 @@
     </div>
 
     <div id="tip" hidden></div>
+    <div id="path-bar" hidden></div>
   </main>
+
+  <div id="paths" hidden></div>
 
   <aside id="dossier" hidden></aside>
 
@@ -82,6 +86,7 @@
   <!-- app -->
   <script src="js/map.js"></script>
   <script src="js/reader.js"></script>
+  <script src="js/paths.js"></script>
   <script src="js/app.js"></script>
   <script src="js/boot.js"></script>
 </body>

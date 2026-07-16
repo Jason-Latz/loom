@@ -207,6 +207,51 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
 #chart.filtered .node:not(.th-match) { opacity: 0.16; }
 #chart.filtered .wire:not(.th-match) { opacity: 0.04; }
 
+/* path mode: only the route is lit */
+#chart.pathed .node:not(.on-path) { opacity: 0.1; }
+#chart.pathed .wire:not(.on-path) { opacity: 0.03; }
+#chart.pathed .wire.on-path { opacity: 0.9; stroke-width: 2.1; }
+
+#path-bar {
+  position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 18;
+  display: flex; align-items: center; gap: 12px;
+  padding: 8px 10px 8px 12px;
+  background: color-mix(in srgb, var(--card) 94%, transparent);
+  border: 1px solid var(--line); outline: 1px solid var(--line); outline-offset: 3px;
+  box-shadow: var(--shadow); backdrop-filter: blur(3px);
+}
+.path-step { width: 32px; height: 32px; padding: 0; font-size: 17px; line-height: 1; }
+.path-step:disabled { opacity: 0.3; cursor: default; }
+.path-mid { min-width: 240px; text-align: center; }
+.path-title { font-variant: small-caps; letter-spacing: 0.13em; font-size: 12.5px; color: var(--gilt); }
+.path-where { font-size: 13.5px; margin-top: 1px; }
+.path-quit { font-size: 11.5px; padding: 5px 10px; color: var(--ink-soft); font-variant: small-caps; letter-spacing: 0.08em; }
+
+/* paths chooser */
+#paths {
+  position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center;
+  background: rgba(44, 35, 24, 0.45); backdrop-filter: blur(2px); padding: 20px;
+}
+.paths-card {
+  position: relative; max-width: 620px; width: 100%; max-height: 86vh; overflow-y: auto;
+  background: var(--card); padding: 32px 36px 30px;
+  border: 1px solid var(--line); outline: 1px solid var(--line); outline-offset: 4px;
+  box-shadow: var(--shadow);
+}
+.paths-h { font-size: 26px; margin-bottom: 6px; }
+.paths-sub { font-size: 14.5px; line-height: 1.62; color: var(--ink-soft); }
+.paths-threads, .paths-roots { display: grid; gap: 7px; }
+.path-opt {
+  display: flex; align-items: flex-start; gap: 11px; text-align: left;
+  border: 1px solid var(--line-faint); background: transparent; cursor: pointer;
+  padding: 10px 12px; font-family: inherit; transition: all 0.15s ease;
+}
+.path-opt:hover { border-color: var(--c); background: var(--parchment-deep); }
+.path-swatch { width: 10px; height: 10px; border-radius: 50%; background: var(--c); flex: none; margin-top: 5px; }
+.path-opt-text { display: block; }
+.path-opt-title { display: block; font-size: 15px; }
+.path-opt-meta { display: block; font-size: 12px; color: var(--ink-soft); margin-top: 2px; line-height: 1.45; }
+
 .node.selected .core { stroke: var(--gilt); stroke-width: 3; }
 
 /* ---------------- overlays on the chart ---------------- */

@@ -260,6 +260,22 @@ LOOM.map = (function () {
     });
   }
 
+  // Light only the nodes on a path and the wires that run between them.
+  function setPath(ids) {
+    var set = ids && ids.length ? ids.reduce(function (m, id) { m[id] = true; return m; }, {}) : null;
+    svg.classList.toggle('pathed', !!set);
+    if (!set) {
+      svg.querySelectorAll('.on-path').forEach(function (e) { e.classList.remove('on-path'); });
+      return;
+    }
+    LOOM.nodes.forEach(function (n) {
+      nodeEls[n.id].classList.toggle('on-path', !!set[n.id]);
+    });
+    svg.querySelectorAll('.wire').forEach(function (w) {
+      w.classList.toggle('on-path', !!set[w.dataset.from] && !!set[w.dataset.to]);
+    });
+  }
+
   function setFilters(set) {
     var active = set && set.size;
     svg.classList.toggle('filtered', !!active);
@@ -434,6 +450,7 @@ LOOM.map = (function () {
     select: select,
     refreshStates: refreshStates,
     setFilters: setFilters,
+    setPath: setPath,
     fitAll: fitAll,
     fitEra: fitEra,
     panToNode: panToNode,
