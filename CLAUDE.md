@@ -12,6 +12,10 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   then http://localhost:4173. Opening `index.html` directly also works.
 - Gate (must pass before any commit): `node scripts/check.mjs`
 - Single lesson check: `node scripts/check.mjs data/lessons/<id>.js`
+- Deploy: `vercel --prod --yes` (project `loom`, linked; static, no build step).
+  Live at https://loom-gray.vercel.app. There is no git remote, so deploys are
+  manual: **forging a lesson does not publish it until you redeploy.**
+  `.vercelignore` keeps scripts/docs/CLAUDE.md out of the published site.
 
 ## Architecture
 
