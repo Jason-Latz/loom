@@ -7,7 +7,7 @@
 // Exits 1 on any error. Warnings do not fail the gate.
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
-import { join, dirname, basename } from 'node:path';
+import { join, resolve, dirname, basename } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import vm from 'node:vm';
 
@@ -22,7 +22,7 @@ const sandbox = {};
 sandbox.window = sandbox; // in a browser, window IS the global
 vm.createContext(sandbox);
 function load(rel) {
-  const code = readFileSync(join(root, rel), 'utf8');
+  const code = readFileSync(resolve(root, rel), 'utf8'); // resolve so an absolute path also works
   try {
     vm.runInContext(code, sandbox, { filename: rel });
   } catch (e) {
@@ -139,6 +139,15 @@ for (const id of lessonIds) {
       }
     }
   if (!Array.isArray(l.deeper) || l.deeper.length < 2) err(`${w}: deeper must list 2+ follow-ups`);
+  // Forge agents have twice written a whole lesson with every apostrophe stripped
+  // (dodging the single-quoted JS string delimiter), yielding "the men shoulders"
+  // and "Aya girlhood". The gate cannot read English, but a lesson of this length
+  // with no apostrophe anywhere has only ever meant that bug.
+  const prose = (l.story || []).concat(l.significance || []).join(' ');
+  if (prose.length > 400 && !/['’]/.test(prose)) {
+    err(`${w}: prose contains no apostrophe at all, which means the possessives were stripped (look for "the men shoulders", "Aya girlhood")`);
+  }
+
   const words = (l.story || []).concat(l.significance || []).map(wordCount).reduce((a, b) => a + b, 0);
   if (words < 1100 || words > 2900) err(`${w}: prose is ${words} words (hard bounds 1100-2900)`);
   else if (words < 1400 || words > 2400) warn(`${w}: prose is ${words} words (aim 1500-2200)`);
