@@ -5,4 +5,5 @@ LOOM.lessonFiles = [
   'spark-of-mind',
   'great-dispersal',
   'firelight-economy',
+  'tribe-of-strangers',
 ];
