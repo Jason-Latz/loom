@@ -88,6 +88,11 @@ kind (a trade book, a scholarly work, a primary source or site).
 
 - Never use em dashes or en dashes anywhere; use commas, colons, periods,
   parentheses, or the word "to" in ranges. The check gate enforces this.
+- **Write normal possessives and contractions.** Two forge agents once stripped
+  every apostrophe from a whole lesson, apparently to protect their
+  single-quoted JS strings, and shipped "the men shoulders" and "Aya girlhood".
+  If a string needs an apostrophe, use a curly one (’, as the exemplar does) or
+  escape it. The gate now fails any lesson whose prose has no apostrophe at all.
 - Dates as "c. 9500 BCE", "1347 CE" on first use per section, bare after.
 - No bullet lists inside story or significance; they are prose.
 - No headers inside the arrays; the app renders section heads itself.

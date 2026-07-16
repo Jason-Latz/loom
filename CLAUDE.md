@@ -45,17 +45,35 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   display; keep it when adding overlays.
 - Screenshot QA: intro overlay shows on first visit only (localStorage), clear
   `loom.v1` to reproduce first-run.
+- **The gate cannot read English.** It checks structure, not truth or grammar.
+  Every batch of forged lessons needs an adversarial reviewer agent too; that
+  pass has caught a superseded dating and several confidently-wrong claims that
+  the gate passed green.
+- **Browser QA: the preview tab reports `visibilityState: hidden` and never
+  fires requestAnimationFrame**, so pan/zoom animations appear to do nothing
+  when driven from javascript_tool. Take a screenshot to wake the tab, or assert
+  on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
+  hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-07-15)
+## State (2026-07-16)
 
-- Graph complete: 120 nodes, ~243 wires, 10 eras, all validated.
-- Era I (8 lessons) written; Eras II-X are seeds awaiting the forge.
+- Graph complete: 120 nodes, 243 wires, 10 eras, all validated.
+- Era I fully written (8 lessons, ~14,800 words, 13 callback links), reviewed
+  adversarially, and verified in the browser. Eras II-X are seeds awaiting the forge.
 - Next priorities: forge Era II ("forge era 2"), consider a "paths" feature
   (present-back and thematic traversals are modeled but not built), maybe
   deploy to Vercel for phone reading.
 
 ## Change log
 
+- **2026-07-16** — Era I finished and hardened. Forged the last 3 lessons, then
+  ran an adversarial verify pass over all 8: fixed a Blombos engraved-vs-drawn
+  conflation, an inverted claim about the deepest human-ancestry splits, a
+  Sulawesi dating superseded in 2024, and a false "final node" claim. Two agents
+  had stripped every apostrophe from their lessons ("the men shoulders") and the
+  gate passed them, so the gate now fails apostrophe-less prose. Also fixed the
+  reader calling a jump back to lesson one the "next" lesson, and a zero-height
+  container permanently poisoning the chart viewBox with Infinity/NaN.
 - **2026-07-15** — Born: graph (120 nodes/10 eras), parchment atlas app
   (map/dossier/reader/progress/lamplight), check gate, forge spec + skill,
   Era I lessons (exemplar by Fable, rest by Opus agents under the spec).

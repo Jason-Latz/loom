@@ -38,13 +38,29 @@ is the ten-minute reading experience behind one node of the 120-node graph.
 Spawn one subagent per lesson in parallel (Opus for the prose), each following
 steps 1-5 and running the single-file check
 (`node scripts/check.mjs data/lessons/<id>.js`). Tell each agent NOT to touch
-the manifest. When all agents return, update the manifest yourself in one
-edit, run the full check, spot-read each lesson for voice drift and em dashes,
-then commit each lesson separately.
+the manifest.
+
+**Then verify adversarially.** The gate only checks structure, so pair every
+lesson with a reviewer agent that reads the spec, the exemplar, and the node,
+and hunts for: factual claims stated with more confidence than the scholarship
+supports, superseded datings, voice drift into encyclopedia tone, callbacks
+that are trivia rather than comparisons, and threadsOut whys that just echo the
+edge label. This pass has caught real errors every time it has been run,
+including in lessons the gate passed green.
+
+Fix the blockers yourself, then update the manifest in one edit, run the full
+check, and commit each lesson separately.
+
+To keep the gate green at every commit (it errors on any lesson file that is
+on disk but absent from the manifest), park the not-yet-committed lesson files
+outside the repo and move them back one at a time, advancing the manifest with
+each commit.
 
 ## Hard rules (the ones agents break most)
 
 - No em dashes or en dashes anywhere, including date ranges ("1450 to 1700").
+- Write real possessives and contractions; never strip apostrophes to protect a
+  JS string. The gate fails prose containing no apostrophe at all.
 - Exactly 5 questions; callbacks only to earlier nodes.
 - storyContext labels composite characters as composites.
 - Prose stays in the 1,500-2,200 word aim (story + significance).
