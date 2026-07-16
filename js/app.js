@@ -196,7 +196,7 @@ LOOM.app = (function () {
     card.appendChild(h('h2', null, 'LOOM'));
     card.appendChild(h('div', 'intro-sub', 'a cartographer’s atlas of why the world is the way it is'));
     card.appendChild(h('p', null,
-      'This chart holds 120 turning points of the human story, from the first spark of symbolic thought to the ' +
+      'This chart holds ' + LOOM.nodes.length + ' turning points of the human story, from the first spark of symbolic thought to the ' +
       'present you are standing in. Time rises from the bottom; the world’s regions run left to right. Four pigments ' +
       'thread every age together: Lapis for ideas and belief, Oxblood for power, Gilt for wealth, Verdigris for craft and science.'));
     card.appendChild(h('p', null,

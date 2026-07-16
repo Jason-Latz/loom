@@ -8,6 +8,14 @@ LOOM.map = (function () {
 
   var svg, wrap, tip;
   var H = 0;
+  // The chart is bookended by the world: an engraved map band below the oldest
+  // era and another above the newest, so all of history sits between two earths.
+  // The source map is equirectangular 2000x1000; we crop off Antarctica and the
+  // empty high Arctic so the band reads as land rather than as ocean.
+  var MAP_LAT_TOP = 78, MAP_LAT_BOT = -58;
+  var MAP_Y_TOP = (90 - MAP_LAT_TOP) / 180 * 1000;
+  var MAP_Y_BOT = (90 - MAP_LAT_BOT) / 180 * 1000;
+  var MAPB = 0, worldBottomY = 0, worldTopY = 0, eraTop = 0;
   var vb = { x: 0, y: 0, w: W, h: 100 };
   var pos = {};      // node id -> {x, y}
   var bands = [];    // {n, title, span, top, h, center}
@@ -30,10 +38,13 @@ LOOM.map = (function () {
     var byEra = {};
     LOOM.nodes.forEach(function (n) { (byEra[n.era] = byEra[n.era] || []).push(n); });
 
-    var totalRows = LOOM.nodes.length;
-    H = MT + MB + LOOM.eras.length * PAD * 2 + totalRows * ROW;
+    MAPB = window.LOOM_WORLDMAP ? (MAP_Y_BOT - MAP_Y_TOP) * (W / 2000) : 0;
 
-    var cursor = H - MB; // bottom edge of the oldest era's band
+    var totalRows = LOOM.nodes.length;
+    H = MT + MB + 2 * MAPB + LOOM.eras.length * PAD * 2 + totalRows * ROW;
+
+    worldBottomY = H - MB - MAPB;
+    var cursor = worldBottomY; // bottom edge of the oldest era's band
     LOOM.eras.forEach(function (era) {
       var list = byEra[era.n] || [];
       var h = list.length * ROW + PAD * 2;
@@ -44,14 +55,72 @@ LOOM.map = (function () {
       });
       cursor = top;
     });
+    eraTop = cursor;              // top edge of the newest era's band
+    worldTopY = eraTop - MAPB;    // the second world sits above it
+  }
+
+  // ---------- the world, engraved ----------
+  function renderWorld(parent) {
+    var wm = window.LOOM_WORLDMAP;
+    if (!wm) return;
+    var scale = W / 2000;
+    var defs = el('defs', {}, parent);
+
+    band(worldBottomY, 'up');
+    band(worldTopY, 'down');
+
+    // dir is the direction the map fades in: it is solid at the outer edge of
+    // the chart and dissolves into the parchment where history begins.
+    function band(top, dir) {
+      var gid = 'worldfade-' + dir;
+      var grad = el('linearGradient', {
+        id: gid,
+        gradientUnits: 'userSpaceOnUse',
+        x1: 0, x2: 0,
+        y1: dir === 'up' ? top + MAPB : top,
+        y2: dir === 'up' ? top : top + MAPB,
+      }, defs);
+      el('stop', { offset: '0', 'stop-color': '#fff', 'stop-opacity': '1' }, grad);
+      el('stop', { offset: '0.65', 'stop-color': '#fff', 'stop-opacity': '0.72' }, grad);
+      el('stop', { offset: '1', 'stop-color': '#fff', 'stop-opacity': '0.10' }, grad);
+
+      // The mask region must be given explicitly in user space. Without x/y/w/h
+      // it defaults to percentages of the bounding box, which silently clipped
+      // the whole band away. It doubles as the latitude crop.
+      var mid = 'worldmask-' + dir;
+      var mask = el('mask', {
+        id: mid, maskUnits: 'userSpaceOnUse',
+        x: 0, y: top, width: W, height: MAPB,
+      }, defs);
+      el('rect', { x: 0, y: top, width: W, height: MAPB, fill: 'url(#' + gid + ')' }, mask);
+
+      var g = el('g', { 'class': 'world-band', mask: 'url(#' + mid + ')' }, parent);
+      var inner = el('g', { transform: 'translate(0 ' + (top - MAP_Y_TOP * scale) + ') scale(' + scale + ')' }, g);
+
+      var grat = el('g', { 'class': 'world-graticule' }, inner);
+      var lon, lat;
+      for (lon = -180; lon <= 180; lon += 30) {
+        var gx = (lon + 180) / 360 * 2000;
+        el('line', { x1: gx, y1: 0, x2: gx, y2: 1000 }, grat);
+      }
+      for (lat = -60; lat <= 60; lat += 30) {
+        var gy = (90 - lat) / 180 * 1000;
+        el('line', { x1: 0, y1: gy, x2: 2000, y2: gy }, grat);
+      }
+      el('line', { x1: 0, y1: 500, x2: 2000, y2: 500, 'class': 'world-equator' }, inner);
+      el('path', { d: wm.land, 'class': 'world-land' }, inner);
+    }
   }
 
   // ---------- render ----------
   function render() {
+    var gWorld = el('g', { 'class': 'world-layer' }, svg);
     var gBands = el('g', {}, svg);
     var gGuides = el('g', {}, svg);
     var gWires = el('g', {}, svg);
     var gNodes = el('g', {}, svg);
+
+    renderWorld(gWorld);
 
     bands.forEach(function (b, i) {
       var r = el('rect', { x: 0, y: b.top, width: W, height: b.h, 'class': 'era-band' + (i % 2 ? ' alt' : '') }, gBands);
@@ -61,15 +130,18 @@ LOOM.map = (function () {
       var span = el('text', { x: 66, y: b.center, 'class': 'era-span', 'text-anchor': 'middle', transform: 'rotate(-90 66 ' + b.center + ')' }, gBands);
       span.textContent = b.span;
     });
-    el('line', { x1: 0, y1: H - MB, x2: W, y2: H - MB, 'class': 'era-rule' }, gBands);
+    el('line', { x1: 0, y1: worldBottomY, x2: W, y2: worldBottomY, 'class': 'era-rule' }, gBands);
 
+    // Meridians belong to the chart, not to the maps: the region columns are
+    // evenly spaced for legibility and do not claim to be real longitudes, so
+    // they stop where the world begins.
     LOOM.regions.forEach(function (r) {
       if (r.id === 'world') return;
       var x = ML + (r.x / 100) * (W - ML - MR);
-      el('line', { x1: x, y1: MT, x2: x, y2: H - MB, 'class': 'meridian' }, gGuides);
-      var t1 = el('text', { x: x, y: MT - 34, 'class': 'meridian-label' }, gGuides);
+      el('line', { x1: x, y1: eraTop, x2: x, y2: worldBottomY, 'class': 'meridian' }, gGuides);
+      var t1 = el('text', { x: x, y: eraTop - 34, 'class': 'meridian-label' }, gGuides);
       t1.textContent = r.name;
-      var t2 = el('text', { x: x, y: H - MB + 40, 'class': 'meridian-label' }, gGuides);
+      var t2 = el('text', { x: x, y: worldBottomY + 40, 'class': 'meridian-label' }, gGuides);
       t2.textContent = r.name;
     });
 
@@ -349,11 +421,11 @@ LOOM.map = (function () {
     computeLayout();
     render();
     bindInput();
-    // open on the origins: fit width, bottom of the chart
+    // open on the origins: the oldest era with the world it rose from beneath it
     vb.w = W;
     vb.h = vb.w * aspect();
     vb.x = 0;
-    vb.y = H - vb.h + 30;
+    vb.y = worldBottomY + Math.min(400, MAPB) - vb.h;
     apply();
   }
 

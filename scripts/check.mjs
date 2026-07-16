@@ -166,6 +166,9 @@ if (!singleLesson) {
   if (existsSync(indexPath)) {
     const html = readFileSync(indexPath, 'utf8');
     for (const f of eraFiles) if (!html.includes(`data/eras/${f}`)) err(`index.html missing script tag for data/eras/${f}`);
+    if (existsSync(join(root, 'data/worldmap.js')) && !html.includes('data/worldmap.js')) {
+      err('index.html missing script tag for data/worldmap.js, so the chart would silently lose its world');
+    }
   } else {
     warn('index.html not present yet');
   }
