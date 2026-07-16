@@ -206,9 +206,21 @@ LOOM.map = (function () {
   }
 
   // ---------- viewport ----------
-  function aspect() { return wrap.clientHeight / Math.max(1, wrap.clientWidth); }
+  // A zero-height container (hidden tab, mid-layout, a phone mid-rotation) used to
+  // make this return 0; every place that divides by aspect then produced Infinity,
+  // the viewBox became "-Infinity NaN Infinity Infinity", and the chart stayed dead
+  // until a reload. Fall back to a sane ratio instead of poisoning the viewport.
+  function aspect() {
+    var w = wrap.clientWidth, h = wrap.clientHeight;
+    if (!w || !h) return 0.5625;
+    return h / w;
+  }
   function apply() {
+    // repair any non-finite value before it can reach the viewBox attribute
+    if (!isFinite(vb.w) || vb.w <= 0) vb.w = W;
     vb.h = vb.w * aspect();
+    if (!isFinite(vb.x)) vb.x = (W - vb.w) / 2;
+    if (!isFinite(vb.y)) vb.y = H - vb.h;
     var minX = -vb.w + 220, maxX = W - 220;
     var minY = -vb.h + 220, maxY = H - 220;
     vb.x = Math.max(minX, Math.min(maxX, vb.x));
@@ -263,6 +275,7 @@ LOOM.map = (function () {
   var animating = null;
   function animateTo(target, ms) {
     ms = ms || 450;
+    if (!isFinite(vb.x) || !isFinite(vb.y) || !isFinite(vb.w)) apply(); // repair before reading a start point
     var from = { x: vb.x, y: vb.y, w: vb.w };
     var start = performance.now();
     if (animating) cancelAnimationFrame(animating);
