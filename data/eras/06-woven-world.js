@@ -41,6 +41,40 @@ LOOM.node([
     ],
   },
   {
+    id: 'angkor-hydraulic',
+    era: 6,
+    title: 'The City That Drank the Monsoon',
+    date: 'c. 1150 CE',
+    sort: 1151,
+    region: 'easia',
+    x: 85,
+    threads: ['craft', 'power'],
+    hook: 'The largest city on earth before the industrial age is built to hold water, and dies when the water stops obeying.',
+    summary:
+      'The Khmer ruled mainland Southeast Asia from Angkor, a low, sprawling capital of perhaps three quarters of a million people that ran on engineered water: vast reservoirs, canals, and rice fields timed to the monsoon. Its god-kings raised Angkor Wat, still the largest religious monument ever built. When the monsoon turned erratic in the fifteenth century, the machine that fed the city failed with it.',
+    edges: [
+      { to: 'inka-threads', type: 'echoes', why: 'Another empire that grew enormous by engineering a landscape and commanding labor rather than by markets and coin.' },
+      { to: 'burning-mirror', type: 'echoes', why: 'A civilization that lived by managing water came apart when the climate stopped keeping its schedule, which is the oldest version of the bill now coming due.' },
+    ],
+  },
+  {
+    id: 'neo-confucian-turn',
+    era: 6,
+    title: 'The Neo-Confucian Turn',
+    date: 'c. 1175 CE',
+    sort: 1175,
+    region: 'easia',
+    x: 90,
+    threads: ['ideas'],
+    hook: 'A Song philosopher rebuilds Confucius for a world that has met the Buddha, and sets the syllabus of half of Asia for seven hundred years.',
+    summary:
+      'Buddhism had asked questions the old Confucian texts could not answer, so Zhu Xi answered them: a metaphysics of principle and matter underneath an ethics of study, ritual, and self-cultivation. He fixed the Four Books as the canon, and from 1313 his commentaries were the imperial examinations. Korea, Japan, and Vietnam took up the same syllabus, making one reading of one tradition the mental furniture of East Asia’s governing class.',
+    edges: [
+      { to: 'tokugawa-great-peace', type: 'enables', why: 'Tokugawa Japan governs in Zhu Xi’s categories, and its scholars spend two centuries arguing inside them.' },
+      { to: 'opium-and-humiliation', type: 'collides', why: 'A curriculum unchanged for six centuries met steam and shell, and the exams that made the elite could not explain the defeat.' },
+    ],
+  },
+  {
     id: 'genghis-exchange',
     era: 6,
     title: 'The Mongol Exchange',
@@ -55,6 +89,24 @@ LOOM.node([
     edges: [
       { to: 'song-gifts-go-west', type: 'enables', why: 'One power holding the whole road moved everything along it.' },
       { to: 'black-death', type: 'enables', why: 'The plague rode the same protected routes as the silk.' },
+      { to: 'delhi-sultanate', type: 'collides', why: 'The Mongols gutted Baghdad and broke against Delhi, which is much of why Indian Islam kept its scholars, its books, and its momentum.' },
+    ],
+  },
+  {
+    id: 'delhi-sultanate',
+    era: 6,
+    title: 'The Sultans of Delhi',
+    date: '1206 CE',
+    sort: 1207,
+    region: 'sasia',
+    x: 72,
+    threads: ['power', 'ideas'],
+    hook: 'A former slave takes the throne of northern India, and his successors hold the door the Mongols could not break.',
+    summary:
+      'From 1206 a run of Turkic and Afghan dynasties ruled northern India from Delhi, the first of them founded by Qutb al-Din Aibak, a general who had been a slave. They threw back the Mongol invasions that gutted Baghdad, and refugee scholars and artisans poured in behind the walls. Persian became the language of rule, and Muslim sovereignty over a Hindu majority became the permanent question of Indian politics.',
+    edges: [
+      { to: 'gunpowder-empires', type: 'transforms', why: 'The Mughals inherit Delhi’s throne, its Persian administration, and its unsolved problem of ruling a majority that does not share the ruler’s faith.' },
+      { to: 'midnight-freedoms', type: 'echoes', why: 'The question opened here, of who belongs to India and on what terms, is still being answered at Partition and long after it.' },
     ],
   },
   {

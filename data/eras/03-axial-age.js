@@ -157,6 +157,7 @@ LOOM.node([
     edges: [
       { to: 'qin-hammer', type: 'collides', why: 'Legalism won the argument by winning the war.' },
       { to: 'han-mandate', type: 'transforms', why: 'The Han fused Confucian ethics onto Legalist machinery.' },
+      { to: 'neo-confucian-turn', type: 'transforms', why: 'Confucius, challenged by the Buddha and rebuilt by Zhu Xi, hardens from one voice in an open argument into an orthodoxy with an examination.' },
     ],
   },
   {

@@ -7,6 +7,24 @@ LOOM.era({
 
 LOOM.node([
   {
+    id: 'rice-and-the-yangtze',
+    era: 2,
+    title: 'The Other Grain',
+    date: 'c. 7000 BCE',
+    sort: -7000,
+    region: 'easia',
+    x: 89,
+    threads: ['wealth', 'craft'],
+    hook: 'While the Levant is taming wheat, people in the Yangtze wetlands tame a marsh grass that will end up feeding half the world.',
+    summary:
+      'In the marshes of the Yangtze, foragers began managing wild rice and had domesticated it by roughly 6000 BCE, while millet farmers rose independently in the drier north. Paddy rice is thirsty and fussy and astonishingly productive, so it rewarded dense settlement, coordinated water, and enormous shared labor. No other crop feeds more human beings today.',
+    edges: [
+      { to: 'yellow-river-bronze', type: 'enables', why: 'Two grains, millet in the north and rice in the south, feed the kingdoms that will gradually become China.' },
+      { to: 'song-economic-miracle', type: 'enables', why: 'Quick-ripening champa rice, double-cropped, is what finally lets Chinese cities hold a million people.' },
+      { to: 'angkor-hydraulic', type: 'echoes', why: 'Wet rice everywhere hands power to whoever can command the water and the labor that move it.' },
+    ],
+  },
+  {
     id: 'uruk-first-city',
     era: 2,
     title: 'Uruk, the First City',

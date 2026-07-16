@@ -7,6 +7,23 @@ LOOM.era({
 
 LOOM.node([
   {
+    id: 'high-qing',
+    era: 8,
+    title: 'The High Qing',
+    date: 'c. 1750 CE',
+    sort: 1750,
+    region: 'easia',
+    x: 88,
+    threads: ['power', 'wealth'],
+    hook: 'In 1750 the largest, richest, most competently governed state on earth is Chinese, and its emperor sees nothing in Europe worth having.',
+    summary:
+      'Under Kangxi, Yongzheng, and Qianlong the Qing doubled their territory, absorbed Xinjiang, Tibet, and Mongolia, and roughly tripled the population toward three hundred million on the back of American crops. China was the world’s largest economy and the sink into which its silver drained. Qianlong told George III in 1793 that his empire needed nothing Britain made. He was right, and within fifty years catastrophically wrong.',
+    edges: [
+      { to: 'opium-and-humiliation', type: 'collides', why: 'Fifty years after telling Britain it needed nothing, the same empire could not keep British opium out of its own harbors.' },
+      { to: 'great-convergence', type: 'echoes', why: 'China spent most of recorded history as the world’s largest economy, which makes the two centuries when it was not the strange interval rather than the rule.' },
+    ],
+  },
+  {
     id: 'republic-of-letters',
     era: 8,
     title: 'The Republic of Letters',
@@ -22,6 +39,24 @@ LOOM.node([
       { to: 'american-experiment', type: 'enables', why: 'The colonists build a state from Enlightenment blueprints.' },
       { to: 'french-revolution', type: 'enables', why: 'Philosophy loaded the cannon that 1789 fired.' },
       { to: 'wealth-of-nations', type: 'enables', why: 'Political economy is the Enlightenment turned on commerce.' },
+    ],
+  },
+  {
+    id: 'company-raj',
+    era: 8,
+    title: 'The Company Raj',
+    date: '1757 CE',
+    sort: 1757,
+    region: 'sasia',
+    x: 74,
+    threads: ['power', 'wealth'],
+    hook: 'A private trading firm with shareholders, a balance sheet, and its own army makes itself the government of India.',
+    summary:
+      'After Plassey in 1757 the English East India Company turned trading privileges into territorial rule, collecting Bengal’s land tax with an army of Indian sepoys it paid itself. It taxed and undersold the finest textile industry on earth into ruin, presided over famines that killed millions, and was finally taken over by the Crown after the rebellion of 1857. For a century, a corporation governed tens of millions of people.',
+    edges: [
+      { to: 'steam-and-coal', type: 'collides', why: 'Indian cotton cloth was the good Britain could not match by hand, so Britain built machines to beat it and tariffs to finish it.' },
+      { to: 'salt-and-satyagraha', type: 'collides', why: 'The rule founded on Bengal’s revenue is the rule Gandhi makes ungovernable with a fistful of salt.' },
+      { to: 'midnight-freedoms', type: 'transforms', why: 'What a company began and a Crown inherited ends at midnight in 1947, along the borders they drew.' },
     ],
   },
   {
@@ -176,6 +211,7 @@ LOOM.node([
     edges: [
       { to: 'meiji-lightning', type: 'enables', why: 'Watching China carved up scared Japan straight into reform.' },
       { to: 'mao-to-market', type: 'enables', why: 'The century of humiliation is Chinese communism’s founding story.' },
+      { to: 'fall-of-the-qing', type: 'transforms', why: 'Seventy years of concessions, indemnities, and half-finished reforms end with the dynasty itself.' },
     ],
   },
   {

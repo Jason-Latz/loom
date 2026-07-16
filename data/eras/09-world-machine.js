@@ -59,6 +59,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'fall-of-the-qing',
+    era: 9,
+    title: 'The Last Emperor',
+    date: '1911 CE',
+    sort: 1911,
+    region: 'easia',
+    x: 88,
+    threads: ['power', 'ideas'],
+    hook: 'Two thousand years of dynastic rule end almost by accident, and nobody can agree on what should stand in its place.',
+    summary:
+      'Decades of failed reform, indemnity, and lost wars ended the Qing in 1911, and the republic that replaced it dissolved into warlord fiefdoms within a few years. The May Fourth movement of 1919 turned humiliation into a search for new foundations: science, democracy, writing in the vernacular, and for some, Marxism. What a modern China should actually be was asked here, and the asking has never entirely stopped.',
+    edges: [
+      { to: 'war-of-the-world', type: 'collides', why: 'A China broken into fiefdoms is the opening Japan drives into, and the Pacific war starts there years before Pearl Harbor.' },
+      { to: 'mao-to-market', type: 'enables', why: 'Out of the warlord wreckage and the May Fourth search comes the party that answers the question with a hammer.' },
+    ],
+  },
+  {
     id: 'july-1914',
     era: 9,
     title: 'The Sleepwalk of 1914',

@@ -56,6 +56,7 @@ LOOM.node([
     edges: [
       { to: 'house-of-wisdom', type: 'collides', why: 'After Talas in 751, captured Chinese papermakers gave Islam its paper.' },
       { to: 'song-economic-miracle', type: 'transforms', why: 'Tang cosmopolitanism matures into Song commercial genius.' },
+      { to: 'heian-and-genji', type: 'enables', why: 'Japan imported the Tang model wholesale, then let the embassies lapse and made the borrowed thing wholly its own.' },
     ],
   },
   {
@@ -140,6 +141,7 @@ LOOM.node([
     edges: [
       { to: 'treasure-fleets', type: 'enables', why: 'Zheng He’s fleets sail routes Muslim and Indian merchants built.' },
       { to: 'iberian-wager', type: 'enables', why: 'Da Gama did not open the Indian Ocean; he barged into it.' },
+      { to: 'angkor-hydraulic', type: 'enables', why: 'Indian religion, script, and kingship sailed east on these winds and were remade into something wholly Khmer.' },
     ],
   },
   {
@@ -158,6 +160,23 @@ LOOM.node([
       { to: 'song-gifts-go-west', type: 'enables', why: 'Its inventions leak westward along the roads the Mongols will secure.' },
       { to: 'treasure-fleets', type: 'enables', why: 'Song shipwrights and compasses make the great fleets buildable.' },
       { to: 'great-convergence', type: 'echoes', why: 'A millennium later, China resumes its place as the world’s workshop.' },
+    ],
+  },
+  {
+    id: 'heian-and-genji',
+    era: 5,
+    title: 'The Pillow and the Brush',
+    date: 'c. 1008 CE',
+    sort: 1008,
+    region: 'easia',
+    x: 93,
+    threads: ['ideas'],
+    hook: 'A lady-in-waiting at a cloistered court writes what many call the world’s first novel, in a script the men dismissed as women’s hand.',
+    summary:
+      'Heian Japan let its embassies to China lapse and turned inward, refining a court where the right poem mattered more than any battle. Barred from the prestige of Chinese letters, women wrote in the kana script instead, and Murasaki Shikibu’s Tale of Genji arrived around 1008 as the world’s first psychological novel. Outside the capital, the warriors the court hired to keep order were quietly becoming the samurai.',
+    edges: [
+      { to: 'tokugawa-great-peace', type: 'transforms', why: 'The provincial warriors this court hired to keep order end up inheriting the country and holding it for centuries.' },
+      { to: 'gutenberg-explosion', type: 'echoes', why: 'Writing in the everyday tongue instead of the prestige language keeps handing literature to the voices the classics shut out.' },
     ],
   },
   {

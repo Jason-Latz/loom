@@ -89,6 +89,7 @@ LOOM.node([
     edges: [
       { to: 'silver-river', type: 'enables', why: 'Conquest of emptied empires delivered the mines of Potosí.' },
       { to: 'middle-passage', type: 'enables', why: 'The demographic void created the labor demand the slave trade answered.' },
+      { to: 'high-qing', type: 'enables', why: 'Maize, potatoes, and peanuts out of the Americas fed the Chinese population boom that made the High Qing enormous, and then strained it past feeding.' },
     ],
   },
   {
@@ -122,6 +123,7 @@ LOOM.node([
       'Potosí’s forced-labor mines and the Manila galleons created the first planetary economy: American silver paying for Chinese silk and porcelain, with European middlemen skimming the flow. China, remonetizing on silver, was the world’s great demand sink. Global trade began as a triangle in which Europe was the carrier, not yet the center.',
     edges: [
       { to: 'dutch-money-machine', type: 'enables', why: 'Iberian silver flows lubricate Amsterdam’s new financial machinery.' },
+      { to: 'ming-falls', type: 'collides', why: 'When the silver tide that had monetized China faltered, the dynasty that had come to depend on it could no longer pay its own armies.' },
       { to: 'opium-and-humiliation', type: 'enables', why: 'Europe paid China in silver for centuries, until it found opium instead.' },
     ],
   },
@@ -139,6 +141,7 @@ LOOM.node([
       'Ottomans, Safavids, and Mughals used cannon and cavalry to rule most Muslims and, in India, a Hindu majority. Akbar’s Mughal state married Persian administration to religious pluralism and taxed a quarter of world manufacturing. In 1600 these were Earth’s superpowers; their later stagnation against Europe’s upstarts is a core puzzle of modern history.',
     edges: [
       { to: 'opium-and-humiliation', type: 'echoes', why: 'Like the Qing after them, Asia’s great empires met industrial Europe too late.' },
+      { to: 'company-raj', type: 'collides', why: 'Mughal collapse left a subcontinent of quarrelling successor states that a single disciplined company army could pick off one at a time.' },
     ],
   },
   {
@@ -209,6 +212,23 @@ LOOM.node([
       { to: 'republic-of-letters', type: 'enables', why: 'Science’s confidence feeds the Enlightenment’s program.' },
       { to: 'steam-and-coal', type: 'enables', why: 'Instrument culture and mechanics reach the workshop and the mine.' },
       { to: 'darwins-abyss', type: 'enables', why: 'The method eventually turns its gaze on life and on us.' },
+    ],
+  },
+  {
+    id: 'ming-falls',
+    era: 7,
+    title: 'The Ming Falls',
+    date: '1644 CE',
+    sort: 1644,
+    region: 'easia',
+    x: 88,
+    threads: ['power', 'wealth'],
+    hook: 'A cold century, a silver panic, a peasant army, and a gate opened from the inside: the richest empire on earth changes hands.',
+    summary:
+      'The seventeenth century turned cold and violent across the world. China taxed in silver but did not mine it, so when the foreign tide of it faltered, Ming finances buckled into famine and revolt. A rebel took Beijing, and a Ming general opened the passes to the Manchus rather than submit to him. A few hundred thousand outsiders took a country of well over a hundred million and ruled it as the Qing.',
+    edges: [
+      { to: 'high-qing', type: 'transforms', why: 'The conquerors spend the next century proving they could govern China better than the dynasty they replaced.' },
+      { to: 'roaring-and-crashing', type: 'echoes', why: 'A great economy wired to a money supply it does not control learns what happens when the flow stops, a lesson the world keeps having to relearn.' },
     ],
   },
   {
