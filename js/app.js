@@ -35,12 +35,19 @@ LOOM.app = (function () {
     var n = LOOM.nodes.find(function (x) { return LOOM.lessons[x.id] && !state.read[x.id]; });
     return n ? n.id : null;
   }
+  // Returns {id, forward}. forward=false means the sequence has no unread lesson
+  // after this one, so we are sending the reader back to an earlier gap; the
+  // reader labels the two cases differently rather than calling a jump
+  // backward "next".
   function nextAfter(id) {
     var idx = LOOM.nodes.findIndex(function (x) { return x.id === id; });
     for (var i = idx + 1; i < LOOM.nodes.length; i++) {
-      if (LOOM.lessons[LOOM.nodes[i].id] && !state.read[LOOM.nodes[i].id]) return LOOM.nodes[i].id;
+      if (LOOM.lessons[LOOM.nodes[i].id] && !state.read[LOOM.nodes[i].id]) {
+        return { id: LOOM.nodes[i].id, forward: true };
+      }
     }
-    return nextId() !== id ? nextId() : null;
+    var back = nextId();
+    return back && back !== id ? { id: back, forward: false } : null;
   }
   function refresh() {
     LOOM.map.refreshStates(state.read, nextId());

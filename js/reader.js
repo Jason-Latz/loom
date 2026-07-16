@@ -174,14 +174,16 @@ LOOM.reader = (function () {
     chartBtn.addEventListener('click', function () { LOOM.app.markRead(id); });
     foot.appendChild(chartBtn);
 
-    var nid = LOOM.app.nextAfter(id);
-    if (nid) {
+    var next = LOOM.app.nextAfter(id);
+    if (next) {
       var nextWrap = h('div', 'next-up');
-      nextWrap.appendChild(document.createTextNode('Next on the sequence: '));
-      var nb = h('button', 'btn', node(nid).title);
+      nextWrap.appendChild(document.createTextNode(
+        next.forward ? 'Next on the sequence: ' : 'Nothing charted lies ahead yet. Still unread behind you: '
+      ));
+      var nb = h('button', 'btn', node(next.id).title);
       nb.addEventListener('click', function () {
         closeLesson();
-        LOOM.map.select(nid);
+        LOOM.map.select(next.id);
       });
       nextWrap.appendChild(nb);
       foot.appendChild(nextWrap);
