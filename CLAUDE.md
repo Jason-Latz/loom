@@ -22,10 +22,12 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
 - `index.html` — shell; loads all data via plain script tags (no modules, no fetch, so file:// works).
 - `styles.css` — the whole design system. Parchment/ink + 4 pigment thread colors as CSS vars; `body.lamplight` flips to night palette.
 - `data/graph-core.js` — LOOM registry: threads, regions (map meridians), era/node/lesson tables.
+- `data/worldmap.js` — Natural Earth 110m land as one SVG path (public domain), equirectangular 2000x1000. Rendered as the map bands that bookend the chart.
 - `data/eras/01..10-*.js` — the graph. Nodes carry id/title/date/sort/region/x/threads/hook/summary/edges. Node array order per era = reading order = main sequence. Edges point FORWARD in that sequence only.
 - `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js loads them, then starts the app).
-- `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters.
+- `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters, path highlighting, and the two world-map bands.
 - `js/reader.js` — dossier panel + lesson reading room + questions UI.
+- `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from a feature of the present). Always a subset of the real graph.
 - `js/app.js` — localStorage state (`loom.v1`), header controls, search, intro.
 - `docs/forge-spec.md` — binding style contract for lesson prose.
 - `.claude/skills/forge-lesson/` — the skill that writes new lessons ("forge <node-id>").
