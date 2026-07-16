@@ -1,0 +1,5 @@
+# The atlas is the static site; the workshop stays home.
+.claude/
+docs/
+scripts/
+CLAUDE.md
