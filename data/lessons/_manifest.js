@@ -4,4 +4,5 @@ LOOM.lessonFiles = [
   // Era I: The Long Dawn
   'spark-of-mind',
   'great-dispersal',
+  'firelight-economy',
 ];
