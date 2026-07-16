@@ -9,4 +9,5 @@ LOOM.lessonFiles = [
   'paint-in-the-dark',
   'world-the-ice-made',
   'village-before-the-farm',
+  'trap-of-seeds',
 ];
