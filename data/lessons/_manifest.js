@@ -15,4 +15,5 @@ LOOM.lessonFiles = [
   'rice-and-the-yangtze',
   'uruk-first-city',
   'invention-of-writing',
+  'surplus-and-the-state',
 ];
