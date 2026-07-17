@@ -23,4 +23,5 @@ LOOM.lessonFiles = [
   'code-of-hammurabi',
   'yellow-river-bronze',
   'bronze-web',
+  'maize-and-the-americas',
 ];
