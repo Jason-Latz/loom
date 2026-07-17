@@ -19,4 +19,5 @@ LOOM.lessonFiles = [
   'gift-of-the-nile',
   'indus-enigma',
   'gods-of-the-city',
+  'horse-and-wheel',
 ];
