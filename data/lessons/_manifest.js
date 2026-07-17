@@ -17,4 +17,5 @@ LOOM.lessonFiles = [
   'invention-of-writing',
   'surplus-and-the-state',
   'gift-of-the-nile',
+  'indus-enigma',
 ];
