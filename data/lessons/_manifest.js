@@ -39,4 +39,5 @@ LOOM.lessonFiles = [
   'socratic-turn',
   'alexanders-comet',
   'ashoka-wheel',
+  'qin-hammer',
 ];
