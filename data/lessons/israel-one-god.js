@@ -1,0 +1,87 @@
+LOOM.lesson({
+  id: 'israel-one-god',
+  readingMinutes: 10,
+  storyContext:
+    'Āl-Yāhūdu and its neighboring settlements in Babylonia, around 540 BCE. Natan-Yāma and his family are composites drawn from cuneiform contracts dated 572 to 477 BCE, including Judean names, fields, rents, witnesses, and imperial obligations. No prophetic text was found with the archive.',
+  story: [
+    'Natan-Yāma presses his thumbnail into the wet clay, then lifts it before the mark can blur. The tablet is small enough to close inside his fist. On it, a Babylonian-trained scribe has fixed a field, a rent, an obligation, a date, and the names of men who watched the words become binding. Beyond the courtyard, canals divide the flat country into glittering lines. Barley rises where water is brought and fails where water is not. Natan’s father remembered hills around Jerusalem. Natan knows the sound of a sluice gate opening in Babylonia.',
+    'The settlement is called Āl-Yāhūdu, the Town of Judah. It is not a second Jerusalem. Its houses and exact location are lost because the tablets entered collections without controlled excavation, but more than two hundred documents preserve an inhabited legal world. Families lease and cultivate land, borrow, pay, marry, inherit, witness, dispute, and serve imperial estates. The tablets are written in Akkadian cuneiform and dated by Babylonian and Persian kings. Their clauses belong to Babylonian law. Their people carry many kinds of names, including names that end in Yāma or Yāhû, cuneiform renderings of the name of Judah’s god. A child can enter Babylonian paperwork carrying YHWH in the sound of who he is.',
+    'Natan’s family did not walk east by choice. Nebuchadnezzar II’s armies took Jerusalem in 597 BCE and deported its king and selected elites. After revolt, Babylonian forces destroyed the city and its temple in 586 and deported more people. The policy targeted royal, military, scribal, craft, and landholding groups useful to an empire or dangerous at home. It was devastating, but it did not empty Judah. Most Judeans were not deported. Farmers, laborers, and communities remained amid a sharply reduced Jerusalem and a wounded countryside, while other Judeans fled elsewhere. Exile was a set of unequal experiences, not one march containing an entire people.',
+    'The contract in Natan’s hand records survival without describing its inward cost. His grandfather’s god had possessed a house on Mount Zion, received sacrifice there, and guarded a dynasty that claimed David’s line. Babylon burned the house, ended the kingdom, and carried temple vessels away. In an older political grammar, defeat could mean that a national god had lost to stronger gods. Judean traditions found another grammar. Prophets had already warned that Assyria and Babylon might be instruments of YHWH’s judgment. Catastrophe could therefore prove not his weakness, but his terrible sovereignty. The explanation preserved faith by placing guilt inside defeat. It also made history morally charged.',
+    'Now set beside the tablet a voice from Isaiah 40 to 48. The documents and prophetic poetry were not found together, and we cannot place a scroll or recitation in Natan’s settlement. They survive as different witnesses to the same broad imperial world. The prophetic voice speaks to Jerusalem’s displaced people and names Cyrus, the Persian conqueror approaching Babylon, as YHWH’s anointed agent. It goes further than saying Judeans must worship their own god. YHWH formed light and darkness; no god stands beside him; Babylon’s power fits inside his purpose. A deity once addressed as the god of a small kingdom is proclaimed sovereign over the empire that destroyed it and the foreign king who may release it.',
+    'The distinction is between exclusive worship and exclusive existence. A person can serve one god alone while accepting that other peoples have gods. Scholars often call that monolatry. Claims that no other god exists, or that every apparent divine power is subordinate to one creator, are stronger. Biblical texts preserve the argument rather than a clean sequence. Some pre-exilic passages exalt YHWH above a divine assembly or demand loyalty to him alone. Inscriptions from the ninth and eighth centuries invoke “YHWH and his Asherah,” evidence that actual Judean and Israelite practice did not match a later picture of pure monotheism. Exilic and Persian-period writers sharpened universal claims, but older divine language did not vanish at a stroke.',
+    'The clay dries. Natan’s obligation enters an archive whose scribes do not need his theology in order to enforce it. That is precisely what makes his life remarkable. He can work through Babylonian law, measure a field beside a Babylonian canal, date a contract by a foreign king, and give a child a name that invokes YHWH. Identity has learned to live in more than one institution. Temple, king, and land no longer hold it in a single knot. Practice, story, law, name, memory, and text can be carried separately, then bound together again. The empire writes Natan into its order. His community is learning how not to disappear inside the sentence.',
+  ],
+  significance: [
+    'Monotheism was not invented in 586 BCE. Israelite and Judean religion had emerged from the wider West Semitic world, where divine councils, national gods, family cults, El, Baal, and Asherah supplied shared religious language. YHWH became the central deity of Israel and Judah through a long process. Royal reforms and prophetic movements before the exile already demanded exclusive devotion, and Assyrian imperial pressure helped some thinkers imagine YHWH as directing the great empire that threatened them. Destruction made the question inescapable: could a god tied to one throne and temple govern history after both were gone? Exilic writers answered by enlarging the claim, not by beginning from nothing.',
+    'Mark S. Smith’s named debate concerns what “monotheism” means inside this evidence. If it means philosophical denial that any other divine beings exist, many biblical passages remain untidy. They speak of a heavenly council, rival gods, angels, demons, or powers while insisting that Israel owes worship to YHWH. Smith treats monotheism partly as rhetoric that secures an exclusive relationship and reorganizes older divine categories. Other scholars place stronger monotheistic conviction before the exile, while many emphasize Isaiah 40 to 48 as an exilic breakthrough. Definitions change the timeline. The safest history follows specific claims: sole worship, incomparable power, universal creation, and denial of rivals do not all appear together or spread evenly.',
+    'Exile supplied a mechanism for portable identity. When sacrifice at Jerusalem became impossible, communities could intensify practices not confined to one building: naming, food, Sabbath, circumcision, prayer, family memory, law, and the copying and interpretation of inherited traditions. The surviving evidence does not let us date each practice’s transformation neatly. Even the beautiful Yahwistic names require restraint. They show that families preserved and adapted a naming tradition, not what every bearer believed about other gods or how often anyone prayed. Because the Āl-Yāhūdu tablets were not recovered in a controlled excavation, they cannot reveal the settlement’s houses, shrines, meals, or burial customs. Their nearly century-long chronology is exact because scribes dated contracts by rulers, but their picture of culture is narrow because contracts record what law needs. The Hebrew Bible was neither written nor canonized in one generation. Older poems, laws, court histories, prophecies, and oral traditions were collected and edited over centuries. Scripture became a homeland that could travel, but only because people repeatedly argued over what belonged inside it and how old words addressed new rule.',
+    'Cyrus captured Babylon in 539 BCE. Babylonian royal propaganda presents him as chosen by Marduk to restore cults disrupted by Nabonidus. Isaiah presents the same conqueror as YHWH’s anointed. The book of Ezra associates Persian authority with return and temple rebuilding. These texts do not prove a modern policy of religious liberty, and the Cyrus Cylinder does not mention Judeans or Jerusalem. Some deportees returned; many stayed. Return itself unfolded through families, resources, permissions, and difficult choices. The Second Temple was completed around 516 BCE, while Judean communities in Babylonia continued for generations. Restoration did not end diaspora. It created a world in which Jerusalem and communities abroad defined one another.',
+    'The change braided ideas with power. Universal sovereignty let a defeated community interpret empires as temporary actors inside sacred history. Covenant made disaster accountable without making imperial violence just. Law and text could preserve boundaries under rulers who did not share them. Those tools could protect solidarity, but they could also sharpen exclusions, assign collective guilt, and turn rival worship into betrayal. Ethical traditions, covenant, and sacred history all had roots before exile. What the crisis did was force their recombination around survival without a king, then survival under kings whose authority had to be acknowledged without becoming ultimate.',
+    'Later Judaism developed through many further transformations, and Christianity and Islam would each engage Jewish scripture and claims about one God in distinct historical worlds. They are not the inevitable ending of Natan’s tablet. The closer inheritance is the portable community itself: people can inhabit the legal and economic life of one society while carrying obligations, stories, and names that refuse complete translation into it. They can adopt a language without surrendering a memory, remain abroad after return becomes possible, and discover that continuity does not require cultural stillness. Modern diasporas still live inside that tension. The canal field and the lost temple are both real. Belonging becomes an art of holding them together without pretending either place contains the whole of God or the whole of home.',
+  ],
+  threadsOut: [
+    {
+      to: 'jesus-to-constantine',
+      why: 'The Jesus movement began as a Jewish argument about covenant, scripture, resurrection, messiah, and Israel’s God. Its later separation from other Jewish communities cannot be read backward as exile’s intended destination.',
+    },
+    {
+      to: 'recitation-in-the-desert',
+      why: 'The Quran addresses Jewish and Christian claims while declaring uncompromising divine unity in its own prophetic language. Shared figures and texts become material for new revelation, interpretation, and dispute rather than a simple inherited line.',
+    },
+    {
+      to: 'crown-of-cyrus',
+      why: 'Cyrus appears as Marduk’s chosen restorer in Babylonian royal language and as YHWH’s anointed in Isaiah. The comparison shows imperial legitimacy being translated through local theologies, not one tolerant king speaking a universal creed.',
+    },
+    {
+      to: 'gods-of-the-city',
+      why: 'Mesopotamian city gods joined temple, land, ruler, and civic identity. Judean thinkers facing a destroyed temple made a radical counterclaim: their god’s sovereignty crossed the border even when his people did not rule.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What do the Āl-Yāhūdu tablets reveal about Judean life in Babylonia that prophetic and historical texts usually do not?',
+      answer: 'They reveal ordinary legal survival: Judeans cultivated and leased land, borrowed, married, inherited, witnessed contracts, and met imperial obligations through Akkadian cuneiform documents. Yahwistic names appear inside Babylonian legal forms. The archive shows neither total assimilation nor a community living outside the empire.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why could the destruction of YHWH’s temple sharpen claims about his universal power rather than simply end his worship?',
+      answer: 'Prophetic traditions could reinterpret Babylon as an instrument of YHWH’s judgment, making defeat evidence of sovereignty rather than divine weakness. Once YHWH governed the conqueror and the catastrophe, his authority no longer depended on Judah’s military success. That answer preserved identity by turning national disaster into universal sacred history.',
+    },
+    {
+      type: 'why',
+      prompt: 'What breaks if monolatry and monotheism are treated as the same claim?',
+      answer: 'Exclusive worship of YHWH can coexist with belief that other divine beings exist, while strict monotheism denies or radically subordinates every rival power. Collapsing them makes a long argument look like one conversion. It also hides why biblical texts can command sole loyalty in one passage and still speak of a divine council in another.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Gods of the City showed Mesopotamian temples binding deity, land, ruler, and urban household. What had to change when Jerusalem’s temple and monarchy were destroyed?',
+      answer: 'Judean identity could no longer depend entirely on sacrifice at one functioning sanctuary or protection by one dynasty. Communities intensified portable forms such as name, law, memory, practice, and interpreted text, while still longing for and eventually rebuilding the temple. The god once centered on a city was proclaimed sovereign in the city of his conquerors.',
+      callbackTo: 'gods-of-the-city',
+    },
+    {
+      type: 'callback',
+      prompt: 'The Invention of Writing began with institutions making obligations portable in clay. How do the Āl-Yāhūdu tablets and Judean scripture use that portability differently?',
+      answer: 'The cuneiform contract lets an imperial legal system carry rent, witnesses, and liability beyond the moment of agreement. Collected Judean traditions carry law, memory, prophecy, and identity beyond the temple and kingdom that formed them. Both rely on trained writers and institutions, but one integrates a family into Babylonian order while the other helps the community interpret why that order is not ultimate.',
+      callbackTo: 'invention-of-writing',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Cuneiform Digital Library Initiative, a tablet from Yāhūdu',
+      why: 'A catalogued administrative object from the archive, where date, place, script, and ordinary obligation survive on one small field of clay.',
+      url: 'https://cdli.earth/artifacts/521920',
+    },
+    {
+      title: 'Mark S. Smith, The Origins of Biblical Monotheism',
+      why: 'A foundational study of Israel’s older West Semitic divine world and the rhetoric by which exclusive relation became universal claim.',
+      url: 'https://doi.org/10.1093/019513480X.001.0001',
+    },
+    {
+      title: 'Metropolitan Museum of Art, Cyrus and the Judean Diaspora',
+      why: 'An accessible synthesis placing cuneiform evidence for Judean work, law, and mobility beside biblical memories of exile and restoration.',
+      url: 'https://www.metmuseum.org/de/perspectives/cyrus-and-the-judean-diaspora',
+    },
+  ],
+});
