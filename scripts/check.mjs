@@ -4,7 +4,7 @@
 //   node scripts/check.mjs                       full check (graph + all lessons + manifest)
 //   node scripts/check.mjs data/lessons/foo.js   graph + that single lesson file (no manifest sync)
 //
-// Exits 1 on any error. Warnings do not fail the gate.
+// Exits 1 on any error or warning. A release gate is only green at zero of both.
 
 import { readFileSync, readdirSync, existsSync } from 'node:fs';
 import { join, resolve, dirname, basename } from 'node:path';
@@ -118,16 +118,25 @@ for (const id of lessonIds) {
     continue;
   }
   const myIndex = nodeIndex.get(id);
-  if (!Array.isArray(l.story) || l.story.length < 4) err(`${w}: story must be an array of 4+ paragraphs`);
+  if (!Number.isInteger(l.readingMinutes) || l.readingMinutes < 9 || l.readingMinutes > 11) {
+    err(`${w}: readingMinutes must be an honest integer from 9 to 11`);
+  }
+  if (!Array.isArray(l.story) || l.story.length < 5 || l.story.length > 8) {
+    err(`${w}: story must contain 5-8 paragraphs`);
+  }
   if (!l.storyContext) err(`${w}: missing storyContext line`);
-  if (!Array.isArray(l.significance) || l.significance.length < 3) err(`${w}: significance must be an array of 3+ paragraphs`);
-  if (!Array.isArray(l.threadsOut) || l.threadsOut.length < 2) err(`${w}: threadsOut must list 2+ connections`);
+  if (!Array.isArray(l.significance) || l.significance.length < 4 || l.significance.length > 6) {
+    err(`${w}: significance must contain 4-6 paragraphs`);
+  }
+  if (!Array.isArray(l.threadsOut) || l.threadsOut.length < 3 || l.threadsOut.length > 5) {
+    err(`${w}: threadsOut must list 3-5 connections`);
+  }
   else
     for (const t of l.threadsOut) {
       if (!nodeIndex.has(t.to)) err(`${w}: threadsOut points to unknown node "${t.to}"`);
       if (!t.why || wordCount(t.why) < 6) err(`${w}: threadsOut to "${t.to}" needs a substantial why`);
     }
-  if (!Array.isArray(l.questions) || l.questions.length < 4) err(`${w}: needs 4+ questions`);
+  if (!Array.isArray(l.questions) || l.questions.length !== 5) err(`${w}: needs exactly 5 questions`);
   else
     for (const [qi, q] of l.questions.entries()) {
       if (!QUESTION_TYPES.has(q.type)) err(`${w}: question ${qi + 1} has unknown type "${q.type}"`);
@@ -138,7 +147,19 @@ for (const id of lessonIds) {
         else if (nodeIndex.get(q.callbackTo) >= myIndex) err(`${w}: callback must reach an EARLIER node, "${q.callbackTo}" is not`);
       }
     }
-  if (!Array.isArray(l.deeper) || l.deeper.length < 2) err(`${w}: deeper must list 2+ follow-ups`);
+  if (Array.isArray(l.questions) && l.questions.length === 5) {
+    const typeCounts = l.questions.reduce((counts, q) => {
+      counts[q.type] = (counts[q.type] || 0) + 1;
+      return counts;
+    }, {});
+    const expectedCallbacks = myIndex === 0 ? 0 : myIndex === 1 ? 1 : 2;
+    const expectedWhys = 4 - expectedCallbacks;
+    if ((typeCounts.recall || 0) !== 1 || (typeCounts.why || 0) !== expectedWhys ||
+        (typeCounts.callback || 0) !== expectedCallbacks) {
+      err(`${w}: question mix must be 1 recall, ${expectedWhys} why, ${expectedCallbacks} callback`);
+    }
+  }
+  if (!Array.isArray(l.deeper) || l.deeper.length !== 3) err(`${w}: deeper must list exactly 3 follow-ups`);
   // Forge agents have twice written a whole lesson with every apostrophe stripped
   // (dodging the single-quoted JS string delimiter), yielding "the men shoulders"
   // and "Aya girlhood". The gate cannot read English, but a lesson of this length
@@ -150,7 +171,7 @@ for (const id of lessonIds) {
 
   const words = (l.story || []).concat(l.significance || []).map(wordCount).reduce((a, b) => a + b, 0);
   if (words < 1100 || words > 2900) err(`${w}: prose is ${words} words (hard bounds 1100-2900)`);
-  else if (words < 1400 || words > 2400) warn(`${w}: prose is ${words} words (aim 1500-2200)`);
+  else if (words < 1500 || words > 2200) warn(`${w}: prose is ${words} words (aim 1500-2200)`);
   scanDashes(l, w);
 }
 
@@ -158,9 +179,24 @@ for (const id of lessonIds) {
 if (!singleLesson) {
   const manifest = LOOM.lessonFiles || [];
   const onDisk = lessonFilesOnDisk.map((f) => basename(f, '.js'));
+  if (new Set(manifest).size !== manifest.length) err('manifest contains duplicate lesson ids');
   for (const m of manifest) if (!onDisk.includes(m)) err(`manifest lists "${m}" but data/lessons/${m}.js not found`);
   for (const d of onDisk) if (!manifest.includes(d)) err(`data/lessons/${d}.js exists but is not in _manifest.js`);
   for (const m of manifest) if (!LOOM.lessons[m]) err(`manifest lists "${m}" but no lesson registered under that id`);
+  for (const m of manifest) {
+    const lesson = LOOM.lessons[m];
+    if (!lesson || !Array.isArray(lesson.questions)) continue;
+    for (const q of lesson.questions) {
+      if (q.type === 'callback' && q.callbackTo && !manifest.includes(q.callbackTo)) {
+        err(`lesson ${m}: callback target "${q.callbackTo}" has no written lesson in the manifest`);
+      }
+    }
+  }
+  for (let i = 1; i < manifest.length; i++) {
+    if (nodeIndex.get(manifest[i - 1]) > nodeIndex.get(manifest[i])) {
+      err(`manifest is out of main-sequence order at "${manifest[i - 1]}" then "${manifest[i]}"`);
+    }
+  }
 
   const indexPath = join(root, 'index.html');
   if (existsSync(indexPath)) {
@@ -178,5 +214,6 @@ if (!singleLesson) {
 const readable = `${LOOM.nodes.length} nodes, ${edgeCount} wires, ${LOOM.eras.length} eras, ${lessonIds.length} lessons`;
 for (const m of warnings) console.log(`  warn  ${m}`);
 for (const m of errors) console.log(`  ERROR ${m}`);
-console.log(errors.length ? `FAIL: ${errors.length} error(s), ${warnings.length} warning(s). ${readable}` : `OK: ${readable}. ${warnings.length} warning(s).`);
-process.exit(errors.length ? 1 : 0);
+const failed = errors.length || warnings.length;
+console.log(failed ? `FAIL: ${errors.length} error(s), ${warnings.length} warning(s). ${readable}` : `OK: ${readable}. 0 warning(s).`);
+process.exit(failed ? 1 : 0);
