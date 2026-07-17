@@ -41,6 +41,8 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   and compare their dates explicitly rather than inferring from an era label.
 - Before naming a scholarly paper's authors in lesson prose, resolve its DOI
   metadata or publisher record; do not rely on search snippets or carried notes.
+- When extracting URLs from multiple files with `rg`, pass `--no-filename` so
+  path prefixes are not accidentally sent to link-checking tools as URLs.
 - Jason prefers Sol for all lesson prose and substantive prose revisions in
   Codex; assign those writing passes to Sol.
 - Treat Loom as artwork: prioritize beautiful, engaging prose, elegant
@@ -80,14 +82,17 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
 ## State (2026-07-17)
 
 - Graph complete: 129 nodes, 273 wires, 10 eras, all validated.
-- Eras I and II are fully written: 21 lessons, adversarially reviewed and
-  verified in the browser. Eras III-X are seeds awaiting the forge.
+- Eras I through III are fully written: 34 lessons, all adversarially reviewed.
+  Era III added 13 lessons with 39 clickable authoritative source links. Eras
+  IV through X are seeds awaiting the forge.
 - Paths, both world-map bands, mobile reading layouts, and real pinch zoom are
   built. Production is https://loom-gray.vercel.app.
-- Next forge target: Era III ("forge era 3").
+- Next forge target: Era IV ("forge era 4").
 
 ## Change log
 
+- **2026-07-17:** Era III completed. Forged and adversarially audited all 13
+  lessons, with 39 clickable authoritative source links across the era.
 - **2026-07-17** — Era II completed and adversarially audited, with the release
   gate made strict. Added the mobile layout and real pinch zoom.
 - **2026-07-16** — Era I finished and hardened. Forged the last 3 lessons, then

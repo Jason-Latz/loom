@@ -40,15 +40,18 @@ The production atlas is at https://loom-gray.vercel.app.
 
 ## Grow it
 
-The graph ships complete. Its first 21 lessons, covering Eras I and II, are
-written and reviewed; Era III is the next forge target. From this folder, ask
-Codex to use the tracked `.agents/skills/forge-lesson` skill:
+The graph ships complete. Its first 34 lessons, covering Eras I through III,
+are written and adversarially reviewed. Era III's 13 lessons include 39
+clickable authoritative source links. Era IV is the next forge target. From
+this folder, ask Codex to use the tracked `.agents/skills/forge-lesson` skill:
 
 ```
-forge trap-of-seeds      # one node (the dossier shows each node's command)
-forge era 3              # a whole era, written by parallel agents
+forge han-mandate        # one node (the dossier shows each node's command)
+forge era 4              # a whole era, written by parallel agents
 ```
 
-The style contract lives in `docs/forge-spec.md`; `node scripts/check.mjs`
-is the gate that keeps the atlas honest (graph integrity, word budgets,
-callback direction, and the no-em-dash rule).
+The style contract lives in `docs/forge-spec.md`. Loom is treated as artwork,
+with beautiful prose, elegant teaching, and authoritative links valued alongside
+historical accuracy. `node scripts/check.mjs` is the gate that keeps the atlas
+honest (graph integrity, word budgets, callback direction, and the no-em-dash
+rule).
