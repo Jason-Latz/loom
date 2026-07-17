@@ -30,4 +30,5 @@ LOOM.lessonFiles = [
   'iron-and-alphabet',
   'phoenician-web',
   'polis-experiment',
+  'invention-of-money',
 ];
