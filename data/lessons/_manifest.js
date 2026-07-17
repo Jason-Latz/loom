@@ -34,4 +34,5 @@ LOOM.lessonFiles = [
   'israel-one-god',
   'crown-of-cyrus',
   'athens-demokratia',
+  'buddha-middle-path',
 ];
