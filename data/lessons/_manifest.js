@@ -22,4 +22,5 @@ LOOM.lessonFiles = [
   'horse-and-wheel',
   'code-of-hammurabi',
   'yellow-river-bronze',
+  'bronze-web',
 ];
