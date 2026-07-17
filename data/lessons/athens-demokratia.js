@@ -1,0 +1,88 @@
+LOOM.lesson({
+  id: 'athens-demokratia',
+  readingMinutes: 10,
+  storyContext:
+    'Athens, in 508 or 507 BCE. The citizen is a composite. Isagoras, the Spartan king Cleomenes I, the expulsion order, the council’s refusal, the Acropolis siege, the truce, and Cleisthenes’ recall come from Herodotus 5.70 to 5.73 and Constitution of the Athenians 20, both written later.',
+  story: [
+    'The order begins with names. Seven hundred Athenian households are to leave, condemned through an old pollution attached to the family of Cleisthenes. One name means a father, another a workshop, another the room where grain is stored against winter. The citizen listening in the city does not know whether his own household will be added. Cleisthenes has already withdrawn. His rival Isagoras has called a Spartan king into Athens, and Cleomenes has arrived with a small force. A quarrel between aristocrats is becoming a decision about who may remain Athenian.',
+    'Two later sources give the episode its surviving sequence. Herodotus wrote within roughly a century of the crisis; Constitution of the Athenians followed about a century after him. They agree that after the Peisistratid tyranny fell, Isagoras and Cleisthenes competed for power, that Cleisthenes brought the people into his coalition, and that Isagoras answered with Spartan force. Cleomenes expelled the households and then tried to dissolve the council, intending to place Isagoras and three hundred supporters over the city. Neither account lets Cleisthenes perform the decisive act. He is gone when the council refuses.',
+    'Refusal changes the scale of the crisis. A council ordered to vanish continues to act as a council. The populace joins it. Cleomenes and Isagoras retreat to the Acropolis, where the Athenians surround them. The siege lasts two days. We do not know what the composite citizen carries, what he shouts, where he sleeps, or which entrance he watches, so the scene needs none of those inventions. Its pressure lies in what the record does say: people who were supposed to accept a new ruling faction instead make the city ungovernable without them.',
+    'The word “people” conceals a thousand decisions the source does not preserve. Messengers must pass between neighborhoods. Men must leave workshops and fields. Councilors must trust that refusal will not isolate them. Households facing expulsion must decide whether to hide, flee, or wait. Constitution of the Athenians compresses this coordination into a banding together, then gives Cleisthenes leadership when he returns. That may reflect genuine strategy, later democratic memory, or both. The safest claim is also the most consequential: the council’s legal form and the populace’s collective action reinforced one another. Institution without bodies would have been dismissed. Bodies without an institution might have remained a riot.',
+    'On the third day, the besieged leave under truce. The Athenians recall Cleisthenes and the other exiles. Later democracy will celebrate speakers, generals, jurors, and laws, but this beginning is almost architectural. A council chamber is not a council if armed men can dismiss it at will. An Acropolis is not command if those below withhold obedience. The people have not yet built the mature machinery of demokratia. They have demonstrated the fact from which it can be built: collective authority is not merely property that one elite may hand to another.',
+    'Cleisthenes’ reforms reorganize the citizens of Attica. Four old tribes give way to ten. Each new tribe draws communities from the city region, the coast, and the interior, mixing territories that had supported rival local powers. The deme becomes the citizen’s official local unit, so an Athenian is identified through a civic place as well as a father. A Council of Five Hundred takes fifty members from each tribe and prepares business for the assembly. The design does not erase kin, wealth, cult, or neighborhood. It lays new civic lines across them, making strangers from different parts of Attica practice belonging together.',
+    'The boundary remains guarded. The people whose power is being enlarged are adult male citizens. Women participate in households, property transmission, labor, mourning, and indispensable civic cults without equal voice in assembly or office. Enslaved people work in homes, workshops, fields, and later the silver mines while being owned. Resident foreigners, the metics of later classical Athens, trade, manufacture, pay obligations, and sometimes fight without ordinary access to citizenship. Even among citizen men, poverty, distance, disability, and work shape who can attend. “The people” is a radical political subject built from a fraction of the people present.',
+    'The unnamed citizen can now return to his deme, if the truce holds and his household has survived the list. He has not voted on a naval empire, drawn a jury lot, scratched an ostrakon, or been paid for public service. Most of those practices belong to later decades. What he has done is narrower and prior. He has joined others in rejecting the proposition that the city may be reassembled over their heads. Democracy begins here not as perfect equality, and not as a gift from Cleisthenes, but as an argument made binding by people who refuse to leave the definition of Athens to three hundred men and a foreign king.',
+  ],
+  significance: [
+    'Athens did not invent participation, assemblies, councils, or collective judgment. Other Greek poleis and much older societies possessed them in varied forms. What Athens developed after 508 and 507 BCE was an unusually intense direct government among citizens. The assembly could decide policy, law, war, finance, and diplomacy. A rotating Council of Five Hundred prepared its work and managed continuing business. Large citizen juries later exercised immense authority. Many offices were filled by lot, a device Athenians treated as democratic because it distributed turns without asking who was richest or most famous. Important positions requiring expertise or public confidence, especially generals, were elected. Democracy combined chance, vote, scrutiny, term limits, and collective decision rather than trusting one mechanism.',
+    'The chronology matters because mature democracy is often folded backward into Cleisthenes’ victory. Ostracism was associated with his reforms in the later account, but the first known use came around 488 or 487 BCE. Citizens wrote a name on pottery sherds; if procedural thresholds were met, the selected man left for ten years without a criminal conviction or loss of property. The Laurion silver decision and Themistocles’ naval expansion came in 483 or 482. Mass service as trireme rowers then strengthened poorer citizens’ claims, but rowers did not cause the settlement of 508. Pay for juries and other public activity developed later in the fifth century, making participation more practical for men who could not surrender a day’s labor for free.',
+    'Cleisthenes’ deepest mechanism was cross-cutting organization. The ten tribes combined coast, inland, and city districts, then supplied councilors and military units through that mixture. Demes registered citizens locally and made civic belonging an administrative fact that neighbors could affirm or challenge. The sequence is not perfectly recoverable: scholars still dispute whether the council that resisted Cleomenes was the older Four Hundred or the new Five Hundred, and whether parts of Cleisthenes’ program preceded the siege. What endured is clearer than the order of installation. The new council’s rotating tribal presidencies made agenda-setting change hands. These institutions did not dissolve elite networks, but they made power pass repeatedly through groups that no single lineage could easily own. The democracy’s craft was iteration: meet, propose, hear, decide, scrutinize, rotate, and meet again. Equality became a practice before it became a flattering description.',
+    'It was equality within a guarded boundary. Perhaps thirty thousand adult male citizens existed in parts of the fifth century, while the total population of Attica was several times larger and cannot be counted precisely. Even formal equals did not meet democracy at equal cost. A farmer distant from Athens, a craftsman losing a day’s income, and a wealthy man surrounded by clients entered the assembly with different reserves of time and influence. Public pay later reduced one barrier without dissolving patronage, reputation, education, or distance. Women’s civic indispensability did not yield formal political equality. Enslaved labor supported household wealth and the silver economy that funded state power. Metics sustained trade and craft without ordinary citizenship. Athens also converted alliance against Persia into an empire, collected tribute, coerced rebellious communities, and fought catastrophic wars. Democratic deliberation can authorize domination. The many can rule themselves and still rule others as subjects.',
+    'Democracy was neither stable nor continuous for two centuries. Oligarchic coups overthrew it in 411 and again in 404 BCE, the second after defeat by Sparta and followed by the terror of the Thirty. Democracy was restored, revised, and endured through much of the fourth century before Macedonian power sharply curtailed it in 322. Socrates was condemned in 399 by a citizen jury, but saying “democracy killed Socrates” removes the recent tyranny, the amnesty, his associations, the charges, and the problem of dissent after civil trauma. His trial is a collision inside democratic law, not proof that collective judgment has one inevitable victim.',
+    'The lasting artwork of Athenian democracy is therefore unfinished and double. It shows ordinary citizens performing sovereignty directly, treating office as a temporary trust and public speech as consequential action. It also shows how fiercely equality can be bounded by sex, status, origin, and conquest. Modern representative states borrow its language more readily than its institutions, and often invoke Athens as inspiration or warning according to need. The Acropolis crisis leaves the cleaner and harder inheritance. A people becomes political when it refuses to be merely counted, taxed, expelled, or protected, and insists on helping decide what the common world will actually do. The next moral task is to hear everyone the first definition of “people” left outside.',
+  ],
+  threadsOut: [
+    {
+      to: 'socratic-turn',
+      why: 'Socrates questioned citizens in a city where public judgment carried legal force. His 399 BCE trial followed war, oligarchic terror, and restoration, turning philosophy’s challenge to civic certainty into a case decided by the very institution under examination.',
+    },
+    {
+      to: 'american-experiment',
+      why: 'United States constitution makers studied Athens while designing a representative republic and often used direct democracy as a caution. Their selective memory carried admiration for civic action alongside fear of assemblies and majority power.',
+    },
+    {
+      to: 'polis-experiment',
+      why: 'The polis supplied the citizen boundary, territory, cults, offices, and common arena. Athens redistributed authority inside that inherited form more radically than most neighbors without opening citizenship to most of the people who sustained it.',
+    },
+    {
+      to: 'invention-of-money',
+      why: 'Coinage did not create democracy, but later silver revenues and public pay altered its material reach. Institutions become socially broader when citizens who live by work can afford the time required to govern.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What happened when Cleomenes and Isagoras tried to dissolve the Athenian council in 508 or 507 BCE?',
+      answer: 'The council refused to dissolve, and the Athenian populace joined its resistance. Cleomenes, Isagoras, and their supporters withdrew to the Acropolis, where they were besieged for two days. On the third day they left under truce, and the Athenians recalled Cleisthenes and other exiles.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why did Cleisthenes mix city, coast, and inland districts into ten new tribes?',
+      answer: 'The design cut across older regional and lineage power bases, making citizens from distant parts of Attica share council representation and military organization. It did not erase local loyalties or elite influence. It created additional civic relationships through which power had to pass.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why must ostracism, naval rowers, and public pay be kept out of the origin scene even though each matters to Athenian democracy?',
+      answer: 'They belong to later layers. Ostracism was first used around 488 or 487 BCE, the Laurion-funded fleet expanded in 483 or 482, and jury and civic pay developed later in the fifth century. Folding them into 508 turns democratic development into one instant and mistakes later mechanisms for the cause of the original settlement.',
+    },
+    {
+      type: 'callback',
+      prompt: 'The Polis Experiment asked who belongs to the political community. What does Athens change inside that boundary, and whom does it still refuse to see as an equal?',
+      answer: 'Athens gives adult male citizens unusually direct authority through assembly, council, juries, lot, election, and repeated scrutiny. Women, enslaved people, and resident foreigners remain outside equal formal power even while their labor, worship, trade, and households sustain the city. Athens radicalizes citizen equality without making equality human or universal.',
+      callbackTo: 'polis-experiment',
+    },
+    {
+      type: 'callback',
+      prompt: 'Cyrus’s empire governed diversity through layered local institutions and royal authority. How does Athenian democracy distribute power differently, and where does the contrast fail?',
+      answer: 'Athens rotates offices and lets eligible citizens decide policy directly, while Achaemenid rule preserves local structures beneath a king, governors, tribute, and imperial coercion. The contrast fails if Athens is called simply free: it excludes most residents, owns enslaved people, and builds an empire over allied cities. Both systems combine participation for some with subordination for others, though at very different scales and through different institutions.',
+      callbackTo: 'crown-of-cyrus',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Herodotus, Histories 5.70 to 5.73',
+      why: 'The earlier surviving narrative of the expulsion order, the council’s resistance, and the people’s siege of Cleomenes on the Acropolis.',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Hdt.+5.70',
+    },
+    {
+      title: 'Mogens Herman Hansen, The Athenian Democracy in the Age of Demosthenes',
+      why: 'The rigorous institutional anatomy behind assembly, council, courts, office, and the demanding practice of direct citizen government.',
+      url: 'https://researchprofiles.ku.dk/en/publications/the-athenian-democracy-in-the-age-of-demosthenes-structure-princi/',
+    },
+    {
+      title: 'Athenian Agora Excavations, Ostrakon of Themistokles',
+      why: 'A small cup fragment bearing a citizen’s incised choice, material evidence for a later democratic procedure too often projected back onto 508 BCE.',
+      url: 'https://www.agathe.gr/id/agora/object/p%2019615',
+    },
+  ],
+});
