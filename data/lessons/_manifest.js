@@ -10,4 +10,7 @@ LOOM.lessonFiles = [
   'world-the-ice-made',
   'village-before-the-farm',
   'trap-of-seeds',
+
+  // Era II: Seeds & Cities
+  'rice-and-the-yangtze',
 ];
