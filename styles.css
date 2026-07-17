@@ -419,6 +419,12 @@ body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no 
 .deeper { list-style: none; }
 .deeper li { font-size: 15px; line-height: 1.6; margin-bottom: 9px; padding-left: 20px; position: relative; color: var(--ink-soft); }
 .deeper li::before { content: '❧'; position: absolute; left: 0; color: var(--gilt); }
+.deeper-link {
+  color: var(--ink); text-decoration-color: var(--gilt); text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.deeper-link:hover { color: var(--gilt); }
+.deeper-link::after { content: ' ↗'; font-size: 0.78em; color: var(--gilt); }
 
 .page-foot { margin-top: 44px; text-align: center; }
 .chart-it { font-size: 16px; padding: 13px 34px; }

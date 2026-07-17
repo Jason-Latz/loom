@@ -231,7 +231,20 @@ LOOM.reader = (function () {
 
     page.appendChild(h('div', 'sec-head', 'If This Grabbed You'));
     var deep = h('ul', 'deeper');
-    l.deeper.forEach(function (d) { deep.appendChild(h('li', null, d)); });
+    l.deeper.forEach(function (d) {
+      var li = h('li');
+      if (typeof d === 'string') {
+        li.textContent = d;
+      } else {
+        var link = h('a', 'deeper-link', d.title);
+        link.href = d.url;
+        link.target = '_blank';
+        link.rel = 'noopener noreferrer';
+        li.appendChild(link);
+        li.appendChild(document.createTextNode(': ' + d.why));
+      }
+      deep.appendChild(li);
+    });
     page.appendChild(deep);
 
     var foot = h('div', 'page-foot');

@@ -160,6 +160,21 @@ for (const id of lessonIds) {
     }
   }
   if (!Array.isArray(l.deeper) || l.deeper.length !== 3) err(`${w}: deeper must list exactly 3 follow-ups`);
+  else
+    for (const [di, d] of l.deeper.entries()) {
+      if (typeof d === 'string') continue;
+      if (!d || typeof d !== 'object' || typeof d.title !== 'string' || wordCount(d.title) < 2 ||
+          typeof d.why !== 'string' || wordCount(d.why) < 5) {
+        err(`${w}: deeper item ${di + 1} must be a string or an object with substantial title and why fields`);
+        continue;
+      }
+      try {
+        const u = new URL(d.url);
+        if (u.protocol !== 'https:') throw new Error('not https');
+      } catch {
+        err(`${w}: deeper item ${di + 1} must use a valid https URL`);
+      }
+    }
   // Forge agents have twice written a whole lesson with every apostrophe stripped
   // (dodging the single-quoted JS string delimiter), yielding "the men shoulders"
   // and "Aya girlhood". The gate cannot read English, but a lesson of this length
