@@ -25,4 +25,7 @@ LOOM.lessonFiles = [
   'bronze-web',
   'maize-and-the-americas',
   'sea-peoples-collapse',
+
+  // Era III: The Axial Age
+  'iron-and-alphabet',
 ];
