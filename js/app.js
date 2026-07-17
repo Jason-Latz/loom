@@ -37,6 +37,15 @@ LOOM.app = (function () {
     el.hidden = false;
   }
 
+  function renderLampButton() {
+    var el = document.getElementById('lamp-btn');
+    var on = document.body.classList.contains('lamplight');
+    var label = on ? 'Turn off lamplight mode' : 'Turn on lamplight mode';
+    el.title = label;
+    el.setAttribute('aria-label', label);
+    el.setAttribute('aria-pressed', on ? 'true' : 'false');
+  }
+
   function load() {
     try {
       var raw = localStorage.getItem(KEY);
@@ -224,7 +233,7 @@ LOOM.app = (function () {
   }
 
   // ---------------- intro ----------------
-  function showIntro() {
+  function showIntro(opener) {
     var intro = document.getElementById('intro');
     intro.innerHTML = '';
     var card = h('div', 'intro-card');
@@ -252,9 +261,9 @@ LOOM.app = (function () {
     actions.appendChild(unroll);
     card.appendChild(actions);
     intro.appendChild(card);
-    intro.hidden = false;
+    LOOM.ui.modal.open(intro, begin, opener);
     function dismiss() {
-      intro.hidden = true;
+      LOOM.ui.modal.close(intro);
       state.introSeen = true;
       save();
     }
@@ -296,6 +305,7 @@ LOOM.app = (function () {
   function init() {
     load();
     if (state.lamplight) document.body.classList.add('lamplight');
+    renderLampButton();
     LOOM.map.init();
     LOOM.reader.init();
     LOOM.paths.init();
@@ -324,9 +334,10 @@ LOOM.app = (function () {
     });
     document.getElementById('lamp-btn').addEventListener('click', function () {
       state.lamplight = document.body.classList.toggle('lamplight');
+      renderLampButton();
       save();
     });
-    document.getElementById('help-btn').addEventListener('click', showIntro);
+    document.getElementById('help-btn').addEventListener('click', function (ev) { showIntro(ev.currentTarget); });
     document.getElementById('zoom-in').addEventListener('click', function () { LOOM.map.zoomBy(1 / 1.4); });
     document.getElementById('zoom-out').addEventListener('click', function () { LOOM.map.zoomBy(1.4); });
     document.getElementById('zoom-fit').addEventListener('click', LOOM.map.fitAll);

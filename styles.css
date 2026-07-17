@@ -55,6 +55,8 @@ body {
   background: var(--parchment);
   color: var(--ink);
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
   transition: background 0.4s ease, color 0.4s ease;
 }
 
@@ -79,6 +81,7 @@ button { font-family: inherit; color: inherit; }
 /* ---------------- header bar ---------------- */
 #bar {
   position: relative; z-index: 20;
+  flex: none;
   display: flex; align-items: center; gap: 18px;
   padding: 10px 18px 9px;
   border-bottom: 1px solid var(--line);
@@ -144,7 +147,7 @@ body.lamplight .btn-gilt:hover { color: #16110a; }
 .btn-ghost { padding: 6px 10px; color: var(--ink-soft); }
 
 /* ---------------- chart ---------------- */
-#chart-wrap { position: relative; z-index: 5; height: calc(100vh - 52px); }
+#chart-wrap { position: relative; z-index: 5; flex: 1 1 auto; min-height: 0; }
 #chart { width: 100%; height: 100%; display: block; cursor: grab; touch-action: none; }
 #chart.panning { cursor: grabbing; }
 
@@ -442,6 +445,7 @@ body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no 
 #intro {
   position: fixed; inset: 0; z-index: 200; display: flex; align-items: center; justify-content: center;
   background: rgba(44, 35, 24, 0.45); backdrop-filter: blur(2px); padding: 20px;
+  overflow-y: auto;
 }
 .intro-card {
   max-width: 560px; background: var(--card); padding: 40px 44px;
@@ -457,6 +461,53 @@ body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no 
 @media (max-width: 900px) {
   .bar-sub, #cartouche, #compass { display: none; }
   #dossier { left: 12px; width: auto; top: auto; height: 62vh; }
-  .bar-search { max-width: none; }
-  #bar { flex-wrap: wrap; gap: 10px; }
+  #bar {
+    display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 10px;
+    padding: 8px 10px;
+  }
+  .bar-search { max-width: none; min-width: 0; }
+  .bar-tools {
+    grid-column: 1 / -1; width: 100%; min-width: 0; margin-left: 0;
+    gap: 8px; overflow-x: auto; scrollbar-width: none;
+  }
+  .bar-tools::-webkit-scrollbar { display: none; }
+  #intro { align-items: flex-start; padding: 16px; }
+  .intro-card { width: 100%; margin: 0; }
+}
+
+@media (max-width: 560px) {
+  .bar-title h1 { font-size: 20px; }
+  .bar-progress { display: none; }
+  #thread-chips { gap: 5px; }
+  .chip { font-size: 0; gap: 0; padding: 5px; }
+  .chip .dot { width: 10px; height: 10px; }
+  .btn { padding: 6px 10px; }
+  #dossier { left: 8px; right: 8px; bottom: 8px; height: 68vh; padding: 20px 18px 24px; }
+  body.path-active #dossier {
+    bottom: var(--path-bar-clearance, 88px);
+    height: calc(100vh - var(--path-bar-clearance, 88px) - var(--mobile-header-height, 94px) - 8px);
+    max-height: 68vh;
+  }
+  .paths-card { padding: 28px 20px 24px; }
+  #path-bar { left: 8px; right: 8px; bottom: 8px; transform: none; gap: 7px; }
+  .path-mid { min-width: 0; flex: 1; }
+  .path-quit { padding: 5px 7px; }
+  .intro-card { padding: 28px 22px; }
+  .intro-card h2 { font-size: 26px; }
+  .intro-card p { font-size: 14.5px; line-height: 1.62; }
+  .page { padding: 58px 20px 96px; }
+  .page-title { font-size: 34px; }
+  .page p { font-size: 17px; line-height: 1.7; }
+  .q { padding: 14px; }
+  .next-up button { display: block; margin: 10px auto 0; }
+}
+
+@media (max-width: 360px) {
+  .bar-tools { gap: 4px; overflow-x: visible; }
+  #thread-chips { gap: 3px; }
+  .chip { padding: 4px; }
+  .chip .dot { width: 9px; height: 9px; }
+  .btn { padding: 5px 7px; }
+  .btn-gilt { font-size: 12px; letter-spacing: 0.07em; }
+  .btn-ghost { padding: 5px 7px; }
 }

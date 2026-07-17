@@ -9,6 +9,66 @@ LOOM.ui = {
   },
 };
 
+LOOM.ui.modal = (function () {
+  var FOCUSABLE = [
+    'a[href]',
+    'button:not([disabled])',
+    'input:not([disabled]):not([type="hidden"])',
+    'select:not([disabled])',
+    'textarea:not([disabled])',
+    '[tabindex]:not([tabindex="-1"])',
+  ].join(',');
+  var sessions = new WeakMap();
+
+  function controls(container) {
+    return Array.prototype.filter.call(container.querySelectorAll(FOCUSABLE), function (el) {
+      return !el.closest('[hidden]') && el.getAttribute('aria-hidden') !== 'true';
+    });
+  }
+
+  function open(container, first, opener) {
+    var previous = sessions.get(container);
+    if (previous) document.removeEventListener('keydown', previous.trap);
+
+    var returnTo = opener || document.activeElement;
+    if (returnTo === document.body || returnTo === document.documentElement) returnTo = null;
+
+    function trap(ev) {
+      if (ev.key !== 'Tab') return;
+      var items = controls(container);
+      if (!items.length) { ev.preventDefault(); return; }
+      var firstItem = items[0];
+      var lastItem = items[items.length - 1];
+      if (ev.shiftKey && (document.activeElement === firstItem || !container.contains(document.activeElement))) {
+        ev.preventDefault();
+        lastItem.focus();
+      } else if (!ev.shiftKey && (document.activeElement === lastItem || !container.contains(document.activeElement))) {
+        ev.preventDefault();
+        firstItem.focus();
+      }
+    }
+
+    sessions.set(container, { opener: returnTo, trap: trap });
+    document.addEventListener('keydown', trap);
+    container.hidden = false;
+    var target = first || controls(container)[0];
+    if (target) target.focus();
+  }
+
+  function close(container) {
+    var session = sessions.get(container);
+    if (container.hidden && !session) return;
+    container.hidden = true;
+    if (!session) return;
+    document.removeEventListener('keydown', session.trap);
+    sessions.delete(container);
+    var opener = session.opener;
+    if (opener && opener.isConnected && !opener.disabled && !opener.closest('[hidden]')) opener.focus();
+  }
+
+  return { open: open, close: close };
+})();
+
 LOOM.reader = (function () {
   var h = LOOM.ui.h;
   var dossier, reader;
@@ -69,6 +129,8 @@ LOOM.reader = (function () {
     dossier.innerHTML = '';
 
     var close = h('button', 'dos-close', '✕');
+    close.title = 'Close dossier';
+    close.setAttribute('aria-label', 'Close dossier');
     close.addEventListener('click', function () { LOOM.map.select(null); });
     dossier.appendChild(close);
 
@@ -86,12 +148,12 @@ LOOM.reader = (function () {
     var isRead = LOOM.app.isRead(id);
     if (lesson) {
       var btn = h('button', 'btn btn-gilt', isRead ? 'Read the lesson again' : 'Open the lesson · ' + (lesson.readingMinutes || 10) + ' min');
-      btn.addEventListener('click', function () { openLesson(id); });
+      btn.addEventListener('click', function () { openLesson(id, btn); });
       cta.appendChild(btn);
       if (isRead) cta.appendChild(h('div', 'dos-charted', '✦ charted ✦'));
     } else {
       var forge = h('div', 'dos-forge');
-      forge.appendChild(document.createTextNode('This territory is not yet charted. Any Claude session in this folder can write it:'));
+      forge.appendChild(document.createTextNode('This territory is not yet charted. Ask Codex in this folder to forge it:'));
       forge.appendChild(h('code', null, 'forge ' + id));
       forge.appendChild(h('div', 'forge-hint', 'The forge writes the lesson into the atlas; reload the chart to read it.'));
       cta.appendChild(forge);
@@ -117,13 +179,15 @@ LOOM.reader = (function () {
   function hideDossier() { dossier.hidden = true; }
 
   // ---------------- reading room ----------------
-  function openLesson(id) {
+  function openLesson(id, opener) {
     var n = node(id);
     var l = LOOM.lessons[id];
     if (!l) return;
     reader.innerHTML = '';
 
     var close = h('button', 'reader-close', '✕');
+    close.title = 'Close lesson';
+    close.setAttribute('aria-label', 'Close lesson');
     close.addEventListener('click', closeLesson);
     reader.appendChild(close);
 
@@ -191,8 +255,8 @@ LOOM.reader = (function () {
     page.appendChild(foot);
 
     reader.appendChild(page);
-    reader.hidden = false;
     reader.scrollTop = 0;
+    LOOM.ui.modal.open(reader, close, opener);
   }
 
   function questionBlock(lessonId, q, qi) {
@@ -233,7 +297,7 @@ LOOM.reader = (function () {
     return box;
   }
 
-  function closeLesson() { reader.hidden = true; }
+  function closeLesson() { LOOM.ui.modal.close(reader); }
 
   function init() {
     dossier = document.getElementById('dossier');
@@ -241,6 +305,7 @@ LOOM.reader = (function () {
     document.addEventListener('keydown', function (ev) {
       if (ev.key !== 'Escape') return;
       if (!reader.hidden) closeLesson();
+      else if (!document.getElementById('paths').hidden || !document.getElementById('intro').hidden) return;
       else if (!dossier.hidden) LOOM.map.select(null);
     });
   }

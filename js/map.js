@@ -421,14 +421,58 @@ LOOM.map = (function () {
     }, { passive: false });
 
     var drag = null;
+    var pointers = {};
+    var pinch = null;
+
+    function pointerList() {
+      return Object.keys(pointers).map(function (id) { return pointers[id]; });
+    }
+
+    function beginPinch() {
+      var pts = pointerList();
+      if (pts.length < 2) return;
+      var a = pts[0], b = pts[1];
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      var rect = svg.getBoundingClientRect();
+      pinch = {
+        distance: Math.hypot(a.x - b.x, a.y - b.y) || 1,
+        w: vb.w,
+        anchorX: vb.x + (mx - rect.left) / rect.width * vb.w,
+        anchorY: vb.y + (my - rect.top) / rect.height * vb.h,
+      };
+      drag = null;
+      svg.classList.add('panning');
+    }
+
+    function movePinch() {
+      var pts = pointerList();
+      if (!pinch || pts.length < 2) return;
+      var a = pts[0], b = pts[1];
+      var distance = Math.hypot(a.x - b.x, a.y - b.y) || 1;
+      var w = Math.max(240, Math.min(fitAllWidth() * 1.15, pinch.w * pinch.distance / distance));
+      var h = w * aspect();
+      var mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2;
+      var rect = svg.getBoundingClientRect();
+      vb.w = w;
+      vb.x = pinch.anchorX - (mx - rect.left) / rect.width * w;
+      vb.y = pinch.anchorY - (my - rect.top) / rect.height * h;
+      apply();
+    }
+
     svg.addEventListener('pointerdown', function (ev) {
       // capture retargets later events to the svg, so remember the true target now
       var g = ev.target.closest ? ev.target.closest('.node') : null;
-      drag = { x: ev.clientX, y: ev.clientY, vx: vb.x, vy: vb.y, moved: false, node: g };
+      pointers[ev.pointerId] = { id: ev.pointerId, x: ev.clientX, y: ev.clientY };
+      if (pointerList().length > 1) beginPinch();
+      else drag = { id: ev.pointerId, x: ev.clientX, y: ev.clientY, vx: vb.x, vy: vb.y, moved: false, node: g };
       svg.setPointerCapture(ev.pointerId);
     });
     svg.addEventListener('pointermove', function (ev) {
-      if (!drag) return;
+      if (!pointers[ev.pointerId]) return;
+      pointers[ev.pointerId].x = ev.clientX;
+      pointers[ev.pointerId].y = ev.clientY;
+      if (pinch) { movePinch(); return; }
+      if (!drag || drag.id !== ev.pointerId) return;
       var scale = vb.w / wrap.clientWidth;
       var dx = (ev.clientX - drag.x) * scale;
       var dy = (ev.clientY - drag.y) * scale;
@@ -440,13 +484,28 @@ LOOM.map = (function () {
         apply();
       }
     });
-    svg.addEventListener('pointerup', function (ev) {
-      svg.classList.remove('panning');
-      if (drag && !drag.moved) {
-        select(drag.node ? drag.node.dataset.id : null, { pan: false });
+    function finishPointer(ev, cancelled) {
+      if (!pointers[ev.pointerId]) return;
+      var wasPinching = !!pinch;
+      delete pointers[ev.pointerId];
+      var left = pointerList();
+      if (wasPinching) {
+        pinch = null;
+        if (left.length >= 2) {
+          beginPinch();
+        } else if (left.length === 1) {
+          drag = { id: left[0].id, x: left[0].x, y: left[0].y, vx: vb.x, vy: vb.y, moved: true, node: null };
+        } else {
+          drag = null;
+        }
+      } else if (drag && drag.id === ev.pointerId) {
+        if (!cancelled && !drag.moved) select(drag.node ? drag.node.dataset.id : null, { pan: false });
+        drag = null;
       }
-      drag = null;
-    });
+      if (!left.length) svg.classList.remove('panning');
+    }
+    svg.addEventListener('pointerup', function (ev) { finishPointer(ev, false); });
+    svg.addEventListener('pointercancel', function (ev) { finishPointer(ev, true); });
     svg.addEventListener('dblclick', function (ev) {
       var p = svgPoint(ev);
       zoomAt(p.x, p.y, 0.55);

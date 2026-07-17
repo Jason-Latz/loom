@@ -19,12 +19,12 @@
     </div>
     <div class="bar-tools">
       <div id="thread-chips" title="Filter by thread"></div>
-      <span id="progress" class="bar-progress"></span>
+      <span id="progress" class="bar-progress" role="status" aria-live="polite" aria-atomic="true"></span>
       <span id="streak" class="bar-streak" hidden></span>
       <button id="paths-btn" class="btn" title="Other ways through the chart">Paths</button>
       <button id="continue-btn" class="btn btn-gilt">Continue</button>
-      <button id="lamp-btn" class="btn btn-ghost" title="Lamplight (night) mode">◐</button>
-      <button id="help-btn" class="btn btn-ghost" title="About this chart">?</button>
+      <button id="lamp-btn" class="btn btn-ghost" title="Turn on lamplight mode" aria-label="Turn on lamplight mode" aria-pressed="false">◐</button>
+      <button id="help-btn" class="btn btn-ghost" title="About this chart" aria-label="About this chart">?</button>
     </div>
   </header>
 
@@ -52,22 +52,22 @@
     </div>
 
     <div id="zoom-tools">
-      <button id="zoom-in" class="btn btn-ghost" title="Zoom in">+</button>
-      <button id="zoom-out" class="btn btn-ghost" title="Zoom out">−</button>
-      <button id="zoom-fit" class="btn btn-ghost" title="See the whole chart">▢</button>
+      <button id="zoom-in" class="btn btn-ghost" title="Zoom in" aria-label="Zoom in">+</button>
+      <button id="zoom-out" class="btn btn-ghost" title="Zoom out" aria-label="Zoom out">−</button>
+      <button id="zoom-fit" class="btn btn-ghost" title="See the whole chart" aria-label="See the whole chart">▢</button>
     </div>
 
     <div id="tip" hidden></div>
     <div id="path-bar" hidden></div>
   </main>
 
-  <div id="paths" hidden></div>
+  <div id="paths" role="dialog" aria-modal="true" aria-label="Other ways through the chart" hidden></div>
 
-  <aside id="dossier" hidden></aside>
+  <aside id="dossier" aria-label="Selected turning point" hidden></aside>
 
-  <div id="reader" hidden></div>
+  <div id="reader" role="dialog" aria-modal="true" aria-label="Lesson reading room" hidden></div>
 
-  <div id="intro" hidden></div>
+  <div id="intro" role="dialog" aria-modal="true" aria-label="About Loom" hidden></div>
 
   <!-- data -->
   <script src="data/worldmap.js"></script>

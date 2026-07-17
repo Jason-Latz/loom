@@ -84,6 +84,9 @@ LOOM.paths = (function () {
     active = null;
     LOOM.map.setPath(null);
     bar.hidden = true;
+    document.body.classList.remove('path-active');
+    document.body.style.removeProperty('--path-bar-clearance');
+    document.body.style.removeProperty('--mobile-header-height');
   }
 
   function go(i) {
@@ -97,6 +100,8 @@ LOOM.paths = (function () {
     if (!active) { bar.hidden = true; return; }
     bar.innerHTML = '';
     var prev = h('button', 'btn path-step', '‹');
+    prev.title = 'Previous step';
+    prev.setAttribute('aria-label', 'Previous step on path');
     prev.disabled = active.i === 0;
     prev.addEventListener('click', function () { go(active.i - 1); });
 
@@ -106,6 +111,8 @@ LOOM.paths = (function () {
     mid.appendChild(h('div', 'path-where', (active.i + 1) + ' of ' + active.ids.length + ' · ' + (n ? n.title : '')));
 
     var next = h('button', 'btn path-step', '›');
+    next.title = 'Next step';
+    next.setAttribute('aria-label', 'Next step on path');
     next.disabled = active.i === active.ids.length - 1;
     next.addEventListener('click', function () { go(active.i + 1); });
 
@@ -117,14 +124,26 @@ LOOM.paths = (function () {
     bar.appendChild(next);
     bar.appendChild(quit);
     bar.hidden = false;
+    syncPathClearance();
+  }
+
+  function syncPathClearance() {
+    if (!active || bar.hidden) return;
+    var barHeight = Math.ceil(bar.getBoundingClientRect().height);
+    var headerHeight = Math.ceil(document.getElementById('bar').getBoundingClientRect().height);
+    document.body.style.setProperty('--path-bar-clearance', (barHeight + 16) + 'px');
+    document.body.style.setProperty('--mobile-header-height', headerHeight + 'px');
+    document.body.classList.add('path-active');
   }
 
   // ---------------- chooser ----------------
-  function openPanel() {
+  function openPanel(opener) {
     panel.innerHTML = '';
     var card = h('div', 'paths-card');
 
     var close = h('button', 'dos-close', '✕');
+    close.title = 'Close paths';
+    close.setAttribute('aria-label', 'Close paths');
     close.addEventListener('click', closePanel);
     card.appendChild(close);
 
@@ -168,15 +187,16 @@ LOOM.paths = (function () {
     card.appendChild(roots);
 
     panel.appendChild(card);
-    panel.hidden = false;
+    LOOM.ui.modal.open(panel, close, opener);
   }
 
-  function closePanel() { panel.hidden = true; }
+  function closePanel() { LOOM.ui.modal.close(panel); }
 
   function init() {
     panel = document.getElementById('paths');
     bar = document.getElementById('path-bar');
-    document.getElementById('paths-btn').addEventListener('click', openPanel);
+    document.getElementById('paths-btn').addEventListener('click', function (ev) { openPanel(ev.currentTarget); });
+    window.addEventListener('resize', function () { if (active) syncPathClearance(); });
     document.addEventListener('keydown', function (ev) {
       if (ev.key === 'Escape' && !panel.hidden) closePanel();
       if (!active || !panel.hidden) return;
