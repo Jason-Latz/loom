@@ -16,4 +16,5 @@ LOOM.lessonFiles = [
   'uruk-first-city',
   'invention-of-writing',
   'surplus-and-the-state',
+  'gift-of-the-nile',
 ];
