@@ -37,4 +37,5 @@ LOOM.lessonFiles = [
   'buddha-middle-path',
   'hundred-schools',
   'socratic-turn',
+  'alexanders-comet',
 ];
