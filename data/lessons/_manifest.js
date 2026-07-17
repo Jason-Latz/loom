@@ -32,4 +32,5 @@ LOOM.lessonFiles = [
   'polis-experiment',
   'invention-of-money',
   'israel-one-god',
+  'crown-of-cyrus',
 ];
