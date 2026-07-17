@@ -127,6 +127,7 @@ LOOM.reader = (function () {
   function showDossier(id) {
     var n = node(id);
     dossier.innerHTML = '';
+    dossier.scrollTop = 0;
 
     var close = h('button', 'dos-close', '✕');
     close.title = 'Close dossier';
