@@ -1,4 +1,4 @@
-# CLAUDE.md — Loom
+# AGENTS.md — Loom
 
 A cartographer's atlas of world history: a 129-node knowledge graph (10 eras,
 dawn of humanity to now) rendered as a parchment chart, where each node opens
@@ -8,15 +8,14 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
 
 ## Commands
 
-- Run: `python3 -m http.server 4173` (or `.claude/launch.json` → server "loom"),
-  then http://localhost:4173. Opening `index.html` directly also works.
+- Run: `python3 -m http.server 4173`, then http://localhost:4173. Opening
+  `index.html` directly also works.
 - Gate (must pass before any commit): `node scripts/check.mjs`
 - Single lesson check: `node scripts/check.mjs data/lessons/<id>.js`
 - Deploy: `vercel --prod --yes` (project `loom`, linked; static, no build step).
   Live at https://loom-gray.vercel.app. There is no git remote, so deploys are
   manual: **forging a lesson does not publish it until you redeploy.**
-  `.vercelignore` keeps `.claude`, `.agents`, scripts, docs, `CLAUDE.md`, and
-  `AGENTS.md` out of the published site.
+  `.vercelignore` keeps scripts/docs/AGENTS.md out of the published site.
 
 ## Architecture
 
@@ -31,12 +30,25 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
 - `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from a feature of the present). Always a subset of the real graph.
 - `js/app.js` — localStorage state (`loom.v1`), header controls, search, intro.
 - `docs/forge-spec.md` — binding style contract for lesson prose.
-- `.claude/skills/forge-lesson/` — the skill that writes new lessons ("forge <node-id>").
+- `.agents/skills/forge-lesson/` — the primary Codex skill that writes new
+  lessons ("forge <node-id>").
 
 ## Conventions
 
 - Lessons are forged per `docs/forge-spec.md`; batch generation delegates prose
   to Sol subagents, one per lesson, manifest updated only by the orchestrator.
+- Before describing historical figures or events as contemporaneous, calculate
+  and compare their dates explicitly rather than inferring from an era label.
+- Before naming a scholarly paper's authors in lesson prose, resolve its DOI
+  metadata or publisher record; do not rely on search snippets or carried notes.
+- Jason prefers Sol for all lesson prose and substantive prose revisions in
+  Codex; assign those writing passes to Sol.
+- Treat Loom as artwork: prioritize beautiful, engaging prose, elegant
+  pedagogy, and aesthetic coherence over merely correct coverage.
+- Mobile and interaction foundations are reliable. Resist feature creep and
+  treat content quality as the main problem now.
+- Include authoritative citations or direct links wherever the lesson format
+  can present them tastefully.
 - No em/en dashes anywhere in content or UI copy (Jason's rule; check enforces).
 - Node ids are kebab-case and permanent (lessons, edges, and progress key on them).
 - Adding a node: insert in era file at the right array position (chronological),
@@ -52,6 +64,9 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   display; keep it when adding overlays.
 - Screenshot QA: intro overlay shows on first visit only (localStorage), clear
   `loom.v1` to reproduce first-run.
+- Modal accessibility requires the full focus cycle: move focus to a visible
+  control on open, trap Tab in the modal, and restore the opener on close.
+  Dialog roles and labels alone are not sufficient.
 - **The gate cannot read English.** It checks structure, not truth or grammar.
   Every batch of forged lessons needs an adversarial reviewer agent too; that
   pass has caught a superseded dating and several confidently-wrong claims that

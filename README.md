@@ -36,15 +36,17 @@ python3 -m http.server 4173
 ```
 
 Progress lives in your browser's localStorage. No accounts, no network, no build.
+The production atlas is at https://loom-gray.vercel.app.
 
 ## Grow it
 
-The graph ships complete, but most nodes are uncharted seeds awaiting prose.
-From this folder, in Claude Code:
+The graph ships complete. Its first 21 lessons, covering Eras I and II, are
+written and reviewed; Era III is the next forge target. From this folder, ask
+Codex to use the tracked `.agents/skills/forge-lesson` skill:
 
 ```
 forge trap-of-seeds      # one node (the dossier shows each node's command)
-forge era 2              # a whole era, written by parallel agents
+forge era 3              # a whole era, written by parallel agents
 ```
 
 The style contract lives in `docs/forge-spec.md`; `node scripts/check.mjs`

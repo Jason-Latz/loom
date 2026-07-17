@@ -69,4 +69,6 @@ each commit.
 - Keep forge work focused on content quality; do not add product features.
 - Include authoritative citations or direct links wherever the format can
   present them tastefully.
+- Calculate and compare dates before calling people or events contemporaneous.
+- Resolve a paper's DOI metadata or publisher record before naming its authors.
 - Never mark a lesson done while the check gate fails.

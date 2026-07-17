@@ -9,6 +9,8 @@ Ten minutes of reading that makes one node of the graph unforgettable:
 a human-scale story first, the zoomed-out significance second, the graph
 connections third, then retrieval questions and pointers onward. The reader
 is a smart adult with no history background and no patience for filler.
+Treat every lesson as artwork: make the prose beautiful and engaging, the
+pedagogy elegant, and the whole reading experience aesthetically coherent.
 
 ## Output format
 
@@ -36,7 +38,8 @@ LOOM.lesson({
 ```
 
 Word budget: story + significance together 1,500-2,200 words. The check gate
-fails outside 1,100-2,900 and warns outside 1,400-2,400.
+warns outside that aim, and warnings fail the release gate. The hard structural
+bounds are 1,100-2,900 words.
 
 ## The story (5-8 paragraphs, 600-950 words)
 
@@ -78,11 +81,15 @@ fine to include one thread the graph does not draw if the lesson earned it.
   early nodes with few predecessors, 1 callback + 3 why is acceptable.
 - Answers teach: 2-4 sentences that would satisfy a curious reader, not a
   grading key. Never "see above."
+- Shape the five questions as one elegant learning sequence, not five isolated
+  checks.
 
 ## Deeper (3)
 
 Named, real works: author + title + one clause on what it offers. Vary the
-kind (a trade book, a scholarly work, a primary source or site).
+kind (a trade book, a scholarly work, a primary source or site). Prefer
+authoritative editions, DOI records, publisher pages, museums, and primary
+sources. Include a direct link or concise citation when it fits tastefully.
 
 ## Voice and hygiene
 
