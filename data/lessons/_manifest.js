@@ -24,4 +24,5 @@ LOOM.lessonFiles = [
   'yellow-river-bronze',
   'bronze-web',
   'maize-and-the-americas',
+  'sea-peoples-collapse',
 ];
