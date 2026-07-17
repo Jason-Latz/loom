@@ -29,4 +29,5 @@ LOOM.lessonFiles = [
   // Era III: The Axial Age
   'iron-and-alphabet',
   'phoenician-web',
+  'polis-experiment',
 ];
