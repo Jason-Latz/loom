@@ -2,25 +2,25 @@ LOOM.era({
   n: 3,
   title: 'The Axial Age',
   span: 'c. 1200 to 200 BCE',
-  blurb: 'Out of the wreckage of bronze, cheaper metal and simpler letters, and then, everywhere at once, humans asking how to live.',
+  blurb: 'Across eight unsettled centuries, new media of rule and exchange met old questions about justice, suffering, order, and the examined life.',
 });
 
 LOOM.node([
   {
     id: 'iron-and-alphabet',
     era: 3,
-    title: 'Iron and Alphabet',
+    title: 'Iron and the Alphabetic Turn',
     date: 'c. 1100 BCE',
     sort: -1100,
     region: 'swasia',
     x: 57,
     threads: ['craft', 'ideas'],
-    hook: 'The palace world dies, and its cheap, democratic successors are forged from rust and twenty-two letters.',
+    hook: 'Iron blooms in a furnace, speech settles into a few dozen signs, and two difficult crafts slowly escape the palace gate.',
     summary:
-      'Bronze was an aristocrat’s metal, dependent on royal trade networks; iron ore is everywhere, so after the collapse, tools and weapons spread downward through society. Likewise the Canaanite alphabet: twenty-two signs a merchant could learn, against the scribal monopolies of cuneiform. Cheap metal and cheap letters quietly widened who could fight, farm, and think.',
+      'Ironworking and alphabetic writing both began before the eastern Mediterranean palace crises, then spread unevenly through the societies that followed. Iron ore was common, but useful iron demanded fuel, skill, and labor. Consonantal scripts reduced the number of signs dramatically, but did not create mass literacy. Their consequence was slower and subtler: more communities could adapt metal and writing to local needs.',
     edges: [
-      { to: 'phoenician-web', type: 'enables', why: 'The alphabet ships out on Phoenician hulls to every Mediterranean shore.' },
-      { to: 'polis-experiment', type: 'enables', why: 'Iron arms and spreading literacy widened who counted in the city.' },
+      { to: 'phoenician-web', type: 'enables', why: 'Levantine cities carried their consonantal script through commerce and settlement, while neighboring peoples reshaped it for other languages.' },
+      { to: 'polis-experiment', type: 'enables', why: 'Greeks adapted Phoenician signs, including signs for vowels, as their communities recovered and new civic cultures formed.' },
     ],
   },
   {
@@ -32,12 +32,12 @@ LOOM.node([
     region: 'swasia',
     x: 54,
     threads: ['wealth'],
-    hook: 'A few cities with no armies to speak of string the whole Mediterranean together with ships and credit.',
+    hook: 'Cedar, purple cloth, carved ivory, and a portable script leave rival Levantine harbors and reappear an ocean away.',
     summary:
-      'Tyre and Sidon rebuilt post-collapse trade as a private, maritime affair: purple dye, cedar, silver from Spain, and colonies from Cyprus to Carthage. The Phoenicians show a recurring type in this atlas, the small trading state that shapes the world through networks rather than conquest, and carries ideas, like its alphabet, as cargo.',
+      'Phoenician is a later Greek name for independent Levantine cities including Tyre, Sidon, Byblos, and Arwad. Their merchants and craftspeople joined exchange already revived by many peoples, while their settlements reached Cyprus, North Africa, Iberia, and beyond. Assyrian tribute and imperial pressure shadowed that commerce. The network moved materials and techniques, but its western communities, especially Carthage, soon developed histories of their own.',
     edges: [
-      { to: 'polis-experiment', type: 'enables', why: 'Greeks copied the Phoenician alphabet, the colony, and the sea-lane.' },
-      { to: 'dutch-money-machine', type: 'echoes', why: 'Small maritime states keep outweighing empires, pound for pound.' },
+      { to: 'polis-experiment', type: 'enables', why: 'Greek and Phoenician expansion shared ports and sea lanes, sometimes trading, sometimes competing, and always changing the shores they reached.' },
+      { to: 'dutch-money-machine', type: 'echoes', why: 'Both cases show compact maritime polities turning specialized production and far-flung exchange into influence beyond their size.' },
     ],
   },
   {
@@ -49,29 +49,29 @@ LOOM.node([
     region: 'europe',
     x: 33,
     threads: ['power', 'wealth'],
-    hook: 'Poor soil, many harbors, no empire possible: Greece stumbles into politics as a citizen’s art.',
+    hook: 'Across the Aegean, a city and its countryside begin calling themselves one political community, then argue over who belongs.',
     summary:
-      'Greece’s broken geography bred hundreds of small city-states instead of one river empire. Citizen farmers who bought their own armor fought side by side and demanded a say, and colonization plus trade spread the model. The polis made politics itself, the public argument over common life, into a daily practice and eventually a subject of thought.',
+      'The Greek polis joined an urban center, surrounding land, cult, law, and a body of citizens. Geography mattered, but did not make hundreds of communities inevitable, and citizen infantry did not simply demand democracy after learning to fight in formation. Aristocracy, tyranny, oligarchy, and broader participation followed different paths. What endured was the polis as an arena where membership, justice, and common action could be contested.',
     edges: [
-      { to: 'athens-demokratia', type: 'transforms', why: 'One polis pushes citizen rule to its logical extreme.' },
-      { to: 'socratic-turn', type: 'enables', why: 'A society of public argument eventually argues about argument itself.' },
+      { to: 'athens-demokratia', type: 'transforms', why: 'Athens reorganized the inherited polis so that ordinary male citizens exercised unusually direct power, while most residents remained excluded.' },
+      { to: 'socratic-turn', type: 'enables', why: 'Assemblies, courts, theaters, and streets made public speech consequential, creating the civic setting in which Socratic questioning became both magnetic and dangerous.' },
     ],
   },
   {
     id: 'invention-of-money',
     era: 3,
-    title: 'The Invention of Money',
+    title: 'When Value Took a Stamp',
     date: 'c. 620 BCE',
     sort: -620,
     region: 'swasia',
     x: 51,
     threads: ['wealth', 'craft'],
-    hook: 'A Lydian king stamps his badge on lumps of gold and silver, and value learns to travel among strangers.',
+    hook: 'A small electrum lump carries a lion, a weight standard, and a promise whose original purpose we still cannot name.',
     summary:
-      'Coinage appeared almost simultaneously in Lydia, Greece, India, and China: standardized metal, guaranteed by a state’s stamp, spendable with strangers. Money dissolves relationships into prices, funds armies without levies, and lets wealth pool in new hands. Debt and credit are older, but coin made the market a place anyone could enter, and no one could fully control.',
+      'Money, debt, weighed metal, and accounting were ancient when western Anatolians began striking electrum around 650 BCE. Coinage spread through Greek and Persian worlds, while South Asian punch-marked silver and Chinese cast currencies emerged on distinct chronologies. Authorities could tax, pay, and advertise through coins, yet private users tested and countermarked them. A stamped piece did not invent markets or trust; it reorganized both.',
     edges: [
-      { to: 'athens-demokratia', type: 'enables', why: 'Coined pay for rowers and jurors made democracy a working man’s affair.' },
-      { to: 'silver-river', type: 'echoes', why: 'Money keeps expanding its web until one metal binds the whole planet.' },
+      { to: 'athens-demokratia', type: 'enables', why: 'Athens used abundant silver and public payments to support fleets, juries, festivals, and participation, although democracy was not born from coin alone.' },
+      { to: 'silver-river', type: 'echoes', why: 'Lydian electrum and early modern silver belong to different monetary worlds, but each shows political authority trying to make metal legible across distance.' },
     ],
   },
   {
@@ -83,12 +83,12 @@ LOOM.node([
     region: 'swasia',
     x: 60,
     threads: ['ideas'],
-    hook: 'A small kingdom is crushed and exiled, and out of the catastrophe comes the most consequential idea in religious history.',
+    hook: 'Jerusalem falls, its temple burns, and displaced Judeans must decide whether their god has vanished, lost, or followed them east.',
     summary:
-      'When Babylon destroyed Jerusalem, the exiles faced a theological crisis: a defeated people should abandon its defeated god. Instead they concluded their God was the only one, lord of Babylon too, punishing and redeeming through history. Ethical monotheism, covenant, scripture, and sacred history: the operating assumptions of half the modern world were forged in this defeat.',
+      'Babylon destroyed Jerusalem in 586 BCE and deported part of Judah’s population, but Israelite religion did not become monotheistic in a single moment. Exclusive devotion to YHWH had older roots, while biblical texts preserve continuing arguments about other divine beings. Exile and Persian-period restoration sharpened claims that one god governed every land, and the collecting and editing of traditions helped make a portable community of text, practice, and memory.',
     edges: [
-      { to: 'jesus-to-constantine', type: 'enables', why: 'Christianity grows directly out of Jewish scripture and messianic hope.' },
-      { to: 'recitation-in-the-desert', type: 'enables', why: 'Islam claims and continues the same Abrahamic lineage.' },
+      { to: 'jesus-to-constantine', type: 'enables', why: 'The Jesus movement began within Second Temple Judaism and interpreted Jesus through Jewish scripture, covenant, resurrection, and messianic expectation.' },
+      { to: 'recitation-in-the-desert', type: 'enables', why: 'The Quran addressed Jewish and Christian traditions while articulating its own account of revelation, prophecy, and uncompromising divine unity.' },
     ],
   },
   {
@@ -100,12 +100,12 @@ LOOM.node([
     region: 'swasia',
     x: 63,
     threads: ['power'],
-    hook: 'The first true superpower rules forty peoples by a strange new method: letting them be themselves.',
+    hook: 'At Babylon, a foreign conqueror praises Marduk; in Judean scripture, the same king becomes the chosen agent of another god.',
     summary:
-      'Persia under Cyrus and Darius stretched from the Aegean to the Indus: satraps, a royal road, standard coinage, and deliberate tolerance of local gods and laws. Cyrus freed the Judean exiles and was called messiah in the Bible. The Achaemenids invented durable multiethnic empire, the template Alexander, Rome, and the caliphs would inherit.',
+      'Cyrus built the Achaemenid realm through conquest; Darius later stabilized an empire stretching from the Aegean and Egypt toward Central and South Asia with governors, roads, tribute, and many administrative languages. Kings often worked through local elites and cults, but this was imperial strategy, not universal tolerance or human rights. Their monuments made diversity itself a language of royal dominion, and successors repeatedly reused their infrastructure.',
     edges: [
-      { to: 'athens-demokratia', type: 'collides', why: 'Persia’s invasions forged the Greek identity that defied it.' },
-      { to: 'alexanders-comet', type: 'transforms', why: 'Alexander conquered Persia’s empire and kept its machinery running.' },
+      { to: 'athens-demokratia', type: 'collides', why: 'Conflict with Achaemenid forces intensified some claims of shared Greek identity, even as Greek cities fought on both sides and Athens built an empire of its own.' },
+      { to: 'alexanders-comet', type: 'transforms', why: 'Alexander destroyed Achaemenid rule but claimed its kingship, personnel, routes, treasuries, and ceremonial geography.' },
     ],
   },
   {
@@ -117,29 +117,29 @@ LOOM.node([
     region: 'europe',
     x: 31,
     threads: ['power'],
-    hook: 'For about two centuries, one city is governed by lottery, assembly, and the raised hands of farmers and rowers.',
+    hook: 'Thousands of male citizens climb the Pnyx to make policy themselves, while the city below is full of people denied a voice.',
     summary:
-      'Athenian demokratia went further than any regime since: offices by lot, decisions by mass assembly, ostracism for the over-mighty, all resting on citizen rowers, and on slaves and excluded women. It was brilliant, aggressive, and unstable, and it executed Socrates. For two thousand years afterward, educated opinion cited Athens as proof democracy fails.',
+      'Cleisthenes’ reforms in 508 and 507 BCE reorganized citizens across Attica; later changes empowered assembly, council, and large juries, with many offices filled by lot. Participation widened among adult male citizens but excluded women, enslaved people, and resident foreigners. Democracy survived oligarchic coups in 411 and 404, while Athenian empire and warfare helped finance and deform it. Its institutions reveal equality practiced intensely inside a guarded boundary.',
     edges: [
-      { to: 'socratic-turn', type: 'collides', why: 'Democracy killed Socrates, and philosophy never quite forgave it.' },
-      { to: 'american-experiment', type: 'echoes', why: 'The American founders studied Athens mostly as a cautionary tale.' },
+      { to: 'socratic-turn', type: 'collides', why: 'A citizen jury condemned Socrates after war and oligarchic terror, making his trial an enduring argument about dissent, law, and collective judgment.' },
+      { to: 'american-experiment', type: 'echoes', why: 'United States constitution makers admired classical civic life but often invoked direct democracy as a danger while designing a representative republic.' },
     ],
   },
   {
     id: 'buddha-middle-path',
     era: 3,
     title: 'The Buddha’s Middle Path',
-    date: 'c. 500 BCE',
+    date: 'c. fifth century BCE',
     sort: -500,
     region: 'sasia',
     x: 73,
     threads: ['ideas'],
-    hook: 'A sheltered prince sees sickness, age, and death, and walks out of his palace to solve suffering itself.',
+    hook: 'A teacher rejects both luxury and self-torment, then asks his listeners to examine how suffering is made from moment to moment.',
     summary:
-      'In the urbanizing Ganges valley, renouncers questioned Vedic sacrifice. Siddhartha Gautama taught that suffering arises from craving and can be extinguished by discipline of mind: no caste, no required gods, a psychology as much as a religion. Alongside the Upanishads and Jainism, India made liberation of the self the axis of thought.',
+      'The Buddha’s dates remain disputed, and the sheltered prince with four sights comes from later sacred biography. Early teachings place him among northern India’s renouncers, debating karma, rebirth, sacrifice, austerity, and release. His middle path joined ethical conduct, meditation, and insight: craving sustains suffering, no permanent self can be found, and liberation is possible. Buddhist communities accepted varied social ranks without abolishing the societies around them.',
     edges: [
-      { to: 'ashoka-wheel', type: 'enables', why: 'An emperor’s conversion turns a renouncer movement into a world religion.' },
-      { to: 'silk-road-pulse', type: 'enables', why: 'Buddhism becomes the Silk Road’s greatest export.' },
+      { to: 'ashoka-wheel', type: 'enables', why: 'Ashoka’s patronage, inscriptions, and support for the monastic community gave Buddhism unprecedented imperial reach without making it his empire’s sole faith.' },
+      { to: 'silk-road-pulse', type: 'enables', why: 'Monks, merchants, translators, and patrons later carried diverse Buddhist traditions across Central Asian routes into China.' },
     ],
   },
   {
@@ -151,13 +151,13 @@ LOOM.node([
     region: 'easia',
     x: 87,
     threads: ['ideas', 'power'],
-    hook: 'As China tears itself apart, wandering teachers compete to answer one question: what restores order?',
+    hook: 'Courts hungry for advantage draw teachers who disagree about ritual, care, language, nature, law, and the human heart.',
     summary:
-      'Amid the Warring States, rival masters hawked rival cures. Confucius prescribed ritual, hierarchy, and cultivated virtue; Laozi, effortless alignment with the Way; Mozi, impartial care; the Legalists, iron law and punishment. Chinese political thought was born as a debate about order rather than salvation, and every dynasty since has mixed these answers.',
+      'From Confucius in the late Spring and Autumn period through the Warring States, teachers and texts argued over how persons and polities could flourish. Mohists defended inclusive concern and public benefit; Confucian traditions cultivated relationship and ritual; texts later called Daoist questioned rigid distinctions; statecraft thinkers emphasized standards, administration, and power. The neat schools were largely classified later, but the surviving arguments preserve a genuinely plural intellectual world.',
     edges: [
-      { to: 'qin-hammer', type: 'collides', why: 'Legalism won the argument by winning the war.' },
-      { to: 'han-mandate', type: 'transforms', why: 'The Han fused Confucian ethics onto Legalist machinery.' },
-      { to: 'neo-confucian-turn', type: 'transforms', why: 'Confucius, challenged by the Buddha and rebuilt by Zhu Xi, hardens from one voice in an open argument into an orthodoxy with an examination.' },
+      { to: 'qin-hammer', type: 'collides', why: 'Qin rulers drew on reforms and statecraft associated with figures later labeled Legalist, then used conquest to close the age of rival courts.' },
+      { to: 'han-mandate', type: 'transforms', why: 'Han government preserved Qin institutions while selecting, combining, and canonizing earlier teachings in changing ways.' },
+      { to: 'neo-confucian-turn', type: 'transforms', why: 'Centuries of debate with Buddhist and Daoist thinkers helped later scholars rebuild Confucian learning as an ambitious account of mind, cosmos, ethics, and rule.' },
     ],
   },
   {
@@ -169,12 +169,12 @@ LOOM.node([
     region: 'europe',
     x: 29,
     threads: ['ideas'],
-    hook: 'An ugly stonemason asks Athens annoying questions until it kills him, and reason acquires its first martyr.',
+    hook: 'A man who wrote nothing questions Athens until a jury orders him to drink hemlock, leaving his students to fight over what he meant.',
     summary:
-      'Socrates cross-examined everyone’s certainties and died for it; Plato answered with a philosophy of eternal forms and philosopher-kings; Aristotle catalogued everything from logic to constitutions to fish. Together they set the West’s agenda: that nature is intelligible, that ethics can be argued, that the examined life is the one worth living.',
+      'The historical Socrates is difficult to recover because Aristophanes, Xenophon, and Plato portray him differently. His questioning joined ethical inquiry to an unsettling admission of ignorance; his prosecution in 399 BCE made philosophy’s relation to civic authority impossible to ignore. Plato turned Socratic conversation into literary philosophy, and Plato’s student Aristotle built different methods of logic and inquiry. Their influence was immense, but never singular or uncontested.',
     edges: [
-      { to: 'house-of-wisdom', type: 'enables', why: 'Greek philosophy survives the fall of its world in Arabic translation.' },
-      { to: 'first-universities', type: 'enables', why: 'Aristotle returns to Europe and becomes the curriculum.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'Translation movements in Abbasid lands transformed Greek works through Syriac and Arabic, where scholars criticized, extended, and recombined them.' },
+      { to: 'first-universities', type: 'enables', why: 'Latin translations made much of Aristotle newly available in medieval Europe, provoking university curricula, prohibitions, commentaries, and synthesis.' },
     ],
   },
   {
@@ -186,13 +186,13 @@ LOOM.node([
     region: 'europe',
     x: 36,
     threads: ['power', 'ideas'],
-    hook: 'A twenty-something burns across three continents in a decade, dies, and leaves Greek as the language of half the world.',
+    hook: 'A Macedonian king crosses into Asia, breaks an empire, adopts parts of its court, and leaves his generals a world they cannot keep whole.',
     summary:
-      'Alexander conquered the Persian empire in eleven years and died at thirty-two. The point is what remained: Greek-speaking cities from Egypt to Afghanistan, Alexandria’s library, Greek kings in India minting Buddhist coins. The Hellenistic fusion made ideas mobile across a continent, the medium in which Rome and Christianity would later travel.',
+      'Between 334 and 323 BCE, Alexander’s forces conquered the Achaemenid realm as far as the Punjab through sieges, battles, massacres, alliances, and appropriation. His empire fragmented at his death. Successor kingdoms founded and refounded cities, patronized libraries and courts, and made Greek a language of power across a vast but multilingual region. Local peoples adapted, resisted, and reshaped Hellenistic forms rather than entering one seamless fusion.',
     edges: [
-      { to: 'ashoka-wheel', type: 'enables', why: 'His invasion’s wake lifted the Mauryas to power over India.' },
-      { to: 'roman-republic-breaks', type: 'echoes', why: 'His example haunted every Roman with ambitions beyond the law.' },
-      { to: 'house-of-wisdom', type: 'enables', why: 'Hellenistic science pooled at Alexandria, waiting to flow into Arabic.' },
+      { to: 'ashoka-wheel', type: 'enables', why: 'Alexander’s withdrawal and the fall of Achaemenid power altered northwestern politics, but Chandragupta Maurya’s rise cannot be reduced to a Macedonian aftershock.' },
+      { to: 'roman-republic-breaks', type: 'echoes', why: 'Roman elites repeatedly measured conquest and personal glory against Alexander, a dangerous model for generals whose commands outgrew republican restraint.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'Hellenistic scholars developed bodies of mathematics, medicine, and philosophy that later translators and thinkers rendered into Arabic and made their own.' },
     ],
   },
   {
@@ -204,12 +204,12 @@ LOOM.node([
     region: 'sasia',
     x: 71,
     threads: ['power', 'ideas'],
-    hook: 'An emperor counts the corpses of his greatest victory, is sickened, and tries to rule by conscience instead.',
+    hook: 'A conqueror carves his own casualty claim into rock, then tells subjects from Afghanistan to the Indian coast what remorse should do.',
     summary:
-      'After slaughtering perhaps 100,000 at Kalinga, the Mauryan emperor Ashoka publicly repented in edicts carved across India: rule by dharma, religious tolerance, hospitals, and missionaries sent as far as Greece and Ceylon. The experiment of empire justified by ethics rather than conquest remained a touchstone; his wheel sits on India’s flag today.',
+      'Ashoka’s thirteenth rock edict says 100,000 were killed and 150,000 deported in Kalinga, royal figures that cannot be independently verified. It expresses remorse and prefers conquest by dhamma, yet also warns forest peoples and retains imperial power. Other edicts promote restraint, welfare, respect among religious communities, and officials who carried the message. His Buddhist commitment predates some inscriptions, so Kalinga was a moral turn, not a simple conversion scene.',
     edges: [
-      { to: 'jesus-to-constantine', type: 'echoes', why: 'An emperor adopts a minority faith and remakes it into a world religion.' },
-      { to: 'salt-and-satyagraha', type: 'echoes', why: 'Ashoka’s wheel returns beside Gandhi on independent India’s flag.' },
+      { to: 'jesus-to-constantine', type: 'echoes', why: 'Both rulers linked personal religious allegiance to imperial patronage, but neither story is a sudden conversion that made one uniform state faith.' },
+      { to: 'salt-and-satyagraha', type: 'echoes', why: 'Independent India placed Ashoka’s wheel at the center of its flag, making an ancient imperial emblem serve a modern republic shaped by anticolonial struggle.' },
     ],
   },
   {
@@ -221,12 +221,12 @@ LOOM.node([
     region: 'easia',
     x: 89,
     threads: ['power'],
-    hook: 'One ruthless state standardizes the cart axles, the script, the weights, and then the whole of China.',
+    hook: 'Bronze measures, written forms, roads, counties, and conscript armies make conquest repeatable, then make the conqueror’s demands unbearable.',
     summary:
-      'The Qin king unified the warring states by Legalist method: total mobilization, collective punishment, books burned, scholars buried. In eleven years he standardized script, currency, measures, and roads, then his dynasty collapsed. The Qin proved a continent-sized state was possible and taught every successor the formula: Legalist skeleton, gentler clothing.',
+      'Qin defeated its rivals after generations of agrarian, military, and administrative reform, then in 221 BCE created the first centralized empire over the Chinese cultural heartland. The First Emperor extended commanderies, laws, roads, script standards, weights, measures, and coinage. Later Han histories describe book burning and the burial of scholars, but their details and purposes are disputed. Qin collapsed in 206 amid rebellion, while much of its governing architecture survived.',
     edges: [
-      { to: 'han-mandate', type: 'transforms', why: 'The Han kept the Qin machine and softened its doctrine.' },
-      { to: 'mao-to-market', type: 'echoes', why: 'The unifying hammer, remaking society by force, returns in 1949.' },
+      { to: 'han-mandate', type: 'transforms', why: 'Han rulers inherited Qin territorial administration and standards, modified its laws and labor demands, and developed new languages of legitimacy.' },
+      { to: 'mao-to-market', type: 'echoes', why: 'Later Chinese rulers repeatedly invoked the First Emperor when debating whether radical unification is founding achievement, intolerable violence, or both.' },
     ],
   },
 ]);
