@@ -13,4 +13,5 @@ LOOM.lessonFiles = [
 
   // Era II: Seeds & Cities
   'rice-and-the-yangtze',
+  'uruk-first-city',
 ];
