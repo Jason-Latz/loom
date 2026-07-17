@@ -33,7 +33,11 @@ LOOM.lesson({
     { type: 'callback', prompt: '...', answer: '...', callbackTo: 'earlier-node-id' },
     { type: 'callback', prompt: '...', answer: '...', callbackTo: 'earlier-node-id' },
   ],
-  deeper: [ /* 3 strings: named books/works with one clause on why */ ],
+  deeper: [
+    { title: 'Author, Work', why: 'One clause on what it offers.', url: 'https://...' },
+    { title: 'Institution, Source or object', why: 'One clause on what it reveals.', url: 'https://...' },
+    { title: 'Author, Work', why: 'One clause on why it is worth the reader’s time.', url: 'https://...' },
+  ],
 });
 ```
 
@@ -86,10 +90,18 @@ fine to include one thread the graph does not draw if the lesson earned it.
 
 ## Deeper (3)
 
-Named, real works: author + title + one clause on what it offers. Vary the
-kind (a trade book, a scholarly work, a primary source or site). Prefer
-authoritative editions, DOI records, publisher pages, museums, and primary
-sources. Include a direct link or concise citation when it fits tastefully.
+New lessons should use exactly three clickable source objects shaped
+`{ title: 'Author, Work', why: '...', url: 'https://...' }`. Legacy string
+items remain supported, but do not use them when forging new work. Make each
+title a tasteful, human-readable label rather than a bare URL, and verify its
+author, title, edition, and other metadata against the linked record.
+
+Use authoritative HTTPS links. Prefer primary texts and source objects from
+their custodians, scholarly books or papers through publishers and DOI records,
+and accessible syntheses from museums, universities, or comparable institutions.
+When the evidence allows, make the three items one of each. Choose sources that
+genuinely extend the lesson, and make each `why` clause an elegant invitation
+rather than a database annotation.
 
 ## Voice and hygiene
 

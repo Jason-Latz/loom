@@ -67,6 +67,11 @@ each commit.
 - Treat each lesson as artwork: make the prose engaging, the pedagogy elegant,
   and the whole piece aesthetically coherent.
 - Keep forge work focused on content quality; do not add product features.
-- Include authoritative citations or direct links wherever the format can
-  present them tastefully.
+- For every new lesson, make `deeper` exactly three clickable objects shaped
+  `{ title: 'Author, Work', why: '...', url: 'https://...' }`. Legacy string
+  items remain supported, but new work must use objects.
+- Give each source a tasteful label and an authoritative HTTPS link. Verify
+  authors, titles, editions, and paper metadata against the linked record.
+- When available, vary the three sources across a primary text or source
+  object, a scholarly work, and an accessible museum or university synthesis.
 - Never mark a lesson done while the check gate fails.
