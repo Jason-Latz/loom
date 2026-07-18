@@ -7,6 +7,23 @@ LOOM.era({
 
 LOOM.node([
   {
+    id: 'grand-canal-spine',
+    era: 5,
+    title: 'The Grand Canal',
+    date: '605 to 610 CE',
+    sort: 605,
+    region: 'easia',
+    x: 85,
+    threads: ['craft', 'wealth', 'power'],
+    hook: 'A dynasty digs a channel from the rice south to the political north, counting conscripts by the million. The Sui dies of the digging; every dynasty after lives off the ditch.',
+    summary:
+      'Sui engineers linked older waterways into a canal system joining the Yangtze’s rice surplus to the northern plains where armies and capitals sat. The forced labor helped destroy the Sui within decades, but Tang and Song ran on the artery: grain taxes afloat, garrisons provisioned, two economic worlds stitched into one polity. Rebuilt many times, the canal outlasted every wall as China’s true unifier.',
+    edges: [
+      { to: 'tang-golden-network', type: 'enables', why: 'Chang’an could feed a million people because southern grain moved north along the Sui canals.' },
+      { to: 'song-economic-miracle', type: 'enables', why: 'The canal grid became the commercial spine along which Song markets, cities, and iron towns thickened.' },
+    ],
+  },
+  {
     id: 'recitation-in-the-desert',
     era: 5,
     title: 'The Recitation',
@@ -59,6 +76,57 @@ LOOM.node([
     ],
   },
   {
+    id: 'sogdian-web',
+    era: 5,
+    title: 'The Sogdian Web',
+    date: 'c. 600 to 800 CE',
+    sort: 650,
+    region: 'sasia',
+    x: 78,
+    threads: ['wealth', 'ideas'],
+    hook: 'The best-connected people in Eurasia rule no empire. Samarkand family firms post sons down every oasis road to China, and their tongue becomes the road’s common speech.',
+    summary:
+      'Sogdians, Iranian-speaking city dwellers of Samarkand and Bukhara, ran the overland silk trade at its height not by holding territory but through family partnerships, diaspora colonies, and credit stretching from Persia to Chang’an. Their language served as the route’s lingua franca; their caravans moved silk, silver, and musk while carrying Buddhism, Christianity, and Manichaeism east. In these centuries the silk roads were not Chinese or Persian ventures so much as Sogdian ones.',
+    edges: [
+      { to: 'tang-golden-network', type: 'enables', why: 'Sogdian merchants, musicians, and fashions filled Chang’an, where even the rebel An Lushan carried Sogdian ancestry.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'Central Asian cities passed papermaking and learned traditions into the Abbasid book world after 751.' },
+    ],
+  },
+  {
+    id: 'baqt-of-nubia',
+    era: 5,
+    title: 'Nubia’s Long Truce',
+    date: '652 CE',
+    sort: 652,
+    region: 'africa',
+    x: 47,
+    threads: ['power', 'wealth'],
+    hook: 'Arab armies that took Persia whole stop at the Nile cataracts. Christian Nubia’s famed archers force a different ending: a negotiated exchange that will hold for six centuries.',
+    summary:
+      'After the 652 siege of Dongola failed to break Makuria, Egypt’s new Arab rulers agreed to the baqt: an annual reciprocal exchange, enslaved people and goods northward, grain and cloth southward, with mutual security pledged. Nearly unique in early Islamic law, it treated a neighbor as neither conquered nor enemy. Behind it, Nubia’s Christian kingdoms kept cathedrals, murals, and a literate court flourishing for six hundred years.',
+    edges: [
+      { to: 'golden-sahara', type: 'echoes', why: 'Caravan taxes and treaty diplomacy alike show African states setting the terms of exchange with the Islamic north.' },
+      { to: 'swahili-stone-towns', type: 'echoes', why: 'On the eastern coast too, African societies met the Muslim world through commerce and negotiation rather than conquest.' },
+    ],
+  },
+  {
+    id: 'silla-bell-and-grotto',
+    era: 5,
+    title: 'The Bell and the Grotto',
+    date: 'c. 676 to 774 CE',
+    sort: 676,
+    region: 'easia',
+    x: 92,
+    threads: ['power', 'ideas', 'craft'],
+    hook: 'A small Korean kingdom allies with Tang China to unify the peninsula, then pushes its ally back out. What it keeps is the toolkit: sutras, statecraft, and bronze that rings for miles.',
+    summary:
+      'Silla unified most of the Korean peninsula by 676, borrowing Tang statecraft and Buddhism while refusing Tang rule. Gyeongju filled with temples; the Seokguram grotto Buddha and the great Emille bell mark a court that made imported forms fully Korean, while the monk Wonhyo carried Buddhist philosophy to commoners. A dharani scroll sealed in a Bulguksa pagoda by 751 is among the oldest woodblock prints surviving anywhere. Korea shaped East Asia; it was never a mere corridor.',
+    edges: [
+      { to: 'diamond-sutra', type: 'enables', why: 'Buddhist merit economies in Silla and Tang turned scripture copying into replication technology before any dated printed book.' },
+      { to: 'heian-and-genji', type: 'echoes', why: 'Korea and Japan each took the Tang package and bent it to a native court’s own uses.' },
+    ],
+  },
+  {
     id: 'tang-golden-network',
     era: 5,
     title: 'Tang: The Open Empire',
@@ -77,6 +145,91 @@ LOOM.node([
     ],
   },
   {
+    id: 'shankara-not-two',
+    era: 5,
+    title: 'Not Two',
+    date: 'c. 700 to 750 CE',
+    sort: 715,
+    region: 'sasia',
+    x: 70,
+    threads: ['ideas'],
+    hook: 'A young renouncer walks the length of India arguing that the self you are and the absolute that grounds everything are not two. Winning that argument will reorganize Hindu thought.',
+    summary:
+      'Shankara systematized Advaita Vedanta: the world of difference is misperception, and liberation is recognizing the self as brahman, already free. Tradition dates him 788 to 820; many scholars now argue for around 700. His Upanishad commentaries and the monastic network attributed to him gave Hindu philosophy an institutional spine that answered Buddhism’s intellectual prestige, so effectively that later India remembered him, with much exaggeration, as the man who argued Buddhism out of the land.',
+    edges: [
+      { to: 'platform-sutra', type: 'echoes', why: 'Advaita and Chan each claim the deepest truth is already present and only ignorance hides it.' },
+      { to: 'neo-confucian-turn', type: 'echoes', why: 'Song Confucians, like Vedantins, renovated an ancient tradition to answer Buddhism’s metaphysical challenge.' },
+    ],
+  },
+  {
+    id: 'platform-sutra',
+    era: 5,
+    title: 'Sudden Light',
+    date: 'c. eighth century CE',
+    sort: 735,
+    region: 'easia',
+    x: 86,
+    threads: ['ideas'],
+    hook: 'In the story, an illiterate woodcutter wins a verse contest he cannot read and inherits a patriarch’s robe. The story is the point: awakening owes nothing to book learning.',
+    summary:
+      'The Platform Sutra, assembled decades after Huineng died in 713, made a barely documented monk the sixth patriarch of Chan and enlightenment a sudden seeing rather than a graded ascent. The rhetoric of directness was itself a crafted literary product, forged in sectarian rivalry, which is half the lesson. Chan reshaped East Asian religion and art, and eventually, as Zen, the modern West’s whole image of Buddhism.',
+    edges: [
+      { to: 'samye-debate', type: 'collides', why: 'At Samye a Chan teacher’s sudden path was argued down by Indian gradualists before the Tibetan court.' },
+      { to: 'neo-confucian-turn', type: 'collides', why: 'Song Confucians defined themselves against Chan while quietly borrowing its discipline of the examined mind.' },
+    ],
+  },
+  {
+    id: 'quarrel-of-images',
+    era: 5,
+    title: 'The Quarrel of Images',
+    date: '726 to 843 CE',
+    sort: 745,
+    region: 'europe',
+    x: 36,
+    threads: ['ideas', 'power'],
+    hook: 'Emperors order the icons whitewashed; monks and grandmothers hide them. From a monastery under Muslim rule, John of Damascus writes the defense: matter can carry God.',
+    summary:
+      'For over a century Byzantium fought about whether images of Christ and the saints were idolatry or the incarnation’s logical consequence. Iconoclast emperors, perhaps answering Islam’s aniconic confidence and a volcano read as judgment, stripped the churches; John of Damascus, beyond imperial reach, argued that honor paid an image passes to its prototype. Icons won in 843, defining Orthodox worship, and the argument over what images do to us never ended.',
+    edges: [
+      { to: 'great-schism', type: 'enables', why: 'Charlemagne’s scholars rejected the icon council’s Greek subtleties, adding theological distrust to the drift between Latin and Greek churches.' },
+      { to: 'luthers-hammer', type: 'echoes', why: 'Reformers whitewashing churches in the 1520s replayed Byzantium’s argument about what an image owes to God.' },
+    ],
+  },
+  {
+    id: 'du-fu-witness',
+    era: 5,
+    title: 'The Poet as Witness',
+    date: 'c. 755 to 770 CE',
+    sort: 758,
+    region: 'easia',
+    x: 91,
+    threads: ['ideas'],
+    hook: 'A poet fails the examinations, loses a son to famine, and walks through an empire tearing itself apart. He writes it all down, and Chinese poetry acquires a conscience.',
+    summary:
+      'Du Fu wrote through the An Lushan catastrophe: conscription at the village gate, letters to a scattered family, meat and wine rotting behind vermilion gates while the frozen dead lay on the road. Barely celebrated in his lifetime, he was canonized by Song readers as the poet sage, proof that verse could hold history to account. A millennium of East Asian letters has measured itself against him since.',
+    edges: [
+      { to: 'neo-confucian-turn', type: 'enables', why: 'Song critics made Du Fu the moral exemplar of letters, folding his witness into the scholar official’s formation.' },
+      { to: 'tokugawa-great-peace', type: 'echoes', why: 'Basho opened his Narrow Road to the Deep North by echoing Du Fu, carrying the witness poet into Japan’s long Edo peace.' },
+    ],
+  },
+  {
+    id: 'samye-debate',
+    era: 5,
+    title: 'The Debate at Samye',
+    date: 'c. 792 to 794 CE',
+    sort: 792,
+    region: 'sasia',
+    x: 76,
+    threads: ['ideas', 'power'],
+    hook: 'An empire astride the Silk Road must choose its Buddhism: the sudden path from China or the gradual path from India. The Tibetan emperor stages a debate and crowns a winner.',
+    summary:
+      'Imperial Tibet, then a great power holding Dunhuang, convened teachers at Samye monastery around 792 to settle whether awakening comes suddenly or is cultivated step by step. Tibetan tradition says the Indian gradualist Kamalashila defeated the Chan master Moheyan; Chinese records from Dunhuang claim otherwise. The verdict shaped everything after: Tibet built its Buddhism on Indian foundations, with consequences reaching the Mongol courts centuries later.',
+    edges: [
+      { to: 'borobudur-mandala', type: 'echoes', why: 'Java’s kings and Tibet’s emperors both spent royal treasure to fix Buddhism’s form inside their realms.' },
+      { to: 'genghis-exchange', type: 'enables', why: 'The Indian tantric Buddhism Tibet chose became the faith that later captivated the Mongol imperial family.' },
+    ],
+  },
+  {
     id: 'europe-reboots',
     era: 5,
     title: 'Europe Reboots',
@@ -91,6 +244,40 @@ LOOM.node([
     edges: [
       { to: 'northmen-networks', type: 'collides', why: 'Viking raids batter the new kingdoms and force them to organize.' },
       { to: 'charter-and-parliament', type: 'echoes', why: 'Later charters and parliaments arose from specific contests among rulers, elites, clergy, and towns, not a timeless European instinct.' },
+    ],
+  },
+  {
+    id: 'borobudur-mandala',
+    era: 5,
+    title: 'The Stone Mandala',
+    date: 'c. 800 to 830 CE',
+    sort: 805,
+    region: 'easia',
+    x: 84,
+    threads: ['ideas', 'craft'],
+    hook: 'On a volcanic plain in Java, carved stone rises into a mountain you walk through: desire at the base, buddhas at the summit, the path itself the sermon.',
+    summary:
+      'The Sailendra dynasty raised Borobudur as a walkable cosmology: pilgrims spiral up terraces of relief carving, from karma and craving into circles of open air and latticed stupas. Java’s rice wealth and its position on the straits trade funded Buddhist and Hindu monuments in the same generations, sometimes from intermarried courts. Southeast Asia was not a periphery receiving Indian ideas; it was a center that chose, mixed, and outbuilt its sources.',
+    edges: [
+      { to: 'monsoon-marketplace', type: 'enables', why: 'The Javanese and straits polities that raised these monuments fed the exchange world the monsoon marketplace knit together.' },
+      { to: 'angkor-hydraulic', type: 'echoes', why: 'Khmer builders later raised the Indic temple state to its hydraulic extreme downriver from Java’s example.' },
+    ],
+  },
+  {
+    id: 'roots-of-the-law',
+    era: 5,
+    title: 'The Roots of the Law',
+    date: 'c. 820 CE',
+    sort: 817,
+    region: 'swasia',
+    x: 55,
+    threads: ['ideas', 'power'],
+    hook: 'If God’s guidance is complete, how do you rule on cases scripture never names? In Egypt an aging jurist writes the rulebook for making rules.',
+    summary:
+      'Al-Shafi’i’s Risala argued that valid rulings must trace to the Quran, the Prophet’s verified example, consensus, and disciplined analogy, taming freewheeling opinion and regional custom alike. On such foundations later scholars built the enduring Sunni legal schools. Sharia in this world was jurists’ law, worked out by private scholars the state did not control: a legal profession that judged contracts, marriages, and sometimes caliphs.',
+    edges: [
+      { to: 'first-universities', type: 'echoes', why: 'Self-governing communities of masters credentialing students through disputation matured in Islamic law before Europe chartered its scholar guilds.' },
+      { to: 'cairo-geniza', type: 'enables', why: 'Geniza merchants traded and litigated inside the commercial legal order the jurists were building.' },
     ],
   },
   {
@@ -127,6 +314,57 @@ LOOM.node([
     ],
   },
   {
+    id: 'alphabet-for-the-slavs',
+    era: 5,
+    title: 'An Alphabet for the Slavs',
+    date: '863 CE',
+    sort: 863,
+    region: 'europe',
+    x: 33,
+    threads: ['ideas'],
+    hook: 'A Moravian prince wants Christianity without Frankish bishops attached. Two brothers from Thessalonica arrive carrying something more durable than doctrine: an alphabet fitted to Slavic speech.',
+    summary:
+      'Cyril and Methodius designed a script for Slavonic in 863 and translated scripture and liturgy into it, rejecting the claim that God spoke properly only in Hebrew, Greek, and Latin. Their Moravian mission failed politically, but exiled disciples carried the work to Bulgaria, where the Cyrillic alphabet took its lasting form. Slavic Orthodox culture from Ohrid to Kyiv to Moscow still runs on their premise: the vernacular can be sacred.',
+    edges: [
+      { to: 'great-schism', type: 'collides', why: 'Rome and Constantinople competed for the Slavic world, and liturgical language became a boundary neither side would surrender.' },
+      { to: 'gutenberg-explosion', type: 'echoes', why: 'Scripture in the spoken tongue keeps creating new reading publics, from Bulgaria’s schools to Luther’s Germany.' },
+    ],
+  },
+  {
+    id: 'diamond-sutra',
+    era: 5,
+    title: 'A Book with a Birthday',
+    date: '868 CE',
+    sort: 868,
+    region: 'easia',
+    x: 89,
+    threads: ['craft', 'ideas'],
+    hook: 'A scroll sealed in a desert cave ends with a date and a purpose: made by Wang Jie on behalf of his parents, the eleventh of May, 868. No older dated printed book exists.',
+    summary:
+      'Woodblock printing grew from Buddhist merit: multiplying a sutra multiplied its blessing, so believers paid to mechanize the word centuries before Europe. The 868 Diamond Sutra from Dunhuang’s sealed library cave is the earliest complete, dated printed book, its frontispiece already assured art. East Asian printing served scripture, calendars, and charms first; by Song times it carried a whole commercial civilization’s paperwork, including money itself.',
+    edges: [
+      { to: 'song-economic-miracle', type: 'enables', why: 'Mature woodblock craft became the Song print economy of books, examination aids, and the world’s first paper money.' },
+      { to: 'gutenberg-explosion', type: 'echoes', why: 'Europe’s movable type arrived six centuries later and found, as Buddhist printers had, that replication changes what words can do.' },
+    ],
+  },
+  {
+    id: 'silent-stelae',
+    era: 5,
+    title: 'When the Stelae Fell Silent',
+    date: 'c. 800 to 925 CE',
+    sort: 875,
+    region: 'americas',
+    x: 8,
+    threads: ['power', 'wealth'],
+    hook: 'For six centuries Maya kings raised dated stones recording accessions, rituals, and captives. City by city, the dates stop. The forest does not fall; the dynasties do.',
+    summary:
+      'Across the ninth century the southern Maya lowlands stopped raising dated monuments; courts dissolved and populations shifted north and coastward while cities like Chichen Itza rose. Lake cores and cave formations record severe droughts, but the deeper mechanism was political: divine kingship promised rain and victory and could not survive delivering neither. The Maya did not vanish; millions speak Mayan languages today. A particular theater of rule ended.',
+    edges: [
+      { to: 'mound-and-mountain', type: 'echoes', why: 'Cahokia too was built, filled, and eventually walked away from; both departures show what cities cost their landscapes.' },
+      { to: 'burning-mirror', type: 'echoes', why: 'Drought cores beneath Maya ruins preview a civilization discovering that climate can move beneath its politics.' },
+    ],
+  },
+  {
     id: 'golden-sahara',
     era: 5,
     title: 'Gold Roads of the Sahara',
@@ -141,6 +379,58 @@ LOOM.node([
     edges: [
       { to: 'mansa-musa-hajj', type: 'transforms', why: 'Ghana’s routes mature into Mali’s golden imperial age.' },
       { to: 'middle-passage', type: 'collides', why: 'Atlantic ships will one day bypass the desert and upend these kingdoms.' },
+    ],
+  },
+  {
+    id: 'igbo-ukwu-bronzes',
+    era: 5,
+    title: 'The Bronzes of Igbo-Ukwu',
+    date: 'c. 900 CE',
+    sort: 903,
+    region: 'africa',
+    x: 41,
+    threads: ['craft', 'wealth'],
+    hook: 'A man digging a cistern in Nigeria strikes bronze. Excavation reveals a ninth-century burial: a figure seated on a stool, beads by the thousand, metalwork cast with stunning delicacy.',
+    summary:
+      'Igbo-Ukwu’s leaded bronzes, cast around the ninth or tenth century by lost-wax methods of remarkable intricacy, furnished the burial and shrine of a ritual title-holder resembling the later Nri priest-kings, not a conquering monarch. Local metals, glass beads that traveled from the Nile valley or farther, and no palace anywhere: wealth, sanctity, and skill concentrating without a state. African political imagination ran wider than the kingdom form.',
+    edges: [
+      { to: 'mansa-musa-hajj', type: 'echoes', why: 'West African wealth was old and various long before Mali’s gold made Cairo’s markets stagger.' },
+      { to: 'swahili-stone-towns', type: 'echoes', why: 'On the continent’s other coast in these centuries, exchange was becoming local grandeur in another African idiom.' },
+    ],
+  },
+  {
+    id: 'caliphs-garden',
+    era: 5,
+    title: 'The Caliph’s Garden',
+    date: 'c. 800 to 1000 CE',
+    sort: 908,
+    region: 'swasia',
+    x: 60,
+    threads: ['wealth', 'craft'],
+    hook: 'Rice in Spain, sugar in Egypt, oranges in Sicily, cotton in Iraq. The plants are mostly Asian; the canals, contracts, and cookbooks that move them speak Arabic.',
+    summary:
+      'One legal and commercial space from Iberia to Sind let crops and techniques travel: sugarcane, rice, citrus, cotton, and hard wheat spread with qanats, waterwheels, and tenancy contracts that rewarded intensification. Historians dispute how much was genuinely new, since Rome and Persia knew some of these plants, but the pattern held: diets, seasons, and landscapes reorganized across three continents, and dinner tables changed from Cordoba to Sind.',
+    edges: [
+      { to: 'ornament-of-the-world', type: 'enables', why: 'Andalusi orchards, waterwheels, and irrigated huertas were this diffusion’s westernmost and most visible showcase.' },
+      { to: 'middle-passage', type: 'enables', why: 'Sugar’s plantation package, worked out around the Mediterranean, became the crop Europeans carried into the Atlantic.' },
+      { to: 'columbian-exchange', type: 'echoes', why: 'The next great crop transplantation crossed oceans, with demographic consequences dwarfing any earlier garden.' },
+    ],
+  },
+  {
+    id: 'ornament-of-the-world',
+    era: 5,
+    title: 'The Ornament of the World',
+    date: '929 CE',
+    sort: 929,
+    region: 'europe',
+    x: 24,
+    threads: ['ideas', 'wealth'],
+    hook: 'A Saxon nun writing in Latin calls Cordoba the ornament of the world. Its caliphal library is cataloged in dozens of volumes; its streets are paved and lit.',
+    summary:
+      'Umayyad Cordoba, a caliphate from 929, was western Europe’s largest city: paper libraries, irrigated gardens, Jewish courtiers, Mozarab Christians, and scholarship moving among three languages. Convivencia meant hierarchy under Muslim rule, not modern tolerance, and it broke badly in the eleventh century. But al-Andalus built the bridge over which Greek and Arabic learning walked into Latin Europe, and Ibn Hazm’s Ring of the Dove still reads like yesterday’s heartbreak.',
+    edges: [
+      { to: 'first-universities', type: 'enables', why: 'Toledo’s translation workshops mined Andalusi libraries, and Aristotle reached Paris through Arabic and Hebrew hands.' },
+      { to: 'iberian-wager', type: 'transforms', why: 'The long absorption of al-Andalus forged the militant, seafaring Iberian kingdoms that later bet on the Atlantic.' },
     ],
   },
   {
@@ -180,6 +470,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'swahili-stone-towns',
+    era: 5,
+    title: 'Stone Towns of the Swahili',
+    date: 'c. 1000 CE',
+    sort: 1002,
+    region: 'africa',
+    x: 48,
+    threads: ['wealth', 'ideas'],
+    hook: 'From Mogadishu to Kilwa, harbor towns build in coral stone, mint their own coins, and trace founders to Persia. Their language is Bantu; their horizon is India.',
+    summary:
+      'Swahili towns grew from African fishing and farming villages into merchant city-states exchanging gold, ivory, and timber for cottons and porcelains across the monsoon ocean. Rulers and merchants adopted Islam while language and society remained deeply African, a synthesis visible in coral mosques and chronicle genealogies. Archaeology has retired the old notion of Arab colonies: these were African polities working the ocean world on their own account.',
+    edges: [
+      { to: 'treasure-fleets', type: 'enables', why: 'Zheng He’s fleets called at Swahili harbors, and a Malindi giraffe walked into the Ming court as tribute.' },
+      { to: 'iberian-wager', type: 'collides', why: 'Da Gama’s route ran through these harbors, whose pilots and provisions opened an ocean he did not build.' },
+    ],
+  },
+  {
     id: 'heian-and-genji',
     era: 5,
     title: 'The Pillow and the Brush',
@@ -194,6 +501,108 @@ LOOM.node([
     edges: [
       { to: 'tokugawa-great-peace', type: 'transforms', why: 'The provincial warriors this court hired to keep order end up inheriting the country and holding it for centuries.' },
       { to: 'gutenberg-explosion', type: 'echoes', why: 'Writing in the everyday tongue instead of the prestige language keeps handing literature to the voices the classics shut out.' },
+    ],
+  },
+  {
+    id: 'book-of-kings',
+    era: 5,
+    title: 'The Book of Kings',
+    date: '1010 CE',
+    sort: 1010,
+    region: 'swasia',
+    x: 64,
+    threads: ['ideas'],
+    hook: 'Thirty years and some fifty thousand couplets: a poet in Tus finishes an epic of Persian kings and dedicates it to a Turkic sultan. The language it fixes will rule courts from Istanbul to Delhi.',
+    summary:
+      'Ferdowsi completed the Shahnameh in 1010, recasting Iran’s mythic and Sasanian past in New Persian, the reborn vernacular written in Arabic script. Conquered Persia had not become Arab; it made Islamic civilization Persian-speaking across its eastern half instead. The epic of Rostam, Sohrab, and doomed kingship became the shared literature of a Persianate world, and dynasty after dynasty, most of them Turkic, claimed legitimacy in its idiom.',
+    edges: [
+      { to: 'delhi-sultanate', type: 'enables', why: 'Persianate court culture traveled with Turkic dynasts to Delhi, where the Shahnameh’s idiom framed kingship.' },
+      { to: 'gunpowder-empires', type: 'enables', why: 'Ottomans, Safavids, and Mughals alike staged their legitimacy in the Persian the poem helped fix.' },
+    ],
+  },
+  {
+    id: 'rising-dragon',
+    era: 5,
+    title: 'The Rising Dragon',
+    date: '1010 CE',
+    sort: 1011,
+    region: 'easia',
+    x: 84,
+    threads: ['power', 'ideas'],
+    hook: 'A king raised by monks moves his capital to a bend of the Red River where, his edict says, a dragon rose. Vietnam begins deciding what to keep from a thousand years inside China.',
+    summary:
+      'After centuries as Chinese provinces, the Red River lands consolidated independence in the tenth century; in 1010 Ly Thai To founded Thang Long, today’s Hanoi. Dai Viet built examinations, a bureaucracy, and Buddhist kingship from the Chinese toolkit while defending separate sovereignty and a vernacular world of its own. Selective borrowing as self-strengthening, never simple assimilation, became a durable national habit with a very long future.',
+    edges: [
+      { to: 'neo-confucian-turn', type: 'echoes', why: 'Dai Viet ran its own examination state, proof the Confucian toolkit could serve a court that refused Chinese rule.' },
+      { to: 'angkor-hydraulic', type: 'echoes', why: 'Down the coast Khmer kings built a temple state on water while Viet kings built a bureaucratic one on exams.' },
+    ],
+  },
+  {
+    id: 'chaco-roads',
+    era: 5,
+    title: 'The Roads of Chaco',
+    date: 'c. 900 to 1130 CE',
+    sort: 1020,
+    region: 'americas',
+    x: 15,
+    threads: ['power', 'craft'],
+    hook: 'In a high desert canyon, great houses rise five stories with rooms by the hundred, aligned to sun and moon. Roads run out of them, dead straight, toward nothing anyone can find.',
+    summary:
+      'Chaco Canyon coordinated a world: great houses of shaped sandstone, timber carried from mountains more than fifty miles away, turquoise workshops, cacao and scarlet macaws from Mesoamerica, and roads whose purpose is still argued, procession as much as commerce. Whether Chaco was a polity, a pilgrimage center, or something without a modern name divides archaeologists honestly. After twelfth-century droughts, people moved on deliberately: ancestors of living Pueblo nations.',
+    edges: [
+      { to: 'mound-and-mountain', type: 'echoes', why: 'Cahokia rose in the same centuries; North America ran parallel experiments in gathering people around plaza and sky.' },
+      { to: 'fifth-sun-aztecs', type: 'echoes', why: 'Macaws and cacao in the canyon trace exchange lines running toward Mesoamerica’s later imperial heart.' },
+    ],
+  },
+  {
+    id: 'flying-man',
+    era: 5,
+    title: 'The Flying Man',
+    date: 'c. 1025 CE',
+    sort: 1025,
+    region: 'sasia',
+    x: 74,
+    threads: ['ideas', 'craft'],
+    hook: 'Imagine yourself created midair, blindfolded, touching nothing: would you still know that you exist? A physician raised in Bukhara says yes, and builds a system on what that proves.',
+    summary:
+      'Ibn Sina, self-taught polymath raised in Samanid Bukhara, fused Aristotle with Neoplatonism into a system thinkers of three faiths spent centuries answering; his flying man argued the soul knows itself directly, without the body. His Canon of Medicine organized Greek and Arabic medicine so authoritatively that European faculties taught it into the 1600s. Al-Ghazali attacked his metaphysics and Aquinas mined them; medieval philosophy in Arabic, Hebrew, and Latin runs through him.',
+    edges: [
+      { to: 'first-universities', type: 'enables', why: 'Latin Avicenna, translated in Toledo, set the metaphysics and medical curricula that Paris and Bologna disputed.' },
+      { to: 'black-death', type: 'collides', why: 'Plague physicians reached for the Canon’s humoral frameworks and found they could not see the flea.' },
+    ],
+  },
+  {
+    id: 'ut-re-mi',
+    era: 5,
+    title: 'Ut Re Mi',
+    date: 'c. 1026 CE',
+    sort: 1026,
+    region: 'europe',
+    x: 29,
+    threads: ['craft', 'ideas'],
+    hook: 'A monk grows tired of choirs needing ten years to memorize the chants. He rules lines across the page, names the steps of the scale, and sound learns to be read.',
+    summary:
+      'Guido of Arezzo’s staff notation and solmization syllables, drawn from a hymn to St. John, let singers perform music they had never heard. Notation did more than preserve melody: it made compositions fixable, teachable, and stackable, opening the way to polyphony and to the composer as author. Every score since, from Machaut to a film session, descends from this Benedictine classroom technology.',
+    edges: [
+      { to: 'first-universities', type: 'enables', why: 'Written music became a teachable school subject, standing beside grammar and geometry in the curriculum.' },
+      { to: 'gutenberg-explosion', type: 'echoes', why: 'Notation did for sound what print later did for words: fixed it, multiplied it, freed it from the master’s memory.' },
+    ],
+  },
+  {
+    id: 'cairo-geniza',
+    era: 5,
+    title: 'The Geniza World',
+    date: 'c. 1000 to 1100 CE',
+    sort: 1040,
+    region: 'africa',
+    x: 50,
+    threads: ['wealth', 'ideas'],
+    hook: 'For centuries a Cairo synagogue drops worn papers into a sealed attic: contracts, love letters, shopping lists, a merchant’s complaint mailed from India. God’s name makes them impossible to throw away.',
+    summary:
+      'Because Jewish practice forbade destroying texts bearing God’s name, the Ben Ezra synagogue’s geniza accumulated hundreds of thousands of fragments, the densest surviving record of medieval Mediterranean life. They reveal trade run on partnership, reputation, and paper credit from Spain to India, Jewish merchants working confidently inside Islamic commercial law, and the textures history usually loses: dowries, prescriptions, school exercises. Ordinary life, for once, survives in bulk.',
+    edges: [
+      { to: 'crusading-fever', type: 'collides', why: 'Geniza letters record the ransoming of Jerusalem’s Jews from the crusaders, holy war entered in a ledger.' },
+      { to: 'dutch-money-machine', type: 'echoes', why: 'Agents, partnerships, and paper credit ran the India trade six centuries before Amsterdam built its exchange.' },
     ],
   },
   {
@@ -227,6 +636,24 @@ LOOM.node([
     edges: [
       { to: 'crusading-fever', type: 'collides', why: 'Crusaders sack Christian Constantinople in 1204, sealing the divorce.' },
       { to: 'luthers-hammer', type: 'echoes', why: 'The later western Reformation was a different rupture, but both histories show how doctrine, authority, politics, and memory can harden disputed boundaries.' },
+    ],
+  },
+  {
+    id: 'road-to-canossa',
+    era: 5,
+    title: 'The Road to Canossa',
+    date: '1077 CE',
+    sort: 1077,
+    region: 'europe',
+    x: 32,
+    threads: ['power', 'ideas'],
+    hook: 'An emperor stands barefoot in the snow outside a castle gate for three days, begging a pope’s absolution. Whoever wins, one idea escapes: no single hand holds both swords.',
+    summary:
+      'Reform popes claimed the church must choose its own bishops; emperors had long treated them as imperial officers. Gregory VII excommunicated Henry IV, who did penance at Canossa in 1077, and the struggle ground on to compromise at Worms in 1122. The residue mattered more than the quarrel: rival jurisdictions, systematized church law, and a durable Western habit of asking by what right any power rules.',
+    edges: [
+      { to: 'crusading-fever', type: 'enables', why: 'A papacy confident enough to humble an emperor could summon Europe’s knights to armed pilgrimage.' },
+      { to: 'charter-and-parliament', type: 'enables', why: 'Separating priestly from royal jurisdiction taught Europe that power could be divided, contested, and written down.' },
+      { to: 'luthers-hammer', type: 'echoes', why: 'The papal monarchy the reformers built became the target another monk’s hammer later struck.' },
     ],
   },
 ]);
