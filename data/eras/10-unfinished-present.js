@@ -58,6 +58,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'the-bit',
+    era: 10,
+    title: 'The Bit',
+    date: '1948 CE',
+    sort: 1948,
+    region: 'americas',
+    x: 6,
+    threads: ['ideas', 'craft'],
+    hook: 'A young engineer at Bell Labs asks how much information a wire can carry, and answers in a unit no one had thought to name: the bit.',
+    summary:
+      'In 1948 Claude Shannon showed that any message, text, sound, or image, could be measured in bits and pushed reliably through noise if it was coded well. Communication became mathematics, cut loose from meaning. His theorems fixed hard limits and the tricks that approach them, and every modem, compact disc, phone call, and file since obeys the arithmetic he wrote down.',
+    edges: [
+      { to: 'transistor-to-internet', type: 'enables', why: 'His mathematics of coding and error correction is the theory the digital machines would later execute.' },
+      { to: 'glass-slab', type: 'enables', why: 'Once every medium is bits, sound, image, and text all flow through the same pocket device.' },
+    ],
+  },
+  {
     id: 'mao-to-market',
     era: 10,
     title: 'From Mao to Market',
@@ -72,6 +89,125 @@ LOOM.node([
     edges: [
       { to: 'great-convergence', type: 'enables', why: 'Deng’s pivot powers the hyperglobal economy.' },
       { to: 'fraying-and-becoming', type: 'enables', why: 'China’s rise reopens the question of who writes the rules.' },
+    ],
+  },
+  {
+    id: 'the-second-sex',
+    era: 10,
+    title: 'One Is Not Born a Woman',
+    date: '1949 CE',
+    sort: 1949,
+    region: 'europe',
+    x: 26,
+    threads: ['ideas'],
+    hook: 'A French philosopher sits down to explain herself, and finds she must first work out what a woman is, and who decided.',
+    summary:
+      'Simone de Beauvoir argued in 1949 that woman had been defined as man’s Other, the second sex, not by nature but by history and myth. One is not born, she wrote, but becomes a woman. Fusing existentialist freedom with a vast survey of biology, literature, and daily life, she gave later feminism its founding grammar: the private arrangement of the sexes is a political question.',
+    edges: [
+      { to: 'rights-revolutions', type: 'enables', why: 'Her claim that womanhood is made, not given, armed the second-wave feminism that erupted a decade later.' },
+      { to: 'orientalism', type: 'echoes', why: 'Her analysis of woman as the Other prefigures how Said would later dissect the invented Oriental.' },
+    ],
+  },
+  {
+    id: 'negritude',
+    era: 10,
+    title: 'A Language for the Colonized',
+    date: 'c. 1950 CE',
+    sort: 1950,
+    region: 'africa',
+    x: 43,
+    threads: ['ideas'],
+    hook: 'Poets from Senegal and Martinique take the insult once hurled at Black skin, wear it as a banner, and turn it into a philosophy.',
+    summary:
+      'Negritude, forged by Aime Cesaire, Leopold Senghor, and Leon Damas, insisted that African and diasporic peoples shared a heritage worth naming and honoring against a French empire that taught them to despise it. Cesaire’s 1950 Discourse on Colonialism turned the charge around: colonialism, he wrote, brutalizes the colonizer too. The movement handed decolonization a poetry and a self before it had a politics.',
+    edges: [
+      { to: 'wretched-of-the-earth', type: 'transforms', why: 'Fanon, Cesaire’s student in Martinique, hardened this cultural pride into a full theory of colonial violence.' },
+      { to: 'orientalism', type: 'echoes', why: 'Both insist that empire wrote fictions about the colonized, and that reclaiming the pen is itself resistance.' },
+    ],
+  },
+  {
+    id: 'the-double-helix',
+    era: 10,
+    title: 'The Double Helix',
+    date: '1953 CE',
+    sort: 1953,
+    region: 'europe',
+    x: 33,
+    threads: ['craft', 'ideas'],
+    hook: 'Two men burst into a Cambridge pub claiming they have found the secret of life, and for once the boast is nearly true.',
+    summary:
+      'In 1953 James Watson and Francis Crick, using Rosalind Franklin’s X-ray images and Erwin Chargaff’s base ratios, worked out that DNA is a double helix whose paired rungs let it copy itself. Heredity became chemistry, spelled in four letters. The structure showed at a glance how genes are stored, replicated, and mutated, and launched molecular biology, a century of research, and eventually the power to read and rewrite life.',
+    edges: [
+      { to: 'crispr-scissors', type: 'enables', why: 'Reading the code of life in 1953 set the direct path to editing that code sixty years later.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'Biotechnology, vaccines, and genetic medicine reshaping the present all descend from this molecule’s shape.' },
+    ],
+  },
+  {
+    id: 'language-games',
+    era: 10,
+    title: 'The Meaning Is the Use',
+    date: '1953 CE',
+    sort: 1953,
+    region: 'europe',
+    x: 29,
+    threads: ['ideas'],
+    hook: 'A philosopher who once believed he had ended philosophy returns to say his own famous book was wrong, and that meaning lives in use, not logic.',
+    summary:
+      'Wittgenstein’s Philosophical Investigations, published in 1953 after his death, abandoned the search for a hidden logical skeleton of language. Words mean what we do with them, he argued, inside rule-governed practices he called language games, and most philosophical puzzles are knots in ordinary speech. The book reshaped analytic philosophy, the study of mind and meaning, and how we think thinking itself works.',
+    edges: [
+      { to: 'structure-of-revolutions', type: 'echoes', why: 'Both dissolve the dream of a neutral standpoint, locating meaning and truth inside human practices instead.' },
+      { to: 'orientalism', type: 'echoes', why: 'The idea that words carry the practices behind them opens toward Said’s reading of language as power.' },
+    ],
+  },
+  {
+    id: 'spirit-of-bandung',
+    era: 10,
+    title: 'The Spirit of Bandung',
+    date: '1955 CE',
+    sort: 1955,
+    region: 'easia',
+    x: 85,
+    threads: ['power', 'ideas'],
+    hook: 'Twenty-nine Asian and African nations, most of them newborn, gather in a Javanese hill town to decide whether they must choose a Cold War master at all.',
+    summary:
+      'In April 1955 leaders from Indonesia, India, China, Egypt, and beyond met at Bandung to speak as a bloc: anti-colonial, non-aligned, and set on their own terms between Washington and Moscow. The conference seeded the Non-Aligned Movement and the very idea of a Third World. Its unity was fragile and often rhetorical, but it announced that most of humanity would no longer be spoken for.',
+    edges: [
+      { to: 'wretched-of-the-earth', type: 'echoes', why: 'Both gave the newly decolonized a voice of their own rather than a role in someone else’s rivalry.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'The multipolar world of many assertive states now straining the postwar order began as this aspiration.' },
+    ],
+  },
+  {
+    id: 'the-box',
+    era: 10,
+    title: 'The Box',
+    date: '1956 CE',
+    sort: 1956,
+    region: 'americas',
+    x: 15,
+    threads: ['wealth', 'craft'],
+    hook: 'A trucking magnate watches dockworkers spend days unloading his cargo piece by piece, and wonders why the whole truck body cannot simply be lifted onto the ship.',
+    summary:
+      'In 1956 Malcom McLean sent the first purpose-built container ship from Newark to Houston, and freight that once cost dollars a ton began falling toward pennies. Standard steel boxes, cranes, and stackable ships cut loading time, breakage, and theft, and made distance almost free. The container quietly enabled the planetary supply chain: a factory could migrate to the cheapest labor because shipping had ceased to matter.',
+    edges: [
+      { to: 'great-convergence', type: 'enables', why: 'Nearly free shipping is the physical machine that let production scatter into global supply chains.' },
+      { to: 'the-urban-planet', type: 'enables', why: 'Cheap sea freight swelled the port megacities where much of humanity now works and lives.' },
+    ],
+  },
+  {
+    id: 'things-fall-apart',
+    era: 10,
+    title: 'Things Fall Apart',
+    date: '1958 CE',
+    sort: 1958,
+    region: 'africa',
+    x: 47,
+    threads: ['ideas'],
+    hook: 'A Nigerian writer sets out to tell the story of a proud Igbo man and his village, so that Africans might stop meeting themselves only in European novels.',
+    summary:
+      'Chinua Achebe’s 1958 novel follows Okonkwo, a leader in an Igbo community whose world is unmade by British missionaries and administrators. Written in English but shaped by Igbo proverb and rhythm, it answered colonial fictions that painted Africa as blank or savage. It became the most widely read African novel, evidence that a continent could narrate its own past, and its own undoing, on its own terms.',
+    edges: [
+      { to: 'orientalism', type: 'echoes', why: 'Achebe wrote back to empire in fiction as Said would later dismantle it in criticism.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Whose story gets told, and in whose language, is still a live fight over culture and power.' },
     ],
   },
   {
@@ -92,6 +228,91 @@ LOOM.node([
     ],
   },
   {
+    id: 'the-pill',
+    era: 10,
+    title: 'The Pill',
+    date: '1960 CE',
+    sort: 1960,
+    region: 'americas',
+    x: 10,
+    threads: ['craft', 'ideas'],
+    hook: 'For the first time a woman can decide, in private and in advance, whether this year will bring a child.',
+    summary:
+      'Approved for contraception in the United States in 1960, the oral contraceptive let women separate sex from childbirth reliably and discreetly. Fertility fell, women poured into universities and paid work, and the timing of a family became a decision rather than a fate. The demographic and social effects, still unfolding through aging societies and shrinking birth rates, rival any technology of the century, and its ethics are argued still.',
+    edges: [
+      { to: 'rights-revolutions', type: 'enables', why: 'Reliable contraception underwrote the feminist reshaping of work, family, and the female life course.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'The falling fertility it helped unleash now drives aging populations and anxious demographic politics worldwide.' },
+    ],
+  },
+  {
+    id: 'the-price-of-oil',
+    era: 10,
+    title: 'The Price of Oil',
+    date: '1960 CE',
+    sort: 1960,
+    region: 'swasia',
+    x: 60,
+    threads: ['wealth', 'power'],
+    hook: 'Five oil states meet in Baghdad, tired of foreign companies setting the price of the wealth beneath their own deserts.',
+    summary:
+      'OPEC, founded in 1960 by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela, formed to wrest control of prices from the Western majors that had long kept crude cheap. Over the next decades members nationalized their fields and, in 1973, revealed their leverage to a shocked world. It was the sharpest instance of the Global South turning a raw commodity into political and financial power.',
+    edges: [
+      { to: 'market-restoration', type: 'transforms', why: 'The 1973 price shock these producers triggered broke the postwar boom and opened the neoliberal turn.' },
+      { to: 'burning-mirror', type: 'collides', why: 'The commodity whose price they seized is the same carbon whose atmospheric bill now comes due.' },
+    ],
+  },
+  {
+    id: 'wretched-of-the-earth',
+    era: 10,
+    title: 'The Wretched of the Earth',
+    date: '1961 CE',
+    sort: 1961,
+    region: 'africa',
+    x: 45,
+    threads: ['ideas', 'power'],
+    hook: 'A psychiatrist from Martinique, treating both torturers and their victims in a colonial war, writes a dying book about what empire does to the mind.',
+    summary:
+      'Frantz Fanon’s 1961 book, written as leukemia killed him amid Algeria’s war of independence, dissected colonialism as a system of violence that deformed colonizer and colonized alike, then asked what freedom would cost the newly liberated. His analysis of race, psychology, and national culture became a handbook for anti-colonial and Black liberation movements worldwide, admired and disputed for its unflinching account of violence.',
+    edges: [
+      { to: 'rights-revolutions', type: 'transforms', why: 'Black Power and radical decolonization movements read Fanon as their theorist of racial liberation.' },
+      { to: 'orientalism', type: 'enables', why: 'His account of the colonized psyche is a foundation stone of the postcolonial theory Said would build.' },
+    ],
+  },
+  {
+    id: 'silent-spring',
+    era: 10,
+    title: 'Silent Spring',
+    date: '1962 CE',
+    sort: 1962,
+    region: 'americas',
+    x: 18,
+    threads: ['ideas', 'craft'],
+    hook: 'A marine biologist notices the songbirds gone quiet where the pesticide planes have passed, and traces the poison up the food chain to us.',
+    summary:
+      'Rachel Carson’s 1962 Silent Spring showed how DDT and other pesticides accumulated through food webs, thinning eggshells and threatening people. Meticulous and lyrical, it survived a furious industry counterattack and helped ignite the modern environmental movement, the banning of DDT, and the public idea that nature is a connected system we can poison wholesale. Ecology entered the popular conscience as a moral claim.',
+    edges: [
+      { to: 'green-revolution', type: 'collides', why: 'The chemical, high-input agriculture she warned against is exactly what the Green Revolution scaled up.' },
+      { to: 'burning-mirror', type: 'enables', why: 'The ecological consciousness she seeded is what later let humanity name and reckon with climate change.' },
+    ],
+  },
+  {
+    id: 'structure-of-revolutions',
+    era: 10,
+    title: 'The Structure of Revolutions',
+    date: '1962 CE',
+    sort: 1962,
+    region: 'americas',
+    x: 22,
+    threads: ['ideas'],
+    hook: 'A physicist turned historian asks why science, supposedly the most rational thing we do, keeps changing its mind in sudden, jarring leaps.',
+    summary:
+      'Thomas Kuhn argued in 1962 that science advances not by steady accumulation but through paradigms, shared frameworks that organize normal research until anomalies pile up and a revolution installs a new one. He put paradigm shift and incommensurable into common speech, and forced everyone to ask whether scientific truth is discovered or, in part, constructed. Historians and scientists have argued with him ever since.',
+    edges: [
+      { to: 'orientalism', type: 'echoes', why: 'Both treat knowledge as bound to a framework rather than a neutral mirror of the world.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Today’s contests over expertise and whose facts count run on the doubt Kuhn made respectable.' },
+    ],
+  },
+  {
     id: 'rights-revolutions',
     era: 10,
     title: 'The Rights Revolutions',
@@ -105,6 +326,23 @@ LOOM.node([
       'The civil rights movement broke American apartheid with Gandhian discipline and televised conscience; second-wave feminism rewrote work and family; decolonization’s logic reached apartheid South Africa. Rights talk became the era’s moral language, contested but universal. These revolutions remain incomplete, and the backlashes they provoked remain live politics.',
     edges: [
       { to: 'fraying-and-becoming', type: 'echoes', why: 'Today’s culture wars are aftershocks of these revolutions.' },
+    ],
+  },
+  {
+    id: 'banality-of-evil',
+    era: 10,
+    title: 'The Banality of Evil',
+    date: '1963 CE',
+    sort: 1963,
+    region: 'europe',
+    x: 31,
+    threads: ['ideas'],
+    hook: 'Sent to cover a monster’s trial in Jerusalem, a philosopher is unsettled to find not a monster but a diligent, thoughtless bureaucrat.',
+    summary:
+      'Reporting on Adolf Eichmann’s 1961 trial, Hannah Arendt coined the banality of evil: the Holocaust’s chief administrator struck her as less a fanatic than a careerist who never thought about what he did. The phrase, and her harsh remarks on Jewish councils, provoked lasting fury. Behind it lay her larger warning that modern atrocity can be carried out by ordinary people who stop thinking, a claim that still cuts.',
+    edges: [
+      { to: 'theory-of-justice', type: 'echoes', why: 'Both are postwar attempts to rebuild a public morality after the century’s organized horrors.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Her warning about thoughtless obedience inside vast institutions has lost none of its present-day edge.' },
     ],
   },
   {
@@ -125,6 +363,57 @@ LOOM.node([
     ],
   },
   {
+    id: 'hundred-years-solitude',
+    era: 10,
+    title: 'One Hundred Years of Solitude',
+    date: '1967 CE',
+    sort: 1967,
+    region: 'americas',
+    x: 16,
+    threads: ['ideas'],
+    hook: 'In a Colombian town where the dead linger and the rain falls for four years, a family repeats its names and its mistakes across seven generations.',
+    summary:
+      'Gabriel Garcia Marquez’s 1967 novel telescopes a century of Latin American history through the Buendia family of Macondo, where the miraculous and the mundane share one flat, unhurried tone. Its magical realism, drawn from Caribbean storytelling, gave the region a literary voice heard worldwide and powered the Latin American Boom. Beneath the enchantment sit real wounds: colonial extraction, civil war, and a massacre the town is made to forget.',
+    edges: [
+      { to: 'truth-and-reconciliation', type: 'echoes', why: 'The novel’s fable of an erased massacre rhymes with a real nation’s later struggle over what to remember.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Memory, forgetting, and who controls a society’s story remain central to the politics of now.' },
+    ],
+  },
+  {
+    id: 'earthrise',
+    era: 10,
+    title: 'Earthrise',
+    date: '1968 CE',
+    sort: 1968,
+    region: 'world',
+    x: 47,
+    threads: ['craft', 'ideas'],
+    hook: 'Coming around the far side of the Moon, three astronauts look up to see their entire world rising over the dead lunar horizon, and grab a camera.',
+    summary:
+      'On Christmas Eve 1968, Apollo 8’s crew photographed the Earth rising over the Moon, the first time humans saw their planet whole from space. The image, small, blue, and alone in the black, became an icon of the environmental movement and a new planetary self-portrait. The space age, born of superpower rivalry, handed humanity a mirror that reframed the Earth as fragile, bounded, and shared.',
+    edges: [
+      { to: 'burning-mirror', type: 'enables', why: 'Seeing the planet as one finite object underlies the whole idea of a global climate to protect.' },
+      { to: 'glass-slab', type: 'echoes', why: 'A single shared image reordering how billions saw themselves prefigures the later global image culture.' },
+    ],
+  },
+  {
+    id: 'the-vanishing-sea',
+    era: 10,
+    title: 'The Sea That Was Drained',
+    date: 'c. 1960 to 2000s CE',
+    sort: 1970,
+    region: 'sasia',
+    x: 78,
+    threads: ['craft', 'wealth'],
+    hook: 'Soviet planners divert two great rivers to grow cotton in the desert, and a sea the size of Ireland begins to vanish, boat by stranded boat.',
+    summary:
+      'From the 1960s, Soviet Central Asia’s Amu Darya and Syr Darya were drained to irrigate cotton for export, and the Aral Sea, once the world’s fourth largest lake, shrank to a fraction of its volume. Fishing towns were stranded miles from water, salt and pesticide dust poisoned the air, and the local climate turned harsher. It stands as a stark parable of command economics and engineered nature.',
+    edges: [
+      { to: 'walls-fall', type: 'echoes', why: 'The same command system that ordered rivers to move would prove unable to deliver, and collapse.' },
+      { to: 'burning-mirror', type: 'echoes', why: 'It is a regional rehearsal of the planetary lesson that reworking nature at scale sends a bill.' },
+    ],
+  },
+  {
     id: 'transistor-to-internet',
     era: 10,
     title: 'From Transistor to Internet',
@@ -139,6 +428,91 @@ LOOM.node([
     edges: [
       { to: 'glass-slab', type: 'transforms', why: 'The network shrinks to a slab in every pocket.' },
       { to: 'great-convergence', type: 'enables', why: 'Global supply chains run on silicon as much as steel.' },
+    ],
+  },
+  {
+    id: 'theory-of-justice',
+    era: 10,
+    title: 'A Theory of Justice',
+    date: '1971 CE',
+    sort: 1971,
+    region: 'americas',
+    x: 19,
+    threads: ['ideas'],
+    hook: 'A quiet Harvard professor poses a deceptively simple question: what rules would you choose for a society if you did not yet know who in it you would be?',
+    summary:
+      'John Rawls’s 1971 A Theory of Justice revived political philosophy in the English-speaking world. Behind a veil of ignorance, blind to your class, talents, and luck, rational people would choose fair institutions, he argued, tolerating inequality only where it lifts the worst off. The book became the reference point for a half century of debate on liberty, equality, and the welfare state, prized and attacked in equal measure.',
+    edges: [
+      { to: 'market-restoration', type: 'collides', why: 'His egalitarian liberalism was the target the libertarian and free-market revival explicitly set out to answer.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Arguments over fairness, desert, and inequality he framed still structure the politics of the present.' },
+    ],
+  },
+  {
+    id: 'preferential-option',
+    era: 10,
+    title: 'A Preferential Option for the Poor',
+    date: '1971 CE',
+    sort: 1971,
+    region: 'americas',
+    x: 9,
+    threads: ['ideas', 'power'],
+    hook: 'In the slums of Lima a priest decides the Gospel is not only about the next life, and that the Church must take the side of the poor in this one.',
+    summary:
+      'Gustavo Gutierrez’s 1971 A Theology of Liberation argued that Christian faith demands active solidarity with the oppressed, a preferential option for the poor. Rooted in Latin America’s inequality and its base communities, it fused Catholic teaching with social analysis, inspired priests and organizers across the continent, and drew Vatican suspicion. It reshaped how a global Church, and much of the Global South, read the Gospel politically.',
+    edges: [
+      { to: 'truth-and-reconciliation', type: 'echoes', why: 'Both mobilize Christian conscience for earthly justice rather than private salvation alone.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Religion arguing over inequality and taking political sides remains a defining force in the present.' },
+    ],
+  },
+  {
+    id: 'wayfinding-home',
+    era: 10,
+    title: 'Wayfinding Home',
+    date: '1976 CE',
+    sort: 1976,
+    region: 'easia',
+    x: 92,
+    threads: ['ideas', 'craft'],
+    hook: 'With no compass or chart, reading only stars, swells, and seabirds, a double-hulled canoe sets out from Hawaii for Tahiti to prove the old voyaging was real.',
+    summary:
+      'In 1976 the Hokulea, a recreated Polynesian voyaging canoe, sailed from Hawaii to Tahiti guided by Micronesian navigator Mau Piailug using only traditional wayfinding. The voyage confirmed that Pacific islands were reached by skilled navigation, not by drifting accident, and it ignited a cultural renaissance across Oceania, reviving language, canoe building, and celestial navigation. It reclaimed a science written in the sky and the sea.',
+    edges: [
+      { to: 'burning-mirror', type: 'echoes', why: 'The same ocean these islanders learned to read now rises to swallow the low atolls of the Pacific.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'The revival of indigenous knowledge against a flattening world is a live current of the present.' },
+    ],
+  },
+  {
+    id: 'banking-for-the-poor',
+    era: 10,
+    title: 'Banking for the Poor',
+    date: 'c. 1976 CE',
+    sort: 1976,
+    region: 'sasia',
+    x: 70,
+    threads: ['wealth', 'ideas'],
+    hook: 'An economics professor lends twenty-seven dollars from his own pocket to forty-two villagers, and discovers that the poor repay even when the banks will not lend.',
+    summary:
+      'Starting in a Bangladeshi village in 1976, Muhammad Yunus built what became Grameen Bank on tiny collateral-free loans to poor women, using group guarantees in place of assets. Repayment stayed high, and microcredit spread worldwide as a tool against poverty, later winning a Nobel Peace Prize. Its limits grew clear too: microloans can lift some households but do not by themselves undo structural poverty.',
+    edges: [
+      { to: 'money-in-the-phone', type: 'enables', why: 'Both reinvent finance for the unbanked poor, the loan first, then the mobile wallet that carried it further.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'How to reach the poor with credit and lift the bottom billion is still an unfinished argument.' },
+    ],
+  },
+  {
+    id: 'orientalism',
+    era: 10,
+    title: 'Orientalism',
+    date: '1978 CE',
+    sort: 1978,
+    region: 'swasia',
+    x: 56,
+    threads: ['ideas'],
+    hook: 'A Palestinian literary scholar reads a long shelf of European novels and travelogues, and finds an Orient invented to justify ruling the real one.',
+    summary:
+      'Edward Said’s 1978 Orientalism argued that Western scholarship, art, and literature produced a fictional, timeless East, the Orient, that flattered Europe and licensed empire. To describe, he showed, was often to dominate: knowledge and power were entangled. The book founded postcolonial studies and reshaped literature, history, and anthropology, drawing charges of overreach even as its central insight became nearly impossible to unsee.',
+    edges: [
+      { to: 'glass-slab', type: 'echoes', why: 'His question of who controls the image of whom becomes acute when everyone holds a broadcasting device.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Contests over representation, identity, and whose knowledge counts run straight into present-day culture wars.' },
     ],
   },
   {
@@ -159,6 +533,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'the-last-smallpox',
+    era: 10,
+    title: 'The Last Smallpox',
+    date: '1980 CE',
+    sort: 1980,
+    region: 'world',
+    x: 54,
+    threads: ['craft', 'ideas'],
+    hook: 'In a Somali port town, a hospital cook who catches smallpox recovers, and a disease that killed hundreds of millions has nowhere left to go.',
+    summary:
+      'In 1980 the World Health Organization certified smallpox eradicated, the first disease deliberately wiped from the Earth. A Cold War collaboration of Soviet and American scientists, ring vaccination, and armies of local health workers cornered a virus that had killed perhaps three hundred million people in the twentieth century alone. It proved that coordinated humanity could delete an ancient killer, a template later chased for polio and measles.',
+    edges: [
+      { to: 'crispr-scissors', type: 'echoes', why: 'Both mark humanity’s growing power to engineer biology, one erasing a pathogen, the other rewriting genes.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'The global cooperation that beat smallpox is exactly the capacity now strained by pandemics and mistrust.' },
+    ],
+  },
+  {
     id: 'walls-fall',
     era: 10,
     title: 'The Walls Come Down',
@@ -173,6 +564,40 @@ LOOM.node([
     edges: [
       { to: 'great-convergence', type: 'enables', why: 'One world market, at last, after 1991.' },
       { to: 'fraying-and-becoming', type: 'echoes', why: 'The end of history turned out to be an intermission.' },
+    ],
+  },
+  {
+    id: 'truth-and-reconciliation',
+    era: 10,
+    title: 'Truth and Reconciliation',
+    date: '1996 CE',
+    sort: 1996,
+    region: 'africa',
+    x: 42,
+    threads: ['ideas', 'power'],
+    hook: 'Instead of trials, a new South Africa offers its torturers a bargain: confess in full, in public, and you may walk free.',
+    summary:
+      'After apartheid ended, South Africa’s Truth and Reconciliation Commission, chaired by Desmond Tutu from 1996, offered amnesty for full public confession rather than punishment, hoping to build a shared record and a common future. Grounded partly in the ethic of ubuntu, that a person is a person through other persons, it was both praised and condemned: it surfaced hidden crimes yet let many perpetrators go. It became the global model for transitional justice.',
+    edges: [
+      { to: 'development-as-freedom', type: 'echoes', why: 'Both redefine justice as restoring human dignity and agency rather than tallying punishment or income.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'How deeply divided societies choose to live together after atrocity is an unfinished present-day problem.' },
+    ],
+  },
+  {
+    id: 'development-as-freedom',
+    era: 10,
+    title: 'Development as Freedom',
+    date: '1999 CE',
+    sort: 1999,
+    region: 'sasia',
+    x: 73,
+    threads: ['ideas', 'wealth'],
+    hook: 'An economist who watched the Bengal famine as a boy proves that famines do not strike working democracies, and asks what wealth is actually for.',
+    summary:
+      'Amartya Sen argued that development means expanding real freedoms, health, education, and political voice, not merely raising income. His work showed that famines spring from failed entitlements and silenced citizens rather than sheer lack of food, and helped build the Human Development Index. Development as Freedom, in 1999, recast poverty as a denial of capability, changing how governments and agencies measure a good life.',
+    edges: [
+      { to: 'money-in-the-phone', type: 'enables', why: 'His capability view frames tools like mobile money as freedom, widening what the poor can actually do.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'What counts as progress, income or capability, is a question the present is still openly arguing.' },
     ],
   },
   {
@@ -193,6 +618,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'one-money-many-nations',
+    era: 10,
+    title: 'One Money for Many Nations',
+    date: '2002 CE',
+    sort: 2002,
+    region: 'europe',
+    x: 34,
+    threads: ['wealth'],
+    hook: 'On a New Year’s morning, shoppers in twelve countries reach into their pockets and find the same coins, their old national currencies simply gone.',
+    summary:
+      'In 1999 eleven European states fixed their currencies together, and in 2002 euro notes and coins replaced the mark, franc, and lira in people’s hands. A shared money without a shared treasury was an enormous gamble: it deepened integration and trade but left members unable to devalue in a crisis, a flaw laid bare after 2008. The euro is the boldest monetary experiment since the gold standard.',
+    edges: [
+      { to: 'money-in-the-phone', type: 'echoes', why: 'Both reinvent what money is, a currency shared across borders and a wallet living inside a phone.' },
+      { to: 'fraying-and-becoming', type: 'collides', why: 'A currency without a state strained the union to its limits and helped feed the era’s populist revolts.' },
+    ],
+  },
+  {
     id: 'burning-mirror',
     era: 10,
     title: 'The Burning Mirror',
@@ -209,6 +651,40 @@ LOOM.node([
     ],
   },
   {
+    id: 'money-in-the-phone',
+    era: 10,
+    title: 'Money in the Phone',
+    date: '2007 CE',
+    sort: 2007,
+    region: 'africa',
+    x: 48,
+    threads: ['wealth', 'craft'],
+    hook: 'In Kenya, millions who will never own a bank account begin sending money to one another as text messages, through the corner shop that sells phone credit.',
+    summary:
+      'Launched in Kenya in 2007, M-Pesa let people store and send money on basic mobile phones through a dense network of small agents, no bank required. Within a few years most Kenyan adults used it, and studies credit it with lifting households out of poverty by making saving and payment cheap and safe. Africa leapfrogged the branch bank, and the rest of the world came to study how.',
+    edges: [
+      { to: 'glass-slab', type: 'echoes', why: 'Both turn the ordinary phone into the platform through which daily economic life now runs.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'Money going digital, mobile, and disintermediated is reshaping finance and the state’s grip on it everywhere.' },
+    ],
+  },
+  {
+    id: 'the-urban-planet',
+    era: 10,
+    title: 'The Urban Planet',
+    date: 'c. 2008 CE',
+    sort: 2008,
+    region: 'world',
+    x: 48,
+    threads: ['wealth', 'power'],
+    hook: 'Sometime around 2008, a child is born who tips the balance: for the first time in history, more humans live in cities than outside them.',
+    summary:
+      'Around 2008 humanity became majority urban, a threshold crossed not in the old industrial cities but in the exploding megacities of the Global South: Lagos, Dhaka, Sao Paulo, Mumbai. Much of that growth is self-built, informal settlements housing billions who improvise water, power, and work the state does not supply. The twenty-first century city is less the planned metropolis than the sprawling, inventive, precarious edge.',
+    edges: [
+      { to: 'glass-slab', type: 'enables', why: 'Dense, connected urban millions are the ground on which the mobile public square took hold fastest.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'The politics, climate exposure, and inequality of a majority-urban species now shape the whole present.' },
+    ],
+  },
+  {
     id: 'glass-slab',
     era: 10,
     title: 'The Glass Slab',
@@ -222,6 +698,22 @@ LOOM.node([
       'Smartphones and social platforms connected most of humanity within fifteen years, collapsing the price of speech and organizing attention for advertising. Movements, markets, and mobs all accelerated; gatekeepers fell as they did after Gutenberg, with the same destabilizing exhilaration. The attention economy now mediates politics, childhood, and truth itself, and we are the experiment.',
     edges: [
       { to: 'fraying-and-becoming', type: 'enables', why: 'Algorithmic attention rewires the politics of every nation at once.' },
+    ],
+  },
+  {
+    id: 'crispr-scissors',
+    era: 10,
+    title: 'Rewriting the Code of Life',
+    date: '2012 CE',
+    sort: 2012,
+    region: 'world',
+    x: 56,
+    threads: ['craft', 'ideas'],
+    hook: 'Two scientists realize a trick that bacteria use to fight viruses can be turned into a pair of molecular scissors that cut and edit any gene at will.',
+    summary:
+      'In 2012 Jennifer Doudna and Emmanuelle Charpentier showed that CRISPR-Cas9, borrowed from a bacterial immune system, could be programmed to cut DNA at chosen sites, making gene editing cheap and precise. It promises cures for inherited disease and hardier crops, and raises the starkest question biology has ever posed: whether humans should edit the heritable code of their own species. The line from the double helix runs straight to here.',
+    edges: [
+      { to: 'fraying-and-becoming', type: 'collides', why: 'The power to edit human heredity arrives faster than any institution has agreed how to govern it.' },
     ],
   },
   {
