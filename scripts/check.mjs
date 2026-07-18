@@ -36,10 +36,10 @@ for (const f of eraFiles) load(`data/eras/${f}`);
 
 const singleLesson = process.argv[2];
 let lessonFilesOnDisk = [];
+if (existsSync(join(root, 'data/lessons/_manifest.js'))) load('data/lessons/_manifest.js');
 if (singleLesson) {
   load(singleLesson);
 } else {
-  if (existsSync(join(root, 'data/lessons/_manifest.js'))) load('data/lessons/_manifest.js');
   lessonFilesOnDisk = existsSync(join(root, 'data/lessons'))
     ? readdirSync(join(root, 'data/lessons')).filter((f) => f.endsWith('.js') && f !== '_manifest.js')
     : [];
@@ -152,7 +152,11 @@ for (const id of lessonIds) {
       counts[q.type] = (counts[q.type] || 0) + 1;
       return counts;
     }, {});
-    const expectedCallbacks = myIndex === 0 ? 0 : myIndex === 1 ? 1 : 2;
+    // Callbacks can only reach earlier WRITTEN lessons, so the required count
+    // follows the manifest, not the raw node index: unwritten seeds inserted
+    // before a written lesson must not demand callbacks that cannot exist yet.
+    const earlierWritten = (LOOM.lessonFiles || []).filter((m) => nodeIndex.get(m) < myIndex).length;
+    const expectedCallbacks = LOOM.lessonFiles ? Math.min(2, earlierWritten) : myIndex === 0 ? 0 : myIndex === 1 ? 1 : 2;
     const expectedWhys = 4 - expectedCallbacks;
     if ((typeCounts.recall || 0) !== 1 || (typeCounts.why || 0) !== expectedWhys ||
         (typeCounts.callback || 0) !== expectedCallbacks) {
