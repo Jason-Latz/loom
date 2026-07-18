@@ -1,10 +1,11 @@
 # AGENTS.md — Loom
 
-A cartographer's atlas of world history: a 129-node knowledge graph (10 eras,
-dawn of humanity to now) rendered as a parchment chart, where each node opens
-a ~10-minute lesson (story → significance → connections → questions with
-callbacks to earlier nodes). Static site, zero dependencies, works from
-`file://`. Jason reads it; Codex forges new lessons into it.
+A cartographer's atlas of world history: a 365-node knowledge graph (10 eras,
+dawn of humanity to now, one node per day of a year) rendered as a parchment
+chart, where each node opens a ~10-minute lesson (story → significance →
+connections → questions with callbacks to earlier nodes). Static site, zero
+dependencies, works from `file://`. Jason reads it; Fable and Codex forge new
+lessons into it.
 
 ## Commands
 
@@ -91,23 +92,31 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-07-18)
+## State (2026-07-18, after the 365 expansion)
 
-- Graph complete: 129 nodes, 273 wires, 10 eras, all validated.
-- Eras I through III are fully written: 34 lessons, all adversarially reviewed.
-  Era III added 13 lessons with 39 clickable authoritative source links. Eras
-  IV through X are seeds awaiting the forge.
-- Paths, both world-map bands, mobile reading layouts, and real pinch zoom are
-  built. Production is https://loom-gray.vercel.app.
-- Era IV architecture is adversarially audited and corrected. It now has nine
-  lessons; gupta-zero moved to Era V at 628 CE and pacific-navigators moved to
-  Era VI at c. 1200 CE. Fable's complete writing commission is
-  docs/fable-era-iv-handoff.md.
-- Next forge target: Fable writes the nine Era IV lessons from the handoff;
-  Codex then reviews, integrates, commits, and deploys them.
+- Graph at final size: 365 nodes (one per day of a year), 799 wires, 10 eras,
+  gate green. The 236 new seeds (philosophy with reading anchors, trade and
+  technology, deliberate non-Eurasian depth) await Codex's adversarial audit;
+  checklist and rationales in docs/graph-expansion-365.md.
+- Eras I through III fully written: 34 lessons, all adversarially reviewed.
+- The nine Era IV lessons are written by Fable, source-verified, adversarially
+  reviewed, and green on single-file checks. They sit unmanifested and
+  uncommitted awaiting Codex's release review; see
+  docs/era-iv-completion-report.md.
+- check.mjs derives required callback counts from earlier written lessons
+  (manifest-aware), since unwritten seeds now precede the first written lessons.
+- Production is https://loom-gray.vercel.app, not yet redeployed with the 365
+  graph.
+- Next: Codex audits the new seeds, reviews and manifests the nine Era IV
+  lessons, commits, and redeploys.
 
 ## Change log
 
+- **2026-07-18 (evening):** The 365 expansion: 236 adversarially verified seed
+  nodes integrated as pure insertions across all ten eras (129 → 365), the
+  gate's callback rule made manifest-aware, and all nine Era IV lessons
+  written per the handoff, reviewed, and left unmanifested for Codex release
+  review. See docs/graph-expansion-365.md and docs/era-iv-completion-report.md.
 - **2026-07-18:** Audited and corrected Era IV graph architecture, relocated
   two chronologically misplaced nodes, prepared the source-backed Fable writing
   handoff, and recorded the Fable/Codex division of responsibility.
