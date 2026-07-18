@@ -24,6 +24,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'gupta-zero',
+    era: 5,
+    title: 'Rules for Nothing',
+    date: '628 CE',
+    sort: 628,
+    region: 'sasia',
+    x: 72,
+    threads: ['craft', 'ideas'],
+    hook: 'A dot can guard an empty place. Brahmagupta asks the stranger question: what laws govern nothing itself?',
+    summary:
+      'Indian mathematicians used decimal place value and marks for empty positions before Brahmagupta. In 628, he gave arithmetic rules for zero and negative numbers, treating debts and fortunes as calculable quantities. Some rules were right; division by zero defeated him. The achievement grew inside Sanskrit astronomy and computation, then traveled through Arabic translation networks, where Indian numerals and methods were tested, extended, and eventually carried farther west.',
+    edges: [
+      { to: 'house-of-wisdom', type: 'enables', why: 'Sanskrit astronomical and mathematical works entered Abbasid translation networks, where scholars including al-Khwarizmi adapted Indian numerals and methods.' },
+      { to: 'monsoon-marketplace', type: 'echoes', why: 'The same Indian Ocean routes that moved textiles, beliefs, and merchants also helped mathematical and astronomical knowledge travel between learned communities.' },
+    ],
+  },
+  {
     id: 'caliphate-lightning',
     era: 5,
     title: 'The Caliphate’s Lightning',
@@ -68,12 +85,12 @@ LOOM.node([
     region: 'europe',
     x: 28,
     threads: ['power', 'wealth'],
-    hook: 'On Christmas Day a Frankish king is crowned Roman Emperor, in a Europe of forests, manors, and memories.',
+    hook: 'On Christmas Day a Frankish king is crowned emperor in Rome. The title is ancient; the political world around it is not.',
     summary:
-      'Post-Roman Europe was poor and fragmented: power devolved to armed landholders, wealth to self-sufficient manors, learning to monasteries. Charlemagne’s empire flared and split, leaving a patchwork of lords, bishops, and kings all checking one another. That very fragmentation, wretched at the time, left space where towns, charters, and rival powers could later grow.',
+      'Western Europe after Rome was neither an empty ruin nor a landscape of sealed manors. Roman institutions persisted unevenly while households, estates, monasteries, towns, bishops, kings, and armed elites redistributed power and production. Charlemagne assembled a formidable empire through conquest, negotiation, administration, and Christian reform. Its later divisions did not seed liberty automatically. They produced changing jurisdictions whose bargains and conflicts could take many forms.',
     edges: [
       { to: 'northmen-networks', type: 'collides', why: 'Viking raids batter the new kingdoms and force them to organize.' },
-      { to: 'charter-and-parliament', type: 'enables', why: 'A world of bargaining lords seeds constitutional habits.' },
+      { to: 'charter-and-parliament', type: 'echoes', why: 'Later charters and parliaments arose from specific contests among rulers, elites, clergy, and towns, not a timeless European instinct.' },
     ],
   },
   {
@@ -204,12 +221,12 @@ LOOM.node([
     region: 'europe',
     x: 37,
     threads: ['ideas'],
-    hook: 'Two bishops excommunicate each other over bread, beards, and a single Latin word, and Christendom splits for good.',
+    hook: 'In 1054, envoys leave a bull on Hagia Sophia’s altar. The gesture matters, but no single summer can split centuries of entangled Christian life.',
     summary:
-      'Centuries of drift between Greek East and Latin West, over papal authority, the filioque clause, and rival empires, hardened into formal schism in 1054. Orthodoxy and Catholicism became distinct civilizations: different alphabets, church-state models, and destinies for the Slavic world and Russia. Cultural fault lines drawn here still shape geopolitics.',
+      'Greek East and Latin West diverged unevenly across centuries through language, theology, papal claims, imperial rivalry, liturgy, and jurisdiction. The mutual condemnations of 1054 became an important marker, not an instant or universal divorce. Communion and cooperation persisted in places. The crusader sack of Constantinople in 1204 deepened the breach. Later institutions and memories made the separation look cleaner than people experienced it.',
     edges: [
       { to: 'crusading-fever', type: 'collides', why: 'Crusaders sack Christian Constantinople in 1204, sealing the divorce.' },
-      { to: 'luthers-hammer', type: 'echoes', why: 'The first great fracture of Christendom prefigures the second.' },
+      { to: 'luthers-hammer', type: 'echoes', why: 'The later western Reformation was a different rupture, but both histories show how doctrine, authority, politics, and memory can harden disputed boundaries.' },
     ],
   },
 ]);

@@ -75,6 +75,22 @@ LOOM.node([
     ],
   },
   {
+    id: 'pacific-navigators',
+    era: 6,
+    title: 'Wayfinders of the Great Ocean',
+    date: 'c. 1200 CE',
+    sort: 1200,
+    region: 'easia',
+    x: 95,
+    threads: ['craft', 'ideas'],
+    hook: 'Beyond the last island, the horizon is unbroken. A canoe carries a family, a garden, and a map held in memory into the blue.',
+    summary:
+      'Pacific settlement came in pulses. Lapita communities reached Tonga by roughly 900 BCE and Samoa thereafter. One influential short chronology places Society Islands settlement around 1025 to 1120 CE and rapid eastern expansion around 1190 to 1290; exact sequences remain debated. Settlement required skilled observation of sea and sky. Living and revived traditions preserve varied ways of reading stars, swells, winds, clouds, birds, and islands.',
+    edges: [
+      { to: 'iberian-wager', type: 'echoes', why: 'Pacific wayfinding and Iberian expansion were different oceanic systems, built on different vessels, aims, instruments, and kinds of power; comparison reveals more than a race for who sailed first.' },
+    ],
+  },
+  {
     id: 'genghis-exchange',
     era: 6,
     title: 'The Mongol Exchange',

@@ -35,10 +35,12 @@ is the ten-minute reading experience behind one node of the 129-node graph.
 
 ## Batch mode
 
-Spawn one Sol subagent per lesson in parallel for all prose and substantive
-prose revision. Each follows steps 1-5 and runs the single-file check
-(`node scripts/check.mjs data/lessons/<id>.js`). Tell each agent NOT to touch
-the manifest.
+Prepare one self-contained research and architecture brief per lesson, then
+hand the prose and substantive literary revision to Fable. Fable follows steps
+1-5 and runs the single-file check (`node scripts/check.mjs
+data/lessons/<id>.js`). Tell Fable NOT to touch the manifest. Codex remains
+responsible for graph edits, adversarial review, validation, manifest updates,
+commits, and deployment.
 
 **Then verify adversarially.** The gate only checks structure, so pair every
 lesson with a reviewer agent that reads the spec, the exemplar, and the node,

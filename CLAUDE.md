@@ -35,16 +35,24 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
 
 ## Conventions
 
-- Lessons are forged per `docs/forge-spec.md`; batch generation delegates prose
-  to Sol subagents, one per lesson, manifest updated only by the orchestrator.
+- Lessons are forged per `docs/forge-spec.md`; Fable owns lesson prose and
+  substantive literary revision, while Codex owns graph architecture, research,
+  adversarial review, validation, manifest updates, commits, and deployment.
 - Before describing historical figures or events as contemporaneous, calculate
   and compare their dates explicitly rather than inferring from an era label.
 - Before naming a scholarly paper's authors in lesson prose, resolve its DOI
   metadata or publisher record; do not rely on search snippets or carried notes.
-- Jason prefers Sol for all lesson prose and substantive prose revisions in
-  Codex; assign those writing passes to Sol.
+- Jason prefers Fable for Loom lesson prose and substantive literary revision.
+  Do not assign those passes to Codex or Sol unless Jason explicitly changes
+  that choice; prepare a precise research and architecture handoff for Fable.
+- Trust Fable to research and correct lesson facts when needed. Treat Codex
+  briefs as scaffolding rather than a cage, then adversarially review Fable's
+  finished work before release.
 - Treat Loom as artwork: prioritize beautiful, engaging prose, elegant
   pedagogy, and aesthetic coherence over merely correct coverage.
+- Jason wants each new era to improve on the prose before it. Give every lesson
+  a dedicated literary revision for cadence, concrete image, restraint,
+  sentence music, and structural unity; accuracy and clarity are only the floor.
 - Mobile and interaction foundations are reliable. Resist feature creep and
   treat content quality as the main problem now.
 - Include authoritative citations or direct links wherever the lesson format
@@ -74,7 +82,7 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-07-17)
+## State (2026-07-18)
 
 - Graph complete: 129 nodes, 273 wires, 10 eras, all validated.
 - Eras I through III are fully written: 34 lessons, all adversarially reviewed.
@@ -82,10 +90,18 @@ callbacks to earlier nodes). Static site, zero dependencies, works from
   IV through X are seeds awaiting the forge.
 - Paths, both world-map bands, mobile reading layouts, and real pinch zoom are
   built. Production is https://loom-gray.vercel.app.
-- Next forge target: Era IV ("forge era 4").
+- Era IV architecture is adversarially audited and corrected. It now has nine
+  lessons; gupta-zero moved to Era V at 628 CE and pacific-navigators moved to
+  Era VI at c. 1200 CE. Fable's complete writing commission is
+  docs/fable-era-iv-handoff.md.
+- Next forge target: Fable writes the nine Era IV lessons from the handoff;
+  Codex then reviews, integrates, commits, and deploys them.
 
 ## Change log
 
+- **2026-07-18:** Audited and corrected Era IV graph architecture, relocated
+  two chronologically misplaced nodes, prepared the source-backed Fable writing
+  handoff, and recorded the Fable/Codex division of responsibility.
 - **2026-07-17:** Era III completed. Forged and adversarially audited all 13
   lessons, with 39 clickable authoritative source links across the era.
 - **2026-07-17** — Era II completed and adversarially audited, with the release
