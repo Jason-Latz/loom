@@ -24,6 +24,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'zarathustra-fire',
+    era: 3,
+    title: 'Zarathustra’s Fire',
+    date: 'c. 1200 to 1000 BCE',
+    sort: -1020,
+    region: 'sasia',
+    x: 77,
+    threads: ['ideas'],
+    hook: 'Somewhere on the Central Asian steppe, a priest sings hymns to a single wise lord and recasts the world as a choice between truth and the lie.',
+    summary:
+      'The Gathas, seventeen hymns in an archaic Iranian dialect close to the Rigveda’s Sanskrit, are usually dated near 1200 to 1000 BCE, though Zarathustra’s own dates remain disputed. They compress a moral cosmology: one wise lord, a contest between truth and the lie, and humans judged by their choices. Transmitted orally for perhaps two millennia, they seeded ideas of judgment, dualism, and a final setting right whose echoes in later faiths are still argued over.',
+    edges: [
+      { to: 'israel-one-god', type: 'echoes', why: 'Exilic and Persian-period Judaism sharpened claims of one universal god while living under rulers who invoked Ahura Mazda; how much flowed between the traditions is still debated.' },
+      { to: 'crown-of-cyrus', type: 'enables', why: 'Achaemenid kings from Darius onward proclaimed Ahura Mazda as the source of their kingship, making an Iranian moral cosmology part of imperial language.' },
+    ],
+  },
+  {
     id: 'phoenician-web',
     era: 3,
     title: 'The Phoenician Web',
@@ -41,6 +58,58 @@ LOOM.node([
     ],
   },
   {
+    id: 'book-of-songs',
+    era: 3,
+    title: 'The Book of Songs',
+    date: 'c. 1000 to 600 BCE',
+    sort: -800,
+    region: 'easia',
+    x: 90,
+    threads: ['ideas'],
+    hook: 'Farmers, soldiers, and abandoned lovers sing; court scribes write the verses down; centuries later, no statesman in China can be believed without quoting them.',
+    summary:
+      'The Shijing gathers 305 songs from roughly the tenth to the seventh centuries BCE: harvest hymns, dynastic praise, and the airs of the states, love songs and complaints from ordinary life. Tradition credits Confucius with selecting them; the collection was already a shared elite language he quoted constantly. Diplomats cited verses to signal positions, and two millennia of scholars read moral allegory into courtship songs. Chinese literature begins here, in the voices of the governed.',
+    edges: [
+      { to: 'analects-of-confucius', type: 'enables', why: 'Confucius told his son that without studying the Odes a person has nothing to speak with, and the Analects returns to these songs again and again.' },
+      { to: 'hundred-schools', type: 'enables', why: 'Warring States teachers of rival schools argued by citing the Odes, a shared canon that made disagreement legible from court to court.' },
+    ],
+  },
+  {
+    id: 'pharaohs-of-kush',
+    era: 3,
+    title: 'The Pharaohs of Kush',
+    date: 'c. 730 BCE',
+    sort: -730,
+    region: 'africa',
+    x: 46,
+    threads: ['power', 'ideas'],
+    hook: 'From Napata below the Nile’s fourth cataract, Piye sails north to claim Egypt itself, then honors Amun at Thebes more strictly than the Egyptians do.',
+    summary:
+      'Kush was an old Nile power, not Egypt’s shadow: its kings ruled Egypt as the twenty-fifth dynasty from about 728 to 656 BCE, reviving temple building and pyramid burial on their own terms. Assyrian invasions drove them back south, where the kingdom regrouped at Napata and endured for roughly another thousand years, later shifting its center upstream to Meroë. Egypt’s story runs upstream as well as down.',
+    edges: [
+      { to: 'library-of-nineveh', type: 'collides', why: 'Assyrian armies drove the Kushite dynasty out of Egypt and sacked Thebes in 663 BCE, and the empire’s own records preserve its version of that expulsion.' },
+      { to: 'bantu-and-aksum', type: 'collides', why: 'Meroë faded as Red Sea commerce and Aksumite power rose, and an Aksumite king’s inscriptions claim campaigns into the old Kushite heartland.' },
+    ],
+  },
+  {
+    id: 'wine-dark-song',
+    era: 3,
+    title: 'The Wine-Dark Song',
+    date: 'c. 750 to 650 BCE',
+    sort: -720,
+    region: 'europe',
+    x: 27,
+    threads: ['ideas'],
+    hook: 'A blind singer, tradition says, holds fifteen thousand lines in memory; in the eighth or seventh century BCE, someone begins fixing them in a borrowed alphabet.',
+    summary:
+      'The Iliad and Odyssey crystallized from generations of oral formulaic song, probably reaching written form between the mid-eighth and mid-seventh centuries BCE; whether one poet shaped them remains the oldest argument in literary scholarship. Greeks scattered across a thousand harbors shared no state, but they shared these poems: a common past, common gods, and a vocabulary for excellence, grief, and homecoming that Mediterranean culture never put down.',
+    edges: [
+      { to: 'polis-experiment', type: 'enables', why: 'Panhellenic epics, festivals, and shrines gave hundreds of scattered communities a shared identity that made the polis world legible to itself.' },
+      { to: 'tragic-stage', type: 'transforms', why: 'Athenian dramatists carved their plots from epic and heroic legend, staging Homer’s questions of honor and fate before a voting public.' },
+      { to: 'socratic-turn', type: 'collides', why: 'Plato banished Homer from his ideal city because poetry, not philosophy, was still Greece’s real moral teacher.' },
+    ],
+  },
+  {
     id: 'polis-experiment',
     era: 3,
     title: 'The Polis Experiment',
@@ -55,6 +124,75 @@ LOOM.node([
     edges: [
       { to: 'athens-demokratia', type: 'transforms', why: 'Athens reorganized the inherited polis so that ordinary male citizens exercised unusually direct power, while most residents remained excluded.' },
       { to: 'socratic-turn', type: 'enables', why: 'Assemblies, courts, theaters, and streets made public speech consequential, creating the civic setting in which Socratic questioning became both magnetic and dangerous.' },
+    ],
+  },
+  {
+    id: 'upanishadic-turn',
+    era: 3,
+    title: 'The Upanishadic Turn',
+    date: 'c. 700 to 500 BCE',
+    sort: -690,
+    region: 'sasia',
+    x: 69,
+    threads: ['ideas'],
+    hook: 'At the edge of the village, teachers turn the old fire sacrifice inward and ask what remains when everything that can burn has burned: what is the self?',
+    summary:
+      'The early Upanishads, composed orally in northern India around the seventh and sixth centuries BCE, redirected Vedic religion from ritual performance toward liberating knowledge. Their dialogues probe what persists through sleep, death, and rebirth, proposing that the innermost self, atman, is one with the ground of everything, brahman. Karma and rebirth here become explicit moral mechanics. Nearly every later Indian tradition, including the Buddha’s dissent, answers these texts.',
+    edges: [
+      { to: 'buddha-middle-path', type: 'collides', why: 'The Buddha taught in a world saturated with Upanishadic questions and answered its central claim directly: search as you like, no permanent self is found.' },
+      { to: 'panini-grammar', type: 'enables', why: 'Preserving and analyzing sacred Sanskrit exactly drove the sciences of recitation and grammar that Panini brought to systematic perfection.' },
+    ],
+  },
+  {
+    id: 'library-of-nineveh',
+    era: 3,
+    title: 'The Library at Nineveh',
+    date: 'c. 660 BCE',
+    sort: -660,
+    region: 'swasia',
+    x: 62,
+    threads: ['ideas', 'power'],
+    hook: 'A king feared from the Nile to Iran writes that he can read tablets from before the flood, and sends scholars to strip Babylonia’s temple archives for his shelves.',
+    summary:
+      'Ashurbanipal’s palace libraries at Nineveh gathered some 30,000 tablets and fragments: omens, rituals, lexical lists, medicine, laments, and the fullest Epic of Gilgamesh we possess. Collection was policy, not curiosity alone: Assyria ruled by knowing, taxing, and forecasting, and celestial scholarship advised the throne. When Nineveh burned in 612 BCE the clay baked hard, preserving a civilization’s reference shelf for the excavators who found it in the 1850s.',
+    edges: [
+      { to: 'israel-one-god', type: 'collides', why: 'Assyria erased the northern kingdom of Israel and besieged Jerusalem, traumas that biblical writers turned into theology about why empires rise.' },
+      { to: 'star-diaries', type: 'enables', why: 'The omen scholarship Assyrian kings funded fed directly into Babylon’s centuries of systematic sky watching after Nineveh fell.' },
+      { to: 'house-of-wisdom', type: 'echoes', why: 'Baghdad’s caliphs, like Assyria’s kings, treated the gathering of all written knowledge as a duty and an instrument of rule.' },
+    ],
+  },
+  {
+    id: 'chavin-oracle',
+    era: 3,
+    title: 'The Oracle in the Andes',
+    date: 'c. 950 to 400 BCE',
+    sort: -650,
+    region: 'americas',
+    x: 12,
+    threads: ['ideas', 'craft'],
+    hook: 'Pilgrims descend into stone galleries where water roars beneath the floor, a conch trumpet sounds in the dark, and a fanged god waits at the center of the maze.',
+    summary:
+      'Chavín de Huántar, high in the Peruvian Andes, drew pilgrims for roughly five centuries to an engineered experience: underground galleries, channeled water, conch-shell trumpets, and psychoactive san pedro cactus rendered in its carvings. Authority here grew from managed revelation rather than armies, and its art style, textiles, and goldwork spread across the Andes. It shows religion building large-scale order in the Americas on its own terms, centuries before Andean empires.',
+    edges: [
+      { to: 'mound-and-mountain', type: 'enables', why: 'Andean traditions of pilgrimage centers, textile prestige, and highland exchange that Chavín crystallized reappear in the later states of Wari and Tiwanaku.' },
+      { to: 'inka-threads', type: 'echoes', why: 'The Inka, like Chavín’s priests, ruled through staged ritual experience and objects charged with authority rather than through writing.' },
+    ],
+  },
+  {
+    id: 'star-diaries',
+    era: 3,
+    title: 'The Babylonian Star Diaries',
+    date: 'c. 650 to 60 BCE',
+    sort: -640,
+    region: 'swasia',
+    x: 55,
+    threads: ['craft', 'ideas'],
+    hook: 'Night after night for seven centuries, scribes on a temple roof note the moon, the planets, the price of barley, and the level of the river.',
+    summary:
+      'From at least 652 BCE, Babylonian scholars kept nightly records of the sky alongside prices, weather, and river levels, the longest continuous scientific project known. From these archives they extracted period relations and predictive arithmetic for eclipses and planetary motion, mathematical astronomy without telescopes. Greek astronomers from Hipparchus onward built on Babylonian parameters, and through them this data reached Ptolemy, Islamic astronomy, and Copernicus.',
+    edges: [
+      { to: 'ionian-awakening', type: 'enables', why: 'Later Greek legend credited Thales with predicting an eclipse; whatever the truth, Greek sky science grew where Babylonian records and methods could reach it.' },
+      { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Eclipse records and planetary parameters passed from Babylon through Ptolemy into the tables that Copernicus and Galileo’s generation still consulted.' },
     ],
   },
   {
@@ -92,6 +230,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'ionian-awakening',
+    era: 3,
+    title: 'The Ionian Awakening',
+    date: 'c. 585 BCE',
+    sort: -580,
+    region: 'europe',
+    x: 35,
+    threads: ['ideas'],
+    hook: 'In a harbor town of merchants and many languages, Thales proposes something outrageous: the world can be explained without telling a single story about the gods.',
+    summary:
+      'In sixth-century BCE Miletus, Thales, Anaximander, and Anaximenes began explaining nature by nature: water, the boundless, air. Their answers were wrong; the move was permanent. Claims now stood open to argument and correction rather than authority. Successors pushed the method outward: Heraclitus in Ephesus made change itself the law, Parmenides in Italian Elea tested being by pure deduction, Democritus in Abdera imagined atoms in a void. Philosophy and science share this cradle of criticizable conjecture.',
+    edges: [
+      { to: 'socratic-turn', type: 'transforms', why: 'Socrates inherited the Ionian confidence that argument reaches truth, then turned the method from the cosmos to human conduct.' },
+      { to: 'garden-and-stoa', type: 'enables', why: 'Epicurus rebuilt Democritus’ atoms and void into a complete therapy for fear, keeping physics as the foundation of ethics.' },
+    ],
+  },
+  {
     id: 'crown-of-cyrus',
     era: 3,
     title: 'The Crown of Cyrus',
@@ -109,6 +264,23 @@ LOOM.node([
     ],
   },
   {
+    id: 'scythian-gold',
+    era: 3,
+    title: 'Gold of the Grass Sea',
+    date: 'c. 700 to 300 BCE',
+    sort: -530,
+    region: 'sasia',
+    x: 78,
+    threads: ['wealth', 'craft'],
+    hook: 'A people who build no cities bury their dead under mounds stuffed with gold griffins, felt carpets, and horses dressed as mythical beasts.',
+    summary:
+      'Scythian and related steppe peoples ran mobile pastoral economies from the Black Sea to the Altai, trading grain, hides, and horses with Greek colonies and Persia while burying elites in kurgans whose frozen Altai examples preserve tattoos, textiles, and tack. Herodotus described them with fascinated unease. Nomads were not failed farmers: mobility was a sophisticated adaptation that made the steppe a corridor linking Eurasia’s settled worlds long before the Silk Roads had a name.',
+    edges: [
+      { to: 'silk-road-pulse', type: 'enables', why: 'Steppe peoples had long moved horses, metals, and styles across inner Eurasia; later caravan networks ran along corridors nomads already maintained.' },
+      { to: 'genghis-exchange', type: 'echoes', why: 'From Scythians to Mongols, steppe polities repeatedly converted herd mobility and horse skill into power that settled empires had to price in.' },
+    ],
+  },
+  {
     id: 'athens-demokratia',
     era: 3,
     title: 'Athens: Rule of the People',
@@ -123,6 +295,23 @@ LOOM.node([
     edges: [
       { to: 'socratic-turn', type: 'collides', why: 'A citizen jury condemned Socrates after war and oligarchic terror, making his trial an enduring argument about dissent, law, and collective judgment.' },
       { to: 'american-experiment', type: 'echoes', why: 'United States constitution makers admired classical civic life but often invoked direct democracy as a danger while designing a representative republic.' },
+    ],
+  },
+  {
+    id: 'carthage-ledger',
+    era: 3,
+    title: 'Carthage, the Merchant Republic',
+    date: 'c. 500 BCE',
+    sort: -505,
+    region: 'africa',
+    x: 42,
+    threads: ['wealth'],
+    hook: 'A city without much farmland feeds itself by ledger: silver from Iberia, silent barter for African gold, and a constitution Aristotle ranks among the best.',
+    summary:
+      'Phoenician settlers founded Carthage in the late ninth century BCE; it grew into the western Mediterranean’s commercial hub, run by elected magistrates, councils, and merchant families rather than kings. Its wealth came from organizing exchange: Iberian silver, African ivory and gold, Sardinian grain, mass-produced amphoras. Aristotle analyzed its mixed constitution, and Hanno’s voyage down the African coast survives in Greek translation. Rome’s rival was a republic of trade, not a pirate nest.',
+    edges: [
+      { to: 'roman-republic-breaks', type: 'collides', why: 'Rome’s wars with Carthage poured slaves, silver, and provinces into Italy, windfalls that helped destabilize the republic’s small-farmer foundations.' },
+      { to: 'golden-sahara', type: 'echoes', why: 'Herodotus already describes Carthaginians bartering for gold on Africa’s Atlantic shore; a millennium later, camels made the desert itself the road to that gold.' },
     ],
   },
   {
@@ -161,6 +350,92 @@ LOOM.node([
     ],
   },
   {
+    id: 'zapotec-dawn',
+    era: 3,
+    title: 'The Zapotec Dawn',
+    date: 'c. 500 BCE',
+    sort: -495,
+    region: 'americas',
+    x: 8,
+    threads: ['power', 'ideas'],
+    hook: 'On a leveled mountaintop above three valleys, a new city raises stones carved with named captives and dates in a count that will still be kept two thousand years later.',
+    summary:
+      'Around 500 BCE, communities of the Oaxaca valleys built Monte Albán on a defensible mountaintop, one of the Americas’ first true cities. Its early monuments carry hieroglyphic names and calendar dates, among the earliest securely dated writing in the hemisphere, though what came first at Olmec sites is debated. City, script, and the interlocking 260-day and 365-day counts became core Mesoamerican machinery, later shared by Teotihuacan and the Maya.',
+    edges: [
+      { to: 'teotihuacan-maya', type: 'enables', why: 'Teotihuacan housed a Zapotec neighborhood, and the calendar and writing conventions visible early at Monte Albán belong to the shared toolkit later cities elaborated.' },
+      { to: 'fifth-sun-aztecs', type: 'echoes', why: 'Two millennia later, Aztec priests still ran versions of the interlocking calendar counts carved on Monte Albán’s earliest stones.' },
+    ],
+  },
+  {
+    id: 'tragic-stage',
+    era: 3,
+    title: 'The Tragic Stage',
+    date: 'c. 458 BCE',
+    sort: -458,
+    region: 'europe',
+    x: 25,
+    threads: ['ideas'],
+    hook: 'Thousands of citizens sit on a hillside as a chorus retells how a king killed his daughter for a fair wind; a jury picked by lot decides which poet told the hardest truth best.',
+    summary:
+      'Athenian tragedy was a civic institution: state-funded festivals where poets competed before mass audiences with plays that pressed on the city’s rawest nerves, divine justice, war grief, the claims of family against law. Aeschylus, Sophocles, and Euripides survive from hundreds of lost playwrights. Comedy mocked living politicians by name. Democracy and drama matured together, each training citizens to weigh speeches, motives, and consequences.',
+    edges: [
+      { to: 'socratic-turn', type: 'collides', why: 'Aristophanes’ stage caricature of Socrates fixed the image his jury remembered, and Plato answered theater with a rival literary form, the dialogue.' },
+      { to: 'rebirth-of-the-ancients', type: 'echoes', why: 'Recovered ancient drama and rhetoric later helped teach Renaissance Europe that pagan art could weigh moral questions on its own authority.' },
+    ],
+  },
+  {
+    id: 'analects-of-confucius',
+    era: 3,
+    title: 'The Analects',
+    date: 'compiled after 479 BCE',
+    sort: -450,
+    region: 'easia',
+    x: 85,
+    threads: ['ideas'],
+    hook: 'A failed office seeker dies believing no ruler listened; his students begin writing down fragments of how he spoke, taught, and stood.',
+    summary:
+      'Confucius held minor posts, wandered between courts, and died in 479 BCE without power. The Analects, compiled by disciples across generations afterward, preserves him in fragments: ren, humaneness, cultivated through ritual, family devotion, study, and reciprocity, and government as moral example rather than punishment. The compilation’s layers are debated. Arguably no book has shaped more lives, becoming East Asia’s shared curriculum for two millennia.',
+    edges: [
+      { to: 'zhuangzi-butterfly', type: 'collides', why: 'The Zhuangzi makes Confucius a recurring character, sometimes mouthpiece and sometimes target, mocking the seriousness of moral cultivation.' },
+      { to: 'han-mandate', type: 'enables', why: 'Han patronage of classical learning began the process that made Confucius’ teachings a governing orthodoxy he never enjoyed alive.' },
+      { to: 'neo-confucian-turn', type: 'transforms', why: 'Zhu Xi placed the Analects among the Four Books, making these fragments the examination core of half of Asia.' },
+    ],
+  },
+  {
+    id: 'nok-terracotta',
+    era: 3,
+    title: 'The Nok Terracottas',
+    date: 'c. 900 to 300 BCE',
+    sort: -440,
+    region: 'africa',
+    x: 48,
+    threads: ['craft', 'ideas'],
+    hook: 'In central Nigeria, sculptors fire near-life-size figures with elaborate coiffures and calm triangular eyes, while nearby furnaces learn to bleed iron from stone.',
+    summary:
+      'Nok communities around Nigeria’s Jos Plateau produced sub-Saharan Africa’s earliest known large terracotta sculpture and some of its earliest iron smelting, with furnaces dated by the fifth century BCE. Whether West African ironworking was independently invented or arrived across the Sahara remains genuinely unresolved. The society behind the art, farmers without cities or kings so far as excavation shows, faded around the turn of the era; the sculptures’ purpose is still argued.',
+    edges: [
+      { to: 'bantu-and-aksum', type: 'enables', why: 'Iron, however it first arrived in West Africa, became the toolkit that farming and smithing communities carried across the continent’s center and south.' },
+      { to: 'golden-sahara', type: 'enables', why: 'The later West African states of the gold trade grew from farming and ironworking traditions whose antiquity Nok demonstrates.' },
+    ],
+  },
+  {
+    id: 'sacred-disease',
+    era: 3,
+    title: 'The Sacred Disease',
+    date: 'c. 400 BCE',
+    sort: -405,
+    region: 'europe',
+    x: 33,
+    threads: ['ideas', 'craft'],
+    hook: 'A Greek doctor writes that the falling sickness is no more sacred than any other illness: it has a nature, a cause, and a course a careful observer can learn.',
+    summary:
+      'The Hippocratic corpus, dozens of treatises by many hands from around 400 BCE onward, staked medicine’s founding claim: disease is natural, not divine punishment, and prognosis comes from observed cases. Its humoral theory was wrong and endured for two millennia; its case histories, professional ethics, and environmental thinking founded clinical practice. Hippocrates himself is nearly unrecoverable behind the corpus bearing his name.',
+    edges: [
+      { to: 'house-of-wisdom', type: 'enables', why: 'Through Galen and Arabic translation, Hippocratic medicine became the base layer of hospitals and medical learning from Baghdad to Cordoba.' },
+      { to: 'first-universities', type: 'enables', why: 'Salerno’s medical school and the faculties at Bologna and Paris taught the Hippocratic and Galenic corpus as examinable doctrine for centuries.' },
+    ],
+  },
+  {
     id: 'socratic-turn',
     era: 3,
     title: 'The Socratic Turn',
@@ -175,6 +450,40 @@ LOOM.node([
     edges: [
       { to: 'house-of-wisdom', type: 'enables', why: 'Translation movements in Abbasid lands transformed Greek works through Syriac and Arabic, where scholars criticized, extended, and recombined them.' },
       { to: 'first-universities', type: 'enables', why: 'Latin translations made much of Aristotle newly available in medieval Europe, provoking university curricula, prohibitions, commentaries, and synthesis.' },
+    ],
+  },
+  {
+    id: 'panini-grammar',
+    era: 3,
+    title: 'Panini’s Eight Chapters',
+    date: 'c. fourth century BCE',
+    sort: -380,
+    region: 'sasia',
+    x: 75,
+    threads: ['ideas', 'craft'],
+    hook: 'In roughly four thousand terse rules, a scholar of Gandhara compresses the entire Sanskrit language into a system that generates correct speech like a machine.',
+    summary:
+      'Panini’s Ashtadhyayi, usually placed in the fourth century BCE though his date is uncertain, describes Sanskrit in about four thousand ordered rules with a technical metalanguage, abbreviation conventions, and default-and-exception logic. It arose from the need to preserve sacred speech exactly, and became the model for two millennia of Indian language science. Modern linguistics and computer science recognize in it the earliest generative formal system.',
+    edges: [
+      { to: 'gupta-zero', type: 'enables', why: 'Sanskrit sciences framed knowledge as terse rule systems, the sutra style in which Indian mathematics and astronomy also compressed their methods.' },
+      { to: 'transistor-to-internet', type: 'echoes', why: 'Twentieth-century pioneers of formal languages found Panini had anticipated their rewrite rules; the notation behind programming languages has a distant ancient cousin.' },
+    ],
+  },
+  {
+    id: 'dong-son-drums',
+    era: 3,
+    title: 'The Bronze Drums of Dong Son',
+    date: 'c. 500 to 100 BCE',
+    sort: -350,
+    region: 'easia',
+    x: 83,
+    threads: ['craft', 'wealth'],
+    hook: 'From the Red River delta, bronze drums a meter across, cast in one pour and ringed with feathered dancers and boats of the dead, travel south across island seas.',
+    summary:
+      'Dong Son communities in northern Vietnam mastered large bronze casting, wet-rice farming, and river trade, and their great drums, symbols of chiefly power and rain ritual, have been found from Yunnan to eastern Indonesia. That distribution maps an exchange world across the South China Sea centuries before Indian and Chinese courts shaped the region. Han conquest absorbed the drum casters’ homeland in 111 BCE; the islands kept casting.',
+    edges: [
+      { to: 'qin-hammer', type: 'collides', why: 'Qin and then Han expansion pressed the empire’s counties and customs toward the Red River delta, where drum-casting chiefdoms became Chinese commanderies.' },
+      { to: 'monsoon-marketplace', type: 'enables', why: 'Drums scattered from Vietnam to eastern Indonesia show sea routes in working order that monsoon traders would later knit into a hemispheric market.' },
     ],
   },
   {
@@ -193,6 +502,58 @@ LOOM.node([
       { to: 'ashoka-wheel', type: 'enables', why: 'Alexander’s withdrawal and the fall of Achaemenid power altered northwestern politics, but Chandragupta Maurya’s rise cannot be reduced to a Macedonian aftershock.' },
       { to: 'roman-republic-breaks', type: 'echoes', why: 'Roman elites repeatedly measured conquest and personal glory against Alexander, a dangerous model for generals whose commands outgrew republican restraint.' },
       { to: 'house-of-wisdom', type: 'enables', why: 'Hellenistic scholars developed bodies of mathematics, medicine, and philosophy that later translators and thinkers rendered into Arabic and made their own.' },
+    ],
+  },
+  {
+    id: 'zhuangzi-butterfly',
+    era: 3,
+    title: 'Zhuangzi’s Butterfly',
+    date: 'c. fourth century BCE',
+    sort: -320,
+    region: 'easia',
+    x: 91,
+    threads: ['ideas'],
+    hook: 'A man dreams he is a butterfly, wakes, and asks which of the two is dreaming now; the joke is load-bearing.',
+    summary:
+      'The Zhuangzi, built around a core linked to Zhuang Zhou in the fourth century BCE and expanded by later hands, is philosophy as literature: parables, jokes, monsters, and arguments against the confidence of arguments. It questions fixed distinctions, praises useless trees and skillful butchers, and treats death with scandalous calm. Alongside the Daodejing it shaped Daoism, and later gave Chinese Buddhism much of its native vocabulary.',
+    edges: [
+      { to: 'garden-and-stoa', type: 'echoes', why: 'In the same century in Greece and China, philosophers taught that tranquility comes from dissolving fear and desire rather than gratifying them.' },
+      { to: 'neo-confucian-turn', type: 'collides', why: 'Neo-Confucians built their metaphysics partly to answer Daoist and Buddhist challenges while condemning Zhuangzi’s detachment from social duty.' },
+    ],
+  },
+  {
+    id: 'garden-and-stoa',
+    era: 3,
+    title: 'The Garden and the Stoa',
+    date: 'c. 300 BCE',
+    sort: -300,
+    region: 'europe',
+    x: 32,
+    threads: ['ideas'],
+    hook: 'In a private garden, Epicurus teaches that death is nothing to us; across town under a painted colonnade, Zeno teaches that virtue is the only good. Athens, its empire gone, is buying therapies.',
+    summary:
+      'After Alexander, philosophy in Athens turned therapeutic. Epicurus’ Garden taught that the world is atoms and void, gods do not meddle, and pleasure rightly understood means freedom from fear and pain. Zeno’s Stoa taught a providential cosmos in which only character is truly ours and emotions follow judgments we can retrain. Rivals in doctrine, they agreed philosophy’s job is curing misery, and Rome’s elite later took both as manuals for living.',
+    edges: [
+      { to: 'jesus-to-constantine', type: 'collides', why: 'Paul debated Epicureans and Stoics in Athens, and Christianity absorbed Stoic ethics while making the Epicurean cosmos its byword for godlessness.' },
+      { to: 'rebirth-of-the-ancients', type: 'enables', why: 'A single manuscript of Lucretius’ Epicurean poem, found in 1417, put atoms, natural explanation, and secular happiness back into Europe’s bloodstream.' },
+    ],
+  },
+  {
+    id: 'euclid-elements',
+    era: 3,
+    title: 'Euclid’s Elements',
+    date: 'c. 300 BCE',
+    sort: -295,
+    region: 'africa',
+    x: 44,
+    threads: ['ideas', 'craft'],
+    hook: 'In the new city of Alexandria, a teacher arranges everything known about magnitude and shape so each truth stands on the one before, all the way down to five postulates.',
+    summary:
+      'Euclid, working at Alexandria around 300 BCE, organized generations of Greek mathematics into the Elements: definitions, postulates, and hundreds of propositions each proved from what precedes. The axiomatic method itself, truth built from stated foundations, was the invention; the geometry was the demonstration. Translated into Arabic and Latin, it trained mathematical minds for twenty-two centuries, and worrying at its fifth postulate eventually opened non-Euclidean worlds.',
+    edges: [
+      { to: 'gupta-zero', type: 'echoes', why: 'Greek proof-centered and Indian computation-centered mathematics grew as distinct traditions that Islamic scholars would later read together.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'The Elements was among the first Greek works rendered into Arabic at Baghdad, where geometers extended and criticized it.' },
+      { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Galileo and Newton wrote nature’s laws in Euclid’s idiom; the Principia argues in propositions and proofs, not equations.' },
     ],
   },
   {
