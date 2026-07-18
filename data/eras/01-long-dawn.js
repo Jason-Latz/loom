@@ -7,6 +7,60 @@ LOOM.era({
 
 LOOM.node([
   {
+    id: 'first-of-our-kind',
+    era: 1,
+    title: 'First of Our Kind',
+    date: 'c. 300,000 BCE',
+    sort: -300000,
+    region: 'africa',
+    x: 47,
+    threads: ['craft', 'ideas'],
+    hook: 'Fossils in a Moroccan hillside carry a modern face on a long, archaic skull, and push the origin of our species back a hundred thousand years.',
+    summary:
+      'The Jebel Irhoud fossils, about 315,000 years old, show that Homo sapiens did not switch on suddenly in one East African garden. Modern features accumulated in a mosaic, the face first and the rounded braincase much later, across populations scattered over the whole continent. Africa was the workshop, not a single point on a map. The Middle Stone Age tools beside them were already shared far and wide.',
+    edges: [
+      { to: 'spark-of-mind', type: 'enables', why: 'Bodies like ours existed for roughly two hundred thousand years before the symbolic behavior we call fully modern appears in the record.' },
+      { to: 'great-dispersal', type: 'enables', why: 'A species already adapted across varied African habitats was primed to walk and paddle into every other environment on Earth.' },
+      { to: 'the-other-humans', type: 'echoes', why: 'Even as our lineage took shape, other human kinds shared the planet, and our species was never the only one alive.' },
+    ],
+  },
+  {
+    id: 'the-tended-fire',
+    era: 1,
+    title: 'The Tended Fire',
+    date: 'c. 300,000 BCE',
+    sort: -299000,
+    region: 'swasia',
+    x: 55,
+    threads: ['craft'],
+    hook: 'A hearth at Qesem Cave holds ash returned to the same spot for millennia. Someone keeps the fire, and the fire quietly remakes the body that keeps it.',
+    summary:
+      'Habitual control of fire is documented by roughly 300,000 years ago at sites such as Qesem in the Levant, though tamed flame is older and its beginnings are disputed. Cooking predigests food outside the body, releasing calories a large brain and a smaller gut could exploit. The hearth also became a fixed social center, stretching the day past sundown and gathering people to its light.',
+    edges: [
+      { to: 'spark-of-mind', type: 'enables', why: 'Cooking predigested food outside the body, releasing the surplus energy that an expensive, growing brain could draw upon.' },
+      { to: 'firelight-economy', type: 'enables', why: 'The hearth fixed a nightly gathering place where food was shared out and the working day stretched past dark.' },
+      { to: 'trap-of-seeds', type: 'echoes', why: 'Taming fire was the first time humans bent an ecosystem to feed themselves; farming was a later turn of the same screw.' },
+    ],
+  },
+  {
+    id: 'ochre-for-the-dead',
+    era: 1,
+    title: 'Ochre for the Dead',
+    date: 'c. 120,000 to 90,000 BCE',
+    sort: -110000,
+    region: 'swasia',
+    x: 60,
+    threads: ['ideas'],
+    hook: 'At Qafzeh a body is laid in a pit with a pair of deer antlers on its chest and red ochre staining the bones. Someone decided the dead should be arranged, not abandoned.',
+    summary:
+      'Early modern humans buried their dead at Qafzeh and Skhul in the Levant more than 90,000 years ago, some with ochre and pierced shells. Neanderthals at Shanidar and elsewhere also handled their dead with care, so the impulse was not ours alone. Deliberate burial with grave goods implies shared ideas about death that outran the visible world, the oldest evidence of belief hardened into ritual.',
+    edges: [
+      { to: 'tribe-of-strangers', type: 'enables', why: 'Arranging a corpse with ochre and grave goods shows shared belief already binding people around something the eye cannot see.' },
+      { to: 'paint-in-the-dark', type: 'echoes', why: 'A painted cave and a furnished grave give physical bodies to the same early convictions about meaning and death.' },
+      { to: 'gods-of-the-city', type: 'transforms', why: 'The care lavished on a single grave foreshadows the temples and cults that later organized whole cities around the unseen.' },
+    ],
+  },
+  {
     id: 'spark-of-mind',
     era: 1,
     title: 'The Spark of Mind',
@@ -22,6 +76,24 @@ LOOM.node([
       { to: 'great-dispersal', type: 'enables', why: 'Shared, teachable knowledge let small bands adapt to any biome on Earth.' },
       { to: 'tribe-of-strangers', type: 'enables', why: 'Symbols let trust stretch past the people you personally know.' },
       { to: 'invention-of-writing', type: 'echoes', why: 'Writing finishes what language began: memory stored outside a skull.' },
+    ],
+  },
+  {
+    id: 'ash-across-asia',
+    era: 1,
+    title: 'Ash Across Asia',
+    date: 'c. 74,000 BCE',
+    sort: -74000,
+    region: 'sasia',
+    x: 74,
+    threads: ['craft', 'ideas'],
+    hook: 'A mountain in Sumatra empties itself into the sky, dropping ash from India to the Arabian Sea. Somewhere along the coast, small bands of humans keep walking east.',
+    summary:
+      'The Toba super-eruption around 74,000 years ago was the largest in two million years, and once anchored a theory that it nearly exterminated humanity. The newer evidence is mixed: stone tools at Jwalapuram in India lie both above and below the ash, and some groups plainly endured. The episode reads less as a bottleneck than as the resilience of coastal foragers pressing along the southern route from Africa toward Asia.',
+    edges: [
+      { to: 'great-dispersal', type: 'collides', why: 'A volcanic winter tested small bands just as they were spreading along the southern coasts toward Asia and beyond.' },
+      { to: 'the-other-humans', type: 'echoes', why: 'Modern humans pressing east along the shore soon overlapped with the older human populations already living there.' },
+      { to: 'world-the-ice-made', type: 'echoes', why: 'Long before farming, a single eruption showed how abruptly climate could rewrite where humans were able to live.' },
     ],
   },
   {
@@ -59,6 +131,42 @@ LOOM.node([
     ],
   },
   {
+    id: 'the-other-humans',
+    era: 1,
+    title: 'The Other Humans',
+    date: 'c. 250,000 to 40,000 BCE',
+    sort: -55000,
+    region: 'world',
+    x: 56,
+    threads: ['ideas', 'craft'],
+    hook: 'For most of this story, to be human was not to be alone. Other kinds share the valleys: heavy-browed Neanderthals, the elusive Denisovans, and a meter-tall people on one Indonesian island.',
+    summary:
+      'Until roughly 50,000 years ago several human species overlapped: Neanderthals across western Eurasia, Denisovans known first from a single Siberian cave, and Homo floresiensis on Flores. Modern humans met and interbred with at least two of them, so most people today carry Neanderthal or Denisovan DNA. Why every other lineage vanished remains unsettled. Our condition as the only human kind is recent, and strange.',
+    edges: [
+      { to: 'crossing-to-sahul', type: 'echoes', why: 'A meter-tall human species had reached island Flores across water, sharpening the puzzle of how our own kind crossed to Australia.' },
+      { to: 'tribe-of-strangers', type: 'transforms', why: 'When every other human kind was gone, one lineage was left to build belonging out of shared symbols alone.' },
+      { to: 'the-eyed-needle', type: 'echoes', why: 'Neanderthals endured glacial Europe with cold-weather skill our lineage would extend once it learned to sew fitted clothing.' },
+    ],
+  },
+  {
+    id: 'crossing-to-sahul',
+    era: 1,
+    title: 'Crossing to Sahul',
+    date: 'c. 65,000 to 50,000 BCE',
+    sort: -52000,
+    region: 'easia',
+    x: 86,
+    threads: ['craft', 'ideas'],
+    hook: 'To reach the land that becomes Australia, someone must cross open sea with no far shore in sight. They build a craft, gather a crew, and gamble on the horizon.',
+    summary:
+      'People reached Sahul, the Ice Age landmass joining Australia and New Guinea, by around 50,000 years ago and perhaps as early as 65,000, a date the Madjedbebe excavation argues and other researchers dispute. The crossing demanded watercraft and planning over water never fully bridged by low sea levels. Their descendants sustained the longest continuous cultures on Earth, managing country with fire and encoding law and geography in song.',
+    edges: [
+      { to: 'tribe-of-strangers', type: 'enables', why: 'Provisioning a voyage toward land no one can see demands planning and trust among more people than a single family.' },
+      { to: 'paint-in-the-dark', type: 'echoes', why: 'The first Australians painted their country in rock-art traditions whose living descendants still read the images.' },
+      { to: 'into-the-last-continents', type: 'echoes', why: 'The maritime nerve that reached Sahul reappears in the coastal routes that later carried people down into the Americas.' },
+    ],
+  },
+  {
     id: 'tribe-of-strangers',
     era: 1,
     title: 'The Tribe of Strangers',
@@ -73,6 +181,41 @@ LOOM.node([
     edges: [
       { to: 'paint-in-the-dark', type: 'enables', why: 'Ritual and symbol gave shared belief a visible, durable body.' },
       { to: 'gods-of-the-city', type: 'transforms', why: 'The gods of the campfire scale up into the gods of the city.' },
+    ],
+  },
+  {
+    id: 'beads-and-alliances',
+    era: 1,
+    title: 'Beads and Alliances',
+    date: 'c. 45,000 BCE',
+    sort: -45000,
+    region: 'africa',
+    x: 48,
+    threads: ['wealth', 'ideas'],
+    hook: 'An ostrich eggshell is cracked, ground into discs, and drilled into beads. The finished string is not worn and kept at home but handed to a band camped a hundred kilometers away.',
+    summary:
+      'Across Africa, foragers made ostrich eggshell beads and passed them between groups over long distances, part of exchange running back at least 50,000 years. Matching bead styles trace social networks spanning hundreds of kilometers, gifts that bought alliance and insurance against hunger rather than goods bought for use. Value carried in a worn object and given to bind strangers is the deep root of trade, and eventually of money.',
+    edges: [
+      { to: 'paint-in-the-dark', type: 'echoes', why: 'A bead worn on the body and an animal drawn on a wall both turn raw material into a statement of who someone is.' },
+      { to: 'bronze-web', type: 'echoes', why: 'Ostrich eggshell passed between bands much as metals would later move between kingdoms across the Bronze Age world.' },
+      { to: 'invention-of-money', type: 'enables', why: 'Objects exchanged to make alliances rather than to be used are the seedbed from which markets and stamped money later grow.' },
+    ],
+  },
+  {
+    id: 'the-hollow-bone',
+    era: 1,
+    title: 'The Hollow Bone',
+    date: 'c. 42,000 BCE',
+    sort: -42000,
+    region: 'europe',
+    x: 26,
+    threads: ['ideas', 'craft'],
+    hook: 'In a cave in the Swabian hills, someone drills five holes along a hollow vulture bone and blows. A tune carries through the same dark where others are painting the walls.',
+    summary:
+      'The bone and ivory flutes from Hohle Fels and neighboring caves, about 42,000 years old, are among the oldest instruments known. Cut to a playable scale, they show music was already an art, not the accident of a whistling bone. Sound synchronizes feeling and knits a group faster than speech can, which is why every human society sings. The oldest surviving art was not only painted; some of it was heard.',
+    edges: [
+      { to: 'paint-in-the-dark', type: 'echoes', why: 'Flute and painting appear together in the same caves, meaning made audible in one chamber and visible in the next.' },
+      { to: 'gods-of-the-city', type: 'transforms', why: 'Rhythm and song that once synchronized a small band would later fill temples and orchestrate collective worship.' },
     ],
   },
   {
@@ -93,6 +236,24 @@ LOOM.node([
     ],
   },
   {
+    id: 'the-eyed-needle',
+    era: 1,
+    title: 'The Eye of the Needle',
+    date: 'c. 40,000 BCE',
+    sort: -38000,
+    region: 'world',
+    x: 49,
+    threads: ['craft'],
+    hook: 'A sliver of bone is ground to a point and pierced with an eye. Threaded with sinew, it turns loose hides into a fitted, layered skin a body can wear into the cold.',
+    summary:
+      'The eyed needle appears in Siberia and elsewhere by around 40,000 years ago, and genetics of the clothing louse hint that garments are far older still. Fitted, layered clothing was survival gear: it let people live where bare skin freezes, opening the far north and eventually the route into the Americas. Much of the technology that mattered most in the Ice Age was soft, sewn, and rarely survives to be dug up.',
+    edges: [
+      { to: 'world-the-ice-made', type: 'enables', why: 'Fitted, layered clothing is what let people survive the deep glacial cold that gripped the far north.' },
+      { to: 'into-the-last-continents', type: 'enables', why: 'No one crosses the frozen Beringian route into the Americas without sewn fur clothing to keep from freezing.' },
+      { to: 'trap-of-seeds', type: 'echoes', why: 'Sewing reshaped animal hides into gear the body needs; farming would later reshape whole landscapes to the same end.' },
+    ],
+  },
+  {
     id: 'world-the-ice-made',
     era: 1,
     title: 'The World the Ice Made',
@@ -108,6 +269,60 @@ LOOM.node([
       { to: 'village-before-the-farm', type: 'enables', why: 'A warming Levant filled with wild grain worth staying put for.' },
       { to: 'trap-of-seeds', type: 'enables', why: 'Stable Holocene weather is the precondition for betting your life on a harvest.' },
       { to: 'burning-mirror', type: 'echoes', why: 'Civilization grew inside a stable climate; now it is the climate’s author.' },
+    ],
+  },
+  {
+    id: 'wolf-at-the-fire',
+    era: 1,
+    title: 'The Wolf at the Fire',
+    date: 'c. 20,000 to 14,000 BCE',
+    sort: -18000,
+    region: 'world',
+    x: 47,
+    threads: ['craft', 'wealth'],
+    hook: 'A wolf that tolerates the edge of the firelight gets scraps; its bolder pups get more. Generations later, an animal is buried in the same grave as the people it hunted with.',
+    summary:
+      'The wolf became the dog well before any other domestication, by genetic estimates deep in the Ice Age and by clear burials such as Bonn-Oberkassel roughly 14,000 years ago. Where and how many times it happened is still argued. The process was mutual: tamer wolves fed on human waste and hunted alongside people, and humans gained sentries and partners. It was the first time our species reshaped another living thing to live with us.',
+    edges: [
+      { to: 'into-the-last-continents', type: 'echoes', why: 'Domesticated dogs accompanied later human migrations into the Americas, the only tamed animal known to have arrived alongside people.' },
+      { to: 'trap-of-seeds', type: 'echoes', why: 'Taming the wolf rehearsed the domestication of plants and herds that settled farming would soon demand.' },
+      { to: 'horse-and-wheel', type: 'echoes', why: 'The partnership that began with the wolf reached a further pitch when humans later bred and harnessed the horse.' },
+    ],
+  },
+  {
+    id: 'into-the-last-continents',
+    era: 1,
+    title: 'Into the Last Continents',
+    date: 'c. 23,000 to 14,000 BCE',
+    sort: -16000,
+    region: 'americas',
+    x: 12,
+    threads: ['craft', 'ideas'],
+    hook: 'In the wet clay of a New Mexico lakeshore, a barefoot person crosses with a child shifted onto one hip. The prints set in the mud twenty thousand years before anyone thought people were here.',
+    summary:
+      'Humans reached the Americas during or before the Last Glacial Maximum. Footprints at White Sands, dated to roughly 23,000 to 21,000 years ago and reconfirmed in 2023, and the settlement at Monte Verde in Chile overturn the old model of a single late arrival hunting through an ice-free corridor. Coastal routes down the Pacific are the likeliest path. The peopling of the last continents launched a vast experiment sealed off from the rest of humanity.',
+    edges: [
+      { to: 'maize-and-the-americas', type: 'enables', why: 'The people who walked and paddled into the Americas became the farmers who would turn a wild grass into maize.' },
+      { to: 'mound-and-mountain', type: 'echoes', why: 'From these first arrivals descended Cahokia and the Andean states, statecraft invented in near-total isolation.' },
+      { to: 'columbian-exchange', type: 'echoes', why: 'The long biological separation that began here set up the catastrophic reunion of the hemispheres after 1492.' },
+    ],
+  },
+  {
+    id: 'pots-before-the-farm',
+    era: 1,
+    title: 'Pots Before the Farm',
+    date: 'c. 18,000 to 14,000 BCE',
+    sort: -14000,
+    region: 'easia',
+    x: 90,
+    threads: ['craft', 'wealth'],
+    hook: 'Foragers who plant nothing shape wet clay into a pot, harden it in a fire, and set it over the coals to boil. The oldest cooking vessels on Earth belong to people with no fields.',
+    summary:
+      'The oldest known pottery, from Xianrendong Cave in southern China, dates to about 20,000 years ago, and East Asian foragers including the Jomon of Japan were making pots ten millennia or more before agriculture. Pots let people boil, store, and ferment, wringing more nutrition from wild plants, fish, and nuts. Settlement and storage came before the farm here, complicating any story that farming is what forced people to stay put.',
+    edges: [
+      { to: 'village-before-the-farm', type: 'echoes', why: 'Pots and permanent settlement both show people staying put to harvest the wild well before anyone planted a field.' },
+      { to: 'trap-of-seeds', type: 'collides', why: 'Storage and sedentism appear here before agriculture, unsettling the tidy story that farming is what forced people to settle down.' },
+      { to: 'song-economic-miracle', type: 'echoes', why: 'The oldest ceramic tradition on Earth began in the same East Asia that would later fire porcelain for the entire world.' },
     ],
   },
   {
