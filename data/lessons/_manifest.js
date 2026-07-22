@@ -50,4 +50,5 @@ LOOM.lessonFiles = [
   'teotihuacan-maya',
   'bantu-and-aksum',
   'steppe-hammer',
+  'byzantium-endures',
 ];

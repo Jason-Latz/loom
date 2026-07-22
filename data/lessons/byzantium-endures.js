@@ -1,0 +1,91 @@
+LOOM.lesson({
+  id: 'byzantium-endures',
+  readingMinutes: 10,
+  storyContext:
+    'Constantinople, 27 December 537 CE, the dedication of the Great Church. Andreas the marble setter is a composite: his name, trade, memories, and everything he senses or watches are reconstruction. The riot of 532, the law commission, the dedication, and the collapse of 558 are documented; Procopius’s description of the floating dome is imperial praise composed in the 550s, not testimony taken at the door.',
+  story: [
+    'The dome is telling the whole city a lie, and Andreas is one of the few people in the church who knows it. He stands in the crowd on dedication morning, 27 December 537 CE, lime scars on both hands, and he cannot stop looking up. Everyone is looking up. Far above the lamps and the gold, a shallow crown of brick hangs where no stone has a right to be, and the man beside him has begun to weep. Andreas is not weeping. He spent five years setting marble against these walls, and he watches the rim of the dome the way a rigger watches a loaded rope.',
+    'What the crowd sees is weightlessness. Light fills the church until the masonry overhead seems to rest on brightness alone; years later the historian Procopius, in a book written to praise the emperor’s buildings, would say the dome seemed to cover the space beneath it as though "suspended from heaven by the fabled golden chain." What Andreas sees is the trick’s anatomy. He watched the four great piers rise, each one a building’s worth of stone. He watched half-domes lean in against the crown like shoulders set against a door, arches catch the thrust and pass it, hand under hand, into the earth. The dome does not float. It is held, every hour, by structure the light was designed to hide. Two Greeks trained in geometry, Anthemius of Tralles and Isidore of Miletus, drew the trick. Hands like his built it.',
+    'Nearly six years earlier, this ground was ash. In January 532 CE the chariot factions of the Hippodrome, Blues and Greens, stopped fighting each other and turned on the emperor together, chanting one word, nika, conquer. They burned the heart of the city, the old Great Church with it, and acclaimed a rival emperor. Justinian, by one account, weighed a run for the harbor. He stayed. His generals led soldiers into the Hippodrome, and contemporaries claimed thirty thousand dead before the sand was quiet. Within weeks, workmen were clearing the burned ground for the church Andreas would help raise. A capital had questioned its emperor, and the dome was his answer: this is what my order can hold above your heads.',
+    'The building is the empire made visible. Its marble came by ship: gray-veined slabs from the quarries of Proconnesus in the Marmara, porphyry the color of dried blood from Egypt, green stone from Thessaly, capitals drilled into lace by carvers paid from the treasury. Andreas has handled that treasury’s money, gold solidi struck true for two centuries, and he knows where it comes from, because everyone does: from assessors in Egypt and Syria and Anatolia, counting harvests, counting heads. The church rose in not quite six years because the empire of cities still worked. Grain still moved, censuses still counted, and the state could still turn taxes into stone on a scale no western king then commanded.',
+    'In those same years, in rooms Andreas will never enter, another crew was quarrying a different inheritance. The emperor had ordered Rome’s law gathered and cut to order: first a Code of imperial enactments, then something harder. A commission under the jurist Tribonian read through the private writings of the classical jurists, most of them dead three centuries, nearly two thousand books, some three million lines, and distilled them to a twentieth of that bulk. The rioters of 532 had demanded Tribonian’s dismissal, and got it; the emperor waited, crushed them, and the sorting went on. In December 533 the Digest was published in Latin, in a city that spoke Greek, under an emperor born to Latin in the Balkan hills. Beside it came the Institutes, a beginner’s textbook addressed to the young who were eager for law. An empire was editing its own past into a single voice, and the voice said: still Rome.',
+    'And while the marble rose, fleets were leaving. In 533 an army sailed against the Vandals and took Carthage within months; from 535 another fought its way into Italy, into a war that would grind on for nearly twenty years and leave the city of Rome changing hands and starving. The dedication crowd around Andreas has heard the victory bulletins. What no one in the nave yet knows is the price still coming: plague out of Egypt in 542, killing beyond counting in these same streets; taxes wrung harder from fewer hands; reserves emptied into Italy until the peninsula was won and wrecked. The same revenue that holds the dome aloft holds the armies in the field. Behind every effortless effect the empire produces, the same hidden structure strains.',
+    'The dome Andreas watched being blessed did not last. Earthquakes in 553 and 557 CE worked at the arches, and on 7 May 558 part of the crown came down, crushing the altar beneath it. The old emperor ordered it raised again. Isidore the Younger, nephew of the first geometer, rebuilt the dome steeper, so that its weight would push less outward and more straight down: a correction, not a miracle. In December 562 the Great Church was consecrated a second time; Justinian had not quite three years to live. If Andreas stood in that second crowd, he was an old man among people who had forgotten the scaffolding, watching light hold up stone again, and knowing better. The floating is not effortless. Someone pays for it, someone repairs it, and as long as both go on, it does not fall.',
+  ],
+  significance: [
+    'Start with the name. The people in that nave called themselves Romans, in Greek: Romaioi. Their state was the Roman Empire, its capital founded by Constantine in 330 CE on the old town of Byzantion, and nothing about a western emperor’s fall in 476 changed that. The eastern court had been the richer, more urban, more solvent half of the Roman world for generations; nothing fled east, because the east was already home. The word Byzantine is a scholars’ convenience coined a millennium later, useful as shorthand and quietly poisonous, because it implies that the real Rome ended somewhere else and this state was a long footnote: a vault where classical civilization sat in storage until western Europe was ready to inherit it. The vault image fails twice over. This state was not a strongroom but a working one, thick with tax registers, lawsuits, guilds, dockyards, bread doles, and church councils; and it was never the only carrier of Greek learning, which also moved through Syriac schoolrooms and, later, Arabic translation. It did not preserve a lost world. It was a world.',
+    'Justinian’s legal project shows the mechanism of that continuity, because continuity had to be manufactured. Imperial commissions working from 528 to 534 CE produced the Code, a collection of imperial enactments; the Digest, distilled from the classical jurists; and the Institutes, a first textbook. The Novels, the new laws that followed, accumulated for the rest of the reign, increasingly issued in Greek because Greek was what subjects actually spoke. A jurist’s printed edition of 1583, a thousand years on, first bundled all four under the label the world now uses, Corpus Iuris Civilis. Almost none of the compilation was new law, and that is the point. Codification was selection, editing, reconciliation, and authorization: the emperor chose which of a thousand years of legal voices would survive, harmonized their quarrels, forbade fresh commentary on the result, and declared the edited past valid because he reissued it. Here the ideas thread and the power thread twist into one cord. A learned tradition stayed alive precisely by being placed under command, and a tradition that became a text became property of the throne.',
+    'The corpus had two afterlives, and neither ran straight. In the east it remained working law, taught, abridged, and eventually reworked in Greek. In the west the Digest went almost unread for centuries, until a manuscript resurfaced in northern Italy in the eleventh century and teachers, most famously at Bologna around 1100, built Europe’s first law faculties on it. From those classrooms, Roman legal method seeped unevenly into the civil law of Europe and of much of the modern world. Unevenly is the honest word: England largely went its own way, and no living code is a copy of Justinian. What traveled was not a statute book but a habit of treating law as a learned, ordered, arguable science, and it could travel because the eastern empire had bound it into books that knew how to wait.',
+    'The conquests are the era’s hardest ledger. Africa was a real recovery: its governors answered to Constantinople until the end of the seventh century. Italy was won and ruined in the same twenty years, and three years after Justinian died the Lombards took much of it, though imperial Ravenna, Rome, and the south held on far longer. Plague returned in waves, and the reserves Justinian inherited were gone. Whether he was the last great Roman or the man who spent the future is a genuine scholarly fight, and it begins inside a single writer. Procopius of Caesarea produced a great public history of the wars, the panegyric on the buildings quoted above, and a Secret History, unpublished in his lifetime, in which the emperor of the other two books becomes a demon in human form who ruined the state. Three verdicts, one eyewitness. This history is not short of evidence; it is short of neutral evidence, and reading it means holding praise and venom in the same hand.',
+    'What the era proves in the end is stranger than preservation. The state Justinian ruled lasted nearly nine centuries more, and it lasted by refusing to stay the same. Within eighty years of his death, after a final exhausting war with Persia, it lost Syria and Egypt to the caliphate’s armies, and Africa followed by the century’s end. It survived by contracting, reorganizing its armies and provinces, fighting behind its walls, bargaining with neighbors who borrowed from it on their own terms, and letting Latin go until even its law spoke Greek. Every one of those changes was carried out under the same unchanged name: Roman. That is the closing lesson of this era of empires and faiths. What outlives a political order’s makers is never the substance they knew; it is a name, a claim to legitimacy, a set of tools that later people keep choosing to repair. The dome above Istanbul today is, in its bones, the corrected dome of 562, patched after later earthquakes, held up by the same hidden shoulders of stone. Sixty generations have found it worth repairing. From the floor, it still looks like it floats.',
+  ],
+  threadsOut: [
+    {
+      to: 'caliphate-lightning',
+      why: 'Two generations after Justinian, Rome and Persia fought each other to exhaustion, and Arab armies took Syria and Egypt from the drained victor; the contracted state behind the Theodosian walls then proved that losing half an empire is not the same as ending.',
+    },
+    {
+      to: 'great-schism',
+      why: 'Justinian once kept Pope Vigilius in the capital for years to force agreement on doctrine; between Greek East and Latin West, language, jurisdiction, ritual, and grievance kept accumulating until 1054 gave the estrangement a date.',
+    },
+    {
+      to: 'fall-of-constantinople',
+      why: 'The city held for nine more centuries behind its walls and its name, until Ottoman cannon ended the Roman state in 1453; Mehmed II claimed the inheritance rather than erasing it, and prayed under Justinian’s dome.',
+    },
+    {
+      to: 'pax-romana-machine',
+      why: 'The empire of cities never ended in the east: the same machinery of census, tax, courts, and civic elites that once ran from Britain to Syria now ran from one capital, concentrated enough to pay for domes, digests, and wars of reconquest.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What did Justinian’s legal commissions produce between 528 and 534 CE, and what was the Digest actually made of?',
+      answer:
+        'Three things: the Code, collecting imperial enactments; the Digest, published in 533; and the Institutes, a first-year textbook. The Novels, the new laws mostly in Greek, came only after the commissions closed in 534, accumulating loose for the rest of the reign; a printed edition of 1583 first bound all four under the label Corpus Iuris Civilis. The Digest was distilled from the private writings of the classical jurists, most of them dead since about 250 CE: the commission read nearly two thousand books, some three million lines, and kept roughly a twentieth. It created almost no new law; it decided which old law would survive.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why did codifying old law strengthen Justinian’s authority more than issuing new law would have?',
+      answer:
+        'Because the authority lay in the editing. By choosing which jurists survived, reconciling their contradictions, forbidding fresh commentary, and reissuing the whole in his own name, Justinian converted a thousand-year legal tradition into a possession of the throne. New law binds only while a ruler can enforce it; an authorized past claims that the ruler and the tradition are the same thing. Continuity itself became something the emperor manufactured and owned.',
+    },
+    {
+      type: 'why',
+      prompt: 'The reconquests worked: Africa and much of Italy returned to Roman rule. Why do historians still argue over whether they were worth it?',
+      answer:
+        'Because the ledger runs both ways and the costs arrived on a delay. Africa stayed Roman until the end of the seventh century, a real recovery. Italy took nearly twenty years of devastating war, and much of it fell to the Lombards three years after Justinian died. Meanwhile plague from 542 CE and drained reserves weakened the state that soon faced Persia and then the caliphate. The argument is really over whether Justinian completed Rome or spent its future defending its past, and the evidence feeds both readings.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Hammurabi raised a stone stele proclaiming his justice; Justinian issued the Digest. Both show a ruler ordering law. What is the deep difference between the two objects?',
+      answer:
+        'The stele is a monument: it displays selected judgments before gods and posterity, and no surviving verdict shows a court applying it. The Digest is a working archive: an edited library of juristic argument, made to be taught in law schools, cited in courts, and copied forward. Hammurabi’s claim is that the king speaks justice; Justinian’s is that the king owns the whole recorded argument about it. Display makes law visible, institutions make it usable, and it was the usable form that later centuries could revive.',
+      callbackTo: 'code-of-hammurabi',
+    },
+    {
+      type: 'callback',
+      prompt: 'After Alexander, Greek spread as a language of courts and cities across western Asia. Almost nine centuries later, Justinian’s Greek-speaking subjects called themselves Romans. What does that mismatch teach about identity?',
+      answer:
+        'That language, culture, ancestry, and political identity travel on separate tracks. Alexander’s conquests spread Greek without making the conquered Greek in their own eyes, and Rome later absorbed the Greek east without unmaking its speech. What made Justinian’s subjects Roman was membership, not blood or vocabulary: citizenship, law, church, taxation, and a state that kept the name in business. Identity here is a historical artifact, assembled by institutions and maintained like the dome, not an automatic consequence of the words a person speaks.',
+      callbackTo: 'alexanders-comet',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Procopius, On Buildings, on the Great Church, translated by W. Lethaby and H. Swainson',
+      why: 'The dome suspended from heaven, in the emperor’s historian’s own words: five minutes inside a sixth-century panegyric with its rhetoric in plain view.',
+      url: 'https://sourcebooks.web.fordham.edu/source/procop-deaed1.asp',
+    },
+    {
+      title: 'Anthony Kaldellis, The New Roman Empire: A History of Byzantium',
+      why: 'The full-scale modern history that retires the vault myth and follows the eastern Roman state and its people from Constantine to 1453.',
+      url: 'https://academic.oup.com/book/46840',
+    },
+    {
+      title: 'Oxford Faculty of Law, Roman Law',
+      why: 'How Justinian’s Digest, resurfacing in Italy after centuries of silence, seeded Europe’s law faculties and is still taught today.',
+      url: 'https://www.law.ox.ac.uk/roman-law/roman-law',
+    },
+  ],
+});
