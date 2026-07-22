@@ -48,4 +48,5 @@ LOOM.lessonFiles = [
   'pax-romana-machine',
   'jesus-to-constantine',
   'teotihuacan-maya',
+  'bantu-and-aksum',
 ];
