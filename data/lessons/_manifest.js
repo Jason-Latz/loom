@@ -40,4 +40,7 @@ LOOM.lessonFiles = [
   'alexanders-comet',
   'ashoka-wheel',
   'qin-hammer',
+
+  // Era IV: Empires & Faiths
+  'han-mandate',
 ];
