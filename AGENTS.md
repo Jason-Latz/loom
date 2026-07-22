@@ -92,26 +92,30 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-07-18, after the 365 expansion)
+## State (2026-07-21, after the Era IV release)
 
-- Graph at final size: 365 nodes (one per day of a year), 799 wires, 10 eras,
-  gate green. The 236 new seeds (philosophy with reading anchors, trade and
-  technology, deliberate non-Eurasian depth) await Codex's adversarial audit;
-  checklist and rationales in docs/graph-expansion-365.md.
-- Eras I through III fully written: 34 lessons, all adversarially reviewed.
-- The nine Era IV lessons are written by Fable, source-verified, adversarially
-  reviewed, and green on single-file checks. They sit unmanifested and
-  uncommitted awaiting Codex's release review; see
-  docs/era-iv-completion-report.md.
+- Graph at final size: 365 nodes (one per day of a year), 800 wires, 10 eras,
+  gate green with zero warnings. Codex adversarially audited and corrected all
+  236 expansion seeds; checklist, rationales, and release audit are in
+  docs/graph-expansion-365.md.
+- Eras I through IV are fully written: 43 lessons, all source-verified and
+  adversarially reviewed. Era IV adds nine Fable lessons, 45 questions, and 27
+  clickable sources; see docs/era-iv-completion-report.md.
 - check.mjs derives required callback counts from earlier written lessons
   (manifest-aware), since unwritten seeds now precede the first written lessons.
-- Production is https://loom-gray.vercel.app, not yet redeployed with the 365
-  graph.
-- Next: Codex audits the new seeds, reviews and manifests the nine Era IV
-  lessons, commits, and redeploys.
+- Production is https://loom-gray.vercel.app at deployment
+  dpl_8zYZaZA2Y1GyLy8ENW4RSJ4ccihz. Local and live browser QA passed at desktop,
+  390 px, and 320 px with no console errors, invalid SVG values, or overflow.
+- Next: prepare the Era V research and architecture handoff for Fable, then
+  review and release each finished lesson through the same adversarial gate.
 
 ## Change log
 
+- **2026-07-21:** Adversarially audited all 236 expansion seeds, correcting
+  more than one hundred nodes across all ten eras and bringing the graph to 800
+  forward wires. Independently reviewed Fable's nine Era IV lessons, integrated
+  each in its own gate-green commit, and deployed 365 nodes and 43 lessons to
+  production. Local and live browser QA passed at desktop, 390 px, and 320 px.
 - **2026-07-18 (evening):** The 365 expansion: 236 adversarially verified seed
   nodes integrated as pure insertions across all ten eras (129 → 365), the
   gate's callback rule made manifest-aware, and all nine Era IV lessons
