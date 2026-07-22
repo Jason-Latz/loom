@@ -43,4 +43,5 @@ LOOM.lessonFiles = [
 
   // Era IV: Empires & Faiths
   'han-mandate',
+  'silk-road-pulse',
 ];
