@@ -139,12 +139,12 @@ LOOM.node([
     region: 'sasia',
     x: 79,
     threads: ['power', 'wealth'],
-    hook: 'For five thousand years the grassland set Eurasia’s tempo. Then two empires with maps, muskets, and grain wagons meet in the middle, and the nomad option ends.',
+    hook: 'For millennia the grassland shaped Eurasia’s tempo. Then Russian forts and Qing armies close around the Zunghar state, sharply narrowing the room for another independent steppe empire.',
     summary:
-      'Between Russian fort lines and Qianlong’s campaigns, Russia and the Qing closed the corridor from which Scythians, Huns, Turks, and Mongols had remade Eurasia. The Zunghars, the last steppe empire, were destroyed in the 1750s by Qing armies, smallpox, and massacre, while Kazakh leaders maneuvered between the giants. Gunpowder alone did not do it: supply lines, censuses, and treaties did. A five-millennium engine of world history quietly shut down.',
+      'Between Russian fort lines and Qianlong’s campaigns, two expanding empires constrained the corridor from which Scythians, Huns, Turks, and Mongols had remade Eurasia. The Zunghar state was destroyed in the 1750s by Qing armies, disease, and mass killing, while Kazakh leaders maneuvered between the giants. Supply lines, censuses, forts, and treaties mattered alongside gunpowder. Independent steppe empire became far harder, but pastoral mobility and Kazakh politics continued.',
     edges: [
-      { to: 'comancheria', type: 'echoes', why: 'As Eurasia’s nomad corridor closes, a horse-borne empire on another continent’s grassland is still rising, proof the ending was logistics, not destiny.' },
-      { to: 'opium-and-humiliation', type: 'enables', why: 'The Qing spent a century tuning their armies to the grassland frontier; when the next threat arrived by sea, the garrisons faced the wrong direction.' },
+      { to: 'comancheria', type: 'echoes', why: 'As empires constrained Eurasia’s steppe powers, a horse-borne Indigenous power on another continent’s grassland was still rising.' },
+      { to: 'opium-and-humiliation', type: 'enables', why: 'Qing success on the inland frontier did not guarantee the maritime, fiscal, and naval capacity demanded by a threat arriving by sea.' },
     ],
   },
   {
@@ -158,10 +158,11 @@ LOOM.node([
     threads: ['craft', 'ideas'],
     hook: 'Aboard a strange ship, a priest from Ra’iatea names island after island beyond the horizon, more than the paper can hold, while the English argue about how he can possibly know.',
     summary:
-      'Tupaia, a navigator-priest trained at Taputapuatea, joined Cook’s Endeavour in 1769 and set down a chart naming some seventy islands across a span wider than the Atlantic. He piloted, translated, and negotiated in Aotearoa; scholars still debate exactly how his chart encodes bearings. It is the rare document where Polynesian wayfinding, carried in memory, star paths, and swell patterns, wrote itself onto European paper without becoming European.',
+      'Tupaia, a navigator-priest trained at Taputapuatea, joined Cook’s Endeavour in 1769 and collaborated on a chart naming some seventy islands across a span wider than the Atlantic. He piloted, translated, and negotiated in Aotearoa; scholars still debate exactly how the chart encodes bearings. The document is a hybrid: Polynesian spatial knowledge, carried through memory, star paths, and swell patterns, was translated through European paper, questions, and conventions without becoming reducible to them.',
     edges: [
       { to: 'darwins-abyss', type: 'enables', why: 'The same voyage carried Banks’s collections home, feeding the naturalist networks that would one day put Darwin on a survey ship.' },
       { to: 'sandalwood-kingdom', type: 'enables', why: 'Once European ships learned Pacific waters Polynesians already knew, Hawaii’s harbors became crossroads, and its kings turned the traffic into state power.' },
+      { to: 'wayfinding-home', type: 'echoes', why: 'The twentieth-century Pacific voyaging revival joined living knowledge, historical research, and experimental sailing to reclaim sciences Tupaia already embodied.' },
     ],
   },
   {
@@ -209,9 +210,9 @@ LOOM.node([
     threads: ['power', 'wealth'],
     hook: 'On the southern plains the roles have reversed: a mounted indigenous power sets prices, dictates treaties, and decides how far the colonists’ world may advance.',
     summary:
-      'The Comanche turned Spanish horses into an empire of grass: mobile bands coordinating a vast economy of bison, horse herds, captives, and trade fairs that made them the dominant power of the southern plains for a century. New Spain paid them, Texas feared them, American markets traded with them. The image of scattered bands awaiting conquest has it backward; here the colonies lived on indigenous sufferance until the 1870s.',
+      'The Comanche turned Spanish horses into a formidable grassland power: decentralized mobile bands sustained a vast economy of bison, horse herds, captives, raiding, and trade. They dominated much of the southern plains for generations, extracting concessions from New Spain, alarming Texas, and trading with American markets. Some historians call this an empire; others question whether its decentralized political structure fits that label. Either way, Comanche power constrained colonial expansion until the later nineteenth century.',
     edges: [
-      { to: 'bolivars-dream', type: 'collides', why: 'The republics that replaced Spain inherited a northern frontier where Comanche power, not Mexico City, collected the tribute and set the terms.' },
+      { to: 'bolivars-dream', type: 'collides', why: 'The republics that replaced Spain inherited a northern frontier where Comanche diplomacy, raiding, and trade often mattered more than decrees from Mexico City.' },
       { to: 'cotton-and-chains', type: 'collides', why: 'The cotton frontier pushing into Texas met a power that raided, taxed, and treatied with it for decades, shaping where slavery’s empire could spread.' },
     ],
   },
@@ -317,7 +318,7 @@ LOOM.node([
       'Smallpox killed by the hundred thousand yearly. Inoculation with live smallpox, long practiced in Asia, Africa, and the Ottoman world and carried to England and Boston in the 1720s, worked but could kill and spread. Jenner’s 1796 cowpox experiment made protection safe enough to scale, and vaccination became the first medical procedure states organized for whole populations. The lone-genius story is wrong; the safe-at-scale threshold is what he crossed.',
     edges: [
       { to: 'pump-handle', type: 'enables', why: 'Vaccination made prevention a public program with registries, campaigns, and resistance, the administrative soil in which Snow’s epidemiology grew.' },
-      { to: 'order-from-ashes', type: 'echoes', why: 'The World Health Organization, part of the 1945 architecture, declared smallpox eradicated in 1980, the first disease humanity ever abolished.' },
+      { to: 'the-last-smallpox', type: 'enables', why: 'Jenner’s vaccine joined older inoculation knowledge, later laboratory improvements, and global public-health organization in the long path to eradication.' },
     ],
   },
   {
@@ -347,9 +348,9 @@ LOOM.node([
     region: 'africa',
     x: 47,
     threads: ['ideas', 'power'],
-    hook: 'A Fulani teacher walks out of a sultan’s territory with his students, and within a decade his movement of books and preachers governs more people than most kingdoms in Europe.',
+    hook: 'A Fulani teacher leaves a sultan’s territory with his followers, and a movement of books, preaching, migration, and armed jihad builds a vast new state.',
     summary:
-      'Usman dan Fodio’s 1804 hijra launched a reform movement that built the Sokoto Caliphate, the century’s largest West African state, run through emirates, courts, and an extraordinary paper trail of treatises and verse. His daughter Nana Asma’u organized the ’yan taru women teachers and wrote in three languages. This was a scholars’ revolution rather than a spasm of conquest, and its administration later became the skeleton of British indirect rule.',
+      'Usman dan Fodio’s 1804 hijra launched a reform movement that built the Sokoto Caliphate through scholarship, preaching, migration, military jihad, and conquest. Its emirates and courts produced an extraordinary paper trail of treatises and verse; his daughter Nana Asma’u organized the ’yan taru women teachers and wrote in three languages. Expansion also brought enslavement, and slavery became central to the caliphate’s economy. Britain later adapted parts of its administration for indirect rule.',
     edges: [
       { to: 'scramble-for-africa', type: 'collides', why: 'When Britain took Sokoto in 1903 it kept the emirs and ruled through them, colonial power wearing the caliphate’s own administrative clothes.' },
       { to: 'clove-sultanate', type: 'echoes', why: 'One state built by scholars on the savanna and one by merchants on the ocean both drew legitimacy from Islamic learning threaded through African trade.' },
@@ -538,10 +539,10 @@ LOOM.node([
     threads: ['craft', 'ideas'],
     hook: 'An old man who calls himself mad about drawing prints a wave with claws hanging over three boats, sells it for the price of noodles, and it becomes perhaps the most reproduced image on earth.',
     summary:
-      'Hokusai’s Thirty-six Views of Mount Fuji, published around 1830 to 1833, used imported Prussian blue and a mass woodblock market that let townspeople buy art cheap. Ukiyo-e was commercial popular culture, publisher-driven and technically dazzling. When Japan’s ports opened, prints crossed the ocean as wrapping paper and collectors’ prizes, bending European painting toward flat color and cropped views. Popular does not mean minor; the Wave argues the opposite.',
+      'Hokusai’s Thirty-six Views of Mount Fuji, published around 1830 to 1833, used imported Prussian blue and a mass woodblock market that let townspeople buy art cheaply. Ukiyo-e was commercial popular culture, publisher-driven and technically dazzling. After Japan’s ports opened, dealers, exhibitions, collectors, and expanding trade carried prints abroad, helping turn European artists toward flat color and cropped views. Popular does not mean minor; the Wave argues the opposite.',
     edges: [
       { to: 'first-globalization', type: 'echoes', why: 'Hokusai’s prints rode the new trade routes to Paris, where painting bent toward their color and cropping: culture traveling the same ships as cargo.' },
-      { to: 'glass-slab', type: 'echoes', why: 'The Wave now lives as an emoji on a billion screens, mass reproduction completing what the woodblock began.' },
+      { to: 'glass-slab', type: 'echoes', why: 'Digital reproduction has carried the Wave onto screens around the world, extending the mass circulation that woodblock printing began.' },
     ],
   },
   {

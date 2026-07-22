@@ -102,7 +102,7 @@ LOOM.node([
     threads: ['power', 'craft'],
     hook: 'A bronze head of Augustus lies buried beneath a temple stair at Meroë, where the subjects of a one-eyed queen step over it on their way to worship.',
     summary:
-      'South of Egypt, the kingdom of Kush ruled from Meroë for six centuries, burying rulers under steep pyramids and writing their own language in a script still only partly understood. Ruling queens, the kandakes, led armies and negotiated with Rome as equals; iron smelting and savanna trade sustained the capital. Kush was not Egypt’s copy or Rome’s victim. Its decline by the mid fourth century CE remains debated, with Aksum’s rise one factor among several.',
+      'South of Egypt, the kingdom of Kush ruled from Meroë for six centuries, burying rulers under steep pyramids and writing their own language in a script still only partly understood. Several kandakes exercised sovereign power; Amanirenas fought Rome and secured a favorable settlement. Ironworking, agriculture, and long-distance trade supported Meroë, though the scale and economic role of its iron industry remain debated. Kush was not Egypt’s copy or Rome’s victim. Its decline by the mid fourth century CE remains debated, with Aksum’s rise one factor among several.',
     edges: [
       { to: 'bantu-and-aksum', type: 'collides', why: 'An Aksumite inscription claims victory in the Nile valley as Meroë faded; the Red Sea power rose as the river kingdom’s trade thinned.' },
       { to: 'golden-sahara', type: 'echoes', why: 'Kush grew wealthy where river, savanna, and desert routes met; later Sahel empires repeated that geometry at the Sahara’s southern shore.' },
@@ -171,9 +171,9 @@ LOOM.node([
     region: 'easia',
     x: 86,
     threads: ['craft'],
-    hook: 'In 105 CE a palace official presents the Han emperor with sheets beaten from bark, rags, and old fishing nets: a writing surface cheap enough to waste.',
+    hook: 'In 105 CE a palace official presents the Han emperor with sheets beaten from bark, rags, and old fishing nets: a writing surface cheap enough to use at a new scale.',
     summary:
-      'Cai Lun’s report of 105 CE standardized papermaking, though archaeology shows paper in China centuries earlier. Pulped fiber dried in sheets cost far less than silk and outlasted bamboo strips, so administration, letters, and scripture copying swelled. The craft moved with Buddhist monks and traders into Central Asia long before the caliphate, whose mills made paper the medium of Abbasid bureaucracy and learning. Cheap surface, more writing, more readers: the ratchet turns.',
+      'Cai Lun’s report of 105 CE standardized papermaking, though archaeology shows paper in China centuries earlier. Pulped-fiber sheets were far cheaper than silk and lighter, less cumbersome, and easier to copy than bamboo strips, so administration, letters, and scripture copying swelled. The craft moved with Buddhist monks and traders into Central Asia long before the caliphate, whose mills made paper the medium of Abbasid bureaucracy and learning. Cheap surface, more writing, more readers: the ratchet turns.',
     edges: [
       { to: 'dharma-in-chinese', type: 'enables', why: 'Buddhist devotion made merit from copying scripture; paper made copying cheap, and translated sutras multiplied across China on it.' },
       { to: 'house-of-wisdom', type: 'enables', why: 'Paper reached the Islamic world along Central Asian routes, and cheap sheets in Baghdad made mass translation and record keeping affordable.' },
@@ -208,7 +208,7 @@ LOOM.node([
     threads: ['power', 'wealth'],
     hook: 'A Kushan coin can carry a Greek alphabet, an Iranian god, and a king in a nomad’s coat. On some, cast in gold, the Buddha appears, named in Bactrian.',
     summary:
-      'Descended from Central Asian pastoralists, the Kushans built an empire from the Amu Darya to the Ganges plain, with Kanishka’s era now generally dated from 127 CE. They minted in gold, taxed caravan cities, and patronized many cults at once; under their peace, workshops at Gandhara and Mathura gave the Buddha a human image and monks moved toward the Tarim oases. Central Asia here is an engine of connection, not a corridor between other people’s civilizations.',
+      'Descended from Central Asian pastoralists, the Kushans built an empire from the Amu Darya to the Ganges plain, with Kanishka’s era now generally dated from 127 CE. They minted in gold, taxed caravan cities, and patronized many cults at once; under their peace, workshops at Gandhara and Mathura developed and spread distinctive anthropomorphic Buddha images, while monks moved toward the Tarim oases. Central Asia here is an engine of connection, not a corridor between other people’s civilizations.',
     edges: [
       { to: 'dharma-in-chinese', type: 'enables', why: 'Kushan-era patronage seeded monasteries and translators along the oasis road toward the Tarim; two centuries later Kumarajiva came out of Kucha on that chain.' },
       { to: 'delhi-sultanate', type: 'echoes', why: 'Central Asian dynasties repeatedly entered South Asia through the northwest passes and stayed to rule: Kushans first, Turkic sultans and Mughals later.' },
@@ -223,11 +223,11 @@ LOOM.node([
     region: 'americas',
     x: 13,
     threads: ['wealth', 'craft'],
-    hook: 'Obsidian from the Yellowstone country, mica from the Appalachians, and shells from the Gulf all arrive in Ohio, where people without kings raise earthen circles a thousand feet across.',
+    hook: 'Obsidian from the Yellowstone country, mica from the Appalachians, and shells from the Gulf all arrive in Ohio, where people without known kings or cities raise earthen circles a thousand feet across.',
     summary:
-      'Hopewell communities of the Ohio valley built vast geometric enclosures, some aligned to lunar cycles, while living dispersed in small farmsteads. Raw materials converged from across the continent, probably moving through pilgrimage, alliance, and gift rather than merchants or markets. The earthworks repeat lengths that argue for shared units of measure. Hopewell corrects a stubborn assumption: monumental coordination does not require cities, states, or bosses, and exchange does not require commerce.',
+      'Hopewell communities of the Ohio valley built vast geometric enclosures, some aligned to lunar cycles, while living dispersed in small farmsteads. Raw materials converged from across the continent, probably moving through pilgrimage, alliance, and gift rather than merchants or markets. Repeated dimensions have led some researchers to propose shared units of measure, a claim still debated. Hopewell corrects a stubborn assumption: monumental coordination does not require cities, states, or bosses, and exchange does not require commerce.',
     edges: [
-      { to: 'mound-and-mountain', type: 'enables', why: 'Mississippian builders at Cahokia inherited a thousand-year Eastern Woodlands grammar of mounds, moving prestige goods, and sky watching.' },
+      { to: 'mound-and-mountain', type: 'enables', why: 'Cahokia drew on a long Eastern Woodlands repertoire of earthwork, gathering, exchange, and ceremony.' },
       { to: 'teotihuacan-maya', type: 'echoes', why: 'The Americas ran coordination experiments at every scale at once: dispersed Ohio households raised precise monuments while Teotihuacan packed one hundred thousand people into a grid.' },
     ],
   },
@@ -258,9 +258,9 @@ LOOM.node([
     region: 'europe',
     x: 34,
     threads: ['craft', 'ideas'],
-    hook: 'A gladiators’ physician from Pergamon dissects pigs before Roman crowds, treats an emperor, and watches a plague empty the city he cannot cure.',
+    hook: 'A gladiators’ physician from Pergamon dissects pigs before Roman crowds, leaves as an epidemic reaches Rome, then returns to imperial service while the sickness continues.',
     summary:
-      'Galen fused Hippocratic humors, anatomy from animal dissection, logic, and relentless self-promotion into a single medical system. He watched the Antonine plague strike Rome from 165 CE; his notes help modern scholars argue it was smallpox. Much of his anatomy was wrong in instructive ways, since human dissection was closed to him. Translated into Arabic and Latin, his system organized healing across three continents for more than a millennium.',
+      'Galen fused Hippocratic humors, anatomy from animal dissection, logic, and relentless self-promotion into a single medical system. He recorded the Antonine plague after returning to Italy; his notes help modern scholars argue it was smallpox. Much of his anatomy was wrong in instructive ways, since human dissection was closed to him. Translated into Arabic and Latin, his system organized healing across three continents for more than a millennium.',
     edges: [
       { to: 'house-of-wisdom', type: 'enables', why: 'Hunayn ibn Ishaq’s circle translated Galen wholesale; Islamic medicine tested, systematized, and extended him in hospitals and handbooks.' },
       { to: 'first-pandemic', type: 'echoes', why: 'When plague reached Constantinople in 542, physicians still reasoned in Galen’s humors; his framework outlived his evidence by centuries.' },
@@ -292,9 +292,9 @@ LOOM.node([
     region: 'swasia',
     x: 61,
     threads: ['ideas'],
-    hook: 'Rome burns Jerusalem’s temple in 70 CE. Sacrifice, priesthood, and pilgrimage end in one summer. What survives is a portable argument that never ends.',
+    hook: 'Rome destroys Jerusalem’s temple in 70 CE. The sacrificial cult loses its altar, while priestly identities, synagogues, pilgrimage hopes, and several competing Jewish futures remain.',
     summary:
-      'After the temple’s destruction, rabbis rebuilt Judaism around study, prayer, and law observable anywhere, an achievement crystallized in the Mishnah around 200 CE. Later sages in Roman Galilee and Sasanian Babylonia argued it into the Talmuds. Preserved disagreement became a religious form: minority opinions are recorded, argument itself sanctified. A faith stripped of its center learned to carry that center in text, and so survived dispersal after dispersal.',
+      'Over the next several centuries, rabbinic teachers helped reorganize Jewish life around study, prayer, and portable law. The Mishnah, redacted around 200 CE, crystallized one formative stage rather than recording an overnight replacement of every other Jewish response. Later sages in Roman Galilee and Sasanian Babylonia argued it into the Talmuds. Preserved disagreement became a religious form: minority opinions are recorded, argument itself sanctified. A faith stripped of its center learned to carry that center in text, and so survived dispersal after dispersal.',
     edges: [
       { to: 'iranshahr', type: 'enables', why: 'The Mishnah became the curriculum of Babylonian academies under Sasanian rule, where the larger Talmud slowly grew around it.' },
       { to: 'recitation-in-the-desert', type: 'echoes', why: 'Islam also built a civilization of jurists and schools around revealed text; rabbinic law culture was a near precedent in the same region.' },
@@ -330,9 +330,9 @@ LOOM.node([
     summary:
       'The Sasanians rebuilt Iran as Rome’s peer for four centuries: a crowned bureaucracy, Zoroastrianism organized with scripture and priesthood, and Ctesiphon astride the routes between Mediterranean and Asian worlds. Their courts sheltered Jewish academies, Christian bishops, and refugee philosophers; Khosrow’s reign gathered medicine and astronomy at Gundeshapur. The caliphate later ran on Sasanian fiscal practice and coinage. Leaving this empire out makes Islam’s rise unintelligible.',
     edges: [
-      { to: 'byzantium-endures', type: 'collides', why: 'Rome and Iran fought, traded, imitated, and exhausted each other; their last great war opened the road the caliphate walked.' },
-      { to: 'caliphate-lightning', type: 'transforms', why: 'Arab rulers took over Sasanian taxes, mints, and court manners wholesale; the dirham itself began as a drachm with new words.' },
-      { to: 'house-of-wisdom', type: 'enables', why: 'Pahlavi books, Gundeshapur physicians, and Persian scholar families fed the Abbasid translation movement from inside.' },
+      { to: 'byzantium-endures', type: 'collides', why: 'Rome and Iran fought, traded, imitated, and exhausted each other; their last great war left both states strained before the first Islamic conquests.' },
+      { to: 'caliphate-lightning', type: 'transforms', why: 'Early caliphal administrations adapted Sasanian taxes, mints, court forms, and the drachm-derived dirham alongside Byzantine inheritances.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'Middle Persian texts, Persian scholarly families, and physicians associated with Khuzestan contributed to Abbasid learning; Gundeshapur’s exact institutional role remains debated.' },
     ],
   },
   {
@@ -363,7 +363,7 @@ LOOM.node([
     threads: ['wealth', 'power'],
     hook: 'A Roman soldier’s pay arrives in coins that are silver only at the surface. Prices climb, the mint blames merchants, and in 301 an emperor decrees maximum prices for everything from wheat to lions.',
     summary:
-      'Third-century emperors, squeezed between army costs and fixed revenues, stretched the silver coinage until it was washed bronze. Prices rose, though how fast and why is still argued, and the state increasingly taxed in kind. Diocletian reorganized the empire, recoined, and in 301 CE fixed maximum prices on penalty of death. The edict failed; markets went quiet or underground. Constantine’s stable gold solidus, not decree, restored monetary trust.',
+      'Third-century emperors, squeezed between army costs and fixed revenues, stretched the silver coinage until it was washed bronze. Prices rose, though how fast and why is still argued, and the state increasingly taxed in kind. Diocletian reorganized the empire, recoined, and in 301 CE fixed maximum prices on penalty of death. The edict appears to have failed and may have driven some exchange underground. Constantine’s solidus created a durable gold standard for taxation and long-distance payment; it did not repair every level of the currency.',
     edges: [
       { to: 'steppe-hammer', type: 'enables', why: 'The state that met the Danube crisis was Diocletian’s remade machine, bigger and hungrier, its armies dependent on strained fiscal flows.' },
       { to: 'byzantium-endures', type: 'enables', why: 'The gold solidus born from the silver wreck anchored eastern taxes and Mediterranean trade for seven centuries.' },
@@ -400,7 +400,7 @@ LOOM.node([
     summary:
       'Funan, known through Chinese envoy reports and excavation at Óc Eo, prospered where ships waiting out the monsoon needed harbor, water, and rice. Canals linked delta settlements; goods from Rome, India, and China met in its markets. Local rulers selectively adopted Sanskrit titles, Indic ritual, and Brahmanical law, a choice, not a colonization. Whether Funan was a unified kingdom or a network of ports remains debated. Southeast Asia enters recorded history as a hinge, on its own terms.',
     edges: [
-      { to: 'angkor-hydraulic', type: 'enables', why: 'Khmer statecraft, water engineering, and Indic kingship at Angkor descended from experiments the delta polities ran first.' },
+      { to: 'angkor-hydraulic', type: 'enables', why: 'Later Khmer rulers drew on earlier mainland Southeast Asian experiments in water management, Sanskrit political idioms, and delta exchange.' },
       { to: 'monsoon-marketplace', type: 'enables', why: 'Southeast Asian entrepôts became fixed stations of the ocean’s trade rhythm, where waiting out the wind turned into wealth.' },
     ],
   },
@@ -447,7 +447,7 @@ LOOM.node([
     region: 'africa',
     x: 49,
     threads: ['ideas'],
-    hook: 'A North African bishop writes his life as a prayer: the stolen pears, the mistress, the child, the garden voice saying take and read. No one had written a self this way before.',
+    hook: 'A North African bishop writes his life as a prayer: the stolen pears, the mistress, the child, the garden voice saying take and read. Earlier writers had narrated lives, but few had made memory, desire, and confession into a philosophical prayer on this scale.',
     summary:
       'Augustine’s Confessions turned autobiography into philosophy: memory, time, habit, and desire examined from inside, addressed to God. Against Pelagius he argued the will cannot heal itself, grounding a theology of grace; in the City of God, written as Rome reeled from the sack of 410, he split history from salvation. Latin Christianity thought inside his categories for a thousand years, and philosophy still argues with his account of the will.',
     edges: [
@@ -468,7 +468,7 @@ LOOM.node([
     summary:
       'Buddhism entered China through merchants and missionaries, but translation made it Chinese. Kumarajiva’s bureau at Chang’an, from 401 CE, rendered the Lotus, Diamond, and Madhyamaka texts into prose clear and musical enough to be chanted, choosing sense over word-for-word fidelity. Translation was interpretation: Chinese Buddhism grew from his choices. Within centuries the foreign faith had Chinese schools, and a Confucian world absorbed a doctrine of emptiness it never stopped arguing with.',
     edges: [
-      { to: 'tang-golden-network', type: 'enables', why: 'Tang China’s monasteries, pilgrim traffic, and Buddhist court politics rested on the scriptural canon his bureau standardized.' },
+      { to: 'tang-golden-network', type: 'enables', why: 'Tang monasteries and pilgrims relied on many of the influential translations his bureau produced.' },
       { to: 'heian-and-genji', type: 'enables', why: 'Japan received Buddhism through Chinese texts; Heian courtiers chanted Kumarajiva’s Lotus Sutra, not a Sanskrit original.' },
     ],
   },
@@ -483,7 +483,7 @@ LOOM.node([
     threads: ['ideas', 'power'],
     hook: 'For a thousand years, kings from Afghanistan to Java proclaim themselves in polished Sanskrit verse, though no Sanskrit army ever crossed the sea.',
     summary:
-      'Around the Gupta courts, Sanskrit reached a classical perfection, Kalidasa’s plays and poems its exemplar, and became a transregional language of praise, law, and learning. Rulers in Cambodia, Java, and Champa issued Sanskrit inscriptions without Indian conquest or colonization: prestige, ritual, and usefulness carried it. Kalidasa’s own dates are uncertain, conventionally placed near 400 CE. Culture here expands by adoption, a mechanism empires do not explain.',
+      'Around the Gupta courts, Sanskrit flourished in highly codified court poetry and drama, with Kalidasa its most celebrated exemplar, and became a transregional language of praise, law, and learning. Rulers in Cambodia, Java, and Champa issued Sanskrit inscriptions without Indian conquest or colonization: prestige, ritual, and usefulness carried it. Kalidasa’s own dates are uncertain, conventionally placed near 400 CE. Culture here expands by adoption, a mechanism empires do not explain.',
     edges: [
       { to: 'gupta-zero', type: 'enables', why: 'Brahmagupta wrote mathematics in Sanskrit verse for the same cosmopolitan learned world, which is how his rules traveled.' },
       { to: 'angkor-hydraulic', type: 'enables', why: 'Khmer kings raised Sanskrit inscriptions and Indic temple mountains; Angkor’s royal idiom descends from this adoption.' },
@@ -503,8 +503,8 @@ LOOM.node([
     summary:
       'Hypatia, mathematician and Platonist, taught a mixed elite in a city where philosophy, mathematics, and now episcopal power contended. Her murder in 415 CE by a Christian mob grew from city politics as much as doctrine, and learning did not die with her: the commentaries and editions of late Alexandria, her father’s Euclid among them, became the textbooks later worlds received. Institutions of learning survive on patronage and protection, and both were shifting.',
     edges: [
-      { to: 'house-of-wisdom', type: 'enables', why: 'What Baghdad translated was largely late Alexandria’s curated versions of Euclid, Ptolemy, and Galen, commentary tradition included.' },
-      { to: 'first-universities', type: 'echoes', why: 'Europe’s universities gained charters and legal personhood, the protection Alexandria’s schools never had when the city turned.' },
+      { to: 'house-of-wisdom', type: 'enables', why: 'Late Alexandrian editions and commentaries on Euclid, Ptolemy, and Galen formed one important stream within the Greek and Syriac materials translated under the Abbasids.' },
+      { to: 'first-universities', type: 'echoes', why: 'Later university charters gave scholar communities a corporate legal status Alexandria’s teaching circles lacked.' },
     ],
   },
   {
@@ -552,10 +552,10 @@ LOOM.node([
     threads: ['ideas', 'wealth'],
     hook: 'An Italian abbot writes a short rule for men who will rise in the dark to sing, then work with their hands: idleness, he says, is the enemy of the soul.',
     summary:
-      'Benedict’s Rule, written at Monte Cassino around 540, organized monastic life around scheduled prayer, manual labor, reading, and obedience under an elected abbot, moderate where earlier rules were heroic. Monasteries became durable corporations: clearing land, keeping accounts, copying texts, teaching boys. The Rule’s slow adoption across Latin Europe built an infrastructure of literacy and disciplined time. The clock-driven workday has one of its taproots in the liturgical hours.',
+      'Benedict’s Rule, written at Monte Cassino around 540, organized monastic life around scheduled prayer, manual labor, reading, and obedience under an elected abbot, moderate where earlier rules were heroic. Monasteries became durable corporations: clearing land, keeping accounts, copying texts, teaching boys. The Rule’s adoption across Latin Europe helped habituate communities to shared schedules of prayer, reading, and work. Mechanical-clock and factory discipline came much later and cannot be derived from monastic hours alone.',
     edges: [
       { to: 'europe-reboots', type: 'enables', why: 'Monasteries anchored the post-Roman countryside as estates, schools, and scriptoria; Carolingian reformers pushed the Rule as the standard.' },
-      { to: 'gutenberg-explosion', type: 'enables', why: 'Monastic copying kept Latin literature alive long enough for the press to multiply it; Gutenberg printed what scriptoria preserved.' },
+      { to: 'gutenberg-explosion', type: 'enables', why: 'Scriptoria preserved and recopied part of the Latin textual inheritance later printers used.' },
     ],
   },
   {
@@ -585,11 +585,11 @@ LOOM.node([
     region: 'world',
     x: 52,
     threads: ['wealth', 'power'],
-    hook: 'In 536 the sun gives light without brightness for more than a year. Five years later, ships from Egypt bring rats, fleas, and a sickness that kills faster than it can be named.',
+    hook: 'In 536 the sun gives light without brightness across much of the Northern Hemisphere. Five years later, plague moves from Egypt through Mediterranean ports faster than observers can explain.',
     summary:
-      'A volcanic dust veil dimmed the sun in 536, opening the coldest decade in two millennia; in 541 bubonic plague, confirmed as Yersinia pestis by ancient DNA, entered the Mediterranean at Pelusium and reached Constantinople in 542. Mortality estimates now range from catastrophic to modest, a live scholarly fight. Recurring waves strained Roman and Persian tax bases for two centuries. Climate and disease are actors in political history, not background.',
+      'Volcanic eruptions in 536 and about 540 produced one of the Northern Hemisphere’s coldest decades of the past two millennia; in 541 plague caused by Yersinia pestis reached Pelusium and Constantinople. How it spread, how many died, and how deeply recurrent waves altered Roman and Persian states remain live debates. Climate and disease belong inside political history, not outside it.',
     edges: [
-      { to: 'caliphate-lightning', type: 'enables', why: 'Plague and war thinned both empires’ manpower and revenue in the decades before Arab armies moved, though how much this mattered is argued.' },
+      { to: 'caliphate-lightning', type: 'enables', why: 'Recurring plague may have compounded wartime fiscal and demographic strain in both empires.' },
       { to: 'black-death', type: 'echoes', why: 'The same pathogen returned in 1347 on fuller trade routes; both pandemics rode the connectivity that prosperity had built.' },
     ],
   },

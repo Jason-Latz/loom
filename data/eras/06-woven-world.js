@@ -83,9 +83,9 @@ LOOM.node([
     region: 'sasia',
     x: 75,
     threads: ['ideas'],
-    hook: 'In twelfth-century Kalyana, a king’s treasurer and a wandering woman poet say the same scandalous thing in plain Kannada: the body is the shrine, and no priest is needed.',
+    hook: 'Later tradition places a king’s treasurer and a wandering woman poet in twelfth-century Kalyana, saying the same scandalous thing in plain Kannada: the body is the shrine, and no priest is needed.',
     summary:
-      'In the twelfth-century Deccan, Basava, Allama Prabhu, Akka Mahadevi, and hundreds of others composed vachanas: free-verse Kannada sayings addressed to Shiva that rejected caste, temple mediation, and ritual expertise in favor of direct devotion and dignified work. Their community at Kalyana welcomed women and laborers as saints and ended in persecution; the movement survived as the Lingayats. Bhakti was not folk simplicity: it was a sharp argument about religious authority, made in the working tongue.',
+      'In the twelfth-century Deccan, Basava, Allama Prabhu, Akka Mahadevi, and hundreds of others composed vachanas: free-verse Kannada sayings addressed to Shiva that challenged caste and ritual authority in distinct ways while honoring direct devotion and dignified work. Later Lingayat traditions remember a Kalyana community that crossed caste and gender boundaries and ended in persecution; the historical details are difficult to recover. The movement survived as the Lingayats. Bhakti was not folk simplicity: it was a sharp argument about religious authority, made in the working tongue.',
     edges: [
       { to: 'dantes-comedy', type: 'echoes', why: 'On two continents, poets moved the highest questions out of sacred languages and into the speech of daily work.' },
       { to: 'salt-and-satyagraha', type: 'echoes', why: 'The vachana claim that devotion outranks caste and priesthood kept resurfacing in India’s reform movements, Gandhi’s included.' },
@@ -119,7 +119,7 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'A judge in Cordoba is handed Aristotle by his caliph and told to explain him clearly. The explanations will outlive the dynasty, in Latin, under a name their author never used: the Commentator.',
     summary:
-      'Ibn Rushd, qadi of Cordoba and court physician, wrote commentaries on nearly all of Aristotle at Almohad request, and in the Decisive Treatise ruled that scripture, rightly read, cannot contradict demonstrative reason. His Arabic tradition gave him fewer heirs than his translators did: Latin Europe rendered him within decades, and universities read Aristotle through his eyes for three centuries. Averroism is a European afterlife his own world barely chose.',
+      'Ibn Rushd, qadi of Cordoba and court physician, wrote commentaries on nearly all of Aristotle at Almohad request, and in the Decisive Treatise ruled that scripture, rightly read, cannot contradict demonstrative reason. His afterlife became especially powerful in Hebrew and Latin, while his reception in Arabic remained real but more limited and uneven. Universities read Aristotle through his eyes for three centuries.',
     edges: [
       { to: 'guide-for-the-perplexed', type: 'echoes', why: 'Two Cordoba-born thinkers, one Muslim and one Jewish, spent their lives fitting Aristotle to revealed law.' },
       { to: 'aquinas-summa', type: 'enables', why: 'Latin scholastics read Aristotle through his commentaries, and Aquinas argued with the Commentator on nearly every page.' },
@@ -135,9 +135,9 @@ LOOM.node([
     region: 'africa',
     x: 48,
     threads: ['ideas'],
-    hook: 'A physician in Cairo writes by lamplight for one student too intelligent to stop asking whether scripture and philosophy can both be true. He answers in Arabic, written in Hebrew letters.',
+    hook: 'A physician in Cairo writes for one student too intelligent to stop asking whether scripture and philosophy can both be true. He answers in Arabic, written in Hebrew letters.',
     summary:
-      'Maimonides led Cairo’s Jewish community, served as a court physician, codified Jewish law in the Mishneh Torah, and around 1190 finished the Guide for the Perplexed in Judeo-Arabic. It argues that scripture speaks in the language of ordinary people, that God can be described only by negation, and that philosophy is a duty for those able to bear it. Condemned and even burned during the Maimonidean controversy, it became a foundation for Jewish and Christian thought alike.',
+      'Maimonides led Cairo’s Jewish community, served as a court physician, codified Jewish law in the Mishneh Torah, and around 1190 finished the Guide for the Perplexed in Judeo-Arabic. It argues that scripture speaks in the language of ordinary people, that God can be described only by negation, and that philosophy is a duty for those able to bear it. Condemned in the Maimonidean controversy, copies were reportedly burned in Montpellier decades after his death. It became a foundation for Jewish and Christian thought alike.',
     edges: [
       { to: 'aquinas-summa', type: 'enables', why: 'Aquinas cites Rabbi Moses by name, borrowing his map of what reason can and cannot say about God.' },
       { to: 'new-eyes-on-the-sky', type: 'echoes', why: 'His rule that scripture speaks the language of ordinary people returns in the defenses later mounted for Copernican astronomy.' },
@@ -168,9 +168,9 @@ LOOM.node([
     region: 'africa',
     x: 44,
     threads: ['craft', 'ideas'],
-    hook: 'In the Ethiopian highlands, masons carve churches downward into living rock, roofs level with the ground, so that pilgrims who cannot reach Jerusalem can descend into one.',
+    hook: 'In the Ethiopian highlands, masons carve churches downward into living rock, roofs level with the ground. Interpreted as a new Jerusalem, the complex lets pilgrims descend into a sacred landscape cut from living rock.',
     summary:
-      'At Roha in the Ethiopian highlands, eleven churches were cut down into volcanic rock, linked by trenches and tunnels, beside a river renamed Jordan: a deliberate new Jerusalem, traditionally credited to King Lalibela around 1200. Recent archaeology finds phased work across centuries, some reusing older excavations, with the king as transformer more than sole builder. The Zagwe ruled a Christian kingdom whose faith went back to Aksum’s fourth-century conversion, tied to Egypt’s Coptic church, independent of Rome and Constantinople alike.',
+      'At Roha in the Ethiopian highlands, eleven churches were cut down into volcanic rock, linked by trenches and tunnels, beside a river renamed Jordan: a deliberate new Jerusalem, traditionally credited to King Lalibela around 1200. Recent archaeology finds phased work across centuries, some reusing older excavations, with the king as transformer more than sole builder. The Zagwe ruled a Christian kingdom whose faith went back to Aksum’s fourth-century conversion, outside papal and Byzantine jurisdiction, while its metropolitan was appointed through Coptic Alexandria.',
     edges: [
       { to: 'mansa-musa-hajj', type: 'echoes', why: 'Two medieval African monarchies broadcast their faith at monumental scale, one in carved rock, one in carried gold.' },
       { to: 'iberian-wager', type: 'enables', why: 'Europe’s rumor of Prester John settled on Christian Ethiopia and gave Portuguese captains a goal as real to them as gold.' },
@@ -189,7 +189,7 @@ LOOM.node([
     summary:
       'Leonardo of Pisa, called Fibonacci, learned Hindu-Arabic numerals in the Maghreb port of Bugia, where his father ran Pisan trade. His Liber Abaci of 1202 taught the nine figures and zero through merchant problems: exchange, alloying, profit shares, interest. Reckoning schools spread the method across Italy’s cities against long distrust of figures that seemed easy to forge. The famous rabbit sequence is a footnote; the revolution was cheap, checkable commercial arithmetic.',
     edges: [
-      { to: 'double-entry', type: 'enables', why: 'Ledgers that check themselves needed clerks fluent in the cheap positional arithmetic the reckoning schools taught.' },
+      { to: 'double-entry', type: 'echoes', why: 'Reckoning schools made exchange, interest, and multi-currency calculation faster for merchants whose ledgers were becoming more complex; double entry did not technically require the new numerals.' },
       { to: 'madhava-series', type: 'echoes', why: 'The figures Pisa learned from Bugia were Indian, and Indian mathematics kept growing after Europe borrowed them, down to Kerala’s infinite series.' },
     ],
   },
@@ -258,7 +258,7 @@ LOOM.node([
     summary:
       'Dogen returned from Song China in 1227 teaching shikantaza, just sitting: practice is not a means to enlightenment but its expression, since Buddha nature is already present. His Shobogenzo, philosophical essays written in Japanese rather than Chinese, treats time, being, and practice with a density philosophers still mine. Kamakura Japan bred rival Buddhisms for laypeople, Pure Land chanting and Nichiren’s sutra among them; Dogen’s Soto Zen grew slowly into one of Japan’s largest schools.',
     edges: [
-      { to: 'tokugawa-great-peace', type: 'enables', why: 'Zen monasteries trained the discipline, ink, and tea aesthetics that Tokugawa culture would make canonical.' },
+      { to: 'tokugawa-great-peace', type: 'echoes', why: 'Dogen’s Soto was one branch of a wider Zen world; Rinzai and Gozan monasteries carried most of the ink, garden, and tea lineages later Tokugawa culture canonized.' },
       { to: 'glass-slab', type: 'echoes', why: 'Just sitting, attention with no object and no reward, reads like a manual written for the age that monetized distraction.' },
     ],
   },
@@ -271,9 +271,9 @@ LOOM.node([
     region: 'africa',
     x: 47,
     threads: ['craft', 'ideas'],
-    hook: 'A young physician in Cairo writes that the wall inside the heart has no hidden pores, so the blood must go the long way around, through the lungs. Almost no one reads the page for nearly seven centuries.',
+    hook: 'A young physician in Cairo rejects hidden pores in the heart and sends blood through the lungs. The argument circulates narrowly, and its later influence is uncertain.',
     summary:
-      'In a commentary on Avicenna’s anatomy around 1242, Ibn al-Nafis rejected Galen’s invisible pores in the heart’s septum and reasoned that blood must pass through the lungs to mix with air: the pulmonary circuit, argued from anatomy inside Islamic medicine’s hospital world. His text was scarcely read; Europeans reached the same conclusion independently three centuries later, and the manuscript resurfaced only in 1924. Priority and influence are different things, and history records both.',
+      'In a commentary on Avicenna’s anatomy around 1242, Ibn al-Nafis rejected Galen’s invisible pores in the heart’s septum and reasoned that blood must pass through the lungs to mix with air: the pulmonary circuit, argued from anatomy inside Islamic medicine’s hospital world. Several manuscripts survived, but the scale of the work’s readership is unclear. No transmission to sixteenth-century European anatomists has been demonstrated, so priority and influence must be kept separate. The manuscript was rediscovered for modern scholarship in 1924.',
     edges: [
       { to: 'new-eyes-on-the-sky', type: 'echoes', why: 'He overruled Galen from evidence and reasoning; Europe’s instrument-armed assault on ancient authority later made the same move at scale.' },
       { to: 'ulugh-beg-observatory', type: 'echoes', why: 'The hospital and the observatory were late medieval Islam’s great research institutions, both floated on endowment and princely favor.' },
@@ -288,9 +288,9 @@ LOOM.node([
     region: 'americas',
     x: 13,
     threads: ['craft', 'wealth'],
-    hook: 'Families build their last great houses under the cliff overhangs, tuck the ladders up at night, and then, within one generation, walk away from the mesas entirely.',
+    hook: 'Families build their last great houses beneath cliff overhangs, then, within a few generations, leave the Mesa Verde region for communities to the south.',
     summary:
-      'Ancestral Pueblo farmers built the cliff dwellings of Mesa Verde mostly after 1190, then left the whole region by about 1300. Tree rings record the great drought of 1276 to 1299, but drought alone does not empty a homeland: failing maize, social conflict, and the pull of new religious centers to the south all mattered. The people did not vanish, as the old mystery stories said: their descendants are the Pueblo nations of today.',
+      'Ancestral Pueblo farmers built the cliff dwellings of Mesa Verde mostly after 1190, then left the whole region by about 1300. Tree rings record the great drought of 1276 to 1299, but drought alone does not empty a homeland: failing maize, social conflict, and the pull of new religious centers to the south may all have mattered. The people did not vanish, as the old mystery stories said: their descendants are the Pueblo nations of today.',
     edges: [
       { to: 'great-zimbabwe', type: 'echoes', why: 'Settler-era writers denied both ruins to their builders’ descendants, and archaeology restored both attributions.' },
       { to: 'burning-mirror', type: 'echoes', why: 'Tree rings date the drought that emptied the mesas, and the same Southwest now reads its rings as warning.' },
@@ -325,7 +325,7 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'Listen to the reed flute, the poem begins: cut from the reed bed, it cries to return. A refugee scholar in Konya turns grief for a vanished friend into a quarter of a million words.',
     summary:
-      'Rumi’s family fled Khwarazm ahead of the Mongol advance and settled in Seljuk Konya, where he taught law until the wandering dervish Shams of Tabriz upended his life. After Shams vanished, poetry poured out: the Masnavi’s roughly 25,000 couplets teach Sufi metaphysics through fables, jokes, and longing. Persian devotional letters shaped Ottoman, Mughal, and Central Asian culture for centuries. The bestselling mystical poet in modern America wrote for a Konya lodge.',
+      'Rumi’s family left Khwarazm during the years of Mongol expansion, though the reason and route are debated, and settled in Seljuk Konya, where he taught law until the wandering dervish Shams of Tabriz upended his life. After Shams vanished, poetry poured out: the Masnavi’s roughly 25,000 couplets teach Sufi metaphysics through fables, jokes, and longing. Persian devotional letters shaped Ottoman, Mughal, and Central Asian culture for centuries. Modern American adaptations made Rumi one of the country’s most widely read mystical poets, often by loosening the verse from its Islamic setting.',
     edges: [
       { to: 'ottoman-dawn', type: 'enables', why: 'Mevlevi lodges and Sufi networks knit Anatolia’s towns together ahead of, and then under, Ottoman rule.' },
       { to: 'dantes-comedy', type: 'echoes', why: 'Within one lifetime, Konya and Florence each produced a poem that makes love the engine of the soul’s ascent.' },
@@ -357,9 +357,9 @@ LOOM.node([
     region: 'easia',
     x: 97,
     threads: ['craft', 'ideas'],
-    hook: 'On one of the remotest inhabited islands on earth, a few thousand farmers quarry, carve, and move statues weighing up to eighty tons without wheels, cranes, or draft animals. The statues, islanders say, walked.',
+    hook: 'On one of the remotest inhabited islands on earth, island communities quarry, carve, and move immense statues without wheels, cranes, or draft animals. The statues, islanders say, walked.',
     summary:
-      'Polynesian voyagers settled Rapa Nui around 1200 CE and raised nearly a thousand moai, ancestor figures quarried at Rano Raraku and moved kilometers to coastal platforms. Experiments show teams could walk upright statues with ropes, matching the islanders’ own tradition. The famous ecocide parable is contested: palms fell to rats and clearance, yet fields fed people into the contact era, and catastrophe arrived with slave raids and smallpox in the 1860s. The statues record success, not folly.',
+      'Polynesian voyagers settled Rapa Nui around 1200 CE and raised nearly a thousand moai, ancestor figures quarried at Rano Raraku and moved kilometers to coastal platforms. Experiments with smaller replicas show that rope teams can walk an upright statue, one plausible method consistent with oral tradition, not proof that every moai moved this way. The famous ecocide parable is contested: palms fell to rats and clearance, yet fields fed people into the contact era, and catastrophe arrived with slave raids and smallpox in the 1860s. The statues record success, not folly.',
     edges: [
       { to: 'inka-threads', type: 'echoes', why: 'Moai roads and Inka highways both moved monumental loads without wheels or draft animals, by organization alone.' },
       { to: 'burning-mirror', type: 'echoes', why: 'Rapa Nui became modernity’s favorite ecological parable, though the evidence tells a subtler story about resilience and imported harm.' },
@@ -393,7 +393,7 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'Under the canopy, the soil itself is an artifact: charcoal-black earth built by generations of farmers whose orchards, causeways, and towns the forest later hid.',
     summary:
-      'Amazonia before 1492 was no untouched wilderness. Terra preta, soil enriched with charcoal and refuse over centuries, marks thousands of settlement sites; lidar has revealed causeways, plazas, and low urban clusters in Bolivia’s Llanos de Mojos and garden towns in the Upper Xingu, flourishing toward 1450. Population estimates span millions and remain genuinely uncertain. Orellana’s 1542 reports of riverbank towns, long dismissed as fantasy, now read as observation of a world disease was about to erase.',
+      'Amazonia before 1492 was no untouched wilderness. Terra preta, soil enriched with charcoal and refuse over centuries, marks thousands of settlement sites; lidar has revealed causeways, plazas, and low urban clusters in Bolivia’s Llanos de Mojos and garden towns in the Upper Xingu, flourishing toward 1450. Population estimates span millions and remain genuinely uncertain. Orellana’s 1542 reports may preserve a glimpse of dense riverine settlements already being exposed to Old World epidemics; how directly each later forest covers a former town remains debated.',
     edges: [
       { to: 'columbian-exchange', type: 'collides', why: 'Old World disease raced ahead of the chroniclers, so later travelers found forest where Orellana had reported towns.' },
       { to: 'green-revolution', type: 'echoes', why: 'Terra preta proves soil can be manufactured, and agronomists now study it as a model for tropical farming.' },
@@ -425,9 +425,9 @@ LOOM.node([
     region: 'europe',
     x: 27,
     threads: ['ideas'],
-    hook: 'A Florentine politician, exiled on pain of death, writes himself a journey through hell, purgatory, and paradise in the language of the streets, and settles scores by name.',
+    hook: 'A Florentine politician, exiled on pain of death, writes himself a journey through hell, purgatory, and paradise in the Tuscan vernacular, and settles scores by name.',
     summary:
-      'Exiled from Florence in 1302 by a rigged prosecution, Dante wrote the Comedy in Tuscan vernacular: one hundred cantos climbing from Inferno through Purgatorio to Paradiso, peopled with named contemporaries, popes included, judged in verse. The poem fused scholastic theology, classical learning, and political rage into a single architecture, and its success helped make Tuscan the base of literary Italian. Vernaculars could now carry anything Latin could, which changed who literature was for.',
+      'Exiled from Florence in 1302 by a partisan prosecution, Dante wrote the Comedy in Tuscan vernacular: one hundred cantos climbing from Inferno through Purgatorio to Paradiso, peopled with named contemporaries, popes included, judged in verse. The poem fused scholastic theology, classical learning, and political rage into a single architecture, and its success helped make Tuscan the base of literary Italian. Vernaculars could now carry anything Latin could, which changed who literature was for.',
     edges: [
       { to: 'rebirth-of-the-ancients', type: 'enables', why: 'Petrarch and Boccaccio built directly on his proof that Italian could carry the highest matters.' },
       { to: 'luthers-hammer', type: 'echoes', why: 'He judged popes in the mother tongue a full two centuries before Luther put scripture itself into German.' },
@@ -458,12 +458,12 @@ LOOM.node([
     region: 'europe',
     x: 36,
     threads: ['craft', 'ideas'],
-    hook: 'A new sound starts over Europe’s rooftops: iron gears striking equal hours, day and night, summer and winter. For the first time, time belongs to the machine, not the sun.',
+    hook: 'A new sound spreads over European rooftops: iron gears striking equal hours. Public mechanical clocks make one older way of reckoning time audible at civic scale.',
     summary:
-      'Weight-driven clocks with verge escapements appeared in Europe in the late thirteenth century; by the 1330s towers were striking equal hours, replacing seasonal daylight hours with the machine’s uniform beat. Cities bought clocks as civic pride and work discipline: bells now ruled markets, wages, and prayers. Dondi’s planetary astrarium showed the same gears could model the heavens. The clock, more than the steam engine, taught Europeans to imagine the universe, and labor, as mechanism.',
+      'Weight-driven clocks with verge escapements appeared in Europe in the late thirteenth century. By the 1330s some towers struck equal hours, gradually helping normalize uniform public time beside older seasonal and liturgical rhythms. Cities bought clocks for civic display and coordination, while Dondi’s planetary astrarium showed that gears could model the heavens. Historians debate how directly clocks reshaped work or scientific thought.',
     edges: [
       { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Europe could imagine a clockwork cosmos because its towns had been living inside one for three centuries.' },
-      { to: 'steam-and-coal', type: 'enables', why: 'Factory discipline required workers who already thought in hours, and the tower bell had been training them since the fourteenth century.' },
+      { to: 'steam-and-coal', type: 'echoes', why: 'Later factories intensified time discipline with watches, clocks, and fines; tower bells were one earlier step, not a sufficient cause.' },
     ],
   },
   {
@@ -477,10 +477,10 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'Every transaction is written twice, once as debit, once as credit, and at year’s end the columns must agree. Inside that small discipline hides a new thing: profit as a number.',
     summary:
-      'By 1340 Genoa’s commune kept fully double-entry books; Tuscan merchant houses like Datini’s ran linked accounts across branches, and the Medici bank rose on the technique from 1397. Every entry posts twice, debit and credit, so the books check themselves and profit becomes a calculable residue rather than a feeling. Pacioli only codified existing practice in 1494. Bookkeeping did not cause capitalism by itself, but it made enterprise auditable, divisible, and continuous beyond one life.',
+      'By 1340 Genoa’s commune kept fully double-entry books; Tuscan merchant houses like Datini’s ran linked accounts across branches, and the Medici bank rose on the technique from 1397. Posting each transaction to debit and credit creates an internal cross-check, though balanced books can still be wrong, and makes periodic profit and loss easier to calculate across branches. Pacioli only codified existing practice in 1494. Bookkeeping did not cause capitalism by itself, but it made enterprise auditable, divisible, and continuous beyond one life.',
     edges: [
       { to: 'rebirth-of-the-ancients', type: 'enables', why: 'The same Florentine account books that tracked bills of exchange paid for the chapels and the classics.' },
-      { to: 'dutch-money-machine', type: 'enables', why: 'Permanent capital and dividends were unthinkable without accounts that could state profit as a plain number.' },
+      { to: 'dutch-money-machine', type: 'enables', why: 'Double-entry made complex permanent-capital companies easier to audit and govern; it was an enabling tool, not a precondition for dividends.' },
     ],
   },
   {
@@ -562,9 +562,9 @@ LOOM.node([
     threads: ['ideas', 'power'],
     hook: 'In a desert castle, a scholar who has served and survived four courts stops writing history and asks a new question: what laws govern the rise and rot of dynasties themselves?',
     summary:
-      'Writing the Muqaddimah in 1377 as prologue to a world history, Ibn Khaldun proposed a science of civilization: dynasties rise on asabiyya, group solidarity forged in hardship, then soften in luxury and fall within generations; prices, taxes, and crafts obey describable regularities, and historians must test reports against how societies actually work. He drew on a career inside Maghrebi courts and, late in life, an interview with Timur outside Damascus. Social science has a fourteenth-century founder.',
+      'Writing the Muqaddimah in 1377 as prologue to a world history, Ibn Khaldun proposed a science of civilization: dynasties rise on asabiyya, group solidarity forged in hardship, then soften in luxury and fall within generations; prices, taxes, and crafts obey describable regularities, and historians must test reports against how societies actually work. He drew on a career inside Maghrebi courts and, late in life, an interview with Timur outside Damascus. He is often hailed as a precursor of social science, though his project belonged to a fourteenth-century tradition of universal history and political counsel.',
     edges: [
-      { to: 'gunpowder-empires', type: 'enables', why: 'Ottoman chroniclers adopted his dynastic cycle as the diagnostic lens for their own state’s health.' },
+      { to: 'gunpowder-empires', type: 'echoes', why: 'Some later Ottoman chroniclers adopted his cycle of solidarity, conquest, luxury, and decline.' },
       { to: 'wealth-of-nations', type: 'echoes', why: 'His pages on solidarity, prices, and self-defeating taxation read like drafts of political economy four centuries early.' },
     ],
   },
@@ -577,9 +577,9 @@ LOOM.node([
     region: 'easia',
     x: 93,
     threads: ['craft', 'ideas'],
-    hook: 'At a temple in Cheongju in 1377, monks print an anthology of Zen teaching from letters cast in bronze, movable, reusable, and seven decades ahead of Mainz.',
+    hook: 'At a temple in Cheongju in 1377, monks print an anthology of Zen teaching from letters cast in metal, movable, reusable, and seven decades ahead of Mainz.',
     summary:
-      'Goryeo Korea cast bronze movable type by the thirteenth century; the Jikji, a Seon Buddhist anthology printed at Cheongju’s Heungdeok temple in 1377, is the oldest surviving book made this way. State foundries later cast fonts by the hundreds of thousands. Type served court, temple, and a small literate elite rather than a market of readers, and hanja’s thousands of characters kept editions modest. No transmission to Gutenberg has been demonstrated: invention is easier than explosion.',
+      'Korea used cast metal type by the thirteenth century; the Jikji, a Seon Buddhist anthology printed at Cheongju’s Heungdeok temple in 1377, is the oldest surviving book made this way. State foundries later cast fonts by the hundreds of thousands. Type served court, temple, and a small literate elite rather than a market of readers, and hanja’s thousands of characters kept editions modest. No transmission to Gutenberg has been demonstrated: invention is easier than explosion.',
     edges: [
       { to: 'treasure-fleets', type: 'echoes', why: 'Like the fleets, Goryeo’s type shows that capability is not destiny; institutions decide what an invention becomes.' },
       { to: 'gutenberg-explosion', type: 'echoes', why: 'Korea printed from movable metal decades before Mainz, and why one stayed courtly while the other exploded is the real question.' },

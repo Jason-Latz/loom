@@ -8,6 +8,25 @@ separate adversarial review by a fresh reader, with revisions rechecked.
 Per the handoff, the manifest is untouched and no lesson file is committed;
 review, manifest, commits, and deployment remain yours.
 
+## Codex release audit, 2026-07-21
+
+Codex assigned the nine finished lessons across three independent release
+reviewers, checked every resulting factual objection against the source slate,
+and applied the verified corrections without recasting Fable's literary voice.
+The pass corrected Han recruitment chronology, Silk Road evidence and source
+metadata, Sulla's two distinct returns to violence, Pliny's fire-brigade
+exchange, baptismal and church-state overstatements, the retrospective date of
+Tikal Stela 31, Aksumite coin language, the evidentiary limits of Ammianus, and
+the chronology of Justinian's law commission and Procopius's panegyric.
+
+The final lessons contain 16,299 story-and-significance words, 45 questions,
+and 27 clickable sources. Each lesson has exactly three source links, explicit
+reconstruction boundaries, and callback questions that point backward to
+written lessons. All nine pass JavaScript syntax checks and the single-lesson
+gate with zero warnings. The manifest, commits, browser verification, and
+deployment are recorded in the project state rather than retroactively folded
+into Fable's original completion notes below.
+
 Process note: each lesson was drafted, fact-and-source audited, given a
 dedicated literary revision, re-audited, then handed to an independent
 adversarial reviewer; verified findings were applied and the file rechecked.

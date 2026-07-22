@@ -6,7 +6,7 @@ description: Write one or more Loom lessons for uncharted nodes in the atlas. Us
 # Forge a Loom lesson
 
 You are adding lessons to Loom, the world-history atlas in this repo. A lesson
-is the ten-minute reading experience behind one node of the 129-node graph.
+is the ten-minute reading experience behind one node of the 365-node graph.
 
 ## Inputs
 

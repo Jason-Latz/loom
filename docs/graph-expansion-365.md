@@ -543,3 +543,34 @@ Reading anchors filled: 113 of 236 new seeds carry a primary text anchor.
 | World | 14 |
 | **Total** | **236** |
 
+## 5. Release audit, 2026-07-21
+
+Codex divided the 236 added seeds into three independent chronological audits,
+then applied a second release pass to every reported blocker and should-fix.
+This was a prose-aware truth audit, not another structural check. The gate can
+prove that an edge points forward; it cannot prove that the edge describes a
+real historical relationship.
+
+The audit corrected recurring failure modes across all ten eras:
+
+- unsupported first, largest, and decisive claims;
+- later traditions presented as eyewitness biography;
+- debated causal chains presented as settled transmission;
+- institutions or events collapsed across several dates into one moment;
+- edges labeled `enables` where the evidence supports only comparison;
+- modern categories projected backward onto diverse historical practices;
+- elegant hooks that combined evidence from different objects or contexts.
+
+Representative repairs include separating Qafzeh's antler burial from
+site-wide ochre evidence, distinguishing mobile Xianrendong potters from
+settled villages, treating the Samye debate and Zera Yacob attribution as
+disputed, separating Pacioli's printed codification from the earlier practice
+of double entry, correcting the chronology of Australian labor and franchise
+reforms, and replacing monocausal accounts of plague, steppe power, the Aral
+Sea, and Soviet collapse.
+
+The graph now contains 365 nodes and 800 forward wires. The additional wire
+connects Tupaia's hybrid map to the twentieth-century revival of Pacific
+wayfinding without claiming a direct or uniform transmission. All remaining
+notes in the era dossiers are forge-time research questions, visual-density
+checks, or editorial choices rather than known release blockers.

@@ -50,9 +50,9 @@ LOOM.node([
     region: 'americas',
     x: 14,
     threads: ['wealth', 'craft'],
-    hook: 'One firm refines nine of every ten barrels in America, and it never needs to own a single well to do it.',
+    hook: 'One firm refines nine of every ten barrels in America by mastering rebates, pipelines, and information, then expands from the refinery toward the well.',
     summary:
-      'Rockefeller built Standard Oil by controlling refining, railroad rebates, pipelines, and information, then invented the trust: a legal form letting one board run dozens of nominally separate firms. Its dominance corrects the idea that a monopoly means the biggest producer; Standard won by owning logistics, not oilfields. The backlash wrote antitrust into American law and forced its 1911 breakup.',
+      'Rockefeller built Standard Oil’s early dominance through refining, railroad rebates, pipelines, and information, then popularized the trust as a legal form through which one board directed nominally separate firms. The company later invested heavily in crude production as well. Its history shows that monopoly power can begin in logistics and coordination before spreading across an industry. The backlash wrote antitrust into American law and forced its 1911 breakup.',
     edges: [
       { to: 'ford-assembly-line', type: 'enables', why: 'Cheap, abundant refined gasoline gave the automobile age the fuel its assembly lines silently assumed.' },
       { to: 'roaring-and-crashing', type: 'enables', why: 'The giant corporation and its traded securities became the model a stock-market decade would inflate and then crash.' },
@@ -191,10 +191,10 @@ LOOM.node([
     threads: ['power', 'ideas'],
     hook: 'An emperor imports rifles from the same powers partitioning the continent, plays them against one another, and keeps his kingdom off the map Europe is busy carving.',
     summary:
-      'When Italy invaded in 1896, Menelik II’s Ethiopia repelled it, then converted the outcome into recognized sovereignty, a treasury, a railway, and a new capital at Addis Ababa. It corrects the idea that Africa only suffered the Scramble: Ethiopia negotiated, armed, and modernized to stay independent, becoming a beacon for pan-Africanists and Black internationalists from Harlem to the Caribbean.',
+      'Menelik II founded Addis Ababa as his capital in 1886, then defeated an invading Italian army at Adwa in 1896 and secured recognition of Ethiopian sovereignty. Railway construction toward Djibouti began in 1897 as part of a broader, uneven program of state building and modernization. Ethiopia became a beacon for pan-Africanists and Black internationalists, though Italy occupied the country from 1936 to 1941 before Ethiopian sovereignty was restored.',
     edges: [
-      { to: 'midnight-freedoms', type: 'echoes', why: 'An uncolonized Ethiopia became the symbol later African independence movements would march under.' },
-      { to: 'rights-revolutions', type: 'enables', why: 'Ethiopia inspired Black internationalists who linked their own struggles for dignity to an unconquered Africa.' },
+      { to: 'midnight-freedoms', type: 'echoes', why: 'Adwa and Ethiopia’s restored independence became symbols later African independence movements could march under.' },
+      { to: 'rights-revolutions', type: 'enables', why: 'Ethiopia inspired Black internationalists who linked their own struggles for dignity to an African state that had defeated a European invasion.' },
     ],
   },
   {
@@ -203,15 +203,15 @@ LOOM.node([
     title: 'A State for a Scattered People',
     date: '1896 to 1897 CE',
     sort: 1897,
-    region: 'swasia',
-    x: 60,
+    region: 'europe',
+    x: 29,
     threads: ['ideas', 'power'],
-    hook: 'A Viennese journalist covers a treason trial in Paris, watches a crowd scream for Jewish blood, and concludes that Jews will be safe only in a state of their own.',
+    hook: 'A Viennese journalist confronts Europe’s modern antisemitism, covers the Dreyfus trial in Paris, and argues that Jews need a state of their own.',
     summary:
-      'Shaken by the Dreyfus affair and European antisemitism, Theodor Herzl’s Der Judenstaat (1896) and the 1897 Basel Congress turned scattered longing into a political movement with institutions, funds, and a goal of a Jewish homeland in Palestine. It corrects the idea that Zionism was purely religious: Herzl’s argument was secular and nationalist, a response to modern racial antisemitism.',
+      'Theodor Herzl’s Der Judenstaat (1896) and the 1897 Basel Congress helped turn diverse Jewish national projects into a political movement with institutions, funds, and a goal of a publicly secured home in Palestine. Herzl later presented the Dreyfus affair as formative, though historians dispute how decisive it was beside the antisemitic politics of Vienna and Europe more broadly. His argument was secular and nationalist rather than purely religious.',
     edges: [
       { to: 'shoah', type: 'collides', why: 'Herzl argued assimilation would not save Europe’s Jews, a warning the genocide made impossible to dismiss.' },
-      { to: 'midnight-freedoms', type: 'echoes', why: 'Israel was declared in 1948 within the same postwar collapse of empires that birthed independent India.' },
+      { to: 'midnight-freedoms', type: 'echoes', why: 'Israel and independent India emerged from distinct imperial histories, each amid partition, war, mass migration, and competing claims to land and sovereignty.' },
     ],
   },
   {
@@ -257,9 +257,9 @@ LOOM.node([
     region: 'easia',
     x: 93,
     threads: ['power', 'ideas'],
-    hook: 'Six quarrelling colonies vote themselves into one commonwealth, then pass a guaranteed living wage and a whites-only immigration law in the same breath.',
+    hook: 'Six colonies federate in 1901, joining expanding democratic experiments to a new Commonwealth whose first laws harden racial exclusion.',
     summary:
-      'Federated in 1901, Australia became a democratic laboratory: secret ballot, votes for women, compulsory arbitration, and a legally guaranteed living wage, alongside the White Australia policy that made race a condition of belonging. It corrects any tidy story of progress: the same polity that pioneered the welfare of its citizens defined citizenship by exclusion.',
+      'Australian colonies had adopted the secret ballot from the 1850s. After federation in 1901, the Commonwealth enfranchised most non-Indigenous women for federal elections in 1902 while excluding many Indigenous people and entrenching the White Australia policy. Compulsory arbitration followed, and the 1907 Harvester Judgment set an influential but legally fragile basic-wage standard. The same polity expanded social citizenship for some while defining belonging through exclusion.',
     edges: [
       { to: 'order-from-ashes', type: 'enables', why: 'Wage arbitration and pensions previewed the welfare bargains that postwar states later built at scale.' },
       { to: 'rights-revolutions', type: 'collides', why: 'A democracy founded on racial exclusion set up the reckoning its Indigenous and migrant peoples would force.' },
@@ -326,9 +326,9 @@ LOOM.node([
     region: 'europe',
     x: 37,
     threads: ['craft', 'ideas'],
-    hook: 'A patent clerk shows that time itself bends with speed, and within twenty years a younger generation shows that nature keeps no exact books at all.',
+    hook: 'A patent clerk shows that measured time depends on motion, and within twenty years quantum theory makes exact predictions about probabilities rather than single outcomes.',
     summary:
-      'Einstein’s 1905 relativity dissolved absolute space and time; by 1927 Bohr, Heisenberg, and Schrodinger’s quantum mechanics made the subatomic world irreducibly probabilistic, with an uncertainty principle limiting what can be known at once. Physics stopped being a clock. It corrects the idea that modern physics is remote abstraction: it grounds nuclear energy and electronics, and it retired the dream of a fully determined universe.',
+      'Einstein’s 1905 relativity displaced absolute space and time. By 1927 quantum mechanics offered probabilistic predictions, while Heisenberg’s uncertainty relation limited the simultaneous precision of conjugate quantities such as position and momentum. Bohr, Einstein, Schrodinger, and others fiercely disputed what the mathematics meant and whether nature itself was indeterminate. Classical clockwork was no longer universal, but determinism was not simply retired; the new physics still grounds nuclear energy and electronics.',
     edges: [
       { to: 'trinity-test', type: 'enables', why: 'Mass-energy equivalence and nuclear physics made the atomic bomb first conceivable, then buildable.' },
       { to: 'transistor-to-internet', type: 'enables', why: 'Quantum mechanics is the theory that makes the transistor and all modern electronics actually work.' },
@@ -361,9 +361,9 @@ LOOM.node([
     region: 'africa',
     x: 41,
     threads: ['wealth', 'craft'],
-    hook: 'A blacksmith carries a few cacao pods home from an island plantation, and within a generation African smallholders make their colony the world’s chief supplier of chocolate.',
+    hook: 'A blacksmith returns from an island plantation with cacao pods. He did not introduce cocoa to the Gold Coast, but his farm helps spread a crop that African smallholders make their own.',
     summary:
-      'After Tetteh Quarshie carried pods home from Fernando Po in the 1870s, Gold Coast farmers, not European planters, planted cocoa on their own land, organized labor and credit, and by 1911 led the world in cocoa exports. It corrects the plantation stereotype: Africans drove this cash-crop revolution as independent entrepreneurs, though colonial marketing boards later captured much of the profit they created.',
+      'Cocoa had reached the Gold Coast before Tetteh Quarshie returned from Fernando Po in the 1870s, but his farm became an important nursery and a powerful national story. Multiple African farmers and traders spread the crop on their own land, organized labor and credit, and by 1911 made the colony the world leader in cocoa exports. African enterprise drove this cash-crop revolution, though colonial institutions and later marketing boards captured much of the value farmers created.',
     edges: [
       { to: 'midnight-freedoms', type: 'enables', why: 'A prosperous farming class funded the schools and politics that pressed the Gold Coast toward independence as Ghana.' },
       { to: 'great-convergence', type: 'echoes', why: 'Producers who grow the world’s crops yet capture little of their value face the same squeeze today.' },
@@ -395,9 +395,9 @@ LOOM.node([
     region: 'easia',
     x: 84,
     threads: ['wealth', 'craft'],
-    hook: 'Seeds smuggled from the Amazon and raised in a London greenhouse end up in orderly Malayan rows, just as the automobile finds it cannot roll without them.',
+    hook: 'Seeds collected in the Amazon and raised at Kew Gardens end up in orderly Malayan rows, just as the automobile finds it cannot roll without them.',
     summary:
-      'Hevea seeds taken from Brazil in 1876 seeded Southeast Asian plantations that, by 1914, overtook wild Amazonian rubber. Cheap disciplined labor, much of it Indian and Chinese migrants, plus the car and bicycle boom, made British Malaya the rubber center of the world. It corrects the idea that colonies simply held raw materials: this was an engineered global switch that ruined one region and remade another.',
+      'Hevea seeds collected in Brazil and shipped to Britain in 1876 seeded Southeast Asian plantations that, by 1914, overtook wild Amazonian rubber. Low-paid and often coercively governed migrant labor, much of it Indian and Chinese, joined the car and bicycle boom in making British Malaya the rubber center of the world. This engineered global switch devastated the Amazonian boom and remade another colonial region.',
     edges: [
       { to: 'ford-assembly-line', type: 'enables', why: 'Every automobile rolling off the new assembly lines rode on tires that Malayan plantations supplied.' },
       { to: 'great-convergence', type: 'echoes', why: 'The plantation labor diasporas planted here still shape Southeast Asia’s plural societies.' },
@@ -446,11 +446,11 @@ LOOM.node([
     region: 'europe',
     x: 25,
     threads: ['ideas', 'craft'],
-    hook: 'A ballet of pounding dissonance and stamping dancers sets a Paris audience brawling in its seats, and the polite surface of European art tears open.',
+    hook: 'A ballet of pounding dissonance and stamping dancers sets a Paris audience jeering, arguing, and counter-cheering until the music is nearly lost in the noise.',
     summary:
-      'Around 1913, Stravinsky’s Rite of Spring, cubism, atonal music, and New York’s Armory Show broke the inherited rules of harmony, perspective, and representation at once. Modernism turned art from a window onto the world into an argument about how we perceive it. It corrects the idea that this was mere provocation: it registered a civilization whose certainties, soon shattered by war, were already cracking.',
+      'Around 1913, Stravinsky’s Rite of Spring, cubism, atonal music, and New York’s Armory Show challenged inherited rules of harmony, perspective, and representation. Modernism turned art from a window onto the world into an argument about perception. Later memory inflated the Rite’s turbulent premiere into a legendary riot and read Europe’s coming war backward into its dissonance. The work needs no prophecy of mass killing to remain a revolution in form.',
     edges: [
-      { to: 'july-1914', type: 'echoes', why: 'The formal violence artists unleashed in 1913 uncannily preceded the literal violence of the following year.' },
+      { to: 'july-1914', type: 'echoes', why: 'The war transformed how later audiences interpreted modernism’s prewar ruptures, often turning experiment into retrospective prophecy.' },
       { to: 'glass-slab', type: 'echoes', why: 'Modernism’s fractured, self-aware image is the ancestor of the remix culture of the screen age.' },
     ],
   },
@@ -568,12 +568,12 @@ LOOM.node([
     region: 'world',
     x: 43,
     threads: ['craft', 'ideas'],
-    hook: 'In a single autumn a flu that kills the young and healthy circles the planet on troop ships and railways, while censors keep its name out of the papers.',
+    hook: 'In a single autumn a flu that strikes young adults with unusual force circles the planet on ships and railways, while censorship distorts the news and neutral Spain lends it a misleading name.',
     summary:
-      'The 1918 influenza pandemic infected perhaps a third of humanity and killed tens of millions, more than the war it rode beside, striking hardest in India and the colonized world. Wartime censorship hid it, and a young medicine could neither see the virus nor stop it. It corrects the belief that modern science had conquered epidemics: the deadliest was still to come, and its lessons were promptly forgotten.',
+      'The 1918 influenza pandemic infected perhaps a third of humanity and killed tens of millions, with estimates that rival or exceed the war’s death toll and enormous losses in India and other colonized societies. Wartime censorship and propaganda distorted reporting. Medicine could not yet identify the influenza virus or produce an effective vaccine or antiviral treatment. The catastrophe encouraged public-health reforms even as its place in public memory faded.',
     edges: [
       { to: 'order-from-ashes', type: 'enables', why: 'The failure to coordinate against the pandemic strengthened the case for international health bodies.' },
-      { to: 'fraying-and-becoming', type: 'echoes', why: 'A censored, globalized, airborne pandemic rehearsed the one a century later, forgotten in between.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'A globalized respiratory pandemic exposed problems of trust, reporting, and coordination that returned a century later.' },
     ],
   },
   {
@@ -585,9 +585,9 @@ LOOM.node([
     region: 'americas',
     x: 17,
     threads: ['ideas', 'craft'],
-    hook: 'Black musicians carry New Orleans rhythm north on the same trains as a fleeing people, cut the first jazz records, and the century finds its soundtrack.',
+    hook: 'Black musicians carry New Orleans rhythm north with the Great Migration, while a recording industry that first puts a white jazz band on disc begins selling the new sound.',
     summary:
-      'As the Great Migration moved millions of Black Americans from the rural South to northern cities, they carried a music blending blues, ragtime, and improvisation; the first jazz records in 1917 and the new radio spread it worldwide within a decade. It corrects the idea of jazz as light entertainment: a Black art that crossed the color line on records and airwaves, remade the young recording industry, and gave American culture its global sound.',
+      'As the Great Migration moved millions of Black Americans from the rural South to northern cities, musicians carried a Black art shaped by blues, ragtime, improvisation, and New Orleans performance. The first commercial recording marketed as jazz, released in 1917, featured the white Original Dixieland Jass Band; Black artists recorded soon afterward within an unequal industry. Records and radio helped jazz cross borders, remake popular music, and give American culture a global sound.',
     edges: [
       { to: 'rights-revolutions', type: 'enables', why: 'The migration and the pride of the Harlem Renaissance built the northern base of the later civil rights movement.' },
       { to: 'great-convergence', type: 'echoes', why: 'A local Black American music becoming the world’s pop sound previews how culture later globalizes.' },
@@ -670,11 +670,11 @@ LOOM.node([
     region: 'europe',
     x: 24,
     threads: ['ideas', 'wealth'],
-    hook: 'With a quarter of workers idle and orthodoxy insisting the market will heal itself, an English economist argues it may sit in ruin indefinitely unless the state spends.',
+    hook: 'With millions of workers idle and orthodoxy expecting recovery, an English economist argues that an economy can remain trapped unless public action revives demand.',
     summary:
-      'Keynes’s The General Theory of Employment, Interest and Money (1936) argued that economies can settle at high unemployment because total demand, not wages alone, sets output, so governments must spend to restore it. It gave the century its dominant economic policy and the logic of Bretton Woods. It corrects the belief that slumps self-correct: Keynes showed why they need not, and what to do about it.',
+      'Keynes’s The General Theory of Employment, Interest and Money (1936) argued that economies can settle at high unemployment because aggregate demand helps determine output, so fiscal and monetary action can restore spending and employment. It became one foundation of postwar economic management rather than a universal command to spend. Keynes helped negotiate Bretton Woods, but Harry Dexter White and American power decisively shaped the settlement.',
     edges: [
-      { to: 'order-from-ashes', type: 'enables', why: 'Keynes personally designed much of the postwar monetary order that his theory justified.' },
+      { to: 'order-from-ashes', type: 'enables', why: 'Keynes helped design the postwar monetary order, negotiating against Harry Dexter White within a settlement shaped by American power.' },
       { to: 'market-restoration', type: 'collides', why: 'The late-century revival of free markets was explicitly a revolt against Keynesian demand management.' },
     ],
   },

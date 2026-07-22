@@ -66,7 +66,7 @@ LOOM.node([
     region: 'americas',
     x: 6,
     threads: ['ideas', 'craft'],
-    hook: 'A young engineer at Bell Labs asks how much information a wire can carry, and answers in a unit no one had thought to name: the bit.',
+    hook: 'A young Bell Labs mathematician asks how much information a channel can carry and adopts John Tukey’s newly coined word for its smallest binary unit: the bit.',
     summary:
       'In 1948 Claude Shannon showed that any message, text, sound, or image, could be measured in bits and pushed reliably through noise if it was coded well. Communication became mathematics, cut loose from meaning. His theorems fixed hard limits and the tricks that approach them, and every modem, compact disc, phone call, and file since obeys the arithmetic he wrote down.',
     edges: [
@@ -119,7 +119,7 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'Poets from Senegal and Martinique take the insult once hurled at Black skin, wear it as a banner, and turn it into a philosophy.',
     summary:
-      'Negritude, forged by Aime Cesaire, Leopold Senghor, and Leon Damas, insisted that African and diasporic peoples shared a heritage worth naming and honoring against a French empire that taught them to despise it. Cesaire’s 1950 Discourse on Colonialism turned the charge around: colonialism, he wrote, brutalizes the colonizer too. The movement handed decolonization a poetry and a self before it had a politics.',
+      'Negritude, forged by Aimé Césaire, Léopold Sédar Senghor, and Léon-Gontran Damas, insisted that African and diasporic peoples shared a heritage worth naming and honoring against a French empire that taught them to despise it. Césaire’s 1950 Discourse on Colonialism turned the charge around: colonialism, he wrote, brutalizes the colonizer too. The movement handed decolonization a poetry and a language of self-assertion.',
     edges: [
       { to: 'wretched-of-the-earth', type: 'transforms', why: 'Fanon, Cesaire’s student in Martinique, hardened this cultural pride into a full theory of colonial violence.' },
       { to: 'orientalism', type: 'echoes', why: 'Both insist that empire wrote fictions about the colonized, and that reclaiming the pen is itself resistance.' },
@@ -134,11 +134,11 @@ LOOM.node([
     region: 'europe',
     x: 33,
     threads: ['craft', 'ideas'],
-    hook: 'Two men burst into a Cambridge pub claiming they have found the secret of life, and for once the boast is nearly true.',
+    hook: 'Watson and Crick carry a model into a Cambridge pub, built from Chargaff’s ratios and X-ray evidence produced by Rosalind Franklin, Raymond Gosling, and Maurice Wilkins.',
     summary:
-      'In 1953 James Watson and Francis Crick, using Rosalind Franklin’s X-ray images and Erwin Chargaff’s base ratios, worked out that DNA is a double helix whose paired rungs let it copy itself. Heredity became chemistry, spelled in four letters. The structure showed at a glance how genes are stored, replicated, and mutated, and launched molecular biology, a century of research, and eventually the power to read and rewrite life.',
+      'In 1953 James Watson and Francis Crick proposed DNA’s double-helix structure using Erwin Chargaff’s base ratios and X-ray diffraction work by Rosalind Franklin and Raymond Gosling, alongside Maurice Wilkins. Some of Franklin’s data reached them without her knowledge, making the discovery’s evidentiary and ethical history inseparable. The paired structure suggested how hereditary information could be copied and helped launch molecular biology and the eventual power to read and rewrite life.',
     edges: [
-      { to: 'crispr-scissors', type: 'enables', why: 'Reading the code of life in 1953 set the direct path to editing that code sixty years later.' },
+      { to: 'crispr-scissors', type: 'enables', why: 'The molecular structure of heredity became an essential foundation for technologies that could later edit genetic sequences.' },
       { to: 'fraying-and-becoming', type: 'transforms', why: 'Biotechnology, vaccines, and genetic medicine reshaping the present all descend from this molecule’s shape.' },
     ],
   },
@@ -170,7 +170,7 @@ LOOM.node([
     threads: ['power', 'ideas'],
     hook: 'Twenty-nine Asian and African nations, most of them newborn, gather in a Javanese hill town to decide whether they must choose a Cold War master at all.',
     summary:
-      'In April 1955 leaders from Indonesia, India, China, Egypt, and beyond met at Bandung to speak as a bloc: anti-colonial, non-aligned, and set on their own terms between Washington and Moscow. The conference seeded the Non-Aligned Movement and the very idea of a Third World. Its unity was fragile and often rhetorical, but it announced that most of humanity would no longer be spoken for.',
+      'In April 1955 representatives of twenty-nine Asian and African governments met at Bandung to speak on anti-colonialism, cooperation, and autonomy amid the Cold War. The term Third World already existed, and participants did not form one bloc, but Bandung helped build the political imagination from which the Non-Aligned Movement emerged in 1961. Its unity was fragile, yet it announced that newly independent states would not simply be spoken for.',
     edges: [
       { to: 'wretched-of-the-earth', type: 'echoes', why: 'Both gave the newly decolonized a voice of their own rather than a role in someone else’s rivalry.' },
       { to: 'fraying-and-becoming', type: 'transforms', why: 'The multipolar world of many assertive states now straining the postwar order began as this aspiration.' },
@@ -185,9 +185,9 @@ LOOM.node([
     region: 'americas',
     x: 15,
     threads: ['wealth', 'craft'],
-    hook: 'A trucking magnate watches dockworkers spend days unloading his cargo piece by piece, and wonders why the whole truck body cannot simply be lifted onto the ship.',
+    hook: 'A trucking magnate watches dockworkers unload cargo piece by piece, then gambles that a standardized steel box can move intact between truck, train, and ship.',
     summary:
-      'In 1956 Malcom McLean sent the first purpose-built container ship from Newark to Houston, and freight that once cost dollars a ton began falling toward pennies. Standard steel boxes, cranes, and stackable ships cut loading time, breakage, and theft, and made distance almost free. The container quietly enabled the planetary supply chain: a factory could migrate to the cheapest labor because shipping had ceased to matter.',
+      'In 1956 Malcolm McLean sent the converted tanker Ideal X from Newark to Houston carrying fifty-eight truck bodies. Containers were not wholly new; the breakthrough joined standardized boxes to cranes, ports, ships, trucks, rail, and later international standards. Loading costs, delay, theft, and breakage fell sharply. Shipping never became free or frictionless, but its lower cost helped factories and supply chains spread across borders.',
     edges: [
       { to: 'great-convergence', type: 'enables', why: 'Nearly free shipping is the physical machine that let production scatter into global supply chains.' },
       { to: 'the-urban-planet', type: 'enables', why: 'Cheap sea freight swelled the port megacities where much of humanity now works and lives.' },
@@ -236,12 +236,12 @@ LOOM.node([
     region: 'americas',
     x: 10,
     threads: ['craft', 'ideas'],
-    hook: 'For the first time a woman can decide, in private and in advance, whether this year will bring a child.',
+    hook: 'A daily pill offers a highly effective, discreet method of contraception that a woman can control before sex.',
     summary:
-      'Approved for contraception in the United States in 1960, the oral contraceptive let women separate sex from childbirth reliably and discreetly. Fertility fell, women poured into universities and paid work, and the timing of a family became a decision rather than a fate. The demographic and social effects, still unfolding through aging societies and shrinking birth rates, rival any technology of the century, and its ethics are argued still.',
+      'Approved for contraception in the United States in 1960, the oral contraceptive joined older methods as a more reliable and discreet way to separate sex from childbirth. Alongside changes in law, education, employment, and gender norms, it helped more women delay childbearing and pursue university and paid work. Its social and demographic effects were profound but neither solitary nor uniform, and debates over access, side effects, coercion, and reproductive freedom continue.',
     edges: [
-      { to: 'rights-revolutions', type: 'enables', why: 'Reliable contraception underwrote the feminist reshaping of work, family, and the female life course.' },
-      { to: 'fraying-and-becoming', type: 'transforms', why: 'The falling fertility it helped unleash now drives aging populations and anxious demographic politics worldwide.' },
+      { to: 'rights-revolutions', type: 'enables', why: 'Reliable contraception helped feminist movements reshape work, family, education, and the female life course.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'Contraception joined economic, legal, and cultural change in lowering fertility, one force behind aging populations and demographic politics.' },
     ],
   },
   {
@@ -255,9 +255,9 @@ LOOM.node([
     threads: ['wealth', 'power'],
     hook: 'Five oil states meet in Baghdad, tired of foreign companies setting the price of the wealth beneath their own deserts.',
     summary:
-      'OPEC, founded in 1960 by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela, formed to wrest control of prices from the Western majors that had long kept crude cheap. Over the next decades members nationalized their fields and, in 1973, revealed their leverage to a shocked world. It was the sharpest instance of the Global South turning a raw commodity into political and financial power.',
+      'OPEC, founded in 1960 by Iran, Iraq, Kuwait, Saudi Arabia, and Venezuela, coordinated producers seeking greater control over posted prices, revenues, and petroleum policy. Members later gained stronger control of production, often through nationalization. In 1973 Arab exporters organized through OAPEC imposed an embargo while OPEC prices rose sharply, related actions that are often blurred together. Producer power recast the terms of the world energy economy.',
     edges: [
-      { to: 'market-restoration', type: 'transforms', why: 'The 1973 price shock these producers triggered broke the postwar boom and opened the neoliberal turn.' },
+      { to: 'market-restoration', type: 'transforms', why: 'The 1973 embargo by Arab exporters and the wider oil-price shock helped end the postwar boom, although they did not by themselves cause the neoliberal turn.' },
       { to: 'burning-mirror', type: 'collides', why: 'The commodity whose price they seized is the same carbon whose atmospheric bill now comes due.' },
     ],
   },
@@ -287,11 +287,11 @@ LOOM.node([
     region: 'americas',
     x: 18,
     threads: ['ideas', 'craft'],
-    hook: 'A marine biologist notices the songbirds gone quiet where the pesticide planes have passed, and traces the poison up the food chain to us.',
+    hook: 'A marine biologist opens with a fable of a town where birds have fallen silent, then documents the pesticide risks that make the imagined spring plausible.',
     summary:
-      'Rachel Carson’s 1962 Silent Spring showed how DDT and other pesticides accumulated through food webs, thinning eggshells and threatening people. Meticulous and lyrical, it survived a furious industry counterattack and helped ignite the modern environmental movement, the banning of DDT, and the public idea that nature is a connected system we can poison wholesale. Ecology entered the popular conscience as a moral claim.',
+      'Rachel Carson’s 1962 Silent Spring traced how persistent pesticides moved through food webs, harmed wildlife, and posed risks to people. Meticulous and lyrical, it survived a furious industry counterattack and helped ignite the modern environmental movement, restrictions on many agricultural uses of DDT, and the public understanding that ecological harms travel through connected systems. Ecology entered popular conscience as a moral claim.',
     edges: [
-      { to: 'green-revolution', type: 'collides', why: 'The chemical, high-input agriculture she warned against is exactly what the Green Revolution scaled up.' },
+      { to: 'green-revolution', type: 'collides', why: 'The Green Revolution raised harvests partly through chemical-intensive farming, sharpening the ecological tradeoffs Carson taught the public to see.' },
       { to: 'burning-mirror', type: 'enables', why: 'The ecological consciousness she seeded is what later let humanity name and reckon with climate change.' },
     ],
   },
@@ -306,10 +306,10 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'A physicist turned historian asks why science, supposedly the most rational thing we do, keeps changing its mind in sudden, jarring leaps.',
     summary:
-      'Thomas Kuhn argued in 1962 that science advances not by steady accumulation but through paradigms, shared frameworks that organize normal research until anomalies pile up and a revolution installs a new one. He put paradigm shift and incommensurable into common speech, and forced everyone to ask whether scientific truth is discovered or, in part, constructed. Historians and scientists have argued with him ever since.',
+      'Thomas Kuhn argued in 1962 that much science proceeds through paradigms, shared frameworks that organize normal research until some crises help make a different framework persuasive. He did not claim that evidence is arbitrary or facts merely invented. Instead he asked how communities decide which problems, standards, and explanations matter when frameworks change. Historians, philosophers, and scientists have argued with him ever since.',
     edges: [
-      { to: 'orientalism', type: 'echoes', why: 'Both treat knowledge as bound to a framework rather than a neutral mirror of the world.' },
-      { to: 'fraying-and-becoming', type: 'echoes', why: 'Today’s contests over expertise and whose facts count run on the doubt Kuhn made respectable.' },
+      { to: 'orientalism', type: 'echoes', why: 'Both examine how communities and inherited frameworks shape inquiry, while addressing very different kinds of knowledge and power.' },
+      { to: 'fraying-and-becoming', type: 'echoes', why: 'Present fights over expertise often misuse paradigm language to make evidence sound optional, a conclusion Kuhn’s historical argument does not license.' },
     ],
   },
   {
@@ -337,9 +337,9 @@ LOOM.node([
     region: 'europe',
     x: 31,
     threads: ['ideas'],
-    hook: 'Sent to cover a monster’s trial in Jerusalem, a philosopher is unsettled to find not a monster but a diligent, thoughtless bureaucrat.',
+    hook: 'Sent to cover Adolf Eichmann’s trial in Jerusalem, a philosopher sees a diligent bureaucrat where she expected a monster. Evidence found later complicates her portrait.',
     summary:
-      'Reporting on Adolf Eichmann’s 1961 trial, Hannah Arendt coined the banality of evil: the Holocaust’s chief administrator struck her as less a fanatic than a careerist who never thought about what he did. The phrase, and her harsh remarks on Jewish councils, provoked lasting fury. Behind it lay her larger warning that modern atrocity can be carried out by ordinary people who stop thinking, a claim that still cuts.',
+      'Reporting on Adolf Eichmann’s 1961 trial, Hannah Arendt coined the banality of evil. She portrayed a central organizer of deportation as a careerist speaking clichés rather than a demonic mastermind. Later evidence of Eichmann’s ideological commitment has made that portrait a continuing dispute. Her treatment of Jewish councils also provoked justified anger. The larger question remains: how ordinary institutions and habits of obedience can carry extraordinary crimes.',
     edges: [
       { to: 'theory-of-justice', type: 'echoes', why: 'Both are postwar attempts to rebuild a public morality after the century’s organized horrors.' },
       { to: 'fraying-and-becoming', type: 'echoes', why: 'Her warning about thoughtless obedience inside vast institutions has lost none of its present-day edge.' },
@@ -390,7 +390,7 @@ LOOM.node([
     threads: ['craft', 'ideas'],
     hook: 'Coming around the far side of the Moon, three astronauts look up to see their entire world rising over the dead lunar horizon, and grab a camera.',
     summary:
-      'On Christmas Eve 1968, Apollo 8’s crew photographed the Earth rising over the Moon, the first time humans saw their planet whole from space. The image, small, blue, and alone in the black, became an icon of the environmental movement and a new planetary self-portrait. The space age, born of superpower rivalry, handed humanity a mirror that reframed the Earth as fragile, bounded, and shared.',
+      'On Christmas Eve 1968, Apollo 8’s crew became the first people to see Earth rise above the lunar horizon and made the color photograph called Earthrise. Satellites had already photographed the whole planet, but this image joined a human witness, the dead Moon, and the small blue Earth in one frame. It became an environmental icon and a planetary self-portrait born from superpower rivalry.',
     edges: [
       { to: 'burning-mirror', type: 'enables', why: 'Seeing the planet as one finite object underlies the whole idea of a global climate to protect.' },
       { to: 'glass-slab', type: 'echoes', why: 'A single shared image reordering how billions saw themselves prefigures the later global image culture.' },
@@ -407,9 +407,9 @@ LOOM.node([
     threads: ['craft', 'wealth'],
     hook: 'Soviet planners divert two great rivers to grow cotton in the desert, and a sea the size of Ireland begins to vanish, boat by stranded boat.',
     summary:
-      'From the 1960s, Soviet Central Asia’s Amu Darya and Syr Darya were drained to irrigate cotton for export, and the Aral Sea, once the world’s fourth largest lake, shrank to a fraction of its volume. Fishing towns were stranded miles from water, salt and pesticide dust poisoned the air, and the local climate turned harsher. It stands as a stark parable of command economics and engineered nature.',
+      'From the 1960s, Soviet planners diverted enormous volumes from Central Asia’s Amu Darya and Syr Darya to irrigate cotton, and the Aral Sea, once the world’s fourth largest lake, shrank to a fraction of its volume. Fishing towns were stranded miles from water, salt and pesticide dust damaged health, and the local climate turned harsher. It became a case study in command planning, monoculture, and watershed-scale engineering.',
     edges: [
-      { to: 'walls-fall', type: 'echoes', why: 'The same command system that ordered rivers to move would prove unable to deliver, and collapse.' },
+      { to: 'walls-fall', type: 'echoes', why: 'During glasnost, the Aral disaster became an emblem of official secrecy and the hidden costs of Soviet planning, one strain among many facing the system.' },
       { to: 'burning-mirror', type: 'echoes', why: 'It is a regional rehearsal of the planetary lesson that reworking nature at scale sends a bill.' },
     ],
   },
@@ -473,9 +473,9 @@ LOOM.node([
     region: 'easia',
     x: 92,
     threads: ['ideas', 'craft'],
-    hook: 'With no compass or chart, reading only stars, swells, and seabirds, a double-hulled canoe sets out from Hawaii for Tahiti to prove the old voyaging was real.',
+    hook: 'With no modern navigation instruments, a double-hulled canoe sets out from Hawaii for Tahiti under Micronesian navigator Mau Piailug, testing what disciplined attention to sea and sky can do.',
     summary:
-      'In 1976 the Hokulea, a recreated Polynesian voyaging canoe, sailed from Hawaii to Tahiti guided by Micronesian navigator Mau Piailug using only traditional wayfinding. The voyage confirmed that Pacific islands were reached by skilled navigation, not by drifting accident, and it ignited a cultural renaissance across Oceania, reviving language, canoe building, and celestial navigation. It reclaimed a science written in the sky and the sea.',
+      'In 1976 the Hokulea, a reconstructed Polynesian voyaging canoe, sailed from Hawaii to Tahiti guided without modern instruments by Micronesian navigator Mau Piailug. The voyage demonstrated the practical power of non-instrument wayfinding; it did not reproduce every ancient route or prove one uniform historical technique. It helped ignite a cultural renaissance across Oceania, renewing canoe building, language, voyaging, and knowledge carried through sea and sky.',
     edges: [
       { to: 'burning-mirror', type: 'echoes', why: 'The same ocean these islanders learned to read now rises to swallow the low atolls of the Pacific.' },
       { to: 'fraying-and-becoming', type: 'echoes', why: 'The revival of indigenous knowledge against a flattening world is a live current of the present.' },
@@ -541,9 +541,9 @@ LOOM.node([
     region: 'world',
     x: 54,
     threads: ['craft', 'ideas'],
-    hook: 'In a Somali port town, a hospital cook who catches smallpox recovers, and a disease that killed hundreds of millions has nowhere left to go.',
+    hook: 'In 1977, a Somali hospital cook recovers from the last known natural case of smallpox; in 1980, the world certifies that the virus has nowhere left to spread.',
     summary:
-      'In 1980 the World Health Organization certified smallpox eradicated, the first disease deliberately wiped from the Earth. A Cold War collaboration of Soviet and American scientists, ring vaccination, and armies of local health workers cornered a virus that had killed perhaps three hundred million people in the twentieth century alone. It proved that coordinated humanity could delete an ancient killer, a template later chased for polio and measles.',
+      'In 1980 the World Health Organization certified smallpox eradicated, the first human disease deliberately wiped from the Earth. Cold War cooperation, ring vaccination, surveillance, and armies of local health workers cornered a virus that had killed perhaps three hundred million people in the twentieth century alone. It proved that coordinated humanity could delete an ancient killer, a template pursued in polio eradication and regional elimination campaigns against other diseases, including measles.',
     edges: [
       { to: 'crispr-scissors', type: 'echoes', why: 'Both mark humanity’s growing power to engineer biology, one erasing a pathogen, the other rewriting genes.' },
       { to: 'fraying-and-becoming', type: 'echoes', why: 'The global cooperation that beat smallpox is exactly the capacity now strained by pandemics and mistrust.' },
@@ -575,9 +575,9 @@ LOOM.node([
     region: 'africa',
     x: 42,
     threads: ['ideas', 'power'],
-    hook: 'Instead of trials, a new South Africa offers its torturers a bargain: confess in full, in public, and you may walk free.',
+    hook: 'Alongside the possibility of prosecution, a new South Africa offers individual perpetrators a conditional bargain: disclose politically motivated crimes in full, and amnesty may follow.',
     summary:
-      'After apartheid ended, South Africa’s Truth and Reconciliation Commission, chaired by Desmond Tutu from 1996, offered amnesty for full public confession rather than punishment, hoping to build a shared record and a common future. Grounded partly in the ethic of ubuntu, that a person is a person through other persons, it was both praised and condemned: it surfaced hidden crimes yet let many perpetrators go. It became the global model for transitional justice.',
+      'After apartheid ended, South Africa’s Truth and Reconciliation Commission, chaired by Desmond Tutu from 1996, heard victims publicly and considered individual amnesty applications case by case. Amnesty required full disclosure of politically motivated acts tied proportionally to a political objective; it was neither automatic nor a blanket replacement for trials, and many applications were refused. The commission surfaced hidden crimes yet left many victims without adequate justice or repair, becoming an influential and contested model for transitional justice.',
     edges: [
       { to: 'development-as-freedom', type: 'echoes', why: 'Both redefine justice as restoring human dignity and agency rather than tallying punishment or income.' },
       { to: 'fraying-and-becoming', type: 'echoes', why: 'How deeply divided societies choose to live together after atrocity is an unfinished present-day problem.' },
@@ -592,7 +592,7 @@ LOOM.node([
     region: 'sasia',
     x: 73,
     threads: ['ideas', 'wealth'],
-    hook: 'An economist who watched the Bengal famine as a boy proves that famines do not strike working democracies, and asks what wealth is actually for.',
+    hook: 'An economist who watched the Bengal famine as a boy argues that functioning democracies with a free press have powerful defenses against famine, then asks what wealth is actually for.',
     summary:
       'Amartya Sen argued that development means expanding real freedoms, health, education, and political voice, not merely raising income. His work showed that famines spring from failed entitlements and silenced citizens rather than sheer lack of food, and helped build the Human Development Index. Development as Freedom, in 1999, recast poverty as a denial of capability, changing how governments and agencies measure a good life.',
     edges: [
@@ -628,7 +628,7 @@ LOOM.node([
     threads: ['wealth'],
     hook: 'On a New Year’s morning, shoppers in twelve countries reach into their pockets and find the same coins, their old national currencies simply gone.',
     summary:
-      'In 1999 eleven European states fixed their currencies together, and in 2002 euro notes and coins replaced the mark, franc, and lira in people’s hands. A shared money without a shared treasury was an enormous gamble: it deepened integration and trade but left members unable to devalue in a crisis, a flaw laid bare after 2008. The euro is the boldest monetary experiment since the gold standard.',
+      'In 1999 eleven European states fixed their currencies together, and in 2002 euro notes and coins replaced the mark, franc, and lira in people’s hands. A shared money without a fully shared fiscal state was an enormous gamble: it deepened integration and trade but left members unable to devalue individually in a crisis, a constraint laid bare after 2008. The euro remains one of the most ambitious monetary experiments of the modern age.',
     edges: [
       { to: 'money-in-the-phone', type: 'echoes', why: 'Both reinvent what money is, a currency shared across borders and a wallet living inside a phone.' },
       { to: 'fraying-and-becoming', type: 'collides', why: 'A currency without a state strained the union to its limits and helped feed the era’s populist revolts.' },
@@ -659,12 +659,12 @@ LOOM.node([
     region: 'africa',
     x: 48,
     threads: ['wealth', 'craft'],
-    hook: 'In Kenya, millions who will never own a bank account begin sending money to one another as text messages, through the corner shop that sells phone credit.',
+    hook: 'In Kenya, millions without conventional bank accounts begin sending money through basic phones and the corner shops that sell airtime.',
     summary:
-      'Launched in Kenya in 2007, M-Pesa let people store and send money on basic mobile phones through a dense network of small agents, no bank required. Within a few years most Kenyan adults used it, and studies credit it with lifting households out of poverty by making saving and payment cheap and safe. Africa leapfrogged the branch bank, and the rest of the world came to study how.',
+      'Launched in Kenya in 2007, M-Pesa let people store and send money on basic mobile phones through a dense network of small agents without opening conventional bank accounts. Within a few years most Kenyan adults used it, and some studies estimate that access helped households escape extreme poverty by making payments, transfers, and saving safer and cheaper. Kenya showed how telecom networks and local agents could supplement or bypass bank branches through a new set of financial intermediaries.',
     edges: [
       { to: 'glass-slab', type: 'echoes', why: 'Both turn the ordinary phone into the platform through which daily economic life now runs.' },
-      { to: 'fraying-and-becoming', type: 'transforms', why: 'Money going digital, mobile, and disintermediated is reshaping finance and the state’s grip on it everywhere.' },
+      { to: 'fraying-and-becoming', type: 'transforms', why: 'Digital and mobile money are reshaping finance through new intermediaries, while changing how states regulate payments and access.' },
     ],
   },
   {
@@ -678,7 +678,7 @@ LOOM.node([
     threads: ['wealth', 'power'],
     hook: 'Sometime around 2008, a child is born who tips the balance: for the first time in history, more humans live in cities than outside them.',
     summary:
-      'Around 2008 humanity became majority urban, a threshold crossed not in the old industrial cities but in the exploding megacities of the Global South: Lagos, Dhaka, Sao Paulo, Mumbai. Much of that growth is self-built, informal settlements housing billions who improvise water, power, and work the state does not supply. The twenty-first century city is less the planned metropolis than the sprawling, inventive, precarious edge.',
+      'Around 2007 to 2008 humanity became majority urban, a statistical threshold driven increasingly by cities of the Global South. Lagos, Dhaka, São Paulo, and Mumbai represent different histories, not one megacity model. More than a billion people live in informal settlements or slum conditions, often building housing, services, and livelihoods where formal provision falls short. The urban century includes planned centers and inventive, precarious edges alike.',
     edges: [
       { to: 'glass-slab', type: 'enables', why: 'Dense, connected urban millions are the ground on which the mobile public square took hold fastest.' },
       { to: 'fraying-and-becoming', type: 'transforms', why: 'The politics, climate exposure, and inequality of a majority-urban species now shape the whole present.' },
@@ -709,9 +709,9 @@ LOOM.node([
     region: 'world',
     x: 56,
     threads: ['craft', 'ideas'],
-    hook: 'Two scientists realize a trick that bacteria use to fight viruses can be turned into a pair of molecular scissors that cut and edit any gene at will.',
+    hook: 'Two scientists show that a bacterial defense can be programmed to cut chosen DNA sequences. A powerful editing tool has arrived, with limits and consequences still unfolding.',
     summary:
-      'In 2012 Jennifer Doudna and Emmanuelle Charpentier showed that CRISPR-Cas9, borrowed from a bacterial immune system, could be programmed to cut DNA at chosen sites, making gene editing cheap and precise. It promises cures for inherited disease and hardier crops, and raises the starkest question biology has ever posed: whether humans should edit the heritable code of their own species. The line from the double helix runs straight to here.',
+      'In 2012 Jennifer Doudna, Emmanuelle Charpentier, and collaborators showed that CRISPR-Cas9, adapted from a bacterial immune system, could be programmed to cut selected DNA sequences. It made many editing experiments cheaper and easier, while delivery, unintended changes, and biological complexity still limit precision. The tool promises treatments and new crops, and intensifies an old ethical question: whether humans should alter heritable changes in their own species.',
     edges: [
       { to: 'fraying-and-becoming', type: 'collides', why: 'The power to edit human heredity arrives faster than any institution has agreed how to govern it.' },
     ],

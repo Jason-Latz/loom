@@ -53,9 +53,9 @@ LOOM.node([
     threads: ['wealth', 'ideas'],
     hook: 'Herders drive cattle across grasslands that will one day be the world’s largest desert, painting swimmers and dancing figures on rocks that now stand in open sand.',
     summary:
-      'For millennia after the ice age, monsoon rains greened the Sahara: lakes, grasslands, hippos, and communities that fished, herded, and painted. Cattle keeping spread here early and mattered more than crops; herds were mobile wealth, ritual currency, and insurance against drought. As the rains failed around 3500 BCE, people converged on oases and the Nile, carrying herding economies deep into Africa. The desert is younger than the people who remember it green.',
+      'For millennia after the ice age, monsoon rains greened the Sahara: lakes, grasslands, hippos, and communities that fished, herded, and painted. Cattle keeping spread here early and mattered more than crops; herds were mobile wealth, ritual currency, and insurance against drought. As aridification advanced unevenly over millennia, especially after the mid-Holocene, people converged on oases and the Nile, carrying herding economies deep into Africa. The desert is younger than the people who remember it green.',
     edges: [
-      { to: 'gift-of-the-nile', type: 'enables', why: 'As the grasslands failed, herding communities converged on the Nile corridor, feeding people, cattle, and ritual into Egyptian life.' },
+      { to: 'gift-of-the-nile', type: 'enables', why: 'Aridification increased movement toward the Nile and made Saharan pastoral communities one part of the populations and practices from which Nile societies grew.' },
       { to: 'kingdom-of-kerma', type: 'enables', why: 'Cattle wealth moved up the Nile as the desert grew, and herds stayed central to Nubian royal display at Kerma.' },
       { to: 'golden-sahara', type: 'echoes', why: 'The desert that expelled the herders became a sea of sand whose camel crossings later made West African empires rich.' },
     ],
@@ -71,7 +71,7 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'In a highland valley of New Guinea, people dig channels to drain a swamp, mound the wet soil, and plant taro and bananas, with no grain in sight.',
     summary:
-      'New Guinea highlanders developed agriculture independently: plot features at Kuk Swamp near 8000 BCE are disputed, but mounded banana and taro cultivation by about 5000 BCE is secure, with drainage networks following. The staples were roots and fruits, propagated by cutting rather than seed, so no granary or tax register followed. Independent invention here, as in the Americas, breaks any single Fertile Crescent story of farming.',
+      'New Guinea highlanders developed agriculture independently. Kuk’s earliest landscape manipulation around 8000 BCE remains disputed, while mounding and cultivation by roughly 5000 BCE are much better supported; banana evidence is strong, while assigning every feature specifically to taro is harder. Its roots and fruits, often propagated by cutting rather than seed, do not fit the familiar grain, granary, and early-state sequence. Independent invention here, as in the Americas, breaks any single Fertile Crescent story of farming.',
     edges: [
       { to: 'maize-and-the-americas', type: 'echoes', why: 'Taro and bananas in New Guinea, like teosinte in the Balsas, were transformed by local communities with no knowledge of Southwest Asia.' },
       { to: 'language-puts-to-sea', type: 'enables', why: 'Bananas, sugarcane, and taro first tamed around New Guinea joined the transported gardens Austronesian voyagers later carried east and west.' },
@@ -86,7 +86,7 @@ LOOM.node([
     region: 'europe',
     x: 31,
     threads: ['wealth', 'power'],
-    hook: 'By the Black Sea, mourners lower a man into a grave with golden beads, bracelets, a scepter, and a gold sheath for his penis. No king, city, or state exists anywhere on earth.',
+    hook: 'By the Black Sea, mourners lower a man into a grave with golden beads, bracelets, a scepter, and a gold sheath for his penis. No identified king or state stands behind the display.',
     summary:
       'The Varna cemetery holds several kilograms of the world’s earliest large gold assemblage, concentrated in a few graves radiocarbon dated to about 4560 to 4450 BCE. Copper, gold, shell, and salt moved through Black Sea exchange among villages, not states. A few men monopolized display in death, showing steep rank could arise from metal, ritual office, and exchange without cities, writing, or taxable grain. The society vanished within centuries, cause disputed.',
     edges: [
@@ -177,10 +177,10 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'On Peru’s desert coast, fishing towns trade anchovies for irrigated cotton, and inland at Caral, platform mounds and sunken plazas rise a millennium before the Olmec heads.',
     summary:
-      'Radiocarbon dates place Caral and neighboring Supe valley centers around 3000 to 1800 BCE, among the earliest monumental complexes in the Americas. Irrigated cotton and gourds moved coastward for anchovies and shellfish, a maritime and farming exchange with no pottery and little maize. A knotted cord bundle found there resembles later Andean khipu, though continuity is unproven. Monuments, trade, and coordination came first here; grain staples and ceramics came later.',
+      'Radiocarbon dates place Caral and neighboring Supe valley centers around 3000 to 1800 BCE, among the earliest monumental complexes in the Americas. Irrigated cotton and gourds moved coastward for anchovies and shellfish in a maritime and farming exchange without pottery; how much maize mattered remains debated. A knotted cord bundle resembles later Andean khipu, though continuity is unproven. Monuments, trade, and coordination took forms here unlike the familiar grain-and-ceramics sequence.',
     edges: [
       { to: 'maize-and-the-americas', type: 'echoes', why: 'Peru’s first monuments rose on cotton, squash, and anchovies, a reminder that American complexity did not wait for maize.' },
-      { to: 'mound-and-mountain', type: 'enables', why: 'Caral opened an Andean tradition of labor-built platforms and plazas that Wari and Tiwanaku much later scaled into statecraft.' },
+      { to: 'mound-and-mountain', type: 'echoes', why: 'Caral is an early expression of Andean platform-and-plaza traditions that much later states reworked, without implying an unbroken institutional line.' },
       { to: 'inka-threads', type: 'echoes', why: 'A knotted cord bundle at Caral hints, without proof of continuity, that recording by thread has four thousand year roots in the Andes.' },
     ],
   },
@@ -227,7 +227,7 @@ LOOM.node([
     region: 'swasia',
     x: 63,
     threads: ['ideas', 'power'],
-    hook: 'In Ur, Sargon’s daughter composes hymns that rage, plead, and praise, and does something no earlier writer we know of had done: she puts her own name in the poem.',
+    hook: 'Later copies credit Sargon’s daughter with hymns that rage, plead, and praise, attaching her name to literature earlier than any other surviving attribution.',
     summary:
       'Enheduanna, appointed high priestess of the moon god at Ur by her father Sargon of Akkad around 2300 BCE, is the earliest author whose name is attached to surviving literature. Her office bound conquered Sumerian cities to an Akkadian dynasty; her hymns to Inanna speak in the first person of exile and restoration. The attributed texts survive in copies made centuries later, and how much she herself composed remains debated.',
     edges: [
@@ -285,7 +285,7 @@ LOOM.node([
     edges: [
       { to: 'cloth-for-silver', type: 'enables', why: 'Woven cloth became the export Assyrian family firms later carried by donkey caravan to Anatolia in exchange for silver.' },
       { to: 'silk-road-pulse', type: 'echoes', why: 'Cloth kept doing money’s work across Eurasia; Han governments later paid soldiers and bought alliances in bolts of silk.' },
-      { to: 'cotton-and-chains', type: 'echoes', why: 'Textile production was organizing masses of unfree and semi-free labor four thousand years before the plantation and the mill.' },
+      { to: 'cotton-and-chains', type: 'echoes', why: 'Mesopotamian textile institutions organized large dependent workforces long before plantations and mills created very different coercive labor regimes.' },
     ],
   },
   {
@@ -301,7 +301,7 @@ LOOM.node([
     summary:
       'The Oxus civilization, often called the Bactria-Margiana Archaeological Complex, built fortified mudbrick compounds, irrigated oases, and rich metal and stone crafts across Central Asia around 2250 to 1700 BCE. Its towns exchanged with the Indus world, Iran, and the steppe, and herders settled nearby, a contact zone where Indo-Iranian languages plausibly moved south. No deciphered writing survives, so its politics stay dark. Central Asia here is a center, not a corridor.',
     edges: [
-      { to: 'horse-and-wheel', type: 'collides', why: 'Oasis towns and steppe herders traded, married, and borrowed under pressure, the contact zone through which chariot peoples later moved south.' },
+      { to: 'horse-and-wheel', type: 'collides', why: 'Oasis and steppe communities exchanged goods and practices in zones later traversed by Sintashta-linked groups moving toward Iran and South Asia; the exact routes remain debated.' },
       { to: 'silk-road-pulse', type: 'echoes', why: 'Central Asian oases were organizing long-distance exchange two thousand years before Han envoys came looking for horses.' },
     ],
   },
@@ -336,9 +336,9 @@ LOOM.node([
     summary:
       'More than twenty thousand tablets from the merchant quarter of Kanesh document Old Assyrian trade around 1950 to 1750 BCE: donkey caravans carried tin and textiles into Anatolia and returned with silver. Family firms used loans at interest, partnerships, long-term investment funds, agents, and courts, all without coins or state monopoly. Women in Assur wove the export cloth and wrote sharp letters about pay. It is antiquity’s best documented private commerce.',
     edges: [
-      { to: 'invention-of-money', type: 'enables', why: 'Weighed silver already worked as money at Kanesh, the commercial practice that coinage later stamped and advertised.' },
+      { to: 'invention-of-money', type: 'echoes', why: 'Kanesh shows weighed silver already serving monetary functions more than a millennium before coinage added official types and standardized pieces.' },
       { to: 'phoenician-web', type: 'echoes', why: 'Family firms with agents abroad, pooled risk, and home-city law reappear in the Levantine harbors a millennium later.' },
-      { to: 'dutch-money-machine', type: 'echoes', why: 'The naruqqum contract pooled many investors’ silver in one trader’s decade-long venture, an early gesture toward the joint-stock idea.' },
+      { to: 'dutch-money-machine', type: 'echoes', why: 'The naruqqum contract pooled many investors’ silver in one trader’s decade-long venture, an instructive ancient parallel to later pooled-investment firms.' },
     ],
   },
   {
@@ -425,7 +425,7 @@ LOOM.node([
       'The Edwin Smith papyrus, copied around 1600 BCE from an older original, is a trauma manual: forty-eight cases ordered head downward, with examination, palpation, diagnosis, prognosis, and treatment, including the earliest known descriptions of the brain and the effects of its injuries. Magic appears only at the margins; the method is observational. Egyptian healing elsewhere mixed incantation and drug freely. The papyrus shows clinical reasoning as an ancient craft, not a Greek invention.',
     edges: [
       { to: 'weighing-of-the-heart', type: 'echoes', why: 'The tradition that triaged skull fractures without spells also mapped the afterlife in exhaustive ritual detail, feeling no contradiction.' },
-      { to: 'house-of-wisdom', type: 'echoes', why: 'Case-based clinical method resurfaces wherever medicine organizes itself, from Hippocratic notebooks to the hospitals of Abbasid Baghdad.' },
+      { to: 'house-of-wisdom', type: 'echoes', why: 'The papyrus and later Hippocratic and Abbasid medicine each organized knowledge around observed cases, although no direct transmission from this copy is known.' },
     ],
   },
   {
@@ -439,7 +439,7 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'In the hall of judgment, a dead man’s heart sits on one scale pan and a feather on the other, while he recites everything he has not done.',
     summary:
-      'New Kingdom Book of the Dead scrolls, assembled from older coffin and pyramid texts, guide the dead through judgment: the heart weighed against maat, the order and truth the feather stands for, before Osiris and a devouring monster. The negative confession lists wrongs disavowed, from murder to cheating grain measures. The scrolls were purchased spells as much as ethics, yet they made a moral audit of an ordinary life the price of eternity.',
+      'New Kingdom Book of the Dead scrolls, assembled from older coffin and pyramid texts, guide the dead through judgment: the heart weighed against maat, the order and truth the feather stands for, before Osiris and a devouring monster. The negative confession lists wrongs disavowed, from murder to cheating grain measures. These costly funerary texts were spells as much as ethics, yet they made a moral audit of a human life the price of eternity.',
     edges: [
       { to: 'israel-one-god', type: 'echoes', why: 'Egypt made afterlife judgment a moral audit centuries before biblical religion; later traditions built their own judgment scenes.' },
       { to: 'buddha-middle-path', type: 'echoes', why: 'Two independent moral cosmologies made conduct in this life determine what becomes of a person beyond it.' },
@@ -470,9 +470,9 @@ LOOM.node([
     region: 'americas',
     x: 13,
     threads: ['wealth', 'craft'],
-    hook: 'In the lower Mississippi valley, people who plant no staple crop haul earth by the basketload, raising ridges and mounds around a great plaza, one huge mound in a single season.',
+    hook: 'In the lower Mississippi valley, people who plant no staple crop haul earth by the basketload, raising ridges and mounds around a great plaza, one huge mound perhaps in a single season.',
     summary:
-      'Poverty Point’s concentric ridges and mounds rose around 1700 to 1100 BCE, built by communities that fished, hunted, and gathered the Mississippi lowlands’ abundance; Mound A, among North America’s largest earthen structures, went up in perhaps ninety days. Tons of imported stone arrived from as far as seven hundred miles away, since the region has almost none. Whether residence, pilgrimage center, or both is debated. Monumental coordination here required neither farming nor kings, only occasions that gathered people.',
+      'Poverty Point’s concentric ridges and mounds rose around 1700 to 1100 BCE, built by communities that fished, hunted, and gathered the Mississippi lowlands’ abundance; Mound A, among North America’s largest earthen structures, went up in perhaps ninety days. Tons of imported stone arrived from as far as seven hundred miles away, since the region has almost none. Whether residence, pilgrimage center, or both is debated. Monumental coordination here did not require staple farming or known kings; the institutions that gathered labor remain uncertain.',
     edges: [
       { to: 'maize-and-the-americas', type: 'collides', why: 'Vast labor mobilized on fish, nuts, and exchange unsettles the assumption that only farming societies build monuments.' },
       { to: 'mound-and-mountain', type: 'echoes', why: 'Earth moved basket by basket remained the Mississippi valley’s monumental idiom from Poverty Point to Cahokia.' },
@@ -508,8 +508,8 @@ LOOM.node([
     summary:
       'The Rigveda’s 1,028 hymns took shape around 1500 to 1200 BCE among Indo-Aryan speaking communities of northwestern South Asia, transmitted by disciplined memorization so exact it preserved sounds writing later struggled to record. Most hymns serve the sacrifice: Agni, Indra, soma. The latest book turns speculative; one creation hymn ends by doubting whether anyone, even the overseer of heaven, knows the origin. Ritual poetry here already carries philosophy’s questions.',
     edges: [
-      { to: 'buddha-middle-path', type: 'enables', why: 'The Buddha’s world argued in terms Vedic tradition had set: sacrifice, cosmic order, and what a self might be.' },
-      { to: 'israel-one-god', type: 'echoes', why: 'Two communities made exactly transmitted words, rather than places or images, the durable center of religious life.' },
+      { to: 'buddha-middle-path', type: 'enables', why: 'Early Buddhism emerged amid Vedic, Brahmanical, and renunciant debates about sacrifice, karma, self, and release; no single tradition supplied the whole argument.' },
+      { to: 'israel-one-god', type: 'echoes', why: 'Both communities developed unusually disciplined ways of transmitting sacred words, while sacrifice, ritual practice, and holy places remained important in each tradition.' },
       { to: 'socratic-turn', type: 'echoes', why: 'A hymn that ends by doubting the gods’ own knowledge shows systematic questioning arising inside ritual, not against it.' },
     ],
   },

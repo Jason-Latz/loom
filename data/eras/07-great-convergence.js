@@ -66,12 +66,12 @@ LOOM.node([
     region: 'easia',
     x: 84,
     threads: ['wealth', 'ideas'],
-    hook: 'Two monsoons meet at one strait, and every sail between China and Arabia waits in the same harbor for the wind to turn.',
+    hook: 'Two monsoon systems meet at one strait, and ships between China and the western Indian Ocean make its harbor a seasonally crowded hinge.',
     summary:
-      'Malacca commanded the strait where the China Sea and Indian Ocean monsoons meet, so cargoes had to wait there and wealth settled with them. Its sultans kept duties low, appointed harbormasters for each merchant nation, and made Malay the trading tongue; Islam spread along these routes through commerce and marriage, not conquest. When Portugal seized the city in 1511, the trade simply scattered to rival ports: emporia can be captured, networks cannot.',
+      'Malacca commanded the strait where the China Sea and Indian Ocean monsoons meet, so many long-distance ships stopped to trade, resupply, and wait for favorable winds. Its sultans kept duties low, appointed harbormasters for merchant communities, and made Malay a trading tongue. Islam spread along these routes through commerce, marriage, scholarship, and state patronage, though force also belonged to the region’s political history. When Portugal seized the city in 1511, much commerce shifted toward rival ports rather than disappearing.',
     edges: [
       { to: 'iberian-wager', type: 'collides', why: 'Portugal’s pepper route aimed straight at the straits, and Albuquerque seized Malacca in 1511 to hold the funnel.' },
-      { to: 'price-of-nutmeg', type: 'transforms', why: 'Malacca’s fall scattered Muslim merchants to Aceh, Johor, and Banten, reshaping the spice web the Dutch later tried to corner.' },
+      { to: 'price-of-nutmeg', type: 'transforms', why: 'Malacca’s fall helped redirect Muslim merchants and commerce toward Aceh, Johor, and Banten, reshaping the spice web the Dutch later tried to corner.' },
       { to: 'dutch-money-machine', type: 'enables', why: 'The wealth funneled through the straits is what made an armed spice corporation seem worth inventing.' },
     ],
   },
@@ -118,9 +118,9 @@ LOOM.node([
     region: 'europe',
     x: 34,
     threads: ['wealth', 'craft'],
-    hook: 'A friar publishes the merchants’ secret: write every deal twice, and the books will confess whether you are rich or ruined.',
+    hook: 'A friar prints a portable account of practices merchants refined for generations. A local craft can now be taught from the same pages in another city.',
     summary:
-      'Luca Pacioli’s 1494 Summa printed the double-entry method Italian merchants had refined for two centuries: every transaction entered twice, as debit and credit, so the books check themselves and profit becomes a number rather than a feeling. Bookkeeping did not cause capitalism, but it made enterprises auditable, partnerships accountable, and capital legible enough to be pooled, priced, and trusted at distance. The corporation’s nervous system starts on these pages.',
+      'Luca Pacioli did not invent double entry. His 1494 Summa described a Venetian method already refined in Italian businesses and placed it beside the commercial arithmetic needed to use it. Print changed the scale of transmission: conventions once learned inside firms could circulate as an explicit, teachable system. Later editions and adaptations helped bookkeeping become a shared commercial language, though practice remained varied and capitalism had many other causes.',
     edges: [
       { to: 'dutch-money-machine', type: 'enables', why: 'Tradable shares and audited accounts presume books that balance; the VOC ran Italian bookkeeping at corporate scale.' },
       { to: 'wealth-of-nations', type: 'echoes', why: 'Political economy began by theorizing what merchant ledgers already measured: stock, flow, and profit.' },
@@ -135,11 +135,11 @@ LOOM.node([
     region: 'sasia',
     x: 71,
     threads: ['ideas'],
-    hook: 'A ledger-keeper in Punjab vanishes into a river for three days, then emerges saying there is no Hindu and no Muslim.',
+    hook: 'In later Sikh tradition, a ledger-keeper in Punjab vanishes into a river for three days, then emerges saying there is no Hindu and no Muslim.',
     summary:
-      'Guru Nanak taught devotion to one formless God, open to any caste and either sex, sustained by honest work, shared food, and remembrance rather than renunciation. The langar, a free kitchen where all eat in one line, made the theology edible. Nine successor Gurus built scripture and community; the tradition later militarized under Mughal persecution, but Sikhism began as a devotional path, not the martial order outsiders often picture first.',
+      'Guru Nanak taught devotion to one formless God, open across caste and sex, sustained by honest work, shared food, and remembrance rather than renunciation. The langar, a free kitchen where all eat together, made the theology edible. Nine successor Gurus built scripture and community. Sikh military institutions developed later amid conflict with Mughal authorities, regional warfare, and changing political circumstances, but the tradition cannot be reduced to the martial order outsiders often picture first.',
     edges: [
-      { to: 'gunpowder-empires', type: 'collides', why: 'The Sikh community grew up inside Mughal India, honored by Akbar’s court and then persecuted under his successors.' },
+      { to: 'gunpowder-empires', type: 'collides', why: 'The Sikh community grew inside Mughal India; Akbar treated it favorably, while relations with later emperors varied and eventually turned violent.' },
       { to: 'midnight-freedoms', type: 'echoes', why: 'Partition cut Punjab in half in 1947, and Sikhs bore a disproportionate share of its violence and migrations.' },
     ],
   },
@@ -172,9 +172,9 @@ LOOM.node([
     threads: ['wealth', 'ideas'],
     hook: 'In Timbuktu the visitor Leo Africanus reports that books outsell every other merchandise, in a city supplied by camel with salt and gold.',
     summary:
-      'Songhai under Askia Muhammad ran the largest state in West African history from the Niger bend, taxing the exchange of Saharan salt for savanna gold. Timbuktu’s wealth fed scholarship: hundreds of thousands of manuscripts in law, astronomy, and theology, copied and traded as prized commodities, with jurists like Ahmad Baba holding continental reputations. A Moroccan expedition broke the state in 1591, but the libraries survived in family hands, hidden and inherited.',
+      'Songhai under Askia Muhammad built one of the largest states in West African history from the Niger bend, taxing exchanges that included Saharan salt and savanna gold. Timbuktu’s wealth fed a major manuscript culture: many thousands of works in law, astronomy, theology, and other fields were copied, traded, hidden, and inherited, while jurists such as Ahmad Baba earned reputations far beyond the city. A Moroccan expedition broke the state in 1591, but family libraries survived.',
     edges: [
-      { to: 'middle-passage', type: 'collides', why: 'Atlantic ports slowly rerouted West African exchange toward the coast, eroding the desert monopoly that had made Songhai rich.' },
+      { to: 'middle-passage', type: 'collides', why: 'Atlantic commerce shifted some West African exchange toward the coast, reducing the relative weight of Saharan trade without replacing inland networks.' },
       { to: 'scramble-for-africa', type: 'echoes', why: 'Timbuktu’s hidden family libraries later surfaced as written evidence against the colonial claim that Africa had no history of letters.' },
     ],
   },
@@ -273,9 +273,9 @@ LOOM.node([
     region: 'europe',
     x: 27,
     threads: ['craft', 'ideas'],
-    hook: 'A young professor breaks with a thousand years of authority by picking up the knife himself, and finds that Galen never dissected a human being.',
+    hook: 'A young professor picks up the knife himself and finds that some of Galen’s claims, many extrapolated from animals, do not fit the human body before him.',
     summary:
-      'Vesalius dissected publicly with his own hands and published De humani corporis fabrica in 1543 with woodcuts precise enough to argue with. He showed that Galen, anatomy’s authority for over a millennium, had described animals, not humans, and was wrong in ways a knife could check. The book made the body an object of direct evidence; within a century Harvey had measured the blood into circulation. Observation began outranking inheritance.',
+      'Vesalius dissected publicly and published De humani corporis fabrica in 1543 with woodcuts precise enough to argue with. By comparing inherited descriptions with repeatable human dissection, he exposed specific errors in Galen, whose anatomy often relied on animals. The book strengthened the body’s place as an object of direct evidence; within a century Harvey had measured the blood into circulation. Observation gained new authority beside inherited texts.',
     edges: [
       { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Trusting the opened body over the inherited book is the same method Galileo later aimed at the sky.' },
       { to: 'little-animals', type: 'enables', why: 'Once looking outranked Galen, the microscope inherited a ready program: see for yourself, then publish what you saw.' },
@@ -411,12 +411,12 @@ LOOM.node([
     region: 'easia',
     x: 85,
     threads: ['ideas', 'craft'],
-    hook: 'An Italian in Ming robes astonishes Beijing by reciting a list of characters forward and backward, then offers the emperor a chiming clock.',
+    hook: 'In the 1590s, an Italian in Ming robes astonishes Chinese scholars by reciting lists of characters forward and backward; in 1601 he reaches Beijing bearing a chiming clock.',
     summary:
-      'Matteo Ricci spent two decades earning a place in Ming literati culture, mastering Classical Chinese, dressing as a scholar, and trading clocks, maps, and geometry for standing. His True Meaning of the Lord of Heaven argued Christianity through Confucian vocabulary, and his 1602 world map put China near the center. The exchange ran both ways: Jesuit letters carried a working model of a secular ethical order back to a Europe at war over religion.',
+      'Matteo Ricci spent two decades earning a place in Ming literati culture, mastering Classical Chinese, dressing as a scholar, and trading clocks, maps, and geometry for standing. His True Meaning of the Lord of Heaven argued Christianity through Confucian vocabulary, and his 1602 world map placed China near the center. The exchange ran both ways, though Jesuit letters carried a selective European portrait of Confucian learning and government.',
     edges: [
-      { to: 'republic-of-letters', type: 'enables', why: 'Jesuit reports from Beijing gave Leibniz and Voltaire a working example of a moral order run without a church.' },
-      { to: 'high-qing', type: 'enables', why: 'His Jesuit successors ran the Qing calendar bureau and surveyed the empire for Kangxi, Europeans inside the court’s machinery.' },
+      { to: 'republic-of-letters', type: 'enables', why: 'Jesuit reports from Beijing gave Leibniz and Voltaire an influential, selective portrait of Confucian moral and political order.' },
+      { to: 'high-qing', type: 'enables', why: 'His Jesuit successors served in the Qing calendar bureau and surveyed the empire for Kangxi, Europeans inside the court’s machinery.' },
     ],
   },
   {
@@ -533,9 +533,9 @@ LOOM.node([
     threads: ['wealth', 'power'],
     hook: 'Nutmeg grows on ten small islands and nowhere else on earth. A corporation decides that is nine islands too many for free trade.',
     summary:
-      'Nutmeg grew only on the Banda Islands, and the VOC’s charter promised monopoly. When Bandanese leaders kept selling to rivals, Jan Pieterszoon Coen’s 1621 expedition killed, starved, or deported most of the population, perhaps fifteen thousand people, and replanted the islands as slave-worked company estates. Monopoly logic, carried to its conclusion, was rational by the ledger and monstrous by every other measure. In 1667 the English traded their claim to tiny Run for Manhattan.',
+      'Nutmeg grew only on the Banda Islands, and the VOC used its chartered powers to pursue exclusive control of the trade. When Bandanese leaders kept selling to rivals, Jan Pieterszoon Coen’s 1621 campaign killed, starved, expelled, or enslaved most of the population and reorganized the islands as company-controlled perken estates worked largely by enslaved labor. In the 1667 Treaty of Breda, Run remained Dutch while Manhattan remained English.',
     edges: [
-      { to: 'company-raj', type: 'echoes', why: 'What the Dutch company rehearsed on ten small islands, monopoly rule by terror, the English company later performed on a subcontinent.' },
+      { to: 'company-raj', type: 'echoes', why: 'The VOC joined commerce, delegated sovereignty, and coercion on the Banda Islands; the English company later combined those powers at a far larger scale.' },
       { to: 'wealth-of-nations', type: 'collides', why: 'Smith’s case against monopoly cited the spice companies as the standing example of trade throttled for shareholder profit.' },
     ],
   },
@@ -629,17 +629,17 @@ LOOM.node([
     id: 'zera-yacobs-inquiry',
     era: 7,
     title: 'Zera Yacob’s Inquiry',
-    date: '1667 CE',
+    date: 'attributed to 1667 CE',
     sort: 1667,
     region: 'africa',
     x: 49,
     threads: ['ideas'],
-    hook: 'Hiding from a king’s persecution in a cave, an Ethiopian scholar decides to accept nothing, scripture included, that his own reason cannot examine.',
+    hook: 'A text attributed to an Ethiopian scholar hiding from persecution asks what remains when every creed, scripture included, must answer to reason.',
     summary:
       'The Hatata attributed to Zera Yacob recounts an Ethiopian scholar who, hiding from religious persecution around 1630, tested every creed against reason and concluded that God is known through the created order, that all faiths mix truth with human invention, and that what reason finds harmonious is right. Some scholars argue the text is a nineteenth-century European forgery; others defend its authenticity, and that debate itself now shapes how African philosophy gets written.',
     edges: [
-      { to: 'republic-of-letters', type: 'echoes', why: 'An Ethiopian scholar reached rationalist conclusions his European contemporaries were printing, each unaware the other existed.' },
-      { to: 'lens-grinders-god', type: 'echoes', why: 'Both subjected scripture to the test of reason within the same decade, one in Amsterdam, one in an Amhara cave.' },
+      { to: 'republic-of-letters', type: 'echoes', why: 'If the traditional attribution is authentic, an Ethiopian scholar reached rationalist conclusions while European contemporaries were printing their own.' },
+      { to: 'lens-grinders-god', type: 'echoes', why: 'On the traditional dating, both texts subjected scripture to reason within the same decade, one in Amsterdam and one attributed to an Amhara cave.' },
     ],
   },
   {
@@ -685,9 +685,9 @@ LOOM.node([
     region: 'americas',
     x: 13,
     threads: ['ideas'],
-    hook: 'Ordered by a bishop, in print, to study less, a nun in Mexico City answers with a defense of a woman’s right to learning that her century never rebutted.',
+    hook: 'A bishop publishes a nun’s theological critique under a female pseudonym and admonishes her in print; she answers with a defense of women’s learning.',
     summary:
-      'Sor Juana Inés de la Cruz, a self-taught scholar and poet in Mexico City, entered the convent partly to keep studying. When the bishop of Puebla published her theological critique with a rebuke urging less learning, her 1691 Reply defended women’s education from scripture, church history, and her own life, naming even the kitchen a site of natural philosophy. Under sustained pressure she gave up her library within a few years, and died in 1695 nursing plague victims.',
+      'Sor Juana Inés de la Cruz, a self-taught scholar and poet in Mexico City, entered the convent partly to keep studying. When the bishop of Puebla, writing as Sor Filotea, published her theological critique with praise and an admonition to redirect her studies, her 1691 Reply defended women’s education from scripture, church history, and her own life, naming even the kitchen a site of natural philosophy. Amid pressures scholars still debate, she relinquished her library within a few years and died in 1695 while caring for fellow nuns during an epidemic.',
     edges: [
       { to: 'republic-of-letters', type: 'echoes', why: 'Her defense of women’s learning anticipated arguments the Enlightenment would take another century to print.' },
       { to: 'rights-revolutions', type: 'echoes', why: 'Feminists recovered her as a founding voice, the nun who argued a woman’s mind was nobody’s property.' },
