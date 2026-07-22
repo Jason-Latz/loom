@@ -45,4 +45,5 @@ LOOM.lessonFiles = [
   'han-mandate',
   'silk-road-pulse',
   'roman-republic-breaks',
+  'pax-romana-machine',
 ];
