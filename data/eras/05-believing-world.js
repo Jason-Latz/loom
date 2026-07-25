@@ -31,10 +31,10 @@ LOOM.node([
     sort: 610,
     region: 'swasia',
     x: 61,
-    threads: ['ideas'],
-    hook: 'A merchant in a cave outside Mecca is commanded: Recite. What follows reorders half the known world.',
+    threads: ['ideas', 'power'],
+    hook: 'Tradition remembers a merchant in a cave outside Mecca commanded: Recite. What follows reorders half the known world.',
     summary:
-      'Muhammad’s revelations fused Abrahamic monotheism with Arab society into something new: the umma, a community where faith replaced tribe, with law, charity, and scripture at its center. Islam was civic from birth, a religion that governed. Within his lifetime it unified Arabia; within a century it stretched from Spain to the Indus.',
+      'Muhammad’s revelations fused Abrahamic monotheism with Arab society into something new: the umma, a community where obligation to the faith stood above tribe, with scripture, charity, and arbitration at its center. Islam was civic from birth, a religion that governed. Arabia’s allegiance had to be rewon after his death; within a century the polity stretched from Spain to the Indus.',
     edges: [
       { to: 'caliphate-lightning', type: 'transforms', why: 'The community of believers becomes an empire within a single generation.' },
       { to: 'house-of-wisdom', type: 'enables', why: 'A faith centered on a book builds a civilization of books.' },
@@ -65,10 +65,10 @@ LOOM.node([
     sort: 640,
     region: 'swasia',
     x: 58,
-    threads: ['power'],
+    threads: ['power', 'wealth'],
     hook: 'Two exhausted superpowers watch desert armies take half of one and all of the other in a few decades.',
     summary:
-      'Byzantium and Persia had bled each other white; Arab armies, mobile and motivated, took Syria, Egypt, Persia, North Africa, and Spain with startling speed, generally tolerating Christians and Jews as protected taxpayers. The Umayyad and then Abbasid caliphates joined the Mediterranean and Indian Ocean worlds into one vast trading, praying, translating space.',
+      'Byzantium and Persia had bled each other white; Arab armies, mobile and motivated, took Syria, Egypt, and Persia within a generation, then North Africa and Spain under later rulers. Christian and Jewish communities mostly kept their own affairs, taxpaying under arrangements still fluid. The Umayyad and then Abbasid caliphates joined the Mediterranean and Indian Ocean worlds into one vast trading, praying, translating space.',
     edges: [
       { to: 'golden-sahara', type: 'enables', why: 'Islam and its trade cross the desert with the camel caravans.' },
       { to: 'monsoon-marketplace', type: 'enables', why: 'Muslim merchants and law knit the Indian Ocean into one market.' },
@@ -135,11 +135,11 @@ LOOM.node([
     region: 'easia',
     x: 88,
     threads: ['power', 'wealth'],
-    hook: 'Chang’an, a city of a million, where Persian merchants, Buddhist monks, and Nestorian priests pass in the streets.',
+    hook: 'Chang’an, a city of a million, where Persian merchants, Buddhist monks, and priests of the Church of the East pass in the streets.',
     summary:
-      'The Tang rebuilt the Han formula at greater scale and openness: the examination system matured, poetry became a civil service skill, and the capital hosted every faith of Asia. The An Lushan rebellion of 755 broke its confidence and killed millions, a hinge after which China turned gradually inward and commerce moved south.',
+      'The Tang rebuilt the Han formula at greater scale and openness: examinations gained prestige while great clans still held most office, and the capital hosted every faith of Asia. The An Lushan rebellion of 755 broke the dynasty’s confidence, emptied its registers, and killed uncounted numbers, a hinge after which the court lost Central Asia and wealth moved south.',
     edges: [
-      { to: 'house-of-wisdom', type: 'collides', why: 'After Talas in 751, captured Chinese papermakers gave Islam its paper.' },
+      { to: 'house-of-wisdom', type: 'collides', why: 'In the decades after Talas in 751, papermaking spread west through Central Asia, and Baghdad’s book world came to run on it.' },
       { to: 'song-economic-miracle', type: 'transforms', why: 'Tang cosmopolitanism matures into Song commercial genius.' },
       { to: 'heian-and-genji', type: 'enables', why: 'Japan imported the Tang model wholesale, then let the embassies lapse and made the borrowed thing wholly its own.' },
     ],
@@ -291,7 +291,7 @@ LOOM.node([
     threads: ['craft', 'ideas'],
     hook: 'In Baghdad, the caliph pays a book’s weight in gold for translations, and Greek, Indian, and Persian learning fuse.',
     summary:
-      'Abbasid Baghdad funded the greatest translation movement in history: Aristotle, Euclid, Galen, and Indian mathematics rendered into Arabic and extended. Al-Khwarizmi’s algebra (and his name, as algorithm), Ibn al-Haytham’s optics, hospitals and observatories. On Chinese paper, Islamic civilization banked and improved the ancient world’s knowledge, later wiring it to Europe.',
+      'Across two centuries, Abbasid Baghdad funded a vast translation movement: Aristotle, Euclid, Galen, and Indian mathematics rendered into Arabic and extended. Al-Khwarizmi’s algebra (and his name, as algorithm), observatories, hospitals, and, generations later in Fatimid Cairo, Ibn al-Haytham’s optics. On paper that arrived through Samarkand, Islamic civilization banked and improved the ancient world’s knowledge, later wiring it to Europe.',
     edges: [
       { to: 'first-universities', type: 'enables', why: 'Arabic learning flows through Spain and Sicily into Latin schools.' },
       { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Algebra, optics, and star tables underwrite Europe’s later revolution.' },
@@ -306,7 +306,7 @@ LOOM.node([
     region: 'europe',
     x: 25,
     threads: ['wealth', 'power'],
-    hook: 'The monks pray for deliverance from the fury of the Northmen, who are also founding Dublin, Normandy, and Russia.',
+    hook: 'The monks pray for deliverance from the fury of the Northmen, who are also founding Dublin, Normandy, and the Rus.',
     summary:
       'Viking longships raided monasteries and cities, but the same ships ran trade from Baghdad silver to Greenland walrus ivory, founded the Rus states that became Russia, settled Iceland with its assembly, and briefly touched North America. Raiders became traders became states: violence and commerce as two faces of one expansion.',
     edges: [
@@ -372,10 +372,10 @@ LOOM.node([
     sort: 900,
     region: 'africa',
     x: 44,
-    threads: ['wealth'],
-    hook: 'Camel caravans cross a sea of sand carrying salt north and gold south, and empires rise at the ports of that sea.',
+    threads: ['wealth', 'ideas'],
+    hook: 'Camel caravans cross a sea of sand carrying salt south and gold north, and empires rise at the ports of that sea.',
     summary:
-      'The camel made the Sahara crossable, and Ghana, then Mali, grew rich taxing the exchange of Saharan salt for West African gold, which minted the coins of the Islamic world and Europe alike. Islam traveled with the caravans, blending with local kingship. West Africa was a pillar of the medieval world economy, not its margin.',
+      'Camel caravans turned old desert contacts into regular trade, and Ghana, then Mali, grew rich taxing the exchange of Saharan salt for West African gold, which fed the dinar mints of the Islamic world and, much later, Europe’s revived gold coinages. Islam traveled with the caravans, blending slowly with local kingship. West Africa was a pillar of the medieval world economy, not its margin.',
     edges: [
       { to: 'mansa-musa-hajj', type: 'transforms', why: 'Ghana’s routes mature into Mali’s golden imperial age.' },
       { to: 'middle-passage', type: 'collides', why: 'Atlantic ships will one day bypass the desert and upend these kingdoms.' },
@@ -441,10 +441,10 @@ LOOM.node([
     sort: 950,
     region: 'sasia',
     x: 76,
-    threads: ['wealth'],
+    threads: ['wealth', 'craft'],
     hook: 'The winds blow reliably one way half the year and back the other half, so the ocean itself becomes a trade machine.',
     summary:
-      'The Indian Ocean was the medieval world’s economic center: dhows riding seasonal monsoons between East Africa, Arabia, India, and Southeast Asia, carrying pepper, cotton, porcelain, and horses. Srivijaya and Chola taxed the straits; merchant diasporas of many faiths shared ports and credit. It was globalization before Europe, run without a hegemon.',
+      'The Indian Ocean was the medieval world’s economic center: sewn-plank ships riding seasonal monsoons between East Africa, Arabia, India, and Southeast Asia, carrying pepper, cottons, ceramics, and ivory. Srivijaya taxed the straits, and Chola fleets later raided them; merchant diasporas of many faiths shared ports and credit. It was globalization before Europe, run without a hegemon.',
     edges: [
       { to: 'treasure-fleets', type: 'enables', why: 'Zheng He’s fleets sail routes Muslim and Indian merchants built.' },
       { to: 'iberian-wager', type: 'enables', why: 'Da Gama did not open the Indian Ocean; he barged into it.' },
@@ -462,7 +462,7 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'Paper money, blast furnaces, printed books, cities of a million: China arrives at the edge of the modern.',
     summary:
-      'Song China ran the most advanced economy on earth: iron output unmatched until industrial Britain, paper currency, water-powered mills, movable-type printing, champa rice doubling harvests, and exams staffing a meritocratic state. Historians still argue why this near-industrial revolution plateaued, a question that shadows every explanation of the West’s later rise.',
+      'Song China ran the most advanced economy on earth: iron output that one classic estimate puts past any rival for centuries, paper currency, water-powered mills, movable-type printing, early-ripening champa rice, and examinations staffing the state, though birth and privilege still weighed. Historians still argue why this near-industrial surge plateaued, a question that shadows every explanation of the West’s later rise.',
     edges: [
       { to: 'song-gifts-go-west', type: 'enables', why: 'Its inventions leak westward along the roads the Mongols will secure.' },
       { to: 'treasure-fleets', type: 'enables', why: 'Song shipwrights and compasses make the great fleets buildable.' },
@@ -497,7 +497,7 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'A lady-in-waiting at a cloistered court writes what many call the world’s first novel, in a script the men dismissed as women’s hand.',
     summary:
-      'Heian Japan let its embassies to China lapse and turned inward, refining a court where the right poem mattered more than any battle. Barred from the prestige of Chinese letters, women wrote in the kana script instead, and Murasaki Shikibu’s Tale of Genji arrived around 1008 as the world’s first psychological novel. Outside the capital, the warriors the court hired to keep order were quietly becoming the samurai.',
+      'Heian Japan let its official embassies to China lapse while private trade sailed on, and refined a court where the right poem mattered more than any battle. Chinese remained the prestige script of men, so court women wrote in kana, and Murasaki Shikibu’s Tale of Genji, circulating by 1008, is often called the first psychological novel. Outside the capital, the warriors the court commissioned to keep order were quietly becoming the samurai.',
     edges: [
       { to: 'tokugawa-great-peace', type: 'transforms', why: 'The provincial warriors this court hired to keep order end up inheriting the country and holding it for centuries.' },
       { to: 'gutenberg-explosion', type: 'echoes', why: 'Writing in the everyday tongue instead of the prestige language keeps handing literature to the voices the classics shut out.' },
@@ -614,9 +614,9 @@ LOOM.node([
     region: 'americas',
     x: 11,
     threads: ['power', 'wealth'],
-    hook: 'A city of earthen pyramids rises by the Mississippi while Andean lords weave states out of labor and thread.',
+    hook: 'A city of earthen pyramids rises by the Mississippi. In the Andes, the states are gone but their toolkit, labor tax, terraces, knotted cords, refuses to die.',
     summary:
-      'Cahokia, near modern St. Louis, was a planned city of thousands with plazas and mounds rivaling Egypt’s footprint in earth. In the Andes, Wari and Tiwanaku pioneered labor taxation, terraced agriculture, and knotted-cord records. The Americas kept inventing statecraft in their own idioms, without wheels, iron, or writing as Eurasia knew it.',
+      'Cahokia, near modern St. Louis, rose fast after 1050: a planned city of thousands whose greatest mound covers more ground than Giza’s largest pyramid. In the centuries before, the Andean states Wari and Tiwanaku had run labor taxation, terraced agriculture, and knotted-cord records, a toolkit that outlived them. The Americas kept inventing statecraft in their own idioms, without wheeled transport, iron, or writing as Eurasia knew it.',
     edges: [
       { to: 'inka-threads', type: 'enables', why: 'Andean traditions of labor tax and roadcraft climax in the Inka.' },
     ],
@@ -629,12 +629,12 @@ LOOM.node([
     sort: 1054,
     region: 'europe',
     x: 37,
-    threads: ['ideas'],
+    threads: ['ideas', 'power'],
     hook: 'In 1054, envoys leave a bull on Hagia Sophia’s altar. The gesture matters, but no single summer can split centuries of entangled Christian life.',
     summary:
       'Greek East and Latin West diverged unevenly across centuries through language, theology, papal claims, imperial rivalry, liturgy, and jurisdiction. The mutual condemnations of 1054 became an important marker, not an instant or universal divorce. Communion and cooperation persisted in places. The crusader sack of Constantinople in 1204 deepened the breach. Later institutions and memories made the separation look cleaner than people experienced it.',
     edges: [
-      { to: 'crusading-fever', type: 'collides', why: 'Crusaders sack Christian Constantinople in 1204, sealing the divorce.' },
+      { to: 'crusading-fever', type: 'collides', why: 'Crusaders sack Christian Constantinople in 1204, deepening a breach that reunion councils never healed.' },
       { to: 'luthers-hammer', type: 'echoes', why: 'The later western Reformation was a different rupture, but both histories show how doctrine, authority, politics, and memory can harden disputed boundaries.' },
     ],
   },
