@@ -65,4 +65,5 @@ LOOM.lessonFiles = [
   'song-economic-miracle',
   'heian-and-genji',
   'mound-and-mountain',
+  'great-schism',
 ];
