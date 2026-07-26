@@ -3,6 +3,7 @@ LOOM.app = (function () {
   var h = LOOM.ui.h;
   var KEY = 'loom.v1';
   var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false, streak: null };
+  var ready = false;
 
   // ---------------- streak ----------------
   // Consecutive days on which you charted something. Kept deliberately quiet: a
@@ -44,6 +45,9 @@ LOOM.app = (function () {
     el.title = label;
     el.setAttribute('aria-label', label);
     el.setAttribute('aria-pressed', on ? 'true' : 'false');
+    // keep mobile browser chrome the same color as the parchment or the lamp
+    var tc = document.getElementById('theme-color');
+    if (tc) tc.setAttribute('content', on ? '#211a10' : '#efe3c6');
   }
 
   function load() {
@@ -243,12 +247,16 @@ LOOM.app = (function () {
       'This chart holds ' + LOOM.nodes.length + ' turning points of the human story, from the first spark of symbolic thought to the ' +
       'present you are standing in. Time rises from the bottom; the world’s regions run left to right. Four pigments ' +
       'thread every age together: Lapis for ideas and belief, Oxblood for power, Gilt for wealth, Verdigris for craft and science.'));
+    var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
     card.appendChild(h('p', null,
-      'Click any node to open its dossier and see what it is woven from and what it leads to. Nodes with a solid ring ' +
+      (coarse ? 'Tap' : 'Click') + ' any node to open its dossier and see what it is woven from and what it leads to. Nodes with a solid ring ' +
       'hold a lesson: ten minutes of story, significance, and questions that deliberately reach back to what you have ' +
       'already read. Chart a lesson and the node turns gold. Dotted nodes are uncharted territory, waiting for the forge.'));
     card.appendChild(h('p', null,
-      'Drag to pan, pinch or ⌘-scroll to zoom, and use the roman numerals on the right to voyage between eras. Begin at the bottom of the map, at the beginning of everything.'));
+      (coarse
+        ? 'Drag to pan, pinch to zoom, and use the roman numerals on the right to voyage between eras. '
+        : 'Drag to pan, pinch or ⌘-scroll to zoom, and use the roman numerals on the right to voyage between eras. ') +
+      'Begin at the bottom of the map, at the beginning of everything.'));
     var actions = h('div', 'intro-actions');
     var begin = h('button', 'btn btn-gilt', 'Begin at the beginning');
     begin.addEventListener('click', function () {
@@ -343,6 +351,7 @@ LOOM.app = (function () {
     document.getElementById('zoom-fit').addEventListener('click', LOOM.map.fitAll);
 
     if (!state.introSeen) showIntro();
+    ready = true;
   }
 
   return {
@@ -352,5 +361,16 @@ LOOM.app = (function () {
     getMark: getMark,
     setMark: setMark,
     nextAfter: nextAfter,
+    // called by boot.js as streamed lesson files register; refresh() is
+    // idempotent, so late arrivals just repaint rings, progress, and streak.
+    // An open dossier is re-rendered too, so a written node selected before
+    // its file arrived gains its "Open the lesson" button instead of staying
+    // stuck on the uncharted panel.
+    lessonsArrived: function () {
+      if (!ready) return;
+      refresh();
+      var sel = LOOM.map.selected();
+      if (sel && !LOOM.reader.isLessonOpen()) LOOM.reader.showDossier(sel);
+    },
   };
 })();

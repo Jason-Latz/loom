@@ -1,5 +1,5 @@
 // Written lessons, in main-sequence order. The forge appends one id per line;
-// js/boot.js loads each data/lessons/<id>.js before the app starts.
+// js/boot.js starts the app, then streams each data/lessons/<id>.js in.
 LOOM.lessonFiles = [
   // Era I: The Long Dawn
   'spark-of-mind',
