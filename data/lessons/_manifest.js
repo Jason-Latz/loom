@@ -51,4 +51,7 @@ LOOM.lessonFiles = [
   'bantu-and-aksum',
   'steppe-hammer',
   'byzantium-endures',
+
+  // Era V: The Believing World
+  'recitation-in-the-desert',
 ];

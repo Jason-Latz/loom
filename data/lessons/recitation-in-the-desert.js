@@ -1,0 +1,92 @@
+LOOM.lesson({
+  id: 'recitation-in-the-desert',
+  readingMinutes: 10,
+  storyContext:
+    'Medina, c. 632 to 634 CE. Zayd ibn Thabit, Abu Bakr, Umar, Hafsa, and the fighting at Yamama are real; the collection scene is the tradition’s own memory of itself, recorded by al-Bukhari some two centuries later, and every sensory or inward detail here is reconstruction around that account.',
+  story: [
+    'The palm stalk is lighter than what it carries. Zayd ibn Thabit knows the feel: stripped and dried, the split face crowded with ink he set down himself when revelation came and Muhammad called for a scribe. He is in his early twenties, in the first year after Muhammad’s death, and this morning Abu Bakr has summoned him. Umar stands beside the caliph; Umar has done the arithmetic nobody wanted written down. At Yamama, against tribes that had renounced the community, the dead include many of the reciters who carry the revelation whole in memory. Every reciter buried is pages of an unwritten book gone into the ground. Gather it, Abu Bakr says. All of it. Zayd hears himself make the objection Abu Bakr had made when Umar first pressed the idea: how can we do what the Messenger of God never did? He will remember his answer all his life: had they ordered him to move a mountain, it could not have weighed more than this.',
+    'That scene is no eyewitness minute. It is the community’s memory of its own beginning, set down in al-Bukhari’s collection some two centuries later, the tradition’s central account of how the book came to be. Notice what the memory admits. It does not claim Muhammad left a book; it insists he did not. At his death in 632 CE the revelation existed as it had arrived across twenty-odd years: as recitation. Quran means exactly that, the reciting, an Arabic built for the ear, rhymed and rhythmic, made to be performed. Portions stood written on palm stalks like Zayd’s and on thin white stones, but the master copy was human memory, and the medium of publication was the voice at prayer.',
+    'The voice had first been raised two decades earlier, in a town with reasons to want it quiet, and the older men in the room had heard it there. Tradition remembers a cave on the hill of Hira outside Mecca, a year it counts as 610 CE, and a single command: Recite. History can say less, and stranger: in a sanctuary town of pilgrimage and modest regional trade, its market dealing in leather and hides rather than the caravans of legend, a man of the Quraysh named Muhammad began reciting verses that proclaimed one God, a judgment coming, and the worthlessness of the idols on which the town’s standing rested. A man’s safety there ran through kin: no king, no guard, only a clan obliged to avenge him. Muhammad’s own clan watched him make enemies of everyone; its willingness to shield him was the only wall he had, and it was thinning.',
+    'The move that made everything afterward possible was not a doctrine but a departure. In 622 CE Muhammad and his followers left their clans for Yathrib, an oasis to the north exhausted by feuds and willing to accept him as arbitrator. The tradition calls it the hijra, the emigration, and the word carries legal weight: to emigrate was to walk out of the only insurance that existed, toward people who owed you nothing but faith. The elders facing Zayd across the room had made that walk. Strangers by blood would have to hold one another. Nothing in Arabia said this could work.',
+    'The oasis was Zayd’s own town under its older name, and a document survives from those first months there, preserved inside a later biography and accepted by most scholars as genuine in core, partly because no forger would have written it this way. The agreement now called the Constitution of Medina binds the emigrants and the oasis clans, Jewish clans among them, into one community, an umma: they defend one another, and disputes that could kindle blood feud go upward, to God and to Muhammad. Then comes the clause the easy story forgets. Each clan goes on paying its own blood-money, as before. The new community did not abolish the tribe. It built one floor above it: an obligation outranking descent without pretending descent had stopped mattering, wide enough to hold people no ancestry connected.',
+    'Ten years later Muhammad was dead without an undisputed successor, and the design met its test at once. Across the peninsula, tribes that had sworn pacts with him reasoned the pacts died with the man, and withheld allegiance or alms; rival prophets raised followings of their own. The community answered that the obligation had never been to a man. The ridda wars of 632 to 633 CE were fought to make that answer stick, and the costliest field was Yamama, against the rival prophet Musaylima. The reciters who fell there are why an old caliph, a blunt adviser, and a reluctant young scribe stood in a room deciding to do what Muhammad never did.',
+    'So Zayd hunted. The account remembers the work as gathering, not composing: from the palm stalks, from the thin white stones, from the chests of men: a voice reciting, Zayd’s finger on the ink, writing checked against memory, memory against writing. The closing verses of the ninth sura he found written with one man only, Abu Khuzaima al-Ansari. What he laid before Abu Bakr, perhaps two years after the voice fell silent, was loose sheets, a stack of leaves a man could carry under one arm. Hold the image there, in the caliph’s keeping, while the community the recitation built marched out of Arabia: a book not yet a book, a state not yet a state, a voice two years silent. The tradition adds where the sheets went next: to Umar, and at Umar’s death not to the new caliph but to Hafsa, Umar’s daughter and Muhammad’s widow. Everything that follows hangs on how voice, book, and people held together.',
+  ],
+  significance: [
+    'Begin with how any of this is known, because the layers are the lesson. The earliest source is the Quran itself, and it is no biography: law, warning, consolation, argument, almost nothing of its messenger’s life. The connected stories, the cave, the collection, come from biographies and report collections set down far later: Ibn Ishaq died around 767 CE and survives mainly through Ibn Hisham’s edited recension; al-Bukhari, who preserved Zayd’s story, died in 870. Outside witnesses arrive early and thin: within a few years of 634 the Greek dialogue Doctrina Iacobi carries, at two removes, a report that a prophet has appeared among the Saracens. By 643, eleven years after the death, an official in Egypt dated a Greek and Arabic document to "year twenty-two" of an era he felt no need to name; by 691 to 692 the Dome of the Rock in Jerusalem carried Quranic language in gold mosaic. Muhammad’s inner life is not recoverable; this lesson will not pretend otherwise.',
+    'A scripture stored in memory and distributed by performance needs no temple, no archive, no capital. It cannot be burned or looted; it crosses a desert in anyone who has learned it; every believer who memorizes a sura is another copy. No cargo on this chart’s ideas thread travels lighter. An earlier lesson watched Judean exiles learn that portability from catastrophe; this faith had it from the first verse. But Yamama exposed the design’s one failure mode: the copies can all die on the same afternoon. The collection under Abu Bakr, if the tradition remembers rightly, was no triumph of writing over voice. It was insurance taken out on a sound.',
+    'The ridda wars proved the design’s other half. Tribes across the peninsula could believe their pacts had died with the man and be wrong: the obligation had been sworn to a community, and the community was still there to collect it. Allegiance in Arabia had always run through persons; the oath to the umma spliced the power thread onto something no single death could cut. Beneath it the clan’s duties to avenge and to pay kept running as the Constitution left them, which is why the armies that soon broke out of Arabia could still be mustered by tribal contingent: the new floor held because the old foundations bore it. Alms became law rather than virtue: zakat, a levy for the poor, pulled the wealth thread through the design from the start. And Mecca, which had expelled the movement, returned as its pilgrimage center, economically alive long after power moved elsewhere.',
+    'The honest debate is about when the text closed. Tradition says the caliph Uthman, ruling 644 to 656 CE, sent a standard consonantal text to the garrison cities and had rival copies destroyed; it candidly remembers those rivals, the codices of Ibn Mas’ud and Ubayy ibn Ka’b. In the 1970s John Wansbrough argued for fluidity until around 800; others placed the real fixing under Abd al-Malik near 700. Nicolai Sinai’s two-part study in 2014 set both against the epigraphic and literary record and concluded that the traditional dating, a skeleton closed by 650 or earlier, should be the default unless someone can convincingly place a Quranic passage in the late seventh century. Radiocarbon put the parchment of two Birmingham folios at 568 to 645 with 95.4 percent probability; the Sanaa palimpsest, the one early manuscript whose erased lower text genuinely diverges from the standard skeleton, sits on parchment of the same generation. Each result carries a caution, and Birmingham’s own team said the plainest aloud: radiocarbon dates the animal’s death, not the ink; François Déroche and Mustafa Shah keep the reservations alive. But the evidence runs one way. The consonantal skeleton stabilized within living memory of Muhammad, by ordinary means, collection, comparison, command, not by magic and not across centuries.',
+    'What came next belongs to a later lesson, but the scale belongs here: within a decade of 632 the community held Syria, Iraq, and Egypt; within eighty years its writ ran from Iberia to the Indus. The strange part is not the conquest, which poor confederacies had managed against rich neighbors before, but how slowly conversion followed it. Richard Bulliet’s quantitative study put Muslim majorities in Iran, Iraq, Syria, and Egypt only around the tenth century, and early rulers, taxing non-Muslim subjects, were in no hurry to shrink the tax base. Fred Donner argues, as a position rather than consensus, that the earliest movement was an ecumenical community of Believers whose boundary with other monotheists hardened only afterward. Even the calendar was an administrative afterthought: Umar instituted the hijra era around 638 CE, six years after the death it might more naturally have marked. Offered a birth, a revelation, or a victory as the origin of time, the community chose the emigration: the walking away.',
+    'That choice is the inheritance. Roughly a quarter of humanity now keeps a sacred calendar whose year one is the moment a group of people abandoned the protection of their own relatives for the company of strangers who shared nothing with them but a conviction. A polity founded on a recitation has argued about rule by arguing about text ever since, in courts, schools, and revolutions this atlas will keep meeting. And the book never replaced the voice it was built to protect: the Quran is still learned whole by heart, by millions, in countries Arabia never heard of, recitation still its native form, the parchment still the backup. Zayd, if the memory is faithful, thought he had been ordered to move a mountain. He had been ordered to build one: light enough to carry in the chest, and too heavy, ever since, for anyone to move.',
+  ],
+  threadsOut: [
+    {
+      to: 'caliphate-lightning',
+      why: 'The wars that killed the reciters did not stop at Arabia’s edge: ten years after Zayd’s task, the community was ruling provinces older than itself, and how so young a movement kept other people’s lands running is that lesson’s question.',
+    },
+    {
+      to: 'house-of-wisdom',
+      why: 'A scripture whose exact consonants matter creates a market for people who argue about texts for a living; two centuries on, Baghdad was paying translators, most of them Christians, to give Galen and Euclid the same scrutiny, and who was buying, and why, is that lesson’s fight.',
+    },
+    {
+      to: 'israel-one-god',
+      why: 'That lesson’s exiles survived by living inside other people’s administrations, praying in one language and contracting in another; a lifetime after the hijra the direction reversed, and Arabic became the language other people’s paperwork had to learn.',
+    },
+    {
+      to: 'jesus-to-constantine',
+      why: 'That lesson ends with Constantine laying the purple aside to be baptized, because even a Christian emperor wore two skins; here revelation arrived already arbitrating, taxing, and defending, and the absence of a separate church shaped the two faiths’ politics ever after.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'According to the tradition’s own account, what state was the Quran in at Muhammad’s death in 632 CE, and what did Zayd ibn Thabit actually do?',
+      answer:
+        'No book existed: portions stood written on palm stalks and thin white stones, and the whole lived in the memories of reciters. After the ridda-war fighting at Yamama killed many of those men, Abu Bakr commissioned Zayd to gather the recitation, checking writing against memory; one passage he found written with a single man, and the finished loose sheets passed to Abu Bakr, then Umar, then Umar’s daughter Hafsa. The account itself is a hadith recorded by al-Bukhari some two centuries later, the community’s memory of its own beginning rather than an eyewitness record.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why did a scripture that lived in memory and performance make the young community unusually durable, and what single weakness did Yamama expose in the design?',
+      answer:
+        'Because the storage medium was people and the distribution network was prayer: no temple to burn, no archive to capture, and every believer who memorized a passage became another copy, so the faith could cross deserts and survive its founder’s death. But copies who are people can die together, on one afternoon of battle, and Yamama proved it. The collection was not writing conquering orality; it was parchment bought as insurance for a voice.',
+    },
+    {
+      type: 'why',
+      prompt: 'Radiocarbon put the Birmingham folios’ parchment at 568 to 645 CE. Why did that not simply end the argument over when the Quran’s text closed?',
+      answer:
+        'Radiocarbon dates the death of the animal whose skin became the parchment, not the day ink touched it, so a scribe could in principle have written later on older sheets; Mustafa Shah has argued the Birmingham script looks more developed than the early range implies, and François Déroche has recorded broader reservations about radiocarbon results for Quranic parchment. The Sanaa palimpsest complicates things from the other side: its erased lower text preserves a genuinely non-standard textual tradition, proof that variance once existed. The case for early closure therefore rests on converging kinds of evidence, manuscripts, inscriptions, and the literary record weighed together as in Sinai’s 2014 study, not on any single object.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Israel’s portable monotheism was forged by losing temple, king, and land; this one acquired a polity within a decade of its founding. Compare what each community, under its opposite pressure, had to learn about text and power.',
+      answer:
+        'The Judean exiles had to read defeat as sovereignty, Babylon as their own god’s instrument, and so built an identity that could survive inside someone else’s administration: the Āl-Yāhūdu tablets sit in Babylonian clay, dated by foreign kings, with Yahwistic names inside the empire’s own legal forms. The Quranic movement faced the inverse problem, because scripture and rule grew up in the same decade, in the same rooms: two decades after the hijra, an administration was dating its own paperwork by it. One tradition became expert at interpreting power it did not hold; the other had to decide, permanently, how the text would govern the power it did.',
+      callbackTo: 'israel-one-god',
+    },
+    {
+      type: 'callback',
+      prompt: 'At the Kalahari waterhole, a shared name turned two bands of strangers into kin at a scale memory could still police. The Constitution of Medina attempted kinship far above that ceiling, yet kept blood-money clan by clan. What does the document keep, and why does what it keeps matter as much as what it invents?',
+      answer:
+        'It keeps the clan as the working unit of liability and vengeance, the machinery daily life actually ran on, and adds above it only what the new scale required: mutual defense and an arbiter for disputes no clan could settle. That is how cooperation grows past the waterhole’s ceiling in practice, not by abolishing the older, smaller fictions but by stacking a wider one on top of them, the way states would later sit atop clans and nations atop villages. The umma became the largest kinship fiction yet attempted precisely because it demanded so little dismantling: strangers could join the top layer without their cousins noticing any change at the bottom.',
+      callbackTo: 'tribe-of-strangers',
+    },
+  ],
+  deeper: [
+    {
+      title: 'University of Birmingham, The Birmingham Qur’an',
+      why: 'The custodian’s record of the Mingana folios, two Hijazi-script leaves of suras 18 to 20 whose radiocarbon range made the dating debate physical.',
+      url: 'https://www.birmingham.ac.uk/facilities/cadbury/birmingham-quran-mingana-collection/birmingham-quran',
+    },
+    {
+      title: 'Nicolai Sinai, When Did the Consonantal Skeleton of the Quran Reach Closure? Part I',
+      why: 'The study that turned the closure question from polemic into a weighing of evidence.',
+      url: 'https://ora.ox.ac.uk/objects/uuid:6cf00ad8-546a-4a66-aead-25980a9ea89d',
+    },
+    {
+      title: 'Sean W. Anthony, Muhammad and the Empires of Faith: The Making of the Prophet of Islam',
+      why: 'How a historian reads Muslim and non-Muslim sources together, from the Doctrina Iacobi to the sira, to reach the earliest recoverable Muhammad.',
+      url: 'https://www.ucpress.edu/books/muhammad-and-the-empires-of-faith',
+    },
+  ],
+});
