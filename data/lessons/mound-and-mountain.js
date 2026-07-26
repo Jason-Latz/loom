@@ -1,0 +1,97 @@
+LOOM.lesson({
+  id: 'mound-and-mountain',
+  readingMinutes: 10,
+  storyContext:
+    'Two American scenes, fifty years and half a hemisphere apart: Cahokia on the Mississippi floodplain around 1050 CE, and the Wari colony on Cerro Baúl in southern Peru around 1000 CE. Neither society wrote, so no participant can be named. The woman with the basket and the woman at the vats are composites, and every gesture, thought, and sequence here is reconstruction. Excavated fact: the borrow pit under Mound 51 and its stacked feast layers, the caffeine in the beakers, and at Cerro Baúl the milling rooms, the shawl pins, the last cups, and the fire.',
+  story: [
+    'The basket is light for the first ten trips and after that it is never light again. She fills it at the bottom of the pit, kneeling in cold floodplain clay, packing it with both arms until the wicker creaks, then stands into the tumpline and lets the strap take the weight across her forehead. Up the ramp of trodden earth, out into the flat white light of the plaza. Tip, turn, back down. Somewhere ahead of her a voice is keeping the count, and around 1050 CE that count is the only engine this floodplain has. Nothing here rolls. No animal leans into a harness. No coin pays her, and no clerk writes her name. There is a hole, there is a mountain, and there are people carrying one into the other.',
+    'The mountain is real, and it is growing. West of her the great mound climbs in stages toward thirty meters, and every handful of it has come up on somebody’s back. Around it a city has arrived with the speed of weather. When she was a girl this bottomland held scattered villages; now the ground is relaid on one plan, houses in ranks, the plazas squared, thousands living where hundreds lived. She is one of the newcomers, and so are many on the line: a great many of Cahokia’s people grew up drinking other water, and their teeth still say so.',
+    'Then the plaza is finished, and the plaza is used. Fires go in along its edge. Deer come down from the uplands in numbers no household hunts, and birds with them, ducks and swans, and she has never in her life seen a swan cooked. Pots arrive full and are set down steaming, more than a village owns, some in shapes she does not recognize. Berries and squash, maygrass and knotweed and goosefoot boiled thick, tobacco seed going into the fires. She is carrying again, and what she carries now is the aftermath: bone, ash, sherds, the greasy wreckage of a crowd being fed.',
+    'Near the mound a cup is going round that has nothing to do with hunger. It is a beaker, straight-walled, made for exactly this. The leaves steaming in it come from a holly of the southern coastal plain, five hundred kilometers away and more, carried north hand to hand, brewed black and bitter, and loaded with caffeine. Chemists will lift the traces out of the clay a thousand years later. The cup is the pay: fed at the mountain, handed a drink that exists nowhere in her own country, counted among the people who were here. When the call goes out next year, she will come.',
+    'At the end of it the leavings do not drift to the edge of town the way a village’s rubbish does. They go into the borrow pit at once, a whole afternoon of city tipped in and sealed over, and then it happens again, and again, across half a century, until the hole holds a stack of buried feasts pressed flat one on the next. She would not call it a record. It is the only one this place will ever keep. Cahokia says what it has to say in earth, in food, and in the height of a cedar post against the sky, and all three stay legible only as long as someone remembers how to read them.',
+    'Six and a half thousand kilometers to the south and east, and fifty years earlier, another woman is brewing and does not know it is the last time. Her rooms run in sequence: one for milling, one for boiling, one where a row of vats works a batch of something near eighteen hundred liters. Sprouted maize, or molle, the peppercorn fruit of the pepper tree, or both; the rooms do not say which. The pins fastening her shawl are the insignia of a woman of rank: this is not kitchen work. Her floor is a mountain, a mesa six hundred meters above the Torata river in southern Peru, a Wari colony held for centuries within sight of Tiwanaku’s settlements, two highland powers sharing one valley with no excavated sign of a war over it. Here beer is not refreshment. Beer is how obligation is made, and a colony this far from home needs a great deal of it.',
+    'The last batch goes out to the court in pitchers. As many as twenty-eight lords are waiting, each with his own painted kero, and each, when he has drunk, throws the cup into the fire. Then they fire the roof, and the burning leaves the rooms where they stood, pitchers and all: what the colony meant to close is the part it kept. When the embers cool, six necklaces of shell and stone go down onto the ashes. The enclave walks down off the mesa and does not come back.',
+    'Two crowds, two vessels, a hole and a fire: in the north a feast buried to open a city, in the south a feast burned to close a colony. Neither world wrote a word about it. Both expected to be understood.',
+  ],
+  significance: [
+    'Greater Cahokia was three connected precincts straddling the Mississippi at what is now St. Louis, some two hundred earthen pyramids among them, sixteen square kilometers in the central district alone, and nearly every number attached to it is an argument. Archaeologists call what happened around 1050 CE the big bang: the countryside emptied, the ground was relaid on one plan, and the population multiplied inside a generation. How many people is an estimate, not a measurement: the figures are house floors converted into dwelling space and extrapolated outward. One reconstruction gives 1,400 to 2,800 before 1050 and 10,200 to 15,300 in the dense central areas after it; the Illinois State Archaeological Survey puts the core near 20,000 and the region above 50,000; published estimates run from about 6,000 to 40,000, depending on where the boundary is drawn and whose house counts are used. That spread is not sloppiness. It is what a city looks like measured by its floors instead of its rolls.',
+    'A city was raised here out of one instrument, and the instrument was assembly. Monks Mound went up in stages to about thirty meters over a base of some six hectares, about 622,000 cubic meters of earth, every load carried. Set against the Great Pyramid at Giza the footprint is larger and the volume about a quarter: baskets of floodplain clay against a quarry of limestone, material rather than ambition. Power at Cahokia was the capacity to summon a crowd and feed it; wealth was distance converted into hospitality, marine shell from the Gulf, holly from the southern pine country, native copper hammered and annealed later at the Mound 34 workshop. West of the mound ran rings of red cedar posts, sighted on solstice and equinox, because a calendar you can stand inside is how a scattered countryside is told when to come.',
+    'The Andean half of this lesson is not Cahokia’s contemporary, and pretending otherwise throws away its best fact. Wari, out of the Ayacucho basin, and Tiwanaku, on the Titicaca altiplano, both held sway roughly 600 to 1000 CE. A 2023 Bayesian chronology by Erik Marsh and colleagues puts the end of permanent residence at Tiwanaku near 1010, the emptying done inside twenty years; Cerro Baúl burned around 1000. So the two halves very nearly miss: Tiwanaku empties and Cahokia fills inside the same half century, at opposite ends of a hemisphere, with nothing running between them. What outlasted the states was a toolkit they had inherited and welded into statecraft rather than invented: terraces, labor owed and repaid, knotted cord for the accounts. The Inka picked the whole thing up after about 1438 and ran a continent on it.',
+    'The sharpest quarrel is over what ended Tiwanaku. Alan Kolata and collaborators read a drought recorded in the Quelccaya ice core as the end of raised-field farming around Lake Titicaca, and so of the state those fields fed. Clark Erickson answered in Antiquity in 1999, under the title Neo-environmental determinism and agrarian ‘collapse’ in Andean prehistory: the fields had been abandoned and revived repeatedly, farmers had options, and climate was being asked to do work that political history ought to do. The 2023 chronology adds the hardest fact yet: the violence begins more than a century before the rain fails, tombs giving way around 910 CE to violent deaths, ritualized killings running on to about 1020. That is not a verdict; ice cores are real, and a chronology can move again. But where a society left no text, the weather is the easiest culprit to convict, because the weather cannot object.',
+    'Cahokia has had to give up two certainties of its own. For decades the beaded burial in Mound 72 was read as a male warrior chief laid on a falcon of shell beads, retainers around him, and a whole popular picture of Cahokian kingship stood on it. In 2016 Thomas Emerson and colleagues reanalyzed the remains in American Antiquity: male and female pairs, numerous females, at least one child, a deposit better read through creation, renewal, and fertility than through any paramount lord. The falcon-borne chief had been resting on a misread sex. The second certainty was ecological, the story that Cahokia felled its uplands, silted its creeks, and drowned itself. Caitlin Rankin, Casey Barrier, and Timothy Horsley tested it against the site’s own stratigraphy in 2021: stable ground surfaces, no human-caused erosion, no flood deposits during the occupation. Neither story came out of the ground. Both were carried in.',
+    'The last story carried in is the one about vanishing. Cahokia thinned through the thirteenth century: a palisade went up around the central precinct near 1175, rebuilt three times, each ring enclosing less, and by about 1350 the place stood effectively empty. People moved; a people did not end. The Osage Nation began buying back Sugarloaf Mound, the last mound standing in St. Louis, in 2008, one parcel at a time, completed the purchase in 2025, and works with the archaeologists at Cahokia today; other Dhegihan Siouan nations, and the Muscogee, Choctaw, Chickasaw, and Cherokee, hold connections to the region as tradition and claim rather than settled genealogy. The woman with the tumpline dug a hole to raise a mountain. The mountain is what gets photographed. The hole is what talks. In the Andes what talks is the cord: roughly fourteen hundred khipus survive, the earliest unambiguous ones Middle Horizon and probably Wari, wrapped in colored thread nobody has decoded; most later ones count in base ten, and whether any tell a story is unresolved. A pit packed with swan bones and a knotted cord are both a polity keeping its accounts, and neither set of books is closed.',
+  ],
+  threadsOut: [
+    {
+      to: 'inka-threads',
+      why: 'The toolkit that walked down off Cerro Baúl, terraces, roads, labor owed, knotted cord, waited four centuries before the Inka reassembled it into the largest state the Americas ever built.',
+    },
+    {
+      to: 'chaco-roads',
+      why: 'A high desert canyon and a river floodplain solved one problem in the same centuries: how to make a place worth walking to, and how to make the walk feel obligatory.',
+    },
+    {
+      to: 'silent-stelae',
+      why: 'The Maya announced their own ending in dated stone, while Cahokia’s must be read off a palisade ring that encloses less with every rebuilding: two dispersals, one written down and one dug up.',
+    },
+    {
+      to: 'poverty-point',
+      why: 'The tumpline and the basket had already raised earthworks in this river country two thousand years earlier, which is why Cahokia reads as the climax of a local craft rather than a sudden idea.',
+    },
+    {
+      to: 'chavin-oracle',
+      why: 'The cup at Chavín and the kero in the fire at Cerro Baúl are one tool separated by a thousand years and more: feasting at a sacred center is the oldest instrument of rule this lesson watches at work.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What was actually in the borrow pit under Mound 51, and why does a rubbish pit count as evidence of a city?',
+      answer:
+        'Layers dumped in large single episodes in the decades after about 1050 CE: deer and other game, waterfowl including swans, cooking pots in the thousands, craft debris, tobacco seed, prestige goods, and straight-walled beakers of the kind whose residues at Cahokia carry caffeine from a southern holly. The plant remains are dominated by locally domesticated seed crops, with maize surprisingly scarce in the deposit. Rubbish that accumulates slowly means households living their lives. Rubbish that goes in all at once means an event. The pit is the physical residue of a crowd summoned, fed, and sent home.',
+    },
+    {
+      type: 'why',
+      prompt: 'Cahokia had no coin, no script, no iron, and no draft animal. What work did the feast do that those instruments do elsewhere?',
+      answer:
+        'It recruited and repaid in a single motion. A city with that many newcomers in it had to be gathered rather than simply commanded, and hospitality was the technology for gathering: goods carried hundreds of kilometers were converted into an experience only this place could supply, and the crowd went home owing and owed, with the mound and the cedar post circles fixing where and when to come back. The weakness sits inside the strength, because a feast cannot be stored, audited, or inherited. That is exactly why the pit holds layer after layer of them.',
+    },
+    {
+      type: 'why',
+      prompt: 'For decades the standard explanation for Tiwanaku’s end was drought. What is the argument against it, and what would have to be true for the drought story to work?',
+      answer:
+        'Alan Kolata tied the state to raised-field farming and read the Quelccaya ice core as the killing blow. Clark Erickson answered in 1999 that raised fields had been abandoned and revived repeatedly, that farmers had alternatives, and that climate was doing the explanatory work politics should do. A 2023 Bayesian chronology then found ritualized violence beginning more than a century before the documented drying, with permanent residence ending near 1010 CE, so the drought story now needs the timing to move and needs those fields to have had no substitutes. Neither side is finished, and the question under the quarrel is whether weather or people end worlds.',
+    },
+    {
+      type: 'callback',
+      prompt: 'At San Lorenzo, two hundred people hauled a stone head with not one animal in harness, and that lesson insisted maize was not the whole meal. Cahokia repeats both facts a hemisphere north. Do the arithmetic from domestication to the big bang, and say why the crop’s northern city came so late and then so fast.',
+      answer:
+        'Maize was domesticated from Balsas teosinte about nine thousand years ago, and isotope work shows it became a real staple in the American Bottom only around 900 CE, a century and a half before the big bang. So roughly eight thousand years separate the plant from the city it helped feed, and the lateness belongs to the crop, which had to be selected for a short northern season and fitted into a system already running on knotweed, goosefoot, maygrass, and squash. The speed belongs to politics rather than agriculture: what changed after 1050 was not the harvest but the decision to gather everyone around it. The rope at San Lorenzo and the tumpline at Cahokia are one fact in two places: with no animal in harness, moving stone or earth meant assembling bodies and feeding them.',
+      callbackTo: 'maize-and-the-americas',
+    },
+    {
+      type: 'callback',
+      prompt: 'Maya stone speaks in names and dates, Teotihuacan’s murals rule namelessly, and Cahokia leaves only earth, post molds, and a pit full of feast. Set the three archives side by side: what does each let power look like, and what does each hide?',
+      answer:
+        'Maya monuments are royal speech, so power appears as named individuals with accessions, wars, and days, while everyone else, and the truth of the claims, stays out of frame. Teotihuacan preserved form without portraits, so power appears as an order with no officeholders, and the constitution behind the grid stays invisible. Cahokia kept no notation at all, so power appears only as capacity, the demonstrated ability to summon thousands and feed them. Its archive is the only one of the three that can date an act of rule to a single afternoon, because the pit went in all at once, and the only one that cannot name a single person who ordered it: capacity is measurable there, and identity is not.',
+      callbackTo: 'teotihuacan-maya',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Timothy Pauketat and colleagues, The Residues of Feasting and Public Ritual at Early Cahokia (American Antiquity, 2002)',
+      why: 'The excavation report behind the opening scene, reading a filled borrow pit as a sequence of single afternoons rather than a slow heap of garbage.',
+      url: 'https://www.cambridge.org/core/journals/american-antiquity/article/residues-of-feasting-and-public-ritual-at-early-cahokia/769608A3EC148FA2C68DD4135C3C4CEC',
+    },
+    {
+      title: 'Michael Moseley and colleagues, Burning Down the Brewery (PNAS, 2005)',
+      why: 'Open access, and the closest thing the Andes offer to a filmed ending: the milling rooms, the shawl pins, the last cups, and the fire, dug out layer by layer.',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC1297684/',
+    },
+    {
+      title: 'Illinois State Archaeological Survey, Cahokia',
+      why: 'The custodians of the ground, with their own working figures for precincts, mounds, and population, and a live picture of what is still being dug.',
+      url: 'https://www.isas.illinois.edu/research_2/cahokia',
+    },
+  ],
+});
