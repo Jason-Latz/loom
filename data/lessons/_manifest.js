@@ -56,4 +56,5 @@ LOOM.lessonFiles = [
   'recitation-in-the-desert',
   'gupta-zero',
   'caliphate-lightning',
+  'tang-golden-network',
 ];
