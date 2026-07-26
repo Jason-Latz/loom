@@ -59,4 +59,5 @@ LOOM.lessonFiles = [
   'tang-golden-network',
   'europe-reboots',
   'house-of-wisdom',
+  'northmen-networks',
 ];
