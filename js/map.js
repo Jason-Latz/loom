@@ -328,6 +328,11 @@ LOOM.map = (function () {
     if (!w || !h) return 0.5625;
     return h / w;
   }
+  // Invisible tap targets must never shrink below a fingertip on screen, so
+  // the .hit radius grows in svg units as the view zooms out (via --hit-r,
+  // consumed as a CSS geometry property; the r=18 attribute stays the floor).
+  var HIT_SCREEN_PX = window.matchMedia && window.matchMedia('(pointer: coarse)').matches ? 21 : 12;
+  var lastHitR = 0;
   function apply() {
     // repair any non-finite value before it can reach the viewBox attribute
     if (!isFinite(vb.w) || vb.w <= 0) vb.w = W;
@@ -340,6 +345,11 @@ LOOM.map = (function () {
     vb.y = Math.max(minY, Math.min(maxY, vb.y));
     svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
     svg.classList.toggle('far', vb.w > 2000);
+    var hitR = Math.max(18, HIT_SCREEN_PX * vb.w / (wrap.clientWidth || 1));
+    if (Math.abs(hitR - lastHitR) > 1) {
+      lastHitR = hitR;
+      svg.style.setProperty('--hit-r', hitR.toFixed(1) + 'px');
+    }
     if (api.onEraChange) api.onEraChange(currentEra());
   }
   function currentEra() {

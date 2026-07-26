@@ -92,7 +92,7 @@ button { font-family: inherit; color: inherit; }
 .bar-title h1 { font-size: 24px; letter-spacing: 0.42em; font-weight: 600; margin-right: -0.42em; }
 .bar-sub { font-style: italic; color: var(--ink-soft); font-size: 13.5px; }
 
-.bar-search { position: relative; flex: 1; max-width: 430px; }
+.bar-search { position: relative; flex: 1; max-width: 430px; min-width: 150px; }
 #search {
   width: 100%; font-family: inherit; font-size: 14px; color: var(--ink);
   background: transparent; border: 1px solid var(--line);
@@ -102,6 +102,7 @@ button { font-family: inherit; color: inherit; }
 #search:focus { border-color: var(--gilt); box-shadow: 0 0 0 1px var(--gilt); }
 #search-results {
   position: absolute; top: calc(100% + 6px); left: 0; right: 0; z-index: 60;
+  min-width: min(280px, calc(100vw - 24px));
   background: var(--card); border: 1px solid var(--line); border-radius: 2px;
   box-shadow: var(--shadow); max-height: 330px; overflow: auto;
 }
@@ -198,7 +199,10 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
   paint-order: stroke; stroke: var(--parchment); stroke-width: 3px; stroke-linejoin: round;
   pointer-events: none;
 }
-.node .hit { fill: transparent; }
+/* r is driven by --hit-r (set in js/map.js on zoom) so the invisible tap
+   target never shrinks below a fingertip on screen; the r=18 attribute is the
+   floor for browsers without SVG geometry-property support */
+.node .hit { fill: transparent; r: var(--hit-r, 18px); }
 
 /* zoom tiers: hide labels when far out */
 #chart.far .label { display: none; }
@@ -241,7 +245,7 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
   background: rgba(44, 35, 24, 0.45); backdrop-filter: blur(2px); padding: 20px;
 }
 .paths-card {
-  position: relative; max-width: 620px; width: 100%; max-height: 86vh; overflow-y: auto;
+  position: relative; max-width: 620px; width: 100%; max-height: 86vh; max-height: 86dvh; overflow-y: auto;
   background: var(--card); padding: 32px 36px 30px;
   border: 1px solid var(--line); outline: 1px solid var(--line); outline-offset: 4px;
   box-shadow: var(--shadow);
@@ -464,9 +468,17 @@ body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no 
 .intro-actions { display: flex; gap: 10px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
 
 /* ---------------- responsive ---------------- */
+@media (max-width: 1360px) {
+  /* the longest header text; dropping it first keeps the search box usable
+     instead of letting flex crush it to its 31px minimum */
+  .bar-progress { display: none; }
+}
+
 @media (max-width: 900px) {
   .bar-sub, #cartouche, #compass { display: none; }
-  #dossier { left: 12px; width: auto; top: auto; height: 62vh; }
+  #dossier { left: 12px; width: auto; top: auto; height: 62vh; height: 62dvh; }
+  /* 16px stops iOS Safari from zooming the page into a focused input */
+  #search { font-size: 16px; }
   #bar {
     display: grid; grid-template-columns: auto minmax(0, 1fr); gap: 8px 10px;
     padding: 8px 10px;
@@ -483,19 +495,23 @@ body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no 
 
 @media (max-width: 560px) {
   .bar-title h1 { font-size: 20px; }
-  .bar-progress { display: none; }
   #thread-chips { gap: 5px; }
   .chip { font-size: 0; gap: 0; padding: 5px; }
   .chip .dot { width: 10px; height: 10px; }
   .btn { padding: 6px 10px; }
-  #dossier { left: 8px; right: 8px; bottom: 8px; height: 68vh; padding: 20px 18px 24px; }
+  #dossier {
+    left: 8px; right: 8px; bottom: max(8px, env(safe-area-inset-bottom));
+    height: 68vh; height: 68dvh; padding: 20px 18px 24px;
+  }
   body.path-active #dossier {
     bottom: var(--path-bar-clearance, 88px);
     height: calc(100vh - var(--path-bar-clearance, 88px) - var(--mobile-header-height, 94px) - 8px);
+    height: calc(100dvh - var(--path-bar-clearance, 88px) - var(--mobile-header-height, 94px) - 8px);
     max-height: 68vh;
+    max-height: 68dvh;
   }
   .paths-card { padding: 28px 20px 24px; }
-  #path-bar { left: 8px; right: 8px; bottom: 8px; transform: none; gap: 7px; }
+  #path-bar { left: 8px; right: 8px; bottom: max(8px, env(safe-area-inset-bottom)); transform: none; gap: 7px; }
   .path-mid { min-width: 0; flex: 1; }
   .path-quit { padding: 5px 7px; }
   .intro-card { padding: 28px 22px; }
@@ -516,4 +532,45 @@ body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no 
   .btn { padding: 5px 7px; }
   .btn-gilt { font-size: 12px; letter-spacing: 0.07em; }
   .btn-ghost { padding: 5px 7px; }
+}
+
+/* ---------------- touch ergonomics ---------------- */
+/* Sized for fingers, not cursors; fine-pointer layouts are untouched. */
+@media (pointer: coarse) {
+  .rail-era { padding: 8px 10px; }
+  #zoom-tools { gap: 8px; }
+  #zoom-tools .btn { width: 42px; height: 42px; font-size: 19px; }
+  .chip { padding: 7px; }
+  .sr-item { padding: 12px 14px; }
+}
+
+html, body { overscroll-behavior: none; }
+button, .chip, .rail-era, .sr-item {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+/* notched phones: keep the fixed chrome out of the sensor and home areas */
+@supports (padding: max(0px)) {
+  #bar {
+    padding-left: max(18px, env(safe-area-inset-left));
+    padding-right: max(18px, env(safe-area-inset-right));
+  }
+  #zoom-tools {
+    right: max(12px, env(safe-area-inset-right));
+    bottom: max(16px, env(safe-area-inset-bottom));
+  }
+  #era-rail { right: max(12px, env(safe-area-inset-right)); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  /* iteration-count 1 matters: infinite animations at near-zero duration
+     strobe instead of stopping (the .next halo breathes forever) */
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  /* the wax seal at zero opacity would still swallow taps for 1.5s */
+  #seal { display: none; }
 }
