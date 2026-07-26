@@ -58,4 +58,5 @@ LOOM.lessonFiles = [
   'caliphate-lightning',
   'tang-golden-network',
   'europe-reboots',
+  'house-of-wisdom',
 ];
