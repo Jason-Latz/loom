@@ -63,4 +63,5 @@ LOOM.lessonFiles = [
   'golden-sahara',
   'monsoon-marketplace',
   'song-economic-miracle',
+  'heian-and-genji',
 ];
