@@ -54,4 +54,5 @@ LOOM.lessonFiles = [
 
   // Era V: The Believing World
   'recitation-in-the-desert',
+  'gupta-zero',
 ];
