@@ -60,4 +60,5 @@ LOOM.lessonFiles = [
   'europe-reboots',
   'house-of-wisdom',
   'northmen-networks',
+  'golden-sahara',
 ];
