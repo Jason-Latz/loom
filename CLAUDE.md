@@ -28,7 +28,7 @@ lessons into it.
 - `data/graph-core.js` — LOOM registry: threads, regions (map meridians), era/node/lesson tables.
 - `data/worldmap.js` — Natural Earth 110m land as one SVG path (public domain), equirectangular 2000x1000. Rendered as the map bands that bookend the chart.
 - `data/eras/01..10-*.js` — the graph. Nodes carry id/title/date/sort/region/x/threads/hook/summary/edges. Node array order per era = reading order = main sequence. Edges point FORWARD in that sequence only.
-- `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js loads them, then starts the app).
+- `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js starts the app, then streams them in; nodes light up as files register).
 - `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters, path highlighting, and the two world-map bands.
 - `js/reader.js` — dossier panel + lesson reading room + questions UI.
 - `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from a feature of the present). Always a subset of the real graph.
@@ -111,6 +111,16 @@ lessons into it.
 
 ## Change log
 
+- **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed. Node
+  tap targets now hold a fingertip-sized screen radius at any zoom (--hit-r
+  geometry property driven from map.js apply()); boot streams lesson files in
+  after the app starts so the chart is interactive immediately, with the open
+  dossier re-rendered as files register; fixed the header flex squeeze that
+  crushed search to 31px between 900 and 1400 px (the "narrow dropdown" bug);
+  iOS fixes (16px search font against focus zoom, dvh bottom sheets,
+  viewport-fit=cover with safe-area insets); coarse-pointer size bumps for
+  rail, chips, zoom, and results; theme-color synced to lamplight; touch-aware
+  intro copy; reduced-motion support without strobing the next-node halo.
 - **2026-07-26:** Era V released and the site moved to loomhistory.com. All
   thirteen core lessons of The Believing World forged in one pipeline: Opus
   research briefs with fetched-and-verified sources, graph corrections landed
