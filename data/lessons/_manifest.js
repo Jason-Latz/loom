@@ -61,4 +61,5 @@ LOOM.lessonFiles = [
   'house-of-wisdom',
   'northmen-networks',
   'golden-sahara',
+  'monsoon-marketplace',
 ];
