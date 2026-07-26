@@ -14,8 +14,10 @@ lessons into it.
 - Gate (must pass before any commit): `node scripts/check.mjs`
 - Single lesson check: `node scripts/check.mjs data/lessons/<id>.js`
 - Deploy: `vercel --prod --yes` (project `loom`, linked; static, no build step).
-  Live at https://loom-gray.vercel.app. There is no git remote, so deploys are
-  manual: **forging a lesson does not publish it until you redeploy.**
+  Live at https://loomhistory.com (custom domain, Vercel-managed DNS, added
+  2026-07-26) and https://loom-gray.vercel.app. There is no git remote, so
+  deploys are manual: **forging a lesson does not publish it until you
+  redeploy.**
   `.vercelignore` keeps `.claude`, `.agents`, scripts, docs, `CLAUDE.md`, and
   `AGENTS.md` out of the published site.
 
@@ -83,27 +85,41 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-07-21, after the Era IV release)
+## State (2026-07-26, after the Era V release)
 
 - Graph is at its final size: 365 nodes (one per day of a year), 800 wires, 10
   eras, and a zero-warning gate. Codex adversarially audited and corrected all
   236 expansion seeds; rationales and the release audit are in
   docs/graph-expansion-365.md.
-- Eras I through IV are fully written: 43 lessons, all source-verified and
-  adversarially reviewed. Era IV adds nine Fable lessons, 45 questions, and 27
-  clickable sources; the completion report is docs/era-iv-completion-report.md.
-- check.mjs now derives each lesson's required callback count from earlier
+- Eras I through V are fully written: 56 lessons, all source-verified and
+  adversarially reviewed. Era V adds thirteen Fable lessons, 65 questions, and
+  39 verified clickable sources; the completion report is
+  docs/era-v-completion-report.md, the research briefs are docs/era-v-briefs/,
+  and the binding handoff is docs/fable-era-v-handoff.md.
+- check.mjs derives each lesson's required callback count from earlier
   WRITTEN lessons (manifest-aware), not raw node index, since unwritten seeds
-  now precede the first written lessons.
-- Paths, both world-map bands, mobile reading layouts, and real pinch zoom are
-  built. Production is https://loom-gray.vercel.app at deployment
-  dpl_8zYZaZA2Y1GyLy8ENW4RSJ4ccihz. Local and live browser QA passed at desktop,
-  390 px, and 320 px with no console errors, invalid SVG values, or overflow.
-- Next: prepare the Era V research and architecture handoff for Fable, then
-  review and release each finished lesson through the same adversarial gate.
+  precede the first written lessons.
+- Production is https://loomhistory.com (custom domain attached 2026-07-26)
+  and https://loom-gray.vercel.app, at deployment
+  dpl_3DGF1SSPv7njCcSpy1mqN7gKYKM9. Local and live browser QA passed with no
+  console errors; reader, dossier, callbacks, and sources verified on both.
+- Known cosmetic issue: the header search dropdown collapses to a narrow
+  strip (pre-existing app CSS, spun off as its own task).
+- Next: prepare the Era VI research and architecture handoff (The Woven
+  World, 15 core lessons), then review and release through the same
+  adversarial gate.
 
 ## Change log
 
+- **2026-07-26:** Era V released and the site moved to loomhistory.com. All
+  thirteen core lessons of The Believing World forged in one pipeline: Opus
+  research briefs with fetched-and-verified sources, graph corrections landed
+  first (salt/gold flow inversion, Talas papermaker legend, Ibn al-Haytham's
+  Cairo, Wari/Tiwanaku vs Cahokia chronology), Fable drafts plus dedicated
+  literary revision, two independent Opus reviews per lesson (37 blockers,
+  107 majors, 144 minors raised), Fable fixes re-verified finding by finding,
+  thirteen gate-green commits, browser QA local and live, production deploy
+  with the loomhistory.com domain attached.
 - **2026-07-21:** Adversarially audited all 236 expansion seeds, correcting
   more than one hundred nodes across all ten eras and bringing the graph to 800
   forward wires. Independently reviewed Fable's nine Era IV lessons, integrated
