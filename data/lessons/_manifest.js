@@ -57,4 +57,5 @@ LOOM.lessonFiles = [
   'gupta-zero',
   'caliphate-lightning',
   'tang-golden-network',
+  'europe-reboots',
 ];
