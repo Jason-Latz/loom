@@ -2,7 +2,11 @@
 // js/boot.js starts the app, then streams each data/lessons/<id>.js in.
 LOOM.lessonFiles = [
   // Era I: The Long Dawn
+  'first-of-our-kind',
+  'the-tended-fire',
+  'ochre-for-the-dead',
   'spark-of-mind',
+  'ash-across-asia',
   'great-dispersal',
   'firelight-economy',
   'tribe-of-strangers',
