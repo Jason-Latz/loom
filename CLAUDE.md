@@ -48,6 +48,9 @@ lessons into it.
 - Jason prefers Fable for Loom lesson prose and substantive literary revision.
   Do not assign those passes to Codex or Sol unless Jason explicitly changes
   that choice; prepare a precise research and architecture handoff for Fable.
+- Fable owns every generative forge stage (research, draft, revision, fixes);
+  Opus owns only the adversarial stages (factual review, craft review, verify),
+  so the critic is never the same model as the creator.
 - Trust Fable to research and correct lesson facts when needed. Treat Codex
   briefs as scaffolding rather than a cage, then adversarially review Fable's
   finished work before release.
@@ -79,6 +82,11 @@ lessons into it.
   Every batch of forged lessons needs an adversarial reviewer agent too; that
   pass has caught a superseded dating and several confidently-wrong claims that
   the gate passed green.
+- **Subagents do NOT inherit Fable.** Omitting `model` on a Workflow `agent()`
+  call resolves to Opus, not the Fable session model; only an explicit
+  `model: 'fable'` gives Fable (verified by probe, 2026-07-28). Pin it on every
+  prose stage, then confirm with `cat <transcriptDir>/agent-*.meta.json` before
+  letting a long forge run proceed.
 - **Browser QA: the preview tab reports `visibilityState: hidden` and never
   fires requestAnimationFrame**, so pan/zoom animations appear to do nothing
   when driven from javascript_tool. Take a screenshot to wake the tab, or assert
