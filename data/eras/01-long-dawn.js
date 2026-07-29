@@ -33,7 +33,7 @@ LOOM.node([
     region: 'swasia',
     x: 55,
     threads: ['craft'],
-    hook: 'A hearth at Qesem Cave holds ash returned to the same spot for millennia. Someone keeps the fire, and the fire remakes food, night, and the group gathered around it.',
+    hook: 'A hearth at Qesem Cave holds ash in stacked layers, the same four square meters of floor burned over and over. Someone keeps the fire, and the fire remakes food, night, and the group gathered around it.',
     summary:
       'Habitual control of fire is documented by roughly 300,000 years ago at sites such as Qesem in the Levant, though tamed flame is older and its beginnings are disputed. Cooking makes many foods safer and easier to digest. One influential, contested hypothesis links much earlier cooking to human bodily evolution. More securely, the hearth became a social center, stretching activity past sundown and gathering people to its light.',
     edges: [
@@ -51,9 +51,9 @@ LOOM.node([
     region: 'swasia',
     x: 60,
     threads: ['ideas'],
-    hook: 'At Qafzeh an adolescent was buried with fallow deer antlers laid across the chest. In the same burial layers, ochre and ochre-stained tools also survive. Someone decided the dead should be arranged, not abandoned.',
+    hook: 'At Qafzeh an adolescent was buried with red deer antlers laid across the chest. In the same burial layers, ochre and ochre-stained tools also survive. Someone decided the dead should be arranged, not abandoned.',
     summary:
-      'Early modern humans buried their dead at Qafzeh and Skhul in the Levant more than 90,000 years ago, sometimes with ochre, animal remains, or pierced shells. Neanderthals also treated some bodies with care, so the impulse was not ours alone. Deliberate burial reveals shared attention to death and perhaps ritual, but archaeology cannot recover the mourners’ exact beliefs or prove an afterlife doctrine.',
+      'Early modern humans buried their dead at Qafzeh and Skhul in the Levant more than 90,000 years ago, sometimes with animal remains, in layers that also held worked ochre and sea shells carried in from the coast. Neanderthals also treated some bodies with care, so the impulse was not ours alone. Deliberate burial reveals shared attention to death and perhaps ritual, but archaeology cannot recover the mourners’ exact beliefs or prove an afterlife doctrine.',
     edges: [
       { to: 'tribe-of-strangers', type: 'echoes', why: 'Furnished burial preserves a shared mortuary practice that could bind survivors, without revealing a shared doctrine about the unseen.' },
       { to: 'paint-in-the-dark', type: 'echoes', why: 'A painted cave and a furnished grave give physical bodies to the same early convictions about meaning and death.' },
@@ -210,9 +210,9 @@ LOOM.node([
     region: 'europe',
     x: 26,
     threads: ['ideas', 'craft'],
-    hook: 'In a cave in the Swabian hills, someone drills five holes along a hollow vulture bone and blows. A tune carries through caves where others carve mammoth ivory into human and animal forms.',
+    hook: 'In a cave in the Swabian hills, someone cuts five holes along a hollow vulture bone and blows. A tune carries through caves where others carve mammoth ivory into human and animal forms.',
     summary:
-      'The bone and ivory flutes from Hohle Fels and neighboring caves, about 42,000 years old, are among the oldest instruments known. Cut to a playable scale, they show music was already an art, not the accident of a whistling bone. Sound synchronizes feeling and knits a group faster than speech can, which is why every human society sings. The oldest surviving art was not only painted; some of it was heard.',
+      'The bone and ivory flutes from Hohle Fels and neighboring caves, made around 40,000 years ago, are among the oldest instruments known. Fine lines incised beside the holes show the spacing was measured before cutting, so music was already an art, not the accident of a whistling bone. Sound synchronizes feeling and knits a group faster than speech can, which is why every human society sings. The oldest surviving art was not only painted; some of it was heard.',
     edges: [
       { to: 'paint-in-the-dark', type: 'echoes', why: 'Flutes and figurative carvings occur in the same Swabian cave world, meaning made audible beside meaning made portable.' },
       { to: 'gods-of-the-city', type: 'transforms', why: 'Rhythm and song that once synchronized a small band would later fill temples and orchestrate collective worship.' },
@@ -244,7 +244,7 @@ LOOM.node([
     region: 'world',
     x: 49,
     threads: ['craft'],
-    hook: 'A sliver of bone is ground to a point and pierced with an eye. Threaded with sinew, it turns loose hides into a fitted, layered skin a body can wear into the cold.',
+    hook: 'A sliver of bone is ground to a point and pierced with an eye. Threaded with sinew, it stitches finer seams than an awl can, building the layered skin a body needs to wear into the cold.',
     summary:
       'The eyed needle appears in Siberia and elsewhere by around 40,000 years ago, and genetics of the clothing louse hint that garments are far older still. Fitted, layered clothing was survival gear: it let people live where bare skin freezes, opening the far north and eventually the route into the Americas. Much of the technology that mattered most in the Ice Age was soft, sewn, and rarely survives to be dug up.',
     edges: [
@@ -280,7 +280,7 @@ LOOM.node([
     region: 'world',
     x: 47,
     threads: ['craft', 'wealth'],
-    hook: 'A wolf that tolerates the edge of the firelight gets scraps; its bolder pups get more. Generations later, an animal is buried in the same grave as the people it hunted with.',
+    hook: 'A wolf that tolerates the edge of the firelight gets scraps; its bolder pups get more. Generations later, an animal is buried in the same grave as the people who kept it alive.',
     summary:
       'The wolf became the dog well before any other domestication, by genetic estimates deep in the Ice Age and by clear burials such as Bonn-Oberkassel roughly 14,000 years ago. Where and how many times it happened is still argued. One plausible model is mutual: tamer wolves fed on human waste and hunted alongside people, and humans gained sentries and partners. It was the first time our species reshaped another living thing to live with us.',
     edges: [
@@ -318,7 +318,7 @@ LOOM.node([
     threads: ['craft', 'wealth'],
     hook: 'Foragers who plant nothing shape wet clay into a pot and harden it in a fire. The oldest known pottery on Earth belongs to people with no fields.',
     summary:
-      'The oldest known pottery, from Xianrendong Cave in southern China, dates to about 20,000 years ago. Soot and scorch marks make cooking the strongest use we can infer; storage or fermentation remain possibilities, not demonstrated functions. Pottery appeared here among mobile foragers long before either agriculture or settled village life.',
+      'The oldest claimed pottery, from Xianrendong Cave in southern China, dates to about 20,000 years ago, a figure other specialists put thousands of years younger. Soot and scorch marks make cooking the strongest use we can infer; storage or fermentation remain possibilities, not demonstrated functions. Pottery appeared here among mobile foragers long before either agriculture or settled village life.',
     edges: [
       { to: 'village-before-the-farm', type: 'echoes', why: 'East Asian pottery and Levantine villages independently show that technologies and settled life did not wait for farming, but the earliest Xianrendong potters themselves were mobile.' },
       { to: 'trap-of-seeds', type: 'collides', why: 'Pottery among mobile foragers unsettles any sequence in which farming must precede durable food technologies.' },
