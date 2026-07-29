@@ -19,6 +19,7 @@ LOOM.lessonFiles = [
   'world-the-ice-made',
   'wolf-at-the-fire',
   'into-the-last-continents',
+  'pots-before-the-farm',
   'village-before-the-farm',
   'trap-of-seeds',
 
