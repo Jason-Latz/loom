@@ -107,33 +107,19 @@ lessons into it.
   lessons. `spark-of-mind` and `great-dispersal` both had to gain callbacks.
   Integrate in main-sequence order, and commit any closed callback chain
   atomically (Era I's indices 0 to 5 are only green together).
-- Remaining unwritten: Era II 19, Era III 21, Era IV 25, Era V 25. Eras VI to X
-  are entirely unwritten seeds.
-- Next: forge Era II through the same pipeline and gate.
-
-## State (2026-07-26, after the Era V release)
-
 - Graph is at its final size: 365 nodes (one per day of a year), 800 wires, 10
-  eras, and a zero-warning gate. Codex adversarially audited and corrected all
-  236 expansion seeds; rationales and the release audit are in
-  docs/graph-expansion-365.md.
-- Eras I through V are fully written: 56 lessons, all source-verified and
-  adversarially reviewed. Era V adds thirteen Fable lessons, 65 questions, and
-  39 verified clickable sources; the completion report is
-  docs/era-v-completion-report.md, the research briefs are docs/era-v-briefs/,
-  and the binding handoff is docs/fable-era-v-handoff.md.
-- check.mjs derives each lesson's required callback count from earlier
-  WRITTEN lessons (manifest-aware), not raw node index, since unwritten seeds
-  precede the first written lessons.
-- Production is https://loomhistory.com (custom domain attached 2026-07-26)
-  and https://loom-gray.vercel.app, at deployment
-  dpl_3DGF1SSPv7njCcSpy1mqN7gKYKM9. Local and live browser QA passed with no
-  console errors; reader, dossier, callbacks, and sources verified on both.
-- Known cosmetic issue: the header search dropdown collapses to a narrow
-  strip (pre-existing app CSS, spun off as its own task).
-- Next: prepare the Era VI research and architecture handoff (The Woven
-  World, 15 core lessons), then review and release through the same
-  adversarial gate.
+  eras. All 236 expansion seeds were adversarially audited; rationales and the
+  release audit are in `docs/graph-expansion-365.md`.
+- Remaining unwritten: Era II 19, Era III 21, Era IV 25, Era V 25. Eras VI to X
+  are entirely unwritten seeds. Earlier era reports and briefs:
+  `docs/era-iv-*`, `docs/era-v-*`.
+- check.mjs derives each lesson's required callback count from earlier WRITTEN
+  lessons (manifest-aware), not raw node index, since unwritten seeds precede
+  the first written lessons.
+- Production is https://loomhistory.com (custom domain, Vercel-managed DNS)
+  and https://loom-gray.vercel.app. Deploys are manual: forging a lesson does
+  not publish it until you redeploy.
+- Next: forge Era II through the same pipeline and gate.
 
 ## Change log
 
