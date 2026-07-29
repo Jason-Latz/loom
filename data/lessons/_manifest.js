@@ -10,6 +10,7 @@ LOOM.lessonFiles = [
   'great-dispersal',
   'firelight-economy',
   'the-other-humans',
+  'crossing-to-sahul',
   'tribe-of-strangers',
   'paint-in-the-dark',
   'world-the-ice-made',
