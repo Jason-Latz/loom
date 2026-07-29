@@ -93,6 +93,24 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
+## State (2026-07-29, after the Era I completion)
+
+- **Era I is the first fully charted era: 20/20 nodes written.** 68 lessons total
+  across the atlas. Gate: `OK: 365 nodes, 800 wires, 10 eras, 68 lessons. 0 warning(s).`
+- Twelve Era I lessons forged through the full six-stage pipeline (research,
+  draft, literary revision, dual adversarial review, fix, verify), plus ten
+  sourced graph-data corrections and two retrofitted predecessor lessons.
+  Report: `docs/era-i-completion-report.md`; briefs: `docs/era-i-briefs/`;
+  correction dossier: `docs/era-i-graph-corrections.md`.
+- **Inserting lessons early in the sequence retroactively changes what the gate
+  demands of later ones**, since the callback count derives from earlier WRITTEN
+  lessons. `spark-of-mind` and `great-dispersal` both had to gain callbacks.
+  Integrate in main-sequence order, and commit any closed callback chain
+  atomically (Era I's indices 0 to 5 are only green together).
+- Remaining unwritten: Era II 19, Era III 21, Era IV 25, Era V 25. Eras VI to X
+  are entirely unwritten seeds.
+- Next: forge Era II through the same pipeline and gate.
+
 ## State (2026-07-26, after the Era V release)
 
 - Graph is at its final size: 365 nodes (one per day of a year), 800 wires, 10
@@ -119,6 +137,21 @@ lessons into it.
 
 ## Change log
 
+- **2026-07-29:** Era I completed, the first fully charted era (20/20). Twelve
+  lessons forged on Fable through research, draft, dedicated literary revision,
+  two independent Opus reviews, fix, and an Opus verification gate that loops
+  back on rejection. The verify pass caught what the check gate cannot: a
+  fabricated stance attributed to a living scholar, a geographic falsehood in a
+  climactic sentence, a false causal bridge, an overstated count a reviewer had
+  already cleared on a bad check, and an arithmetic error both reviews missed by
+  checking two dates separately. Ten graph-data defects corrected against fetched
+  primary sources (fallow to red deer antlers, unpierced Qafzeh shells, the Qesem
+  hearth's two use cycles, carved not drilled flute holes, needles that do not
+  create fitted clothing, a puppy that was no hunting partner, a disputed
+  Xianrendong date, superseded Omo Kibish arithmetic, a missing ideas thread), and
+  two reviewer claims refuted rather than applied. `spark-of-mind` and
+  `great-dispersal` retrofitted with real callbacks now that lessons precede them.
+  Report: `docs/era-i-completion-report.md`.
 - **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed. Node
   tap targets now hold a fingertip-sized screen radius at any zoom (--hit-r
   geometry property driven from map.js apply()); boot streams lesson files in
