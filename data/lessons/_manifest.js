@@ -17,6 +17,7 @@ LOOM.lessonFiles = [
   'paint-in-the-dark',
   'the-eyed-needle',
   'world-the-ice-made',
+  'wolf-at-the-fire',
   'village-before-the-farm',
   'trap-of-seeds',
 
