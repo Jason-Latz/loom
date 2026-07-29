@@ -12,6 +12,7 @@ LOOM.lessonFiles = [
   'the-other-humans',
   'crossing-to-sahul',
   'tribe-of-strangers',
+  'beads-and-alliances',
   'paint-in-the-dark',
   'world-the-ice-made',
   'village-before-the-farm',
