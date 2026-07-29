@@ -15,7 +15,7 @@ LOOM.node([
     region: 'africa',
     x: 47,
     threads: ['craft', 'ideas'],
-    hook: 'Fossils in a Moroccan hillside carry a modern face on a long, archaic skull, and push the origin of our species back a hundred thousand years.',
+    hook: 'Fossils in a Moroccan hillside carry a modern face on a long, archaic skull, and push the origin of our species deeper in time than any fossil found before them.',
     summary:
       'The Jebel Irhoud fossils, about 315,000 years old, show that Homo sapiens did not switch on suddenly in one East African garden. Modern features accumulated in a mosaic, the face first and the rounded braincase much later, across populations scattered over the whole continent. Africa was the workshop, not a single point on a map. The Middle Stone Age tools beside them were already shared far and wide.',
     edges: [
@@ -32,7 +32,7 @@ LOOM.node([
     sort: -299000,
     region: 'swasia',
     x: 55,
-    threads: ['craft'],
+    threads: ['craft', 'ideas'],
     hook: 'A hearth at Qesem Cave holds ash in stacked layers, the same four square meters of floor burned over and over. Someone keeps the fire, and the fire remakes food, night, and the group gathered around it.',
     summary:
       'Habitual control of fire is documented by roughly 300,000 years ago at sites such as Qesem in the Levant, though tamed flame is older and its beginnings are disputed. Cooking makes many foods safer and easier to digest. One influential, contested hypothesis links much earlier cooking to human bodily evolution. More securely, the hearth became a social center, stretching activity past sundown and gathering people to its light.',
