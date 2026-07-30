@@ -1,0 +1,1086 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Citations in Loom · specimen plates</title>
+<style>
+/* ============================================================
+   Loom design system, copied verbatim from styles.css so the
+   specimens read exactly as the reading room does.
+   ============================================================ */
+:root {
+  --parchment: #efe3c6;
+  --parchment-deep: #e7d7b2;
+  --paper: #f7efdd;
+  --card: #f3e9d0;
+  --ink: #2c2318;
+  --ink-soft: #6a5a42;
+  --ink-faint: #a08c68;
+  --line: rgba(44, 35, 24, 0.35);
+  --line-faint: rgba(44, 35, 24, 0.16);
+  --gilt: #a67c1e;
+  --gilt-bright: #c29b2a;
+  --seal: #8c3b2e;
+  --th-ideas: #34558b;
+  --th-power: #8c3b2e;
+  --th-wealth: #8a6a1f;
+  --th-craft: #2e6e63;
+  --shadow: 0 10px 40px rgba(44, 35, 24, 0.28);
+  --serif: 'Iowan Old Style', 'Palatino Linotype', Palatino, 'Book Antiqua', Georgia, serif;
+}
+body.lamplight {
+  --parchment: #211a10;
+  --parchment-deep: #191307;
+  --paper: #2a2214;
+  --card: #251e11;
+  --ink: #e8dbba;
+  --ink-soft: #b5a37e;
+  --ink-faint: #7c6c50;
+  --line: rgba(232, 219, 186, 0.4);
+  --line-faint: rgba(232, 219, 186, 0.14);
+  --gilt: #c9a34a;
+  --gilt-bright: #e0bc55;
+  --seal: #c96f5c;
+  --th-ideas: #7f97cf;
+  --th-power: #cf7f6d;
+  --th-wealth: #c9a34a;
+  --th-craft: #6fae9f;
+  --shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+[hidden] { display: none !important; }
+body {
+  font-family: var(--serif);
+  background: var(--parchment);
+  color: var(--ink);
+  transition: background 0.4s ease, color 0.4s ease;
+  min-height: 100%;
+}
+body::before {
+  content: '';
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background:
+    radial-gradient(1200px 700px at 12% 8%, rgba(140, 100, 40, 0.07), transparent 60%),
+    radial-gradient(900px 900px at 88% 30%, rgba(120, 80, 30, 0.06), transparent 60%),
+    radial-gradient(1000px 600px at 30% 95%, rgba(140, 100, 40, 0.08), transparent 60%),
+    radial-gradient(140% 120% at 50% 45%, transparent 55%, rgba(70, 48, 16, 0.16) 100%);
+}
+body::after {
+  content: '';
+  position: fixed; inset: 0; z-index: 300; pointer-events: none; opacity: 0.55;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='260' height='260'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0.2 0 0 0 0 0.15 0 0 0 0 0.05 0 0 0 0.06 0'/%3E%3C/filter%3E%3Crect width='260' height='260' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+button { font-family: inherit; color: inherit; }
+.btn {
+  border: 1px solid var(--line); background: transparent; cursor: pointer;
+  border-radius: 2px; padding: 6px 13px; font-size: 13px;
+  transition: all 0.15s ease;
+}
+.btn:hover { border-color: var(--ink-soft); background: var(--parchment-deep); }
+.btn.on {
+  background: var(--gilt); border-color: var(--gilt); color: var(--paper);
+  font-variant: small-caps; letter-spacing: 0.09em;
+}
+body.lamplight .btn.on { color: #16110a; }
+.sec-head {
+  font-size: 13px; font-variant: small-caps; letter-spacing: 0.3em; color: var(--ink-soft);
+  text-align: center; margin: 34px 0 18px;
+}
+.orn { text-align: center; color: var(--gilt); font-size: 15px; letter-spacing: 0.6em; margin: 30px 0; }
+
+/* the reading room itself */
+.page { max-width: 680px; margin: 0 auto; padding: 40px 28px; position: relative; }
+/* the marginalia option floats its notes; without this they escape the plate */
+.page::after { content: ''; display: block; clear: both; }
+.page p { font-size: 17.5px; line-height: 1.74; margin-bottom: 1.15em; }
+.page p:last-child { margin-bottom: 0; }
+
+/* ============================================================
+   The comparison shell
+   ============================================================ */
+.lab { position: relative; z-index: 5; max-width: 1180px; margin: 0 auto; padding: 0 24px 140px; }
+.lab.head-only { padding-bottom: 0; }
+.lab-head { text-align: center; padding: 58px 0 30px; }
+.lab-head h1 {
+  font-size: 32px; letter-spacing: 0.34em; font-weight: 600; margin-right: -0.34em;
+}
+.lab-head .lab-sub { font-style: italic; color: var(--ink-soft); font-size: 16px; margin-top: 12px; }
+
+.lab-bar {
+  position: sticky; top: 0; z-index: 40;
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 10px;
+  padding: 12px 14px;
+  background: color-mix(in srgb, var(--parchment) 92%, transparent);
+  backdrop-filter: blur(4px);
+  border-top: 1px solid var(--line-faint);
+  border-bottom: 1px solid var(--line);
+}
+.lab-bar .grp { display: flex; align-items: center; gap: 7px; }
+.lab-bar .grp-label {
+  font-size: 11px; font-variant: small-caps; letter-spacing: 0.2em; color: var(--ink-faint);
+}
+
+.lab-intro { max-width: 660px; margin: 40px auto 0; }
+.lab-intro p { font-size: 16.5px; line-height: 1.72; margin-bottom: 1em; color: var(--ink); }
+.lab-intro p.quiet { color: var(--ink-soft); font-size: 15.5px; }
+
+/* an option plate */
+.opt { margin-top: 78px; }
+.opt-head { max-width: 680px; margin: 0 auto 20px; text-align: center; }
+.opt-letter {
+  font-size: 11.5px; font-variant: small-caps; letter-spacing: 0.28em; color: var(--gilt);
+}
+.opt-name { font-size: 27px; line-height: 1.16; font-weight: 600; margin: 8px 0 9px; }
+.opt-thesis { font-style: italic; color: var(--ink-soft); font-size: 16px; line-height: 1.58; }
+
+.specimen {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  outline: 1px solid var(--line); outline-offset: 4px;
+  box-shadow: var(--shadow);
+  margin: 34px auto 0;
+  max-width: 680px;
+  transition: max-width 0.3s ease;
+}
+/* the recommendation and the marginalia plate need room for the margin column */
+.specimen.wide { max-width: 1000px; }
+.specimen.wide .page { max-width: 680px; margin-left: 30px; }
+
+.spec-tag {
+  font-size: 10.5px; font-variant: small-caps; letter-spacing: 0.18em; color: var(--ink-faint);
+  border-bottom: 1px solid var(--line-faint); padding: 8px 16px; text-align: center;
+}
+
+.opt-notes {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 26px;
+  max-width: 760px; margin: 26px auto 0;
+}
+.note-h {
+  font-size: 11px; font-variant: small-caps; letter-spacing: 0.2em; margin-bottom: 7px;
+  border-bottom: 1px solid var(--line-faint); padding-bottom: 5px;
+}
+.note-h.buys { color: var(--th-craft); }
+.note-h.costs { color: var(--seal); }
+.opt-notes p { font-size: 14.5px; line-height: 1.62; color: var(--ink-soft); }
+
+/* ============================================================
+   Citation treatments
+   ============================================================ */
+
+/* --- superscript numeral marker (Option C) --- */
+.cite-mark {
+  border: none; background: none; padding: 0; margin: 0 0 0 1px;
+  font-family: inherit; font-size: 0.62em; line-height: 1;
+  vertical-align: super; color: var(--gilt); cursor: pointer;
+  position: relative; font-feature-settings: 'onum' 0;
+}
+.cite-mark:hover, .cite-mark:focus-visible { color: var(--gilt-bright); }
+/* a fingertip-sized hit area that does not touch layout */
+.cite-mark::before { content: ''; position: absolute; inset: -13px -9px -11px -9px; }
+/* no padding change on expand: a numeral that grows reflows the whole line */
+.cite-mark[aria-expanded="true"] {
+  color: var(--gilt-bright); font-weight: 700;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+
+/* --- the claim itself carries the mark (Option B) --- */
+.claim {
+  cursor: pointer;
+  border-bottom: 1px dotted var(--gilt);
+  padding-bottom: 1px;
+  transition: background 0.18s ease, border-color 0.18s ease;
+}
+.claim:hover { background: color-mix(in srgb, var(--gilt) 11%, transparent); }
+.claim:focus-visible { outline: 1px solid var(--gilt); outline-offset: 2px; }
+.claim[aria-expanded="true"] {
+  background: color-mix(in srgb, var(--gilt) 15%, transparent);
+  border-bottom-style: solid;
+}
+/* Option B uses the identical mark, but the mark IS the link */
+a.claim { color: inherit; text-decoration: none; }
+
+/* --- patterns swept and set aside --- */
+.rejected { list-style: none; max-width: 760px; margin: 30px auto 0; display: grid; gap: 15px; }
+.rejected li {
+  font-size: 14.5px; line-height: 1.62; color: var(--ink-soft);
+  padding-left: 22px; position: relative;
+}
+.rejected li::before {
+  content: '✕'; position: absolute; left: 0; top: 2px; color: var(--seal); font-size: 12px;
+}
+/* the same list shape, but these are constraints rather than rejections */
+.rejected.facts li::before { content: '✦'; color: var(--gilt); top: 1px; }
+.rejected .rj-name { color: var(--ink); }
+.rejected code, .lab-intro code {
+  font-family: ui-monospace, Menlo, Consolas, monospace; font-size: 0.86em;
+  background: color-mix(in srgb, var(--gilt) 10%, transparent); padding: 1px 4px; border-radius: 2px;
+}
+
+/* --- the revealed gloss --- */
+.gloss {
+  font-size: 13.5px; line-height: 1.58; color: var(--ink-soft);
+  border-left: 2px solid var(--gilt); padding: 2px 0 2px 13px;
+  margin: 0 0 1.15em 2px;
+}
+.gloss .g-num {
+  font-variant: small-caps; letter-spacing: 0.14em; color: var(--gilt); font-size: 12px;
+}
+.gloss .g-cite { color: var(--ink); }
+.gloss .g-note { display: block; margin-top: 3px; font-style: italic; }
+.gloss .g-links { display: block; margin-top: 5px; font-size: 12.5px; }
+.gloss a {
+  color: var(--ink); text-decoration-color: var(--gilt); text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.gloss a:hover { color: var(--gilt); }
+.gloss a.out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
+.gloss .g-sep { color: var(--ink-faint); margin: 0 7px; }
+@media (prefers-reduced-motion: no-preference) {
+  .gloss { animation: gloss-in 0.22s ease; }
+}
+@keyframes gloss-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
+
+/* --- marginalia (Option D): a Tufte float, always visible --- */
+.side {
+  float: right; clear: right;
+  width: 218px; margin-right: -248px; margin-bottom: 14px; margin-left: 20px;
+  font-size: 13px; line-height: 1.52; color: var(--ink-soft);
+  border-left: 2px solid var(--gilt); padding-left: 11px;
+  position: relative; top: 5px;
+}
+.side .g-num { font-variant: small-caps; letter-spacing: 0.14em; color: var(--gilt); font-size: 11.5px; }
+.side .g-cite { color: var(--ink); }
+.side .g-note { display: block; margin-top: 2px; font-style: italic; }
+.side .g-read { display: block; margin-top: 4px; font-size: 12.5px; }
+.side a { color: var(--ink); text-decoration-color: var(--gilt); text-underline-offset: 3px; }
+.side a::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
+
+/* --- the reveal in the margin (the recommendation) --- */
+.para { position: relative; }
+.para-glosses { position: absolute; top: 0; right: -262px; width: 240px; }
+.para-glosses .gloss { font-size: 12.5px; margin-bottom: 14px; }
+
+/* --- keyed endnotes, no marks in the prose (Option A) --- */
+.keyed { list-style: none; }
+.keyed li {
+  font-size: 14.5px; line-height: 1.6; margin-bottom: 13px; color: var(--ink-soft);
+  padding-left: 18px; position: relative;
+}
+.keyed li::before { content: '❧'; position: absolute; left: 0; color: var(--gilt); }
+.keyed .lemma { color: var(--ink); font-style: italic; }
+.keyed a { color: var(--ink); text-decoration-color: var(--gilt); text-underline-offset: 3px; }
+.keyed a:hover { color: var(--gilt); }
+.keyed a::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
+
+/* --- the evidence switch (Option E) --- */
+.ev-switch {
+  display: flex; align-items: center; justify-content: center; gap: 10px;
+  margin-bottom: 4px;
+}
+.ev-switch .btn { font-size: 12px; padding: 5px 12px; font-variant: small-caps; letter-spacing: 0.12em; }
+.ev-hint { font-size: 12px; color: var(--ink-faint); font-style: italic; }
+
+/* --- the sources cartouche (Option F) --- */
+.cartouche {
+  border: 1px solid var(--line); outline: 1px solid var(--line); outline-offset: 3px;
+  background: color-mix(in srgb, var(--parchment) 55%, transparent);
+  padding: 18px 20px 16px; margin-top: 8px;
+}
+.cart-h {
+  font-variant: small-caps; letter-spacing: 0.22em; font-size: 11.5px; color: var(--gilt);
+  text-align: center;
+}
+.cart-rule { height: 1px; background: var(--line-faint); margin: 11px 0 13px; }
+.cart-list { list-style: none; display: grid; gap: 11px; }
+.cart-list li {
+  display: grid; grid-template-columns: 22px 1fr; gap: 4px;
+  font-size: 13.5px; line-height: 1.55; color: var(--ink-soft);
+}
+.cart-n { color: var(--gilt); font-variant: small-caps; letter-spacing: 0.1em; font-size: 12.5px; }
+.cart-list .c-cite { color: var(--ink); }
+.cart-list .c-note { display: block; font-style: italic; margin-top: 2px; }
+.cart-list a { color: var(--ink); text-decoration-color: var(--gilt); text-underline-offset: 3px; }
+.cart-list a:hover { color: var(--gilt); }
+.cart-list a.out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
+.cart-kind {
+  font-size: 10px; font-variant: small-caps; letter-spacing: 0.13em; color: var(--ink-faint);
+  border: 1px solid var(--line-faint); border-radius: 999px; padding: 1px 7px; margin-left: 6px;
+  white-space: nowrap;
+}
+.cart-foot { font-size: 12px; color: var(--ink-faint); font-style: italic; text-align: center; margin-top: 13px; }
+
+/* ============================================================
+   Phone mode: mirrors the <=560px block of styles.css, driven by a
+   class rather than a media query so both widths are comparable here.
+   ============================================================ */
+body.narrow .specimen, body.narrow .specimen.wide { max-width: 375px; }
+body.narrow .specimen.wide .page { margin-left: auto; }
+body.narrow .page { padding: 30px 20px; max-width: none; }
+body.narrow .page p { font-size: 17px; line-height: 1.7; }
+body.narrow .side {
+  float: none; clear: none; width: auto; display: block;
+  margin: 12px 0 16px; padding-left: 11px; top: 0;
+}
+body.narrow .para-glosses { position: static; width: auto; margin-top: 4px; }
+body.narrow .para-glosses .gloss { font-size: 13px; }
+body.narrow .opt-notes { grid-template-columns: 1fr; gap: 18px; }
+
+@media (max-width: 1120px) {
+  .specimen.wide { max-width: 680px; }
+  .specimen.wide .page { margin-left: auto; }
+  .side { float: none; clear: none; width: auto; display: block; margin: 12px 0 16px; top: 0; }
+  .para-glosses { position: static; width: auto; margin-top: 4px; }
+}
+@media (max-width: 760px) {
+  .lab { padding: 0 14px 100px; }
+  .lab-head h1 { font-size: 24px; }
+  .opt-notes { grid-template-columns: 1fr; gap: 18px; }
+  .page { padding: 30px 20px; }
+}
+@media (pointer: coarse) {
+  .btn { padding: 9px 14px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+
+<div class="lab head-only">
+
+  <div class="lab-head">
+    <h1>THE EVIDENCE</h1>
+    <div class="lab-sub">Five ways to put citations into a Loom lesson, two modifiers, and a
+      recommendation. All of it on real prose.</div>
+  </div>
+</div>
+
+<div class="lab-bar">
+  <div class="grp">
+    <span class="grp-label">Palette</span>
+    <button class="btn on" id="t-parch">Parchment</button>
+    <button class="btn" id="t-lamp">Lamplight</button>
+  </div>
+  <div class="grp">
+    <span class="grp-label">Width</span>
+    <button class="btn on" id="t-wide">Reading column</button>
+    <button class="btn" id="t-narrow">Phone · 375</button>
+  </div>
+</div>
+
+<div class="lab">
+
+  <div class="lab-intro">
+    <p>Every specimen below renders the same real paragraph: the opening of
+      <em>The View from Above</em> in <strong>Ochre for the Dead</strong>. Three claims in it are
+      load-bearing and genuinely sourced, so the density here is honest, not a mock-up: roughly
+      what a real lesson would carry.</p>
+    <p>The options differ on one axis, and it is the axis your constraint lives on: <strong>how much
+      the apparatus touches the prose.</strong> They run from an apparatus that never enters the
+      sentence at all, to one that puts a numeral inside it. Everything else follows from where you
+      land on that line.</p>
+    <p class="quiet">Click anything gilt. Toggle the palette and the phone width at the top; the bar
+      stays with you.</p>
+  </div>
+
+  <!-- ============ A ============ -->
+  <section class="opt" id="opt-a">
+    <div class="opt-head">
+      <div class="opt-letter">Option A</div>
+      <h2 class="opt-name">The back of the book</h2>
+      <p class="opt-thesis">Nothing enters the sentence. The evidence waits at the end, keyed to the
+        exact words it supports.</p>
+    </div>
+    <div class="specimen">
+      <div class="spec-tag">prose untouched · apparatus at the end</div>
+      <div class="page" id="spec-a"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>The prose is byte for byte what it is today. An apparatus that never touches the reading
+          cannot damage it, which makes this the only option with zero literary risk. It is also what
+          serious popular history actually does: trade publishers key their endnotes to a quoted
+          phrase and put no superscript in the running text, precisely because a general reader is
+          not a scholar. Cheapest thing on this page to build and to validate.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>A skeptical reader has to go looking, and most never will. The apparatus is invisible
+          during the read, so it does very little of the work you actually want from it: the lesson
+          does not <em>feel</em> more authoritative while you are reading it. Matching a quoted phrase
+          back to its sentence is also slower than following a numeral. The obvious worry, that two
+          passages share a phrase and the key becomes ambiguous, turns out to be measurably tiny: a
+          sweep of the existing lessons found six-word spans unique within their own lesson in 7,153
+          of 7,155 cases, so an exactly-once match is a sound rule for the gate to enforce.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ B ============ -->
+  <section class="opt" id="opt-b">
+    <div class="opt-head">
+      <div class="opt-letter">Option B</div>
+      <h2 class="opt-name">The quiet link</h2>
+      <p class="opt-thesis">The smallest thing that could work. The sourced phrase is simply a link to
+        the paper. No numerals, no notes, no apparatus, nothing to build.</p>
+    </div>
+    <div class="specimen">
+      <div class="spec-tag">what JSTOR Daily, Works in Progress and Quanta actually do</div>
+      <div class="page" id="spec-b"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>Almost nothing to implement and nothing to maintain: a phrase becomes an anchor and the job
+          is done. Identical on every device, no reveal, no state, no positioning. It is what the best
+          magazines on the web do, and it reads clean because a citation is textually indistinguishable
+          from any other link. If you want this shipped without a new component, this is the option.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>It throws away everything except the URL. The reader cannot see who wrote the paper, what
+          year it is, whether it is open access, or what specifically it establishes, until they have
+          already left the lesson. Worse, it cannot distinguish “here is my evidence” from “here is
+          something else to read,” which is the one distinction this whole feature exists to make. And
+          a bare date or a count is exactly the kind of claim it handles least well.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ C ============ -->
+  <section class="opt" id="opt-c">
+    <div class="opt-head">
+      <div class="opt-letter">Option C</div>
+      <h2 class="opt-name">The claim carries the mark</h2>
+      <p class="opt-thesis">No numerals anywhere. The sourced words themselves take a fine gilt
+        underline, and pressing them opens the note.</p>
+    </div>
+    <div class="specimen">
+      <div class="spec-tag">nothing inserted · the text is marked, not interrupted</div>
+      <div class="page" id="spec-c"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>The tightest possible coupling between claim and source: you see the exact span of words
+          the paper backs, not merely the sentence one happened to end. No foreign object is inserted
+          into the prose, so sentence rhythm and line breaks are untouched. The tap target is a whole
+          clause, so it is finger sized for free. And it makes the lesson’s intellectual honesty
+          visible, which is the actual point: you can see at a glance which sentences are reporting
+          and which are the writer thinking.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>Three underlines sit on the page whether or not you want them, and an underline in running
+          text reads as a hyperlink to a lot of people. It demands more editorial judgment than a
+          numeral does, because you have to decide the exact span every time. And a long marked clause
+          that wraps across a line break is slightly less tidy than a single glyph.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ C ============ -->
+  <section class="opt" id="opt-d">
+    <div class="opt-head">
+      <div class="opt-letter">Option D</div>
+      <h2 class="opt-name">Superscript and inline reveal</h2>
+      <p class="opt-thesis">The academic convention, made touchable. A small gilt numeral, and the
+        note opens beneath the paragraph.</p>
+    </div>
+    <div class="specimen">
+      <div class="spec-tag">the handoff’s recommendation</div>
+      <div class="page" id="spec-d"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>Unambiguous and universally understood: nobody has to be taught what a superscript numeral
+          is. It survives skimming, it is the easiest of the five to author correctly and to validate
+          mechanically, and it is one code path at every width with no positioning math. If Loom ever
+          wants a printed edition, this is the only option that already works there.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>A numeral inside a sentence is the single most reliable way to make a page read like a
+          textbook, and this is a product whose whole claim is that history can be read like a story.
+          Three of them in one paragraph is felt. It also decouples claim from source: the numeral
+          tells you a sentence ended, not which words were doing the work. And it is the option most
+          likely to creep upward in density across 365 lessons, because adding one is free.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ D ============ -->
+  <section class="opt" id="opt-e">
+    <div class="opt-head">
+      <div class="opt-letter">Option E</div>
+      <h2 class="opt-name">Marginalia</h2>
+      <p class="opt-thesis">The atlas convention. Notes hang in the margin beside the line they
+        gloss, the way annotation sits beside a chart. Nothing to click.</p>
+    </div>
+    <div class="specimen wide">
+      <div class="spec-tag">always visible · needs the margin, so it changes shape below 1100px</div>
+      <div class="page" id="spec-e"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>By some distance the most beautiful of the five, and the most on-brand: an antique chart is
+          covered in marginal hands. The evidence is ambient rather than hidden, so it is discovered
+          without any interaction at all, and the eye can ignore it completely. It is the only option
+          where the apparatus adds to the page as an object instead of merely not subtracting.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>It needs a margin to live in, so below roughly 1100 pixels it has to become something else,
+          and what it becomes cuts the paragraph in half at the point of the note. Switch to phone
+          width above and watch it happen. That is two behaviors to maintain, and the one a phone gets
+          is the worse of the two. Mobile is a first-class target here, so this is a real cost and not
+          a rounding error.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ E ============ -->
+  <section class="opt" id="opt-f">
+    <div class="opt-head">
+      <div class="opt-letter">Option F · a modifier, not a rival</div>
+      <h2 class="opt-name">Evidence off by default</h2>
+      <p class="opt-thesis">One control at the head of the lesson. Read it clean, then turn the
+        evidence on. Sits on top of C, D or E.</p>
+    </div>
+    <div class="specimen">
+      <div class="spec-tag">shown over Option C · press the switch</div>
+      <div class="page" id="spec-f"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>It answers the constraint completely and without compromise: the default reading is
+          literally unmarked, and the apparatus is there in full for anyone who wants it. It also lets
+          you be more generous with citation density than you otherwise could, since density costs
+          nothing when it is switched off. Remember the setting and a reader chooses once.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>A feature nobody turns on is a feature nobody has, and authority you have to opt into is
+          weaker than authority that is simply present. It adds a control to a reading room that
+          currently has exactly one, and it is a second thing to explain. There is also a quiet risk:
+          it makes citing feel optional to whoever is forging the lesson.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ F ============ -->
+  <section class="opt" id="opt-g">
+    <div class="opt-head">
+      <div class="opt-letter">Option G · the end apparatus</div>
+      <h2 class="opt-name">The sources cartouche</h2>
+      <p class="opt-thesis">Whatever marks the prose, the lesson should end with the whole list in one
+        place. The question is whether it looks like a bibliography or like a legend.</p>
+    </div>
+    <div class="specimen">
+      <div class="spec-tag">sits between The Threads and Prove It to Yourself</div>
+      <div class="page" id="spec-g"></div>
+    </div>
+    <div class="opt-notes">
+      <div>
+        <div class="note-h buys">What it buys</div>
+        <p>The apparatus degrades gracefully: even if a reader never presses a single mark, the
+          evidence is visibly there, gathered, and clickable. It is where the open-access flag and the
+          paywall admission can live honestly. Styled as a chart legend rather than a reference list,
+          it reads as part of the atlas instead of an academic appendix bolted on.</p>
+      </div>
+      <div>
+        <div class="note-h costs">What it costs</div>
+        <p>It lengthens a page that already ends with connections, five questions and three further
+          readings, and it sits close enough to <em>If This Grabbed You</em> to blur with it. Needs a
+          clear division of labor between the two: this one is evidence, that one is invitation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ swept and set aside ============ -->
+  <section class="opt" id="opt-rejected">
+    <div class="opt-head">
+      <div class="opt-letter">Swept and set aside</div>
+      <h2 class="opt-name">Seven patterns I looked at and would not build</h2>
+      <p class="opt-thesis">Worth naming, because most of them are the first thing anyone reaches for.</p>
+    </div>
+    <ul class="rejected">
+      <li><span class="rj-name">Inline source pills.</span> The Perplexity-style chip with a domain
+        name and a “+3” count. A published teardown of the pattern calls it citation theater, the look
+        of rigor without the rigor underneath, and it is the loudest object you can put in a sentence.</li>
+      <li><span class="rj-name">Hover tooltips built on <code>role="tooltip"</code>.</span> The ARIA
+        pattern states that tooltips do not receive focus, which makes any link inside one unreachable
+        by keyboard. Wrong primitive for a thing whose entire purpose is a clickable destination.</li>
+      <li><span class="rj-name">A <code>&lt;details&gt;</code> element forced inline.</span> Tempting
+        because it needs no JavaScript. The technique’s own author documents that on a phone the opened
+        note covers the summary you have to press to close it.</li>
+      <li><span class="rj-name">Interest invokers (<code>interestfor</code>).</span> Genuinely elegant
+        and genuinely not ready: Chrome only, still marked experimental, and on touch it is a long press
+        into a context menu rather than a tap.</li>
+      <li><span class="rj-name">Hover previews on desktop, something else on mobile.</span> What
+        Wikipedia does. The instinct to match the interaction to the device is right and worth stealing;
+        two separate mechanisms to maintain is the thing we are trying not to buy.</li>
+      <li><span class="rj-name">A separate evidence panel.</span> Loom already has a dossier and a
+        reading room. A third overlay is feature creep, and it still cannot tell you which sentence
+        rests on what.</li>
+      <li><span class="rj-name">Naming the source in the sentence and stopping there.</span> What
+        Asterisk and most print magazines do, and what Loom already does informally. Keep doing it for
+        narrative claims, but it is not clickable and not checkable from the page, so it cannot be the
+        mechanism.</li>
+    </ul>
+  </section>
+
+  <!-- ============ what the codebase allows ============ -->
+  <section class="opt" id="opt-constraints">
+    <div class="opt-head">
+      <div class="opt-letter">Before you pick</div>
+      <h2 class="opt-name">Seven things the codebase has already decided for you</h2>
+      <p class="opt-thesis">An audit of the actual files turned these up. Two of them quietly rule out
+        options that look fine on paper.</p>
+    </div>
+    <ul class="rejected facts">
+      <li><span class="rj-name">A floating card cannot sit on the paper.</span> Loom pins its
+        paper-grain overlay at <code>z-index: 300</code>, and a native popover renders in the browser’s
+        top layer, above every <code>z-index</code> there is. A citation card would be the one flat,
+        ungrained surface on an aged page. This, not browser support, is why the reveal happens in
+        flow.</li>
+      <li><span class="rj-name">Escape already means “close the lesson.”</span> The handler in
+        <code>js/reader.js</code> tests the reading room first, so any overlay-based citation would
+        have to be spliced in ahead of it or a reader dismissing a card loses their place in a two
+        thousand word page. An in-flow reveal never has the problem.</li>
+      <li><span class="rj-name">Anchor jumps do not work in the reading room.</span> The body sets
+        <code>overflow: hidden</code> and <code>#reader</code> is the real scroll container, so a
+        classic endnote’s <code>href="#fn3"</code> points at an ancestor that cannot scroll. Option A
+        needs a scripted scroll, and so does its return link. Cheap, but not free, and not obvious.</li>
+      <li><span class="rj-name">There is no link style to inherit.</span> The only anchor rule in the
+        whole stylesheet is <code>.deeper-link</code>. A bare inline link renders in default browser
+        blue on parchment, so Option B is not actually the zero-CSS option it looks like; it needs its
+        own rule before it can ship.</li>
+      <li><span class="rj-name">The gate will read the new field too.</span> The dash scan walks
+        objects recursively, so a page range has to be written “491 to 522.” And the 1500 to 2200 word
+        band counts the prose, with warnings failing the release gate, so any in-prose token must be
+        stripped before counting. Several Era I lessons already sit above 2150, which is a quiet
+        argument against anything that adds words to a sentence.</li>
+      <li><span class="rj-name">The header has no room for a global switch.</span> The tool bar
+        already drops the progress readout at 1360px purely to stop flex crushing the search box.
+        Option F’s control belongs at the head of the lesson, where the specimen puts it, not in the
+        chrome.</li>
+      <li><span class="rj-name">The permissive escape hatch always gets used.</span> The existing
+        <code>deeper</code> renderer tolerates a bare string instead of an object, and a count of the
+        corpus says 63 of 204 further-reading items across 68 lessons are exactly that: legacy strings
+        with no URL at all, in a field whose own spec asks for three clickable sources. Whatever gets
+        built here should be strict-shape from its first commit, with no lenient branch to fall
+        through.</li>
+    </ul>
+  </section>
+
+  <!-- ============ recommendation ============ -->
+  <section class="opt" id="opt-rec">
+    <div class="opt-head">
+      <div class="opt-letter">Where this lands</div>
+      <h2 class="opt-name">The list is the spine. The mark is the argument.</h2>
+      <p class="opt-thesis">Build G first, because it carries the citations whatever else you choose.
+        Then settle the one real question separately: whether anything at all marks the sentence.</p>
+    </div>
+    <div class="specimen wide">
+      <div class="spec-tag">two real paragraphs · five citations · press any underlined clause</div>
+      <div class="page" id="spec-rec"></div>
+    </div>
+    <div class="lab-intro" style="margin-top:36px">
+      <p>I had three independent reviews run this design space, one weighing the prose, one the
+        authority, one the durability of maintaining it across 297 unwritten lessons. They ranked the
+        same thing first, unanimously, and it was not the specimen above: a terminal list keyed to the
+        verbatim phrase it supports, with nothing whatsoever inside the sentence. Their reasons hold up.
+        The prose stays byte-identical to what the literary revision signed off on. It is the only
+        option a validator can check <em>as a citation</em> rather than as a URL, because an
+        exactly-once phrase match either resolves or turns the gate red. And it is a plain data field,
+        with no paragraph tokenizer, no invented anchor style, and no second mobile path.</p>
+      <p>Then each of them, unprompted, made the same case against itself. A citation the reader never
+        sees is a citation the reader never trusts. The list sits after the story, after the
+        significance, after the threads, after five questions: a reader who finishes a lesson and
+        closes it has been shown no evidence at all. Authority is a felt property of the sentence, not
+        of the appendix.</p>
+      <p>That objection is the whole reason to do this, so my vote is to mark the prose, and the
+        specimen above is the version I would build. But notice what the unanimity actually settles:
+        the end apparatus is not in dispute by anyone, it is the half a validator can enforce, and the
+        mark is purely additive on top of it. So build the list first, alone, and ship it. The mark is
+        the second decision, and it is a question of taste about what authoritative means rather than
+        an engineering one, which makes it yours rather than mine.</p>
+      <p>If you do mark it, mark the claim rather than the sentence. Look at the second paragraph
+        above. The claim about the ochre beds is marked, and the sentence right after it, the one about
+        people being fussy, is not, because that sentence is the lesson thinking rather than reporting.
+        A numeral cannot make that distinction, and it is exactly the distinction a skeptical reader
+        wants. Pairing it with E’s margin costs nothing extra: Option E is beautiful because it uses
+        the margin and fails because it <em>requires</em> one, so making the note a reveal turns the
+        margin into an enhancement. Nothing has to collapse on a phone, because nothing was there.</p>
+      <p class="quiet">Option F can be layered on later without touching any of the data, and Option A’s
+        keyed list is what the cartouche becomes if you ever want a print edition. Nothing here
+        forecloses anything.</p>
+      <p class="quiet">On the mechanism: the reveal above is an ARIA disclosure, a control with
+        <code>aria-expanded</code> pointing at the gloss. The obvious modern alternative is the native
+        Popover API with CSS anchor positioning, which buys dismiss-on-Escape and automatic edge
+        flipping in about six lines. Do not use it here, and the reason is Loom-specific rather than a
+        browser-support quibble: a popover renders in the browser’s top layer, above every
+        <code>z-index</code> there is, and Loom pins its paper-grain overlay at
+        <code>z-index: 300</code>. A floating citation card would be the one flat, ungrained, un-aged
+        surface on an otherwise aged page. Revealing in flow keeps the note on the paper. The end
+        apparatus should also carry <code>role="doc-endnotes"</code> so a screen reader announces it as
+        the notes rather than as another list.</p>
+    </div>
+  </section>
+
+</div>
+
+<script>
+(function () {
+  var h = function (tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text != null) e.textContent = text;
+    return e;
+  };
+
+  // ---------------- the real data ----------------
+  // Every source below was fetched and confirmed during the Era I forge run
+  // (docs/era-i-briefs/ochre-for-the-dead.md, section 7).
+  var SOURCES = {
+    'coqueugniot-2014': {
+      cite: 'Coqueugniot and colleagues, PLOS ONE 9(7): e102822 (2014)',
+      url: 'https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0102822',
+      doi: '10.1371/journal.pone.0102822',
+      kind: 'paper',
+      open: true,
+      note: 'The excavation record of Qafzeh 11: supine in a cut pit, head turned right, red deer antlers on the chest against both palms.'
+    },
+    'hovers-2003': {
+      cite: 'Hovers, Ilani, Bar-Yosef and Vandermeersch, Current Anthropology 44(4): 491 to 522 (2003)',
+      url: 'https://in-africa.org/wp-content/uploads/2012/12/Hovers-et-al-2003-CA-color-symbolism-ochre-Qafzeh.pdf',
+      doi: '10.1086/375869',
+      kind: 'paper',
+      open: true,
+      note: 'Averages the thermoluminescence dates for the lower layers at 92,000 give or take 5,000, maps the ochre sources at 2.5 to 8 km, and coins the prototype hedge.'
+    },
+    'bar-yosef-mayer-2009': {
+      cite: 'Bar-Yosef Mayer, Vandermeersch and Bar-Yosef, Journal of Human Evolution 56: 307 to 314 (2009)',
+      url: 'https://in-africa.org/wp-content/uploads/2012/12/Bar-Yosef-Mayer-et-al-2009-JHE-shells-and-ochre-in-Middle-Pal-Qafzeh.pdf',
+      doi: '10.1016/j.jhevol.2008.10.005',
+      kind: 'paper',
+      open: true,
+      note: 'Reports the black staining on the Qafzeh skeletons as natural manganese, and the carried shells as unassociated with any burial.'
+    },
+    'wadley-2005': {
+      cite: 'Lyn Wadley, Journal of Human Evolution 49(5): 587 to 601 (2005)',
+      url: 'https://doi.org/10.1016/j.jhevol.2005.06.007',
+      doi: '10.1016/j.jhevol.2005.06.007',
+      kind: 'paper',
+      open: false,
+      note: 'The replication study showing ochre works as a loading agent in hafting adhesive. Publisher record only, behind a paywall.'
+    }
+  };
+
+  // The paragraphs, segmented. A segment with `src` is a sourced claim span;
+  // a segment with `markAfter` is where a numeral would go in Option C.
+  var PARA_1 = [
+    { t: 'Qafzeh is a real cave in the hills of the Lower Galilee, dug in the 1930s and again from 1965 to 1979, and ' },
+    { t: 'every object in that scene came out of its floor', src: 'coqueugniot-2014' },
+    { t: '.', markAfter: 'coqueugniot-2014' },
+    { t: ' The dating is softer than the objects. Thermoluminescence and electron spin resonance are physics, not calendars: ' },
+    { t: 'they put the lower layers near ninety-two thousand years ago, give or take five thousand', src: 'hovers-2003' },
+    { t: ', which means two things this lesson calls contemporary could sit ten millennia apart.', markAfter: 'hovers-2003' },
+    { t: ' The reports do not even agree on which layer held this child, so the honest thing to say is that the grave was cut near the bottom of the sequence. The title of the lesson owes you a correction too. No ochre has been found on the Qafzeh dead, and ' },
+    { t: 'the dark staining on those bones is manganese', src: 'bar-yosef-mayer-2009' },
+    { t: ', put there by the ground and not by hands.', markAfter: 'bar-yosef-mayer-2009' },
+    { t: ' What ties red stone to the dead here is neighborhood rather than pigment on skin, which is why Erella Hovers and her colleagues call the site a prototype of ochre-associated mortuary behavior, a phrase hedged with real care and worth borrowing intact.' }
+  ];
+
+  var PARA_2 = [
+    { t: 'The ochre is the best-documented decision anyone made at Qafzeh, a decision about meaning built entirely out of craft. ' },
+    { t: 'The beds they used sit four to eight kilometers off, and they were not the nearest', src: 'hovers-2003' },
+    { t: ': veins of iron oxide two and a half kilometers west went untouched, and ferruginous concretions three kilometers northeast, and outcrops of the same oolitic rock thirty, forty and sixty kilometers out.', markAfter: 'hovers-2003' },
+    { t: ' The interesting finding is not that people walked far, because they did not. It is that they were fussy. Yellow goethite lay in the very same Cretaceous beds, in rock no harder to grind, and the jobs ochre actually does are indifferent to color: it tans a hide, and ' },
+    { t: 'Lyn Wadley’s replication work showed it improves the glue that holds a stone point in its haft', src: 'wadley-2005' },
+    { t: '.', markAfter: 'wadley-2005' },
+    { t: ' They came back red anyway, again and again, and Hovers and her colleagues argue that hue was the criterion and cost was not. That is the mechanism: a preference that function cannot account for, and that returns nothing you can weigh, is the closest thing archaeology has to a fingerprint of an idea. An idea leaves no trace of its own. It can only be read off the hands that served it.' }
+  ];
+
+  // Numbering is by order of first appearance in the prose, the academic
+  // convention, so the end list reads in the order the reader met each source.
+  function numberer(paras) {
+    var order = [], map = {};
+    paras.forEach(function (p) {
+      p.forEach(function (seg) {
+        var k = seg.src || seg.markAfter;
+        if (k && !map[k]) { order.push(k); map[k] = order.length; }
+      });
+    });
+    return { n: map, order: order };
+  }
+
+  function plain(segs) { return segs.map(function (s) { return s.t; }).join(''); }
+
+  // ---------------- gloss builders ----------------
+  function glossBody(el, key, num) {
+    var s = SOURCES[key];
+    el.appendChild(h('span', 'g-num', num + ' · '));
+    el.appendChild(h('span', 'g-cite', s.cite));
+    el.appendChild(h('span', 'g-note', s.note));
+    var links = h('span', 'g-links');
+    var a = h('a', 'out', s.open ? 'Read it' : 'Publisher record');
+    a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+    links.appendChild(a);
+    if (s.doi) {
+      links.appendChild(h('span', 'g-sep', '·'));
+      var d = h('a', null, 'doi ' + s.doi);
+      d.href = 'https://doi.org/' + s.doi; d.target = '_blank'; d.rel = 'noopener noreferrer';
+      links.appendChild(d);
+    }
+    if (!s.open) {
+      links.appendChild(h('span', 'g-sep', '·'));
+      links.appendChild(h('span', null, 'paywalled'));
+    }
+    el.appendChild(links);
+    return el;
+  }
+
+  var uid = 0;
+  function toggler(control, target) {
+    control.setAttribute('aria-expanded', 'false');
+    target.hidden = true;
+    var id = 'gl-' + (++uid);
+    target.id = id;
+    control.setAttribute('aria-controls', id);
+    function flip() {
+      var open = control.getAttribute('aria-expanded') === 'true';
+      control.setAttribute('aria-expanded', open ? 'false' : 'true');
+      target.hidden = open;
+    }
+    control.addEventListener('click', flip);
+    control.addEventListener('keydown', function (ev) {
+      if (control.tagName === 'BUTTON') return;
+      if (ev.key === 'Enter' || ev.key === ' ') { ev.preventDefault(); flip(); }
+    });
+  }
+
+  // ---------------- renderers, one per option ----------------
+
+  // A: plain prose, apparatus at the end keyed by quoted lemma
+  function renderA(host, paras) {
+    var num = numberer(paras);
+    paras.forEach(function (segs) { host.appendChild(h('p', null, plain(segs))); });
+    host.appendChild(h('div', 'sec-head', 'Where This Comes From'));
+    var ul = h('ul', 'keyed');
+    num.order.forEach(function (key) {
+      var s = SOURCES[key];
+      var lemma = null;
+      paras.forEach(function (segs) {
+        segs.forEach(function (seg) { if (seg.src === key && !lemma) lemma = seg.t; });
+      });
+      var li = h('li');
+      li.appendChild(h('span', 'lemma', '“' + lemma + '”'));
+      li.appendChild(document.createTextNode('  ·  '));
+      var a = h('a', null, s.cite);
+      a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      li.appendChild(a);
+      ul.appendChild(li);
+    });
+    host.appendChild(ul);
+  }
+
+  // B: the sourced phrase is simply a link out. No apparatus at all.
+  function renderLink(host, paras) {
+    paras.forEach(function (segs) {
+      var p = h('p');
+      segs.forEach(function (seg) {
+        if (!seg.src) { if (seg.t) p.appendChild(document.createTextNode(seg.t)); return; }
+        var s = SOURCES[seg.src];
+        var a = h('a', 'claim', seg.t);
+        a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+        a.title = s.cite;
+        p.appendChild(a);
+      });
+      host.appendChild(p);
+    });
+  }
+
+  // C: the claim span carries the mark; gloss opens under the paragraph
+  function renderB(host, paras) {
+    var num = numberer(paras);
+    paras.forEach(function (segs) {
+      var p = h('p');
+      var glosses = [];
+      segs.forEach(function (seg) {
+        if (!seg.src) { if (seg.t) p.appendChild(document.createTextNode(seg.t)); return; }
+        var span = h('span', 'claim', seg.t);
+        span.setAttribute('role', 'button');
+        span.tabIndex = 0;
+        var g = glossBody(h('div', 'gloss'), seg.src, num.n[seg.src]);
+        toggler(span, g);
+        p.appendChild(span);
+        glosses.push(g);
+      });
+      host.appendChild(p);
+      glosses.forEach(function (g) { host.appendChild(g); });
+    });
+  }
+
+  // D: superscript numeral after the clause's punctuation
+  function renderC(host, paras) {
+    var num = numberer(paras);
+    paras.forEach(function (segs) {
+      var p = h('p');
+      var glosses = [];
+      segs.forEach(function (seg) {
+        if (seg.t) p.appendChild(document.createTextNode(seg.t));
+        if (!seg.markAfter) return;
+        var b = h('button', 'cite-mark', String(num.n[seg.markAfter]));
+        b.setAttribute('aria-label', 'Source ' + num.n[seg.markAfter]);
+        var g = glossBody(h('div', 'gloss'), seg.markAfter, num.n[seg.markAfter]);
+        toggler(b, g);
+        p.appendChild(b);
+        glosses.push(g);
+      });
+      host.appendChild(p);
+      glosses.forEach(function (g) { host.appendChild(g); });
+    });
+  }
+
+  // E: ambient marginal notes, floated beside the line they gloss
+  function renderD(host, paras) {
+    var num = numberer(paras);
+    paras.forEach(function (segs) {
+      var p = h('p');
+      segs.forEach(function (seg) {
+        if (seg.t) p.appendChild(document.createTextNode(seg.t));
+        if (!seg.markAfter) return;
+        var side = h('span', 'side');
+        var s = SOURCES[seg.markAfter];
+        side.appendChild(h('span', 'g-num', num.n[seg.markAfter] + ' · '));
+        side.appendChild(h('span', 'g-cite', s.cite));
+        side.appendChild(h('span', 'g-note', s.note));
+        var a = h('a', null, s.open ? 'Read it' : 'Publisher record');
+        a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+        var wrap = h('span', 'g-read');
+        wrap.appendChild(a);
+        side.appendChild(wrap);
+        p.appendChild(side);
+      });
+      host.appendChild(p);
+    });
+  }
+
+  // F: option C behind a switch, prose completely unmarked by default
+  function renderE(host, paras) {
+    var sw = h('div', 'ev-switch');
+    var btn = h('button', 'btn', 'Show the evidence');
+    var hint = h('span', 'ev-hint', 'off');
+    sw.appendChild(btn);
+    sw.appendChild(hint);
+    host.appendChild(sw);
+
+    var clean = h('div');
+    paras.forEach(function (segs) { clean.appendChild(h('p', null, plain(segs))); });
+    var marked = h('div');
+    marked.hidden = true;
+    renderB(marked, paras);
+    host.appendChild(clean);
+    host.appendChild(marked);
+
+    btn.setAttribute('aria-pressed', 'false');
+    btn.addEventListener('click', function () {
+      var on = btn.getAttribute('aria-pressed') === 'true';
+      btn.setAttribute('aria-pressed', on ? 'false' : 'true');
+      btn.classList.toggle('on', !on);
+      btn.textContent = on ? 'Show the evidence' : 'Hide the evidence';
+      hint.textContent = on ? 'off' : 'on';
+      clean.hidden = !on;
+      marked.hidden = on;
+    });
+  }
+
+  // G: the end-of-lesson apparatus, styled as a chart legend
+  function renderF(host, paras) {
+    var num = numberer(paras);
+    host.appendChild(h('div', 'sec-head', 'The Evidence'));
+    var box = h('div', 'cartouche');
+    box.setAttribute('role', 'doc-endnotes');
+    box.setAttribute('aria-label', 'Sources for this lesson');
+    box.appendChild(h('div', 'cart-h', 'Sources for this lesson'));
+    box.appendChild(h('div', 'cart-rule'));
+    var ul = h('ul', 'cart-list');
+    num.order.forEach(function (key) {
+      var s = SOURCES[key];
+      var li = h('li');
+      li.appendChild(h('span', 'cart-n', String(num.n[key])));
+      var body = h('span');
+      var a = h('a', 'out', s.cite);
+      a.href = s.url; a.target = '_blank'; a.rel = 'noopener noreferrer';
+      body.appendChild(a);
+      body.appendChild(h('span', 'cart-kind', s.open ? 'open access' : 'paywalled'));
+      body.appendChild(h('span', 'c-note', ' ' + s.note));
+      li.appendChild(body);
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    box.appendChild(h('div', 'cart-foot', 'Every source here was opened and confirmed to say what the lesson claims it says.'));
+    host.appendChild(box);
+  }
+
+  // Recommendation: C's mark, E's margin when there is room for it
+  function renderRec(host, paras) {
+    var num = numberer(paras);
+    paras.forEach(function (segs) {
+      var wrap = h('div', 'para');
+      var p = h('p');
+      var col = h('div', 'para-glosses');
+      segs.forEach(function (seg) {
+        if (!seg.src) { if (seg.t) p.appendChild(document.createTextNode(seg.t)); return; }
+        var span = h('span', 'claim', seg.t);
+        span.setAttribute('role', 'button');
+        span.tabIndex = 0;
+        var g = glossBody(h('div', 'gloss'), seg.src, num.n[seg.src]);
+        toggler(span, g);
+        p.appendChild(span);
+        col.appendChild(g);
+      });
+      wrap.appendChild(p);
+      wrap.appendChild(col);
+      host.appendChild(wrap);
+    });
+    renderF(host, paras);
+  }
+
+  var ONE = [PARA_1];
+  var BOTH = [PARA_1, PARA_2];
+  renderA(document.getElementById('spec-a'), ONE);
+  renderLink(document.getElementById('spec-b'), ONE);
+  renderB(document.getElementById('spec-c'), ONE);
+  renderC(document.getElementById('spec-d'), ONE);
+  renderD(document.getElementById('spec-e'), ONE);
+  renderE(document.getElementById('spec-f'), ONE);
+  renderF(document.getElementById('spec-g'), BOTH);
+  renderRec(document.getElementById('spec-rec'), BOTH);
+
+  // ---------------- shell controls ----------------
+  function pair(aId, bId, cls) {
+    var a = document.getElementById(aId), b = document.getElementById(bId);
+    a.addEventListener('click', function () {
+      document.body.classList.remove(cls);
+      a.classList.add('on'); b.classList.remove('on');
+    });
+    b.addEventListener('click', function () {
+      document.body.classList.add(cls);
+      b.classList.add('on'); a.classList.remove('on');
+    });
+  }
+  pair('t-parch', 't-lamp', 'lamplight');
+  pair('t-wide', 't-narrow', 'narrow');
+})();
+</script>
+</body>
+</html>
