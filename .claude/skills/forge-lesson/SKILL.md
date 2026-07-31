@@ -50,6 +50,14 @@ that are trivia rather than comparisons, and threadsOut whys that just echo the
 edge label. This pass has caught real errors every time it has been run,
 including in lessons the gate passed green.
 
+Citations need their own adversarial pass, by a different agent than the one
+that wrote them. The gate can prove that a marker resolves and that a URL is
+well formed; it cannot tell whether the source supports the sentence. The
+reviewer must open each URL, resolve the DOI at
+`https://api.crossref.org/works/<doi>`, check the cite string against that
+record field by field, and ask whether the source is being stretched past what
+it establishes.
+
 Fix the blockers yourself, then update the manifest in one edit, run the full
 check, and commit each lesson separately.
 
@@ -69,9 +77,16 @@ each commit.
 - Treat each lesson as artwork: make the prose engaging, the pedagogy elegant,
   and the whole piece aesthetically coherent.
 - Keep forge work focused on content quality; do not add product features.
+- Every lesson carries citations: `citationsVersion: 1`, a `sources` array, and
+  6 to 12 `[^source-key]` markers inline in the prose. See the Citations section
+  of `docs/forge-spec.md`. Markers are hidden until the reader raises them, so
+  they cost the prose nothing; open every URL and resolve every DOI before
+  writing one, because a real paper attached to a claim it does not support
+  passes the gate and is worse than no citation.
 - For every new lesson, make `deeper` exactly three clickable objects shaped
   `{ title: 'Author, Work', why: '...', url: 'https://...' }`. Legacy string
-  items remain supported, but new work must use objects.
+  items remain supported, but new work must use objects. `deeper` is invitation,
+  `sources` is evidence; overlap between them is expected.
 - Give each source a tasteful label and an authoritative HTTPS link. Verify
   authors, titles, editions, and paper metadata against the linked record.
 - When available, vary the three sources across a primary text or source

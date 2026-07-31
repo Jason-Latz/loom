@@ -33,6 +33,18 @@ LOOM.lesson({
     { type: 'callback', prompt: '...', answer: '...', callbackTo: 'earlier-node-id' },
     { type: 'callback', prompt: '...', answer: '...', callbackTo: 'earlier-node-id' },
   ],
+  citationsVersion: 1,
+  sources: [                        // 4-16, every one cited by a marker below
+    {
+      key: 'hovers-2003',           // kebab-case, unique here, usually author-year
+      cite: 'Hovers, Ilani, Bar-Yosef and Vandermeersch, Current Anthropology 44(4): 491 to 522 (2003)',
+      url: 'https://...',           // https, and you opened it
+      doi: '10.1086/375869',        // whenever one exists
+      kind: 'paper',                // paper|primary|book|institution|object|dataset
+      access: 'open',               // open|paywalled
+      note: 'One clause on what this source establishes for this lesson.',
+    },
+  ],
   deeper: [
     { title: 'Author, Work', why: 'One clause on what it offers.', url: 'https://...' },
     { title: 'Institution, Source or object', why: 'One clause on what it reveals.', url: 'https://...' },
@@ -88,6 +100,49 @@ fine to include one thread the graph does not draw if the lesson earned it.
 - Shape the five questions as one elegant learning sequence, not five isolated
   checks.
 
+## Citations (6-12 markers, 4-16 sources)
+
+Every lesson carries per-claim citations. The reader meets a clean page; a
+control at the head of the lesson raises a numbered gilt superscript on every
+sourced claim, and the numbered source list at the foot of the lesson is always
+visible. So the apparatus costs the prose nothing, and there is no reason to
+write around it.
+
+**The marker.** Put `[^source-key]` inline in `story` or `significance`,
+immediately after the punctuation of the clause it supports, with no space:
+
+```js
+'they put the lower layers near ninety-two thousand years ago, give or take five thousand.[^hovers-2003]'
+```
+
+This is a structured token, not markdown styling, which is why it is the one
+bracket syntax allowed inside the prose. The gate strips markers before it
+measures anything, so citations never move a lesson inside the word band.
+
+**What earns one.** Load-bearing claims, not sentences. Specific dates,
+quantities and measurements; direct quotations; named scholarly debates and
+named positions; anywhere the lesson corrects a superseded view; anything a
+skeptical reader would reasonably doubt. Do not cite the composite character's
+sensory experience, or general background a textbook would carry. Almost
+everything belongs in significance; at most two markers in the story, and only
+for hard excavated or documented facts.
+
+Never cite the same source twice in one paragraph (the gate rejects it). The
+same source in different paragraphs is expected. Overlap with `deeper` is fine:
+`deeper` is invitation, `sources` is evidence.
+
+**Verification is the whole job.** A real, live, authoritative paper attached to
+a sentence it does not actually support passes the gate and is worse than no
+citation at all. Open every URL. Resolve DOI metadata at
+`https://api.crossref.org/works/<doi>` before naming authors, venue, volume or
+pages. Never work from a search snippet. Prefer sources a reader can actually
+read (PMC, PLOS, university repositories, museum records, official translations)
+and mark anything else `access: 'paywalled'`. If you cannot verify it, drop it:
+six solid citations beat twelve with one invented.
+
+Write page ranges as "491 to 522"; the dash ban applies to these fields too, and
+the gate scans them.
+
 ## Deeper (3)
 
 New lessons should use exactly three clickable source objects shaped
@@ -115,7 +170,9 @@ rather than a database annotation.
 - Dates as "c. 9500 BCE", "1347 CE" on first use per section, bare after.
 - No bullet lists inside story or significance; they are prose.
 - No headers inside the arrays; the app renders section heads itself.
-- Plain quotation marks and apostrophes are fine; avoid markdown syntax.
+- Plain quotation marks and apostrophes are fine; avoid markdown syntax. The
+  one exception is the `[^source-key]` citation marker, which is a structured
+  token the reader never sees as text.
 - Vivid is good, invented certainty is not. Composite characters are labeled;
   real quotes are real.
 

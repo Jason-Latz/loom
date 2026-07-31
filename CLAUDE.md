@@ -30,7 +30,9 @@ lessons into it.
 - `data/eras/01..10-*.js` — the graph. Nodes carry id/title/date/sort/region/x/threads/hook/summary/edges. Node array order per era = reading order = main sequence. Edges point FORWARD in that sequence only.
 - `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js starts the app, then streams them in; nodes light up as files register).
 - `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters, path highlighting, and the two world-map bands.
-- `js/reader.js` — dossier panel + lesson reading room + questions UI.
+- `js/reader.js` — dossier panel + lesson reading room + questions UI + the
+  citation apparatus (marker splitting, the evidence switch, the sources
+  cartouche).
 - `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from a feature of the present). Always a subset of the real graph.
 - `js/app.js` — localStorage state (`loom.v1`), header controls, search, intro.
 - `docs/forge-spec.md` — binding style contract for lesson prose.
@@ -61,8 +63,18 @@ lessons into it.
   sentence music, and structural unity; accuracy and clarity are only the floor.
 - Mobile and interaction foundations are reliable. Resist feature creep and
   treat content quality as the main problem now.
-- Include authoritative citations or direct links wherever the lesson format
-  can present them tastefully.
+- **Every lesson carries per-claim citations.** `citationsVersion: 1`, a
+  `sources` array, and 6 to 12 `[^source-key]` markers inline in the prose,
+  immediately after the punctuation of the clause they support. Markers are
+  hidden until the reader presses "Show the evidence", and the numbered Sources
+  cartouche at the foot of the lesson is always visible, so the apparatus costs
+  the reading nothing. Full contract in `docs/forge-spec.md`.
+- **A citation is only real once you have opened it.** Resolve DOI metadata at
+  `https://api.crossref.org/works/<doi>` before naming authors, venue, volume or
+  pages, and fetch the URL to confirm it hosts what the cite claims. A live
+  authoritative paper attached to a sentence it does not support passes the gate
+  and is worse than no citation at all. Six solid citations beat twelve with one
+  invented.
 - No em/en dashes anywhere in content or UI copy (Jason's rule; check enforces).
 - Node ids are kebab-case and permanent (lessons, edges, and progress key on them).
 - Adding a node: insert in era file at the right array position (chronological),
@@ -81,7 +93,12 @@ lessons into it.
 - **The gate cannot read English.** It checks structure, not truth or grammar.
   Every batch of forged lessons needs an adversarial reviewer agent too; that
   pass has caught a superseded dating and several confidently-wrong claims that
-  the gate passed green.
+  the gate passed green. This goes double for citations: the gate proves a
+  marker resolves and a URL parses, never that the paper supports the sentence.
+- **Citation markers must never change the prose.** They are stripped before
+  every measurement in the gate. When bulk-adding them, prove it: strip the
+  markers from the edited file and diff the prose against git HEAD. Anything
+  other than byte-identical is a bug in the tooling, not in the writing.
 - **Subagents do NOT inherit Fable.** Omitting `model` on a Workflow `agent()`
   call resolves to Opus, not the Fable session model; only an explicit
   `model: 'fable'` gives Fable (verified by probe, 2026-07-28). Pin it on every
