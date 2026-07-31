@@ -179,32 +179,21 @@ lessons into it.
   forward wires. Independently reviewed Fable's nine Era IV lessons, integrated
   each in its own gate-green commit, and deployed 365 nodes and 43 lessons to
   production. Local and live browser QA passed at desktop, 390 px, and 320 px.
-- **2026-07-18 (evening):** The 365 expansion. Designed, adversarially
-  verified, and integrated 236 new seed nodes (129 → 365, one per day of a
-  year) across all ten eras as pure insertions, per Jason's chosen emphases:
-  philosophy with primary-text reading anchors, trade/money/technology, and
-  underrepresented regions as a priority. Made the gate's callback-count rule
-  manifest-aware. Wrote all nine Era IV lessons per the handoff (Fable agents
-  only): source-verified, literarily revised, adversarially reviewed (two
-  factual blockers caught and fixed), single-file checks green; files left
-  unmanifested for Codex's release review. Audit dossier:
-  docs/graph-expansion-365.md; completion report:
-  docs/era-iv-completion-report.md.
-- **2026-07-18:** Audited and corrected Era IV graph architecture, relocated
-  two chronologically misplaced nodes, prepared the source-backed Fable writing
-  handoff, and recorded the Fable/Codex division of responsibility.
-- **2026-07-17:** Era III completed. Forged and adversarially audited all 13
-  lessons, with 39 clickable authoritative source links across the era.
-- **2026-07-17** — Era II completed and adversarially audited, with the release
-  gate made strict. Added the mobile layout and real pinch zoom.
-- **2026-07-16** — Era I finished and hardened. Forged the last 3 lessons, then
-  ran an adversarial verify pass over all 8: fixed a Blombos engraved-vs-drawn
-  conflation, an inverted claim about the deepest human-ancestry splits, a
+- **2026-07-18 (evening):** The 365 expansion. Designed, adversarially verified
+  and integrated 236 seed nodes (129 to 365) across all ten eras as pure
+  insertions, per Jason's emphases: philosophy with primary-text anchors,
+  trade/money/technology, underrepresented regions. Made the callback-count rule
+  manifest-aware. Wrote all nine Era IV lessons. Dossier:
+  `docs/graph-expansion-365.md`; report: `docs/era-iv-completion-report.md`.
+- **2026-07-18:** Audited and corrected Era IV graph architecture, and recorded
+  the Fable/Codex division of responsibility.
+- **2026-07-17:** Eras II and III completed and adversarially audited. Release
+  gate made strict; mobile layout and real pinch zoom added.
+- **2026-07-16:** Era I finished and hardened. An adversarial verify pass fixed
+  a Blombos engraved-vs-drawn conflation, an inverted ancestry-split claim, a
   Sulawesi dating superseded in 2024, and a false "final node" claim. Two agents
   had stripped every apostrophe from their lessons ("the men shoulders") and the
-  gate passed them, so the gate now fails apostrophe-less prose. Also fixed the
-  reader calling a jump back to lesson one the "next" lesson, and a zero-height
-  container permanently poisoning the chart viewBox with Infinity/NaN.
+  gate passed them, so the gate now fails apostrophe-less prose.
 - **2026-07-15** — Born: graph (120 nodes/10 eras), parchment atlas app
   (map/dossier/reader/progress/lamplight), check gate, forge spec + skill,
   Era I lessons (exemplar by Fable, rest by Opus agents under the spec).
