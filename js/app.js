@@ -2,7 +2,7 @@
 LOOM.app = (function () {
   var h = LOOM.ui.h;
   var KEY = 'loom.v1';
-  var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false, streak: null };
+  var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false, streak: null, evidence: false };
   var ready = false;
 
   // ---------------- streak ----------------
@@ -73,6 +73,16 @@ LOOM.app = (function () {
       if (LOOM.map) LOOM.reader.showDossier(id);
     }, 900);
   }
+  // Citation markers are off by default and the choice sticks, so a reader who
+  // wants the evidence raises it once rather than on every lesson.
+  function evidenceOn() { return !!state.evidence; }
+  function setEvidence(on) {
+    state.evidence = !!on;
+    document.body.classList.toggle('evidence-on', state.evidence);
+    save();
+    return state.evidence;
+  }
+
   function getMark(lessonId, qi) { return (state.marks[lessonId] || {})[qi] || null; }
   function setMark(lessonId, qi, v) {
     (state.marks[lessonId] = state.marks[lessonId] || {})[qi] = v;
@@ -313,6 +323,7 @@ LOOM.app = (function () {
   function init() {
     load();
     if (state.lamplight) document.body.classList.add('lamplight');
+    if (state.evidence) document.body.classList.add('evidence-on');
     renderLampButton();
     LOOM.map.init();
     LOOM.reader.init();
@@ -360,6 +371,8 @@ LOOM.app = (function () {
     markRead: markRead,
     getMark: getMark,
     setMark: setMark,
+    evidenceOn: evidenceOn,
+    setEvidence: setEvidence,
     nextAfter: nextAfter,
     // called by boot.js as streamed lesson files register; refresh() is
     // idempotent, so late arrivals just repaint rings, progress, and streak.

@@ -420,6 +420,77 @@ body.lamplight .dos-thread { color: #16110a; }
 .q-marks .btn.picked-no { background: var(--seal); border-color: var(--seal); color: var(--paper); }
 body.lamplight .q-marks .btn.picked-yes, body.lamplight .q-marks .btn.picked-no { color: #16110a; }
 
+/* ---------------- citations ---------------- */
+/* Markers live in the prose but stay invisible until the reader asks for them.
+   The numbered list at the foot of the lesson is always present. */
+.ev-row { display: flex; justify-content: center; margin: 4px 0 26px; }
+.ev-btn {
+  border: 1px solid var(--line-faint); background: transparent; cursor: pointer;
+  border-radius: 999px; padding: 5px 14px;
+  font-size: 11.5px; font-variant: small-caps; letter-spacing: 0.16em; color: var(--ink-faint);
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+.ev-btn::before { content: '✦ '; color: var(--gilt); }
+.ev-btn:hover { color: var(--ink-soft); border-color: var(--line); }
+.ev-btn[aria-pressed='true'] { color: var(--gilt); border-color: var(--gilt); }
+
+.cite-mark {
+  border: none; background: none; padding: 0; margin: 0 0 0 1px;
+  font-family: inherit; font-size: 0.62em; line-height: 1;
+  vertical-align: super; color: var(--gilt); cursor: pointer;
+  position: relative;
+}
+.cite-mark:hover { color: var(--gilt-bright); }
+/* the tap target is a fingertip; the glyph stays a superscript numeral, so this
+   pseudo-element grows the hit area without touching the line box */
+.cite-mark::before { content: ''; position: absolute; inset: -13px -9px -11px -9px; }
+/* expanding must not change the numeral's width, or the whole line reflows */
+.cite-mark[aria-expanded='true'] {
+  color: var(--gilt-bright); font-weight: 700;
+  text-decoration: underline; text-underline-offset: 2px;
+}
+/* the default read: no markers, no glosses, prose exactly as written */
+body:not(.evidence-on) .cite-mark,
+body:not(.evidence-on) .cite-gloss { display: none !important; }
+
+.cite-gloss {
+  font-size: 13.5px; line-height: 1.6; color: var(--ink-soft);
+  border-left: 2px solid var(--gilt); padding: 2px 0 2px 13px;
+  margin: -0.35em 0 1.15em 2px;
+}
+.cite-n { font-variant: small-caps; letter-spacing: 0.14em; color: var(--gilt); font-size: 12px; }
+.cite-label { color: var(--ink); }
+.cite-note { display: block; margin-top: 3px; font-style: italic; }
+.cite-links { display: block; margin-top: 5px; font-size: 12.5px; }
+.cite-sep { color: var(--ink-faint); margin: 0 7px; }
+.cite-gloss a, .cart-list a {
+  color: var(--ink); text-decoration-color: var(--gilt); text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+.cite-gloss a:hover, .cart-list a:hover { color: var(--gilt); }
+a.cite-out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
+@media (prefers-reduced-motion: no-preference) {
+  .cite-gloss { animation: gloss-in 0.22s ease; }
+}
+@keyframes gloss-in { from { opacity: 0; transform: translateY(-3px); } to { opacity: 1; transform: none; } }
+
+/* the sources apparatus, drawn as a chart legend rather than a bibliography */
+.cartouche {
+  border: 1px solid var(--line); outline: 1px solid var(--line); outline-offset: 3px;
+  background: color-mix(in srgb, var(--parchment) 55%, transparent);
+  padding: 18px 20px 16px;
+}
+.cart-h { font-variant: small-caps; letter-spacing: 0.22em; font-size: 11.5px; color: var(--gilt); text-align: center; }
+.cart-rule { height: 1px; background: var(--line-faint); margin: 11px 0 14px; }
+.cart-list { list-style: none; display: grid; gap: 13px; }
+.cart-list li { display: grid; grid-template-columns: 24px 1fr; font-size: 13.5px; line-height: 1.58; color: var(--ink-soft); }
+.cart-n { color: var(--gilt); font-variant: small-caps; letter-spacing: 0.1em; font-size: 12.5px; }
+.cart-kind {
+  font-size: 10px; font-variant: small-caps; letter-spacing: 0.13em; color: var(--ink-faint);
+  border: 1px solid var(--line-faint); border-radius: 999px; padding: 1px 7px; margin-left: 7px;
+  white-space: nowrap;
+}
+
 .deeper { list-style: none; }
 .deeper li { font-size: 15px; line-height: 1.6; margin-bottom: 9px; padding-left: 20px; position: relative; color: var(--ink-soft); }
 .deeper li::before { content: '❧'; position: absolute; left: 0; color: var(--gilt); }

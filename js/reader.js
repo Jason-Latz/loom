@@ -107,6 +107,153 @@ LOOM.reader = (function () {
     return wrapEl;
   }
 
+  // ---------------- citations ----------------
+  // Prose carries [^source-key] tokens. They are hidden by default: the reader
+  // meets a clean page, and the evidence switch raises a numbered superscript on
+  // every sourced claim. The numbered list at the foot of the lesson is always
+  // there, switch or no switch.
+  var MARKER_SRC = '\\[\\^([a-z0-9]+(?:-[a-z0-9]+)*)\\]';
+  var glossSeq = 0;
+
+  function citations(l) {
+    var by = {};
+    (l.sources || []).forEach(function (s) { by[s.key] = s; });
+    // Numbered by order of first appearance, so the foot of the lesson reads in
+    // the order the reader met each source.
+    var order = [], num = {};
+    (l.story || []).concat(l.significance || []).forEach(function (p) {
+      if (typeof p !== 'string') return;
+      var re = new RegExp(MARKER_SRC, 'g'), m;
+      while ((m = re.exec(p))) {
+        if (by[m[1]] && !num[m[1]]) { order.push(m[1]); num[m[1]] = order.length; }
+      }
+    });
+    return { by: by, order: order, num: num, any: order.length > 0 };
+  }
+
+  function sourceLinks(s, cls) {
+    var box = h('span', cls);
+    var a = h('a', 'cite-out', s.access === 'paywalled' ? 'Publisher record' : 'Read it');
+    a.href = s.url;
+    a.target = '_blank';
+    a.rel = 'noopener noreferrer';
+    box.appendChild(a);
+    if (s.doi) {
+      box.appendChild(h('span', 'cite-sep', '·'));
+      var d = h('a', null, 'doi ' + s.doi);
+      d.href = 'https://doi.org/' + s.doi;
+      d.target = '_blank';
+      d.rel = 'noopener noreferrer';
+      box.appendChild(d);
+    }
+    return box;
+  }
+
+  function glossBlock(s, n) {
+    var g = h('div', 'cite-gloss');
+    g.id = 'cite-gloss-' + (++glossSeq);
+    g.hidden = true;
+    g.appendChild(h('span', 'cite-n', n + ' · '));
+    g.appendChild(h('span', 'cite-label', s.cite));
+    g.appendChild(h('span', 'cite-note', s.note));
+    g.appendChild(sourceLinks(s, 'cite-links'));
+    return g;
+  }
+
+  // A paragraph of lesson prose, with its markers turned into buttons and its
+  // glosses returned to sit directly beneath it. Never innerHTML: the prose is
+  // text, and it stays text.
+  function proseParagraph(text, cite) {
+    var p = h('p');
+    var glosses = [];
+    var re = new RegExp(MARKER_SRC, 'g');
+    var last = 0, m;
+    while ((m = re.exec(text))) {
+      if (m.index > last) p.appendChild(document.createTextNode(text.slice(last, m.index)));
+      last = m.index + m[0].length;
+      var s = cite.by[m[1]];
+      if (!s) continue; // an unknown key is swallowed rather than printed at the reader
+      var n = cite.num[m[1]];
+      var btn = h('button', 'cite-mark', String(n));
+      btn.setAttribute('aria-label', 'Source ' + n + ': ' + s.cite);
+      var g = glossBlock(s, n);
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-controls', g.id);
+      btn.addEventListener('click', function (gloss, control) {
+        return function () {
+          var open = control.getAttribute('aria-expanded') === 'true';
+          control.setAttribute('aria-expanded', open ? 'false' : 'true');
+          gloss.hidden = open;
+        };
+      }(g, btn));
+      p.appendChild(btn);
+      glosses.push(g);
+    }
+    if (last < text.length) p.appendChild(document.createTextNode(text.slice(last)));
+    return { p: p, glosses: glosses };
+  }
+
+  function appendProse(host, text, cite) {
+    var built = proseParagraph(text, cite);
+    host.appendChild(built.p);
+    built.glosses.forEach(function (g) { host.appendChild(g); });
+  }
+
+  function closeAllGlosses() {
+    reader.querySelectorAll('.cite-mark[aria-expanded="true"]').forEach(function (b) {
+      b.setAttribute('aria-expanded', 'false');
+      var g = document.getElementById(b.getAttribute('aria-controls'));
+      if (g) g.hidden = true;
+    });
+  }
+
+  function evidenceSwitch() {
+    var row = h('div', 'ev-row');
+    var btn = h('button', 'ev-btn');
+    function paint() {
+      var on = LOOM.app.evidenceOn();
+      document.body.classList.toggle('evidence-on', on);
+      btn.textContent = on ? 'Evidence shown' : 'Show the evidence';
+      btn.setAttribute('aria-pressed', on ? 'true' : 'false');
+      btn.title = on
+        ? 'Hide the citation markers. The sources stay listed at the foot of the lesson.'
+        : 'Raise a numbered marker on every claim that rests on a source.';
+    }
+    btn.addEventListener('click', function () {
+      var on = !LOOM.app.evidenceOn();
+      LOOM.app.setEvidence(on);
+      if (!on) closeAllGlosses();
+      paint();
+    });
+    paint();
+    row.appendChild(btn);
+    return row;
+  }
+
+  function sourcesSection(page, cite) {
+    page.appendChild(h('div', 'sec-head', 'The Evidence'));
+    var box = h('div', 'cartouche');
+    box.setAttribute('role', 'doc-endnotes');
+    box.setAttribute('aria-label', 'Sources for this lesson');
+    box.appendChild(h('div', 'cart-h', 'Sources for this lesson'));
+    box.appendChild(h('div', 'cart-rule'));
+    var ul = h('ul', 'cart-list');
+    cite.order.forEach(function (key) {
+      var s = cite.by[key];
+      var li = h('li');
+      li.appendChild(h('span', 'cart-n', String(cite.num[key])));
+      var body = h('span', 'cart-body');
+      body.appendChild(h('span', 'cite-label', s.cite));
+      if (s.access) body.appendChild(h('span', 'cart-kind', s.access === 'open' ? 'open access' : 'paywalled'));
+      body.appendChild(h('span', 'cite-note', s.note));
+      body.appendChild(sourceLinks(s, 'cite-links'));
+      li.appendChild(body);
+      ul.appendChild(li);
+    });
+    box.appendChild(ul);
+    page.appendChild(box);
+  }
+
   function connItem(targetId, typeLabel, why, pigmentThread) {
     var item = h('div', 'dos-conn');
     var link = h('button', 'conn-link');
@@ -200,13 +347,16 @@ LOOM.reader = (function () {
     page.appendChild(threadChips(n, 'page-threads'));
     page.appendChild(h('div', 'page-context', l.storyContext));
 
+    var cite = citations(l);
+    if (cite.any) page.appendChild(evidenceSwitch());
+
     var story = h('div', 'story');
-    l.story.forEach(function (p) { story.appendChild(h('p', null, p)); });
+    l.story.forEach(function (p) { appendProse(story, p, cite); });
     page.appendChild(story);
 
     page.appendChild(h('div', 'orn', '✦ ✦ ✦'));
     page.appendChild(h('div', 'sec-head', 'The View from Above'));
-    l.significance.forEach(function (p) { page.appendChild(h('p', null, p)); });
+    l.significance.forEach(function (p) { appendProse(page, p, cite); });
 
     page.appendChild(h('div', 'sec-head', 'The Threads'));
     var ul = h('ul', 'threads-out');
@@ -225,6 +375,10 @@ LOOM.reader = (function () {
       ul.appendChild(li);
     });
     page.appendChild(ul);
+
+    // The evidence sits with the substance, before the questions, so it reads as
+    // part of the argument rather than as an appendix trailing the whole page.
+    if (cite.any) sourcesSection(page, cite);
 
     page.appendChild(h('div', 'sec-head', 'Prove It to Yourself'));
     l.questions.forEach(function (q, qi) { page.appendChild(questionBlock(id, q, qi)); });
