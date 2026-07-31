@@ -13,6 +13,8 @@ lessons into it.
   then http://localhost:4173. Opening `index.html` directly also works.
 - Gate (must pass before any commit): `node scripts/check.mjs`
 - Single lesson check: `node scripts/check.mjs data/lessons/<id>.js`
+- Link health (hits the network, so pre-release rather than pre-commit):
+  `node scripts/check-links.mjs [<id> ...]`
 - Deploy: `vercel --prod --yes` (project `loom`, linked; static, no build step).
   Live at https://loomhistory.com (custom domain, Vercel-managed DNS, added
   2026-07-26) and https://loom-gray.vercel.app. There is no git remote, so
@@ -190,10 +192,10 @@ lessons into it.
 - **2026-07-17:** Eras II and III completed and adversarially audited. Release
   gate made strict; mobile layout and real pinch zoom added.
 - **2026-07-16:** Era I finished and hardened. An adversarial verify pass fixed
-  a Blombos engraved-vs-drawn conflation, an inverted ancestry-split claim, a
-  Sulawesi dating superseded in 2024, and a false "final node" claim. Two agents
-  had stripped every apostrophe from their lessons ("the men shoulders") and the
-  gate passed them, so the gate now fails apostrophe-less prose.
+  a Blombos conflation, an inverted ancestry-split claim, a Sulawesi dating
+  superseded in 2024, and a false "final node" claim. Two agents had stripped
+  every apostrophe from their lessons ("the men shoulders") and the gate passed
+  them, so the gate now fails apostrophe-less prose.
 - **2026-07-15** — Born: graph (120 nodes/10 eras), parchment atlas app
   (map/dossier/reader/progress/lamplight), check gate, forge spec + skill,
   Era I lessons (exemplar by Fable, rest by Opus agents under the spec).
