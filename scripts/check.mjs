@@ -59,6 +59,15 @@ const EDGE_TYPES = new Set(['enables', 'transforms', 'collides', 'echoes']);
 const nodeIndex = new Map(LOOM.nodes.map((n, i) => [n.id, i]));
 const wordCount = (s) => s.split(/\s+/).filter(Boolean).length;
 
+// Citation markers are a structured token, not prose: [^source-key] sits inline
+// in story/significance immediately after the punctuation of the clause it
+// supports. Strip them before ANY prose measurement or the word band silently
+// shifts under every lesson that gains citations.
+const MARKER_SRC = '\\[\\^([a-z0-9]+(?:-[a-z0-9]+)*)\\]';
+const stripMarkers = (s) => (typeof s === 'string' ? s.replace(new RegExp(MARKER_SRC, 'g'), '') : s);
+const SOURCE_KINDS = new Set(['paper', 'primary', 'book', 'institution', 'object', 'dataset']);
+const ACCESS = new Set(['open', 'paywalled']);
+
 function scanDashes(value, where) {
   if (typeof value === 'string') {
     if (/[—–]/.test(value)) err(`${where}: contains an em/en dash ("${value.slice(0, 60)}...")`);
@@ -183,14 +192,66 @@ for (const id of lessonIds) {
   // (dodging the single-quoted JS string delimiter), yielding "the men shoulders"
   // and "Aya girlhood". The gate cannot read English, but a lesson of this length
   // with no apostrophe anywhere has only ever meant that bug.
-  const prose = (l.story || []).concat(l.significance || []).join(' ');
+  const proseParts = (l.story || []).concat(l.significance || [])
+    .filter((p) => typeof p === 'string')
+    .map(stripMarkers);
+  const prose = proseParts.join(' ');
   if (prose.length > 400 && !/['’]/.test(prose)) {
     err(`${w}: prose contains no apostrophe at all, which means the possessives were stripped (look for "the men shoulders", "Aya girlhood")`);
   }
 
-  const words = (l.story || []).concat(l.significance || []).map(wordCount).reduce((a, b) => a + b, 0);
+  const words = proseParts.map(wordCount).reduce((a, b) => a + b, 0);
   if (words < 1100 || words > 2900) err(`${w}: prose is ${words} words (hard bounds 1100-2900)`);
   else if (words < 1500 || words > 2200) warn(`${w}: prose is ${words} words (aim 1500-2200)`);
+
+  // ---- citations ------------------------------------------------------------
+  // The gate cannot tell whether a source supports the sentence it is attached
+  // to. It can guarantee that every marker resolves, that every declared source
+  // is actually used, and that nothing is a bare URL pretending to be a citation.
+  const marks = [];
+  for (const [section, paras] of [['story', l.story], ['significance', l.significance]]) {
+    if (!Array.isArray(paras)) continue;
+    paras.forEach((p, pi) => {
+      if (typeof p !== 'string') return;
+      const here = new Set();
+      for (const m of p.matchAll(new RegExp(MARKER_SRC, 'g'))) {
+        marks.push({ key: m[1], where: `${section}[${pi}]` });
+        if (here.has(m[1])) err(`${w}: source "${m[1]}" is cited twice in the same paragraph (${section}[${pi}])`);
+        here.add(m[1]);
+      }
+    });
+  }
+
+  if (l.sources !== undefined || l.citationsVersion !== undefined || marks.length) {
+    if (l.citationsVersion !== 1) err(`${w}: citationsVersion must be 1 when a lesson carries citations`);
+    if (!Array.isArray(l.sources) || l.sources.length < 4 || l.sources.length > 16) {
+      err(`${w}: sources must be an array of 4 to 16 entries`);
+    }
+    const keys = new Set();
+    for (const [i, s] of (Array.isArray(l.sources) ? l.sources : []).entries()) {
+      const sw = `${w}: source ${i + 1}`;
+      if (!s || typeof s !== 'object') { err(`${sw} must be an object`); continue; }
+      if (typeof s.key !== 'string' || !/^[a-z0-9]+(-[a-z0-9]+)*$/.test(s.key)) err(`${sw} key must be kebab-case`);
+      else if (keys.has(s.key)) err(`${sw} duplicate key "${s.key}"`);
+      else keys.add(s.key);
+      if (typeof s.cite !== 'string' || wordCount(s.cite) < 3) err(`${sw} needs a human-readable cite (author, venue, year), not a bare URL`);
+      if (typeof s.note !== 'string' || wordCount(s.note) < 5) err(`${sw} needs a note saying what it establishes`);
+      try {
+        const u = new URL(s.url);
+        if (u.protocol !== 'https:') throw new Error('not https');
+      } catch {
+        err(`${sw} must use a valid https URL`);
+      }
+      if (s.kind !== undefined && !SOURCE_KINDS.has(s.kind)) err(`${sw} unknown kind "${s.kind}"`);
+      if (s.access !== undefined && !ACCESS.has(s.access)) err(`${sw} access must be "open" or "paywalled"`);
+      if (s.doi !== undefined && !/^10\.\d{4,9}\/\S+$/.test(s.doi)) err(`${sw} doi "${s.doi}" is not a bare DOI (expected 10.xxxx/...)`);
+    }
+    const cited = new Set(marks.map((m) => m.key));
+    for (const m of marks) if (!keys.has(m.key)) err(`${w}: marker [^${m.key}] in ${m.where} has no declared source`);
+    for (const k of keys) if (!cited.has(k)) err(`${w}: source "${k}" is declared but never cited in the prose; an uncited source belongs in deeper`);
+    if (marks.length < 5 || marks.length > 16) err(`${w}: ${marks.length} citation markers in the prose (5 to 16 required, aim 6 to 12)`);
+  }
+
   scanDashes(l, w);
 }
 
