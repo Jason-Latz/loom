@@ -161,25 +161,15 @@ lessons into it.
   living scholar, a geographic falsehood, a false causal bridge, and an
   arithmetic error both reviews missed. Ten graph-data defects corrected against
   fetched primary sources. Report: `docs/era-i-completion-report.md`.
-- **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed. Node
-  tap targets now hold a fingertip-sized screen radius at any zoom (--hit-r
-  geometry property driven from map.js apply()); boot streams lesson files in
-  after the app starts so the chart is interactive immediately, with the open
-  dossier re-rendered as files register; fixed the header flex squeeze that
-  crushed search to 31px between 900 and 1400 px (the "narrow dropdown" bug);
-  iOS fixes (16px search font against focus zoom, dvh bottom sheets,
-  viewport-fit=cover with safe-area insets); coarse-pointer size bumps for
-  rail, chips, zoom, and results; theme-color synced to lamplight; touch-aware
-  intro copy; reduced-motion support without strobing the next-node halo.
+- **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed:
+  fingertip-sized tap targets at any zoom (--hit-r), lessons streamed in after
+  boot so the chart is interactive immediately, the header flex squeeze that
+  crushed search to 31px fixed, iOS focus-zoom and dvh and safe-area fixes,
+  coarse-pointer sizing, theme-color synced to lamplight, reduced motion.
 - **2026-07-26:** Era V released and the site moved to loomhistory.com. All
-  thirteen core lessons of The Believing World forged in one pipeline: Opus
-  research briefs with fetched-and-verified sources, graph corrections landed
-  first (salt/gold flow inversion, Talas papermaker legend, Ibn al-Haytham's
-  Cairo, Wari/Tiwanaku vs Cahokia chronology), Fable drafts plus dedicated
-  literary revision, two independent Opus reviews per lesson (37 blockers,
-  107 majors, 144 minors raised), Fable fixes re-verified finding by finding,
-  thirteen gate-green commits, browser QA local and live, production deploy
-  with the loomhistory.com domain attached.
+  thirteen lessons forged in one pipeline: Opus research briefs, graph
+  corrections first, Fable drafts plus literary revision, two independent Opus
+  reviews per lesson (37 blockers raised), thirteen gate-green commits.
 - **2026-07-21:** Adversarially audited all 236 expansion seeds, correcting
   more than one hundred nodes across all ten eras and bringing the graph to 800
   forward wires. Independently reviewed Fable's nine Era IV lessons, integrated
