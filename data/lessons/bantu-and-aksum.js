@@ -68,7 +68,7 @@ LOOM.lesson({
     {
       key: 'shitomi-1997',
       cite: 'Yuzo Shitomi, Memoirs of the Research Department of the Toyo Bunko 55: 81 to 102 (1997)',
-      url: 'https://toyo-bunko.repo.nii.ac.jp/records/3238',
+      url: 'https://web.archive.org/web/20251007223109/https://toyo-bunko.repo.nii.ac.jp/records/3238',
       kind: 'paper',
       access: 'open',
       note: 'Sets out the passage the lesson alludes to. In the Kephalaia, a collection of Mani’s sayings datable to shortly after the middle of the third century CE, four great kingdoms of the world are named, the third of them, after the kingdom of the land of Babylon and of Persia and the kingdom of the Romans, being the kingdom of the Aksumites. The article adds that researchers are divided over the fourth, the kingdom of Silis, with strong support for identifying it as the Chinese empire.',

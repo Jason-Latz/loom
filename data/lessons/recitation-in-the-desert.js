@@ -33,7 +33,7 @@ LOOM.lesson({
     {
       key: 'milwright-2016',
       cite: 'Marcus Milwright, The Dome of the Rock and its Umayyad Mosaic Inscriptions, Edinburgh University Press (March 2016), 320 pages, ISBN 9780748695607',
-      url: 'https://edinburghuniversitypress.com/book-the-dome-of-the-rock-and-its-umayyad-mosaic-inscriptions.html',
+      url: 'https://doi.org/10.1515/9781474460446',
       doi: '10.1515/9781474460446',
       kind: 'book',
       access: 'paywalled',

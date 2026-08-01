@@ -51,15 +51,22 @@ async function probe(url) {
       if (method === 'HEAD') continue;
       return { ok: false, status: r.status };
     } catch (e) {
-      if (method === 'GET') return { ok: false, status: e.name === 'AbortError' ? 'timeout' : 'network' };
+      if (method !== 'GET') continue;
+      if (e.name === 'AbortError') return { ok: false, status: 'timeout' };
+      // Several museum and university servers serve an incomplete certificate
+      // chain. Browsers and curl build the chain anyway; Node's fetch refuses.
+      // That is a server hygiene problem, not a dead link, so say so.
+      const code = (e.cause && e.cause.code) || '';
+      if (/CERT|SIGNATURE|CHAIN/i.test(code)) return { ok: false, status: 'tls-chain' };
+      return { ok: false, status: 'network' };
     }
   }
   return { ok: false, status: 'unknown' };
 }
 
 // A few at a time: hammering a publisher is how you earn a 403 that is about
-// you rather than about the link.
-const CONCURRENCY = 6;
+// you rather than about the link. The Met starts returning 429 above this.
+const CONCURRENCY = 3;
 const bad = [];
 let done = 0;
 const queue = targets.slice();
@@ -73,12 +80,12 @@ await Promise.all(Array.from({ length: CONCURRENCY }, async () => {
   }
 }));
 
-// 403 is usually a bot wall rather than a dead link, so it is reported apart
-// from the failures that actually need fixing.
-const walls = bad.filter((b) => b.status === 403 || b.status === 401);
+// 403 and 401 are bot walls, and 429 means we asked too fast rather than that
+// the link is broken. All three are reported apart from real failures.
+const walls = bad.filter((b) => b.status === 403 || b.status === 401 || b.status === 429 || b.status === 'tls-chain');
 const dead = bad.filter((b) => !walls.includes(b));
 
 for (const b of dead) console.log(`  DEAD  ${b.id} · ${b.where} · ${b.status} · ${b.url}`);
 for (const b of walls) console.log(`  wall  ${b.id} · ${b.where} · ${b.status} · ${b.url}`);
-console.log(`\n${targets.length} URLs checked, ${dead.length} dead, ${walls.length} bot-walled (open those in a browser before assuming they are broken).`);
+console.log(`\n${targets.length} URLs checked, ${dead.length} dead, ${walls.length} bot-walled or chain-broken (open those in a browser before assuming they are broken).`);
 process.exit(dead.length ? 1 : 0);
