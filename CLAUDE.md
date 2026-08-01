@@ -112,51 +112,55 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-07-29, after the Era I completion)
+## State (2026-08-01, after the citation pass)
 
-- **Era I is the first fully charted era: 20/20 nodes written.** 68 lessons total
-  across the atlas. Gate: `OK: 365 nodes, 800 wires, 10 eras, 68 lessons. 0 warning(s).`
-- Twelve Era I lessons forged through the full six-stage pipeline (research,
-  draft, literary revision, dual adversarial review, fix, verify), plus ten
-  sourced graph-data corrections and two retrofitted predecessor lessons.
-  Report: `docs/era-i-completion-report.md`; briefs: `docs/era-i-briefs/`;
-  correction dossier: `docs/era-i-graph-corrections.md`.
-- **Inserting lessons early in the sequence retroactively changes what the gate
-  demands of later ones**, since the callback count derives from earlier WRITTEN
-  lessons. `spark-of-mind` and `great-dispersal` both had to gain callbacks.
-  Integrate in main-sequence order, and commit any closed callback chain
-  atomically (Era I's indices 0 to 5 are only green together).
-- Graph is at its final size: 365 nodes (one per day of a year), 800 wires, 10
-  eras. All 236 expansion seeds were adversarially audited; rationales and the
-  release audit are in `docs/graph-expansion-365.md`.
-- Remaining unwritten: Era II 19, Era III 21, Era IV 25, Era V 25. Eras VI to X
-  are entirely unwritten seeds. Earlier era reports and briefs:
-  `docs/era-iv-*`, `docs/era-v-*`.
-- check.mjs derives each lesson's required callback count from earlier WRITTEN
-  lessons (manifest-aware), not raw node index, since unwritten seeds precede
-  the first written lessons.
-- Production is https://loomhistory.com (custom domain, Vercel-managed DNS)
-  and https://loom-gray.vercel.app. Deploys are manual: forging a lesson does
-  not publish it until you redeploy.
-- Next: forge Era II through the same pipeline and gate.
+- **Every one of the 68 written lessons now carries per-claim citations**: 826
+  sources and 964 markers across the atlas. Gate:
+  `OK: 365 nodes, 800 wires, 10 eras, 68 lessons. 0 warning(s).`
+- The apparatus: markers hidden until the reader presses "Show the evidence"
+  (the choice persists in `loom.v1`), gilt superscripts when raised, a gloss
+  beneath the paragraph on press, and a numbered Sources cartouche at the foot
+  of every lesson that is always visible. `scripts/check.mjs` now REQUIRES
+  citations, so a new lesson cannot ship without them.
+- Built in three stages per lesson: Opus research with every URL fetched and
+  every DOI resolved, an independent Opus refutation that reopened all of it,
+  and a Fable adjudication that re-anchored, retuned or dropped citations and
+  corrected the prose only where a lesson claimed more than its evidence
+  carried. That produced **84 prose corrections** and about a hundred reviewer
+  findings overruled as wrong.
+- The corrections matter more than the citations. `spark-of-mind` had
+  skeletally modern humans at Jebel Irhoud, contradicting both its source and
+  Loom's own Irhoud lesson; `ashoka-wheel` misread Rock Edict II;
+  `bantu-and-aksum` called the Aksum stelae granite; `caliphate-lightning` put
+  the fire altar on the gold coinage; `golden-sahara` cited a scholar absent
+  from the work it named. None of these could ever be caught by a structural
+  gate.
+- `node scripts/check-links.mjs` sweeps all 790 citation and further-reading
+  URLs. Two were genuinely dead and are fixed (a Wayback snapshot for the Toyo
+  Bunko record, a DOI for the Edinburgh UP page that infinite-redirects).
+- Remaining unwritten: Eras VI to X are entirely unwritten seeds. Graph is at
+  its final size: 365 nodes, 800 wires, 10 eras.
+- Production is https://loomhistory.com and https://loom-gray.vercel.app.
+  **The citation pass is committed but NOT yet deployed.**
+- Design study behind the apparatus: `docs/citation-options.html` (seven
+  treatments rendered on real prose, plus what the codebase rules out).
 
 ## Change log
 
+- **2026-08-01:** The citation pass. All 68 lessons gained per-claim citations
+  (826 sources, 964 markers) behind a reader-controlled evidence switch, with an
+  always-visible Sources cartouche. Three stages per lesson: Opus research, an
+  independent Opus refutation, a Fable adjudication. 84 prose corrections landed
+  where lessons claimed more than their evidence carried, and about a hundred
+  reviewer findings were overruled. The gate now requires citations and strips
+  markers before measuring prose. Design study: `docs/citation-options.html`.
 - **2026-07-29:** Era I completed, the first fully charted era (20/20). Twelve
   lessons forged on Fable through research, draft, dedicated literary revision,
-  two independent Opus reviews, fix, and an Opus verification gate that loops
-  back on rejection. The verify pass caught what the check gate cannot: a
-  fabricated stance attributed to a living scholar, a geographic falsehood in a
-  climactic sentence, a false causal bridge, an overstated count a reviewer had
-  already cleared on a bad check, and an arithmetic error both reviews missed by
-  checking two dates separately. Ten graph-data defects corrected against fetched
-  primary sources (fallow to red deer antlers, unpierced Qafzeh shells, the Qesem
-  hearth's two use cycles, carved not drilled flute holes, needles that do not
-  create fitted clothing, a puppy that was no hunting partner, a disputed
-  Xianrendong date, superseded Omo Kibish arithmetic, a missing ideas thread), and
-  two reviewer claims refuted rather than applied. `spark-of-mind` and
-  `great-dispersal` retrofitted with real callbacks now that lessons precede them.
-  Report: `docs/era-i-completion-report.md`.
+  two independent Opus reviews, fix, and an Opus verification gate. The verify
+  pass caught what the check gate cannot: a fabricated stance attributed to a
+  living scholar, a geographic falsehood, a false causal bridge, and an
+  arithmetic error both reviews missed. Ten graph-data defects corrected against
+  fetched primary sources. Report: `docs/era-i-completion-report.md`.
 - **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed. Node
   tap targets now hold a fingertip-sized screen radius at any zoom (--hit-r
   geometry property driven from map.js apply()); boot streams lesson files in
