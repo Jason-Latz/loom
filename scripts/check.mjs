@@ -222,7 +222,11 @@ for (const id of lessonIds) {
     });
   }
 
-  if (l.sources !== undefined || l.citationsVersion !== undefined || marks.length) {
+  // Citations are mandatory. Every written lesson carries them as of the
+  // 2026-08-01 pass, so a new lesson without them is an omission, not a choice.
+  if (!Array.isArray(l.sources) || !marks.length) {
+    err(`${w}: every lesson must carry citations (citationsVersion, a sources array, and [^key] markers in the prose)`);
+  } else {
     if (l.citationsVersion !== 1) err(`${w}: citationsVersion must be 1 when a lesson carries citations`);
     if (!Array.isArray(l.sources) || l.sources.length < 4 || l.sources.length > 16) {
       err(`${w}: sources must be an array of 4 to 16 entries`);
