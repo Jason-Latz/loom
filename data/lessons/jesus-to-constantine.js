@@ -9,7 +9,7 @@ LOOM.lesson({
       url: 'https://www.newadvent.org/fathers/25021.htm',
       kind: 'primary',
       access: 'open',
-      note: 'Eusebius’s own version of the 312 sign, a cross of light above the sun inscribed ‘Conquer by this\', which he states the emperor himself told him long afterwards and confirmed with an oath. It is the fuller and the later of the two surviving accounts.',
+      note: 'Eusebius’s own version of the 312 sign, a cross of light above the sun inscribed ‘Conquer by this’, which he states the emperor himself told him long afterwards and confirmed with an oath. It is the fuller and the later of the two surviving accounts.',
     },
     {
       key: 'wallraff-2001',
@@ -21,7 +21,7 @@ LOOM.lesson({
     },
     {
       key: 'drake-2016',
-      cite: 'H. A. Drake, The Emperor as a ‘Man of God\': The Impact of Constantine the Great’s Conversion on Roman Ideas of Kingship, História (São Paulo) 35: e83 (2016)',
+      cite: 'H. A. Drake, The Emperor as a ‘Man of God’: The Impact of Constantine the Great’s Conversion on Roman Ideas of Kingship, História (São Paulo) 35: e83 (2016)',
       url: 'https://www.scielo.br/pdf/his/v35/1980-4369-his-35-e83.pdf',
       doi: '10.1590/1980-436920160000000083',
       kind: 'paper',

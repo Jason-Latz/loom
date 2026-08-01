@@ -5,7 +5,7 @@ LOOM.lesson({
   sources: [
     {
       key: 'meyerhof-1926',
-      cite: 'Max Meyerhof, ‘New Light on Hunain Ibn Ishaq and His Period\', Isis 8(4): 685 to 724, 1926',
+      cite: 'Max Meyerhof, ‘New Light on Hunain Ibn Ishaq and His Period’, Isis 8(4): 685 to 724, 1926',
       url: 'https://doi.org/10.1086/358440',
       doi: '10.1086/358440',
       kind: 'paper',
@@ -30,7 +30,7 @@ LOOM.lesson({
     },
     {
       key: 'vagelpohl-2018',
-      cite: 'Uwe Vagelpohl, ‘The user-friendly Galen: Hunayn ibn Ishaq and the adaptation of Greek medicine for a new audience\', in Bouras-Vallianatos and Xenophontos (eds.), Greek Medical Literature and its Readers, Routledge, 2018',
+      cite: 'Uwe Vagelpohl, ‘The user-friendly Galen: Hunayn ibn Ishaq and the adaptation of Greek medicine for a new audience’, in Bouras-Vallianatos and Xenophontos (eds.), Greek Medical Literature and its Readers, Routledge, 2018',
       url: 'https://www.ncbi.nlm.nih.gov/books/NBK519309/',
       kind: 'paper',
       access: 'open',
@@ -46,7 +46,7 @@ LOOM.lesson({
     },
     {
       key: 'sep-greek-sources',
-      cite: 'Cristina D’Ancona, ‘Greek Sources in Arabic and Islamic Philosophy\', Stanford Encyclopedia of Philosophy, substantive revision 23 March 2026',
+      cite: 'Cristina D’Ancona, ‘Greek Sources in Arabic and Islamic Philosophy’, Stanford Encyclopedia of Philosophy, substantive revision 23 March 2026',
       url: 'https://plato.stanford.edu/entries/arabic-islamic-greek/',
       kind: 'paper',
       access: 'open',
@@ -54,7 +54,7 @@ LOOM.lesson({
     },
     {
       key: 'gutas-vanbladel-ei3',
-      cite: 'Dimitri Gutas and Kevin van Bladel, ‘Bayt al-hikma\', in Encyclopaedia of Islam, THREE, ed. Kate Fleet et al., Brill',
+      cite: 'Dimitri Gutas and Kevin van Bladel, ‘Bayt al-hikma’, in Encyclopaedia of Islam, THREE, ed. Kate Fleet et al., Brill',
       url: 'https://doi.org/10.1163/1573-3912_ei3_com_22882',
       doi: '10.1163/1573-3912_ei3_com_22882',
       kind: 'paper',
@@ -72,7 +72,7 @@ LOOM.lesson({
     },
     {
       key: 'di-branco-2012',
-      cite: 'Marco Di Branco, ‘Un’istituzione sasanide? Il Bayt al-hikma e il movimento di traduzione\', Studia graeco-arabica 2: 255 to 263, 2012',
+      cite: 'Marco Di Branco, ‘Un’istituzione sasanide? Il Bayt al-hikma e il movimento di traduzione’, Studia graeco-arabica 2: 255 to 263, 2012',
       url: 'https://learningroads.cfs.unipi.it/wp-content/uploads/2015/10/DiBranco_SGA_II.pdf',
       kind: 'paper',
       access: 'open',
@@ -96,7 +96,7 @@ LOOM.lesson({
     },
     {
       key: 'sep-al-kindi',
-      cite: 'Peter Adamson, ‘Al-Kindi\', Stanford Encyclopedia of Philosophy, substantive revision 25 April 2024',
+      cite: 'Peter Adamson, ‘Al-Kindi’, Stanford Encyclopedia of Philosophy, substantive revision 25 April 2024',
       url: 'https://plato.stanford.edu/entries/al-kindi/',
       kind: 'paper',
       access: 'open',

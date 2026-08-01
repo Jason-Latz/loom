@@ -34,7 +34,7 @@ LOOM.lesson({
     },
     {
       key: 'goldin-2011',
-      cite: 'Paul R. Goldin, Persistent Misconceptions about Chinese ‘Legalism\', Journal of Chinese Philosophy 38(1): 88 to 104 (2011)',
+      cite: 'Paul R. Goldin, Persistent Misconceptions about Chinese ‘Legalism’, Journal of Chinese Philosophy 38(1): 88 to 104 (2011)',
       url: 'https://doi.org/10.1111/j.1540-6253.2010.01629.x',
       doi: '10.1111/j.1540-6253.2010.01629.x',
       kind: 'paper',

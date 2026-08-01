@@ -55,7 +55,7 @@ LOOM.lesson({
       doi: '10.1086/300142',
       kind: 'paper',
       access: 'paywalled',
-      note: 'The paper the lesson names by its three authors: it isolates a single coherent prestige language behind the Classic inscriptions, terms it Classic Ch’olti’an, and argues its ancestral affiliation with the Eastern Ch’olan languages Ch’olti’ and its living descendant Ch’orti\'.',
+      note: 'The paper the lesson names by its three authors: it isolates a single coherent prestige language behind the Classic inscriptions, terms it Classic Ch’olti’an, and argues its ancestral affiliation with the Eastern Ch’olan languages Ch’olti’ and its living descendant Ch’orti’.',
     },
     {
       key: 'houston-stuart-1996',

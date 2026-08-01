@@ -81,7 +81,7 @@ LOOM.lesson({
       url: 'https://library.oapen.org/handle/20.500.12657/25898',
       kind: 'paper',
       access: 'open',
-      note: 'Establishes the documentary continuity the lesson leans on: the Persians changed very little in the monarch’s role, temple policy and the administration of Babylonia, and the chapter works from Babylonian tablets drafted and dated by Persian regnal years, including texts dated to the reign of Cyrus and one closing ‘year of Cambyses, king of Babylon, king of the Lands\'. The URL is the volume’s stable open-access OAPEN handle. No DOI exists for this chapter.',
+      note: 'Establishes the documentary continuity the lesson leans on: the Persians changed very little in the monarch’s role, temple policy and the administration of Babylonia, and the chapter works from Babylonian tablets drafted and dated by Persian regnal years, including texts dated to the reign of Cyrus and one closing ‘year of Cambyses, king of Babylon, king of the Lands’. The URL is the volume’s stable open-access OAPEN handle. No DOI exists for this chapter.',
     },
   ],
   storyContext:

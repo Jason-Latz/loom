@@ -90,7 +90,7 @@ LOOM.lesson({
     },
     {
       key: 'burkhalter-1992',
-      cite: 'Sheryl L. Burkhalter, "Listening for Silences in Almoravid History: Another Reading of ‘The Conquest That Never Was\'," History in Africa 19: 103 to 131 (1992)',
+      cite: 'Sheryl L. Burkhalter, "Listening for Silences in Almoravid History: Another Reading of ‘The Conquest That Never Was’," History in Africa 19: 103 to 131 (1992)',
       url: 'https://doi.org/10.2307/3171996',
       doi: '10.2307/3171996',
       kind: 'paper',

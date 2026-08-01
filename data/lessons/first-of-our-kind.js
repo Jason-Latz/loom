@@ -67,7 +67,7 @@ LOOM.lesson({
     },
     {
       key: 'wong-2017',
-      cite: 'Kate Wong, ‘Ancient Fossils from Morocco Mess Up Modern Human Origins\', Scientific American, 8 June 2017',
+      cite: 'Kate Wong, ‘Ancient Fossils from Morocco Mess Up Modern Human Origins’, Scientific American, 8 June 2017',
       url: 'https://www.scientificamerican.com/article/ancient-fossils-from-morocco-mess-up-modern-human-origins/',
       access: 'open',
       note: 'Where the two published dissents live: John Hawks arguing the modern-looking face may be retained from an H. antecessor-like population rather than previewing us, and noting that the team did not compare the Jebel Irhoud remains with the 800,000 year old fossils from Spain; and Marta Mirazón Lahr framing the fork between a globular braincase and a face as the criterion, with the warning that the face criterion would move the focus of modern human origins research from sub-Saharan Africa to the Mediterranean.',

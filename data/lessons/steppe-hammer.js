@@ -64,7 +64,7 @@ LOOM.lesson({
     },
     {
       key: 'kelly-2014',
-      cite: 'Christopher Kelly, ‘Neither Conquest Nor Settlement: Attila’s Empire and Its Impact\', in Michael Maas (ed.), The Cambridge Companion to the Age of Attila, 193 to 208 (Cambridge University Press, 2014)',
+      cite: 'Christopher Kelly, ‘Neither Conquest Nor Settlement: Attila’s Empire and Its Impact’, in Michael Maas (ed.), The Cambridge Companion to the Age of Attila, 193 to 208 (Cambridge University Press, 2014)',
       url: 'https://doi.org/10.1017/CCO9781139128964.016',
       doi: '10.1017/CCO9781139128964.016',
       kind: 'paper',

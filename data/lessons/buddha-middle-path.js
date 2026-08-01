@@ -9,7 +9,7 @@ LOOM.lesson({
       url: 'https://www.accesstoinsight.org/tipitaka/sn/sn56/sn56.011.than.html',
       kind: 'primary',
       access: 'open',
-      note: 'The discourse the whole scene rests on: it rejects the two extremes, lists the eightfold path in exactly the order the lesson gives, and frames each truth as a task, stating that stress ‘is to be comprehended\', its origination ‘is to be abandoned\', its cessation ‘is to be directly experienced’ and the path ‘is to be developed\'.',
+      note: 'The discourse the whole scene rests on: it rejects the two extremes, lists the eightfold path in exactly the order the lesson gives, and frames each truth as a task, stating that stress ‘is to be comprehended’, its origination ‘is to be abandoned’, its cessation ‘is to be directly experienced’ and the path ‘is to be developed’.',
     },
     {
       key: 'mn101-devadaha',
@@ -21,7 +21,7 @@ LOOM.lesson({
     },
     {
       key: 'siderits-buddha-sep',
-      cite: 'Mark Siderits, ‘Buddha\', Stanford Encyclopedia of Philosophy, substantive revision 6 March 2023',
+      cite: 'Mark Siderits, ‘Buddha’, Stanford Encyclopedia of Philosophy, substantive revision 6 March 2023',
       url: 'https://plato.stanford.edu/entries/buddha/',
       kind: 'institution',
       access: 'open',
@@ -49,7 +49,7 @@ LOOM.lesson({
       url: 'https://www.accesstoinsight.org/tipitaka/sn/sn22/sn22.059.mend.html',
       kind: 'primary',
       access: 'open',
-      note: 'The canonical argument the lesson compresses: each of the five aggregates is impermanent and not subject to control, so it is improper to regard any of them as ‘this is mine, this I am, this is my self\'. This is what ‘no permanent owner is found’ rests on.',
+      note: 'The canonical argument the lesson compresses: each of the five aggregates is impermanent and not subject to control, so it is improper to regard any of them as ‘this is mine, this I am, this is my self’. This is what ‘no permanent owner is found’ rests on.',
     },
     {
       key: 'mn38-mahatanhasankhaya',
@@ -57,7 +57,7 @@ LOOM.lesson({
       url: 'https://www.accesstoinsight.org/tipitaka/mn/mn.038.than.html',
       kind: 'primary',
       access: 'open',
-      note: 'The early text that rules out a transmigrating core: the monk Sāti is rebuked for holding that ‘it is just this consciousness that runs and wanders on\', and consciousness is instead said to be classified by the condition it depends on, exactly as a fire is named for its fuel.',
+      note: 'The early text that rules out a transmigrating core: the monk Sāti is rebuked for holding that ‘it is just this consciousness that runs and wanders on’, and consciousness is instead said to be classified by the condition it depends on, exactly as a fire is named for its fuel.',
     },
     {
       key: 'dn1-brahmajala',
@@ -65,7 +65,7 @@ LOOM.lesson({
       url: 'https://www.accesstoinsight.org/tipitaka/dn/dn.01.0.bodh.html',
       kind: 'primary',
       access: 'open',
-      note: 'Shows a god inside the conditioned world directly: a being falls from the Ābhassara realm, arises first in an empty Brahmā world, and concludes ‘I am Brahmā, the Great Brahmā, the Father of all that are and are to be\', which the sutta diagnoses as a false eternalist inference from limited memory. A god narrated as reborn and conditioned, not a creator or a granter of awakening.',
+      note: 'Shows a god inside the conditioned world directly: a being falls from the Ābhassara realm, arises first in an empty Brahmā world, and concludes ‘I am Brahmā, the Great Brahmā, the Father of all that are and are to be’, which the sutta diagnoses as a false eternalist inference from limited memory. A god narrated as reborn and conditioned, not a creator or a granter of awakening.',
     },
     {
       key: 'snp3-9-vasettha',
@@ -95,7 +95,7 @@ LOOM.lesson({
     },
     {
       key: 'analayo-2007-oral',
-      cite: 'Bhikkhu Anālayo, ‘Oral Dimensions of Pāli Discourses: Pericopes, other Mnemonic Techniques and the Oral Performance Context\', Canadian Journal of Buddhist Studies 3: 5 to 33 (2007)',
+      cite: 'Bhikkhu Anālayo, ‘Oral Dimensions of Pāli Discourses: Pericopes, other Mnemonic Techniques and the Oral Performance Context’, Canadian Journal of Buddhist Studies 3: 5 to 33 (2007)',
       url: 'https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/oral-dimensions.pdf',
       kind: 'paper',
       access: 'open',
@@ -103,7 +103,7 @@ LOOM.lesson({
     },
     {
       key: 'analayo-2011-mahapajapati',
-      cite: 'Bhikkhu Anālayo, ‘Mahāpajāpatī\'s Going Forth in the Madhyama-āgama\', Journal of Buddhist Ethics 18: 268 to 317 (2011)',
+      cite: 'Bhikkhu Anālayo, ‘Mahāpajāpatī\'s Going Forth in the Madhyama-āgama’, Journal of Buddhist Ethics 18: 268 to 317 (2011)',
       url: 'https://www.buddhismuskunde.uni-hamburg.de/pdf/5-personen/analayo/mahapajapati.pdf',
       kind: 'paper',
       access: 'open',

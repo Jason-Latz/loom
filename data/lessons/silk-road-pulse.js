@@ -70,7 +70,7 @@ LOOM.lesson({
       doi: '10.1093/acrefore/9780190277727.013.576',
       kind: 'paper',
       access: 'paywalled',
-      note: 'Hansen’s own survey of the classical routes, the source for the lesson naming her. Her published abstract states the claim directly: extensive long-distance caravans were rare, and ‘Usually peddlers carried mostly local goods short distances\'; ‘Silk was not the primary commodity traded on these routes.\' Subscription required for the full text.',
+      note: 'Hansen’s own survey of the classical routes, the source for the lesson naming her. Her published abstract states the claim directly: extensive long-distance caravans were rare, and ‘Usually peddlers carried mostly local goods short distances’; ‘Silk was not the primary commodity traded on these routes.\' Subscription required for the full text.',
     },
     {
       key: 'rong-2004',

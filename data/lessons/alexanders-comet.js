@@ -25,7 +25,7 @@ LOOM.lesson({
       url: 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/17E*.html#94',
       kind: 'primary',
       access: 'open',
-      note: 'An independent witness to the eastern limit: the troops had spent almost eight years among toils and dangers, rain had fallen for seventy days with continuous thunder and lightning, and when Alexander urged the crossing ‘the Macedonians did not accept it, and he gave up the undertaking\'. The next chapter adds altars of the twelve gods fifty cubits high. Diodorus attaches no year; 326 BCE is conventional reconstruction.',
+      note: 'An independent witness to the eastern limit: the troops had spent almost eight years among toils and dangers, rain had fallen for seventy days with continuous thunder and lightning, and when Alexander urged the crossing ‘the Macedonians did not accept it, and he gave up the undertaking’. The next chapter adds altars of the twelve gods fifty cubits high. Diodorus attaches no year; 326 BCE is conventional reconstruction.',
     },
     {
       key: 'arrian-5-28',
@@ -33,7 +33,7 @@ LOOM.lesson({
       url: 'https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_V/Chapter_XXVIII',
       kind: 'primary',
       access: 'open',
-      note: 'Source of the two specifics the lesson stages: Alexander retired into his tent and admitted none of the Companions ‘on that day, or until the third day from that\', and Ptolemy recorded that he sacrificed for the river crossing and the victims came out unfavourable.',
+      note: 'Source of the two specifics the lesson stages: Alexander retired into his tent and admitted none of the Companions ‘on that day, or until the third day from that’, and Ptolemy recorded that he sacrificed for the river crossing and the victims came out unfavourable.',
     },
     {
       key: 'arrian-5-29',
@@ -41,7 +41,7 @@ LOOM.lesson({
       url: 'https://en.wikisource.org/wiki/The_Anabasis_of_Alexander/Book_V/Chapter_XXIX',
       kind: 'primary',
       access: 'open',
-      note: 'The altars at the eastern limit: twelve of them, ‘equal in height to very large towers’ and broader still, raised as thank-offerings and, in Arrian’s words, ‘as monuments of his own labours\', with sacrifices and games held there before the army turned back.',
+      note: 'The altars at the eastern limit: twelve of them, ‘equal in height to very large towers’ and broader still, raised as thank-offerings and, in Arrian’s words, ‘as monuments of his own labours’, with sacrifices and games held there before the army turned back.',
     },
     {
       key: 'diodorus-16-3',
@@ -49,7 +49,7 @@ LOOM.lesson({
       url: 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/16A*.html#3',
       kind: 'primary',
       access: 'open',
-      note: 'The ancient account of Philip II remaking the Macedonian army after the disaster he inherited: reorganizing the forces, re-equipping the men, drilling them constantly, and devising ‘the compact order and the equipment of the phalanx\', the first to organize the Macedonian phalanx.',
+      note: 'The ancient account of Philip II remaking the Macedonian army after the disaster he inherited: reorganizing the forces, re-equipping the men, drilling them constantly, and devising ‘the compact order and the equipment of the phalanx’, the first to organize the Macedonian phalanx.',
     },
     {
       key: 'diodorus-16-8',
@@ -73,7 +73,7 @@ LOOM.lesson({
       url: 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/17E*.html#99',
       kind: 'primary',
       access: 'open',
-      note: 'Settlers trying to leave: Greeks planted in Bactria and Sogdiana, who had ‘long borne unhappily their sojourn among peoples of another race\', revolted on a false report that Alexander had died of his Mallian wound, formed a band of three thousand, suffered badly on the homeward road, and were massacred by the Macedonians after his actual death.',
+      note: 'Settlers trying to leave: Greeks planted in Bactria and Sogdiana, who had ‘long borne unhappily their sojourn among peoples of another race’, revolted on a false report that Alexander had died of his Mallian wound, formed a band of three thousand, suffered badly on the homeward road, and were massacred by the Macedonians after his actual death.',
     },
     {
       key: 'arrian-7-4',
@@ -89,7 +89,7 @@ LOOM.lesson({
       url: 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Diodorus_Siculus/18A*.html',
       kind: 'primary',
       access: 'open',
-      note: 'The empty center at Babylon: the throne stood vacant, the infantry phalanx pushed Philip’s son Arrhidaeus for the kingship ‘although he was afflicted with an incurable mental illness\', the compromise made him king with Perdiccas regent, and the satrapies were parcelled out to Ptolemy, Lysimachus, Antipater and the rest. Diodorus says Alexander died without issue and omits Roxane’s expected son, so this source is deliberately attached to the division of commands, not to the unborn-son clause.',
+      note: 'The empty center at Babylon: the throne stood vacant, the infantry phalanx pushed Philip’s son Arrhidaeus for the kingship ‘although he was afflicted with an incurable mental illness’, the compromise made him king with Perdiccas regent, and the satrapies were parcelled out to Ptolemy, Lysimachus, Antipater and the rest. Diodorus says Alexander died without issue and omits Roxane’s expected son, so this source is deliberately attached to the division of commands, not to the unborn-son clause.',
     },
     {
       key: 'pella-price-1000',
@@ -113,7 +113,7 @@ LOOM.lesson({
       url: 'https://archive.nyu.edu/bitstream/2451/28263/2/D172-Alexandria%20Library%20of%20Dreams.pdf',
       kind: 'paper',
       access: 'open',
-      note: 'Bagnall states flatly that ‘there is no ancient account of the foundation of the Library\': the ancient tradition, led by Tzetzes, treats Ptolemy II Philadelphos as the king who created it, while modern scholars almost unanimously suppose Ptolemy I the real founder assisted by Demetrios of Phaleron. On either reading the institution is Ptolemaic and postdates Alexander, who appears nowhere in its foundation story. Open PDF in NYU’s institutional repository.',
+      note: 'Bagnall states flatly that ‘there is no ancient account of the foundation of the Library’: the ancient tradition, led by Tzetzes, treats Ptolemy II Philadelphos as the king who created it, while modern scholars almost unanimously suppose Ptolemy I the real founder assisted by Demetrios of Phaleron. On either reading the institution is Ptolemaic and postdates Alexander, who appears nowhere in its foundation story. Open PDF in NYU’s institutional repository.',
     },
     {
       key: 'martinez-seve-2014',
@@ -130,7 +130,7 @@ LOOM.lesson({
       url: 'https://penelope.uchicago.edu/Thayer/E/Roman/Texts/Strabo/15B*.html',
       kind: 'primary',
       access: 'open',
-      note: 'The ancient basis for the Seleucus and Chandragupta settlement: lands along the Indus that Alexander had taken were given by Seleucus Nicator to Sandrocottus, ‘upon terms of intermarriage and of receiving in exchange five hundred elephants\'. Strabo attaches no date; the conventional 305 to 303 BCE comes from the wider narrative, not from this passage.',
+      note: 'The ancient basis for the Seleucus and Chandragupta settlement: lands along the Indus that Alexander had taken were given by Seleucus Nicator to Sandrocottus, ‘upon terms of intermarriage and of receiving in exchange five hundred elephants’. Strabo attaches no date; the conventional 305 to 303 BCE comes from the wider narrative, not from this passage.',
     },
   ],
   storyContext:

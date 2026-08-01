@@ -19,7 +19,7 @@ LOOM.lesson({
       doi: '10.46586/er.12.2021.8776',
       kind: 'paper',
       access: 'open',
-      note: 'Translates the Kuntillet Ajrud pithos benedictions, including ‘I have blessed you by YHWH of Samaria and his Asherah’ and ‘YHWH of Teman and his asherah\', dates the assemblage to the end of the ninth or early eighth century BCE, and concludes that YHWH was long worshipped with a partner even in an official context, against the later biblical depiction.',
+      note: 'Translates the Kuntillet Ajrud pithos benedictions, including ‘I have blessed you by YHWH of Samaria and his Asherah’ and ‘YHWH of Teman and his asherah’, dates the assemblage to the end of the ninth or early eighth century BCE, and concludes that YHWH was long worshipped with a partner even in an official context, against the later biblical depiction.',
     },
     {
       key: 'smith-2001',
@@ -52,7 +52,7 @@ LOOM.lesson({
       url: 'https://www.livius.org/sources/content/cyrus-cylinder/cyrus-cylinder-translation/',
       kind: 'primary',
       access: 'open',
-      note: 'The Cylinder’s own case: Nabonidus made a counterfeit of Esagila, imposed improper rites, and ‘did away with the worship of Marduk\'; Marduk then searched the lands, took a righteous king by the hand, and called out his name, Cyrus, king of Anshan.',
+      note: 'The Cylinder’s own case: Nabonidus made a counterfeit of Esagila, imposed improper rites, and ‘did away with the worship of Marduk’; Marduk then searched the lands, took a righteous king by the hand, and called out his name, Cyrus, king of Anshan.',
     },
     {
       key: 'vanderspek-2014',

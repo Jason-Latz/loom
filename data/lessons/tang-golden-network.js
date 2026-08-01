@@ -47,7 +47,7 @@ LOOM.lesson({
     },
     {
       key: 'yang-2024',
-      cite: 'Shao-yun Yang, Tang ‘cosmopolitanism\': Towards a critical and holistic approach, Modern Asian Studies 58(4): 1069 to 1093 (2024)',
+      cite: 'Shao-yun Yang, Tang ‘cosmopolitanism’: Towards a critical and holistic approach, Modern Asian Studies 58(4): 1069 to 1093 (2024)',
       url: 'https://www.cambridge.org/core/services/aop-cambridge-core/content/view/16309DB09C12BB94DDEB656A0A8F7540/S0026749X23000318a.pdf/div-class-title-tang-cosmopolitanism-towards-a-critical-and-holistic-approach-div.pdf',
       doi: '10.1017/S0026749X23000318',
       kind: 'paper',

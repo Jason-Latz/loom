@@ -5,7 +5,7 @@ LOOM.lesson({
   sources: [
     {
       key: 'mooring-2025',
-      cite: 'John Mooring, ‘And he won over the rest as allies by offering them gifts: A thesis on the origins of electrum coinage\', Journal of Ancient History 13(2): 211 to 237 (2025)',
+      cite: 'John Mooring, ‘And he won over the rest as allies by offering them gifts: A thesis on the origins of electrum coinage’, Journal of Ancient History 13(2): 211 to 237 (2025)',
       url: 'https://www.degruyterbrill.com/document/doi/10.1515/jah-2025-0001/html',
       doi: '10.1515/jah-2025-0001',
       kind: 'paper',
@@ -64,7 +64,7 @@ LOOM.lesson({
     },
     {
       key: 'melitz-2017',
-      cite: 'Jacques Melitz, ‘A model of the beginnings of coinage in antiquity\', European Review of Economic History 21(1): 83 to 103 (2017)',
+      cite: 'Jacques Melitz, ‘A model of the beginnings of coinage in antiquity’, European Review of Economic History 21(1): 83 to 103 (2017)',
       url: 'https://academic.oup.com/ereh/article-abstract/21/1/83/2669965',
       doi: '10.1093/ereh/hew018',
       kind: 'paper',
@@ -73,7 +73,7 @@ LOOM.lesson({
     },
     {
       key: 'zhao-2021',
-      cite: 'Hao Zhao, Xiangping Gao, Yuchao Jiang and colleagues, ‘Radiocarbon-dating an early minting site: the emergence of standardised coinage in China\', Antiquity 95(383): 1161 to 1178 (2021)',
+      cite: 'Hao Zhao, Xiangping Gao, Yuchao Jiang and colleagues, ‘Radiocarbon-dating an early minting site: the emergence of standardised coinage in China’, Antiquity 95(383): 1161 to 1178 (2021)',
       url: 'https://doi.org/10.15184/aqy.2021.94',
       doi: '10.15184/aqy.2021.94',
       kind: 'paper',
@@ -99,7 +99,7 @@ LOOM.lesson({
     },
     {
       key: 'ialongo-2024',
-      cite: 'Nicola Ialongo, ‘The introduction of coinage in Europe did not change pre-existing monetary patterns\', Frontiers in Human Dynamics 6: article 1501894 (2024)',
+      cite: 'Nicola Ialongo, ‘The introduction of coinage in Europe did not change pre-existing monetary patterns’, Frontiers in Human Dynamics 6: article 1501894 (2024)',
       url: 'https://www.frontiersin.org/journals/human-dynamics/articles/10.3389/fhumd.2024.1501894/full',
       doi: '10.3389/fhumd.2024.1501894',
       kind: 'paper',
