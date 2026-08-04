@@ -140,8 +140,9 @@ lessons into it.
   Bunko record, a DOI for the Edinburgh UP page that infinite-redirects).
 - Remaining unwritten: Eras VI to X are entirely unwritten seeds. Graph is at
   its final size: 365 nodes, 800 wires, 10 eras.
-- Production is https://loomhistory.com and https://loom-gray.vercel.app.
-  **The citation pass is committed but NOT yet deployed.**
+- Production is https://loomhistory.com and https://loom-gray.vercel.app; the
+  citation pass is deployed and verified live. `AGENTS.md` is now a pointer to
+  this file rather than a copy of it, because the copy drifted.
 - Design study behind the apparatus: `docs/citation-options.html` (seven
   treatments rendered on real prose, plus what the codebase rules out).
 
