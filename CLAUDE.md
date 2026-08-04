@@ -71,6 +71,11 @@ lessons into it.
   hidden until the reader presses "Show the evidence", and the numbered Sources
   cartouche at the foot of the lesson is always visible, so the apparatus costs
   the reading nothing. Full contract in `docs/forge-spec.md`.
+- **Before a release, sweep the links and re-audit the overrules.** Link rot is
+  real, and so is the reviewer who was talked out of a correct finding: a
+  third-party pass over the citation findings that adjudication had rejected
+  found 25 of 87 rejections wrong, including a transposed volume and issue that
+  came from trusting the older of two Crossref registrations for one article.
 - **A citation is only real once you have opened it.** Resolve DOI metadata at
   `https://api.crossref.org/works/<doi>` before naming authors, venue, volume or
   pages, and fetch the URL to confirm it hosts what the cite claims. A live
@@ -135,9 +140,12 @@ lessons into it.
   the fire altar on the gold coinage; `golden-sahara` cited a scholar absent
   from the work it named. None of these could ever be caught by a structural
   gate.
-- `node scripts/check-links.mjs` sweeps all 790 citation and further-reading
-  URLs. Two were genuinely dead and are fixed (a Wayback snapshot for the Toyo
-  Bunko record, a DOI for the Edinburgh UP page that infinite-redirects).
+- `node scripts/check-links.mjs` sweeps all 1,443 citation, DOI and
+  further-reading URLs. **Read its output, do not act on it.** The last full
+  sweep called 10 dead and only 2 were: seven were transient or header-driven
+  (eLife answers 406 to a scripted fetch and renders fine in a browser; persee.fr
+  was serving a site-wide 503), and 250 more are publisher bot walls that open
+  normally for a human. Confirm in a real browser before touching a link.
 - Remaining unwritten: Eras VI to X are entirely unwritten seeds. Graph is at
   its final size: 365 nodes, 800 wires, 10 eras.
 - Production is https://loomhistory.com and https://loom-gray.vercel.app; the
