@@ -144,13 +144,11 @@ lessons into it.
   (eLife answers 406 to a scripted fetch and renders fine in a browser; persee.fr
   was serving a site-wide 503), and 250 more are publisher bot walls that open
   normally for a human. Confirm in a real browser before touching a link.
-- Remaining unwritten: Eras VI to X are entirely unwritten seeds. Graph is at
-  its final size: 365 nodes, 800 wires, 10 eras.
+- Remaining unwritten: Eras VI to X (297 seeds). Graph is at its final size.
 - Production is https://loomhistory.com and https://loom-gray.vercel.app; the
   citation pass is deployed and verified live. `AGENTS.md` is now a pointer to
   this file rather than a copy of it, because the copy drifted.
-- Design study behind the apparatus: `docs/citation-options.html` (seven
-  treatments rendered on real prose, plus what the codebase rules out).
+- Design study behind the apparatus: `docs/citation-options.html`.
 
 ## Change log
 
