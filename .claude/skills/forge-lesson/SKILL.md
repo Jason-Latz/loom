@@ -25,19 +25,26 @@ is the ten-minute reading experience behind one node of the 365-node graph.
    filename order; within a file, array order). Callback questions may only
    reach earlier nodes, and prefer ones that already have lessons (check
    `data/lessons/_manifest.js`).
-5. Write `data/lessons/<node-id>.js` exactly per the spec's format.
-6. Append the id to `LOOM.lessonFiles` in `data/lessons/_manifest.js`,
+5. **Find and verify the sources before you write.** A lesson cannot ship
+   without citations, so gather them while researching rather than bolting
+   them on afterwards: open every URL, resolve every DOI at
+   `https://api.crossref.org/works/<doi>`, and keep a note of what each source
+   actually establishes. Anything you could not open does not get cited.
+6. Write `data/lessons/<node-id>.js` exactly per the spec's format, placing a
+   `[^source-key]` marker after the punctuation of each clause its source
+   supports.
+7. Append the id to `LOOM.lessonFiles` in `data/lessons/_manifest.js`,
    keeping main-sequence order (the order nodes appear across era files).
-7. Run `node scripts/check.mjs` from the repo root. Fix until it prints OK
+8. Run `node scripts/check.mjs` from the repo root. Fix until it prints OK
    with zero errors; resolve word-count warnings by editing, not by ignoring.
-8. Commit the lesson file + manifest together:
+9. Commit the lesson file + manifest together:
    `lesson: forge <node-id> (<Title>)`.
 
 ## Batch mode
 
 Prepare one self-contained research and architecture brief per lesson, then
 hand the prose and substantive literary revision to Fable. Fable follows steps
-1-5 and runs the single-file check (`node scripts/check.mjs
+1-6 and runs the single-file check (`node scripts/check.mjs
 data/lessons/<id>.js`). Tell Fable NOT to touch the manifest. Codex remains
 responsible for graph edits, adversarial review, validation, manifest updates,
 commits, and deployment.
