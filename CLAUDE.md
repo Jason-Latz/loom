@@ -128,18 +128,14 @@ lessons into it.
   of every lesson that is always visible. `scripts/check.mjs` now REQUIRES
   citations, so a new lesson cannot ship without them.
 - Built in three stages per lesson: Opus research with every URL fetched and
-  every DOI resolved, an independent Opus refutation that reopened all of it,
-  and a Fable adjudication that re-anchored, retuned or dropped citations and
-  corrected the prose only where a lesson claimed more than its evidence
-  carried. That produced **84 prose corrections** and about a hundred reviewer
-  findings overruled as wrong.
-- The corrections matter more than the citations. `spark-of-mind` had
-  skeletally modern humans at Jebel Irhoud, contradicting both its source and
-  Loom's own Irhoud lesson; `ashoka-wheel` misread Rock Edict II;
-  `bantu-and-aksum` called the Aksum stelae granite; `caliphate-lightning` put
-  the fire altar on the gold coinage; `golden-sahara` cited a scholar absent
-  from the work it named. None of these could ever be caught by a structural
-  gate.
+  every DOI resolved, an independent Opus refutation, and a Fable adjudication
+  that corrected the prose only where a lesson claimed more than its evidence
+  carried. That produced **84 prose corrections**.
+- The corrections matter more than the citations: `spark-of-mind` had
+  skeletally modern humans at Jebel Irhoud against both its source and Loom's
+  own Irhoud lesson, `ashoka-wheel` misread Rock Edict II, `bantu-and-aksum`
+  called the Aksum stelae granite, `caliphate-lightning` put the fire altar on
+  the gold coinage. No structural gate can catch any of that.
 - **Strengthening pass, 2026-08-04.** A third party re-audited all 94 citation
   findings that adjudication had overruled: 69 stood, 25 did not, and all 25
   are fixed. Unpaywall found readable copies of 17 paywalled sources (open
