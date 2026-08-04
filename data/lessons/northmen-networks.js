@@ -22,10 +22,10 @@ LOOM.lesson({
     {
       key: 'annals-of-ulster-841',
       cite: 'The Annals of Ulster, entry U841.4, translated by Seán Mac Airt and Gearóid Mac Niocaill, CELT edition T100001A, University College Cork',
-      url: 'https://celt.ucc.ie/published/T100001A.html',
+      url: 'https://web.archive.org/web/20250108143717/https://celt.ucc.ie/published/T100001A.html',
       kind: 'primary',
       access: 'open',
-      note: 'The contemporary annal entry recording a naval camp at Duiblinn in 841 from which the Laigin and the Ui Neill were plundered, the longphort the lesson calls the beginning of Dublin; the following year’s entry adds that the heathens were still there.',
+      note: 'The contemporary annal entry recording a naval camp at Duiblinn in 841 from which the Laigin and the Ui Neill were plundered, the longphort the lesson calls the beginning of Dublin; the following year’s entry adds that the heathens were still at Duiblinn. CELT itself stopped answering, so the link is a January 2025 archive snapshot of the same edition.',
     },
     {
       key: 'price-2016-salme',

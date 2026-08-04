@@ -57,10 +57,9 @@ LOOM.lesson({
       key: 'swan-2020',
       cite: 'Carolyn Swan, From sand to sea: tracing the production and trade in glass beads from the 10th-century Cirebon shipwreck in the Java Sea, Polish Archaeology in the Mediterranean 29/1 (2020), 355 to 380',
       url: 'https://doaj.org/article/5677b112bc0f4f47b4153468bed5d91e',
-      doi: '10.31338/uw.2083-537x.pam29.1.17',
       kind: 'paper',
       access: 'open',
-      note: 'Dates the lesson’s second hull: around 970 CE a merchant ship carrying goods from East Africa, Persia, India, Sri Lanka, Southeast Asia and China foundered in the Java Sea, the wreck known as Cirebon. The marker is scoped to that date; the 2004 to 2005 salvage seasons and the roughly quarter-million object count come from the salvage literature, not this bead study. The publisher’s own pages are dead, so the DOAJ record is the working location.',
+      note: 'Dates the lesson’s second hull: around 970 CE a merchant ship carrying goods from East Africa, Persia, India, Sri Lanka, Southeast Asia and China foundered in the Java Sea, the wreck known as Cirebon. The marker is scoped to that date; the 2004 to 2005 salvage seasons and the roughly quarter-million object count come from the salvage literature, not this bead study. The publisher’s own pages are dead and doi.org/10.31338/uw.2083-537x.pam29.1.17 now 404s even though Crossref still holds the record, so the DOAJ entry is the working location.',
     },
     {
       key: 'prange-2011',
