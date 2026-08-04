@@ -140,6 +140,10 @@ lessons into it.
   the fire altar on the gold coinage; `golden-sahara` cited a scholar absent
   from the work it named. None of these could ever be caught by a structural
   gate.
+- **Strengthening pass, 2026-08-04.** A third party re-audited all 94 citation
+  findings that adjudication had overruled: 69 stood, 25 did not, and all 25
+  are fixed. Unpaywall found readable copies of 17 paywalled sources (open
+  access now 73 percent), and the two genuinely dead links are repaired.
 - `node scripts/check-links.mjs` sweeps all 1,443 citation, DOI and
   further-reading URLs. **Read its output, do not act on it.** The last full
   sweep called 10 dead and only 2 were: seven were transient or header-driven
