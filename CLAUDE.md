@@ -72,10 +72,8 @@ lessons into it.
   cartouche at the foot of the lesson is always visible, so the apparatus costs
   the reading nothing. Full contract in `docs/forge-spec.md`.
 - **Before a release, sweep the links and re-audit the overrules.** Link rot is
-  real, and so is the reviewer who was talked out of a correct finding: a
-  third-party pass over the citation findings that adjudication had rejected
-  found 25 of 87 rejections wrong, including a transposed volume and issue that
-  came from trusting the older of two Crossref registrations for one article.
+  real, and so is the reviewer talked out of a correct finding: a third-party
+  pass over the rejected citation findings found 25 of 94 rejections wrong.
 - **A citation is only real once you have opened it.** Resolve DOI metadata at
   `https://api.crossref.org/works/<doi>` before naming authors, venue, volume or
   pages, and fetch the URL to confirm it hosts what the cite claims. A live
