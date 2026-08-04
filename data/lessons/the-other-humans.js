@@ -33,10 +33,10 @@ LOOM.lesson({
     {
       key: 'chen-2019',
       cite: 'Chen, Welker, Shen, Bailey, Bergmann, Davis, Xia, Wang, Fischer, Freidline, Yu, Skinner, Stelzer, Dong, Fu, Dong, Wang, Zhang and Hublin, "A late Middle Pleistocene Denisovan mandible from the Tibetan Plateau," Nature 569(7756): 409 to 412 (2019)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/31043746/',
+      url: 'https://researchprofiles.ku.dk/da/publications/24f98a07-3767-46ca-998c-88674459d0c1',
       doi: '10.1038/s41586-019-1139-x',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The jaw and the range: the Xiahe mandible from Baishiya Karst Cave, identified as Denisovan by ancient protein analysis and dated by uranium series to at least 160,000 years, the first of these people found outside the Altai and the first archaic humans known to have lived high on the Tibetan Plateau.',
     },
     {
@@ -105,10 +105,10 @@ LOOM.lesson({
     {
       key: 'sutikna-2016',
       cite: 'Sutikna, Tocheri, Morwood, Saptomo, Jatmiko and 16 colleagues, "Revised stratigraphy and chronology for Homo floresiensis at Liang Bua in Indonesia," Nature 532(7599): 366 to 369 (2016)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/27027286/',
+      url: 'https://figshare.com/articles/journal_contribution/Revised_stratigraphy_and_chronology_for_Homo_floresiensis_at_Liang_Bua_in_Indonesia/27787020',
       doi: '10.1038/nature17179',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The chronology that replaced the famous one: the skeletal remains of Homo floresiensis date to about 100,000 to 60,000 years ago and the stone artefacts attributable to the species to about 190,000 to 50,000, retiring the earlier reading that had them surviving to about 12,000.',
     },
     {
@@ -141,10 +141,10 @@ LOOM.lesson({
     {
       key: 'zeberg-2020',
       cite: 'Zeberg and Pääbo, "The major genetic risk factor for severe COVID-19 is inherited from Neanderthals," Nature 587(7835): 610 to 612 (2020)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/32998156/',
+      url: 'https://doi.org/10.1038/s41586-020-2818-3',
       doi: '10.1038/s41586-020-2818-3',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The Pleistocene inheritance that reached intensive care: a genomic segment of about 50 kilobases on chromosome 3 inherited from Neanderthals is the major genetic risk factor for severe COVID-19, carried by around 16 percent of people in Europe.',
     },
   ],

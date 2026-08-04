@@ -60,10 +60,10 @@ LOOM.lesson({
     {
       key: 'trinkaus-2018',
       cite: 'Erik Trinkaus and Alexandra P. Buzhilova, Antiquity 92(361): 7 to 21 (2018)',
-      url: 'https://www.cambridge.org/core/journals/antiquity/article/diversity-and-differential-disposal-of-the-dead-at-sunghir/B7672FB594E94A505A35E10C869F3808',
+      url: 'https://doi.org/10.15184/aqy.2017.223',
       doi: '10.15184/aqy.2017.223',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The Sunghir bead counts the lesson totals: about 3,000 ivory beads with Sunghir 1 in grave 1, about 5,000 and about 5,400 with Sunghir 2 and 3 in grave 2, distributed around the calvarium, shoulders, thorax, elbows, wrists, knees and ankles, apparently sewn onto clothing, at 30,000 radiocarbon B.P. or about 34,000 cal B.P. Cambridge holds the full text behind a paywall; the article page carries the abstract and figures.',
     },
     {

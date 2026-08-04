@@ -94,10 +94,10 @@ LOOM.lesson({
     {
       key: 'bradshaw-2019',
       cite: 'Corey J. A. Bradshaw, Sean Ulm, Alan N. Williams and colleagues, Nature Ecology and Evolution 3(7): 1057 to 1063 (2019)',
-      url: 'https://doi.org/10.1038/s41559-019-0902-6',
+      url: 'https://researchonline.jcu.edu.au/58684/21/JCU_58684_Bradshaw_et_al_2020_accepted.pdf',
       doi: '10.1038/s41559-019-0902-6',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The arithmetic that turns the crossing from an accident into an institution: a census founding population of 1,300 to 1,550 individuals was needed to hold quasi extinction risk at or below 0.1, arriving at a single point in time or through multiple voyages of 130 or more people over about 700 to 900 years. Paywalled at the journal; the abstract carrying all four figures is free at PubMed (PMID 31209287).',
     },
     {

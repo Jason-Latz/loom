@@ -69,10 +69,10 @@ LOOM.lesson({
     {
       key: 'pedersen-2016',
       cite: 'Mikkel W. Pedersen and colleagues, Nature 537(7618): 45 to 49 (2016)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/27509852/',
+      url: 'https://escholarship.org/uc/item/76h9t39c',
       doi: '10.1038/nature19085',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Lake sediment cores from a bottleneck in the ice free corridor: steppe vegetation, bison and mammoth appear there only by about 12,600 calibrated years ago, so the first Americans, whether Clovis or earlier, are unlikely to have travelled that way, and later groups used the passage instead. The full paper sits behind Nature’s paywall; the PubMed record carries the abstract.',
     },
     {

@@ -68,10 +68,10 @@ LOOM.lesson({
     {
       key: 'craig-2013',
       cite: 'Oliver E. Craig and colleagues, Earliest evidence for the use of pottery, Nature 496(7445): 351 to 354 (2013)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/23575637/',
+      url: 'https://research.rug.nl/en/publications/06860e59-d10a-4e7a-bcf1-6400533a4233',
       doi: '10.1038/nature12109',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The measurement that replaced fifty years of guesswork about what the first pots held: lipids recovered from 101 charred surface deposits on Incipient Jomon pottery across the main Japanese islands, most of them derived from high-trophic-level aquatic food; the Nature full text is paywalled and the PubMed record carries title, authors and abstract.',
     },
     {

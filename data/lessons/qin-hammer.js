@@ -39,10 +39,10 @@ LOOM.lesson({
     {
       key: 'quinn-2017',
       cite: 'Patrick Sean Quinn, Shangxin Zhang, Yin Xia and Xiuzhen Li, "Building the Terracotta Army: ceramic craft technology and organisation of production at Qin Shihuang’s mausoleum complex", Antiquity 91(358): 966 to 979 (2017)',
-      url: 'https://www.cambridge.org/core/product/identifier/S0003598X17001260/type/journal_article',
+      url: 'https://doi.org/10.15184/aqy.2017.126',
       doi: '10.15184/aqy.2017.126',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Ceramic petrography of the terracotta figures shows they were made near the site from local raw materials with deliberate clay paste recipes, the clay processed centrally before distribution to different local workshops in a highly organised system of labour and craft specialisation. The article’s conclusions add the use of prefabricated moulds to produce identical component parts under tight control. Paywalled; the abstract carries the clay findings and the conclusions the modular ones.',
     },
     {
@@ -57,19 +57,19 @@ LOOM.lesson({
     {
       key: 'li-2014',
       cite: 'Xiuzhen Janice Li, Andrew Bevan, Marcos Martinón-Torres, Thilo Rehren, Wei Cao, Yin Xia and Kun Zhao, "Crossbows and imperial craft organisation: the bronze triggers of China’s Terracotta Army", Antiquity 88(339): 126 to 140 (2014)',
-      url: 'https://www.cambridge.org/core/product/identifier/S0003598X00050262/type/journal_article',
+      url: 'https://doi.org/10.1017/s0003598x00050262',
       doi: '10.1017/S0003598X00050262',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Metrical and spatial analysis of the surviving bronze crossbow triggers shows they were produced in batches, possibly stored in an arsenal, and eventually distributed to equip groups of crossbowmen in individual sectors of Pit 1, evidence of large scale and highly organised production behind the individually varied figures. Paywalled; the abstract carries the finding.',
     },
     {
       key: 'li-marking-2016',
       cite: 'Xiuzhen Li, Andrew Bevan, Marcos Martinón-Torres, Yin Xia and Kun Zhao, "Marking practices and the making of the Qin Terracotta Army", Journal of Anthropological Archaeology 42: 169 to 183 (2016)',
-      url: 'https://doi.org/10.1016/j.jaa.2016.04.002',
+      url: 'https://www.repository.cam.ac.uk/handle/1810/294856',
       doi: '10.1016/j.jaa.2016.04.002',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Studies the stamped, incised and painted marks that Qin workshops left on the terracotta warriors and bronze weapons of the mausoleum, reading mark-making as an administrative mechanism for managing and controlling large scale production. This is the direct evidence for the paragraph’s workshop marks and administrative marks. Paywalled; the abstract carries the finding.',
     },
     {

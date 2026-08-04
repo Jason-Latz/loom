@@ -86,10 +86,10 @@ LOOM.lesson({
     {
       key: 'gaunitz-2018',
       cite: 'Charleen Gaunitz and colleagues, Science 360(6384): 111 to 114 (2018)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/29472442/',
+      url: 'https://hal.science/hal-02406833',
       doi: '10.1126/science.aao3297',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Forty-two ancient horse genomes, twenty of them from Botai, show that Przewalski’s horses are the feral descendants of the horses herded at Botai around 5500 years ago rather than truly wild animals, and that domestic horses from about 4000 years ago onward carry only around 2.7 percent Botai-related ancestry. The PubMed abstract is free; Science’s full text is paywalled.',
     },
     {

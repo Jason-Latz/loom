@@ -83,10 +83,10 @@ LOOM.lesson({
     {
       key: 'pedersen-2016',
       cite: 'Mikkel W. Pedersen and sixteen colleagues, Postglacial viability and colonization in North America’s ice-free corridor, Nature 537(7618): 45 to 49 (2016)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/27509852/',
+      url: 'https://escholarship.org/uc/item/76h9t39c',
       doi: '10.1038/nature19085',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Lake sediment cores from a bottleneck in the interior ice-free corridor: no evidence of steppe vegetation, bison or mammoth until about 12,600 calibrated years ago, which is why the authors conclude the first Americans are unlikely to have travelled that route. Abstract free at PubMed.',
     },
     {
@@ -109,10 +109,10 @@ LOOM.lesson({
     {
       key: 'moreno-mayar-2018',
       cite: 'J. Victor Moreno-Mayar and seventeen colleagues, Terminal Pleistocene Alaskan genome reveals first founding population of Native Americans, Nature 553(7687): 203 to 207 (2018)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/29323294/',
+      url: 'https://researchonline.ljmu.ac.uk/id/eprint/7887/1/UpwardSun_Nature%20paper%20MS%20DEC17.pdf',
       doi: '10.1038/nature25173',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The Upward Sun River genome, which falls basal to all previously sequenced ancient and living Native Americans, and the divergence estimate the lesson turns on: the basal northern and southern branches split around 17,500 to 14,600 years ago, probably already south of the North American ice sheets. Abstract free at PubMed.',
     },
     {

@@ -69,10 +69,10 @@ LOOM.lesson({
     {
       key: 'smith-2018',
       cite: 'Smith, Jacobs, Johnsen, Ren and colleagues, Nature 555(7697): 511 to 515 (2018)',
-      url: 'https://pubmed.ncbi.nlm.nih.gov/29531318/',
+      url: 'https://digitalscholarship.unlv.edu/geo_fac_articles/145',
       doi: '10.1038/nature25967',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'Toba glass shards at two South African south coast sites nine kilometers apart, in deposits where occupation carries straight on. The title is the finding: humans thrived in South Africa through the eruption about 74,000 years ago. Abstract free at PubMed.',
     },
     {

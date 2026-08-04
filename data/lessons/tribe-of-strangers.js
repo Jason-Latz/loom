@@ -130,10 +130,10 @@ LOOM.lesson({
     {
       key: 'norenzayan-2016',
       cite: 'Ara Norenzayan, Azim F. Shariff, Will M. Gervais, Aiyana K. Willard, Rita A. McNamara, Edward Slingerland and Joseph Henrich, The cultural evolution of prosocial religions, Behavioral and Brain Sciences 39: e1 (2016)',
-      url: 'https://www.cambridge.org/core/product/identifier/S0140525X14001356/type/journal_article',
+      url: 'https://doi.org/10.1017/s0140525x14001356',
       doi: '10.1017/S0140525X14001356',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The scholarly case behind the lesson’s phrase about gods who watch when neighbors cannot: big moralizing gods are argued to be a cultural technology that galvanizes group solidarity and lets cooperation scale beyond the circle of people who can monitor one another face to face.',
     },
   ],

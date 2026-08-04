@@ -33,10 +33,10 @@ LOOM.lesson({
     {
       key: 'henshilwood-2018',
       cite: 'Henshilwood, d’Errico, van Niekerk, Dayet, Queffelec and Pollarolo, "An abstract drawing from the 73,000-year-old levels at Blombos Cave, South Africa", Nature 562(7725): 115 to 118 (2018)',
-      url: 'https://doi.org/10.1038/s41586-018-0514-3',
+      url: 'https://hal.science/hal-01976973',
       doi: '10.1038/s41586-018-0514-3',
       kind: 'paper',
-      access: 'paywalled',
+      access: 'open',
       note: 'The 2018 publication the lesson refers to: a cross hatched pattern applied with an ochre crayon to a ground silcrete flake from roughly 73,000 year old Still Bay levels, which the authors say predates the earliest previously known abstract and figurative drawings by at least 30,000 years. It is also the source of the drawing versus engraving distinction the lesson insists on. Paywalled at Nature; abstract free at PubMed, PMID 30209394.',
     },
     {
@@ -60,11 +60,11 @@ LOOM.lesson({
     {
       key: 'hublin-2017',
       cite: 'Hublin, Ben-Ncer, Bailey, Freidline, Neubauer, Skinner, Bergmann, Le Cabec, Benazzi, Harvati and Gunz, "New fossils from Jebel Irhoud, Morocco and the pan-African origin of Homo sapiens", Nature 546(7657): 289 to 292 (2017)',
-      url: 'https://doi.org/10.1038/nature22336',
+      url: 'https://www.eva.mpg.de/fileadmin/content_files/human_evolution/Homo_Sapiens_presskit/nature22336_Hublin.pdf',
       doi: '10.1038/nature22336',
       kind: 'paper',
-      access: 'paywalled',
-      note: 'The source of the Irhoud date and of the lesson’s careful wording: facial, mandibular and dental morphology already aligned with modern humans while the braincase remained more primitive, at 315 plus or minus 34 thousand years, making Jebel Irhoud the oldest reported site of the Homo sapiens clade. Paywalled at Nature; abstract free at PubMed, PMID 28593953.',
+      access: 'open',
+      note: 'The source of the Irhoud date and of the lesson’s careful wording: facial, mandibular and dental morphology already aligned with modern humans while the braincase remained more primitive, at 315 plus or minus 34 thousand years, making Jebel Irhoud the oldest reported site of the Homo sapiens clade. Nature paywalls it; the link is the authors’ institute-hosted copy of the same paper, and the DOI resolves to the version of record.',
     },
     {
       key: 'derrico-stringer-2011',
