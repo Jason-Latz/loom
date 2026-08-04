@@ -127,7 +127,7 @@ LOOM.lesson({
       doi: '10.1038/s41586-025-09855-6',
       kind: 'paper',
       access: 'paywalled',
-      note: 'The December 2025 paper that moved the fire making record: a 400,000 year old land surface at Barnham in Suffolk with heated sediments, fire cracked handaxes and two fragments of locally rare iron pyrite, carried in for striking sparks. No hominin fossil was found at Barnham; the team reads the fire makers as early Neanderthals by inference from the similarly aged Swanscombe skull.',
+      note: 'The December 2025 paper that moved the fire making record: a 400,000 year old land surface at Barnham in Suffolk with heated sediments, fire cracked handaxes and two fragments of locally rare iron pyrite, carried in for striking sparks. No hominin fossil was found at Barnham; the team reads the fire makers as probably early Neanderthals by inference from similarly aged fossils at Swanscombe and Atapuerca, a reading stated in the Natural History Museum release rather than in the paywalled abstract.',
     },
     {
       key: 'sandgathe-2011',

@@ -39,9 +39,9 @@ LOOM.lesson({
     },
     {
       key: 'didomenico-2022',
-      cite: 'Di Doménico, Mina and Santillán, Sinología Hispánica: China Studies Review 2(13): 79 to 100 (2022)',
+      cite: 'Di Doménico, Mina and Santillán, Sinología Hispánica: China Studies Review 13(2): 79 to 100 (2022)',
       url: 'https://revpubli.unileon.es/index.php/sinologia/article/view/7230',
-      doi: '10.18002/sin.v2i13.7230',
+      doi: '10.18002/sin.v13i2.7230',
       kind: 'paper',
       access: 'open',
       note: 'A close study of the single jotting, entry 307 of Shen Kuo’s Mengxi bitan, that is the only record of Bi Sheng: it places the invention in the Qingli period, 1041 to 1048, notes that Shen Kuo was a child then, and dates the Mengxi bitan to his last years at the Dream Brook estate after his rehabilitation of 1086 to 1088.',

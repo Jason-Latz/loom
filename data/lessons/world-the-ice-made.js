@@ -73,7 +73,7 @@ LOOM.lesson({
       doi: '10.1038/s41597-020-0530-7',
       kind: 'paper',
       access: 'open',
-      note: 'Five reconstructions of Holocene global mean surface temperature. Four of the five put the early Holocene warming between 12,000 and 10,000 years ago at about 1.1 degrees C; the warmest 200 year interval, around 6,500 years ago, stands 0.7 degrees C above the 19th century, and temperature then falls at about 0.08 degrees C per thousand years. The envelope across the whole window is therefore of order one degree, against the eight or so degrees the ice cores record for a single glacial swing. One method, CPS, is an outlier at 3.9 degrees C of early warming.',
+      note: 'Five reconstructions of Holocene global mean surface temperature. Four of the five put the early Holocene warming between 12,000 and 10,000 years ago at about 1.1 degrees C; the warmest 200 year interval, around 6,500 years ago, stands 0.7 degrees C above the 19th century, and temperature then falls at about 0.08 degrees C per thousand years. Read together those figures keep the whole window inside about one degree, against the eight or so degrees the ice cores record for a single glacial swing. One method, CPS, is an outlier at 3.9 degrees C of early warming.',
     },
     {
       key: 'larson-2014',

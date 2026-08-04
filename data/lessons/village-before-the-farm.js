@@ -28,7 +28,7 @@ LOOM.lesson({
       doi: '10.1038/276608a0',
       kind: 'paper',
       access: 'paywalled',
-      note: 'The original report of the Ain Mallaha grave: a human skeleton with a hand resting on the thorax of a three to five month old puppy, still among the earliest human and dog burials known. Paywalled at Nature. The description of the person as elderly is the paper’s own, as repeated throughout the literature citing it; the open-access Maher et al. 2011 (PLOS ONE, DOI 10.1371/journal.pone.0015815) identifies the individual as a woman and confirms the pose.',
+      note: 'The original report of the Ain Mallaha grave: a human skeleton with a hand resting on the thorax of a three to five month old puppy, still among the earliest human and dog burials known. Paywalled at Nature. The description of the person as elderly is the paper’s own, as repeated throughout the literature citing it; the open-access Maher et al. 2011 (PLOS ONE, DOI 10.1371/journal.pone.0015815) identifies the individual as a woman and gives the burial a woman and a differing account of the pose.',
     },
     {
       key: 'grosman-2016',
