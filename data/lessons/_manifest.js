@@ -27,6 +27,7 @@ LOOM.lessonFiles = [
   'rice-and-the-yangtze',
   'town-without-streets',
   'green-sahara',
+  'gardens-of-kuk',
   'uruk-first-city',
   'invention-of-writing',
   'surplus-and-the-state',
