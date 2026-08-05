@@ -25,6 +25,7 @@ LOOM.lessonFiles = [
 
   // Era II: Seeds & Cities
   'rice-and-the-yangtze',
+  'town-without-streets',
   'uruk-first-city',
   'invention-of-writing',
   'surplus-and-the-state',
