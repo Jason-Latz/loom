@@ -86,4 +86,5 @@ LOOM.lessonFiles = [
   'angkor-hydraulic',
   'vachana-poets',
   'neo-confucian-turn',
+  'commentator-of-cordoba',
 ];
