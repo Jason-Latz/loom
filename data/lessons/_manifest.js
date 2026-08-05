@@ -29,6 +29,7 @@ LOOM.lessonFiles = [
   'green-sahara',
   'gardens-of-kuk',
   'gold-before-kings',
+  'second-harvest',
   'uruk-first-city',
   'invention-of-writing',
   'surplus-and-the-state',
