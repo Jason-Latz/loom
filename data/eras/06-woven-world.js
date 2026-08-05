@@ -105,7 +105,7 @@ LOOM.node([
       'Buddhism had asked questions the old Confucian texts could not answer, so Zhu Xi answered them: a metaphysics of principle and matter underneath an ethics of study, ritual, and self-cultivation. He fixed the Four Books as the canon, and from 1313 his commentaries were the imperial examinations. Korea, Japan, and Vietnam took up the same syllabus, making one reading of one tradition the mental furniture of East Asia’s governing class.',
     edges: [
       { to: 'tokugawa-great-peace', type: 'enables', why: 'Tokugawa Japan governs in Zhu Xi’s categories, and its scholars spend two centuries arguing inside them.' },
-      { to: 'opium-and-humiliation', type: 'collides', why: 'A curriculum unchanged for six centuries met steam and shell, and the exams that made the elite could not explain the defeat.' },
+      { to: 'opium-and-humiliation', type: 'collides', why: 'An examination state six centuries old met steam and shell, and the exams that made the elite could not explain the defeat.' },
     ],
   },
   {
