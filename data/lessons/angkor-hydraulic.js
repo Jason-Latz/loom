@@ -1,0 +1,190 @@
+LOOM.lesson({
+  id: 'angkor-hydraulic',
+  readingMinutes: 10,
+  citationsVersion: 1,
+  sources: [
+    {
+      key: 'zhou-pelliot-1902',
+      cite: 'Zhou Daguan, Memoire sur les coutumes du Cambodge, translated by Paul Pelliot, Bulletin de l’Ecole francaise d’Extreme-Orient 2: 123 to 177 (1902)',
+      url: 'https://www.persee.fr/doc/befeo_0336-1519_1902_num_2_1_1117',
+      doi: '10.3406/befeo.1902.1117',
+      kind: 'primary',
+      access: 'open',
+      note: 'Pelliot’s annotated translation of the eyewitness text behind the story: the embassy’s departure in 1296 and return in 1297, the causeway of fifty-four stone giants hauling a nine-headed serpent, the daily afternoon rains from the fourth to the ninth month, the Great Lake drowning forests to the crown, farmers sowing by the reach of the flood, three and even four harvests a year, the reservoir with a bronze god whose navel runs water, markets run by women and paid in rice, cloth, and unminted gold, and the royal procession ending in the king standing on an elephant with the gold sword.',
+    },
+    {
+      key: 'osborne-2008',
+      cite: 'Milton Osborne, review of Zhou Daguan, A Record of Cambodia: The Land and Its People, translated by Peter Harris, Journal of the Siam Society 96: 312 to 314 (2008)',
+      url: 'https://so06.tci-thaijo.org/index.php/pub_jss/article/view/158195',
+      kind: 'paper',
+      access: 'open',
+      note: 'A scholarly review of the Harris edition carrying the claims the lesson rests on it: Zhou is the only eyewitness chronicler of the city of Angkor and its inhabitants, the record as we have it is only part of the document he prepared, and Harris works directly from Chinese into English where every earlier English version came by way of Pelliot’s French. The Harris edition itself is the first item in deeper.',
+    },
+    {
+      key: 'evans-2007',
+      cite: 'Evans, Pottier, Fletcher, Hensley, Tapley, Milne and Barbetti, "A comprehensive archaeological map of the world’s largest preindustrial settlement complex at Angkor, Cambodia", Proceedings of the National Academy of Sciences 104(36): 14277 to 14282 (2007)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC1964867/',
+      doi: '10.1073/pnas.0702525104',
+      kind: 'paper',
+      access: 'open',
+      note: 'The Greater Angkor Project map: nearly 3,000 square kilometres surveyed, a water management network covering more than 1,000 square kilometres, Angkor as the most extensive urban complex of the preindustrial world, the tripartite description of the network as stabilizing, storing, and dispersing water, and the paper’s own framing of the debate: Groslier’s hydraulic city, surmised to support a huge population of greater than a million people, disputed since the 1980s but unresolved for want of data on the landscape beyond the great temples, with the new map showing Angkor meets the material requirements of his proposal. Also the evidence of ad hoc adaptations, breaches, and failures, and the Siem Reap river now incised 5 to 8 metres into the Angkorian floodplain. Free full text at PubMed Central.',
+    },
+    {
+      key: 'evans-2013',
+      cite: 'Evans, Fletcher, Pottier, Chevance, Soutif and colleagues, "Uncovering archaeological landscapes at Angkor using lidar", Proceedings of the National Academy of Sciences 110(31): 12595 to 12600 (2013)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC3732978/',
+      doi: '10.1073/pnas.1306539110',
+      kind: 'paper',
+      access: 'open',
+      note: 'The lidar survey: a formally planned urban core of at least 35 square kilometres on an orthogonal grid of streets or canals, city blocks with occupation mounds and ponds, against the 9 square kilometres conventionally recognized inside the walls of Angkor Thom, all at the centre of a low-density complex stretching over roughly 1,000 square kilometres. Free full text at PubMed Central.',
+    },
+    {
+      key: 'klassen-2021',
+      cite: 'Klassen, Carter, Evans, Ortman, Stark and colleagues, "Diachronic modeling of the population within the medieval Greater Angkor Region settlement complex", Science Advances 7(19): eabf8441 (2021)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC8104873/',
+      doi: '10.1126/sciadv.abf8441',
+      kind: 'paper',
+      access: 'open',
+      note: 'The population model built from lidar, excavation data, radiocarbon dates, and machine learning: approximately 700,000 to 900,000 inhabitants in the Greater Angkor Region at its apogee in the thirteenth century CE. Free full text at PubMed Central.',
+    },
+    {
+      key: 'evans-fletcher-2015',
+      cite: 'Evans and Fletcher, "The landscape of Angkor Wat redefined", Antiquity 89(348): 1402 to 1419 (2015)',
+      url: 'https://www.cambridge.org/core/journals/antiquity/article/landscape-of-angkor-wat-redefined/F3F0731A514E338A76DA8A906458A890/core-reader',
+      doi: '10.15184/aqy.2015.157',
+      kind: 'paper',
+      access: 'open',
+      note: 'The lidar study of Angkor Wat itself: construction through the first half of the twelfth century strongly associated with Suryavarman II, a grid of roughly 100 by 100 metre blocks with occupation mounds and ponds inside the moated enclosure, up to about 4,500 people living within it, a total temple establishment of about 25,000 people reasoned from the Ta Prohm inscription’s staff lists, and the inference that Angkor Wat required a support population of more than 125,000. Open access at Cambridge Core.',
+    },
+    {
+      key: 'buckley-2010',
+      cite: 'Buckley, Anchukaitis, Penny, Fletcher, Cook and colleagues, "Climate as a contributing factor in the demise of Angkor, Cambodia", Proceedings of the National Academy of Sciences 107(15): 6748 to 6752 (2010)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC2872380/',
+      doi: '10.1073/pnas.0910827107',
+      kind: 'paper',
+      access: 'open',
+      note: 'The tree ring record: a 979-year chronology from Fokienia hodginsii cypresses in Vietnam’s Bidoup Nui Ba highlands, showing a multidecadal weakening of the monsoon in the mid to late fourteenth century and a shorter, at times more severe drought in the early fifteenth, with 1403 the single driest year of the record, abrupt reversals into very intense monsoon years, and an Angkorian canal filled with about 1.4 metres of coarse sand and gravel, possibly in a single fourteenth-century flood. The paper frames climate as an additional stressor alongside war and shifting trade, not a sole cause. Free full text at PubMed Central.',
+    },
+    {
+      key: 'penny-2018',
+      cite: 'Penny, Zachreson, Fletcher, Lau, Lizier and colleagues, "The demise of Angkor: Systemic vulnerability of urban infrastructure to climatic variations", Science Advances 4(10): eaau4029 (2018)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6192684/',
+      doi: '10.1126/sciadv.aau4029',
+      kind: 'paper',
+      access: 'open',
+      note: 'The network model: Angkor’s water system rendered as 1,013 channels and embankments joining 617 junctions, reservoirs, and moats, showing that under erosion and sedimentation damage passes a threshold beyond which flow centralizes and the network suffers a cascading functional breakdown, and concluding the infrastructure was prone to cascading failure under high-amplitude, low-frequency climatic perturbation. Free full text at PubMed Central.',
+    },
+    {
+      key: 'penny-2019',
+      cite: 'Penny, Hall, Evans and Polkinghorne, "Geoarchaeological evidence from Angkor, Cambodia, reveals a gradual decline rather than a catastrophic 15th-century collapse", Proceedings of the National Academy of Sciences 116(11): 4871 to 4876 (2019)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC6421400/',
+      doi: '10.1073/pnas.1821460116',
+      kind: 'paper',
+      access: 'open',
+      note: 'The moat core from Angkor Thom: indicators of burning, forest disturbance, and soil erosion all declining from the first decades of the fourteenth century, the moat no longer maintained by that century’s end, the argument that the infrastructure failed or went unrepaired because the urban elites had already left for sites nearer the Mekong and Tonle Sap rivers and the profitable maritime trade networks closer to the South China Sea, and the noted continuity of occupation and substantial building works at Angkor into the sixteenth century. Free full text at PubMed Central.',
+    },
+    {
+      key: 'polkinghorne-2018',
+      cite: 'Martin Polkinghorne, "Reconfiguring kingdoms: The end of Angkor and the emergence of Early Modern period Cambodia", in Angkor: Exploring Cambodia’s Sacred City, Asian Civilisations Museum, Singapore (2018)',
+      url: 'https://cdn.angkordatabase.asia/libs/docs/publications/reconfiguring-kingdoms-the-end-of-angkor-and-the-emergence-of-early-modern-period-cambodia/Polkinghorne_M._2018_._Reconfiguring_Kin.pdf',
+      kind: 'book',
+      access: 'open',
+      note: 'The Early Modern chapter behind the continuity claims: Angkor Wat as a living monument, its nineteenth-century sangha descended from monks who had cared for the temple from at least the sixteenth century, King Ang Chan’s chronology correlating with mid-sixteenth-century inscriptions recording the completion of the unfinished bas-reliefs, Angkor Wat becoming a hub of Theravada pilgrimage, and Angkor continuing to sustain a local population after the court moved south.',
+    },
+    {
+      key: 'unesco-angkor',
+      cite: 'UNESCO World Heritage Centre, Angkor, World Heritage List entry 668',
+      url: 'https://whc.unesco.org/en/list/668/',
+      kind: 'institution',
+      access: 'open',
+      note: 'The custodian’s synthesis: an archaeological park of some 400 square kilometres holding the capitals of the Khmer Empire from the ninth to the fifteenth century, with temples, basins, dykes, reservoirs, and canals, most of the barays and channels still existing today, and a park inhabited by villages whose ancestors reach back to the Angkor period.',
+    },
+  ],
+  storyContext:
+    'Angkor at its ripeness, 1296 to 1297 CE, about a century and a half after Angkor Wat rose. Zhou Daguan is not a composite: a young member of a Chinese embassy, from the port city of Wenzhou, whose Record of Cambodia is the only surviving eyewitness account of the city. The route, the seasons, the markets, and the processions are his; the weather on his skin and the thoughts in his head are reconstructed around his terse entries.',
+  story: [
+    'The trees stand in the lake to their necks. Zhou Daguan leans at the rail of a small boat and watches a drowned forest slide past beneath the hull, crowns breaking the brown water like reefs, and reminds himself that this is not a flood. It is the calendar. It is the seventh month of 1296 CE, and the young man from Wenzhou has been traveling since spring: down the China coast, around Champa against contrary winds, up a river mouth found by feel among a dozen false ones, and now across a freshwater sea so wide its far shore has dissolved into haze. In the dry months, his pilots say, the water will fall away and men will walk on this lakebed. He does not believe them yet.',
+    'The city announces itself with a bridge. Fifty-four stone giants kneel along each parapet, gigantic and terrible as generals, hauling on the body of a nine-headed serpent, a tug of war frozen at the moment of greatest strain. Beyond them the wall runs some twenty li around, a dozen kilometres, pierced by five gates with elephants at their flanks, ringed by a moat as broad as a river. Inside, the streets run straight to a tower sheathed in gold at the center of everything, a golden bridge beside it, the palace to the north with lead tiles on the royal apartments and gold frames on the windows of the audience hall. Zhou has come from the empire that calls itself the middle of the world; a Mongol sits its throne now, and the embassy has been sent to summon this kingdom, which no army of his has touched, to submit. He begins, carefully, to take notes.',
+    'It takes him longer to understand that the true monument is the water. Every temple floats in its moat. Every quarter keeps its ponds; ditches stitch the blocks like basting thread. Out east of the walls, he records, lies a reservoir a hundred li around with a stone tower at its middle, and in the tower a bronze god sleeps on his side while water wells from his navel without cease. These people have plumbed their theology. What he cannot see, because no one walking the ground could, is the scale of it: banked reservoirs off in the haze, canals running dead straight for a day’s walk, an entire plain tilted and channeled from the hills to the lake so that rain falling anywhere can be caught, held, and aimed. He is standing inside a machine, and he mistakes it for a city.',
+    'The rain teaches him the machine’s rhythm. From the fourth month to the ninth it rains every afternoon, a gray wall arriving on schedule, and the Great Lake climbs until forests drown to the crown and the lakeshore people move up into the hills. From the tenth month to the third not a drop falls, the lake shrinks to boat-scraping shallows, and the people come back down. The farmers do not fight this pendulum; they ride it. They reckon where the flood will reach and when the rice will stand ready, sow to that arithmetic, and take from the land, he writes, three and even four harvests in a year.[^zhou-pelliot-1902] Water that keeps a schedule becomes food that keeps a schedule. No one at Angkor thinks it worth explaining. To them it is only weather.',
+    'Under the gold towers it is a working town. The markets are run by women, goods spread on mats, every seller paying rent for her patch of ground; small purchases are settled in rice or Chinese goods, middling ones in cloth, great ones in gold and silver, for the kingdom mints no coin at all. Chinese sailors jump ship here and stay, because rice is easy, houses are easy, trade is easy. Out through the south gate Zhou passes a stone tower said to have been raised in one night by Lu Ban, the carpenter god, and beyond it what his countrymen call Lu Ban’s tomb, a mountain of towers ten li around. He walks past one of the largest religious buildings on earth, and he gives it one line and a borrowed legend.',
+    'Four or five times in his year there, drums empty the streets, and he sees the state show itself. First cavalry, then standards and music. Then palace girls, three to five hundred of them, flowered cloth and flowers in their hair, great candles burning in broad daylight. Then girls carrying the royal gold; then the private guard, girls again, lances and shields on their shoulders; then goat carts and horse carts all in gold, ministers and princes on elephants under a horizon of red parasols, the royal wives behind them under a hundred more. Last comes the king, standing on an elephant whose tusks are sheathed in gold, holding the precious sword of the kingdom in his hand.[^zhou-pelliot-1902] Everyone who sees him puts their forehead to the earth. The sword is the kingship itself, and Zhou has heard how the king got it: his wife stole it from her own father for him. Nothing in the column is paid a wage: every candle, every gilded cart, every girl with a lance on her shoulder is fed from the flooded fields, and what parades past Zhou is the water, walking in another form.',
+    'In the sixth month of 1297 Zhou goes back down the lake on rising water, the flood still shy of the one that had carried him in, the trees drowned only to their waists. In his baggage are the notes for a small book that will one day be the only eyewitness account of this city to survive. Nothing in it reads like an elegy: a rich country, a crowded one, a king in gold on an elephant. What it cannot record is a ledger no one at Angkor keeps either: what it costs, every single year, to hold a thousand channels open and a hundred embankments whole, and what happens to a city built as a machine when the weather it was tuned to stops keeping time.',
+  ],
+  significance: [
+    'Zhou went home and wrote his Record of Cambodia, and history nearly lost it: the text we have, his modern translator reckons, is only part of the book he prepared. It is the only eyewitness account of Angkor’s civilization to survive, and it reached English directly from the Chinese only in 2007, every earlier English version having come by way of the French.[^osborne-2008] For the city itself, the instruments had to be invented. Airborne radar and decades of ground survey were needed before anyone could see what Zhou was standing in, and the map they finally produced redrew the meaning of the word city.',
+    'That map, published the same year as the new translation, covered nearly 3,000 square kilometres and showed the temples embedded in an engineered landscape, with a water management network alone sprawling across more than 1,000 square kilometres: Angkor was the most extensive urban complex of the preindustrial world, a web of channels, embankments, and reservoirs built, in its mappers’ words, for stabilizing, storing, and dispersing water.[^evans-2007] Lidar then cut through the forest and found the dense heart Zhou had walked: a formally planned urban core of at least 35 square kilometres on an orthogonal grid of streets and canals, four times the area conventionally recognized inside the walls of Angkor Thom.[^evans-2013] The stone temples were never the city; they were its bones. The wooden city around them, houses on mounds beside excavated ponds, dispersed among its own rice fields, rots away to almost nothing, which is why its population had to be modeled rather than counted: roughly 700,000 to 900,000 people at the apogee in the thirteenth century, right around Zhou’s visit.[^klassen-2021] This is the craft thread of the chart at imperial scale, engineering as the very body of a state, and it answers the power thread’s oldest question (how to feed a capital) with a machine instead of a market.',
+    'Angkor Wat, the mountain of towers Zhou’s countrymen gave to a carpenter god, had by then stood for a century and a half. It rose through the first half of the twelfth century CE, in work strongly associated with Suryavarman II, as a temple to Vishnu whose moated enclosure the lidar resolved into city blocks of mounds and ponds, home to perhaps 4,500 people, the resident heart of a temple establishment reckoned at some 25,000 and fed by a support population of more than 125,000.[^evans-fletcher-2015] Hold Zhou’s market scene against those numbers: an economy without coin, its prices in rice and cloth and raw gold, was mobilizing all of it by obligation and rice surplus rather than wages, and building monuments whole continents would come to envy. The cosmology it built was imported, Mount Meru and Vishnu carried east on the monsoon trade winds; the engineering that raised it was Khmer work on a Khmer floodplain, whatever it first borrowed.',
+    'What the machine was actually for is the field’s great argument. Bernard-Philippe Groslier called Angkor a hydraulic city, its reservoirs feeding rice to well over a million people; from the 1980s the thesis was disputed, and the argument sat unresolved for decades because nobody had mapped the landscape beyond the great temples. The 2007 map answered that Angkor did possess exactly the integrated catchment, storage, and redistribution system Groslier’s proposal required, though how much rice the reservoirs really watered is still contested.[^evans-2007] What is not in dispute is what the weather did. Tree rings from cypresses in the Vietnamese highlands record a monsoon that weakened for decades in the mid to late fourteenth century and failed sharply again in the early fifteenth, the driest single year falling in 1403, with abrupt reversals into violently wet years in between; one Angkorian canal choked with nearly a metre and a half of coarse sand and gravel, possibly in a single flood.[^buckley-2010] A network model of the whole system, 1,013 channels joining 617 junctions and reservoirs, shows why that sequence was lethal: past a threshold, erosion and sedimentation centralize the flow and failure cascades through the network.[^penny-2018] The machine that made the city possible had become too vast to retune, and the monsoon it was tuned to had changed its habits.',
+    'And yet the drought did not simply kill Angkor; the famous sack by Ayutthaya, traditionally set in 1431, arrived at a city already emptying. A sediment core from Angkor Thom’s moat shows burning, forest disturbance, and erosion all declining from the first decades of the fourteenth century, the moat itself unmaintained by that century’s end: on this evidence the infrastructure failed because the elite had already begun leaving, drawn south toward the Mekong and the swelling maritime trade of the South China Sea.[^penny-2019] Collapse, up close, looks like relocation, and its destination was the river country where Phnom Penh would grow. Nor was the city ever the lost world Europe later congratulated itself on discovering: occupation and building ran on at Angkor into the sixteenth century, and Angkor Wat never fell out of use, kept alive as a shrine by Theravada monks long after the court had gone; when royal attention returned in the mid-sixteenth century, inscriptions record the completion of the temple’s unfinished bas-reliefs under King Ang Chan, and Angkor Wat became a hub of pilgrimage.[^polkinghorne-2018] Villages whose ancestry reaches back to the kingdom still farm rice inside the 400 square kilometres of temples, reservoirs, and canals.[^unesco-angkor] We are now the civilization of engineered water, our deltas and megacities plumbed to a climate we are unsettling ourselves; the tree rings that dated Angkor’s droughts belong to the same science now measuring our own. Angkor is what it looks like when infrastructure outlives both the weather it was tuned to and the people willing to keep paying for it, told, for once, at a scale small enough to see the whole story.',
+  ],
+  threadsOut: [
+    {
+      to: 'inka-threads',
+      why: 'Two centuries after Angkor’s apogee, the Andes raised its twin, and the telling likeness is what each chose to bank: water and rice behind Khmer embankments, cloth, food, and stored labor in Tawantinsuyu’s storehouses, and never a price needed to move a mountain of work. Read together, they show how much of statehood money merely abbreviates.',
+    },
+    {
+      to: 'monsoon-marketplace',
+      why: 'One weather system, two machines: at sea the monsoon was a timetable that moved goods, at Angkor a harvest that had to be caught and held. The winds carried Vishnu and Sanskrit kingship to the Khmer in the first place, and in the end the ocean’s trade pulled their successors downstream to the ports.',
+    },
+    {
+      to: 'sanskrit-cosmopolis',
+      why: 'Angkor Wat is the Sanskrit cosmopolis poured in stone: Mount Meru surveyed onto a Cambodian floodplain, Vishnu praised in a court that no Indian army ever visited, an imported cosmology executed by Khmer engineering.',
+    },
+    {
+      to: 'burning-mirror',
+      why: 'Angkor is the most completely documented case we own of infrastructure tuned to one climate meeting another: drought, then violent rain, then cascading failure through a network too big to retune. The science that read its tree rings is the science now reading ours.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'Zhou Daguan saw a walled city and gilded towers. What did the radar map of 2007 and the lidar of 2013 add to his picture of what Angkor actually was?',
+      answer:
+        'They dissolved the walls. The 2007 survey mapped nearly 3,000 square kilometres and found a low-density urban complex, the most extensive of the preindustrial world, threaded by a water management network covering more than 1,000 square kilometres. Lidar then revealed a formally planned core of at least 35 square kilometres on an orthogonal grid, four times the area inside Angkor Thom, and population modeling put roughly 700,000 to 900,000 people in the greater region at its thirteenth-century peak. The stone temples turned out to be the durable bones of a vast wooden city dispersed among its own fields.',
+    },
+    {
+      type: 'why',
+      prompt: 'The network was built precisely to protect Angkor from the monsoon’s variability. By what mechanism did it become the city’s greatest vulnerability instead?',
+      answer:
+        'It was tuned to one band of variability and the fourteenth century left that band: decades-scale drought, punctuated by abrupt reversals into violently wet years. Channels shaped by low flows were then hit by floods that eroded intakes and dumped sediment, nearly a metre and a half of sand and gravel in one canal, and network modeling shows that past a threshold such damage centralizes the flow and failure cascades through the whole system. A machine of a thousand interdependent channels cannot be retuned as fast as a climate can change, so the very scale that fed the city became the thing that broke it.',
+    },
+    {
+      type: 'why',
+      prompt: 'For decades the short story was that drought and the Ayutthayan sack of 1431 killed Angkor. What did the sediment core from Angkor Thom’s moat change about that story?',
+      answer:
+        'It reversed the causality. The core shows burning, forest disturbance, and erosion, the signatures of a busy city, all declining from the first decades of the 1300s, with the moat unmaintained by that century’s end: the administrative heart was emptying before the worst droughts and a full century before 1431. On this evidence the infrastructure failed because the elite had already begun relocating toward the Mekong and the maritime trade of the South China Sea. Climate stressed the machine, but its owners were choosing a different economy, which is why the endpoint was not annihilation but Phnom Penh.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Egypt also ran on monsoon rain, but the monsoon that fed the Nile fell on distant Ethiopia and arrived as a river on a usually kind schedule, while Angkor caught its rain where it fell. What did that difference force each state to build, and what did failure look like in each?',
+      callbackTo: 'gift-of-the-nile',
+      answer:
+        'Egypt’s buffer came mostly free: the flood arrived after harvest and withdrew before planting, so the state built on top of the river’s regularity, turning it into a transport corridor and a timetable while basin irrigation stayed largely local. Angkor had no great river keeping a schedule, only a wet half-year and a dry one, so it built its buffer by hand, a thousand square kilometres of reservoirs and canals that had to be maintained forever. Failure differed accordingly: when the Nile ran low, Egypt starved but the river remained to run true the next year, whereas at Angkor the erratic monsoon tore up the infrastructure itself, so each bad decade left the machine, not just the harvest, diminished.',
+    },
+    {
+      type: 'callback',
+      prompt: 'The monsoon marketplace bent under sacked ports and dying harbors and kept trading, yet Angkor, running on the same weather system, broke. What is the structural difference between the two machines, and where did the Khmer world go next?',
+      callbackTo: 'monsoon-marketplace',
+      answer:
+        'The ocean’s order was distributed and ownerless: no port was the system, so when Guangzhou burned or Siraf’s harbor failed, traffic rerouted and the calendar kept working. Angkor was the opposite architecture, one integrated basin of channels depending on channels around a fixed capital, so damage cascaded toward the center and nothing could reroute. The Khmer answer was to change machines: the court resettled toward the Mekong and the sea trade of the South China Sea, where Phnom Penh would rise, trading the paddy engine for the ocean’s, which is why Angkor’s end is better read as a relocation than a death.',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Zhou Daguan, A Record of Cambodia: The Land and Its People, translated by Peter Harris',
+      why: 'The whole eyewitness, rendered directly from the Chinese: palace and markets, festivals and slave households, the closest anyone will ever come to walking into thirteenth-century Angkor.',
+      url: 'https://silkwormbooks.com/products/a-record-of-cambodia',
+    },
+    {
+      title: 'Damian Evans and Roland Fletcher, The Landscape of Angkor Wat Redefined, Antiquity 89 (2015)',
+      why: 'The lidar revelation in the researchers’ own words, the great temple resolving into a working town of city blocks, mounds, and ponds, free to read at Cambridge Core.',
+      url: 'https://www.cambridge.org/core/journals/antiquity/article/landscape-of-angkor-wat-redefined/F3F0731A514E338A76DA8A906458A890/core-reader',
+    },
+    {
+      title: 'UNESCO World Heritage Centre, Angkor',
+      why: 'The custodian’s synthesis of the 400 square kilometre park, its temples, reservoirs, and canals, and the living villages inside it whose families reach back to the kingdom.',
+      url: 'https://whc.unesco.org/en/list/668/',
+    },
+  ],
+});
