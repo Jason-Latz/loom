@@ -83,4 +83,5 @@ LOOM.lessonFiles = [
   'crusading-fever',
   'ghazali-crisis',
   'first-universities',
+  'neo-confucian-turn',
 ];
