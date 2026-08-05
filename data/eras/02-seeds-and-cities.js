@@ -106,7 +106,7 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'A farmer discovers the animal in the pen is not just meat: it is a milk tap, a wool crop, and an engine that pulls a plow.',
     summary:
-      'Across Eurasia in the fourth millennium BCE, people increasingly used animals for renewable products: milk, wool, and muscle. Milk residues show dairying began far earlier than the theory once claimed, but plow traction, woolly sheep, carts, and pack animals now clustered into a repertoire. Andrew Sherratt called it the secondary products revolution. Living animals became capital that worked, compounded, and moved, underwriting plow agriculture, pastoral economies, and the textile trades.',
+      'Living animals became wealth that worked: milk, wool, muscle, and more animals. Andrew Sherratt called the shift a secondary products revolution of the fourth millennium BCE, but milk residues and plow marks now push dairying and traction thousands of years earlier, and the bones show no regionwide turn to intensive fleece. Wagons do cluster here; the rest of the repertoire keeps its own separate chronologies. It was capital that walked, compounded, and could be divided among heirs.',
     edges: [
       { to: 'uruk-first-city', type: 'enables', why: 'Plow traction and wool flocks raised output per farmer and made cloth an industry the first cities could organize.' },
       { to: 'horse-and-wheel', type: 'enables', why: 'Ox wagons and dairy herds made deep steppe life sustainable before anyone bred horses for speed and prestige.' },
