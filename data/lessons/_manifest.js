@@ -33,6 +33,7 @@ LOOM.lessonFiles = [
   'uruk-first-city',
   'invention-of-writing',
   'surplus-and-the-state',
+  'caral-supe',
   'gift-of-the-nile',
   'indus-enigma',
   'gods-of-the-city',
