@@ -36,6 +36,7 @@ LOOM.lessonFiles = [
   'caral-supe',
   'gift-of-the-nile',
   'indus-enigma',
+  'enheduanna',
   'gods-of-the-city',
   'horse-and-wheel',
   'code-of-hammurabi',
