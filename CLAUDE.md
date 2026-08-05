@@ -132,12 +132,10 @@ lessons into it.
 - The 2026-08-01 citation pass produced 84 prose corrections (details in the
   change log); a 2026-08-04 third-party re-audit of its 94 overruled findings
   reversed 25 of them, and Unpaywall lifted open access to 73 percent.
-- `node scripts/check-links.mjs` sweeps all 1,443 citation, DOI and
-  further-reading URLs. **Read its output, do not act on it.** The last full
-  sweep called 10 dead and only 2 were: seven were transient or header-driven
-  (eLife answers 406 to a scripted fetch and renders fine in a browser; persee.fr
-  was serving a site-wide 503), and 250 more are publisher bot walls that open
-  normally for a human. Confirm in a real browser before touching a link.
+- `node scripts/check-links.mjs` sweeps every citation, DOI and further-reading
+  URL. **Read its output, do not act on it**: past sweeps called live links
+  dead over transient errors and publisher bot walls that open fine for a
+  human. Confirm in a real browser before touching a link.
 - Remaining unwritten: 289 seeds. Only Era I is complete: the 365 expansion
   left 90 unwritten in Eras II to V (II 19, III 21, IV 25, V 25), and Eras VI
   to X hold 199 (VI is 8/40). Graph is at its final size.
