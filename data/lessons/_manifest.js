@@ -87,4 +87,5 @@ LOOM.lessonFiles = [
   'vachana-poets',
   'neo-confucian-turn',
   'commentator-of-cordoba',
+  'guide-for-the-perplexed',
 ];
