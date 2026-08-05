@@ -84,5 +84,6 @@ LOOM.lessonFiles = [
   'ghazali-crisis',
   'first-universities',
   'angkor-hydraulic',
+  'vachana-poets',
   'neo-confucian-turn',
 ];
