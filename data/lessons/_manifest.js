@@ -82,4 +82,5 @@ LOOM.lessonFiles = [
   // Era VI: The Woven World
   'crusading-fever',
   'ghazali-crisis',
+  'first-universities',
 ];
