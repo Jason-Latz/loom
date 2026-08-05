@@ -49,12 +49,23 @@ run `node scripts/check.mjs` to a clean OK, commit
 `node scripts/check-links.mjs` (read, do not blindly act), update `CLAUDE.md`
 state + change log, deploy `vercel --prod --yes`, verify live.
 
-## Resume
+## Outcome (2026-08-05)
 
-If the run dies (usage limit, API error): do not restart. Find the run id
-below, then relaunch with `Workflow({scriptPath, resumeFromRunId})`; completed
-agents return cached results instantly. Check `agent-*.meta.json` in the
-transcript dir to confirm prose stages resolved to Fable before letting a
-resumed run proceed.
+All eight lessons shipped and committed; gate
+`OK: 365 nodes, 800 wires, 10 eras, 76 lessons. 0 warning(s).`; link sweep 111
+URLs, 0 dead (11 publisher bot walls, untouched per policy). Runs: main
+`wf_71d7c591-9ef` (died once at the weekly usage limit, once to a 529 wave),
+tail `wf_7bd7b397-d27` (one full re-forge of vachana-poets, three
+review-fix-verify tails; 4/4 shipped, zero errors).
 
-Run id: recorded after launch in this file's git history or via /workflows.
+Lessons for the next run:
+
+- Pass Workflow `args` defensively: the harness can deliver it as a JSON
+  string, so parse both forms before touching `args.lessons`.
+- **Resume caching is unreliable across resumes**: completed forge and review
+  stages re-ran live (and four re-run forges died on 529s that could have
+  clobbered good staged files; they happened to die early). Prefer integrating
+  finished work immediately and launching a fresh tail workflow scoped to only
+  the unfinished lessons, exactly as done here.
+- Verify model pins via `agent-*.meta.json` at spawn time; both runs resolved
+  correctly (fable on prose, opus on review).

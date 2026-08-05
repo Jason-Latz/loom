@@ -115,36 +115,32 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-08-01, after the citation pass)
+## State (2026-08-05, after the Era VI opening batch)
 
-- **Every one of the 68 written lessons now carries per-claim citations**: 826
-  sources and 964 markers across the atlas. Gate:
-  `OK: 365 nodes, 800 wires, 10 eras, 68 lessons. 0 warning(s).`
+- **76 lessons written, every one with per-claim citations**: 897 sources and
+  1,064 markers across the atlas. Gate:
+  `OK: 365 nodes, 800 wires, 10 eras, 76 lessons. 0 warning(s).`
+- Era VI opened with its first eight lessons (crusading-fever through
+  guide-for-the-perplexed), forged by Workflow pipeline: Fable research/draft,
+  Fable literary revision, Opus adversarial review of facts plus every
+  citation, Fable fix, Opus ship verdict. Run spec: `docs/era-vi-forge-run.md`.
 - The apparatus: markers hidden until the reader presses "Show the evidence"
   (the choice persists in `loom.v1`), gilt superscripts when raised, a gloss
   beneath the paragraph on press, and a numbered Sources cartouche at the foot
   of every lesson that is always visible. `scripts/check.mjs` now REQUIRES
   citations, so a new lesson cannot ship without them.
-- Built in three stages per lesson: Opus research with every URL fetched and
-  every DOI resolved, an independent Opus refutation, and a Fable adjudication
-  that corrected the prose only where a lesson claimed more than its evidence
-  carried. That produced **84 prose corrections**.
-- The corrections matter more than the citations: `spark-of-mind` had
-  skeletally modern humans at Jebel Irhoud against both its source and Loom's
-  own Irhoud lesson, `ashoka-wheel` misread Rock Edict II, `bantu-and-aksum`
-  called the Aksum stelae granite, `caliphate-lightning` put the fire altar on
-  the gold coinage. No structural gate can catch any of that.
-- **Strengthening pass, 2026-08-04.** A third party re-audited all 94 citation
-  findings that adjudication had overruled: 69 stood, 25 did not, and all 25
-  are fixed. Unpaywall found readable copies of 17 paywalled sources (open
-  access now 73 percent), and the two genuinely dead links are repaired.
+- The 2026-08-01 citation pass produced 84 prose corrections (details in the
+  change log); a 2026-08-04 third-party re-audit of its 94 overruled findings
+  reversed 25 of them, and Unpaywall lifted open access to 73 percent.
 - `node scripts/check-links.mjs` sweeps all 1,443 citation, DOI and
   further-reading URLs. **Read its output, do not act on it.** The last full
   sweep called 10 dead and only 2 were: seven were transient or header-driven
   (eLife answers 406 to a scripted fetch and renders fine in a browser; persee.fr
   was serving a site-wide 503), and 250 more are publisher bot walls that open
   normally for a human. Confirm in a real browser before touching a link.
-- Remaining unwritten: Eras VI to X (297 seeds). Graph is at its final size.
+- Remaining unwritten: 289 seeds. Only Era I is complete: the 365 expansion
+  left 90 unwritten in Eras II to V (II 19, III 21, IV 25, V 25), and Eras VI
+  to X hold 199 (VI is 8/40). Graph is at its final size.
 - Production is https://loomhistory.com and https://loom-gray.vercel.app; the
   citation pass is deployed and verified live. `AGENTS.md` is now a pointer to
   this file rather than a copy of it, because the copy drifted.
@@ -152,6 +148,12 @@ lessons into it.
 
 ## Change log
 
+- **2026-08-05:** Era VI opened: eight lessons (the twelfth century of faith
+  and reason, Cluny to Cairo) forged by Workflow pipeline, Fable on every prose
+  stage and Opus on every adversarial one, staged outside the repo, eight
+  gate-green commits, 111-URL link sweep clean. The run outlived a weekly usage
+  limit and a 529 wave via resume; resume caching re-ran finished stages, so
+  trust the journal, not the cache.
 - **2026-08-01:** The citation pass. All 68 lessons gained per-claim citations
   (826 sources, 964 markers) behind a reader-controlled evidence switch, with an
   always-visible Sources cartouche. Three stages per lesson: Opus research, an
@@ -167,10 +169,9 @@ lessons into it.
   arithmetic error both reviews missed. Ten graph-data defects corrected against
   fetched primary sources. Report: `docs/era-i-completion-report.md`.
 - **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed:
-  fingertip-sized tap targets at any zoom (--hit-r), lessons streamed in after
-  boot so the chart is interactive immediately, the header flex squeeze that
-  crushed search to 31px fixed, iOS focus-zoom and dvh and safe-area fixes,
-  coarse-pointer sizing, theme-color synced to lamplight, reduced motion.
+  fingertip tap targets at any zoom (--hit-r), lessons streamed in after boot,
+  header squeeze fixed, iOS viewport fixes, coarse-pointer sizing, lamplight
+  theme-color, reduced motion.
 - **2026-07-26:** Era V released and the site moved to loomhistory.com. All
   thirteen lessons forged in one pipeline: Opus research briefs, graph
   corrections first, Fable drafts plus literary revision, two independent Opus
