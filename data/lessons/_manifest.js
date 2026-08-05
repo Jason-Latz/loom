@@ -78,4 +78,7 @@ LOOM.lessonFiles = [
   'heian-and-genji',
   'mound-and-mountain',
   'great-schism',
+
+  // Era VI: The Woven World
+  'crusading-fever',
 ];
