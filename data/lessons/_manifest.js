@@ -46,6 +46,7 @@ LOOM.lessonFiles = [
   'epic-of-gilgamesh',
   'counting-in-sixties',
   'code-of-hammurabi',
+  'kingdom-of-kerma',
   'yellow-river-bronze',
   'bronze-web',
   'maize-and-the-americas',
