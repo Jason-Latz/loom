@@ -120,23 +120,17 @@ lessons into it.
 - **95 lessons written, every one with per-claim citations**: 1,074 sources and
   1,312 markers across the atlas. Gate:
   `OK: 365 nodes, 802 wires, 10 eras, 95 lessons. 0 warning(s).`
-- **Eras I and II are complete** (20/20 and 32/32). Era II's 19 remaining
-  lessons were forged in one session in three sequential batches, by the same
-  Workflow pipeline: Fable research/draft, Fable literary revision, Opus
-  adversarial review of facts plus every citation, Fable fix, Opus ship
-  verdict, plus a sixth Fable polish stage (see below). Run spec:
-  `docs/era-ii-forge-run.md`.
-- **Add a polish stage to the pipeline.** Every one of the 19 lessons came back
-  with significance over the spec band (1,003 to 1,355 words) while passing the
-  gate, because the gate only checks the combined total. A scoped Fable pass
-  that compresses and applies the verifier's leftover notes brought all 19 into
-  932 to 999 without losing a citation. Give it the notes, not just the number.
-- **The forge spec's section bands are out of step with the atlas.** The spec
-  says significance is 600 to 950 words; 36 of the 95 shipped lessons exceed it
-  and Era I runs to 1,404. Era II was compressed for consistency with its own
-  era-mates, not because 950 is sacred. Decide whether to widen the spec or
-  re-cut the long Era I lessons; do not let a reviewer cite the band as
-  gospel in the meantime.
+- **Eras I and II are complete** (20/20 and 32/32). Era II's 19 lessons were
+  forged in one session, in three sequential batches, by the usual pipeline
+  plus a sixth **polish** stage. Run spec: `docs/era-ii-forge-run.md`.
+- **Keep the polish stage.** All 19 lessons passed the gate while sitting over
+  the spec's significance band (1,003 to 1,355 words), because the gate checks
+  only the combined total. A scoped Fable pass, given the verifier's leftover
+  notes and not just a number, brought all 19 to 932 to 999 losing no citation.
+- **The spec's section bands are out of step with the atlas**: 36 of 95 shipped
+  lessons exceed the 600 to 950 significance band and Era I runs to 1,404. Era
+  II was compressed to match its era-mates, not because 950 is sacred. Open
+  question for Jason: widen the spec, or re-cut the long Era I lessons.
 - The apparatus: markers hidden until the reader presses "Show the evidence"
   (the choice persists in `loom.v1`), gilt superscripts when raised, a gloss
   beneath the paragraph on press, and a numbered Sources cartouche at the foot
@@ -160,21 +154,18 @@ lessons into it.
 ## Change log
 
 - **2026-08-06:** Era II completed, the second fully charted era. All 19
-  remaining lessons forged in three sequential batches (7, 6, 6), integrating
-  each batch before launching the next so callbacks could reach the new
-  lessons and so a dead run cost at most one batch. Nineteen gate-green
-  commits, 339-URL link sweep with 0 dead. **Six graph corrections came out of
-  the research and were committed separately from the lessons**, because the
-  forge agents kept finding the era file wrong: the Austronesian summary
-  claimed ancient genomes show mixing "at every step" when Skoglund shows
-  Remote Oceania's first settlers carried almost no Papuan ancestry; the
-  secondary-products summary bundled traction, wool and wagons into one
-  fourth-millennium repertoire when only wagons cluster; Poverty Point's
-  imports come from a thousand miles, not seven hundred. Two new edges (Oxus
-  to Rigveda on Lubotsky's substrate vocabulary, Poverty Point colliding with
-  the Bronze Web) took the graph to 802 wires. Lesson for next time: **when a
-  lesson and its node summary disagree, the lesson usually won**, so check the
-  era file against the finished prose before shipping.
+  lessons forged in three sequential batches (7, 6, 6), integrating each before
+  launching the next so callbacks could reach the new lessons and a dead run
+  cost at most one batch. Nineteen gate-green commits, 339-URL sweep, 0 dead.
+  **Six graph corrections came out of the research** and were committed apart
+  from the lessons, because the forge agents kept finding the era file wrong:
+  the Austronesian summary claimed genomes show mixing "at every step" when
+  Skoglund shows Remote Oceania's first settlers carried almost no Papuan
+  ancestry; the secondary-products summary bundled traction, wool and wagons
+  into one repertoire when only wagons cluster; Poverty Point's imports come a
+  thousand miles, not seven hundred. Two new edges took the graph to 802 wires.
+  Next time: **when a lesson and its node summary disagree, the lesson usually
+  wins**, so check the era file against the finished prose before shipping.
 - **2026-08-05:** Era VI opened: eight lessons (the twelfth century of faith
   and reason, Cluny to Cairo) forged by Workflow pipeline, Fable on every prose
   stage and Opus on every adversarial one, staged outside the repo, eight
@@ -195,34 +186,23 @@ lessons into it.
   living scholar, a geographic falsehood, a false causal bridge, and an
   arithmetic error both reviews missed. Ten graph-data defects corrected against
   fetched primary sources. Report: `docs/era-i-completion-report.md`.
-- **2026-07-26 (later):** Mobile optimization pass, cross-model reviewed:
-  fingertip tap targets at any zoom (--hit-r), lessons streamed in after boot,
-  header squeeze fixed, iOS viewport fixes, coarse-pointer sizing, lamplight
-  theme-color, reduced motion.
-- **2026-07-26:** Era V released and the site moved to loomhistory.com. All
-  thirteen lessons forged in one pipeline: Opus research briefs, graph
-  corrections first, Fable drafts plus literary revision, two independent Opus
-  reviews per lesson (37 blockers raised), thirteen gate-green commits.
-- **2026-07-21:** Adversarially audited all 236 expansion seeds, correcting
-  more than one hundred nodes across all ten eras and bringing the graph to 800
-  forward wires. Independently reviewed Fable's nine Era IV lessons, integrated
-  each in its own gate-green commit, and deployed 365 nodes and 43 lessons to
-  production. Local and live browser QA passed at desktop, 390 px, and 320 px.
-- **2026-07-18 (evening):** The 365 expansion. Designed, adversarially verified
-  and integrated 236 seed nodes (129 to 365) across all ten eras as pure
-  insertions, per Jason's emphases: philosophy with primary-text anchors,
-  trade/money/technology, underrepresented regions. Made the callback-count rule
-  manifest-aware. Wrote all nine Era IV lessons. Dossier:
-  `docs/graph-expansion-365.md`; report: `docs/era-iv-completion-report.md`.
-- **2026-07-18:** Audited and corrected Era IV graph architecture, and recorded
-  the Fable/Codex division of responsibility.
-- **2026-07-17:** Eras II and III completed and adversarially audited. Release
-  gate made strict; mobile layout and real pinch zoom added.
-- **2026-07-16:** Era I finished and hardened. An adversarial verify pass fixed
-  a Blombos conflation, an inverted ancestry-split claim, a Sulawesi dating
-  superseded in 2024, and a false "final node" claim. Two agents had stripped
-  every apostrophe from their lessons ("the men shoulders") and the gate passed
-  them, so the gate now fails apostrophe-less prose.
-- **2026-07-15** — Born: graph (120 nodes/10 eras), parchment atlas app
+- **2026-07-26:** Era V released (thirteen lessons, 37 blockers raised across
+  two independent Opus reviews each) and the site moved to loomhistory.com.
+  Same day, a cross-model-reviewed mobile pass: fingertip tap targets at any
+  zoom (--hit-r), lessons streamed in after boot, iOS viewport fixes,
+  coarse-pointer sizing, lamplight theme-color, reduced motion.
+- **2026-07-18 to 21:** The 365 expansion. Designed and adversarially verified
+  236 seed nodes across all ten eras as pure insertions (philosophy with
+  primary-text anchors, trade/money/technology, underrepresented regions),
+  corrected more than a hundred nodes, reached 800 forward wires, made the
+  callback-count rule manifest-aware, and wrote all nine Era IV lessons.
+  Dossiers: `docs/graph-expansion-365.md`, `docs/era-iv-completion-report.md`.
+- **2026-07-16 to 17:** Era I lessons hardened; Era II and III **graph data**
+  audited (not their lessons, which came later). Release gate made strict,
+  pinch zoom added. An adversarial pass fixed a Blombos conflation, an inverted
+  ancestry-split claim, and a Sulawesi dating superseded in 2024. Two agents
+  had stripped every apostrophe from their lessons ("the men shoulders") and
+  the gate passed them, so the gate now fails apostrophe-less prose.
+- **2026-07-15:** Born: graph (120 nodes/10 eras), parchment atlas app
   (map/dossier/reader/progress/lamplight), check gate, forge spec + skill,
   Era I lessons (exemplar by Fable, rest by Opus agents under the spec).
