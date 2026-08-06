@@ -40,6 +40,7 @@ LOOM.lessonFiles = [
   'language-puts-to-sea',
   'gods-of-the-city',
   'empire-of-wool',
+  'oxus-oases',
   'horse-and-wheel',
   'code-of-hammurabi',
   'yellow-river-bronze',
