@@ -58,8 +58,8 @@ lessons into it.
 - Jason wants each new era to improve on the prose before it. Give every lesson
   a dedicated literary revision for cadence, concrete image, restraint,
   sentence music, and structural unity; accuracy and clarity are only the floor.
-- Mobile and interaction foundations are reliable. Resist feature creep and
-  treat content quality as the main problem now.
+- Mobile and interaction foundations are reliable; content quality is the main
+  problem now, so resist feature creep.
 - **Every lesson carries per-claim citations.** `citationsVersion: 1`, a
   `sources` array, and `[^source-key]` markers after the punctuation of the
   clause they support (aim 6 to 12; the gate allows 5 to 16 and the corpus
