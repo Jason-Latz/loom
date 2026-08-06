@@ -473,7 +473,7 @@ LOOM.node([
     threads: ['wealth', 'craft'],
     hook: 'In the lower Mississippi valley, people who plant no staple crop haul earth by the basketload, raising ridges and mounds around a great plaza, one huge mound perhaps in a single season.',
     summary:
-      'Poverty Point’s concentric ridges and mounds rose around 1700 to 1100 BCE, built by communities that fished, hunted, and gathered the Mississippi lowlands’ abundance; Mound A, among North America’s largest earthen structures, went up in perhaps ninety days. Tons of imported stone arrived from as far as seven hundred miles away, since the region has almost none. Whether residence, pilgrimage center, or both is debated. Monumental coordination here did not require staple farming or known kings; the institutions that gathered labor remain uncertain.',
+      'Poverty Point’s concentric ridges and mounds rose around 1700 to 1100 BCE, built by communities that fished, hunted, and gathered the Mississippi lowlands’ abundance; Mound A, among North America’s largest earthen structures, went up in perhaps ninety days. Tons of imported stone arrived from as far as a thousand miles away, since the region has almost none. Whether residence, pilgrimage center, or both is debated. Monumental coordination here did not require staple farming or known kings; the institutions that gathered labor remain uncertain.',
     edges: [
       { to: 'maize-and-the-americas', type: 'collides', why: 'Vast labor mobilized on fish, nuts, and exchange unsettles the assumption that only farming societies build monuments.' },
       { to: 'mound-and-mountain', type: 'echoes', why: 'Earth moved basket by basket remained the Mississippi valley’s monumental idiom from Poverty Point to Cahokia.' },
