@@ -42,22 +42,17 @@ lessons into it.
 
 ## Conventions
 
-- Lessons are forged per `docs/forge-spec.md`; Fable owns lesson prose and
-  substantive literary revision, while Codex owns graph architecture, research,
-  adversarial review, validation, manifest updates, commits, and deployment.
-- Before describing historical figures or events as contemporaneous, calculate
-  and compare their dates explicitly rather than inferring from an era label.
-- Before naming a scholarly paper's authors in lesson prose, resolve its DOI
-  metadata or publisher record; do not rely on search snippets or carried notes.
-- Jason prefers Fable for Loom lesson prose and substantive literary revision.
-  Do not assign those passes to Codex or Sol unless Jason explicitly changes
-  that choice; prepare a precise research and architecture handoff for Fable.
-- Fable owns every generative forge stage (research, draft, revision, fixes);
-  Opus owns only the adversarial stages (factual review, craft review, verify),
-  so the critic is never the same model as the creator.
-- Trust Fable to research and correct lesson facts when needed. Treat Codex
-  briefs as scaffolding rather than a cage, then adversarially review Fable's
-  finished work before release.
+- Lessons are forged per `docs/forge-spec.md`. **Fable owns every generative
+  stage** (research, draft, literary revision, fixes, polish); **Opus owns only
+  the adversarial ones** (factual review, citation review, craft review,
+  verify), so the critic is never the same model as the creator. Do not
+  reassign prose to Opus or Sol unless Jason says so. The orchestrator owns
+  graph architecture, manifest, commits and deployment.
+- Trust Fable to research and correct lesson facts. Briefs are scaffolding, not
+  a cage: a brief that turns out wrong should be corrected in the lesson, and
+  if the era file is what is wrong, fix that too and commit it separately.
+- Before calling figures or events contemporaneous, calculate and compare their
+  dates explicitly rather than inferring from an era label.
 - Treat Loom as artwork: prioritize beautiful, engaging prose, elegant
   pedagogy, and aesthetic coherence over merely correct coverage.
 - Jason wants each new era to improve on the prose before it. Give every lesson
