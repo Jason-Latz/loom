@@ -32,9 +32,7 @@ lessons into it.
 - `data/eras/01..10-*.js` — the graph. Nodes carry id/title/date/sort/region/x/threads/hook/summary/edges. Node array order per era = reading order = main sequence. Edges point FORWARD in that sequence only.
 - `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js starts the app, then streams them in; nodes light up as files register).
 - `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters, path highlighting, and the two world-map bands.
-- `js/reader.js` — dossier panel + lesson reading room + questions UI + the
-  citation apparatus (marker splitting, the evidence switch, the sources
-  cartouche).
+- `js/reader.js` — dossier panel + lesson reading room + questions UI + the citation apparatus (marker splitting, the evidence switch, the sources cartouche).
 - `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from a feature of the present). Always a subset of the real graph.
 - `js/app.js` — localStorage state (`loom.v1`), header controls, search, intro.
 - `docs/forge-spec.md` — binding style contract for lesson prose.
