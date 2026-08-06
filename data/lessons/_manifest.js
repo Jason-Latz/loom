@@ -39,6 +39,7 @@ LOOM.lessonFiles = [
   'enheduanna',
   'language-puts-to-sea',
   'gods-of-the-city',
+  'empire-of-wool',
   'horse-and-wheel',
   'code-of-hammurabi',
   'yellow-river-bronze',
