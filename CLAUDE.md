@@ -61,20 +61,18 @@ lessons into it.
 - Mobile and interaction foundations are reliable. Resist feature creep and
   treat content quality as the main problem now.
 - **Every lesson carries per-claim citations.** `citationsVersion: 1`, a
-  `sources` array, and 6 to 12 `[^source-key]` markers inline in the prose,
-  immediately after the punctuation of the clause they support. Markers are
-  hidden until the reader presses "Show the evidence", and the numbered Sources
-  cartouche at the foot of the lesson is always visible, so the apparatus costs
+  `sources` array, and `[^source-key]` markers after the punctuation of the
+  clause they support (aim 6 to 12; the gate allows 5 to 16 and the corpus
+  median is 14). Markers stay hidden until the reader presses "Show the
+  evidence" and the Sources cartouche is always visible, so the apparatus costs
   the reading nothing. Full contract in `docs/forge-spec.md`.
-- **Before a release, sweep the links and re-audit the overrules.** Link rot is
-  real, and so is the reviewer talked out of a correct finding: a third-party
-  pass over the rejected citation findings found 25 of 94 rejections wrong.
 - **A citation is only real once you have opened it.** Resolve DOI metadata at
-  `https://api.crossref.org/works/<doi>` before naming authors, venue, volume or
-  pages, and fetch the URL to confirm it hosts what the cite claims. A live
-  authoritative paper attached to a sentence it does not support passes the gate
-  and is worse than no citation at all. Six solid citations beat twelve with one
-  invented.
+  `https://api.crossref.org/works/<doi>` before naming authors, venue, volume
+  or pages, and fetch the URL to confirm it hosts what the cite claims. A live
+  authoritative paper attached to a sentence it does not support passes the
+  gate and is worse than no citation. Six solid beat twelve with one invented.
+  Before a release, sweep the links and re-audit the overrules: a third-party
+  pass over rejected citation findings once found 25 of 94 rejections wrong.
 - No em/en dashes anywhere in content or UI copy (Jason's rule; check enforces).
 - Node ids are kebab-case and permanent (lessons, edges, and progress key on them).
 - Adding a node: insert in era file at the right array position (chronological),
@@ -87,9 +85,8 @@ lessons into it.
 - SVG pointer capture retargets pointerup to the svg; node clicks are resolved
   from the element captured at pointerdown (js/map.js). Don't "simplify" that.
 - `[hidden] { display:none !important }` exists because overlays set their own
-  display; keep it when adding overlays.
-- Screenshot QA: intro overlay shows on first visit only (localStorage), clear
-  `loom.v1` to reproduce first-run.
+  display; keep it. Screenshot QA: the intro overlay shows on first visit only,
+  so clear `loom.v1` to reproduce first-run.
 - **The gate cannot read English.** It checks structure, not truth or grammar.
   Every batch of forged lessons needs an adversarial reviewer agent too; that
   pass has caught a superseded dating and several confidently-wrong claims that
@@ -99,6 +96,12 @@ lessons into it.
   every measurement in the gate. When bulk-adding them, prove it: strip the
   markers from the edited file and diff the prose against git HEAD. Anything
   other than byte-identical is a bug in the tooling, not in the writing.
+- **When a long run dies, harvest it; do not resume it.** Deaths leave finished
+  drafts on disk: read `journal.jsonl`, find the stage each lesson reached, and
+  launch a tail scoped to the rest. Identify recovered results by content, not
+  id (reviews name other nodes). Findings are too big for `args`, so embed them
+  in the generated script and parse-check it with `new Function`, since
+  `node --check` silently passes a script with a quote bug.
 - **Subagents do NOT inherit Fable.** Omitting `model` on a Workflow `agent()`
   call resolves to Opus, not the Fable session model; only an explicit
   `model: 'fable'` gives Fable (verified by probe, 2026-07-28). Pin it on every
@@ -126,14 +129,10 @@ lessons into it.
   lessons exceed the 600 to 950 significance band and Era I runs to 1,404. Era
   II was compressed to match its era-mates, not because 950 is sacred. Open
   question for Jason: widen the spec, or re-cut the long Era I lessons.
-- The apparatus: markers hidden until the reader presses "Show the evidence"
-  (the choice persists in `loom.v1`), gilt superscripts when raised, a gloss
-  beneath the paragraph on press, and a numbered Sources cartouche at the foot
-  of every lesson that is always visible. `scripts/check.mjs` now REQUIRES
-  citations, so a new lesson cannot ship without them.
-- The 2026-08-01 citation pass produced 84 prose corrections (details in the
-  change log); a 2026-08-04 third-party re-audit of its 94 overruled findings
-  reversed 25 of them, and Unpaywall lifted open access to 73 percent.
+- The evidence switch persists in `loom.v1`; raised markers are gilt
+  superscripts with a gloss beneath the paragraph. `scripts/check.mjs` REQUIRES
+  citations, so a new lesson cannot ship without them. Design study:
+  `docs/citation-options.html`.
 - `node scripts/check-links.mjs` sweeps every citation, DOI and further-reading
   URL. **Read its output, do not act on it**: past sweeps called live links
   dead over transient errors and publisher bot walls that open fine for a
@@ -144,7 +143,6 @@ lessons into it.
 - Production is https://loomhistory.com and https://loom-gray.vercel.app; the
   citation pass is deployed and verified live. `AGENTS.md` is now a pointer to
   this file rather than a copy of it, because the copy drifted.
-- Design study behind the apparatus: `docs/citation-options.html`.
 
 ## Change log
 
