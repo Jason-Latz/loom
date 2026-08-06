@@ -47,6 +47,7 @@ LOOM.lessonFiles = [
   'counting-in-sixties',
   'code-of-hammurabi',
   'kingdom-of-kerma',
+  'surgeons-papyrus',
   'yellow-river-bronze',
   'bronze-web',
   'maize-and-the-americas',
