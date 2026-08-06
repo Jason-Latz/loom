@@ -247,7 +247,7 @@ LOOM.node([
     threads: ['craft', 'wealth'],
     hook: 'Farming families cross a hundred miles of open water from Taiwan with pots, crops, and their words, and the islands ahead go on for half the circumference of the earth.',
     summary:
-      'Around 2200 BCE, farming communities from Taiwan crossed to the Batanes islands and northern Luzon, then carried red-slipped pottery, crops, animals, and Austronesian languages through island Southeast Asia. Language trees root the family in Taiwan; genomes record mixing with long-resident islanders at every step. By about 1350 BCE descendant communities stood in the Bismarck Archipelago at the ocean’s edge. Before 1500 CE, no language family on earth stretched wider.',
+      'Around 2200 BCE, farming communities from Taiwan crossed to the Batanes islands and northern Luzon, then carried red-slipped pottery, crops, animals, and Austronesian languages through island Southeast Asia. Language trees root the family in Taiwan; ancient genomes show the first settlers of Remote Oceania carrying almost no Papuan ancestry, which arrived only later. By about 1350 BCE descendant communities stood in the Bismarck Archipelago at the ocean’s edge. Before 1500 CE, no language family on earth stretched wider.',
     edges: [
       { to: 'pacific-navigators', type: 'enables', why: 'The canoe technology, crop repertoire, and languages of this diaspora underlay every later Polynesian voyage into the remote Pacific.' },
       { to: 'monsoon-marketplace', type: 'enables', why: 'Austronesian sailors also ran west across the Indian Ocean, settling Madagascar and joining the monsoon world’s crews and cargoes.' },
