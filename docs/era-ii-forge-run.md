@@ -76,6 +76,35 @@ run `node scripts/check.mjs` to a clean OK, commit
 with `node scripts/check-links.mjs` (read, do not blindly act), update
 `CLAUDE.md` state + change log, deploy `vercel --prod --yes`, verify live.
 
-## Outcome
+## Outcome (2026-08-06)
 
-(filled in as batches land)
+All 19 shipped. Gate `OK: 365 nodes, 802 wires, 10 eras, 95 lessons. 0
+warning(s).` Link sweep 339 URLs, 0 dead, 58 publisher bot walls left untouched
+per policy (two spot-checked in a real browser and both live).
+
+Runs: batch 1 `wf_e8f79a39-6e8` (died in an overload wave; four lessons had
+already drafted and revised, so the tail `wf_a5b47839-4e7` resumed them at
+review and re-forged only the three that left nothing behind, 27/27 clean),
+batch 2 `wf_a9b01eea-74b` (38/38 clean), batch 3 `wf_287f8111-f55` (died at the
+session limit with all six drafted), tails `wf_86f84f37-34f` and
+`wf_5001fad5-b8b`, plus two single-lesson repairs. Polish runs:
+`wf_38c090cf-dfa`, `wf_34fd7873-1ea`, `wf_a7de0b0e-629`.
+
+Lessons for the next run:
+
+- **Harvest, do not resume.** Both deaths left finished drafts on disk. Reading
+  the journal and building a tail scoped to each lesson's actual stage saved
+  the completed research every time; the built-in resume cache re-ran finished
+  stages in the Era VI run.
+- **Identify recovered work by content, not by id.** Reviews mention other
+  nodes by name (the Edwin Smith review discusses weighing-of-the-heart because
+  the nodes are linked), so id-matching mis-assigned them. Match on the
+  distinctive source instead.
+- **Recovered findings are too big for `args`** (57 KB here) and workflow
+  scripts cannot read files. Generate the tail script with the findings
+  embedded as a constant, and parse-check it with `new Function` before
+  launching: `node --check` gives false passes on this shape of script.
+- **A verifier that re-measures beats one that complies.** The rigveda verifier
+  refuted its own review's central claim by measuring all 89 shipped lessons,
+  and flagged an integration dependency (the lesson's "this atlas has read
+  both already" is only true if weighing-of-the-heart ships ahead of it).

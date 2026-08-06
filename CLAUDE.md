@@ -115,15 +115,28 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-08-05, after the Era VI opening batch)
+## State (2026-08-06, after Era II was completed)
 
-- **76 lessons written, every one with per-claim citations**: 897 sources and
-  1,064 markers across the atlas. Gate:
-  `OK: 365 nodes, 800 wires, 10 eras, 76 lessons. 0 warning(s).`
-- Era VI opened with its first eight lessons (crusading-fever through
-  guide-for-the-perplexed), forged by Workflow pipeline: Fable research/draft,
-  Fable literary revision, Opus adversarial review of facts plus every
-  citation, Fable fix, Opus ship verdict. Run spec: `docs/era-vi-forge-run.md`.
+- **95 lessons written, every one with per-claim citations**: 1,074 sources and
+  1,312 markers across the atlas. Gate:
+  `OK: 365 nodes, 802 wires, 10 eras, 95 lessons. 0 warning(s).`
+- **Eras I and II are complete** (20/20 and 32/32). Era II's 19 remaining
+  lessons were forged in one session in three sequential batches, by the same
+  Workflow pipeline: Fable research/draft, Fable literary revision, Opus
+  adversarial review of facts plus every citation, Fable fix, Opus ship
+  verdict, plus a sixth Fable polish stage (see below). Run spec:
+  `docs/era-ii-forge-run.md`.
+- **Add a polish stage to the pipeline.** Every one of the 19 lessons came back
+  with significance over the spec band (1,003 to 1,355 words) while passing the
+  gate, because the gate only checks the combined total. A scoped Fable pass
+  that compresses and applies the verifier's leftover notes brought all 19 into
+  932 to 999 without losing a citation. Give it the notes, not just the number.
+- **The forge spec's section bands are out of step with the atlas.** The spec
+  says significance is 600 to 950 words; 36 of the 95 shipped lessons exceed it
+  and Era I runs to 1,404. Era II was compressed for consistency with its own
+  era-mates, not because 950 is sacred. Decide whether to widen the spec or
+  re-cut the long Era I lessons; do not let a reviewer cite the band as
+  gospel in the meantime.
 - The apparatus: markers hidden until the reader presses "Show the evidence"
   (the choice persists in `loom.v1`), gilt superscripts when raised, a gloss
   beneath the paragraph on press, and a numbered Sources cartouche at the foot
@@ -136,9 +149,9 @@ lessons into it.
   URL. **Read its output, do not act on it**: past sweeps called live links
   dead over transient errors and publisher bot walls that open fine for a
   human. Confirm in a real browser before touching a link.
-- Remaining unwritten: 289 seeds. Only Era I is complete: the 365 expansion
-  left 90 unwritten in Eras II to V (II 19, III 21, IV 25, V 25), and Eras VI
-  to X hold 199 (VI is 8/40). Graph is at its final size.
+- Remaining unwritten: 270 seeds. Eras I and II are complete; Eras III to V
+  hold 71 (III 13/34, IV 9/34, V 13/38), and Eras VI to X hold 199 (VI 8/40,
+  VII to X untouched). Graph is at its final size.
 - Production is https://loomhistory.com and https://loom-gray.vercel.app; the
   citation pass is deployed and verified live. `AGENTS.md` is now a pointer to
   this file rather than a copy of it, because the copy drifted.
@@ -146,6 +159,22 @@ lessons into it.
 
 ## Change log
 
+- **2026-08-06:** Era II completed, the second fully charted era. All 19
+  remaining lessons forged in three sequential batches (7, 6, 6), integrating
+  each batch before launching the next so callbacks could reach the new
+  lessons and so a dead run cost at most one batch. Nineteen gate-green
+  commits, 339-URL link sweep with 0 dead. **Six graph corrections came out of
+  the research and were committed separately from the lessons**, because the
+  forge agents kept finding the era file wrong: the Austronesian summary
+  claimed ancient genomes show mixing "at every step" when Skoglund shows
+  Remote Oceania's first settlers carried almost no Papuan ancestry; the
+  secondary-products summary bundled traction, wool and wagons into one
+  fourth-millennium repertoire when only wagons cluster; Poverty Point's
+  imports come from a thousand miles, not seven hundred. Two new edges (Oxus
+  to Rigveda on Lubotsky's substrate vocabulary, Poverty Point colliding with
+  the Bronze Web) took the graph to 802 wires. Lesson for next time: **when a
+  lesson and its node summary disagree, the lesson usually won**, so check the
+  era file against the finished prose before shipping.
 - **2026-08-05:** Era VI opened: eight lessons (the twelfth century of faith
   and reason, Cluny to Cairo) forged by Workflow pipeline, Fable on every prose
   stage and Opus on every adversarial one, staged outside the repo, eight
