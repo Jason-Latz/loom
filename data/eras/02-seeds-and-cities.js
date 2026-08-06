@@ -303,6 +303,7 @@ LOOM.node([
     edges: [
       { to: 'horse-and-wheel', type: 'collides', why: 'Oasis and steppe communities exchanged goods and practices in zones later traversed by Sintashta-linked groups moving toward Iran and South Asia; the exact routes remain debated.' },
       { to: 'silk-road-pulse', type: 'echoes', why: 'Central Asian oases were organizing long-distance exchange two thousand years before Han envoys came looking for horses.' },
+      { to: 'rigveda', type: 'echoes', why: 'Indo-Iranian words for canal, brick, priest, and the Soma plant look borrowed from an already irrigated world, and a complex like this one is the likeliest lender.' },
     ],
   },
   {
