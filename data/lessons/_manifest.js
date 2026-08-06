@@ -37,6 +37,7 @@ LOOM.lessonFiles = [
   'gift-of-the-nile',
   'indus-enigma',
   'enheduanna',
+  'language-puts-to-sea',
   'gods-of-the-city',
   'horse-and-wheel',
   'code-of-hammurabi',
