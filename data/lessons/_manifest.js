@@ -52,6 +52,7 @@ LOOM.lessonFiles = [
   'yellow-river-bronze',
   'poverty-point',
   'bronze-web',
+  'rigveda',
   'maize-and-the-americas',
   'sea-peoples-collapse',
 
