@@ -44,6 +44,7 @@ LOOM.lessonFiles = [
   'horse-and-wheel',
   'cloth-for-silver',
   'epic-of-gilgamesh',
+  'counting-in-sixties',
   'code-of-hammurabi',
   'yellow-river-bronze',
   'bronze-web',
