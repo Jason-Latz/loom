@@ -1,0 +1,192 @@
+LOOM.lesson({
+  id: 'poverty-point',
+  readingMinutes: 10,
+  citationsVersion: 1,
+  sources: [
+    {
+      key: 'grooms-2023',
+      cite: 'Grooms, Ward and Kidder, "Convergence at Poverty Point: a revised chronology of the Late Archaic Lower Mississippi Valley", Antiquity 97(396): 1453 to 1469 (2023)',
+      url: 'https://www.cambridge.org/core/journals/antiquity/article/convergence-at-poverty-point-a-revised-chronology-of-the-late-archaic-lower-mississippi-valley/121431E2E3469A819185F44BF7AB81EA',
+      doi: '10.15184/aqy.2023.155',
+      kind: 'paper',
+      access: 'open',
+      note: 'The scale figures and the reframing this lesson rests on. Poverty Point covers approximately 200 hectares; its builders moved an estimated 1,000,000 cubic metres of earth; Mound A comprises approximately 238,500 cubic metres and was built in no more than 90 days, which the authors attribute to Ortmann and Kidder 2013. It also records that metric tonnes of stone arrived from sources spanning half the North American continent, that there is no evidence of social hierarchy at the site, that Jaketown about 100 km away was practising so called Poverty Point culture by roughly 4500 to 4000 cal BP, conservatively 400 years before the oldest dates at the type site, and that the site is therefore best read as an endpoint of convergence rather than a centre radiating outward. The conclusion places Poverty Point on a par with Stonehenge and Gobekli Tepe. Free full text, Creative Commons Attribution, at Cambridge Core.',
+    },
+    {
+      key: 'ortmann-kidder-2013',
+      cite: 'Ortmann and Kidder, "Building Mound A at Poverty Point, Louisiana: Monumental Public Architecture, Ritual Practice, and Implications for Hunter-Gatherer Complexity", Geoarchaeology 28(1): 66 to 86 (2013), record at WashU Research Profiles',
+      url: 'https://profiles.wustl.edu/en/publications/building-mound-a-at-poverty-point-louisiana-monumental-public-arc/',
+      doi: '10.1002/gea.21430',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The reasoning behind the ninety day figure, in the authors’ own abstract: geoarchaeological investigation of Mound A stratigraphy at the macro level and the micro level shows there are no erosion events, no natural episodes of soil formation, and no cultural stages, from which they infer construction by a large labour force over a short period. They date the mound to about 3261 cal yr BP, state that there is no evidence it was built under a ranked socio-political system, and argue instead that it was a ritual feature whose organising leadership was situational and emerged through ritual practice. The article is paywalled at Wiley; the university repository record hosts the full abstract, the DOI and the pagination.',
+    },
+    {
+      key: 'kidder-grooms-2024',
+      cite: 'Kidder and Grooms, "Chronological Hygiene and Bayesian Modeling of Poverty Point Sites in the Lower Mississippi Valley, circa 4200 to 3200 cal BP", American Antiquity 89(1): 98 to 118 (2024)',
+      url: 'https://www.cambridge.org/core/journals/american-antiquity/article/chronological-hygiene-and-bayesian-modeling-of-poverty-point-sites-in-the-lower-mississippi-valley-circa-4200-to-3200-cal-bp/E00DB4D0A722C508597D24B47F33660F',
+      doi: '10.1017/aaq.2023.85',
+      kind: 'paper',
+      access: 'open',
+      note: 'The dating argument in full, and the source for both sides of it. The authors assemble 157 radiocarbon dates from 12 sites, apply an explicit hygiene procedure and Bayesian modelling, reject the idea of a unified Poverty Point culture, and conclude that the site earthworks developed through rapid, punctuated events circa 3300 to 3200 cal BP at or very near the end of the occupation, with abandonment soon after 3200 cal BP. They quote Gibson 2019 directly for the opposing view that construction spanned around five centuries, with mounds under construction for 460 years from circa 1628 to 1170 BC and rings for 440 years, and they name the reading they reject: Poverty Point as a sedentary Great Town that was the political and economic centre of a far flung culture. Free full text, Creative Commons Attribution, at Cambridge Core.',
+    },
+    {
+      key: 'kidder-2021',
+      cite: 'Kidder, Kai, Henry, Grooms and Ervin, "Multi-method geoarchaeological analyses demonstrates exceptionally rapid construction of Ridge West 3 at Poverty Point", Southeastern Archaeology 40(3): 212 to 227 (2021)',
+      url: 'https://www.tandfonline.com/doi/abs/10.1080/0734578X.2021.1958445',
+      doi: '10.1080/0734578X.2021.1958445',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The fast construction hypothesis, which Jon Gibson himself proposed for this ridge, tested with new methods. Re excavating a unit Gibson dug in 1991 and had argued was built rapidly, the team applied micromorphology, magnetic susceptibility and sequential loss on ignition plus new radiocarbon dates, and found the ground beneath the ridge cleared and occupied first, the ridge then raised in layers of mixed natural and anthropogenically enriched sediments whose surfaces were used only briefly during construction, with the stated goal of the builders being to raise the ridge quickly to full height. Construction was exceptionally rapid; the ridge was built after 3355 to 3210 cal BP. Paywalled at Taylor and Francis; the abstract is free on the article page.',
+    },
+    {
+      key: 'hargrave-2021',
+      cite: 'Hargrave, Clay, Dalan and Greenlee, "The complex construction history of Poverty Point’s timber circles and concentric ridges", Southeastern Archaeology 40(3): 192 to 211 (2021)',
+      url: 'https://www.tandfonline.com/doi/abs/10.1080/0734578X.2021.1961350',
+      doi: '10.1080/0734578X.2021.1961350',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The geophysical counterweight to the burst reading, and the source of the post circles. Magnetic gradient survey of about 25 hectares, with magnetic susceptibility studies, coring and targeted excavation, located thirty-six timber circles with diameters up to 62 m in and near the plaza, whose closely spaced posts and clustered circles the authors read as extensive rebuilding. Linear magnetic anomalies reveal ridge construction components giving evidence for single-stage and multistage construction, repairs and possible deconstruction, with the innermost two ridges inferred to be earliest because they show longer and more complex construction histories than the outer ones. The paper dates the site to about 1700 to 1100 BC. Paywalled at Taylor and Francis; the abstract is free on the article page.',
+    },
+    {
+      key: 'gibson-2007',
+      cite: 'Jon L. Gibson, "Formed from the Earth at That Place: The Material Side of Community at Poverty Point", American Antiquity 72(3): 509 to 523 (2007)',
+      url: 'https://www.cambridge.org/core/journals/american-antiquity/article/abs/formed-from-the-earth-at-that-place-the-material-side-of-community-at-poverty-point/6603F5309AD91E4728F350E4CD1E6075',
+      doi: '10.2307/40035858',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'Where the live disagreement is stated by one of its participants. The abstract records that Kenneth Sassaman, arguing from the massive quantities of exotic rock and from construction regularities shared with earlier regional mound complexes, proposes that the builders were a cosmopolitan multiethnic collective with geographically extensive origins, and that Gibson’s close examination of the site’s goods fails to support that multiethnic model and suggests instead that a local communal structure prevailed in Poverty Point’s homeland. The printed title carries a colon inside quotation marks, rendered here without them. Paywalled at Cambridge Core; the abstract is free on the article page.',
+    },
+    {
+      key: 'kidder-grooms-2025',
+      cite: 'Kidder and Grooms, "Performance, ritual, and revitalization at Poverty Point", Southeastern Archaeology 44(3 to 4): 171 to 186 (2025)',
+      url: 'https://www.tandfonline.com/doi/full/10.1080/0734578X.2025.2553970',
+      doi: '10.1080/0734578X.2025.2553970',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The climate setting and the current interpretation of why anyone gathered. Between 4000 and 3000 cal BP the Lower Mississippi Valley experienced increased rainfall, cooler temperatures and high-frequency flooding, destabilising the region and disrupting landscapes across much of eastern North America. The authors argue that Indigenous people responded by coming together at Poverty Point and performing elaborate rituals over brief periods, constructing earthworks and depositing bundles of diverse raw materials and intricately wrought artefacts aimed at cosmological revitalization, undertaken because people held a moral responsibility to renew the web of being when the world is disordered. Paywalled at Taylor and Francis; the abstract is free on the article page.',
+    },
+    {
+      key: 'hays-2016',
+      cite: 'Hays, Weinstein and Stoltman, "Poverty Point Objects Reconsidered", Southeastern Archaeology 35(3): 213 to 236 (2016)',
+      url: 'https://www.tandfonline.com/doi/abs/10.1080/0734578X.2016.1165050',
+      doi: '10.1080/0734578X.2016.1165050',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The dedicated study of the fired earth cooking balls. The authors describe them as hand-moulded baked clay objects, note that most archaeologists assume they were used primarily for roasting food while other functions such as boiling water and use as symbolic tokens are worth weighing, and state that although a few other archaeological cultures anywhere in the world used round clay balls for cooking, the Poverty Point culture was unique in the care, variety and standardised forms of its baked clay objects. The vast majority come from the Lower Mississippi Valley but they occur as far north as Clarksville, Indiana, and as far east as the Atlantic coast of Florida, and thin section analysis of 66 samples shows they circulated between sites. Paywalled at Taylor and Francis; the abstract is free on the article page.',
+    },
+    {
+      key: 'sassaman-brookes-2017',
+      cite: 'Sassaman and Brookes, "Situating the Claiborne Soapstone Vessel Cache in the History of Poverty Point", American Antiquity 82(4): 781 to 797 (2017)',
+      url: 'https://www.cambridge.org/core/journals/american-antiquity/article/abs/situating-the-claiborne-soapstone-vessel-cache-in-the-history-of-poverty-point/F79627ECE9DE28ECC621EB86F5E9D6D4',
+      doi: '10.1017/aaq.2017.41',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'Establishes the import route and dates the exchange. The Claiborne site in Mississippi sat on a Gulf Coast route carrying soapstone into the lower Mississippi valley from quarries in the southern Appalachians, hundreds of kilometres to the east, and its residents were likely active traders during the heyday of Poverty Point exchange, circa 3600 to 3400 cal BP. New AMS assays on carbon deposits from seven of twelve repatriated soapstone vessels show the cache itself was buried about 200 years later, during or shortly before the abandonment of Poverty Point. Paywalled at Cambridge Core; the abstract is free on the article page.',
+    },
+    {
+      key: 'unesco-1435',
+      cite: 'UNESCO World Heritage Centre, Monumental Earthworks of Poverty Point, United States of America, inscribed 2014, criterion (iii), World Heritage List reference 1435',
+      url: 'https://whc.unesco.org/en/list/1435/',
+      kind: 'institution',
+      access: 'open',
+      note: 'The custodian’s record and the official language. Inscribed in 2014 on criterion (iii) alone, property area 163 hectares, in West Carroll Parish, Louisiana, on the eastern edge of Macon Ridge, which stands about 7 to 9 m above the lowlands to the east. The brief synthesis describes six semi-elliptical earthen ridges with an outer diameter of 1.14 km around a large flat plaza, dates the main construction to 3,700 to 3,100 years ago, and calls Mound A one of the largest constructed earthen mounds in North America. Criterion (iii) states that the setting, although rich in edible resources, lacked stone, a critical raw material, so that an extensive trade network for rocks and minerals from hundreds of kilometres away played a key role, and that the complex was not surpassed in North American earthen construction for at least 2,000 years, and only then by people supported by a farming economy. UNESCO bot walls automated fetching; this page was read in a browser.',
+    },
+    {
+      key: 'nps-poverty-point',
+      cite: 'National Park Service, "Monumental Earthworks of Poverty Point: World Heritage Site", nps.gov article, last updated 23 July 2020',
+      url: 'https://www.nps.gov/articles/000/monumental-earthworks-of-poverty-point-world-heritage-site.htm',
+      kind: 'institution',
+      access: 'open',
+      note: 'The subsistence base and the reach of the imports, from the United States federal agency that handles World Heritage nominations. The article states that the people of Poverty Point relied on fish, turtles, frogs, waterfowl and aquatic plants, along with deer, small mammals, nuts, fruits and seeds; that the one resource they relied upon but could not find in abundance was stone, so that a transportation system imported several tons of rocks and minerals from as far as 1,000 miles away; and that the complex comprises five mounds, six concentric semi-elliptical ridges and a central plaza across more than 400 acres, of which less than 1 percent is estimated to have been disturbed. Its assertion of year-round occupancy for over 600 years is one side of a live argument, not a settled result.',
+    },
+  ],
+  storyContext:
+    'Poverty Point, on Macon Ridge above the Mississippi floodplain in what is now northeastern Louisiana, around 1300 BCE. Ika is a composite, built out of what the excavations actually produced: the borrow pits, the basket loads in the fill, the fired earth cooking balls, the imported stone, and the rings of postholes in the plaza. Her name is a convenience with no claim behind it, since no name and no language survive from the people who raised this place.',
+  story: [
+    'The earth here has no grit in it. Ika works it loose with the point of a stick and lets it fall into the basket braced between her knees, and it comes away pale and floury, so fine that it powders onto her wet forearms and dries there like a second skin. There is not a pebble in it. Not a chip of flint, not a nodule of chert, nothing a hand would close on and think about keeping. This is a whole country made of dust that has been standing still long enough to call itself ground. When the basket is heavy she settles it against her hip, straightens, and steps into the line.',
+    'The line goes up. It has been going up since before the sun cleared the treeline, a slow rope of people paying itself out from the borrow pit, across the flat, and onto the flank of the thing they are making, and the flank is high enough now that the carriers near the top look like a row of birds on a branch. Nobody at the bottom can see the top. Nobody at the top can see where the earth is coming from. Ika tips her basket where a man kneeling in the churned mud points, and he does not look at her, and she goes down the far side to fill it again.',
+    'She is not from here, and as far as she can tell nobody is. Below the mound the ground runs out in six long arcs of raised earth, one nested inside the next, and every arc is crowded: hearths, windbreaks, dogs, drying racks, the smell of fish and hickory smoke lying over the smell of turned soil. Speech she cannot follow comes off the ridge to her left. Out on the flat inside the arcs, crews are standing posts in rings, the widest of them a good sixty paces across, and then pulling them and standing them again on a slightly different circle, as though the ring were a sentence somebody keeps rewriting.',
+    'Her mother carried a blade to this place out of mountains many days to the north and west, a slice of grey stone that rings when it is struck, the most valuable thing their family owns, because in all this country there is no stone at all. None for a hammer, none for a knife, and none for the thing a household needs every single day: something hard that will take heat and hold it. So they make it. Ika has made thousands. A handful of the same floury earth, damp, worked between the palms until it is a fat grooved lump the size of a plum, then dried and baked in the fire until it rings too. Buried glowing in a pit with fish and roots and wet leaves, they cook a meal by dark. The ground gave no rocks, so the people baked their own.',
+    'The fill is not one earth but several, and she has learned to read it. A load of pale silt. Then a load of dark stuff full of charcoal and fishbone and broken cooking balls, scraped up off the old living surfaces. Then something browner and stickier out of a different pit. The men on top take them in an order she does not understand and has never been told, and the one rule anyone enforces is that the work must not stop. Nothing is smoothed. Nothing is left to settle. The next load lands on the last one while the last one is still wet.',
+    'On the fourth night it rains hard enough to fill the swales, and the work does not stop. This is the part she will tell about when she is old: torches guttering along the ramp, the ground turning to grease underfoot, the woman ahead of her going down and being hauled up by the wrists without a word spoken, and the earth still coming. A slope left to itself for one wet season grows a skin. Weeds root in it. Rain sorts the fine grains from the coarse and lays them down in delicate bands. The top of it hardens and pales. None of that is going to happen here, because every surface is buried by the next one before the water has finished draining off it.',
+    'Nobody has told her what it is for, and she has stopped expecting to be told. The water has been wrong since before she was born: rivers over their banks in the wrong month, rain that does not know when to end, ground that used to be dry standing under a foot of it. People have come here from everywhere and this is what they are doing about it. When it is finished no one will be crowned on top of it and no one will be buried inside it. The crowd will thin, and go home down the bayous it came by, and inside a lifetime or two these ridges will be empty. What gets left behind is a made hill in a country with no stone, and inside it, layer on layer, the record of a job that was never once put down.',
+  ],
+  significance: [
+    'Ika is invented. The borrow pits, the mixed fill, the cooking balls and the post rings are not. Poverty Point sprawls across some two hundred hectares of Macon Ridge, and its makers moved on the order of a million cubic metres of earth. Mound A alone accounts for about 238,500 of them, and the geoarchaeologists who took it apart concluded that it went up in no more than ninety days.[^grooms-2023] That figure rests entirely on things that are missing. Anthony Ortmann and Tristram Kidder read the mound’s layering by eye and again under the microscope, and found no erosion events, no natural soil formation, no cultural stages. A mound raised in stages records its pauses; this one records none, so they infer a very large workforce over a very short interval, adding that nothing indicates a ranked political order.[^ortmann-kidder-2013]',
+    'What that workforce was doing there begins with a shortage. Macon Ridge holds no usable stone at all, which in a world of stone tools is close to a disability. The answer came in two halves, and both are this node’s pigments. Wealth was imported: soapstone travelled along a Gulf Coast route from quarries in the southern Appalachians, hundreds of kilometres east, during the heyday of Poverty Point exchange around 1650 to 1450 BCE.[^sassaman-brookes-2017] Craft supplied the rest: the grooved lumps of fired silt Ika was making, artificial stones mostly for roasting food, which archaeologists call Poverty Point Objects. Christopher Hays and colleagues, who cut thin sections through sixty-six of them, note that a few other cultures cooked with round clay balls, but none matched the care, variety and standardisation of these, which turn up as far off as Indiana and the Atlantic coast of Florida.[^hays-2016]',
+    'How fast the complex rose is genuinely contested, and the argument decides what kind of society you are looking at. Jon Gibson reads the mounds and rings as roughly five centuries of building, which would make Poverty Point a settled great town whose influence accumulated slowly, the way power is supposed to. Kidder and Seth Grooms ran 157 radiocarbon dates from twelve sites through chronological hygiene and Bayesian modelling and came out the other way: the earthworks are a burst of rapid, punctuated events around 1350 to 1250 BCE, at the very end of the occupation, with abandonment soon after.[^kidder-grooms-2024] The two readings meet in one trench: reopening a unit Gibson dug into the third western ridge in 1991, Kidder’s team confirmed his argument that the ridge rose fast, but dated the work after roughly 1400 BCE, where the burst chronology needs it.[^kidder-2021] And the ground has not finished arguing: magnetic survey by Michael Hargrave and colleagues found thirty-six timber circles in and around the plaza, the widest sixty-two metres across, and read the ridges as single-stage and multistage construction, repairs and possible deconstruction, the innermost two carrying the longest, most complicated histories.[^hargrave-2021] Rapid where it has been sectioned, complicated where it has been mapped.',
+    'Who was doing the shoving is the disagreement that will not close. Kenneth Sassaman argues from the tonnage of exotic rock that the builders were a cosmopolitan, multiethnic collective drawn from far apart, which makes the place a destination rather than a capital. Gibson, examining the same goods closely, concluded that they do not support a multiethnic model, and suggested instead a local communal structure in Poverty Point’s own homeland.[^gibson-2007] Nothing excavated so far referees between them, and the honest position keeps every door open: residence, pilgrimage, or some braid of the two.',
+    'The newest work asks why anyone did it, and starts with Ika’s wrong water. Between roughly 2050 and 1050 BCE the Lower Mississippi Valley turned wetter and cooler, with high-frequency flooding that destabilised much of eastern North America; Kidder and Grooms read Poverty Point as the response, people converging in short ritual episodes to raise earthworks and bury bundles of gathered material, because a world visibly out of order laid an obligation on its people to put it back.[^kidder-grooms-2025] Notice what that account does not contain: no granary, no throne, no ranked lineage. The food was fish, turtle, waterfowl, deer, nuts and seeds from a floodplain rich enough to need no cultivated staple; the stone came from as far as a thousand miles away.[^nps-poverty-point] And a twentieth-century framing has collapsed: a Poverty Point culture radiating outward from this type site does not survive the dates, because cooking balls, imported stone and mound building are all older at Jaketown, a hundred kilometres away, so the site looks less like a source than a place many separate histories converged on.[^grooms-2023]',
+    'The tempting summary, that hunter-gatherers were secretly complex after all, is worth refusing: it keeps the old category intact and files an exception beneath it. The stranger truth is that an enormous number of people were coordinated, and whatever institution assembled them left nothing we can read. UNESCO inscribed the earthworks in 2014, and its text carries the sentence to keep: nothing in North America surpassed this in earthen construction for at least two thousand years, and when something finally did, it was raised by people supported by a farming economy.[^unesco-1435] The sequence most of us carry around, in which grain funds surplus, surplus funds monuments, and monuments announce a king, describes some places and governs none. Poverty Point raised the monuments without the grain or the surplus, never left a king for anyone to find, and then stopped, and everybody went home. The mound with no pause in it still stands on its ridge in Louisiana; the National Park Service estimates that less than one percent of the property has ever been disturbed.[^nps-poverty-point] Whatever answers exist are still in the ground, in order, where the baskets left them. The next time you hear that a society must be a certain shape to build a certain thing, remember that the question of who called the work is not closed. It is buried.',
+  ],
+  threadsOut: [
+    {
+      to: 'maize-and-the-americas',
+      why: 'San Lorenzo raised its monuments out of a wetland economy of fish, tubers, fruits and cultivation rather than off a cereal surplus, and Poverty Point goes a step further, with no cultivated staple to argue about at all, so together the two sites unpick the assumption that monuments wait on grain.',
+    },
+    {
+      to: 'mound-and-mountain',
+      why: 'Cahokia would crown the same valley with the continent’s largest earthen mound two thousand years later, this time out of a maize economy, so the monument outlived a total change in what fed the people who raised it.',
+    },
+    {
+      to: 'bronze-web',
+      why: 'While copper and tin moved between eastern Mediterranean courts that wrote each other letters and swapped daughters, tonnes of rock crossed half of North America with no palace, no script and no treaty anywhere in the chain, which is a useful reminder that long distance exchange is older and looser than diplomacy.',
+    },
+    {
+      to: 'surplus-and-the-state',
+      why: 'Uruk’s assessor could price a field before the barley came down because grain is countable, storable and seizable; strip all three away and you get this place, where the labour was somehow gathered and nothing at all was ever written down about it.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What is the actual evidence that Mound A went up in about ninety days, and why is it unusual as evidence?',
+      answer:
+        'It is evidence made of absences. Ortmann and Kidder examined the mound’s stratigraphy both by eye and under the microscope and found no erosion events, no natural soil formation, and no cultural stages anywhere in roughly 238,500 cubic metres of fill. A mound built in campaigns records its own interruptions: a weathered surface where a season passed, silt sorted by standing water, an old walked-on ground surface. This one has none, so the fill went down continuously, which in turn requires a very large labour force working for a very short time.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why did people with an import network reaching a thousand miles still end up baking their cooking stones out of mud? What breaks if you remove the Poverty Point Objects?',
+      answer:
+        'Because the two solve different problems. Exchange can deliver a soapstone bowl or a fine blade, objects that are rare, valuable, and used for years, but no relay of walkers and canoes can supply the everyday bulk of hot, heat-holding mass that a household burns through in a cooking pit. Loess has no stone in it at all, so the local answer was to manufacture stone: hand-moulded lumps of the same silt, fired hard, buried glowing with food. Take them away and either the import network has to carry an impossible tonnage of ordinary rock, or the earth-oven cooking that fed a crowd of thousands does not work, which quietly removes the ability to host the crowd in the first place.',
+    },
+    {
+      type: 'why',
+      prompt: 'There is no evidence of hierarchy at Poverty Point, and yet a million cubic metres of earth got moved. Why is "so hunter-gatherers were secretly complex" a bad conclusion, and what is a better one?',
+      answer:
+        'Because it rescues the category instead of questioning it. The sentence assumes that hunter-gatherers are normally simple and that this site is an anomaly needing an excuse, when the anomaly may be the category. The better statement stays closer to the ground: a great many people were assembled and coordinated, and the institution that did the assembling is invisible to us. Ortmann and Kidder suggest leadership that was situational and emerged through ritual practice rather than a standing rank; Kidder and Grooms suggest convergence under climatic stress. Both are proposals. What the evidence actually licenses is that the labour existed and its politics did not fossilise.',
+    },
+    {
+      type: 'callback',
+      prompt: 'In the Supe valley you watched platform mounds rise on squash, roots and bought anchovies, with irrigated cotton behind them and eighteen large sites in one valley. Poverty Point raised a million cubic metres of earth with no fields at all. What does the pair teach about the difference between a society without a cereal staple and a society without farming?',
+      callbackTo: 'caral-supe',
+      answer:
+        'That the two are genuinely different, and that collapsing them loses the interesting part. Caral farmed hard, just not a cereal: irrigated cotton, squash, beans and roots, plus a standing exchange with the coast that converted fibre into protein. Its mounds were paid for by a produced, storable surplus that happened not to be grain. Poverty Point had no cultivated staple at all; it drew on a floodplain of fish, turtle, waterfowl, deer and nuts, and what it accumulated was not calories but people and imported rock. So both sites kill the general claim that monuments require agriculture, but they fail it differently, and the difference shows in the rhythm: Caral’s exchange ran continuously for centuries, while Poverty Point’s earthworks look like brief, intense episodes with abandonment at the end. Both also come with a tempting story to resist, the knotted cord that flatters an Inka ancestry in one case and the secretly complex forager in the other.',
+    },
+    {
+      type: 'callback',
+      prompt: 'At Gobekli Tepe, foragers quarried multi-ton pillars around 9500 BCE and Klaus Schmidt argued the temple came before the town. Poverty Point’s builders moved a million cubic metres of earth eight thousand years later on another continent, also without farms, and the team that revised its chronology puts it on a par with Stonehenge and Gobekli Tepe. What does the pair establish, and what does neither of them settle?',
+      callbackTo: 'village-before-the-farm',
+      answer:
+        'It establishes independence, which is the strongest kind of evidence available in prehistory. Two societies with no possible contact, separated by eight millennia and an ocean, both mobilised monumental labour without agriculture, so the link between farming and monument building cannot be a law of human development. What neither settles is the institution. Gobekli Tepe’s pure-sanctuary reading softened once domestic buildings, everyday tool debris and a rock-cut water system turned up in the later digs; Poverty Point’s settled great town reading is under exactly the same pressure from the radiocarbon dates. In both cases what survives is a crowd, a plan, and enormous coordinated effort, with the machinery that produced them still unrecovered. And both places were eventually left.',
+    },
+  ],
+  deeper: [
+    {
+      title: 'UNESCO World Heritage Centre, Monumental Earthworks of Poverty Point',
+      why: 'The custodian’s own account of what was inscribed in 2014 and on what grounds, including the clause that nothing in North America matched it for two thousand years until farmers did.',
+      url: 'https://whc.unesco.org/en/list/1435/',
+    },
+    {
+      title: 'Grooms, Ward and Kidder, Convergence at Poverty Point',
+      why: 'An open access argument that the site was the endpoint of many histories rather than the source of one, and a clear demonstration of how a tidy diffusion story can survive for decades on nothing but weak dates.',
+      url: 'https://www.cambridge.org/core/journals/antiquity/article/convergence-at-poverty-point-a-revised-chronology-of-the-late-archaic-lower-mississippi-valley/121431E2E3469A819185F44BF7AB81EA',
+    },
+    {
+      title: 'Kidder and Grooms, Chronological Hygiene and Bayesian Modeling of Poverty Point Sites',
+      why: 'The dating quarrel worked out in the open, with 157 radiocarbon assays audited one by one, and a rare chance to watch a discipline argue about how fast something happened.',
+      url: 'https://www.cambridge.org/core/journals/american-antiquity/article/chronological-hygiene-and-bayesian-modeling-of-poverty-point-sites-in-the-lower-mississippi-valley-circa-4200-to-3200-cal-bp/E00DB4D0A722C508597D24B47F33660F',
+    },
+  ],
+});

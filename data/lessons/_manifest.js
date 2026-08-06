@@ -50,6 +50,7 @@ LOOM.lessonFiles = [
   'surgeons-papyrus',
   'weighing-of-the-heart',
   'yellow-river-bronze',
+  'poverty-point',
   'bronze-web',
   'maize-and-the-americas',
   'sea-peoples-collapse',
