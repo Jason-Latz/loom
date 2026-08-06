@@ -53,6 +53,7 @@ LOOM.lessonFiles = [
   'poverty-point',
   'bronze-web',
   'rigveda',
+  'oldest-song',
   'maize-and-the-americas',
   'sea-peoples-collapse',
 
