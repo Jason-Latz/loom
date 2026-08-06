@@ -74,9 +74,9 @@ lessons into it.
   Before a release, sweep the links and re-audit the overrules: a third-party
   pass over rejected citation findings once found 25 of 94 rejections wrong.
 - No em/en dashes anywhere in content or UI copy (Jason's rule; check enforces).
-- Node ids are kebab-case and permanent (lessons, edges, and progress key on them).
-- Adding a node: insert in era file at the right array position (chronological),
-  give 2-3 forward edges with real "why" text, run the gate.
+- Node ids are kebab-case and permanent (lessons, edges and progress key on
+  them). Adding a node: insert in the era file at the right array position
+  (chronological) with 2-3 forward edges carrying real "why" text.
 - Small, narrowly-scoped commits; gate must be green before each.
 
 ## Gotchas
