@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 340" width="1200" height="340" role="img" aria-label="Loom, an atlas of the human story">
+  <defs>
+    <linearGradient id="band" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e7d7b2" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#e7d7b2" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="340" fill="#efe3c6"/>
+  <rect y="240" width="1200" height="100" fill="url(#band)"/>
+
+  <g stroke="#a08c68" stroke-width="1" opacity="0.26">
+    <line x1="0" y1="62" x2="1200" y2="62"/>
+    <line x1="0" y1="122" x2="1200" y2="122"/>
+    <line x1="0" y1="182" x2="1200" y2="182"/>
+    <line x1="0" y1="242" x2="1200" y2="242"/>
+  </g>
+  <g stroke="#a08c68" stroke-width="1" stroke-dasharray="3 7" opacity="0.32">
+    <line x1="640" y1="16" x2="640" y2="308"/>
+    <line x1="760" y1="16" x2="760" y2="308"/>
+    <line x1="880" y1="16" x2="880" y2="308"/>
+    <line x1="1000" y1="16" x2="1000" y2="308"/>
+    <line x1="1120" y1="16" x2="1120" y2="308"/>
+  </g>
+
+  <g fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M600 272 C 700 254, 690 192, 792 178" stroke="#34558b" stroke-width="2.4"/>
+    <path d="M600 272 C 720 272, 800 238, 916 214" stroke="#8a6a1f" stroke-width="2.4"/>
+    <path d="M792 178 C 880 170, 900 122, 1004 106" stroke="#2e6e63" stroke-width="2.4"/>
+    <path d="M792 178 C 862 180, 898 152, 916 214" stroke="#8c3b2e" stroke-width="2"/>
+    <path d="M916 214 C 1010 206, 1030 150, 1128 132" stroke="#8a6a1f" stroke-width="2.2"/>
+    <path d="M1004 106 C 1058 100, 1092 74, 1152 62" stroke="#34558b" stroke-width="2"/>
+    <path d="M600 272 C 656 300, 704 296, 750 278" stroke="#2e6e63" stroke-width="1.8" opacity="0.65"/>
+  </g>
+
+  <g>
+    <circle cx="750" cy="278" r="5" fill="#efe3c6" stroke="#6a5a42" stroke-width="1.6"/>
+    <circle cx="1128" cy="132" r="5" fill="#efe3c6" stroke="#6a5a42" stroke-width="1.6"/>
+    <circle cx="1152" cy="62" r="5" fill="#efe3c6" stroke="#6a5a42" stroke-width="1.6"/>
+    <circle cx="600" cy="272" r="7.5" fill="#efe3c6" stroke="#2c2318" stroke-width="2"/>
+    <circle cx="600" cy="272" r="2.8" fill="#a67c1e"/>
+    <circle cx="792" cy="178" r="6.5" fill="#efe3c6" stroke="#2c2318" stroke-width="1.8"/>
+    <circle cx="792" cy="178" r="2.4" fill="#34558b"/>
+    <circle cx="916" cy="214" r="6.5" fill="#efe3c6" stroke="#2c2318" stroke-width="1.8"/>
+    <circle cx="916" cy="214" r="2.4" fill="#8a6a1f"/>
+    <circle cx="1004" cy="106" r="6.5" fill="#efe3c6" stroke="#2c2318" stroke-width="1.8"/>
+    <circle cx="1004" cy="106" r="2.4" fill="#2e6e63"/>
+  </g>
+
+  <g font-family="Georgia, 'Iowan Old Style', 'Times New Roman', serif">
+    <text x="72" y="152" font-size="82" letter-spacing="26" fill="#2c2318">LOOM</text>
+    <text x="76" y="194" font-size="25" font-style="italic" fill="#6a5a42">an atlas of the human story</text>
+    <line x1="76" y1="218" x2="470" y2="218" stroke="#a67c1e" stroke-width="1.4" opacity="0.75"/>
+    <text x="76" y="250" font-size="15" letter-spacing="2.4" fill="#6a5a42">365 NODES &#183; 10 ERAS &#183; ONE PER DAY OF A YEAR</text>
+    <g font-size="13.5" letter-spacing="1.5">
+      <circle cx="80" cy="284" r="4.5" fill="#34558b"/><text x="94" y="289" fill="#6a5a42">LAPIS</text>
+      <circle cx="184" cy="284" r="4.5" fill="#8c3b2e"/><text x="198" y="289" fill="#6a5a42">OXBLOOD</text>
+      <circle cx="318" cy="284" r="4.5" fill="#8a6a1f"/><text x="332" y="289" fill="#6a5a42">GILT</text>
+      <circle cx="412" cy="284" r="4.5" fill="#2e6e63"/><text x="426" y="289" fill="#6a5a42">VERDIGRIS</text>
+    </g>
+  </g>
+</svg>
