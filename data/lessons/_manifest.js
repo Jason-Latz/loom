@@ -61,6 +61,7 @@ LOOM.lessonFiles = [
   'iron-and-alphabet',
   'zarathustra-fire',
   'phoenician-web',
+  'book-of-songs',
   'polis-experiment',
   'invention-of-money',
   'israel-one-god',
