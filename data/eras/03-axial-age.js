@@ -154,7 +154,7 @@ LOOM.node([
     threads: ['ideas', 'power'],
     hook: 'A king feared from the Nile to Iran writes that he can read tablets from before the flood, and sends scholars to seek, copy, and requisition scholarly tablets from Babylonia.',
     summary:
-      'Ashurbanipal’s palace libraries at Nineveh gathered some 30,000 tablets and fragments: omens, rituals, lexical lists, medicine, laments, and the fullest Epic of Gilgamesh we possess. Collection was policy, not curiosity alone: Assyria ruled by knowing, taxing, and forecasting, and celestial scholarship advised the throne. When Nineveh burned in 612 BCE the clay baked hard, preserving a civilization’s reference shelf for the excavators who found it in the 1850s.',
+      'Excavators lifted some 32,000 tablets and fragments from the citadel mound at Nineveh: omens, rituals, lexical lists, medicine, laments, and the fullest Epic of Gilgamesh we possess. How many belonged to a library, and what a library even was here, remain open questions. Collection was policy, not curiosity alone: Assyria ruled by knowing, taxing, and forecasting, and celestial scholarship advised the throne. Nineveh fell in 612 BCE, but it was burial under the rubble, more than the fire, that kept the clay for the excavators of the 1840s and 1850s.',
     edges: [
       { to: 'israel-one-god', type: 'collides', why: 'Assyria erased the northern kingdom of Israel and besieged Jerusalem, traumas that biblical writers turned into theology about why empires rise.' },
       { to: 'star-diaries', type: 'enables', why: 'Nineveh’s collections belonged to Mesopotamian scholarly traditions from which Babylonian observational programs later developed.' },
