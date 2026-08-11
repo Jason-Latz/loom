@@ -52,6 +52,37 @@ continue on it. From that point:
   but `claude-opus-5`, is re-run from scratch before its output is accepted.
   Nothing ships on the wrong model.
 
+## Operational lessons from this run
+
+**Chunk the fix stage.** The fix agent died twice in a row with "Connection
+closed mid-response", once after real work and once after four tool calls. The
+prompt was unremarkable (37 KB); what killed it was the reply, since one agent
+had to report on 29 findings from two reviewers in a single response. The fix
+stage is now split into sequential passes of 8 findings each, every pass told to
+touch only its own assignment and to report at most three sentences per finding,
+with the last pass owning the return to the word band. A death now costs one
+pass instead of the stage. Both `gen-wf.mjs` and `gen-tail.mjs` do this.
+
+**Harvest at the stage the run actually reached.** Two deaths so far, and both
+left finished work: wine-dark-song died in forge with a complete gate-green
+draft on disk (kept, so that lesson retains a Fable author), and
+upanishadic-turn died in fix with both reviews complete in `journal.jsonl` (the
+29 findings were extracted and embedded in a tail). Never re-run research that
+already succeeded. A fix agent that died mid-edit leaves the file in an unknown
+partial state, so the tail must tell the next fix pass to re-check every finding
+against the current file rather than trusting either the findings or the prior
+edits.
+
+**The prose rule is holding, and it is not flattening the writing.** A
+four-agent read-only audit of the first four shipped lessons against Jason's
+directive found no systematic drift: zarathustra-fire clean, the other three
+minor, nine real instances in total (a fragment chain, two aphorism poses, a
+personified text, and long sentences needing a second read). All four scored 5
+of 5 on specificity, which was the thing at risk: the failure mode of a
+clean-prose rule is prose that goes generic and encyclopedic, and that has not
+happened. The nine were fixed in one commit. Worth re-running this audit once
+more late in the era.
+
 ## Scope
 
 Era III holds 34 nodes; 13 already have lessons. The 21 unwritten ones are
