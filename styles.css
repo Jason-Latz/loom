@@ -119,6 +119,29 @@ button { font-family: inherit; color: inherit; }
   cursor: default;
 }
 
+.atlas-view-control { display: flex; align-items: center; gap: 6px; white-space: nowrap; }
+.atlas-view-label {
+  color: var(--ink-faint); font-size: 10px; font-variant: small-caps;
+  letter-spacing: 0.12em;
+}
+.atlas-view-toggle {
+  display: flex; padding: 2px; border: 1px solid var(--line);
+  background: color-mix(in srgb, var(--parchment-deep) 48%, transparent); border-radius: 3px;
+}
+.atlas-view-btn {
+  appearance: none; border: 0; border-radius: 2px; background: transparent;
+  color: var(--ink-soft); cursor: pointer; font-family: inherit; font-size: 11px;
+  font-variant: small-caps; letter-spacing: 0.08em; line-height: 1; padding: 5px 7px;
+  transition: background 0.15s ease, color 0.15s ease, box-shadow 0.15s ease;
+}
+.atlas-view-btn:hover { color: var(--ink); }
+.atlas-view-btn:focus-visible { outline: 1px solid var(--gilt); outline-offset: 1px; }
+.atlas-view-btn.is-active,
+.atlas-view-btn[aria-checked="true"] {
+  background: var(--card); color: var(--ink); box-shadow: inset 0 0 0 1px var(--line-faint);
+}
+.atlas-beta { color: var(--gilt); font-size: 8.5px; letter-spacing: 0.1em; margin-left: 2px; }
+
 #thread-chips { display: flex; gap: 7px; }
 .chip {
   display: flex; align-items: center; gap: 6px;
@@ -176,7 +199,7 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
 .meridian { stroke: var(--line-faint); stroke-width: 1; stroke-dasharray: 1 7; }
 .meridian-label { fill: var(--ink-faint); font-variant: small-caps; letter-spacing: 0.26em; font-size: 11.5px; text-anchor: middle; }
 
-.wire { fill: none; stroke: var(--c, var(--ink-faint)); stroke-width: 1.3; opacity: 0.34; transition: opacity 0.25s ease, stroke-width 0.25s ease; }
+.wire { fill: none; stroke: var(--c, var(--ink-faint)); stroke-width: 1.3; opacity: 0.34; pointer-events: none; transition: opacity 0.25s ease, stroke-width 0.25s ease; }
 .wire.t-echoes { stroke-dasharray: 5 4; }
 .wire.t-collides { stroke-dasharray: 8 3 2 3; }
 
@@ -223,6 +246,64 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
 #chart.pathed .node:not(.on-path) { opacity: 0.1; }
 #chart.pathed .wire:not(.on-path) { opacity: 0.03; }
 #chart.pathed .wire.on-path { opacity: 0.9; stroke-width: 2.1; }
+
+/* folded beta: the same 365 nodes and 802 wires, refolded into ten adjacent
+   era plates. Time rises within each plate and geography stays left to right. */
+.folded-time-axis { stroke: var(--line); stroke-width: 1; }
+.folded-arrow { fill: var(--ink-soft); }
+.folded-end {
+  fill: var(--ink-soft); font-size: 10px; font-variant: small-caps;
+  letter-spacing: 0.18em;
+}
+.era-click { fill: transparent; cursor: zoom-in; }
+.era-click:focus { outline: none; stroke: var(--gilt); stroke-width: 2; }
+.folded-plate {
+  fill: var(--ink); fill-opacity: 0.018; stroke: var(--line); stroke-width: 1;
+  pointer-events: none;
+}
+.folded-plate.alt { fill-opacity: 0.045; }
+.folded-era-num { fill: var(--ink); font-size: 12px; font-weight: 600; letter-spacing: 0.08em; pointer-events: none; }
+.folded-era-label {
+  fill: var(--ink-soft); font-size: 8.5px; font-variant: small-caps;
+  letter-spacing: 0.07em; pointer-events: none;
+}
+.folded-era-span { fill: var(--ink-faint); font-size: 6.6px; font-style: italic; pointer-events: none; }
+.folded-meridian {
+  stroke: var(--line-faint); stroke-width: 0.65; stroke-dasharray: 1 5;
+  pointer-events: none;
+}
+#chart.folded .wire { stroke-width: 0.72; opacity: 0.25; }
+#chart.folded .wire.cross-era { stroke-width: 0.62; opacity: 0.17; }
+#chart.folded .node .core { stroke-width: 0.95; }
+#chart.folded .node.seed .core { stroke-width: 0.75; stroke-dasharray: 1.5 1.5; }
+#chart.folded .node.written .core { stroke-width: 1.2; }
+#chart.folded .node.read .core { stroke-width: 1.2; }
+#chart.folded .node .label {
+  font-size: 6.4px; stroke-width: 1.55px; paint-order: stroke;
+}
+#chart.folded .node.selected .core { stroke-width: 1.8; }
+#chart.folded .node.next .halo { animation-name: breathe-folded; }
+@keyframes breathe-folded {
+  0%, 100% { stroke-width: 1.1; r: 7.5; opacity: 0.9; }
+  50% { stroke-width: 0.55; r: 10; opacity: 0.25; }
+}
+#chart.folded.overview .node .label { display: none; }
+#chart.folded.overview .node .hit { r: 7px; pointer-events: all; }
+#chart.folded.overview .wire { stroke-width: 0.9; }
+#chart.folded.overview .wire.cross-era { stroke-width: 0.72; }
+#chart.folded:not(.overview)[data-era="1"] .node:not(.era-1) .label,
+#chart.folded:not(.overview)[data-era="2"] .node:not(.era-2) .label,
+#chart.folded:not(.overview)[data-era="3"] .node:not(.era-3) .label,
+#chart.folded:not(.overview)[data-era="4"] .node:not(.era-4) .label,
+#chart.folded:not(.overview)[data-era="5"] .node:not(.era-5) .label,
+#chart.folded:not(.overview)[data-era="6"] .node:not(.era-6) .label,
+#chart.folded:not(.overview)[data-era="7"] .node:not(.era-7) .label,
+#chart.folded:not(.overview)[data-era="8"] .node:not(.era-8) .label,
+#chart.folded:not(.overview)[data-era="9"] .node:not(.era-9) .label,
+#chart.folded:not(.overview)[data-era="10"] .node:not(.era-10) .label { display: none; }
+#chart.folded.focused .wire.lit { stroke-width: 1.25; }
+#chart.folded.pathed .wire.on-path { stroke-width: 1.2; }
+body.folded-atlas #compass { display: none; }
 
 #path-bar {
   position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%); z-index: 18;
@@ -306,6 +387,53 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
 .leg-dot { width: 10px; height: 10px; border-radius: 50%; flex: none; }
 .leg-name { font-variant: small-caps; letter-spacing: 0.09em; }
 .leg-sep { height: 1px; background: var(--line-faint); margin: 3px 0; }
+
+/* A movable key for the folded atlas. The map code fills its SVG only while
+   the main chart is zoomed in, so the overview never competes with the chart
+   when the whole story is already in view. */
+.navigator-overlay {
+  position: absolute; left: 16px; bottom: 16px; z-index: 16; width: 218px;
+  padding: 10px; border: 1px solid var(--line); outline: 1px solid var(--line);
+  outline-offset: 3px; background: color-mix(in srgb, var(--parchment) 88%, transparent);
+  box-shadow: var(--shadow); backdrop-filter: blur(3px);
+}
+.navigator-head { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+.navigator-kicker {
+  display: block; color: var(--ink-faint); font-size: 9px; font-variant: small-caps;
+  letter-spacing: 0.15em; line-height: 1.2;
+}
+.navigator-head h2 {
+  margin-top: 2px; font-size: 12px; font-variant: small-caps; font-weight: 600;
+  letter-spacing: 0.15em; line-height: 1.2;
+}
+.navigator-dismiss {
+  flex: none; width: 22px; height: 22px; padding: 0; border: 0; border-radius: 50%;
+  background: transparent; color: var(--ink-faint); cursor: pointer; font-family: inherit;
+  font-size: 19px; line-height: 18px;
+}
+.navigator-dismiss:hover, .navigator-dismiss:focus-visible { color: var(--ink); background: var(--parchment-deep); }
+.navigator-dismiss:focus-visible { outline: 1px solid var(--gilt); outline-offset: 1px; }
+.navigator-frame {
+  position: relative; height: 112px; margin-top: 8px; overflow: hidden;
+  border: 1px solid var(--line-faint); background: var(--parchment-deep);
+}
+#navigator-map { display: block; width: 100%; height: 100%; }
+.navigator-viewport {
+  fill: color-mix(in srgb, var(--gilt) 16%, transparent); stroke: var(--gilt);
+  stroke-width: 2; vector-effect: non-scaling-stroke; pointer-events: all; cursor: move;
+}
+.navigator-plate { fill: var(--ink); fill-opacity: 0.025; stroke: var(--line); stroke-width: 2; }
+.navigator-plate.alt { fill-opacity: 0.06; }
+.navigator-wire {
+  fill: none; stroke: var(--c, var(--ink-faint)); stroke-width: 2.2;
+  opacity: 0.22; pointer-events: none;
+}
+.navigator-node { fill: var(--parchment); stroke: var(--c, var(--ink)); stroke-width: 2.4; pointer-events: none; }
+#navigator-map { cursor: crosshair; touch-action: none; }
+#navigator-map:focus-visible { outline: 1px solid var(--gilt); outline-offset: -2px; }
+.navigator-hint { margin-top: 6px; color: var(--ink-soft); font-size: 10px; font-style: italic; line-height: 1.2; }
+/* Keep the cartouche available as a separate legend when the navigator wakes. */
+#navigator-overlay:not([hidden]) + #cartouche { bottom: 194px; }
 
 #zoom-tools { position: absolute; right: 12px; bottom: 16px; z-index: 15; display: flex; flex-direction: column; gap: 6px; }
 #zoom-tools .btn { width: 34px; height: 34px; padding: 0; font-size: 17px; background: color-mix(in srgb, var(--parchment) 82%, transparent); }
@@ -539,7 +667,7 @@ a.cite-out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
 .intro-actions { display: flex; gap: 10px; justify-content: center; margin-top: 24px; flex-wrap: wrap; }
 
 /* ---------------- responsive ---------------- */
-@media (max-width: 1360px) {
+@media (max-width: 1580px) {
   /* the longest header text; dropping it first keeps the search box usable
      instead of letting flex crush it to its 31px minimum */
   .bar-progress { display: none; }
@@ -547,6 +675,10 @@ a.cite-out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
 
 @media (max-width: 900px) {
   .bar-sub, #cartouche, #compass { display: none; }
+  .atlas-view-label { display: none; }
+  .navigator-overlay {
+    left: 12px; bottom: 12px; width: min(218px, calc(100vw - 90px));
+  }
   #dossier { left: 12px; width: auto; top: auto; height: 62vh; height: 62dvh; }
   /* 16px stops iOS Safari from zooming the page into a focused input */
   #search { font-size: 16px; }
@@ -570,6 +702,13 @@ a.cite-out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
   .chip { font-size: 0; gap: 0; padding: 5px; }
   .chip .dot { width: 10px; height: 10px; }
   .btn { padding: 6px 10px; }
+  .atlas-view-control { gap: 0; }
+  .atlas-view-btn { padding: 6px; }
+  .navigator-overlay {
+    left: 8px; bottom: max(8px, env(safe-area-inset-bottom)); width: min(200px, calc(100vw - 78px));
+  }
+  .navigator-frame { height: 94px; }
+  .navigator-hint { display: none; }
   #dossier {
     left: 8px; right: 8px; bottom: max(8px, env(safe-area-inset-bottom));
     height: 68vh; height: 68dvh; padding: 20px 18px 24px;
@@ -608,6 +747,9 @@ a.cite-out::after { content: ' ↗'; font-size: 0.8em; color: var(--gilt); }
 /* ---------------- touch ergonomics ---------------- */
 /* Sized for fingers, not cursors; fine-pointer layouts are untouched. */
 @media (pointer: coarse) {
+  #chart.folded.overview .node .hit { pointer-events: none; }
+  .atlas-view-btn { min-height: 36px; padding: 8px; }
+  .navigator-dismiss { width: 36px; height: 36px; font-size: 22px; line-height: 34px; }
   .rail-era { padding: 8px 10px; }
   #zoom-tools { gap: 8px; }
   #zoom-tools .btn { width: 42px; height: 42px; font-size: 19px; }

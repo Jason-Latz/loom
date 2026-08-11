@@ -22,6 +22,15 @@
       <div id="thread-chips" title="Filter by thread"></div>
       <span id="progress" class="bar-progress" role="status" aria-live="polite" aria-atomic="true"></span>
       <span id="streak" class="bar-streak" hidden></span>
+      <div id="atlas-view-control" class="atlas-view-control" role="group" aria-label="Atlas layout">
+        <span class="atlas-view-label">View</span>
+        <div id="atlas-view-toggle" class="atlas-view-toggle" role="radiogroup" aria-label="Choose an atlas layout">
+          <button id="folded-atlas-btn" class="atlas-view-btn is-active" type="button" role="radio" aria-checked="true" data-atlas-view="folded">
+            Folded <span class="atlas-beta">Beta</span>
+          </button>
+          <button id="original-chart-btn" class="atlas-view-btn" type="button" role="radio" aria-checked="false" data-atlas-view="original">Original</button>
+        </div>
+      </div>
       <button id="paths-btn" class="btn" title="Other ways through the chart">Paths</button>
       <button id="continue-btn" class="btn btn-gilt">Continue</button>
       <button id="lamp-btn" class="btn btn-ghost" title="Turn on lamplight mode" aria-label="Turn on lamplight mode" aria-pressed="false">◐</button>
@@ -45,6 +54,23 @@
       <span class="compass-now">Now</span>
       <span class="compass-origins">Origins</span>
     </div>
+
+    <aside id="navigator-overlay" class="navigator-overlay" aria-labelledby="navigator-title" data-navigator-state="inactive" hidden>
+      <div class="navigator-head">
+        <div>
+          <span class="navigator-kicker">Your place in the whole</span>
+          <h2 id="navigator-title">Atlas navigator</h2>
+        </div>
+        <button id="navigator-dismiss" class="navigator-dismiss" type="button" aria-label="Hide atlas navigator" title="Hide atlas navigator">×</button>
+      </div>
+      <div id="navigator-frame" class="navigator-frame">
+        <svg id="navigator-map" role="application" aria-label="Overview of the complete Loom chart" aria-describedby="navigator-hint" viewBox="0 0 1000 1600" preserveAspectRatio="xMidYMid meet">
+          <g id="navigator-content"></g>
+          <rect id="navigator-viewport" class="navigator-viewport" x="0" y="0" width="1000" height="1600"></rect>
+        </svg>
+      </div>
+      <p id="navigator-hint" class="navigator-hint">Drag the frame or use the Arrow keys to travel the atlas</p>
+    </aside>
 
     <div id="cartouche">
       <div class="cart-title">A Cartographer’s Atlas<br/>of the Human Story</div>

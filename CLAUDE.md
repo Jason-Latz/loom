@@ -191,18 +191,16 @@ lessons into it.
   Same day, a cross-model-reviewed mobile pass: fingertip tap targets at any
   zoom (--hit-r), lessons streamed in after boot, iOS viewport fixes,
   coarse-pointer sizing, lamplight theme-color, reduced motion.
-- **2026-07-18 to 21:** The 365 expansion. Designed and adversarially verified
-  236 seed nodes across all ten eras as pure insertions (philosophy with
-  primary-text anchors, trade/money/technology, underrepresented regions),
-  corrected more than a hundred nodes, reached 800 forward wires, made the
-  callback-count rule manifest-aware, and wrote all nine Era IV lessons.
-  Dossiers: `docs/graph-expansion-365.md`, `docs/era-iv-completion-report.md`.
+- **2026-07-18 to 21:** The 365 expansion. 236 seed nodes designed and
+  adversarially verified across all ten eras as pure insertions, more than a
+  hundred nodes corrected, 800 forward wires reached, and all nine Era IV
+  lessons written. Dossiers: `docs/graph-expansion-365.md`,
+  `docs/era-iv-completion-report.md`.
 - **2026-07-16 to 17:** Era I lessons hardened; Era II and III **graph data**
   audited (not their lessons, which came later). Release gate made strict,
-  pinch zoom added. An adversarial pass fixed a Blombos conflation, an inverted
-  ancestry-split claim, and a Sulawesi dating superseded in 2024. Two agents
-  had stripped every apostrophe from their lessons ("the men shoulders") and
-  the gate passed them, so the gate now fails apostrophe-less prose.
+  pinch zoom added. Two agents stripped every apostrophe from their lessons
+  ("the men shoulders") and the gate passed them, so it now fails
+  apostrophe-less prose.
 - **2026-07-15:** Born: graph (120 nodes/10 eras), parchment atlas app
   (map/dossier/reader/progress/lamplight), check gate, forge spec + skill,
   Era I lessons (exemplar by Fable, rest by Opus agents under the spec).
