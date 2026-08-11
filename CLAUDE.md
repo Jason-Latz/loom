@@ -15,13 +15,18 @@ lessons into it.
 - Single lesson check: `node scripts/check.mjs data/lessons/<id>.js`
 - Link health (hits the network, so pre-release rather than pre-commit):
   `node scripts/check-links.mjs [<id> ...]`
-- Deploy: `vercel --prod --yes` (project `loom`, linked; static, no build step).
-  Live at https://loomhistory.com (custom domain, Vercel-managed DNS, added
-  2026-07-26) and https://loom-gray.vercel.app. There is no git remote, so
-  deploys are manual: **forging a lesson does not publish it until you
-  redeploy.**
-  `.vercelignore` keeps `.claude`, `.agents`, scripts, docs, `CLAUDE.md`, and
-  `AGENTS.md` out of the published site.
+- **Deploy: push to `main`.** Since 2026-08-06 the Vercel project `loom` is
+  connected to https://github.com/Jason-Latz/loom with `main` as the production
+  branch, so a push publishes. `vercel --prod --yes` still works for an
+  out-of-band deploy. Live at https://loomhistory.com (custom domain,
+  Vercel-managed DNS, added 2026-07-26) and https://loom-gray.vercel.app.
+  `.vercelignore` keeps `.claude`, `.agents`, scripts, docs, `assets`,
+  `README.md`, `CLAUDE.md`, and `AGENTS.md` out of the published site.
+- Analytics: Vercel Web Analytics and Speed Insights, enabled on the project
+  and loaded by two deferred script tags at the foot of `index.html`. They are
+  served from the site's own origin, so no third party is contacted; they 404
+  harmlessly on localhost and `file://`, which is the source of the only two
+  console errors you will see locally.
 
 ## Architecture
 
@@ -53,6 +58,13 @@ lessons into it.
   dates explicitly rather than inferring from an era label.
 - Treat Loom as artwork: prioritize beautiful, engaging prose, elegant
   pedagogy, and aesthetic coherence over merely correct coverage.
+- Jason likes the chart's current parchment-atlas aesthetic and its dense woven
+  topology. Navigation or overview work should preserve that character while
+  reducing scroll and making the whole graph legible without extreme zoom.
+- For separable engineering and review subtasks, Jason prefers cost-conscious
+  Terra or Luna subagents when available. Keep core architecture and final
+  verification centralized so this never lowers quality; lesson model ownership
+  remains governed by the forge rules above.
 - Jason wants each new era to improve on the prose before it. Give every lesson
   a dedicated literary revision for cadence, concrete image, restraint,
   sentence music, and structural unity; accuracy and clarity are only the floor.
@@ -119,14 +131,15 @@ lessons into it.
 - **Eras I and II are complete** (20/20 and 32/32). Era II's 19 lessons were
   forged in one session, in three sequential batches, by the usual pipeline
   plus a sixth **polish** stage. Run spec: `docs/era-ii-forge-run.md`.
-- **Keep the polish stage.** All 19 lessons passed the gate while sitting over
-  the spec's significance band (1,003 to 1,355 words), because the gate checks
-  only the combined total. A scoped Fable pass, given the verifier's leftover
-  notes and not just a number, brought all 19 to 932 to 999 losing no citation.
-- **The spec's section bands are out of step with the atlas**: 36 of 95 shipped
-  lessons exceed the 600 to 950 significance band and Era I runs to 1,404. Era
-  II was compressed to match its era-mates, not because 950 is sacred. Open
-  question for Jason: widen the spec, or re-cut the long Era I lessons.
+- **Keep the polish stage, but for notes rather than length.** It exists to
+  apply the verifier's leftover findings, which are often real citation and
+  craft fixes. Give it those notes, not just a word count.
+- **Word bands widened 2026-08-06** (Jason: lessons may run a little longer).
+  Story 600 to 1,000, View from Above 600 to 1,250, and these are shape
+  guidance only: the **combined 1,500 to 2,200 total is the sole binding
+  constraint**, since it is what the gate measures and what protects the ten
+  minute promise. Never compress a section doing real work while the total sits
+  comfortably in band. Era II shipped under the old numbers and stays as is.
 - The evidence switch persists in `loom.v1`; raised markers are gilt
   superscripts with a gloss beneath the paragraph. `scripts/check.mjs` REQUIRES
   citations, so a new lesson cannot ship without them. Design study:
@@ -138,9 +151,8 @@ lessons into it.
 - Remaining unwritten: 270 seeds. Eras I and II are complete; Eras III to V
   hold 71 (III 13/34, IV 9/34, V 13/38), and Eras VI to X hold 199 (VI 8/40,
   VII to X untouched). Graph is at its final size.
-- Production is https://loomhistory.com and https://loom-gray.vercel.app; the
-  citation pass is deployed and verified live. `AGENTS.md` is now a pointer to
-  this file rather than a copy of it, because the copy drifted.
+- `AGENTS.md` is a pointer to this file rather than a copy, because the copy
+  drifted.
 
 ## Change log
 
@@ -157,19 +169,15 @@ lessons into it.
   thousand miles, not seven hundred. Two new edges took the graph to 802 wires.
   Next time: **when a lesson and its node summary disagree, the lesson usually
   wins**, so check the era file against the finished prose before shipping.
-- **2026-08-05:** Era VI opened: eight lessons (the twelfth century of faith
-  and reason, Cluny to Cairo) forged by Workflow pipeline, Fable on every prose
-  stage and Opus on every adversarial one, staged outside the repo, eight
-  gate-green commits, 111-URL link sweep clean. The run outlived a weekly usage
-  limit and a 529 wave via resume; resume caching re-ran finished stages, so
-  trust the journal, not the cache.
+- **2026-08-05:** Era VI opened: eight lessons (Cluny to Cairo) by the same
+  pipeline, eight gate-green commits, 111-URL sweep clean. The run outlived a
+  usage limit and a 529 wave; resume caching re-ran finished stages, so trust
+  the journal, not the cache.
 - **2026-08-01:** The citation pass. All 68 lessons gained per-claim citations
-  (826 sources, 964 markers) behind a reader-controlled evidence switch, with an
-  always-visible Sources cartouche. Three stages per lesson: Opus research, an
-  independent Opus refutation, a Fable adjudication. 84 prose corrections landed
-  where lessons claimed more than their evidence carried, and about a hundred
-  reviewer findings were overruled. The gate now requires citations and strips
-  markers before measuring prose. Design study: `docs/citation-options.html`.
+  (826 sources, 964 markers) behind a reader-controlled evidence switch. Three
+  stages each: Opus research, an independent Opus refutation, a Fable
+  adjudication. 84 prose corrections landed where lessons claimed more than
+  their evidence carried. The gate now requires citations.
 - **2026-07-29:** Era I completed, the first fully charted era (20/20). Twelve
   lessons forged on Fable through research, draft, dedicated literary revision,
   two independent Opus reviews, fix, and an Opus verification gate. The verify

@@ -91,5 +91,13 @@
   <script src="js/paths.js"></script>
   <script src="js/app.js"></script>
   <script src="js/boot.js"></script>
+
+  <!-- Vercel Web Analytics and Speed Insights. Served by the platform from the
+       site's own origin, so nothing is fetched from a third party and the
+       atlas keeps its no-dependency rule. Both 404 harmlessly when the page is
+       opened from file:// or any other host, which is why they are deferred
+       and last. -->
+  <script defer src="/_vercel/insights/script.js"></script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </body>
 </html>

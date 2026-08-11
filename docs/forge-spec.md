@@ -53,11 +53,17 @@ LOOM.lesson({
 });
 ```
 
-Word budget: story + significance together 1,500-2,200 words. The check gate
-warns outside that aim, and warnings fail the release gate. The hard structural
-bounds are 1,100-2,900 words.
+Word budget: story + significance together 1,500-2,200 words. **This total is
+the binding constraint**, it is what the gate measures, and it is what protects
+the ten minute promise. The check gate warns outside that aim, and warnings fail
+the release gate. The hard structural bounds are 1,100-2,900 words.
 
-## The story (5-8 paragraphs, 600-950 words)
+The per-section ranges below are shape guidance, not a second gate. A lesson
+whose argument needs a long View from Above pays for it with a shorter story,
+not with a longer lesson. Do not compress a section that is doing real work
+just to sit inside its range while the total is comfortably in band.
+
+## The story (5-8 paragraphs, 600-1,000 words)
 
 - Cold open inside a scene, through one person's senses. No preamble, no
   "imagine, if you will." First sentence earns the next.
@@ -69,7 +75,7 @@ bounds are 1,100-2,900 words.
 - The story must dramatize the node's core mechanism, not just decorate it.
   End the story at the pivot where the reader can feel the question "so what?"
 
-## The View from Above (4-6 paragraphs, 600-950 words)
+## The View from Above (4-6 paragraphs, 600-1,250 words)
 
 - Answer "so what?" with mechanisms, not vibes: why it happened there and
   then, what it caused, how we know.
