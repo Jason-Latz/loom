@@ -3,7 +3,36 @@
 Spec captured before launch so a dead or derailed run can be restarted with
 nothing lost. Goal: chart every unwritten node in Era III, The Axial Age.
 
-## Model contract (Jason's gate on this run)
+## Model contract change (2026-08-11, mid-run)
+
+**Fable 5 hit its usage limit during lesson 4 of 21** (wine-dark-song), killing
+the forge agent. Jason switched the session to Opus 5 and instructed the run to
+continue on it. From that point:
+
+- **Every stage runs on Claude Opus 5**, pinned `model: 'opus'`, verified per
+  stage against the transcript. The `.agents/skills/forge-lesson/SKILL.md`
+  already names Opus 5 as the sanctioned prose fallback, so this is the
+  documented degraded mode rather than an improvisation.
+- **What is lost:** the critic is no longer a different model from the creator,
+  which is the property `CLAUDE.md` singles out as the point of the split. Blind
+  spots shared by author and reviewer stop being caught by the pairing.
+- **What replaces it:** the single review stage became **two independent
+  reviewers running in parallel with different lenses**, one on sources, facts,
+  dates and quotations, the other on craft, pedagogy, graph truth and spec
+  compliance. Each runs in a fresh context, is told its author shares its model
+  and that shared blind spots are the real risk, and neither sees the other's
+  findings. Perspective diversity substitutes for model diversity, imperfectly.
+- **Still enforced:** no silent fallback to Sonnet or anything else. The audit
+  script now checks every agent in a run against `claude-opus-5` and any stage
+  that drifted is re-run before its output is accepted.
+- **wine-dark-song keeps the original split.** Its draft was written by Fable 5
+  before the limit hit and survived the death gate-green, so it was harvested
+  rather than re-forged: Fable authored it, Opus reviews it.
+- If Fable's limit resets and Jason wants the split restored, flip the prose
+  stages in `gen-wf.mjs` back to `model: 'fable'` and the audit back to
+  per-stage expectations. The two-lens review is worth keeping either way.
+
+## Original model contract (Jason's gate at launch)
 
 - **Authors are Claude Fable 5. Reviewers are separate Claude Opus 5 agents
   with fresh context.** Neither role may silently fall back to Sonnet, Terra,
