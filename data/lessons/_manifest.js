@@ -63,6 +63,7 @@ LOOM.lessonFiles = [
   'phoenician-web',
   'book-of-songs',
   'pharaohs-of-kush',
+  'wine-dark-song',
   'polis-experiment',
   'invention-of-money',
   'israel-one-god',
