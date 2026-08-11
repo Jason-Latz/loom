@@ -59,6 +59,7 @@ LOOM.lessonFiles = [
 
   // Era III: The Axial Age
   'iron-and-alphabet',
+  'zarathustra-fire',
   'phoenician-web',
   'polis-experiment',
   'invention-of-money',
