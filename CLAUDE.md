@@ -22,11 +22,12 @@ lessons into it.
   Vercel-managed DNS, added 2026-07-26) and https://loom-gray.vercel.app.
   `.vercelignore` keeps `.claude`, `.agents`, scripts, docs, `assets`,
   `README.md`, `CLAUDE.md`, and `AGENTS.md` out of the published site.
-- Analytics: Vercel Web Analytics and Speed Insights, enabled on the project
-  and loaded by two deferred script tags at the foot of `index.html`. They are
-  served from the site's own origin, so no third party is contacted; they 404
-  harmlessly on localhost and `file://`, which is the source of the only two
-  console errors you will see locally.
+- Analytics: two deferred script tags at the foot of `index.html`, served from
+  the site's own origin so no third party is contacted. Speed Insights is live.
+  **Web Analytics still needs its one-click Enable in the Vercel dashboard**
+  (project `loom`, Analytics tab); until then `/_vercel/insights/script.js`
+  returns 404 and no page views are recorded. There is no CLI or API route to
+  enable it. Both 404 on localhost and `file://`, the only console noise local.
 
 ## Architecture
 
