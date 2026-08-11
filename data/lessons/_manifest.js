@@ -67,6 +67,7 @@ LOOM.lessonFiles = [
   'polis-experiment',
   'upanishadic-turn',
   'library-of-nineveh',
+  'chavin-oracle',
   'invention-of-money',
   'israel-one-god',
   'crown-of-cyrus',
