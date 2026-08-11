@@ -62,10 +62,8 @@ lessons into it.
 - Jason likes the chart's current parchment-atlas aesthetic and its dense woven
   topology. Navigation or overview work should preserve that character while
   reducing scroll and making the whole graph legible without extreme zoom.
-- For separable engineering and review subtasks, Jason prefers cost-conscious
-  Terra or Luna subagents when available. Keep core architecture and final
-  verification centralized so this never lowers quality; lesson model ownership
-  remains governed by the forge rules above.
+- Prefer cost-conscious Terra or Luna subagents for separable engineering and
+  review subtasks; keep architecture and final verification centralized.
 - Jason wants each new era to improve on the prose before it. Give every lesson
   a dedicated literary revision for cadence, concrete image, restraint,
   sentence music, and structural unity; accuracy and clarity are only the floor.
@@ -88,7 +86,9 @@ lessons into it.
 - Node ids are kebab-case and permanent (lessons, edges and progress key on
   them). Adding a node: insert in the era file at the right array position
   (chronological) with 2-3 forward edges carrying real "why" text.
-- Small, narrowly-scoped commits; gate must be green before each.
+- Small, narrowly-scoped commits; gate green before each. **Stage explicit
+  paths, never `git commit -a`**: the tree often holds someone else’s
+  in-progress work, and a push to `main` now publishes it.
 
 ## Gotchas
 
