@@ -66,6 +66,7 @@ LOOM.lessonFiles = [
   'wine-dark-song',
   'polis-experiment',
   'upanishadic-turn',
+  'library-of-nineveh',
   'invention-of-money',
   'israel-one-god',
   'crown-of-cyrus',
