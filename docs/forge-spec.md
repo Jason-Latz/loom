@@ -166,6 +166,15 @@ rather than a database annotation.
 
 ## Voice and hygiene
 
+- **Keep the prose clean** (Jason, 2026-08-11). The failure register for this
+  atlas is prose that performs: chains of clipped fragments, metaphor stacked
+  on metaphor, aphoristic poses ("The ridge is a road."), objects granted
+  intentions ("The stone is only being persuaded to agree."). Jason has
+  rejected that register by name. Write full, clear sentences. Let one
+  concrete image do its work and stop; a metaphor must clarify something
+  real, and most sentences need none. Where the exemplar's own style
+  conflicts with this rule, this rule wins. Beautiful means clear, specific,
+  and quietly vivid, never dense, clever, or breathless.
 - Never use em dashes or en dashes anywhere; use commas, colons, periods,
   parentheses, or the word "to" in ranges. The check gate enforces this.
 - **Write normal possessives and contractions.** Two forge agents once stripped
