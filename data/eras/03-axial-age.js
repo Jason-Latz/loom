@@ -135,7 +135,7 @@ LOOM.node([
     region: 'sasia',
     x: 69,
     threads: ['ideas'],
-    hook: 'At the edge of the village, teachers turn the old fire sacrifice inward and ask what remains when everything that can burn has burned: what is the self?',
+    hook: 'In a king’s hall, before rivals competing for his patronage, teachers turn the old fire sacrifice inward and ask what remains when everything that can burn has burned: what is the self?',
     summary:
       'The early Upanishads, composed orally in northern India around the seventh and sixth centuries BCE, offer several answers to questions of self, death, rebirth, and release. Some influential passages identify atman with brahman, while others characterize self and ultimate reality differently. Karma and rebirth become explicit in parts of this literature. Later Brahmanical traditions canonized these texts, while Buddhist and Jain movements participated in a wider renunciant debate.',
     edges: [
