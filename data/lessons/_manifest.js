@@ -62,6 +62,7 @@ LOOM.lessonFiles = [
   'zarathustra-fire',
   'phoenician-web',
   'book-of-songs',
+  'pharaohs-of-kush',
   'polis-experiment',
   'invention-of-money',
   'israel-one-god',
