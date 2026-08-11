@@ -124,14 +124,28 @@ lessons into it.
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-08-06, after Era II was completed)
+## State (2026-08-11, Era III in progress)
 
-- **95 lessons written, every one with per-claim citations**: 1,074 sources and
-  1,312 markers across the atlas. Gate:
-  `OK: 365 nodes, 802 wires, 10 eras, 95 lessons. 0 warning(s).`
+- **101 lessons written, every one with per-claim citations**: 1,134 sources and
+  1,397 markers across the atlas. Gate:
+  `OK: 365 nodes, 802 wires, 10 eras, 101 lessons. 0 warning(s).`
+- **Era III is being charted now** (19/34 and rising). Run spec, model contract
+  and operational lessons: `docs/era-iii-forge-run.md`. Read it before touching
+  this era.
+- **Fable 5 hit its usage limit mid-run on 2026-08-11** and Jason moved the run
+  to Opus 5, so the author and the critic are now the same model. The
+  compensation is **two independent reviewers per lesson with different lenses**
+  (sources, facts and dates; craft, pedagogy and graph truth), each in a fresh
+  context. Restore `model: 'fable'` on the prose stages when Fable is available.
 - **Eras I and II are complete** (20/20 and 32/32). Era II's 19 lessons were
   forged in one session, in three sequential batches, by the usual pipeline
   plus a sixth **polish** stage. Run spec: `docs/era-ii-forge-run.md`.
+- **Keep the prose clean** (Jason, 2026-08-11). He rejected the dense literary
+  register by name: fragment chains, stacked metaphor, aphoristic poses,
+  objects granted intentions. The rule is in `docs/forge-spec.md` and overrides
+  the exemplar's style where they conflict. It is not a licence to go flat: an
+  audit of the first four Era III lessons scored all of them 5 of 5 on
+  specificity, which is the thing the rule must never cost.
 - **Keep the polish stage, but for notes rather than length.** It exists to
   apply the verifier's leftover findings, which are often real citation and
   craft fixes. Give it those notes, not just a word count.
@@ -149,8 +163,8 @@ lessons into it.
   URL. **Read its output, do not act on it**: past sweeps called live links
   dead over transient errors and publisher bot walls that open fine for a
   human. Confirm in a real browser before touching a link.
-- Remaining unwritten: 270 seeds. Eras I and II are complete; Eras III to V
-  hold 71 (III 13/34, IV 9/34, V 13/38), and Eras VI to X hold 199 (VI 8/40,
+- Remaining unwritten: 264 seeds. Eras I and II are complete; Eras III to V
+  hold 65 (III 19/34, IV 9/34, V 13/38), and Eras VI to X hold 199 (VI 8/40,
   VII to X untouched). Graph is at its final size.
 - `AGENTS.md` is a pointer to this file rather than a copy, because the copy
   drifted.
