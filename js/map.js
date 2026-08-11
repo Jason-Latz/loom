@@ -4,11 +4,9 @@
 LOOM.map = (function () {
   var NS = 'http://www.w3.org/2000/svg';
   var W = 1600, ML = 100, MR = 80, MT = 86, MB = 64, ROW = 46, PAD = 26;
-  var FOLD_LEFT = 44, FOLD_RIGHT = 36, FOLD_TOP = 118, FOLD_BOTTOM = 72, FOLD_GAP = 10;
   var ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 
-  var svg, wrap, tip, navigator, navigatorMap, navigatorContent, navigatorViewport;
-  var mode = 'folded';
+  var svg, wrap, tip;
   var H = 0;
   // The chart is bookended by the world: an engraved map band below the oldest
   // era and another above the newest, so all of history sits between two earths.
@@ -23,12 +21,7 @@ LOOM.map = (function () {
   var bands = [];    // {n, title, span, top, h, center}
   var nodeEls = {};  // node id -> <g>
   var adj = {};      // node id -> {wires: [path], nodes: {id: true}}
-  var nodeById = {};
   var pinned = null;
-  var stateRead = {}, stateNext = null, activeFilters = null, activePath = null;
-  var viewCache = { folded: null, original: null };
-  var navDrag = null;
-  var navDismissed = false;
   var api = { onSelect: null, onEraChange: null };
 
   function el(name, attrs, parent) {
@@ -41,7 +34,7 @@ LOOM.map = (function () {
   function nx(n) { return ML + (n.x / 100) * (W - ML - MR); }
 
   // ---------- layout ----------
-  function computeOriginalLayout() {
+  function computeLayout() {
     var byEra = {};
     LOOM.nodes.forEach(function (n) { (byEra[n.era] = byEra[n.era] || []).push(n); });
 
@@ -64,50 +57,6 @@ LOOM.map = (function () {
     });
     eraTop = cursor;              // top edge of the newest era's band
     worldTopY = eraTop - MAPB;    // the second world sits above it
-  }
-
-  // The folded atlas turns the long scroll into ten adjacent plates. Time still
-  // rises inside every plate and geography still runs left to right, but each
-  // era gets the full height of the screen instead of adding to one 18,000-unit
-  // column. No node or wire is aggregated: this is the same graph, refolded.
-  function computeFoldedLayout() {
-    var byEra = {};
-    LOOM.nodes.forEach(function (n) { (byEra[n.era] = byEra[n.era] || []).push(n); });
-
-    MAPB = 0;
-    H = 960;
-    eraTop = FOLD_TOP;
-    worldTopY = 0;
-    worldBottomY = H;
-    var plateH = H - FOLD_TOP - FOLD_BOTTOM;
-    var plateW = (W - FOLD_LEFT - FOLD_RIGHT - FOLD_GAP * (LOOM.eras.length - 1)) / LOOM.eras.length;
-
-    LOOM.eras.forEach(function (era, ei) {
-      var list = byEra[era.n] || [];
-      var left = FOLD_LEFT + ei * (plateW + FOLD_GAP);
-      var b = {
-        n: era.n, title: era.title, span: era.span,
-        left: left, w: plateW, top: FOLD_TOP, h: plateH,
-        center: FOLD_TOP + plateH / 2,
-      };
-      bands.push(b);
-      list.forEach(function (n, i) {
-        var inset = 8;
-        pos[n.id] = {
-          x: left + inset + (n.x / 100) * (plateW - inset * 2),
-          y: FOLD_TOP + plateH - (i + 0.5) * (plateH / Math.max(1, list.length)),
-        };
-      });
-    });
-  }
-
-  function computeLayout() {
-    pos = {};
-    bands = [];
-    nodeById = {};
-    LOOM.nodes.forEach(function (n) { nodeById[n.id] = n; });
-    if (mode === 'folded') computeFoldedLayout();
-    else computeOriginalLayout();
   }
 
   // ---------- the world, engraved ----------
@@ -164,65 +113,6 @@ LOOM.map = (function () {
   }
 
   // ---------- render ----------
-  function renderFoldedFrame(gBands, gGuides) {
-    var axis = el('line', {
-      x1: FOLD_LEFT, y1: 34, x2: W - FOLD_RIGHT, y2: 34,
-      'class': 'folded-time-axis',
-    }, gBands);
-    axis.setAttribute('marker-end', 'url(#folded-arrow)');
-    var defs = svg.querySelector('defs') || el('defs', {}, svg);
-    var marker = el('marker', {
-      id: 'folded-arrow', viewBox: '0 0 10 10', refX: 9, refY: 5,
-      markerWidth: 6, markerHeight: 6, orient: 'auto-start-reverse',
-    }, defs);
-    el('path', { d: 'M 0 0 L 10 5 L 0 10 z', 'class': 'folded-arrow' }, marker);
-
-    var origins = el('text', { x: FOLD_LEFT, y: 24, 'class': 'folded-end', 'text-anchor': 'start' }, gBands);
-    origins.textContent = 'ORIGINS';
-    var now = el('text', { x: W - FOLD_RIGHT, y: 24, 'class': 'folded-end', 'text-anchor': 'end' }, gBands);
-    now.textContent = 'NOW';
-
-    bands.forEach(function (b, i) {
-      var hit = el('rect', {
-        x: b.left, y: b.top, width: b.w, height: b.h,
-        'class': 'era-click', tabindex: '0', role: 'button',
-        'aria-label': 'Zoom to Era ' + ROMAN[b.n - 1] + ', ' + b.title,
-      }, gBands);
-      hit.dataset.era = b.n;
-      hit.addEventListener('keydown', function (ev) {
-        if (ev.key !== 'Enter' && ev.key !== ' ') return;
-        ev.preventDefault();
-        ev.stopPropagation();
-        fitEra(+hit.dataset.era);
-      });
-      el('rect', {
-        x: b.left, y: b.top, width: b.w, height: b.h,
-        'class': 'folded-plate' + (i % 2 ? ' alt' : ''),
-      }, gBands);
-      var numeral = el('text', {
-        x: b.left + b.w / 2, y: 64, 'class': 'folded-era-num', 'text-anchor': 'middle',
-      }, gBands);
-      numeral.textContent = ROMAN[b.n - 1];
-      var label = el('text', {
-        x: b.left + b.w / 2, y: 82, 'class': 'folded-era-label', 'text-anchor': 'middle',
-      }, gBands);
-      label.textContent = b.title.replace(/^The /, '');
-      var span = el('text', {
-        x: b.left + b.w / 2, y: 98, 'class': 'folded-era-span', 'text-anchor': 'middle',
-      }, gBands);
-      span.textContent = b.span;
-
-      LOOM.regions.forEach(function (r) {
-        if (r.id === 'world') return;
-        var x = b.left + 8 + (r.x / 100) * (b.w - 16);
-        el('line', {
-          x1: x, y1: b.top, x2: x, y2: b.top + b.h,
-          'class': 'folded-meridian',
-        }, gGuides);
-      });
-    });
-  }
-
   function render() {
     var gWorld = el('g', { 'class': 'world-layer' }, svg);
     var gBands = el('g', {}, svg);
@@ -230,34 +120,30 @@ LOOM.map = (function () {
     var gWires = el('g', {}, svg);
     var gNodes = el('g', {}, svg);
 
-    if (mode === 'folded') {
-      renderFoldedFrame(gBands, gGuides);
-    } else {
-      renderWorld(gWorld);
+    renderWorld(gWorld);
 
-      bands.forEach(function (b, i) {
-        el('rect', { x: 0, y: b.top, width: W, height: b.h, 'class': 'era-band' + (i % 2 ? ' alt' : '') }, gBands);
-        el('line', { x1: 0, y1: b.top, x2: W, y2: b.top, 'class': 'era-rule' }, gBands);
-        var label = el('text', { x: 42, y: b.center, 'class': 'era-label', 'text-anchor': 'middle', transform: 'rotate(-90 42 ' + b.center + ')' }, gBands);
-        label.textContent = 'Era ' + ROMAN[b.n - 1] + ' · ' + b.title;
-        var span = el('text', { x: 66, y: b.center, 'class': 'era-span', 'text-anchor': 'middle', transform: 'rotate(-90 66 ' + b.center + ')' }, gBands);
-        span.textContent = b.span;
-      });
-      el('line', { x1: 0, y1: worldBottomY, x2: W, y2: worldBottomY, 'class': 'era-rule' }, gBands);
+    bands.forEach(function (b, i) {
+      var r = el('rect', { x: 0, y: b.top, width: W, height: b.h, 'class': 'era-band' + (i % 2 ? ' alt' : '') }, gBands);
+      el('line', { x1: 0, y1: b.top, x2: W, y2: b.top, 'class': 'era-rule' }, gBands);
+      var label = el('text', { x: 42, y: b.center, 'class': 'era-label', 'text-anchor': 'middle', transform: 'rotate(-90 42 ' + b.center + ')' }, gBands);
+      label.textContent = 'Era ' + ROMAN[b.n - 1] + ' · ' + b.title;
+      var span = el('text', { x: 66, y: b.center, 'class': 'era-span', 'text-anchor': 'middle', transform: 'rotate(-90 66 ' + b.center + ')' }, gBands);
+      span.textContent = b.span;
+    });
+    el('line', { x1: 0, y1: worldBottomY, x2: W, y2: worldBottomY, 'class': 'era-rule' }, gBands);
 
-      // Meridians belong to the chart, not to the maps: the region columns are
-      // evenly spaced for legibility and do not claim to be real longitudes, so
-      // they stop where the world begins.
-      LOOM.regions.forEach(function (r) {
-        if (r.id === 'world') return;
-        var x = ML + (r.x / 100) * (W - ML - MR);
-        el('line', { x1: x, y1: eraTop, x2: x, y2: worldBottomY, 'class': 'meridian' }, gGuides);
-        var t1 = el('text', { x: x, y: eraTop - 34, 'class': 'meridian-label' }, gGuides);
-        t1.textContent = r.name;
-        var t2 = el('text', { x: x, y: worldBottomY + 40, 'class': 'meridian-label' }, gGuides);
-        t2.textContent = r.name;
-      });
-    }
+    // Meridians belong to the chart, not to the maps: the region columns are
+    // evenly spaced for legibility and do not claim to be real longitudes, so
+    // they stop where the world begins.
+    LOOM.regions.forEach(function (r) {
+      if (r.id === 'world') return;
+      var x = ML + (r.x / 100) * (W - ML - MR);
+      el('line', { x1: x, y1: eraTop, x2: x, y2: worldBottomY, 'class': 'meridian' }, gGuides);
+      var t1 = el('text', { x: x, y: eraTop - 34, 'class': 'meridian-label' }, gGuides);
+      t1.textContent = r.name;
+      var t2 = el('text', { x: x, y: worldBottomY + 40, 'class': 'meridian-label' }, gGuides);
+      t2.textContent = r.name;
+    });
 
     // wires
     LOOM.nodes.forEach(function (n) {
@@ -265,21 +151,10 @@ LOOM.map = (function () {
         var a = pos[n.id], b = pos[e.to];
         if (!a || !b) return;
         var dy = a.y - b.y;
-        var target = nodeById[e.to];
-        var d;
-        if (mode === 'folded' && target && target.era !== n.era) {
-          var dx = b.x - a.x;
-          d = 'M ' + a.x + ' ' + a.y +
-            ' C ' + (a.x + dx * 0.42) + ' ' + a.y + ', ' +
-            (b.x - dx * 0.42) + ' ' + b.y + ', ' + b.x + ' ' + b.y;
-        } else {
-          var edgeInset = mode === 'folded' ? 5 : 10;
-          d = 'M ' + a.x + ' ' + (a.y - edgeInset) +
-            ' C ' + a.x + ' ' + (a.y - dy * 0.45) + ', ' + b.x + ' ' + (b.y + dy * 0.45) + ', ' + b.x + ' ' + (b.y + edgeInset);
-        }
+        var d = 'M ' + a.x + ' ' + (a.y - 10) +
+          ' C ' + a.x + ' ' + (a.y - dy * 0.45) + ', ' + b.x + ' ' + (b.y + dy * 0.45) + ', ' + b.x + ' ' + (b.y + 10);
         var th = n.threads[0];
-        var cross = mode === 'folded' && target && target.era !== n.era ? ' cross-era' : '';
-        var p = el('path', { d: d, 'class': 'wire t-' + e.type + ' th-' + th + cross, style: '--c: var(--th-' + th + ')' }, gWires);
+        var p = el('path', { d: d, 'class': 'wire t-' + e.type + ' th-' + th, style: '--c: var(--th-' + th + ')' }, gWires);
         p.dataset.from = n.id; p.dataset.to = e.to;
         (adj[n.id] = adj[n.id] || { wires: [], nodes: {} }).wires.push(p);
         (adj[e.to] = adj[e.to] || { wires: [], nodes: {} }).wires.push(p);
@@ -291,15 +166,14 @@ LOOM.map = (function () {
     // nodes
     LOOM.nodes.forEach(function (n) {
       var p = pos[n.id];
-      var g = el('g', { 'class': 'node era-' + n.era, transform: 'translate(' + p.x + ' ' + p.y + ')', style: '--c: var(--th-' + n.threads[0] + ')' }, gNodes);
+      var g = el('g', { 'class': 'node', transform: 'translate(' + p.x + ' ' + p.y + ')', style: '--c: var(--th-' + n.threads[0] + ')' }, gNodes);
       g.dataset.id = n.id;
-      var folded = mode === 'folded';
-      el('circle', { r: folded ? 7.5 : 15, 'class': 'halo' }, g);
-      el('circle', { r: folded ? 4.5 : 9, 'class': 'core' }, g);
-      el('circle', { r: folded ? 1.7 : 3.4, 'class': 'pip' }, g);
-      var label = el('text', { y: folded ? 12 : 26, 'class': 'label' }, g);
-      setLabel(label, n.title, folded ? 7.2 : 14);
-      el('circle', { r: folded ? 9 : 18, 'class': 'hit' }, g);
+      el('circle', { r: 15, 'class': 'halo' }, g);
+      el('circle', { r: 9, 'class': 'core' }, g);
+      el('circle', { r: 3.4, 'class': 'pip' }, g);
+      var label = el('text', { y: 26, 'class': 'label' }, g);
+      setLabel(label, n.title);
+      el('circle', { r: 18, 'class': 'hit' }, g);
       nodeEls[n.id] = g;
 
       g.addEventListener('mouseenter', function () { hover(n.id, true); });
@@ -308,7 +182,7 @@ LOOM.map = (function () {
     });
   }
 
-  function setLabel(textEl, title, lineHeight) {
+  function setLabel(textEl, title) {
     if (title.length <= 22) { textEl.textContent = title; return; }
     var mid = Math.floor(title.length / 2);
     var space = -1;
@@ -318,7 +192,7 @@ LOOM.map = (function () {
     if (space < 0) { textEl.textContent = title; return; }
     var l1 = el('tspan', { x: 0, dy: 0 }, textEl);
     l1.textContent = title.slice(0, space);
-    var l2 = el('tspan', { x: 0, dy: lineHeight }, textEl);
+    var l2 = el('tspan', { x: 0, dy: 14 }, textEl);
     l2.textContent = title.slice(space + 1);
   }
 
@@ -401,11 +275,8 @@ LOOM.map = (function () {
 
   // ---------- node state classes ----------
   function refreshStates(readMap, nextId) {
-    stateRead = readMap || {};
-    stateNext = nextId || null;
     LOOM.nodes.forEach(function (n) {
       var g = nodeEls[n.id];
-      if (!g) return;
       var written = !!LOOM.lessons[n.id];
       g.classList.toggle('seed', !written);
       g.classList.toggle('written', written);
@@ -416,7 +287,6 @@ LOOM.map = (function () {
 
   // Light only the nodes on a path and the wires that run between them.
   function setPath(ids) {
-    activePath = ids && ids.length ? ids.slice() : null;
     var set = ids && ids.length ? ids.reduce(function (m, id) { m[id] = true; return m; }, {}) : null;
     svg.classList.toggle('pathed', !!set);
     if (!set) {
@@ -432,7 +302,6 @@ LOOM.map = (function () {
   }
 
   function setFilters(set) {
-    activeFilters = set && set.size ? new Set(set) : null;
     var active = set && set.size;
     svg.classList.toggle('filtered', !!active);
     if (!active) {
@@ -475,31 +344,15 @@ LOOM.map = (function () {
     vb.x = Math.max(minX, Math.min(maxX, vb.x));
     vb.y = Math.max(minY, Math.min(maxY, vb.y));
     svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
-    svg.classList.toggle('folded', mode === 'folded');
-    svg.classList.toggle('original', mode === 'original');
-    svg.classList.toggle('overview', mode === 'folded' && vb.w > 820);
-    svg.classList.toggle('far', mode === 'original' ? vb.w > 2000 : vb.w > 820);
-    var hitFloor = mode === 'folded' ? 9 : 18;
-    var hitR = Math.max(hitFloor, HIT_SCREEN_PX * vb.w / (wrap.clientWidth || 1));
+    svg.classList.toggle('far', vb.w > 2000);
+    var hitR = Math.max(18, HIT_SCREEN_PX * vb.w / (wrap.clientWidth || 1));
     if (Math.abs(hitR - lastHitR) > 1) {
       lastHitR = hitR;
       svg.style.setProperty('--hit-r', hitR.toFixed(1) + 'px');
     }
-    var era = currentEra();
-    if (era) svg.dataset.era = era;
-    if (api.onEraChange) api.onEraChange(era);
-    updateNavigator();
+    if (api.onEraChange) api.onEraChange(currentEra());
   }
   function currentEra() {
-    if (mode === 'folded') {
-      var cx = vb.x + vb.w / 2;
-      var foldedBest = null, xDist = Infinity;
-      bands.forEach(function (b) {
-        var d = Math.abs(b.left + b.w / 2 - cx);
-        if (d < xDist) { xDist = d; foldedBest = b.n; }
-      });
-      return foldedBest;
-    }
     var cy = vb.y + vb.h / 2;
     var best = null, dist = Infinity;
     bands.forEach(function (b) {
@@ -533,25 +386,13 @@ LOOM.map = (function () {
   function fitEra(n) {
     var b = bands.find(function (x) { return x.n === n; });
     if (!b) return;
-    if (mode === 'folded') {
-      var foldedW = wrap.clientWidth < 600 ? 260 : 560;
-      animateTo({ w: foldedW, x: b.left + b.w / 2 - foldedW / 2, y: b.center - (foldedW * aspect()) / 2 });
-      return;
-    }
     var needW = Math.max(W, (b.h + 120) / aspect());
     animateTo({ w: needW, x: (W - needW) / 2, y: b.center - (needW * aspect()) / 2 });
   }
   function panToNode(id, targetW) {
     var p = pos[id];
     if (!p) return;
-    var w;
-    if (targetW) w = targetW;
-    else if (mode === 'folded') {
-      var detailW = wrap.clientWidth < 600 ? 260 : 700;
-      w = Math.max(240, Math.min(vb.w, detailW));
-    } else {
-      w = Math.min(Math.max(vb.w, 700), 1000);
-    }
+    var w = targetW || Math.min(Math.max(vb.w, 700), 1000);
     animateTo({ w: w, x: p.x - w / 2, y: p.y - (w * aspect()) / 2 });
   }
   var animating = null;
@@ -572,230 +413,6 @@ LOOM.map = (function () {
       else animating = null;
     }
     animating = requestAnimationFrame(tick);
-  }
-
-  // ---------- folded overview navigator ----------
-  function renderNavigator() {
-    if (!navigatorMap || !navigatorContent) return;
-    navigatorContent.innerHTML = '';
-    navigatorMap.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
-    navigatorMap.setAttribute('preserveAspectRatio', 'xMidYMid meet');
-    if (mode !== 'folded') return;
-
-    bands.forEach(function (b, i) {
-      el('rect', {
-        x: b.left, y: b.top, width: b.w, height: b.h,
-        'class': 'navigator-plate' + (i % 2 ? ' alt' : ''),
-      }, navigatorContent);
-    });
-
-    LOOM.nodes.forEach(function (n) {
-      (n.edges || []).forEach(function (e) {
-        var a = pos[n.id], b = pos[e.to];
-        if (!a || !b) return;
-        var target = nodeById[e.to];
-        var d;
-        if (target && target.era !== n.era) {
-          var dx = b.x - a.x;
-          d = 'M ' + a.x + ' ' + a.y +
-            ' C ' + (a.x + dx * 0.42) + ' ' + a.y + ', ' +
-            (b.x - dx * 0.42) + ' ' + b.y + ', ' + b.x + ' ' + b.y;
-        } else {
-          var dy = a.y - b.y;
-          d = 'M ' + a.x + ' ' + a.y +
-            ' C ' + a.x + ' ' + (a.y - dy * 0.45) + ', ' +
-            b.x + ' ' + (b.y + dy * 0.45) + ', ' + b.x + ' ' + b.y;
-        }
-        var th = n.threads[0];
-        el('path', {
-          d: d, 'class': 'navigator-wire',
-          style: '--c: var(--th-' + th + ')',
-        }, navigatorContent);
-      });
-    });
-
-    LOOM.nodes.forEach(function (n) {
-      var p = pos[n.id];
-      var th = n.threads[0];
-      el('circle', {
-        cx: p.x, cy: p.y, r: 5.2, 'class': 'navigator-node',
-        style: '--c: var(--th-' + th + ')',
-      }, navigatorContent);
-    });
-  }
-
-  function updateNavigator() {
-    if (!navigator || !navigatorViewport) return;
-    var whole = fitAllWidth();
-    var zoomed = mode === 'folded' && vb.w < whole * 0.84;
-    if (!zoomed) navDismissed = false;
-    var covered = document.body.classList.contains('path-active') ||
-      ['dossier', 'reader', 'intro', 'paths'].some(function (id) {
-        var overlay = document.getElementById(id);
-        return overlay && !overlay.hidden;
-      });
-    var visible = zoomed && !navDismissed && !covered;
-    navigator.hidden = !visible;
-    navigator.dataset.navigatorState = visible ? 'active' : 'inactive';
-    if (!visible) return;
-    navigatorViewport.setAttribute('x', vb.x);
-    navigatorViewport.setAttribute('y', vb.y);
-    navigatorViewport.setAttribute('width', vb.w);
-    navigatorViewport.setAttribute('height', vb.h);
-  }
-
-  function navigatorPoint(ev) {
-    var pt = navigatorMap.createSVGPoint();
-    pt.x = ev.clientX;
-    pt.y = ev.clientY;
-    var matrix = navigatorMap.getScreenCTM();
-    return matrix ? pt.matrixTransform(matrix.inverse()) : { x: W / 2, y: H / 2 };
-  }
-
-  function bindNavigator() {
-    if (!navigatorMap) return;
-    var dismiss = document.getElementById('navigator-dismiss');
-    if (dismiss) dismiss.addEventListener('click', function () {
-      navDismissed = true;
-      updateNavigator();
-      var fit = document.getElementById('zoom-fit');
-      if (fit) fit.focus();
-    });
-
-    navigatorMap.setAttribute('tabindex', '0');
-    navigatorMap.setAttribute('role', 'application');
-    navigatorMap.setAttribute('aria-label', 'Folded atlas overview. Drag the gold frame, use the Arrow keys, or use the era rail to travel.');
-    navigatorMap.addEventListener('pointerdown', function (ev) {
-      if (mode !== 'folded') return;
-      ev.preventDefault();
-      var p = navigatorPoint(ev);
-      if (ev.target === navigatorViewport) {
-        navDrag = { id: ev.pointerId, dx: p.x - vb.x, dy: p.y - vb.y };
-      } else {
-        vb.x = p.x - vb.w / 2;
-        vb.y = p.y - vb.h / 2;
-        navDrag = { id: ev.pointerId, dx: vb.w / 2, dy: vb.h / 2 };
-        apply();
-      }
-      navigatorMap.setPointerCapture(ev.pointerId);
-    });
-    navigatorMap.addEventListener('pointermove', function (ev) {
-      if (!navDrag || navDrag.id !== ev.pointerId) return;
-      ev.preventDefault();
-      var p = navigatorPoint(ev);
-      vb.x = p.x - navDrag.dx;
-      vb.y = p.y - navDrag.dy;
-      apply();
-    });
-    function finishNavigator(ev) {
-      if (!navDrag || navDrag.id !== ev.pointerId) return;
-      navDrag = null;
-      if (navigatorMap.hasPointerCapture(ev.pointerId)) navigatorMap.releasePointerCapture(ev.pointerId);
-    }
-    navigatorMap.addEventListener('pointerup', finishNavigator);
-    navigatorMap.addEventListener('pointercancel', finishNavigator);
-    navigatorMap.addEventListener('keydown', function (ev) {
-      if (ev.key === 'Enter' || ev.key === ' ') {
-        ev.preventDefault();
-        ev.stopPropagation();
-        return;
-      }
-      var dx = 0, dy = 0;
-      if (ev.key === 'ArrowLeft') dx = -vb.w * 0.18;
-      else if (ev.key === 'ArrowRight') dx = vb.w * 0.18;
-      else if (ev.key === 'ArrowUp') dy = -vb.h * 0.18;
-      else if (ev.key === 'ArrowDown') dy = vb.h * 0.18;
-      else return;
-      ev.preventDefault();
-      ev.stopPropagation();
-      vb.x += dx;
-      vb.y += dy;
-      apply();
-    });
-
-    ['dossier', 'reader', 'intro', 'paths'].forEach(function (id) {
-      var overlay = document.getElementById(id);
-      if (overlay) new MutationObserver(updateNavigator).observe(overlay, { attributes: true, attributeFilter: ['hidden'] });
-    });
-    new MutationObserver(updateNavigator).observe(document.body, { attributes: true, attributeFilter: ['class'] });
-  }
-
-  // ---------- layout mode ----------
-  function updateModeControls() {
-    document.querySelectorAll('[data-atlas-view]').forEach(function (button) {
-      var active = button.dataset.atlasView === mode;
-      button.classList.toggle('is-active', active);
-      button.setAttribute('aria-checked', active ? 'true' : 'false');
-      button.setAttribute('tabindex', active ? '0' : '-1');
-    });
-    document.body.classList.toggle('folded-atlas', mode === 'folded');
-    document.body.classList.toggle('original-atlas', mode === 'original');
-  }
-
-  function rebuild() {
-    svg.innerHTML = '';
-    nodeEls = {};
-    adj = {};
-    lastHitR = 0;
-    computeLayout();
-    render();
-    renderNavigator();
-    refreshStates(stateRead, stateNext);
-    if (activeFilters && activeFilters.size) setFilters(activeFilters);
-    if (activePath && activePath.length) setPath(activePath);
-    if (pinned && nodeEls[pinned]) {
-      nodeEls[pinned].classList.add('selected');
-      applyFocus(pinned);
-    }
-  }
-
-  function openInitialView() {
-    if (mode === 'folded') {
-      fitAll();
-      return;
-    }
-    vb.w = W;
-    vb.h = vb.w * aspect();
-    vb.x = 0;
-    vb.y = worldBottomY + Math.min(400, MAPB) - vb.h;
-    apply();
-  }
-
-  function setMode(next) {
-    next = next === 'original' ? 'original' : 'folded';
-    if (next === mode) { updateModeControls(); return; }
-    viewCache[mode] = { x: vb.x, y: vb.y, w: vb.w };
-    mode = next;
-    if (animating) { cancelAnimationFrame(animating); animating = null; }
-    rebuild();
-    var saved = viewCache[mode];
-    if (saved) {
-      vb.x = saved.x;
-      vb.y = saved.y;
-      vb.w = saved.w;
-      apply();
-    } else {
-      openInitialView();
-      if (pinned) panToNode(pinned);
-    }
-    updateModeControls();
-    if (api.onModeChange) api.onModeChange(mode);
-  }
-
-  function bindModeControls() {
-    var buttons = Array.from(document.querySelectorAll('[data-atlas-view]'));
-    buttons.forEach(function (button, i) {
-      button.addEventListener('click', function () { setMode(button.dataset.atlasView); });
-      button.addEventListener('keydown', function (ev) {
-        if (ev.key !== 'ArrowLeft' && ev.key !== 'ArrowRight') return;
-        ev.preventDefault();
-        ev.stopPropagation();
-        var next = buttons[(i + (ev.key === 'ArrowRight' ? 1 : buttons.length - 1)) % buttons.length];
-        next.focus();
-        setMode(next.dataset.atlasView);
-      });
-    });
-    updateModeControls();
   }
 
   // ---------- input ----------
@@ -855,10 +472,9 @@ LOOM.map = (function () {
     svg.addEventListener('pointerdown', function (ev) {
       // capture retargets later events to the svg, so remember the true target now
       var g = ev.target.closest ? ev.target.closest('.node') : null;
-      var era = ev.target.closest ? ev.target.closest('.era-click') : null;
       pointers[ev.pointerId] = { id: ev.pointerId, x: ev.clientX, y: ev.clientY };
       if (pointerList().length > 1) beginPinch();
-      else drag = { id: ev.pointerId, x: ev.clientX, y: ev.clientY, vx: vb.x, vy: vb.y, moved: false, node: g, era: era };
+      else drag = { id: ev.pointerId, x: ev.clientX, y: ev.clientY, vx: vb.x, vy: vb.y, moved: false, node: g };
       svg.setPointerCapture(ev.pointerId);
     });
     svg.addEventListener('pointermove', function (ev) {
@@ -893,11 +509,7 @@ LOOM.map = (function () {
           drag = null;
         }
       } else if (drag && drag.id === ev.pointerId) {
-        if (!cancelled && !drag.moved) {
-          if (drag.node) select(drag.node.dataset.id, { pan: false });
-          else if (drag.era && mode === 'folded') fitEra(+drag.era.dataset.era);
-          else select(null, { pan: false });
-        }
+        if (!cancelled && !drag.moved) select(drag.node ? drag.node.dataset.id : null, { pan: false });
         drag = null;
       }
       if (!left.length) svg.classList.remove('panning');
@@ -912,22 +524,19 @@ LOOM.map = (function () {
   }
 
   // ---------- init ----------
-  function init(initialMode) {
+  function init() {
     svg = document.getElementById('chart');
     wrap = document.getElementById('chart-wrap');
     tip = document.getElementById('tip');
-    navigator = document.getElementById('navigator-overlay');
-    navigatorMap = document.getElementById('navigator-map');
-    navigatorContent = document.getElementById('navigator-content');
-    navigatorViewport = document.getElementById('navigator-viewport');
-    mode = initialMode === 'original' ? 'original' : 'folded';
     computeLayout();
     render();
-    renderNavigator();
     bindInput();
-    bindNavigator();
-    bindModeControls();
-    openInitialView();
+    // open on the origins: the oldest era with the world it rose from beneath it
+    vb.w = W;
+    vb.h = vb.w * aspect();
+    vb.x = 0;
+    vb.y = worldBottomY + Math.min(400, MAPB) - vb.h;
+    apply();
   }
 
   return {
@@ -942,9 +551,6 @@ LOOM.map = (function () {
     fitEra: fitEra,
     panToNode: panToNode,
     zoomBy: function (f) { zoomAt(vb.x + vb.w / 2, vb.y + vb.h / 2, f); },
-    setMode: setMode,
-    mode: function () { return mode; },
-    currentEra: currentEra,
     bands: function () { return bands; },
     api: api,
   };

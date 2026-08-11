@@ -2,10 +2,7 @@
 LOOM.app = (function () {
   var h = LOOM.ui.h;
   var KEY = 'loom.v1';
-  var state = {
-    read: {}, marks: {}, filters: [], lamplight: false, introSeen: false,
-    streak: null, evidence: false, layoutMode: 'folded',
-  };
+  var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false, streak: null, evidence: false };
   var ready = false;
 
   // ---------------- streak ----------------
@@ -57,7 +54,6 @@ LOOM.app = (function () {
     try {
       var raw = localStorage.getItem(KEY);
       if (raw) Object.assign(state, JSON.parse(raw));
-      if (state.layoutMode !== 'original' && state.layoutMode !== 'folded') state.layoutMode = 'folded';
     } catch (e) { /* fresh start is fine */ }
   }
   function save() {
@@ -194,7 +190,6 @@ LOOM.app = (function () {
         b.classList.toggle('here', +b.dataset.era === n);
       });
     };
-    LOOM.map.api.onEraChange(LOOM.map.currentEra());
   }
 
   // ---------------- search ----------------
@@ -258,12 +253,9 @@ LOOM.app = (function () {
     var card = h('div', 'intro-card');
     card.appendChild(h('h2', null, 'LOOM'));
     card.appendChild(h('div', 'intro-sub', 'a cartographer’s atlas of why the world is the way it is'));
-    var folded = LOOM.map.mode() === 'folded';
     card.appendChild(h('p', null,
       'This chart holds ' + LOOM.nodes.length + ' turning points of the human story, from the first spark of symbolic thought to the ' +
-      'present you are standing in. ' + (folded
-        ? 'The ten eras unfold from left to right; time rises inside each era and the world’s regions run across every plate. '
-        : 'Time rises from the bottom; the world’s regions run left to right. ') + 'Four pigments ' +
+      'present you are standing in. Time rises from the bottom; the world’s regions run left to right. Four pigments ' +
       'thread every age together: Lapis for ideas and belief, Oxblood for power, Gilt for wealth, Verdigris for craft and science.'));
     var coarse = window.matchMedia && window.matchMedia('(pointer: coarse)').matches;
     card.appendChild(h('p', null,
@@ -274,16 +266,14 @@ LOOM.app = (function () {
       (coarse
         ? 'Drag to pan, pinch to zoom, and use the roman numerals on the right to voyage between eras. '
         : 'Drag to pan, pinch or ⌘-scroll to zoom, and use the roman numerals on the right to voyage between eras. ') +
-      (folded
-        ? 'When you move close, the navigator keeps the whole atlas in sight. Choose Original at any time to return to the long scroll.'
-        : 'Choose Folded at any time to see every era together. Begin at the bottom of the map, at the beginning of everything.')));
+      'Begin at the bottom of the map, at the beginning of everything.'));
     var actions = h('div', 'intro-actions');
     var begin = h('button', 'btn btn-gilt', 'Begin at the beginning');
     begin.addEventListener('click', function () {
       dismiss();
       LOOM.map.select(LOOM.nodes[0].id);
     });
-    var unroll = h('button', 'btn', folded ? 'See the whole atlas' : 'Unroll the chart');
+    var unroll = h('button', 'btn', 'Unroll the chart');
     unroll.addEventListener('click', dismiss);
     actions.appendChild(begin);
     actions.appendChild(unroll);
@@ -335,17 +325,13 @@ LOOM.app = (function () {
     if (state.lamplight) document.body.classList.add('lamplight');
     if (state.evidence) document.body.classList.add('evidence-on');
     renderLampButton();
-    LOOM.map.init(state.layoutMode);
+    LOOM.map.init();
     LOOM.reader.init();
     LOOM.paths.init();
 
     LOOM.map.api.onSelect = function (id) {
       if (id) LOOM.reader.showDossier(id);
       else LOOM.reader.hideDossier();
-    };
-    LOOM.map.api.onModeChange = function (next) {
-      state.layoutMode = next;
-      save();
     };
 
     buildThreadChips();
