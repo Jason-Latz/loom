@@ -83,11 +83,41 @@ clean-prose rule is prose that goes generic and encyclopedic, and that has not
 happened. The nine were fixed in one commit. Worth re-running this audit once
 more late in the era.
 
+## Parallel batches (2026-08-11, at Jason's request)
+
+The first seven lessons were forged one at a time. Jason then asked for the
+rest to run in parallel, so the remainder are forged in concurrent batches,
+the same shape Era II used. `gen-batch.mjs` emits one workflow that runs N
+lessons through the full six-stage pipeline at once, each lesson flowing
+independently with no barrier between them, so a slow lesson never holds up a
+fast one.
+
+**The constraint that shapes the batches:** a callback question may only
+target a lesson already in `data/lessons/_manifest.js`, so batch-mates cannot
+reference each other. `contract.mjs` computes eligibility from the live
+manifest and `gen-batch.mjs` refuses to build a batch whose members appear in
+each other's eligible lists, so this cannot be got wrong by accident. The
+batches are therefore grouped so that lessons which most want to reference one
+another land in different batches:
+
+- **Batch A** (star-diaries, ionian-awakening, scythian-gold, carthage-ledger,
+  tragic-stage): Mesopotamia, Greece, the steppe and North Africa, none of
+  which needs another batch member.
+- **Batch B** (zapotec-dawn, analects-of-confucius, nok-terracotta,
+  sacred-disease, panini-grammar): zapotec-dawn wants chavin-oracle and
+  sacred-disease wants ionian-awakening, both shipped by then.
+- **Batch C** (dong-son-drums, zhuangzi-butterfly, garden-and-stoa,
+  euclid-elements): zhuangzi-butterfly wants the Analects from batch B.
+
+Integration stays sequential and unchanged: audit the models, gate, insert in
+main-sequence position, commit one lesson per commit.
+
 ## Scope
 
 Era III holds 34 nodes; 13 already have lessons. The 21 unwritten ones are
-forged strictly sequentially, one at a time, in exact main-sequence order
-(array order in `data/eras/03-axial-age.js`):
+forged in exact main-sequence order (array order in
+`data/eras/03-axial-age.js`), the first seven one at a time and the rest in
+the concurrent batches above:
 
 zarathustra-fire, book-of-songs, pharaohs-of-kush, wine-dark-song,
 upanishadic-turn, library-of-nineveh, chavin-oracle, star-diaries,
