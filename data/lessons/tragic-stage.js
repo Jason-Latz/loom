@@ -1,0 +1,208 @@
+LOOM.lesson({
+  id: 'tragic-stage',
+  readingMinutes: 10,
+  citationsVersion: 1,
+  sources: [
+    {
+      key: 'aeschylus-agamemnon',
+      cite: 'Aeschylus, Agamemnon, translated by Herbert Weir Smyth, Loeb Classical Library volumes 145 and 146, Harvard University Press (1926), hosted by the Theoi Classical Texts Library',
+      url: 'https://www.theoi.com/Text/AeschylusAgamemnon.html',
+      kind: 'primary',
+      access: 'open',
+      note: 'The edition’s own headnote gives the play’s date as 458 BCE at the City Dionysia, and the text carries the watchman on the palace roof, the beacon relay, and the chorus of Argive elders singing the sacrifice at Aulis, including the line at which the chorus refuses to narrate the killing.',
+    },
+    {
+      key: 'aeschylus-eumenides',
+      cite: 'Aeschylus, Eumenides, translated by Herbert Weir Smyth, Perseus Digital Library, Tufts University',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0006:line=681',
+      kind: 'primary',
+      access: 'open',
+      note: 'Athena, on stage, establishes the court on the Hill of Ares to judge the first trial for bloodshed and counsels the citizens to accept neither anarchy nor tyranny, which is the passage the whole trilogy has been building toward.',
+    },
+    {
+      key: 'athpol-56',
+      cite: 'Aristotle (attributed), The Athenian Constitution 56.3, translated by H. Rackham, Aristotle in 23 Volumes, volume 20, Harvard University Press, Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0046:chapter=56',
+      kind: 'primary',
+      access: 'open',
+      note: 'States that on entering office the chief archon appoints three chorus leaders for the tragedies, the wealthiest men among all the Athenians, which is the mechanism that turned private fortunes into festival budgets.',
+    },
+    {
+      key: 'athpol-25',
+      cite: 'Aristotle (attributed), The Athenian Constitution 25, translated by H. Rackham, Aristotle in 23 Volumes, volume 20, Harvard University Press, Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0046:chapter=25',
+      kind: 'primary',
+      access: 'open',
+      note: 'Reports that in the archonship of Conon, conventionally 462 to 461 BCE, Ephialtes stripped the Areopagus of the added powers that made it the safeguard of the constitution and distributed them to the Council of Five Hundred, the People and the jury courts, and that he was murdered not long after.',
+    },
+    {
+      key: 'lysias-21',
+      cite: 'Lysias, Defence against a Charge of Taking Bribes 21.1 to 21.2, translated by W. R. M. Lamb, Harvard University Press (1930), Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0154:speech=21:section=1',
+      kind: 'primary',
+      access: 'open',
+      note: 'A wealthy Athenian itemising his public expenditure says he spent thirty minae, three thousand drachmas, producing tragic drama in the archonship of Theopompus (411 to 410 BCE); section 2, the next page of the same text, adds five thousand drachmas including the tripod on a winning men’s chorus at the Dionysia and six talents over seven years on warships, which sets the cost of a tragic production beside the city’s other liturgies.',
+    },
+    {
+      key: 'plutarch-cimon',
+      cite: 'Plutarch, Cimon 8.7 to 8.8, translated by Bernadotte Perrin, Plutarch’s Lives, Harvard University Press (1914), Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:2008.01.0017:chapter=8:section=7',
+      kind: 'primary',
+      access: 'open',
+      note: 'Records that the generals entered the theatre and made the customary libation to the god, and that the archon Apsephion in 468 BCE broke with practice by refusing to appoint the judges by lot as usual, seating instead Cimon and his colleagues, ten in all, one from each tribe.',
+    },
+    {
+      key: 'marshall-2004',
+      cite: 'C. W. Marshall and Stephanie van Willigenburg, "Judging Athenian Dramatic Competitions", The Journal of Hellenic Studies 124: 90 to 107 (2004)',
+      url: 'https://personal.math.ubc.ca/~steph/papers/3246152.pdf',
+      doi: '10.2307/3246152',
+      kind: 'paper',
+      access: 'open',
+      note: 'Reconstructs the voting: the names proposed by each tribe were sealed in separate jars by the chorus sponsors, kept on the Acropolis and guarded by the Treasurers, the Archon drew one judge from each on the day of the contest, and, as the authors say is generally recognised, ten ballots were cast but in most circumstances not all were counted. In their model the Archon Basileus selects and reads five one at a time, a majority is looked for only then, and two more are drawn if none has appeared, then an eighth, ninth or tenth; a random spread resolves in five votes 63.0 percent of the time and in seven 28.8 percent, and on the 4 to 3 to 3 split they think usual, seven ballots become the most usual means of determining a winner. They state that the process cannot be known for certain. Author-hosted copy of the Journal of Hellenic Studies article, which is paywalled at its publisher.',
+    },
+    {
+      key: 'isocrates-8',
+      cite: 'Isocrates, On the Peace 8.82, translated by George Norlin, Harvard University Press, Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0144:speech=8:section=82',
+      kind: 'primary',
+      access: 'open',
+      note: 'A fourth-century BCE orator’s account of the Athenians dividing the allies’ tribute into talents and bringing it onto the stage when the theatre was full at the festival of Dionysus, and leading in the sons of men killed in the war at the same moment.',
+    },
+    {
+      key: 'herodotus-6',
+      cite: 'Herodotus, Histories 6.21, translated by A. D. Godley, Harvard University Press (1920), Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0126:book=6:chapter=21',
+      kind: 'primary',
+      access: 'open',
+      note: 'Reports that when Phrynichus produced The Fall of Miletus the whole theatre wept, and the Athenians fined him a thousand drachmas for reminding them of a calamity that touched them personally and forbade the play ever to be performed again.',
+    },
+    {
+      key: 'ambrose-2000',
+      cite: 'Z. Ambrose (University of Vermont), review of Maximilian Braun, Die "Eumeniden" des Aischylos und der Areopag, Classica Monacensia volume 19, Tübingen (1998), Bryn Mawr Classical Review 2000.01.01',
+      url: 'https://bmcr.brynmawr.edu/2000/2000.01.01',
+      kind: 'paper',
+      access: 'open',
+      note: 'Calls the relation between the Eumenides of 458 and Ephialtes’ reform of the Areopagus in 462 one of the abiding unresolved problems of classical scholarship, and lays out the competing readings running back to K. O. Müller in 1833.',
+    },
+    {
+      key: 'scodel-2010',
+      cite: 'Ruth Scodel, An Introduction to Greek Tragedy, Cambridge University Press (2010), opening chapter excerpt',
+      url: 'https://assets.cambridge.org/97805218/79743/excerpt/9780521879743_excerpt.htm',
+      kind: 'book',
+      access: 'open',
+      note: 'States that thirty-two tragedies survive in mostly complete form, with everything else reduced to fragments quoted by later authors or recovered from papyri in Egypt.',
+    },
+    {
+      key: 'lambert-2013',
+      cite: 'Stephen D. Lambert, review of Benjamin W. Millis and S. Douglas Olson, Inscriptional Records for the Dramatic Festivals in Athens: IG II2 2318 to 2325 and Related Texts, Brill (2012), Bryn Mawr Classical Review 2013.06.10',
+      url: 'https://bmcr.brynmawr.edu/2013/2013.06.10/',
+      kind: 'paper',
+      access: 'open',
+      note: 'Describes the Fasti, which listed under archon dates the victorious tribe and sponsor in the dithyrambs and the victorious poet and sponsor in comedy and tragedy, with the earliest preserved entry in 473 to 472 BCE and the latest in 329 to 328.',
+    },
+    {
+      key: 'lech-2011',
+      cite: 'Marcel Lysgaard Lech, review of David Kawalko Roselli, Theater of the People: Spectators and Society in Ancient Athens, University of Texas Press (2011), Bryn Mawr Classical Review 2011.12.19',
+      url: 'https://bmcr.brynmawr.edu/2011/2011.12.19/',
+      kind: 'paper',
+      access: 'open',
+      note: 'Summarises Roselli’s argument against the picture of the theatre as one homogeneous civic body, reporting his three-in-one model of the audience (elite, working class and poor) in which the place of seating defines the spectator, and his evidence that foreigners were present in Athens throughout the year and around for all the festivals.',
+    },
+    {
+      key: 'acharnians',
+      cite: 'Aristophanes, Acharnians 377 to 382, anonymous translation, The Eleven Comedies, Liveright, New York, Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus:text:1999.01.0240:card=366',
+      kind: 'primary',
+      access: 'open',
+      note: 'The speaker recalls how Cleon treated him over the previous year’s comedy, dragging him before the Council and pouring out slander, which is a comic poet naming a sitting politician on stage over a prosecution the audience remembered.',
+    },
+  ],
+  storyContext:
+    'The Theatre of Dionysus on the south slope of the Athenian Acropolis, at the City Dionysia of 458 BCE. Diokles is a composite, built from the documented institution rather than from any record of a particular singer; the ceremonies around him are ones the ancient sources describe for the festival in general rather than for this particular morning, the judging follows a modern reconstruction of a procedure the evidence leaves uncertain, and the play he performs is the Oresteia.',
+  story: [
+    'The mask smells of glue and old linen, and Diokles can hear his own breathing inside it. He is standing in the side passage of the dancing floor in the dark before sunrise, waiting with the rest of the chorus for the signal to walk out. He cannot see the audience yet, but he can hear it: several thousand people on the slope above him, restless and loud, most of them awake since the middle of the night. Behind him a piper is warming the reeds of his aulos in his cheek. Diokles is thirty-one, he owns eleven olive trees and a share in a threshing floor, and this morning he will sing the part of an old man of Argos in front of more of his neighbours than he has ever seen gathered anywhere.',
+    'He has been doing this since the olives came in. The chief archon named one of the richest men in Athens to pay for the chorus, and that man has been paying out all winter: a room to rehearse in, a trainer to drill the turns, the piper, the masks, dyed wool for the costumes, food for men who were not earning while they learned. Diokles has given up most of a season of work to it. Nobody asked whether he would rather have had the wages. He was chosen, and in Athens an honour of that kind is not something a man turns down.',
+    'The morning begins with business. There is a procession and a sacrifice, and then the ten generals come out onto the open ground and pour the customary libation to the god, which is how Athens reminds itself that this is a festival of the state and not an entertainment somebody has arranged.[^plutarch-cimon] The judges take their oath where every man on the hillside can watch, one drawn that morning from each tribe. Nobody yet knows how many of their ten votes it will take to settle the contest.',
+    'Then the noise thins out, and a man is lying on a roof complaining about his job. He has been up there a year watching for a fire signal, propped on his bent arm like a dog, and he says he now knows the whole gathering of the night stars by heart. Far off, the beacon lights: Troy has fallen. The king is coming home, and the queen who has been running his kingdom for ten years will welcome him and kill him in his bath.',
+    'Diokles walks out with the others and becomes one of the old men of Argos, and the part of the morning he has been dreading comes quickly. The chorus has to tell the audience how this king bought his fair wind ten years earlier. The fleet was stuck at Aulis, the wind was wrong, the food was running down, and the seer said the price was the king’s own daughter. The song spares nobody. It has her father’s men lift her over the altar with a gag in her mouth so she cannot curse the house, and it watches her saffron robe slip as she looks at each of the men about to kill her. Then, at the last possible moment, the chorus stops. What happened next, Diokles sings, I did not see and do not tell.[^aeschylus-agamemnon]',
+    'The hillside goes quiet, and it is a different quiet from the one before the play began. Diokles cannot see faces from the floor, but he knows who is sitting up there. Athens has had men in the field somewhere for most of his adult life, and some of the people above him are missing sons in Egypt this spring. Nobody up there doubts that a king once ruled at Argos and sailed against Troy, since the Greeks took the heroic age for their own distant past and reasoned about it as history. But the play is not a report on it. It is set in a kingdom that had been the matter of song for centuries, and it is asking the men of a city currently running an empire what a commander owes the people he spends.',
+    'By late afternoon the trilogy reaches the ending it has been building toward. Every killing in the house has been answered by another one, and Athena breaks the chain by inventing something: a court, on the hill of Ares a short walk from where Diokles is singing, on the far side of the Acropolis. She seats citizens to hear the case, and both sides put their arguments. In the speech that establishes the court she counsels the people of Attica to accept neither anarchy nor tyranny in their city, and the men on the hillside are hearing that too. Then the citizens vote. Three or four years earlier the men on that hillside had stripped that same council of most of its powers, and the politician who did it had been murdered for it. When the plays end, ballots will come out of an urn one at a time, a poet will be crowned, and next spring the city will pay for all of it again.',
+  ],
+  significance: [
+    'Almost everything in that morning was assigned rather than chosen. The Athenian Constitution, a handbook of the later fourth century BCE attributed to Aristotle or his school, says that on taking office the chief archon appointed three chorus leaders for the tragedies, the wealthiest men among all the Athenians.[^athpol-56] What that cost is not a guess. A client of the orator Lysias, itemising his public spending in the war years after 411 BCE, records thirty minae, three thousand drachmas, to produce tragic drama in one year, five thousand drachmas including the dedicated tripod on a men’s chorus at the Dionysia in another, and six talents, thirty-six thousand drachmas, on seven years of fitting out warships.[^lysias-21] Producing tragedy was one heavy public duty among several rather than the heaviest. The city also kept score in stone. A marble list now called the Fasti recorded the Dionysia winners year by year, naming the victorious poet and the man who had paid for him; its earliest surviving entry belongs to 473 or 472 BCE and its last to 329 or 328.[^lambert-2013] The money was compulsory and the record was permanent, which is what it looks like when a state runs its theatre as one of its own institutions.',
+    'The contest was not decoration either, and the way a winner was settled shows what Athenians wanted from a verdict. Plutarch reports that at the contest conventionally dated to 468, the archon Apsephion, seeing how partisan the crowd had become, broke with practice: rather than appointing the judges by lot as usual he made the ten generals, Cimon among them, swear the oath and sit, one from each tribe.[^plutarch-cimon] He records it as an exception, and that is how we know the usual practice. Normally the ten came out of jars of candidate names proposed by the tribes, sealed by the sponsors themselves, and guarded on the Acropolis by the treasurers. Ten ballots went in, and scholars generally agree that in most contests not all of them were read out. How the count actually ran is a modern reconstruction: C. W. Marshall and Stephanie van Willigenburg, who modelled the likeliest procedure, say the process cannot be known for certain. In their model the King Archon draws and reads five tablets one at a time and only then looks for a majority; if no name holds one, two more are drawn, then an eighth, ninth or tenth as the contest stays open. On their arithmetic five ballots settle a random spread about sixty-three times in a hundred, while a close division, which they think was the usual case, was most often settled on the seventh.[^marshall-2004] The randomness was deliberate. It made a bribe a poor investment, since the bought ballot might never leave the urn, and it left the god of the festival a share in the outcome.',
+    'It is tempting to read all this as a free people talking to itself, but the evidence will not support so clean a picture. Who was actually on the slope is disputed. David Roselli has argued that the classical audience was socially mixed rather than a citizen body in seats, sorted by what a person could afford into elite, working class and poor, and that foreigners were in Athens all year and around for every festival.[^lech-2011] The occasion was also a display of empire: fourth-century orators describe the allies’ tribute divided into talents and carried out onto the stage when the theatre was full, with the grown sons of men killed in war led out in front of the same crowd.[^isocrates-8] That ceremony almost certainly belongs to the years after the league treasury came to Athens in 454 BCE, so it is not part of the morning above, but it is part of what the festival became. The city could also take the attention away. Around 493 BCE Phrynichus staged The Fall of Miletus and the whole theatre wept; the Athenians fined him a thousand drachmas for reminding them of a calamity that touched them so closely, and forbade the play ever to be performed again.[^herodotus-6] The city that paid for the plays could also ban one, and did.',
+    'The strongest evidence that these plays were doing civic work is an argument scholars have never managed to close. In the archonship of Conon, conventionally 462 to 461 BCE, Ephialtes stripped the council of the Areopagus of the powers that had made it the guardian of the constitution and handed them to the Council of Five Hundred, the assembly and the jury courts; not long afterwards he was murdered.[^athpol-25] Three or four years later Aeschylus put Athena on stage founding that same council as a court for bloodshed, the ancient jurisdiction the reform had left it, and telling the Athenians to accept neither anarchy nor tyranny.[^aeschylus-eumenides] Was that a defence of the reform, an elegy for what the council had lost, or a plea for a middle course? Reviewing a whole book on the question, one classicist called it among the abiding unresolved problems of the field and traced the competing readings back to the 1830s.[^ambrose-2000] That scholars cannot settle it is itself informative: whatever Aeschylus intended, he built an ending that set several thousand people thinking about a constitutional fight they had lived through, and the city had paid for it.',
+    'Almost none of the drama itself survives. Three poets competed at each Dionysia, each with three tragedies and a satyr play, and the contest held that shape through the fifth century BCE. Thirty-two tragedies have reached us in more or less complete form.[^scodel-2010] They come down under the names of three playwrights, though the authorship of two individual plays in that set is disputed, and even those three survive only in whatever late antique teachers and Byzantine copyists happened to keep. Comedy, the louder half of the festival, fared worse, and that is a real loss, because comedy named living politicians and put them on the stage. At the Lenaea of 425 BCE, the city’s other drama festival, Aristophanes gave a character a speech about how Cleon had dragged him before the Council over a comedy staged at the Dionysia the year before and buried him in slander.[^acharnians] None of this makes Athens the birthplace of theatre. Masked performance, ritual drama and public song are far older than the Dionysia and were being made by people all over the world who had never heard of Athens: eighty-eight years earlier, seven ministers at a banquet in Zheng had transacted hard diplomacy by reciting odes every man in the room knew by heart. What Athens built was narrower and stranger than an art form: a state-funded annual contest in which ordinary citizens performed newly written arguments about justice to their own city, and other citizens, chosen by lot, decided who had done it best.',
+    'Two of the threads on this chart cross on that hillside. The wealth thread pays for it, through a system that converted private fortunes into public art by naming the men who had to pay, so that the most conspicuous thing a rich Athenian could do with his money was hire a chorus and then lose to somebody else’s. The ideas thread is what the money bought: several thousand people sitting still for a day while a case was put from both sides and nobody on stage was permitted to be simply right. The institution itself did not survive. The festival ended, most of the plays were lost, and what reached Renaissance Europe was scripts on paper rather than a living civic practice, so a modern jury weighing two speeches is not an heir of the Dionysia; lay judgment was invented again, in later centuries and for other reasons. What crossed was the writing, and it still works on whoever picks it up, leaving a reader convinced by two people who cannot both be right. Anyone who comes out of a courtroom drama still arguing about who was owed what has just had the experience Athens decided to buy for its citizens every spring.',
+  ],
+  threadsOut: [
+    {
+      to: 'socratic-turn',
+      why: 'Athens paid for one kind of public questioning out of the fortunes of its richest men, then in 399 BCE condemned a man for another kind. The venue is not the whole answer: the trial came after war, oligarchy and amnesty, and scholars still divide over how much of it was religion and how much politics.',
+    },
+    {
+      to: 'rebirth-of-the-ancients',
+      why: 'What crossed the eighteen centuries to Italy was scripts, not the festival, so Renaissance readers inherited the arguments while the institution that produced them stayed dead.',
+    },
+    {
+      to: 'wine-dark-song',
+      why: 'Both drew on the same body of heroic legend, but a singer shaped his version for the hall in front of him, while a playwright had to defend his before sworn judges and several thousand spectators.',
+    },
+    {
+      to: 'athens-demokratia',
+      why: 'A single festival morning put three of the city’s selection methods within a few steps of one another: generals elected for proven capacity, sponsors named by the archon because nobody would volunteer the money, and judges drawn by lot so that no faction could be seen to own the verdict.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'Who paid for a tragic chorus at the City Dionysia, and how heavy a burden was that?',
+      answer:
+        'The chief archon named the sponsors: the Athenian Constitution says he appointed three chorus leaders for the tragedies, the wealthiest men in Athens, so the money was assigned rather than offered. A client of the orator Lysias, itemising his public spending, records thirty minae, three thousand drachmas, for one year of tragic production, and five thousand drachmas including the tripod on a winning chorus in another year. Beside the six talents the same man spent on seven years of warships, tragedy was one heavy public duty among several rather than the heaviest. The city then cut the results into marble, naming the winning poet and the man who had paid for him.',
+    },
+    {
+      type: 'why',
+      prompt: 'Three or four years after Ephialtes stripped the council of the Areopagus of its powers and was murdered, Aeschylus put Athena on stage founding that same council as a court. Why has nobody been able to settle what the play was saying about the reform?',
+      answer:
+        'Because the ending gives every reading something to hold. Athena founds the council with great honour, which sounds like consolation for what it had just lost; she founds it strictly as a court for bloodshed, which is the ancient jurisdiction the reform had left it, so it also sounds like an endorsement; and she tells the citizens to accept neither anarchy nor tyranny, which sounds like a plea for a middle course. Reviewing a whole book on the question, one classicist called it among the abiding unresolved problems of the field and traced the competing readings back to the 1830s. The evidence that would settle it does not exist: we have the script and almost nothing about how Athenians heard it. That the argument stays open is the best sign of what the festival was for, since a city had paid for an ending nobody could reduce to a slogan.',
+    },
+    {
+      type: 'why',
+      prompt: 'What would have been lost if rich Athenians had simply hired poets privately, the way a king keeps a court poet?',
+      answer:
+        'Most of what makes the institution strange. Private patronage aims a work at one patron’s taste and one household’s hall; the Athenian system pointed the money at a mass audience and then handed the verdict to strangers drawn by lot. The chorus was made of ordinary citizens who trained for months, so performing was a civic obligation rather than a service bought from professionals. And because the contest came round every year with new plays, poets had to keep finding fresh material and pressing on questions the city had not settled.',
+    },
+    {
+      type: 'callback',
+      prompt: 'The Cleisthenes lesson showed Athens filling many offices by lot while electing the ones that needed expertise or public confidence, generals above all. A single festival morning used both devices at once. What does that pairing tell you about how Athenians divided up the work of choosing?',
+      callbackTo: 'athens-demokratia',
+      answer:
+        'They never treated the lot as a general theory of fairness. It went where impartiality and rotation mattered, which is why the judges came out of tribal urns: the verdict had to be one no faction could be seen to own. The sponsors came the other way, named by the archon from the richest men, because the task was to spend a fortune nobody would volunteer to spend. And the generals who poured the libation before the plays had been elected, because that job needed proven capacity. Three different selection methods stood within a few steps of one another on the same morning, each matched to what its office actually required.',
+    },
+    {
+      type: 'callback',
+      prompt: 'At Chuilong in 546 BCE, seven ministers said what they meant by choosing among three hundred songs that everyone in the hall already knew. At the Dionysia, poets wrote new plays and were judged on them. Both societies were conducting public business through poetry. What changes when the poems are old and shared rather than new and competitive?',
+      callbackTo: 'book-of-songs',
+      answer:
+        'Old shared songs work by selection, so the meaning lives in the choice, and only listeners who carry the whole repertoire can read it. That keeps the conversation inside a small trained elite and lets a man say a dangerous thing without quite saying it, which is exactly how Boyou managed to hand a foreign envoy his grievance against his own ruling house. New competitive plays work the other way. The poet has to build the meaning into the play, in front of thousands who bring no special training, and then submit it to a verdict. That is why a Greek play could be fined and banned, as Phrynichus was, and why the surviving Athenian texts read as arguments staged for strangers rather than as an inheritance quoted among friends.',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Aeschylus, Agamemnon, translated by Herbert Weir Smyth',
+      why: 'The play Diokles sings, complete and free to read: start with the watchman on the roof and stop at the chorus refusing to describe what happened at Aulis.',
+      url: 'https://www.theoi.com/Text/AeschylusAgamemnon.html',
+    },
+    {
+      title: 'C. W. Marshall and Stephanie van Willigenburg, Judging Athenian Dramatic Competitions',
+      why: 'A short, unexpectedly gripping reconstruction of how the ballots were actually drawn and counted, and of why the Athenians wanted chance in the room.',
+      url: 'https://personal.math.ubc.ca/~steph/papers/3246152.pdf',
+    },
+    {
+      title: 'Acropolis Museum, Sanctuary and Theatre of Dionysos',
+      why: 'The museum’s own account of the sanctuary and theatre on the south slope, where tragedy, comedy and satyr play were staged and where the auditorium eventually held sixteen thousand.',
+      url: 'https://www.theacropolismuseum.gr/en/sanctuaries/sanctuary-and-theatre-dionysos',
+    },
+  ],
+});

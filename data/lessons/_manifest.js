@@ -77,6 +77,7 @@ LOOM.lessonFiles = [
   'athens-demokratia',
   'buddha-middle-path',
   'hundred-schools',
+  'tragic-stage',
   'socratic-turn',
   'alexanders-comet',
   'ashoka-wheel',
