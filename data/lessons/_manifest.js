@@ -75,6 +75,7 @@ LOOM.lessonFiles = [
   'crown-of-cyrus',
   'scythian-gold',
   'athens-demokratia',
+  'carthage-ledger',
   'buddha-middle-path',
   'hundred-schools',
   'tragic-stage',
