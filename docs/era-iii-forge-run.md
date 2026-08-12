@@ -52,6 +52,35 @@ continue on it. From that point:
   but `claude-opus-5`, is re-run from scratch before its output is accepted.
   Nothing ships on the wrong model.
 
+## Where the run stopped (2026-08-12, weekly limit)
+
+Agents stopped with "You've hit your weekly limit, resets 2am
+(America/Chicago)". **17 of 21 lessons are shipped and committed**; the atlas
+is at 112 lessons and the gate is green. Four remain. Each already has a
+gate-green file in the staging dir, and none is safe to commit as it stands,
+because passing the structural gate is not the same as having been verified.
+
+| lesson | died at | already done | still needs |
+|---|---|---|---|
+| `nok-terracotta` | verify | 2 reviews (27 findings), all 4 fix passes | verify, polish |
+| `garden-and-stoa` | verify | 2 reviews (24 findings), all 3 fix passes | verify, polish |
+| `dong-son-drums` | fix pass 4 | 2 reviews (32 findings), passes 1 to 3 | fix pass 4, verify, polish |
+| `zapotec-dawn` | forge | a complete gate-green draft only | revise, review x2, fix, verify, polish |
+
+Harvested reviews and fix reports are saved as `<id>-reviews.json` and
+`<id>-fixes.json` next to the staging dir, with exact relaunch commands in
+`RESUME.md` there. Harvest, do not re-run finished stages. Note that
+`dong-son-drums` died *mid-edit*, so its file is in an unknown partial state:
+its fix pass must re-check every finding against the file rather than trust
+either the findings or the prior edits.
+
+**One era-file correction is still owed**, raised by the analects verifier and
+not yet applied: the `analects-of-confucius` node summary says the book "became
+a shared curriculum across much of East Asia for roughly two millennia", where
+the finished lesson dates the Korean, Japanese and Vietnamese spread to Zhu Xi's
+Four Books (d. 1200) and the examination core to 1313 to 1905. Verify against
+the lesson's sources before editing, and commit it apart from any lesson.
+
 ## Operational lessons from this run
 
 **Chunk the fix stage.** The fix agent died twice in a row with "Connection
