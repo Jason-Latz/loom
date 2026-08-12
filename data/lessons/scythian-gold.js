@@ -1,0 +1,192 @@
+LOOM.lesson({
+  id: 'scythian-gold',
+  readingMinutes: 10,
+  citationsVersion: 1,
+  sources: [
+    {
+      key: 'caspari-2025',
+      cite: 'Gino Caspari, Aaron Deter-Wolf, Daniel Riday, Mikhail Vavulin and Svetlana Pankova, "High-resolution near-infrared data reveal Pazyryk tattooing methods", Antiquity 99(407): 1267 to 1281 (2025)',
+      url: 'https://www.cambridge.org/core/journals/antiquity/article/highresolution-nearinfrared-data-reveal-pazyryk-tattooing-methods/74D1A37DF0F0920F3BFCA82EA19DDF5B',
+      doi: '10.15184/aqy.2025.10150',
+      kind: 'paper',
+      access: 'open',
+      note: 'Near-infrared photogrammetry of the female mummy from Pazyryk tomb 5 at the State Hermitage. Establishes that the outlines were made with a multi-point tool and finished with a single finer point at the antler tips, hooves and hand motifs, that there is no evidence of incision or subdermal technique, that overlapping line ends mark pauses in the work, that the right forearm is markedly more skilled than the left and was probably done in at least two sessions, and that the two arms suggest either two artists or one artist at two stages of experience. Also the source for the count of seven tattooed individuals preserved from the Early Iron Age of southern Siberia, ninth to second centuries BC, for the post-mortem sutured cuts running across the tattoos, and for the warming climate now destroying the frozen tombs. Open access under CC BY at Cambridge Core.',
+    },
+    {
+      key: 'simpson-2017',
+      cite: 'St John Simpson, Assistant Keeper in the Middle East Department, "Scythians, ice mummies and burial mounds", British Museum blog (23 August 2017)',
+      url: 'https://www.britishmuseum.org/blog/scythians-ice-mummies-and-burial-mounds',
+      kind: 'institution',
+      access: 'open',
+      note: 'A curator from the 2017 British Museum exhibition on the mechanics of the burials: tree-ring dating puts the five large Pazyryk tombs within a span of forty-eight years and radiocarbon places them in the mid fourth to early third centuries BC; percolating snowmelt froze under the stone caps and never thawed; the bodies were emptied and packed with straw and sewn with animal tendon, with the skull opened the same way; tomb chambers were interlocking larch log cabins; horses were laid outside the chamber in rows facing east; barrow 5 also held a four-wheeled cart and an imported pile carpet; every large Pazyryk mound had been robbed in antiquity. Note for link sweeps: britishmuseum.org returns 403 to automated fetchers while opening normally in a browser, so a dead-link report on this URL is a false positive.',
+    },
+    {
+      key: 'bm-scythians-intro-2017',
+      cite: 'The British Museum, "Introducing the Scythians", British Museum blog (30 May 2017)',
+      url: 'https://www.britishmuseum.org/blog/introducing-scythians',
+      kind: 'institution',
+      access: 'open',
+      note: 'The museum’s own summary of the material logic of a mobile household: grave goods are small or light, there is no furniture beyond low tables that come apart, floor coverings of sheepskin and felt were essential, and saddle horses went into the ground in elaborate costume including headgear with griffins or antlers. Also gives the conventional span of the culture, about 900 to 200 BC, and its reach from China to the northern Black Sea. The post carries a publication date of 30 May 2017 and no byline, which is why it is credited to the museum. Note for link sweeps: britishmuseum.org returns 403 to automated fetchers while opening normally in a browser, so a dead-link report on this URL is a false positive.',
+    },
+    {
+      key: 'grablevsky-2024',
+      cite: 'Anatoly Grablevsky, "Gold, Griffins, and Greeks: Scythian Art and Cultural Interactions in the Black Sea", Heilbrunn Timeline of Art History, The Metropolitan Museum of Art (May 2024)',
+      url: 'https://www.metmuseum.org/essays/scythian-art',
+      kind: 'institution',
+      access: 'open',
+      note: 'Establishes that "Scythian" covers a wide variety of mostly nomadic Iranic tribes that shared no single political authority and left no writing, so that every ancient text about them is Assyrian, Persian or Greek; that Greeks began settling the northern Black Sea coast in the seventh century BCE; that the lion-headed griffin was probably adopted from Mesopotamia after Scythian campaigns in the Near East in that same century; that perforated gold plaques were sewn onto garments and tall pointed caps as displays of wealth; and that scholars have argued for more than a hundred years about what the animal imagery meant, with no reading settled.',
+    },
+    {
+      key: 'met-scabbard',
+      cite: 'The Metropolitan Museum of Art, "Sheet-gold decoration for a sword scabbard", Greek or Scythian, ca. 340 to 320 BCE, gold, length 54.5 cm, accession number 30.11.12',
+      url: 'https://www.metmuseum.org/art/collection/search/253056',
+      kind: 'object',
+      access: 'open',
+      note: 'The museum’s own record states that the scabbard is of Scythian type while the decoration is Greek in style and undoubtedly of Greek workmanship, and that comparable sheet goldwork from the royal cemetery at Vergina in northern Greece and from Scythian rulers’ kurgans around the Black Sea has been linked to the same workshop. This is the object behind the lesson’s claim that Greek goldsmiths worked to steppe specifications.',
+    },
+    {
+      key: 'caspari-2018',
+      cite: 'Gino Caspari, Timur Sadykov, Jegor Blochin and Irka Hajdas, "Tunnug 1 (Arzhan 0): an early Scythian kurgan in Tuva Republic, Russia", Archaeological Research in Asia 15: 82 to 87 (2018)',
+      url: 'https://www.exploration-eurasia.com/pictures/Tunnug_1_Arzhan_0_an_early_Scythian_kurg.pdf',
+      doi: '10.1016/j.ara.2017.11.001',
+      kind: 'paper',
+      access: 'open',
+      note: 'States that Arzhan 1 in Tuva, dated by wiggle matching to the ninth or eighth century BCE, is the earliest known elite Scythian burial to date, while arguing on AMS dates from preserved wood that the neighbouring mound Tunnug 1 (Arzhan 0) belongs to the same oldest horizon and potentially predates it. Also that Arzhan 2, excavated by Chugunov, Parzinger and Nagler from 2001 to 2004, escaped looting because its main burial lay off centre and yielded one of the richest assemblages of the Eurasian steppe belt ever discovered. The Elsevier version of record is paywalled; the link is the excavation project’s own hosted copy, which is the uncorrected accepted proof and carries no page numbers, so the pagination given here comes from the Crossref record (volume 15, pages 82 to 87). The printed title carries a dash before its subtitle, rendered here as a colon.',
+    },
+    {
+      key: 'ventresca-miller-2021',
+      cite: 'Alicia R. Ventresca Miller, James Johnson, Sergey Makhortykh, Claudia Gerling, Ludmilla Litvinova, Svetlana Andrukh, Gennady Toschev, Jana Zech, Petrus le Roux, Cheryl Makarewicz, Nicole Boivin and Patrick Roberts, "Re-evaluating Scythian lifeways: Isotopic analysis of diet and mobility in Iron Age Ukraine", PLOS ONE 16(3): e0245996 (2021)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7946291/',
+      doi: '10.1371/journal.pone.0245996',
+      kind: 'paper',
+      access: 'open',
+      note: 'Isotope work on fifty-six individuals from Medvin, Mamai-Gora and Bel’sk, with no single system run on all of them: bone collagen carbon and nitrogen come from all three sites, while the strontium and enamel oxygen measurements are from Medvin and Mamai-Gora only, the Bel’sk teeth having been analysed in a separate study. The authors report generally low levels of human mobility in the vicinity of urban locales, agro-pastoralism built substantially on millet, and the striking detail that the few genuinely long-distance movers ate less millet than the people who stayed. Only Bel’sk, described as a fortified complex larger than most urban centres in Iron Age Europe, has its cemeteries at a settlement; the paper states that there was no settlement in close proximity to the Medvin cemetery. Their conclusion is a reassessment from highly mobile pastoralists to diverse urbanites with a wide range of subsistence strategies.',
+    },
+    {
+      key: 'unterlander-2017',
+      cite: 'Martina Unterländer, Friso Palstra, Iosif Lazaridis and twenty-two colleagues, "Ancestry and demography and descendants of Iron Age nomads of the Eurasian Steppe", Nature Communications 8: 14615 (2017)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC5337992/',
+      doi: '10.1038/ncomms14615',
+      kind: 'paper',
+      access: 'open',
+      note: 'Genomic and mitochondrial data from the eastern and western ends of the steppe. A multiregional model fits the observed diversity better than a single origin, so the authors conclude that western and eastern Scythian groups arose independently in their respective regions, and that substantial ongoing gene flow between them is a plausible mechanism for the general uniformity of Scythian material culture right across the Eurasian steppe zone.',
+    },
+    {
+      key: 'gnecchi-ruscone-2021',
+      cite: 'Guido Alberto Gnecchi-Ruscone, Elmira Khussainova, Nurzhibek Kahbatkyzy and twenty-eight colleagues, "Ancient genomic time transect from the Central Asian Steppe unravels the history of the Scythians", Science Advances 7(13): eabe4414 (2021)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7997506/',
+      doi: '10.1126/sciadv.abe4414',
+      kind: 'paper',
+      access: 'open',
+      note: 'Genome-wide data for 111 ancient individuals from 39 archaeological sites across the Central Asian steppe, spanning the first millennium BCE and the first millennium CE. The authors find that the Iron Age gene pools formed by admixture rather than from one ancestral population: the eastern group around the Altai combines local Middle to Late Bronze Age steppe ancestry with eastern Eurasian ancestry related to the Khovsgol population of northern Mongolia, plus a smaller Iranian or Turan related component, while the western group in the southern Urals draws on similar sources with very little eastern Eurasian input. Further turnovers follow in the first centuries CE. This is the larger and later study against which the 2017 multiregional result has to be read.',
+    },
+    {
+      key: 'herodotus-4-46',
+      cite: 'Herodotus, Histories 4.46, translated by A. D. Godley (Cambridge: Harvard University Press, 1920), Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D46',
+      kind: 'primary',
+      access: 'open',
+      note: 'The famous judgement the lesson quotes: men who have no established cities or forts, who are all nomads and mounted archers, and who live not by tilling the soil but by raising cattle and carrying their dwellings on wagons, cannot fail to be invincible and unapproachable. Herodotus offers it as praise of a military arrangement, not as a description of an economy.',
+    },
+    {
+      key: 'herodotus-4-17',
+      cite: 'Herodotus, Histories 4.17, translated by A. D. Godley (Cambridge: Harvard University Press, 1920), Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D17',
+      kind: 'primary',
+      access: 'open',
+      note: 'The passage the lesson sets beside the famous one, in the same book: north of the port of the Borysthenites live the Callippidae and the Alazones, who plant and eat grain, onions, garlic, lentils and millet, and above them Scythian farmers who plant grain not to eat but to sell. Herodotus is distinguishing peoples inside his own Scythia rather than contradicting himself, so commercial cereal agriculture belongs to the picture he drew; it was later readers who kept the nomads and dropped the farmers.',
+    },
+    {
+      key: 'herodotus-4-72',
+      cite: 'Herodotus, Histories 4.72, translated by A. D. Godley (Cambridge: Harvard University Press, 1920), Perseus Digital Library',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D72',
+      kind: 'primary',
+      access: 'open',
+      note: 'The account of what happened a year after a Scythian king’s burial: fifty of his servants and fifty of his best horses strangled, emptied, stuffed with chaff and sewn up, then mounted on stakes and propped on half-wheels so that a ring of riders stood around the tomb. It is Greek testimony rather than an excavated find, and the lesson treats it that way.',
+    },
+  ],
+  storyContext:
+    'A camp in the high Altai of southern Siberia, in the fourth century BCE. The woman, her two tattooed forearms, her horses and cart and carpet, and the frozen barrow are the ones excavated at Pazyryk and imaged more recently at the Hermitage, and the preparation of her body follows the excavators’ account of these burials. The tattooist is a composite, and so is everything around her: the tent, the pigment and the cup, the hour of the day, the household’s packing, the weather, and the order of the funeral belong to the story rather than to any record.',
+  story: [
+    'The arm lies palm upward across the tattooist’s knee, bare from the wrist nearly to the elbow. Light comes through the felt wall of the tent as a warm brown haze, good enough to work by until the middle of the afternoon. In a wooden cup there is soot ground into water, thick as cream. Beside it are two tools: a bundle of fine points bound so their tips sit level, and a single point kept apart in a fold of leather. She begins at the wrist, where the bend of the joint will let the deer she is about to lay down follow the turn of the arm.',
+    'She works slowly, dipping and pressing and lifting and wiping in the same order every time. The bound points go in together and come out together, so the line they leave holds the same width along its whole length. A shape can be drawn once and left alone instead of thickened by a hundred separate pricks. The woman under her hands breathes through it and does not pull away. Every so often the tattooist stops to load the tool again, and where she picks the line back up the two ends overlap by a hair.',
+    'Then she changes tools. The antler tips need a finer stroke than the bundle can give, and so do the hooves, so she takes the single point out of its leather and finishes the small shapes one puncture at a time.[^caspari-2025] Over two sittings the arm fills with animals: a deer at the wrist, a second stag higher up, and among them three cats, a leopard and two tigers. The leopard and the upper tiger have their heads swung around to face whoever is looking, which is unusual in this work and gives the crowded arm a centre.',
+    'When the light goes she takes the cup outside to rinse it. The ground around the tents is grazed short and the air smells of horses and wet wool, and two families are already loading: felt walls rolled and tied, a low table taken apart, wooden cups, a bag of dried curd, and the good coats, heavy in the hand because hundreds of small stamped gold plaques are sewn to them in rows. The pasture the herd needs in June is not the pasture it needs in October, so nothing here is built to stay, and a family’s wealth is its animals, its string of horses, and whatever it can wear.',
+    'The other forearm was tattooed by a less certain hand, and she can see it in the work. There is a stag on that one too, but both of its front legs come off the near side of the body as though the animal were flat, and its head runs around to the inside of the arm, where it can only be seen if the woman turns her wrist outward to show it. The lines are thinner and there are fewer of them, laid down by someone with less practice, or less time, than the hand at work today. Nobody has ever covered it over or corrected it.',
+    'The tattooist lives to see the burial. A pit goes down into the stony ground and is lined with a cabin of squared larch logs, and while the digging goes on the body is prepared: the organs taken out and the cavity packed with straw, the incisions closed with animal tendon, and the same done through small openings cut in the skull.[^simpson-2017] The cuts run straight across the tattooed forearms, through the deer and the cats, and nothing else about the work looks careless. Outside the chamber her horses are laid in a row facing east, still in their bridles, and a four-wheeled cart is taken apart and stacked beside them with a pile carpet that came from a long way south.',
+    'The pit is filled with logs and stones, the broken shovels and mallets thrown in on top, and a mound of boulders and gravel raised over all of it. Rain and snowmelt find their way down through the stones and pool on the chamber floor, and under a cap of rock at this height the ground never gets warm enough in summer to let the ice go. Robbers will come, and they will take the gold; they will not want the felt, the carpet, the horses, or the woman. More than two thousand years later a camera fitted for infrared light will be set up around her in a museum in St Petersburg, and the difference between her two arms will be seen for the first time.',
+  ],
+  significance: [
+    'The scene above is built from one excavation. Pazyryk is a cluster of barrows in the high Altai; tree-ring dating puts the five large ones inside a span of forty-eight years, and radiocarbon places them in the mid fourth to early third centuries BCE. The preservation was an accident of drainage: meltwater seeped into those particular chambers, froze, and never thawed, so the ice kept wood, leather, felt, horses and human skin. Every one of those mounds had also been robbed in antiquity, which is why they hold so little gold and so much of everything else.[^simpson-2017] Only seven tattooed bodies survive from the Early Iron Age of southern Siberia, the ninth to second centuries BCE, and the marks on the woman from the fifth barrow were not read properly until sub-millimetre near-infrared photography was turned on them. That imaging is where the story gets its technique: the bundled points, the single fine one, the overlapping ends where the work paused, and the distance in skill between her two forearms.[^caspari-2025] The tattooist in the story is invented. The two arms are not.',
+    'The word Scythian is Greek, and it was never the name of a nation. The Greeks used Skuthoi for the mostly Iranic-speaking pastoralists they met north of the Black Sea, communities with no common political authority and no writing of their own, which is why every ancient sentence about them was composed by an Assyrian, a Persian or a Greek. The much wider sense, stretched east along the belt of grass to the Altai and northern China, is a modern convenience rather than anything a Greek would have recognised, and ancient DNA has made it harder to defend. A 2017 study found that genomes from the two ends of the steppe fitted a multiregional model better than a single origin, and proposed continuing gene flow between them to explain the shared material culture.[^unterlander-2017] A larger transect published in 2021, 111 ancient genomes from thirty-nine sites, puts the weight elsewhere: two Iron Age gene pools formed separately near the Altai and the southern Urals out of local Bronze Age herders, the eastern one taking in much ancestry from northern Mongolia, the western one only a small share.[^gnecchi-ruscone-2021] Neither gives the label a single ancestral people; the sameness it rests on came from contact, not common descent.',
+    'Herodotus is the source everyone quotes. Writing in the fifth century BCE, he judged that men who have no established cities or forts, who are all nomads and mounted archers, and who live not by tilling the soil but by raising cattle and carrying their dwellings on wagons, cannot fail to be invincible and unapproachable.[^herodotus-4-46] That is a shrewd military observation and not the whole of what he thought, because earlier in the same book he had described Scythian cultivators inland from the Greek trading port of the Borysthenites, named for the river now called the Dnieper, who grew grain not to eat but to sell.[^herodotus-4-17] Later readers kept the invincible nomads and dropped the cultivators. The archaeology has since found them again. A multi-isotope study published in 2021, covering fifty-six people buried at three Scythian-era sites in Ukraine, found very little isotopic evidence for mobility there. Most had spent their lives inside the local geology on a diet built substantially on millet, and the handful who really had come from far away ate less millet than everyone who stayed. One of the three, Bel’sk, is a fortified complex larger than most urban centres in Iron Age Europe. The authors frame the result as low mobility in the vicinity of urban locales, and claim only that these communities were economically diverse rather than uniformly nomadic.[^ventresca-miller-2021] It is evidence about Ukraine, not about Tuva, where the frozen tombs show a household that genuinely moved. The Scythian world held both, several thousand kilometres apart.',
+    'Mobility, then, was not a failure to settle. It was an expensive specialisation practised by part of a mixed society, and it dictated what wealth could be. The dry heart of the steppe grows grass that people cannot eat and that ploughs cannot reliably farm, and a herd converts it into food. But a herd has to be walked to its next pasture, which rules out granaries, warehouses and stone. So what survives in the tombs is small, light, or worn: no furniture beyond low tables that come apart, but sheepskins and felt rugs, and horse harness so elaborate that saddle horses went into the ground in masks and headgear that turned them into griffins or antlered stags.[^bm-scythians-intro-2017] Even the gold was worn: the plaques are pierced so that they could be sewn onto garments and onto the tall pointed caps of the elite.[^grablevsky-2024] Bel’sk complicates this rather than overturning it, since a rampart circuit on that scale is not the work of people with nowhere to put their labour. What did not change is where the wealth went: under the mounds rather than into halls, so that the kurgan carried the display a city elsewhere spreads across temples, palaces and walls. Herodotus describes the extreme version: a year after a king’s burial, fifty servants and fifty horses were strangled, emptied, stuffed and mounted on stakes so that a ring of riders stood around the mound.[^herodotus-4-72] Whether or not it was ever done exactly so, it is the logic of the mounds themselves pushed as far as it will go.',
+    'None of this was a Greek export, which is worth saying because the story usually gets told from the Black Sea eastward. The oldest securely dated elite burial of the whole horizon is Arzhan 1, in Tuva in southern Siberia, about four thousand kilometres east of the nearest Greek colony; wiggle-matched radiocarbon puts it in the ninth or eighth century BCE, generations before Greeks began settling the northern Black Sea coast in the seventh, and a neighbouring Tuvan mound, Tunnug 1, may yet prove older. Its neighbour Arzhan 2, excavated between 2001 and 2004, escaped the robbers because its main grave lay off centre, and it produced one of the richest assemblages ever recovered on the Eurasian steppe.[^caspari-2018] What the Greek cities added was a market and a set of workshops. A sheet-gold covering for a sword scabbard, now in New York and made around 340 to 320 BCE, shows the arrangement plainly. It is a strip of gold 54.5 centimetres long, worked in relief with a battle, griffins at one end and, above the fighting, deer being killed by a lion and a griffin. The scabbard is a Scythian type, the frieze is Greek work, and comparable sheet goldwork has been tied to the workshop that supplied the Macedonian royal cemetery at Vergina.[^met-scabbard] A goldsmith in a Black Sea city was making Scythian objects in a Greek hand for a customer whose fortune was in horses.',
+    'What the animals meant is the field’s oldest open question, and a century of argument has not closed it. They may have lent the wearer the qualities of the beast, or turned away harm, or illustrated stories that are gone. The travels of the motifs are easier to follow than their meaning, and they run both ways: the lion-headed griffin appears to have been taken up from Mesopotamia after seventh-century BCE campaigns in the Near East, and versions of the animal style turn up later on a Thracian silver beaker in the west and a Xiongnu belt buckle in the east.[^grablevsky-2024] Nobody carried them the whole way. A household moved between its summer and winter pastures and no further, but the belt of grass was continuous, and societies that all knew how to feed animals on the move could pass metal, cloth, technique and images from one pasture to the next until they had crossed it. The routes later called the Silk Roads were inherited rather than opened. The reflex that reads people without cities as people without much else is older than Herodotus and has outlived him, and the evidence against it is specific: tattooists who kept two tools and knew when to change them, and who could draw an animal turning in space rather than laid flat; goldsmiths working fluently between Greek and steppe conventions; herds that were counted, inherited and multiplied like any other wealth. That evidence is running out, because the permafrost lenses that held the felt, the horses and the skin are thawing and the frozen tombs of the Altai are going with them.[^caspari-2025] The reflex is not running out. You meet it whenever a place is called empty because nothing in it was built to stay.',
+  ],
+  threadsOut: [
+    {
+      to: 'silk-road-pulse',
+      why: 'The animal style reached Thrace in one direction and Mongolia in the other long before any caravan route had a name, so the later network inherited a corridor that herders had already made passable, profitable and familiar.',
+    },
+    {
+      to: 'genghis-exchange',
+      why: 'Both begin with the same conversion of grass into horses and horses into reach, which is how a thin population on poor land came to matter to every settled state around it. What the Mongols added is everything the Scythians never had: a capital, a chancery, a written language and posting stations, so that a corridor herders had kept open for two thousand years became an administered road.',
+    },
+    {
+      to: 'crown-of-cyrus',
+      why: 'The Achaemenid machinery of satraps, roads and tribute lists worked on wealth that stood still long enough to be counted. In Herodotus’s account of Darius marching north of the Black Sea the Persians do reach a wooden-walled town, find that its people have abandoned it and left nothing inside, and burn it: there was no seat of government whose capture would end the war, and no granary or treasury to seize from people whose wealth had walked away with them.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What did near-infrared imaging reveal about how the tattoos on the woman from Pazyryk barrow 5 were actually made?',
+      answer:
+        'That the outlines were punched with a multi-point tool, which is why they hold an even width, and that a separate single point was used for the fine work: antler tips, hooves and the small motifs on the hands. Overlapping line ends mark pauses in the work, perhaps where the tattooist shifted position or reloaded the tool. There was no sign of incision or of subdermal stitching. The imaging also showed that the right forearm is far more skilful than the left, which its investigators read as either two different artists or one artist years apart.',
+    },
+    {
+      type: 'why',
+      prompt: 'Why did elites in this world put their wealth into clothing, horse gear and one enormous grave rather than into buildings?',
+      answer:
+        'Because a herd has to be walked to its next pasture, and anything you cannot carry is something you must abandon twice a year. Wealth therefore had to be portable, wearable, or alive: gold plaques perforated for sewing onto coats and caps, decorated bridles and saddle covers, and the animals themselves. That leaves a mobile society one permanent place to make its statement, the ground where its dead are buried. The kurgan absorbed everything that settled societies spread across palaces, temples and walls, which is exactly why the mounds are so large and were so thoroughly robbed.',
+    },
+    {
+      type: 'why',
+      prompt: 'If you deleted the Greek colonies of the Black Sea from this story, how much of it would actually change?',
+      answer:
+        'Less than the usual telling implies. The oldest securely dated elite burial of the horizon, Arzhan 1 in Tuva, dates to the ninth or eighth century BCE, generations before Greeks settled the northern Black Sea coast in the seventh, and a neighbouring Tuvan mound may be older still. Arzhan 1 lies about four thousand kilometres east of the Greek colonies, so the kurgan tradition and the animal style were not learned from Greeks. What would vanish is a market, a set of skilled workshops producing Scythian-shaped objects in a Greek idiom, and, more consequentially, almost all the writing. Without the Greek cities we would still have the gold and the frozen tombs, and we would have almost no ancient words about the people who made them.',
+    },
+    {
+      type: 'callback',
+      prompt: 'The Sintashta lesson described the chariot as a machine that concentrated a whole household’s surplus into two wheels, a matched pair of horses and a trained driver. Roughly a millennium later, the steppe fights and travels on horseback instead. What does that change about who can hold power?',
+      answer:
+        'A chariot needs level ground, two animals trained to work together, a crew, and a workshop able to build and repair light spoked wheels, so it stays the property of a household rich enough to keep all of that idle between uses. A ridden horse needs one animal and one rider, and every herder already has both. That lowers the entry cost of military power a long way and spreads it much wider, though not to nothing: a composite bow, a horse trained to stand noise and crowding, and years of practice are still a serious investment, and the kurgans show how steeply the society that resulted was stratified. What changes is where an army comes from. Mounted archers could be raised out of the herding population itself, by men whose ordinary working skills were already most of the military ones, rather than paid for and equipped by a treasury. It also explains the anxiety in the Greek and Persian sources: there was no single seat whose capture would end the war, and no army that could be beaten separately from the population it came out of.',
+      callbackTo: 'horse-and-wheel',
+    },
+    {
+      type: 'callback',
+      prompt: 'The earliest struck electrum, usually placed in Lydia and the neighbouring east Greek cities, worked by moving some of the checking before the transaction, so a stranger could accept a small piece of metal without weighing it. Gold sewn onto a Scythian coat is portable wealth too. Why is it not money?',
+      answer:
+        'Because it is not meant to be interchangeable. A struck piece is deliberately anonymous: its worth survives being handed to anyone, which is what makes it useful among strangers, and it leans on a weight standard that other people already recognise, whoever set it. The plaques on a coat are the opposite. They are sewn on in a pattern, tied to one wearer, and their value lies partly in being seen on that person, so cutting them free would destroy most of what they were for. The steppe’s general-purpose store of value was not the gold at all but the herd, which travels on its own legs, feeds its owner, and multiplies. That is a real difference in kind, and not a claim that coinage was fragile: struck metal circulated by weight alongside older bullion for centuries, in regions with very different states behind it.',
+      callbackTo: 'invention-of-money',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Herodotus, Histories, Book 4',
+      why: 'The oldest surviving portrait of the steppe peoples, in A. D. Godley’s translation, worth reading both for what a curious Greek could genuinely find out and for the places his informants clearly got away with something.',
+      url: 'https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.01.0126%3Abook%3D4%3Achapter%3D1',
+    },
+    {
+      title: 'Alicia R. Ventresca Miller and colleagues, Re-evaluating Scythian Lifeways',
+      why: 'The isotope study that replaced the roaming horde with fifty-six ordinary people who mostly stayed put and ate a great deal of millet; short, open, and unusually readable for a chemistry paper.',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC7946291/',
+    },
+    {
+      title: 'Anatoly Grablevsky, Gold, Griffins, and Greeks',
+      why: 'A museum essay built around objects you can enlarge on screen, following the griffin from Mesopotamia into Scythian goldwork and out again toward Thrace and Mongolia.',
+      url: 'https://www.metmuseum.org/essays/scythian-art',
+    },
+  ],
+});

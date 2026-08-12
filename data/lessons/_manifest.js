@@ -73,6 +73,7 @@ LOOM.lessonFiles = [
   'israel-one-god',
   'ionian-awakening',
   'crown-of-cyrus',
+  'scythian-gold',
   'athens-demokratia',
   'buddha-middle-path',
   'hundred-schools',
