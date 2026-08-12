@@ -187,9 +187,9 @@ LOOM.node([
     region: 'swasia',
     x: 55,
     threads: ['craft', 'ideas'],
-    hook: 'Generation after generation for seven centuries, Babylonian scribes recorded recurring observations of moon and planets alongside prices, weather, and river levels.',
+    hook: 'Generation after generation for nearly six centuries, Babylonian scribes recorded recurring observations of moon and planets, and in time prices, weather, and river levels beside them.',
     summary:
-      'From at least 652 BCE, Babylonian scholars maintained a long program of observing the sky alongside prices, weather, and river levels, although only a fraction of the diaries survives. From accumulated records they extracted period relations and predictive arithmetic for eclipses and planetary motion. Greek astronomers including Hipparchus used Babylonian observations and parameters; later transmission carried parts of that inheritance through Ptolemy and Islamic astronomy into early modern Europe.',
+      'From at least 652 BCE, Babylonian scholars maintained a long program of observing the sky, later recording prices, weather, and river levels beside it, although only a fraction of the diaries survives. From accumulated records they extracted period relations and predictive arithmetic for eclipses and planetary motion. Greek astronomers including Hipparchus used Babylonian observations and parameters; later transmission carried parts of that inheritance through Ptolemy and Islamic astronomy into early modern Europe.',
     edges: [
       { to: 'ionian-awakening', type: 'echoes', why: 'Greek natural inquiry grew near older Mesopotamian sky traditions, but Thales’s eclipse prediction is uncertain and the clearest borrowing came later.' },
       { to: 'new-eyes-on-the-sky', type: 'enables', why: 'Eclipse records and planetary parameters passed from Babylon through Ptolemy into the tables that Copernicus and Galileo’s generation still consulted.' },
