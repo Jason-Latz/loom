@@ -71,6 +71,7 @@ LOOM.lessonFiles = [
   'star-diaries',
   'invention-of-money',
   'israel-one-god',
+  'ionian-awakening',
   'crown-of-cyrus',
   'athens-demokratia',
   'buddha-middle-path',
