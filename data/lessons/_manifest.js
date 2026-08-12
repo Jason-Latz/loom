@@ -85,6 +85,7 @@ LOOM.lessonFiles = [
   'panini-grammar',
   'alexanders-comet',
   'zhuangzi-butterfly',
+  'euclid-elements',
   'ashoka-wheel',
   'qin-hammer',
 
