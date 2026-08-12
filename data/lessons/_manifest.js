@@ -68,6 +68,7 @@ LOOM.lessonFiles = [
   'upanishadic-turn',
   'library-of-nineveh',
   'chavin-oracle',
+  'star-diaries',
   'invention-of-money',
   'israel-one-god',
   'crown-of-cyrus',
