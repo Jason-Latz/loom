@@ -82,6 +82,7 @@ LOOM.lessonFiles = [
   'analects-of-confucius',
   'sacred-disease',
   'socratic-turn',
+  'panini-grammar',
   'alexanders-comet',
   'ashoka-wheel',
   'qin-hammer',
