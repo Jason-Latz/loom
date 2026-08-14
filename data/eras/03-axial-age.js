@@ -394,7 +394,7 @@ LOOM.node([
     threads: ['ideas'],
     hook: 'Confucius dies without gaining lasting political power; generations of followers preserve and reshape fragments of how he spoke, taught, and stood.',
     summary:
-      'Confucius held minor posts, wandered between courts, and died in 479 BCE without power. The Analects, compiled by disciples across generations afterward, preserves him in fragments: ren, humaneness, cultivated through ritual, family devotion, study, and reciprocity, and government as moral example rather than punishment. The compilation’s layers are debated. It became a shared curriculum across much of East Asia for roughly two millennia.',
+      'Confucius held minor posts, wandered between courts, and died in 479 BCE without power. The Analects, traditionally credited to his disciples and compiled across generations, preserves him in fragments: ren, humaneness, cultivated through ritual, family devotion, study, and reciprocity, and government as moral example rather than punishment. Its layers and its authorship are both debated. Chinese scholars read it for two thousand years, but it became the examination core of Korea, Japan, and Vietnam as well only after Zhu Xi placed it among the Four Books, a place it held until 1905.',
     edges: [
       { to: 'zhuangzi-butterfly', type: 'collides', why: 'The Zhuangzi makes Confucius a recurring character, sometimes mouthpiece and sometimes target, mocking the seriousness of moral cultivation.' },
       { to: 'han-mandate', type: 'enables', why: 'Han patronage of classical learning began the process that made Confucius’ teachings a governing orthodoxy he never enjoyed alive.' },
