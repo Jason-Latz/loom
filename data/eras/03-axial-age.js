@@ -412,7 +412,7 @@ LOOM.node([
     threads: ['craft', 'ideas'],
     hook: 'In central Nigeria, sculptors fire near-life-size figures with elaborate coiffures and calm triangular eyes, while nearby furnaces learn to bleed iron from stone.',
     summary:
-      'Nok communities around Nigeria’s Jos Plateau produced sub-Saharan Africa’s earliest known large terracotta sculpture and some of its earliest iron smelting, with furnaces dated by the fifth century BCE. Whether West African ironworking was independently invented or arrived across the Sahara remains genuinely unresolved. The society behind the art, farmers without cities or kings so far as excavation shows, faded around the turn of the era; the sculptures’ purpose is still argued.',
+      'Nok communities around Nigeria’s Jos Plateau produced sub-Saharan Africa’s earliest known large terracotta sculpture and some of its earliest iron smelting, which pottery from the furnace sites now places not much before the seventh century BCE. Whether West African ironworking was independently invented or arrived across the Sahara remains genuinely unresolved. The society behind the art, farmers without cities or kings so far as excavation shows, faded around the turn of the era; the sculptures’ purpose is still argued.',
     edges: [
       { to: 'bantu-and-aksum', type: 'echoes', why: 'Nok and later Bantu-speaking communities belong to overlapping West and Central African histories, but Nok was not their single source and iron did not travel with language as one universal package.' },
       { to: 'golden-sahara', type: 'echoes', why: 'Nok demonstrates deep farming, artistic, and ironworking histories in West Africa, not a single ancestral source for the later gold-trade states.' },
