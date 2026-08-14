@@ -84,6 +84,7 @@ LOOM.lessonFiles = [
   'sacred-disease',
   'socratic-turn',
   'panini-grammar',
+  'dong-son-drums',
   'alexanders-comet',
   'zhuangzi-butterfly',
   'garden-and-stoa',
