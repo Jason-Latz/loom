@@ -52,7 +52,38 @@ continue on it. From that point:
   but `claude-opus-5`, is re-run from scratch before its output is accepted.
   Nothing ships on the wrong model.
 
-## Where the run stopped (2026-08-12, weekly limit)
+## Outcome (2026-08-12)
+
+**All 21 shipped. Era III is complete at 34/34**, and the atlas stands at 116
+lessons, 1,298 sources and 1,630 markers, gate
+`OK: 365 nodes, 802 wires, 10 eras, 116 lessons. 0 warning(s).`
+
+Release sweep: 348 URLs, **0 confirmed dead**. The sweep first reported 19 dead,
+then 8 on an immediate re-run, and all 8 of those proved live or blocked when
+checked by hand: Perseus was returning a Varnish "Backend fetch failed" across
+its whole text service (confirmed in a real browser, its root answering 200),
+Redalyc answered 200 with a 2.8 MB PDF, and `assets.cambridge.org` resolves but
+drops connections while Cambridge bot-walls its main site with a 403. This is
+the failure mode `CLAUDE.md` warns about, in triplicate. Nothing was changed.
+
+**Six graph corrections** came out of the research, each verified at source by
+the orchestrator before the edit and committed apart from its lesson: the
+Upanishadic village setting, Nineveh's fire-versus-burial preservation and its
+tablet count, the star diaries' span and price columns, the Analects' East Asian
+reach, the Nok iron date, and the Dong Son casting method and period. **Two
+further suggestions were declined** because the era file was loose rather than
+wrong: Carthage's Sardinian grain and craft production (true of Carthage, simply
+not covered by the lesson) and Nok's Jos Plateau geography (Breunig himself
+places Nok between Abuja, Jos and Kaduna).
+
+Deaths and recoveries: eight stages died across the run, to connection drops,
+a Fable usage limit and a weekly limit. Every one was harvested rather than
+re-run. Two lessons kept Fable-authored drafts recovered from dead forge agents
+(wine-dark-song, zapotec-dawn), and carthage-ledger, nok-terracotta and
+garden-and-stoa resumed at verification with all their fix work intact, costing
+two agents each instead of nine.
+
+## Where the run stopped (superseded, kept for the record)
 
 Agents stopped with "You've hit your weekly limit, resets 2am
 (America/Chicago)". **17 of 21 lessons are shipped and committed**; the atlas

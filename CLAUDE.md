@@ -31,14 +31,13 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
 - `index.html` — shell; loads all data via plain script tags (no modules, no fetch, so file:// works).
 - `styles.css` — the whole design system. Parchment/ink + 4 pigment thread colors as CSS vars; `body.lamplight` flips to night palette.
 - `data/graph-core.js` — LOOM registry: threads, regions (map meridians), era/node/lesson tables.
-- `data/worldmap.js` — Natural Earth 110m land as one SVG path (public domain), equirectangular 2000x1000. Rendered as the map bands that bookend the chart.
+- `data/worldmap.js` — Natural Earth 110m land as one SVG path (public domain), equirectangular 2000x1000, drawn as the map bands that bookend the chart.
 - `data/eras/01..10-*.js` — the graph. Nodes carry id/title/date/sort/region/x/threads/hook/summary/edges. Node array order per era = reading order = main sequence. Edges point FORWARD in that sequence only.
 - `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js starts the app, then streams them in; nodes light up as files register).
 - `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters, path highlighting, and the two world-map bands.
 - `js/reader.js` — dossier panel + lesson reading room + questions UI + the citation apparatus (marker splitting, the evidence switch, the sources cartouche).
-- `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from a feature of the present). Always a subset of the real graph.
-- `js/app.js` — localStorage state (`loom.v1`), header controls, search, intro.
-- `docs/forge-spec.md` — binding style contract for lesson prose; `.claude/skills/forge-lesson/` is the skill that writes new lessons ("forge <node-id>").
+- `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from the present). Always a subset of the real graph.
+- `js/app.js` — localStorage state (`loom.v1`), header controls, search, intro. `docs/forge-spec.md` is the binding style contract for lesson prose, and `.claude/skills/forge-lesson/` the skill that writes new lessons ("forge <node-id>").
 
 ## Conventions
 
@@ -52,8 +51,7 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
 - Trust the writer to research and correct lesson facts. Briefs are scaffolding,
   not a cage: a brief that turns out wrong should be corrected in the lesson,
   and if the era file is what is wrong, fix that too and commit it separately.
-- Before calling figures or events contemporaneous, calculate and compare their
-  dates explicitly rather than inferring from an era label.
+- Before calling figures or events contemporaneous, calculate and compare their dates explicitly rather than inferring from an era label.
 - Treat Loom as artwork: prioritize beautiful, engaging prose, elegant pedagogy
   and aesthetic coherence over merely correct coverage. Jason likes the chart's
   parchment-atlas look and its dense woven topology; preserve that character.
@@ -61,20 +59,19 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   review subtasks; keep architecture and final verification centralized.
 - Each era should improve on the prose before it. Give every lesson a dedicated
   revision pass for clarity, concrete image and restraint; accuracy is the floor.
-- Mobile and interaction foundations are reliable; content quality is the main
-  problem now, so resist feature creep.
+- Mobile and interaction foundations are reliable; content quality is the main problem, so resist feature creep.
 - **Every lesson carries per-claim citations.** `citationsVersion: 1`, a
   `sources` array, and `[^source-key]` markers after the punctuation of the
   clause they support (aim 6 to 12; the gate allows 5 to 16). Markers stay
   hidden until the reader presses "Show the evidence", so the apparatus costs
   the reading nothing. Full contract in `docs/forge-spec.md`.
 - **A citation is only real once you have opened it.** Resolve DOI metadata at
-  `https://api.crossref.org/works/<doi>` before naming authors, venue, volume
-  or pages, and fetch the URL to confirm it hosts what the cite claims. A live
-  authoritative paper attached to a sentence it does not support passes the
-  gate and is worse than no citation. Six solid beat twelve with one invented.
-  Before a release, sweep the links and re-audit the overrules: a third-party
-  pass over rejected citation findings once found 25 of 94 rejections wrong.
+  `https://api.crossref.org/works/<doi>` before naming authors, venue, volume or
+  pages, and fetch the URL to confirm it hosts what the cite claims. A live
+  authoritative paper attached to a sentence it does not support passes the gate
+  and is worse than no citation. Six solid beat twelve with one invented. Before
+  release, sweep links and re-audit overrules: a third-party pass over rejected
+  citation findings once found 25 of 94 rejections wrong.
 - No em/en dashes anywhere in content or UI copy (Jason's rule; check enforces).
 - Node ids are kebab-case and permanent (lessons, edges and progress key on
   them). Adding a node: insert at the right chronological array position with
@@ -97,17 +94,16 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   goes double for citations: the gate proves a marker resolves and a URL parses,
   never that the paper supports the sentence.
 - **Citation markers must never change the prose.** They are stripped before
-  every measurement in the gate. When bulk-adding them, prove it: strip the
-  markers from the edited file and diff the prose against git HEAD. Anything
-  other than byte-identical is a bug in the tooling, not in the writing.
+  every measurement in the gate. When bulk-adding them, prove it: strip them from
+  the edited file and diff the prose against git HEAD. Anything but byte-identical
+  is a bug in the tooling, not the writing.
 - **When a long run dies, harvest it; do not resume it.** Deaths leave finished
-  drafts and completed reviews on disk: read `journal.jsonl`, find the stage
-  each lesson reached, and launch a tail scoped to the rest. Identify recovered
-  results by content, not id (reviews name other nodes). Findings are too big
-  for `args`, so embed them in the generated script and parse-check it with
-  `new Function`, since `node --check` silently passes a quote bug. A stage that
-  died mid-edit leaves the file in an unknown partial state: tell the next agent
-  to re-check every finding against the file rather than trust either.
+  drafts and completed reviews on disk: read `journal.jsonl`, find the stage each
+  lesson reached, and launch a tail scoped to the rest. Identify recovered results
+  by content, not id (reviews name other nodes). Findings are too big for `args`,
+  so embed them in the generated script and parse-check with `new Function`, since
+  `node --check` silently passes a quote bug. A stage that died mid-edit leaves an
+  unknown partial file: tell the next agent to re-check every finding against it.
 - **A fix agent given ~30 findings dies mid-response.** The prompt is not the
   problem, the reply is. Chunk the fix stage into passes of about 8 findings and
   demand a compact report (2026-08-11, twice, before chunking).
@@ -121,60 +117,64 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-08-11, Era III in progress)
+## State (2026-08-12, Era III complete)
 
-- **101 lessons, every one with per-claim citations**: 1,134 sources and 1,397
-  markers. Gate: `OK: 365 nodes, 802 wires, 10 eras, 101 lessons. 0 warning(s).`
-- **Era III is being charted now** (19/34 and rising). Read
-  `docs/era-iii-forge-run.md` before touching this era: run spec, model
-  contract, batch grouping and operational lessons.
-- **Fable 5 hit its usage limit mid-run on 2026-08-11** and Jason moved the run
-  to Opus 5, so author and critic are now the same model. The compensation is
-  **two independent reviewers per lesson with different lenses** (sources, facts
-  and dates; craft, pedagogy and graph truth), each in a fresh context. Restore
-  `model: 'fable'` on the prose stages when Fable is available again.
-- **Eras I and II are complete** (20/20, 32/32); spec: `docs/era-ii-forge-run.md`.
+- **116 lessons, every one with per-claim citations**: 1,298 sources and 1,630
+  markers. Gate: `OK: 365 nodes, 802 wires, 10 eras, 116 lessons. 0 warning(s).`
+- **Eras I, II and III are complete** (20/20, 32/32, 34/34). Read
+  `docs/era-iii-forge-run.md` before charting a new era: model contract, batch
+  grouping, and the operational lessons that cost the most to learn. Era II's
+  spec is `docs/era-ii-forge-run.md`.
+- **Fable 5 hit its usage limit during Era III** and Jason moved the run to Opus
+  5, so author and critic became the same model. The compensation is **two
+  independent reviewers per lesson with different lenses** (sources, facts and
+  dates; craft, pedagogy and graph truth), each in a fresh context. Keep both
+  lenses; restore `model: 'fable'` on prose stages when Fable is available.
 - **Keep the prose clean** (Jason, 2026-08-11). He rejected the dense literary
-  register by name: fragment chains, stacked metaphor, aphoristic poses,
-  objects granted intentions. The rule is in `docs/forge-spec.md` and overrides
-  the exemplar's style where they conflict. It is not a licence to go flat: an
-  audit of the first four Era III lessons scored all of them 5 of 5 on
-  specificity, which is the thing the rule must never cost.
+  register by name: fragment chains, stacked metaphor, aphoristic poses, objects
+  granted intentions. The rule is in `docs/forge-spec.md` and overrides the
+  exemplar where they conflict. It is not a licence to go flat: an audit of four
+  Era III lessons scored all 5 of 5 on specificity, the thing it must not cost.
 - **Keep the polish stage, for notes rather than length:** it applies the
   verifier's leftovers, often real citation and craft fixes.
 - **Word bands widened 2026-08-06** (Jason: lessons may run a little longer).
-  Story 600 to 1,000 and View from Above 600 to 1,250 are shape guidance only:
-  the **combined 1,500 to 2,200 total is the sole binding constraint**, being
-  what the gate measures and what protects the ten minute promise. Never
-  compress a section doing real work while the total sits comfortably in band.
+  Story 600 to 1,000 and View from Above 600 to 1,250 are shape guidance: the
+  **combined 1,500 to 2,200 total is the sole binding constraint**, being what
+  the gate measures and what protects the ten minute promise. Never compress a
+  section doing real work while the total sits comfortably in band.
 - The evidence switch persists in `loom.v1`, and `scripts/check.mjs` REQUIRES
   citations, so a new lesson cannot ship without them.
 - `node scripts/check-links.mjs` sweeps every citation, DOI and further-reading
   URL. **Read its output, do not act on it**: past sweeps called live links dead
-  over transient errors and publisher bot walls that open fine for a human.
+  over transient errors and bot walls that open fine for a human (Era III's
+  release sweep reported 19 dead, then 8, and all 8 proved live or blocked).
   Confirm in a real browser before touching a link.
-- Remaining unwritten: 264 seeds (III 19/34, IV 9/34, V 13/38, VI 8/40, VII to
-  X untouched). Graph is at its final size. `AGENTS.md` points here, not a copy.
+- Remaining unwritten: 249 seeds (IV 9/34, V 13/38, VI 8/40, VII to X
+  untouched). Graph is at its final size. `AGENTS.md` points here, not a copy.
 
 ## Change log
 
-- **2026-08-11:** Era III opened. Seven lessons one at a time, then concurrent
-  batches at Jason's request. Fable's limit moved the run to Opus, answered
-  with two diverse reviewers per lesson. Two era-file corrections so far, both
-  found by review and committed apart from the lessons: the Upanishadic node
-  was set in a village when these texts are staged in royal courts, and the
-  Nineveh node credited the fire with preserving the tablets when Robson
-  credits burial under rubble. Full run: `docs/era-iii-forge-run.md`.
+- **2026-08-12:** Era III completed, the third fully charted era. All 21 lessons
+  forged: seven singly, then concurrent batches at Jason's request. Fable's
+  usage limit moved the run to Opus mid-flight, answered with two diverse
+  reviewers per lesson instead of one. **Six graph corrections came out of the
+  research**, each committed apart from its lesson: the Upanishadic node sat in
+  a village when these texts are staged in royal courts; Nineveh credited the
+  fire with preserving tablets that Robson says burial saved, and its 30,000 are
+  the whole excavated heap, not a library; the star diaries ran nearly six
+  centuries, not seven, with no prices at the start; the Analects reached Korea,
+  Japan and Vietnam with Zhu Xi, not across two millennia; Nok iron starts in
+  the seventh century BCE, not the fifth; the drums were cast in pieced moulds,
+  not one pour. Two more were declined: the file was loose there, not wrong.
 - **2026-08-06:** Era II completed, the second fully charted era. All 19
   lessons forged in three sequential batches, integrating each before launching
   the next so callbacks could reach the new lessons and a dead run cost at most
   one batch. Nineteen gate-green commits, 339-URL sweep, 0 dead. **Six graph
   corrections came out of the research** and were committed apart from the
-  lessons, because the forge agents kept finding the era file wrong (the
-  Austronesian summary overstated Papuan ancestry in Remote Oceania; the
-  secondary-products summary bundled traction, wool and wagons when only wagons
-  cluster; Poverty Point's imports come a thousand miles, not seven hundred).
-  Next time: **when a lesson and its node summary disagree, the lesson usually
+  lessons, because the forge agents kept finding the era file wrong (Papuan
+  ancestry overstated in Remote Oceania; traction, wool and wagons bundled when
+  only wagons cluster; Poverty Point's imports a thousand miles, not seven
+  hundred). **When a lesson and its node summary disagree, the lesson usually
   wins**, so check the era file against the finished prose before shipping.
 - **2026-08-05:** Era VI opened: eight lessons (Cluny to Cairo), 111-URL sweep
   clean. The run outlived a usage limit and a 529 wave; resume caching re-ran
@@ -186,8 +186,8 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   carried. The gate now requires citations.
 - **2026-07-29:** Era I completed (20/20). The verify pass caught what the gate
   cannot: a fabricated stance attributed to a living scholar, a geographic
-  falsehood, a false causal bridge, and an arithmetic error both reviews
-  missed. Report: `docs/era-i-completion-report.md`.
+  falsehood, a false causal bridge, an arithmetic error both reviews missed.
+  Report: `docs/era-i-completion-report.md`.
 - **2026-07-26:** Era V released (thirteen lessons, 37 blockers), the site moved to loomhistory.com, and a mobile pass landed.
 - **2026-07-18 to 21:** The 365 expansion. 236 seed nodes designed and
   adversarially verified as pure insertions, more than a hundred nodes
