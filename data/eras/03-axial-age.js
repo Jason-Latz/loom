@@ -530,7 +530,7 @@ LOOM.node([
     region: 'europe',
     x: 32,
     threads: ['ideas'],
-    hook: 'In a private garden, Epicurus teaches that death is nothing to us; across town under a painted colonnade, Zeno teaches that virtue is the only good. Athens, its empire gone, is buying therapies.',
+    hook: 'In a private garden, Epicurus teaches that death is nothing to us; across town under a painted colonnade, Zeno teaches that virtue is the only good. Both are selling a cure for misery, and Athens is buying.',
     summary:
       'After Alexander, philosophy in Athens turned therapeutic. Epicurus’ Garden taught that the world is atoms and void, gods do not meddle, and pleasure rightly understood means freedom from fear and pain. Zeno’s Stoa taught a providential cosmos in which only character is truly ours and emotions follow judgments we can retrain. Rivals in doctrine, they agreed philosophy’s job is curing misery, and Rome’s elite later took both as manuals for living.',
     edges: [
