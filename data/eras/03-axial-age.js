@@ -473,12 +473,12 @@ LOOM.node([
     id: 'dong-son-drums',
     era: 3,
     title: 'The Bronze Drums of Dong Son',
-    date: 'c. 500 to 100 BCE',
+    date: 'c. 600 BCE to 200 CE',
     sort: -350,
     region: 'easia',
     x: 83,
     threads: ['craft', 'wealth'],
-    hook: 'From the Red River delta, bronze drums a meter across, cast in one pour and ringed with feathered dancers and long boats, travel south across island seas.',
+    hook: 'From the Red River delta, bronze drums a meter across, cast in pieced clay moulds and ringed with feathered dancers and long boats, travel south across island seas.',
     summary:
       'Dong Son communities in northern Vietnam mastered large bronze casting, wet-rice farming, and river trade. Their great drums, used in ways that remain debated and often associated with status and ceremony, have been found from Yunnan to eastern Indonesia. That distribution maps an exchange world across the South China Sea before Indian and Chinese courts became major forces there. Han conquest absorbed the Red River homeland in 111 BCE; related casting traditions continued elsewhere.',
     edges: [
