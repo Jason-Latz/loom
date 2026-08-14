@@ -1,0 +1,181 @@
+LOOM.lesson({
+  id: 'zapotec-dawn',
+  readingMinutes: 10,
+  citationsVersion: 1,
+  sources: [
+    {
+      key: 'justeson-lowry-2026',
+      cite: 'Justeson and Lowry, "A Lunar Day Count at Monte Alban and the Chronology of Early and Middle Preclassic Zapotec Hieroglyphic Texts (ca. 496 to 221 BCE)", Latin American Antiquity, published online 2 June 2026, pages 1 to 23',
+      url: 'https://doi.org/10.1017/laq.2025.10148',
+      doi: '10.1017/laq.2025.10148',
+      kind: 'paper',
+      access: 'open',
+      note: 'The source for the two interlocking counts and the 18,980 day calendar round, for the Zapotec habit of naming people after their birth day, for the point that Zapotec day names alone among Mesoamerican ones carried no numeral word (a non-numerical classifier stood in its place, while the numeral appears only in the hieroglyphic writing), for the dating of the inscribed Mound J orthostats to the Pe phase of 300 to 100 BCE, for the reading of Caso’s "Glyph W" as a count of evenings since the moon’s first crescent, and for the placement of seven fully preserved dates, carried by four Monte Alban texts, between 496 and 222 BCE. That span is the figure the article’s own text gives, and it is the one this lesson uses throughout; the published title in the citation above rounds the same span to ca. 496 to 221 BCE. It opens by stating that Zapotec civilization yields the earliest corpus of hieroglyphic texts from Mesoamerica, and it works from the 103 divinatory calendars that northern Zapotec communities surrendered to the Inquisition, which list the twenty day names in order. Open access under a Creative Commons licence at Cambridge.',
+    },
+    {
+      key: 'tavarez-justeson-2008',
+      cite: 'Tavarez and Justeson, "Eclipse Records in a Corpus of Colonial Zapotec 260-Day Calendars", Ancient Mesoamerica 19(1): 67 to 81 (2008)',
+      url: 'https://facultysites.vassar.edu/tavarez/pubs/Eclipse%20Records.pdf',
+      doi: '10.1017/S0956536108000266',
+      kind: 'paper',
+      access: 'open',
+      note: 'Dates the surrender of the calendars, which Justeson and Lowry leave undated: between September 1704 and January 1705 the elected authorities of at least 105 Zapotec, Chinantec and Mixe communities registered confessions about their ritual practice before a representative of the bishop of Oaxaca in exchange for immunity, and the texts handed over survive as 106 units bound into 103 booklets. Author’s copy at Vassar, free to read.',
+    },
+    {
+      key: 'flannery-marcus-2003',
+      cite: 'Flannery and Marcus, "The origin of war: New 14C dates from ancient Mexico", Proceedings of the National Academy of Sciences 100(20): 11801 to 11805 (2003)',
+      url: 'https://pmc.ncbi.nlm.nih.gov/articles/PMC208841/',
+      doi: '10.1073/pnas.1934526100',
+      kind: 'paper',
+      access: 'open',
+      note: 'The radiocarbon backbone of the lesson. The paper prints every date in both conventions, and this lesson uses the authors’ own conversions rather than converting the before-present figures itself: the beam from the burned Structure 28 at San Jose Mogote gives "2550 plus or minus 60 B.P., or 600 b.c."; the two hearths dug into the soil that had formed over Monument 3 give "2510 plus or minus 40 B.P., or 560 b.c." and "2580 plus or minus 40 B.P., or 630 b.c.", which is why the prose says about 630 and 560 BCE. Monument 3 is described here as a threshold stone showing a naked captive with his heart removed, with the hieroglyph for his name between his feet. The paper is also the source for the move of at least 2,000 people to the summit of a 400 meter mountain lying in the old buffer zone, for 3 kilometers of defensive wall on the western slopes, and for a building faced with more than 300 carved stones depicting slain captives, and it argues the defensive reading of the move. Free full text at PubMed Central.',
+    },
+    {
+      key: 'urcid-2005',
+      cite: 'Urcid, "Zapotec Writing: Knowledge, Power, and Memory in Ancient Oaxaca", Brandeis University, Department of Anthropology, Waltham (2005)',
+      url: 'https://www.famsi.org/zapotecwriting/zapotec_text.pdf',
+      doi: undefined,
+      kind: 'book',
+      access: 'open',
+      note: 'The epigraphic reading the excavation report stops short of. Urcid’s conclusion lists, among the early uses of the script, "individuating the calendrical name of prisoners without identifying the captor(s) (as in the case of Monument 3 from San José Mogote)", and his chapter on the calendar explains why such a glyph is a name rather than a date on the monument: "since in ancient Oaxaca ... people were named according to the day in which they were born or the day in which their destiny was mantically determined, signs accompanied by numerals may have a nominative function." He accepts the 600 BCE horizon for the earliest inscriptions, citing Flannery and Marcus 2003. Free full text hosted by FAMSI.',
+    },
+    {
+      key: 'nicholas-feinman-2022',
+      cite: 'Nicholas and Feinman, "The Foundation of Monte Albán, Intensification, and Growth: Coactive Processes and Joint Production", Frontiers in Political Science 4: article 805047 (2022)',
+      url: 'https://doi.org/10.3389/fpos.2022.805047',
+      doi: '10.3389/fpos.2022.805047',
+      kind: 'paper',
+      access: 'open',
+      note: 'Establishes that Monte Alban was founded around 500 BCE at the nexus of the valley’s three arms, on ground where farming was riskier because of unreliable rainfall and a dearth of permanent water; that the earlier population lived in three clusters separated by largely unoccupied land, including the middle where the city went; and the collective reading of its governance, including the point that in the city’s first four centuries only one carved stone appears to depict a leader, a masked figure impersonating the deity Cocijo. Open access at Frontiers.',
+    },
+    {
+      key: 'carter-2017',
+      cite: 'Carter, "Epigraphy and Empire: Reassessing Textual Evidence for Formative Zapotec Imperialism", Cambridge Archaeological Journal 27(3): 433 to 450 (2017)',
+      url: 'https://doi.org/10.1017/S0959774317000063',
+      doi: '10.1017/S0959774317000063',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The argument that Joyce Marcus’s proposed readings of the Structure J compounds as conquered places are structurally inconsistent with one another and with Zapotec scribal conventions elsewhere, that the Structure J texts remain undeciphered, and that generalizations about state formation which relied on those readings need reconsidering. Paywalled at Cambridge; the full abstract is free on the article page.',
+    },
+    {
+      key: 'joyce-2016',
+      cite: 'Joyce, "Zapotec Empire", in MacKenzie (editor), The Encyclopedia of Empire, pages 1 to 3, Wiley (2016)',
+      url: 'https://www.colorado.edu/rioverdearchaeology/sites/default/files/attached-files/joyce_2016b.pdf',
+      doi: '10.1002/9781118455074.wbeoe022',
+      kind: 'paper',
+      access: 'open',
+      note: 'Sets out the imperialism debate from the skeptical side, while naming the other side: Monte Alban founded c. 500 BCE, grown by the Late Formative to 442 hectares and an estimated 15,000 people; highland archaeologists, Redmond and Spencer among them, argue that the city expanded militarily and administered an empire of 20,000 square kilometers through campaigns, garrisons and hilltop outposts; that case rests largely on iconographic readings of the Conquest Slabs and on ceramic similarities; a large project in the lower Rio Verde valley found no evidence of significant warfare or Monte Alban imperial presence; the author concludes it is unlikely the polity controlled an empire. Author’s institutional copy, free to read.',
+    },
+    {
+      key: 'englehardt-2020',
+      cite: 'Englehardt, Insaurralde Caballero, Melgar Tisoc, Velazquez Maldonado, Guzman Torres, Bernard and Carrasco, "Digital Imaging and Archaeometric Analysis of the Cascajal Block: Establishing Context and Authenticity for the Earliest Known Olmec Text", Ancient Mesoamerica 31(2): 189 to 209 (2020)',
+      url: 'https://doi.org/10.1017/S0956536119000257',
+      doi: '10.1017/S0956536119000257',
+      kind: 'paper',
+      access: 'open',
+      note: 'The current status of the rival claim to first writing in the Americas: an incised greenstone slab from southeastern Veracruz, found in 1999 outside systematic excavation, assigned to the Olmec and to the transition between the Early and Middle Formative periods, roughly 1000 to 800 BCE, with debate remaining over its authenticity, dating and cultural affiliation. The authors’ imaging and materials analysis supports authenticity. Free to read in full at Cambridge.',
+    },
+    {
+      key: 'rojas-2013',
+      cite: 'Rojas, "Time and Wisdom: A Sacred Calendar Among the Ayöök People of Oaxaca, Mexico", Indiana 30: 219 to 245 (2013)',
+      url: 'https://journals.iai.spk-berlin.de/index.php/indiana/article/view/2026',
+      doi: '10.18441/ind.v30i0.219-245',
+      kind: 'paper',
+      access: 'open',
+      note: 'The evidence that the 260 day count is not a dead system. The article states that it "persists in some contemporary communities in Mexico and Guatemala, where it is still utilized by daykeepers, also experts in ritual, divination and medicine", naming the K’iche’ and Mixe areas, and it documents one such calendar among the Ayöök (Mixe) of Oaxaca, where the specialist sets the timing of ceremonies and reads character and prognostication from a person’s day of birth. Open access from the Ibero-Amerikanisches Institut under a Creative Commons licence; the DOI is registered with DataCite rather than Crossref.',
+    },
+    {
+      key: 'inah-monte-alban',
+      cite: 'Instituto Nacional de Antropologia e Historia, "Museo de Sitio de Monte Albán", Lugares INAH site record',
+      url: 'https://lugares.inah.gob.mx/en/node/4308',
+      doi: undefined,
+      kind: 'institution',
+      access: 'open',
+      note: 'The custodian institution’s own description of the collection: a gallery of 32 carved stelae tracing the writing system, Stelae 12 and 13 presented as examples of the earliest known Zapotec writing, the Conquest Slabs, and a notably hedged description of the danzantes as figures carved with attributes of powerful natural beings, possibly linked to the early political foundations of the city.',
+    },
+  ],
+  storyContext:
+    'A mountaintop above the Valley of Oaxaca, around 500 BCE. Knot is a composite, assembled from the excavated first decades of the city and from the documented Zapotec practice of naming a person after the day of their birth. No individual can be named from the record at this date, and her working day is invented around the excavated remains: the water jars and their carrying strap, who did which part of the digging, the damp cloth over the waiting slabs, and the argument about what the wall was for are inference or invention rather than finds.',
+  story: [
+    'Knot goes up the mountain with two jars of water in a net against her back, the strap across her forehead, and she has learned to measure the climb in rests rather than in steps. Every drop she has drunk up here came the same way, on somebody’s back. The path takes the slope in long diagonals because no one carrying a load could go straight up it. Four hundred meters below her the valley floor runs green in three directions, north and east and south, and every one of them has a river in it. There is no spring anywhere on the summit.',
+    'At the top, the ridge is being made level a hand’s depth at a time, by men prying the stone loose with hardwood bars while women and boys carry the rubble away in baskets and tip it over the low side to build the ground out. What is opening between the two ends of the ridge is a plaza. Knot has walked its length and it is longer than her grandmother’s whole village. It is not finished, and it will not be finished while anyone now working on it is alive.',
+    'Her family came from the northern arm of the valley, where the land is wet enough to farm without gambling on the rain. About a hundred years ago the great temple in that town burned so hot that the clay of its walls turned to glass, and nobody ever built on that spot again.[^flannery-marcus-2003] The story reached her the way old stories do, worn smooth and short of names. What she has instead of the names is the shape of the world it left behind: three towns in three arms of the valley, each of them large, each of them watching the other two, and an empty middle that nobody farmed and nobody wanted to cross alone.',
+    'The middle is what she is standing on, and that is the part she cannot get used to. Everyone up here came from somewhere down there, and half of them came from towns their parents would have raided. On the western slope, where the climb is easiest, crews are laying the first courses of a wall of stone and rubble whose planned line runs further than she can see from any one place on it. She has heard men argue about whether the wall is meant to keep enemies out or to remind the people below who lives above them. She has not heard anyone argue that it is unnecessary.',
+    'On her way to the storehouse she passes a building whose face is being set with carved slabs. Dozens are in place already and more wait on the ground under damp cloth. Each shows a naked man, the legs bent under the body at an angle no living person holds for long. On some of them, on the chest or between the feet, sit two small signs together: a head, and beside it a count in dots and bars. Knot cannot read most of what is cut into these stones. She can read that pair, because it is the same kind of mark a scribe would use for her own name.',
+    'Knot is named for a day. Twenty named days run in a fixed order, Cayman, Wind, Night, Lizard, and on around to Face, with a position from one to thirteen cycling alongside them, so the pair she was born under does not return for two hundred and sixty days. Her name carries no number word: Zapotec fuses a short classifier for the position onto the day name to make one word, and the count appears only where a scribe cuts it in dots and bars.[^justeson-lowry-2026] Her mother is Deer and the man who keeps the storehouse is Rabbit, and nobody finds it strange that a person and a date are the same word.',
+    'At dusk she sets the jars down inside the storehouse and stands for a moment at the edge of the unfinished plaza while the light goes off the eastern arm of the valley. She has spent a day hauling water up a mountain so that a place with no water can hold more people than her grandmother’s village ever did. Behind her, defeated men are laid out in stone with their names beside them, and those names are dates, and somebody up here keeps the count that decides which day it is. A hundred years ago, in the wet north of the valley, all three of those things met on one stone, cut for one dead man and laid down as a doorstep. What is new is the scale, and that the stones now face a plaza thousands of former enemies are building together.',
+  ],
+  significance: [
+    'The mountain in that scene is recovered rather than imagined, and so is the empty ground it was built on. Around 500 BCE a new center went up on a mountain at the nexus of the three arms of the Valley of Oaxaca, and the striking thing about the location is that it had been empty: the valley’s people had been living in three clusters, one in each arm, separated by land nobody occupied, and the city was planted in exactly that gap, in a stretch of the valley where the rain is unreliable and permanent water scarce, which made farming there a worse bet than in the well watered arms the settlers came from.[^nicholas-feinman-2022] Writing was already in the valley before the city was. A century or so earlier, at San Jose Mogote in the northern arm, a carved stone was set as a threshold between two temple platforms. It shows a naked captive with his heart cut out, and between his feet stands the Zapotec hieroglyph that gives his name. Javier Urcid reads that name as a calendrical one, a day in the 260 day count.[^urcid-2005] Charcoal from two hearths dug into the soil that formed over that stone dates to about 630 and 560 BCE, so the carving is older than both, and the occasional attempt to push it into a later period runs against the stratigraphy.[^flannery-marcus-2003] Monte Alban did not invent writing in Oaxaca; it put writing to work at a scale the valley had never seen.',
+    'So why build on a mountain with no spring? One long-standing answer is fear. Raiding in the valley had been escalating for centuries, the three arms were held by rival centers with an unoccupied buffer between them, and the newcomers, whom different estimates put at one to two thousand, began three kilometers of defensive wall along the slopes that are easiest to climb and a building faced with more than three hundred carved stones of slain captives.[^flannery-marcus-2003] How much of that wall belongs to the city’s first generations and how much to later centuries is still argued, since masonry carries no radiocarbon date of its own. A different answer has been gaining ground. Surveys of the valley and of the city itself suggest governance at Monte Alban was more collective than autocratic: no central storehouses of food, no cult of a named ruler, and in the city’s first four centuries only one carved stone that plausibly shows a leader at all, a masked figure impersonating the storm deity Cocijo.[^nicholas-feinman-2022] On that reading, nobody marched these people up the hill. They chose the move, and then had to invent the institutions that would make living beside their former enemies possible.',
+    'The other thing carried up the mountain was a way of fixing time, and it is worth being exact about how it worked, because the design is why it outlived everyone who used it. Two counts ran at once. One was 260 days long, made by permuting thirteen numbers against twenty named days, and it governed divination and personal names; Zapotec people were preferentially named for the day of their birth, which is why a person and a date could be the same word. The other was 365 days long, eighteen months of twenty days with a short five day remainder, and it framed the farming year. Scholars call it the vague year, because 365 whole days fall about a quarter day short of the sun and the count slips against the seasons by a day every four years. Because 260 and 365 share only a common factor of five, a given day in the first count meets a given position in the second only once every 18,980 days, which is fifty two years exactly.[^justeson-lowry-2026] That is a lifetime, so most people never saw the same date come round twice.',
+    'How precise were these people? In 2026 two epigraphers gave a sharp answer, and the way they reached it is worth following. Alfonso Caso had catalogued a recurring sign at Monte Alban a century ago and called it Glyph W without knowing what it did. John Justeson and Justin Lowry showed that its attached number counts evenings since the first sighting of the new lunar crescent, then used those lunar positions together with the fifty two year dates to lock seven fully preserved dates into absolute time, between 496 and 222 BCE. Their paper opens by noting that Zapotec civilization yields the earliest corpus of hieroglyphic texts in Mesoamerica.[^justeson-lowry-2026] Notice the careful word: corpus. A single older object exists, the Cascajal Block, an incised greenstone slab from Veracruz assigned to the Olmec and to roughly 1000 to 800 BCE, but it surfaced in 1999 outside any systematic excavation, and its authenticity, date and cultural affiliation are all still argued over.[^englehardt-2020] The honest statement is that Oaxaca gives us the earliest body of dated writing in Mesoamerica, and the earliest single example is contested.',
+    'It is just as important to say what these stones do not tell us, and to keep them in their own century. The carved slabs set into the walls of the structure conventionally called Building J were cut between about 300 and 100 BCE, two to four centuries after the ridge was levelled.[^justeson-lowry-2026] They have been read since Alfonso Caso’s day, and argued in detail by Joyce Marcus, as a list of places Monte Alban conquered, and that reading turned a hilltop town into an empire in a great many books. Nicholas Carter has argued that the proposed decipherments are structurally inconsistent with one another and with the way Zapotec scribes write place names elsewhere, and that the Building J texts remain undeciphered, which leaves the conclusions built on them without a foundation.[^carter-2017] Elsa Redmond and Charles Spencer still defend the conquest reading, in which the city’s rulers took and garrisoned the highlands, but the archaeology outside the valley points the other way: a large project in the lower Rio Verde valley, well inside the supposed imperial territory, found no sign of significant warfare or of a Monte Alban presence, and Arthur Joyce concludes that a polity of this size is unlikely to have controlled a twenty thousand square kilometer empire at all.[^joyce-2016] Even the famous danzante slabs are hedged by their own custodians, who describe them as figures carved with attributes of powerful natural beings, possibly connected to the city’s early political foundations.[^inah-monte-alban] The stones are unmistakably about power; what kind of power is still an open question.',
+    'This is where the atlas’s power and ideas threads cross. The city, the script and the calendar arrive together because they solve the same problem. A count that everyone shares tells thousands of newcomers from formerly hostile towns when to gather, when to plant, and when to hand over labor for a plaza none of them will see finished. A script that names people fixes who did what, and who was defeated by whom, in a form that outlasts the witnesses. None of this was borrowed from Eurasia; the whole apparatus was assembled in a valley whose people had no draft animals, no metal tools for construction, and no idea that Athens existed. And the count itself proved almost indestructible. Both calendars were in use across Mesoamerica right up to the Spanish invasion, and between September 1704 and January 1705, more than two thousand years after those first dated stones, communities in the Zapotec mountains north of the valley surrendered their calendars to a bishop’s campaign against native ritual, in exchange for immunity from prosecution.[^tavarez-justeson-2008] The 103 hand-written books that survive list the same twenty day names in the same order, and they are what Justeson and Lowry used to check the day names carved on a mountain in 496 BCE. The confiscation did not end it. Ritual specialists in Mixe towns east of the valley, and in K’iche’ communities in the Guatemalan highlands, still keep the 260 day cycle, still use it to time a ceremony, and still read a person’s day of birth for what it suggests about the shape of a life.[^rojas-2013] The plaza Knot hauled water for is a ruin visitors walk across; the count her name came from has not stopped.',
+  ],
+  threadsOut: [
+    {
+      to: 'teotihuacan-maya',
+      why: 'The Oaxacan quarter at Teotihuacan and the Maya dynastic monuments both run on these two counts, which is a convention shared across Mesoamerica rather than an export from this mountain: the day count is already cut in stone at San Jose Mogote a century before Monte Alban exists, and each later city put it to its own uses.',
+    },
+    {
+      to: 'fifth-sun-aztecs',
+      why: 'The fifty two year bundle that Aztec priests marked with a fire ceremony is the same 18,980 day meeting of a 260 day count and a 365 day year that Zapotec scribes were already carving, which is continuity of a shared technology rather than of any institution.',
+    },
+    {
+      to: 'invention-of-writing',
+      why: 'Oaxaca is the clean test of whether writing has one origin story: it appears here with no possible contact with Mesopotamia or China, and its first known job is to name a dead enemy rather than to count grain.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'Two calendars are carved on Monte Alban’s earliest stones. What are they, and how long does it take before a given combination of the two repeats?',
+      answer:
+        'A 260 day divinatory count and a 365 day farming year, running side by side. Their combination repeats only every 18,980 days, or fifty two years, because 260 and 365 have no common factor larger than five. The practical effect is that a full date was unambiguous across an entire lifetime: a Zapotec scribe never needed an era or a king’s regnal year to say which day he meant, and almost nobody lived long enough to see the same date twice. It is also why a name taken from the 260 day count could double as a date without confusing anyone.',
+    },
+    {
+      type: 'why',
+      prompt: 'People left well-watered valley land for a mountaintop with no spring, where the rain was unreliable and farming a worse bet. What explanations do archaeologists offer, and why has the field stopped settling for just one?',
+      answer:
+        'The older explanation is defense. Raiding had been escalating for centuries, the valley’s three arms were held by rival centers with an empty buffer between them, the mountain sat in that buffer, and the newcomers began three kilometers of wall on the climbable slopes, though how quickly the whole circuit went up is still argued. The newer explanation is that the move was chosen rather than commanded: the city shows collective rather than autocratic governance, no large central storehouses, and almost no imagery of rulers in its first four centuries. The two are not exclusive. A defensible refuge still needs institutions that make thousands of former enemies willing to live and build together, and it is the second half that the older account left unexplained.',
+    },
+    {
+      type: 'why',
+      prompt: 'The carved slabs on Building J at Monte Alban have been read for decades as a list of conquered places. If that reading fails, as Nicholas Carter argues, what actually collapses?',
+      answer:
+        'The evidence for a Zapotec empire, mostly. The territorial claim, a polity of some twenty thousand square kilometers, rested largely on identifying place signs on those slabs with real towns outside the valley, plus some similarities in pottery styles. Carter argues the proposed readings contradict each other and contradict how Zapotec scribes write place names in other texts, so the slabs remain undeciphered. Fieldwork points the same way: excavation in the lower Rio Verde valley, deep inside the supposed empire, turned up no sign of conquest or occupation. What survives is a city that was clearly violent and clearly dominant near home, with its reach beyond the valley unproven.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Uruk’s earliest tablets are overwhelmingly accounts: grain, herds, rations, obligations. The earliest text we can date in Oaxaca names a captive with his heart cut out. Does Monte Alban strengthen or weaken the idea that writing comes from bookkeeping?',
+      callbackTo: 'invention-of-writing',
+      answer:
+        'It weakens the general law while leaving the Mesopotamian case intact. Roughly nine in ten archaic Uruk texts are administrative, which is a strong argument about Uruk and about a society already drowning in countable obligations. Oaxaca had no comparable accounting problem and produced writing anyway, and what it wrote first were names, dates and defeated enemies. Both scripts do the same underlying job, which is to preserve a claim after the witnesses die, but they were built to preserve different claims. The safe conclusion is the one that lesson already reached: writing was invented more than once, and not for one reason.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Babylonian scribes and Zapotec scribes were both watching the moon in the same centuries. Compare what each civilization did with it, and what survives to us as a result.',
+      callbackTo: 'star-diaries',
+      answer:
+        'The overlap is real: the surviving Babylonian diaries run from 652 to 61 BCE, and the seven dated Zapotec lunar records fall between 496 and 222 BCE, squarely inside that window. But the two archives were built for different purposes. Babylon kept a continuous nightly log, moon and planets and weather and grain prices together, and it was kept because the gods were thought to write their intentions into the sky. What that accumulation bought was prediction, an explicit motive inside the divinatory tradition rather than a break from it, since an eclipse period can only be found in dated entries running unbroken for decades. Monte Alban recorded lunar ages inside political monuments, so what reaches us is a handful of isolated moments rather than a continuous record. The difference shows in how each was recovered. Babylonian tablets can be read almost directly. The Zapotec dates had to be reverse-engineered in 2026, by taking a sign catalogued a century earlier, guessing it counted evenings since the new crescent, and testing that guess against every possible placement in absolute time until one fit.',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Justeson and Lowry, A Lunar Day Count at Monte Alban',
+      why: 'The whole detective story in one open-access paper: a sign nobody could read, an astronomical hunch, and seven carved dates pinned to specific years between 496 and 222 BCE.',
+      url: 'https://doi.org/10.1017/laq.2025.10148',
+    },
+    {
+      title: 'INAH, Museo de Sitio de Monte Albán',
+      why: 'The custodian institution’s own account of what came out of the mountain, including the gallery of thirty-two carved stelae and the danzantes themselves.',
+      url: 'https://lugares.inah.gob.mx/en/node/4308',
+    },
+    {
+      title: 'Marcus and Flannery, Zapotec Civilization',
+      why: 'The excavators’ own book-length account of the valley, from its first villages to the city on the mountain, and the most readable statement of the conquest reading that later epigraphers have questioned; borrowable free from the Internet Archive.',
+      url: 'https://archive.org/details/zapoteccivilizat0000marc',
+    },
+  ],
+});

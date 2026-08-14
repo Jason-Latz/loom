@@ -78,6 +78,7 @@ LOOM.lessonFiles = [
   'carthage-ledger',
   'buddha-middle-path',
   'hundred-schools',
+  'zapotec-dawn',
   'tragic-stage',
   'analects-of-confucius',
   'nok-terracotta',
