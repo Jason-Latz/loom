@@ -1,0 +1,190 @@
+LOOM.lesson({
+  id: 'nok-terracotta',
+  readingMinutes: 10,
+  citationsVersion: 1,
+  sources: [
+    {
+      key: 'mannel-breunig-2016',
+      cite: 'Männel and Breunig, "The Nok Terracotta Sculptures of Pangwari", Journal of African Archaeology 14(3): 313 to 329 (2016)',
+      url: 'https://brill.com/view/journals/jaa/14/3/article-p313_4.xml',
+      kind: 'paper',
+      access: 'open',
+      note: 'The excavation report for the two pits in the story. Only Feature 10 is described as a terracotta deposition proper, and only it carried the stone plaster; Feature 11 is a second pit that also held sculpture. Ten units covering 2,617 square metres were opened at Pangwari between 2011 and 2014, with 12,978 finds recorded in three dimensions and close to a tenth of them fragments of terracotta sculpture. Feature 10 was capped by a plaster of hand-sized pieces of local granite over broken figures, among them the largest three-dimensional Nok sculpture yet excavated, a male torso restored to 82 centimetres and extrapolated to about 130 centimetres before the loss of its head and base, a bearded man with a marine shell modelled on his head whose original the authors trace to a coast about 700 kilometres away, a single hand wearing a broad bracelet, and two smashed heads, one fractured vertically and one horizontally, whose pieces refit nothing else in the feature. Feature 11 held a man and bird hybrid, a head with large pointed ears, and a kneeling figure with a quadruped on its thigh. It is also the source for how the figures were made: clay tempered with quartz, feldspar and mica from the local granite plus fireclay, torsos built by coiling, a thin clay slip applied at the end, a two centimetre hole in the back of the large torso to stop it bursting, deeply carved triangular or crescent eye rims with pierced pupils on the larger figures, and firing at roughly 600 to 800 degrees Celsius in an open fire. Journal of African Archaeology releases its content free three years after publication, so this 2016 issue is out of embargo, but no Creative Commons licence applies to it and the article is not in DOAJ. Brill refuses automated fetches. The DOI printed in the article was never registered with Crossref, so it is omitted here.',
+    },
+    {
+      key: 'franke-2016',
+      cite: 'Franke, "A Chronology of the Central Nigerian Nok Culture, 1500 BC to the Beginning of the Common Era", Journal of African Archaeology 14(3): 257 to 289 (2016)',
+      url: 'https://brill.com/view/journals/jaa/14/3/article-p257_2.xml',
+      kind: 'paper',
+      access: 'open',
+      note: 'The chronology the lesson runs on. 174 radiocarbon and 27 luminescence dates were collected from 69 tested or excavated sites between 2005 and 2014. Fifteen radiocarbon dates, all on pearl millet, give calendar ranges between about 830 and 760 BC, before the calibration curve plateau, and the earliest excavated terracotta deposits fall in that window, so the sculptural tradition was well established by the late ninth century BC at the latest. The plateau between about 800 and 400 BC prevents precise dating of everything that follows, including the first furnaces; pottery found at furnace sites belongs to the later ceramic groups, which puts the start of iron working not much earlier than the seventh century BC and therefore later than the terracotta tradition. Sites and dates rise sharply in the ninth century BC and drop in the fourth. Free three years after publication under the journal’s delayed open access policy, not under any Creative Commons licence; the printed title carries a dash before its date range, rendered here as a comma, and the DOI printed in the article was never registered with Crossref.',
+    },
+    {
+      key: 'junius-2016',
+      cite: 'Junius, "Nok Early Iron Production in Central Nigeria, New Finds and Features", Journal of African Archaeology 14(3): 291 to 311 (2016)',
+      url: 'https://brill.com/view/journals/jaa/14/3/article-p291_3.xml',
+      kind: 'paper',
+      access: 'open',
+      note: 'The archaeology of the furnaces. Excavations between 2005 and 2013 found nine furnace sites with 26 furnaces in a key study area 60 kilometres north-northeast of Taruga, all of them clay chambers about 90 to 120 centimetres across standing on slag pits and fed through clay tuyères, with radiocarbon dates in the middle of the first millennium BCE. Taruga itself yielded thirteen furnace remains, of which ten were excavated, 65 iron objects and 269.1 kilograms of slag. The paper states that the debate on the beginning and origins of sub-Saharan iron metallurgy is ongoing, that current material dates the advent of iron metallurgy in West Africa between 800 and 400 BCE, and that the radiocarbon calibration plateau around 2450 BP together with large luminescence errors blocks any finer precision. It also reports a figurine found inside furnace C at Janjala. Free three years after publication under the journal’s delayed open access policy, not under any Creative Commons licence; the printed title carries a dash before its subtitle, rendered here as a comma, and the DOI printed in the article was never registered with Crossref.',
+    },
+    {
+      key: 'breunig-rupp-2016',
+      cite: 'Breunig and Rupp, "An Outline of Recent Studies on the Nigerian Nok Culture", Journal of African Archaeology 14(3): 237 to 255 (2016)',
+      url: 'https://brill.com/view/journals/jaa/14/3/article-p237_1.xml',
+      kind: 'paper',
+      access: 'open',
+      note: 'The retraction the lesson turns on, written by the project directors. The Frankfurt team resumed work in 2005 on the explicit hypothesis that the Nok Culture represented the origin of complex societies in sub-Saharan Africa, and after nearly ten years reports that the hypothesis can no longer be maintained: no agglomerations above hamlet level, no towns, most sites one to two hectares with thin stratigraphies indicating brief occupations, no specialised or superior buildings, no heterogeneity among the features read as graves, no accumulation of valuables, no storage for surplus, and therefore small-scale groups of farmers living autonomously in dispersed settlements, with whatever complexity they had lying in ritual. It also supplies the looting record (thirty previously unknown Nok sites located with local help by 2008, all affected by looting and most destroyed entirely; 165 sites recorded in the key study area by spring 2014, of which 49 were excavated), the composition of site inventories at roughly 80 per cent potsherds and about 10 per cent terracotta, the Ifana 1 deposit of large body parts from six sculptures on a bed of fist-sized stones about 70 centimetres down, the pearl millet economy, and the statement that iron working began not much earlier than the seventh century BCE. Free three years after publication under the journal’s delayed open access policy, not under any Creative Commons licence; the DOI printed in the article was never registered with Crossref.',
+    },
+    {
+      key: 'hohn-neumann-2016',
+      cite: 'Höhn and Neumann, "The Palaeovegetation of Janruwa (Nigeria) and its Implications for the Decline of the Nok Culture", Journal of African Archaeology 14(3): 331 to 353 (2016)',
+      url: 'https://brill.com/view/journals/jaa/14/3/article-p331_5.xml',
+      kind: 'paper',
+      access: 'open',
+      note: 'The source of the decline hypothesis, and of the hedging around it. Nok settlement activity decreased considerably around 400 BCE and ended around the beginning of the Common Era. From charcoal at the post-Nok site of Janruwa C the authors argue that erosion on the hill slopes, possibly caused by a shorter and more intense rainy season, degraded the land after 400 BCE, and that a land-use system restricted to pearl millet and cowpea was not flexible enough to adapt; they note that woodland was being opened for both cultivation and iron smelting. They present this as a supposed scenario rather than a demonstrated cause. Free three years after publication under the journal’s delayed open access policy, not under any Creative Commons licence; the DOI printed in the article was never registered with Crossref.',
+    },
+    {
+      key: 'zangato-holl-2010',
+      cite: 'Zangato and Holl, "On the Iron Front: New Evidence from North-Central Africa", Journal of African Archaeology 8(1): 7 to 23 (2010)',
+      url: 'https://brill.com/view/journals/jaa/8/1/article-p7_2.xml',
+      doi: '10.3213/1612-1651-10153',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The boldest published claim for very early African iron, and the one the lesson names. From sites in the Djohong area of Cameroon and the Ndio area of the Central African Republic the authors report iron production activities as early as 3000 to 2500 BC, with forge sites at Ôboui and Gbatoro dated 2500 to 2000 BC. Their opening sentence concedes that the advent of metallurgy is one of the most contested questions in sub-Saharan archaeology and that challenging data are often dismissed without serious consideration. Paywalled at Brill; the abstract is free on the article page, and the claims cited here are stated in it.',
+    },
+    {
+      key: 'clist-2012',
+      cite: 'Clist, "Vers Une Réduction Des Préjugés et la Fonte Des Antagonismes: Un Bilan de L’expansion de la Métallurgie du Fer En Afrique Sud-Saharienne", Journal of African Archaeology 10(1): 71 to 84 (2012)',
+      url: 'https://brill.com/view/journals/jaa/10/1/article-p71_5.xml',
+      doi: '10.3213/2191-5784-10205',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The published rebuttal. Clist rereads the excavation on which the very old Central African dates rest, questions data published in this journal in 2010, and concludes from chronological evidence across West, Central and East Africa that the more robust evidence for the start of iron smelting south of the Sahara falls after 800 cal BC, raising the reliability of radiocarbon dating, field-recording accuracy and stratigraphy as the points at issue. Paywalled at Brill; the abstract is free on the article page and states each of these findings. Metadata confirmed against Crossref.',
+    },
+    {
+      key: 'goethe-nok',
+      cite: 'Goethe University Frankfurt, "Nok research project enters final phase", university news release',
+      url: 'https://aktuelles.uni-frankfurt.de/en/english/nok-research-project-enters-final-phase/',
+      kind: 'institution',
+      access: 'open',
+      note: 'The excavating institution’s own statement of the span, used here for the length of the culture. It says the Nok Culture "lasted for about 1,500 years" and "emerged around 1500 BC", that the terracotta figures appear 600 years later, around 900 BC, that the decline began around 400 BC, and that terracottas and Nok ceramics had finally disappeared at the latest by the turn of the era. Page fetched and the sentences read in full.',
+    },
+    {
+      key: 'breunig-scientia',
+      cite: 'Breunig, "The Significance of Nok Culture Sculptures in Nigerian Prehistory", Scientia research profile',
+      url: 'https://www.scientia.global/wp-content/uploads/Peter_Breunig/Peter_Breunig.pdf',
+      kind: 'institution',
+      access: 'open',
+      note: 'The project director stating his own current position in plain words, used here for the reading the excavation overturned and for the reading that replaced it. The profile says that Breunig and his team "have identified a spatial proximity to burial sites, indicating their usage in funeral rituals", that he "strongly believes that the proximity of the sculptures to the Nok culture burials indicates their use was as part of complex funeral gatherings or rituals" and that "it is possible that the sculptures represented the dead", and that this counters an earlier view under which "the sculptures had been heralded as an indicator of inequality, hierarchy and nucleation of settlement systems". A photograph caption reads "Excavation of the site of Ifana showing terracotta depositions (centre and above left) in the neighbourhood of graves". PDF fetched and read in full.',
+    },
+    {
+      key: 'renfrew-1970',
+      cite: 'Renfrew, "The Autonomy of the South-East European Copper Age", Proceedings of the Prehistoric Society 35: 12 to 47 (1970)',
+      url: 'https://www.cambridge.org/core/journals/proceedings-of-the-prehistoric-society/article/abs/autonomy-of-the-southeast-european-copper-age1/A63BC2388157F32D2D09B737D6DD9436',
+      doi: '10.1017/S0079497X00013396',
+      kind: 'paper',
+      access: 'paywalled',
+      note: 'The evidence that the diffusion question was put to Europe too. The paper exists because Balkan copper was assumed to derive from the Near East, and it argues from calibrated radiocarbon and the Karanovo stratigraphy against the synchronisms Childe had drawn between Troy I and Vinča, leaving the south-east European Copper Age as an autonomous development. Cambridge University Press record opened and Crossref metadata resolved: volume 35, pages 12 to 47, published in print February 1970. Abstract and first page free, full text paywalled.',
+    },
+    {
+      key: 'brodie-yates-2012',
+      cite: 'Brodie and Yates, "Nok Terracottas", Trafficking Culture encyclopedia, University of Glasgow, last modified 21 August 2012',
+      url: 'https://traffickingculture.org/encyclopedia/case-studies/nok-terracottas/',
+      kind: 'institution',
+      access: 'open',
+      note: 'The market history. Drawing on Patrick Darling’s 1995 report for the World Heritage Committee, it records that large-scale looting of the Nok area began in mid-1994, that by 1995 two main local traders each employed about 1,000 diggers, that an estimated ten terracottas a day were being dug at the height of it, and that the routes ran through Togo and Benin to Brussels, Paris and later the United States. It also records the 1979 Nigerian decree making unlicensed sale or export illegal, the 2000 inclusion of Nok terracotta on the ICOM Red List, and the Chirac purchase of two Nok pieces from a Brussels dealer in 1998 that was settled in March 2002 by having Nigeria loan them to France for "a renewable period of twenty-five years", which the page records as extended to thirty-seven years in 2005. Open access encyclopedia entry from the Trafficking Culture research project.',
+    },
+    {
+      key: 'yale-nok-head',
+      cite: 'Yale University Art Gallery, "Human Head", Nok, Nigeria, terracotta, accession 2010.6.127',
+      url: 'https://artgallery.yale.edu/collections/objects/145188',
+      kind: 'object',
+      access: 'open',
+      note: 'One museum record, opened and read. The head is dated ca. 900 to 300 B.C.E., measures 20.96 by 16.51 by 14.61 centimetres, and its published ownership history reads "Reportedly private collection, United States; possibly sold to Wayne E. Cancro, New Jersey, 1981; sold to SusAnna Grae and Joel B. Grae... by June 11, 2004; given to the Yale University Art Gallery... 2010". The Gallery adds that continued research on the Nok figures from the Grae Collection has been unable to corroborate that ownership history, and that the work appears on its own page of antiquities and archaeological material with provenance documentation gaps.',
+    },
+  ],
+  storyContext:
+    'Pangwari, a Nok settlement on a saddle between two low hills in what is now southern Kaduna State, Nigeria, around 800 BCE. The two pits, the granite cover and the sculptures named here were excavated between 2011 and 2014. Iri is invented, and so are her household, her authorship of the torso, and the single afternoon in which both pits are filled; her name is a placeholder, since no language spoken here then is recoverable.',
+  story: [
+    'The soil coming out of the pit is darker than the ground around it and smells faintly of old fire. Iri stands waist-deep in the hole, her feet braced on the granite ledge that runs under this whole saddle of the hill, and takes the pieces down one at a time as they are handed to her. They come down in the order they were carried up: a headless torso longer than her arm and heavier than it looks, a single hand with a broad bracelet still around the wrist, half of a face split from crown to chin. She lays each one on its side against the rock. A few paces off, along the same ledge, a second pit is taking pieces too. Above her nobody is saying much. The millet on the slope below was cut a month ago, and the wind moves across the stubble all afternoon.',
+    'Nobody lives on the saddle now. It is a level place between two low hills, with a breeze that never reaches the slopes, and under the grass lie the flattened remains of a compound her own people kept before anyone she can name. Her own household is an hour south: four or five families behind one fence, their fields around them and their neighbours’ fields beyond. There is no town anywhere she has heard of. The nearest strangers live two days away, and they build the same pots, grow the same millet and cowpeas, and make the same figures she does.',
+    'She made the torso herself, years ago. The clay came out of a bank a short walk from here, already full of the quartz, feldspar and bright mica that weather out of the local granite, and she added crushed pieces of fired clay so the body would hold together in the heat. She built it hollow, coil on coil, thumbing each rope of clay into the one beneath, until the finished man stood chest high on her. The eyes she cut last, the way everyone cuts them, two long triangles carved deep so the eyeball stands out between them, and the pupils pierced straight through. Then she cut a hole about two centimetres across in the small of the back so the trapped air could escape, and brushed a thin wash of fine clay over the surface to take the grit off it. She dried it in the shade for days, then banked it in grass and wood and let the fire stand over it for a night.[^mannel-breunig-2016]',
+    'The others come down after hers, and one of them is a man whose face is a man’s face until the mouth, where two long fangs hang over the lip, with a hood drawn around his head and a decorated plate across the forehead. Into her pit goes a man with folded arms and a beard, his hair gathered into a bun high at the back, wearing a broad sea shell on his head, of a kind that grows in a sea seven hundred kilometres to the southwest. Iri has never seen the sea, and neither has anyone she has asked. Into the second pit go a finely worked head with a bird’s beak where the mouth should be, a head with long pointed ears, and a man kneeling with a small four-legged animal on his thigh.',
+    'Not one of the figures goes in whole. Her torso lost its head and its base long before today, and neither is here. Two heads were broken on purpose, one split from crown to chin and one snapped across below the eyes, and only some of the fragments have been carried up the hill. Iri fits pieces against one another out of habit, finds that they do not belong together, and lays them down anyway. Whatever this is for, it does not need the figures whole and it does not need all of the pieces.',
+    'When the last one is down, the men above hand in cobbles of the pink local granite, each about the size of a palm, and she sets them in a single close layer across the sculptures until nothing shows. Then the earth goes back, which takes a fraction of the time the digging took. By the time the light turns orange the ground is level again, and there is nothing to see on the saddle but the grey back of the ridge and a patch of turned soil that the first rain will flatten.',
+    'They walk down off the hill in the dark. Nobody has said aloud what the burial was for, because nobody needs to, and nothing at Pangwari will ever say it either. There is no writing anywhere in this country, no temple, no royal tomb, and no house here bigger than the one she sleeps in. Twenty-eight centuries later people will dig into this saddle again and find the cobbles, and the fangs, and the shell on a man’s head, and the two halves of a face that do not match, and everything about the afternoon except the reason for it.',
+  ],
+  significance: [
+    'Pangwari is a real site, and the pits, the cover and the sculptures came out of the ground there. Between 2011 and 2014 a joint team from Goethe University Frankfurt and Nigeria’s National Commission for Museums and Monuments opened ten units covering 2,617 square metres and plotted 12,978 finds in three dimensions, close to a tenth of them fragments of terracotta sculpture. One of the pits they cleared was capped with a close layer of hand-sized granite cobbles, and beneath it lay the largest three-dimensional Nok sculpture yet excavated, a male torso restored to 82 centimetres and standing about 130 before it lost its head and base, and with it the bearded man carrying a marine shell modelled on his head, of a kind found on a coast some 700 kilometres away, a severed hand in a bracelet, and two smashed heads whose fragments fit nothing else in the deposit.[^mannel-breunig-2016] A second pit nearby held three more figures, again broken, and with no stone cover. On most Nok sites terracotta turns up mixed into ordinary settlement rubbish; deposits like this one are rare. At Ifana, another Nok site, terracotta lay among about twenty features the excavators read as graves, and they now take the figures to have played a role in burial rites.[^goethe-nok]',
+    'How we know when it happened is worth a moment, because the answer is charred grain. The Frankfurt project gathered 174 radiocarbon and 27 luminescence dates from 69 tested or excavated sites between 2005 and 2014, and fifteen of the radiocarbon dates, all run on pearl millet, fall in a narrow window between about 830 and 760 BCE. The earliest excavated deposits of terracotta belong to that window, and the excavators date the culture itself to around 1500 BCE and the first sculptures six centuries later.[^goethe-nok] The millet dates fall just before a plateau in the calibration curve, a flat stretch running to about 400 BCE in which no date can be told from any other, and it covers exactly the centuries when the rest of the Nok story happens. The way around it is pottery: some of the sherds found at furnace sites belong to the later ceramic groups, which puts the start of iron production not much before the seventh century BCE, a century and a half or more after the first sculptures.[^franke-2016]',
+    'The order matters, because it runs backwards from the way the story used to be told. The furnaces themselves are modest and remarkably consistent: nine sites in one study area, twenty-six furnaces in all, each a clay chamber about a metre across standing over a pit that caught the slag, air driven in through clay nozzles. Sixty kilometres to the south-southwest lies Taruga, where Bernard Fagg excavated the furnaces in the 1960s, and which still holds the richest metallurgical assemblage known from the culture: thirteen furnace remains, 65 iron objects, 269 kilograms of slag. The furnaces are early by any measure, and the specialists put the advent of iron metallurgy in West Africa between 800 and 400 BCE.[^junius-2016] The sculptures were long taken as an index of inequality, hierarchy and nucleated settlement, the kind of society early iron was expected to build.[^breunig-scientia] At Nok the sculpture is older than the smelting, so whatever the figures were for, iron did not cause them.',
+    'The team that established this had gone looking for the opposite. The Frankfurt project resumed work in 2005 on an explicit hypothesis, that the Nok Culture with its sophisticated art and early iron would prove to be one of the earliest complex societies in sub-Saharan Africa, and after nearly ten years its directors wrote that the hypothesis could no longer be maintained. There are no towns and nothing above the size of a hamlet. Typical sites cover one or two hectares with stratigraphy so thin that occupations must have been brief. No house is larger or better built than its neighbours, no store of surplus has been found, and among the features read as graves there is neither a rich burial nor a poor one. What is left is a landscape of small farming households living autonomously in dispersed settlements, tied together by nothing anyone can find except a sculptural tradition and the rituals it belonged to, which is why the excavators now speak of ritual complexity rather than social complexity.[^breunig-rupp-2016] Craft and ideas, two of the four pigments on this chart, saturate that record; wealth and power leave no trace at all. Sites thin out sharply after 400 BCE and Nok material stops appearing around the turn of the era, and the best current guess for why is agricultural rather than political: a shorter, harsher rainy season eroding hill slopes that had been opened for farming and for smelting fuel, and farmed by people who grew pearl millet and cowpea and little else. The authors of that argument call it a supposed scenario, and it is worth holding it that loosely.[^hohn-neumann-2016]',
+    'The one question everybody asks about Nok iron is the one the evidence cannot answer: did West Africans work it out themselves, or did the knowledge cross the desert from the Mediterranean world? In 2010 two archaeologists published dates from Cameroon and the Central African Republic claiming iron production by 3000 to 2500 BCE and blacksmiths’ workshops by 2500 to 2000, which would make sub-Saharan Africa one of the earliest ironworking regions on earth. Their own first sentence concedes that inconvenient data in this field are usually dismissed without serious consideration.[^zangato-holl-2010] Two years later a detailed reexamination of the same excavation and of the chronologies across West, Central and East Africa concluded that the robust evidence begins after 800 cal BCE, and that the argument really turns on radiocarbon reliability, excavation accuracy and stratigraphy.[^clist-2012] The specialists say in print that the origins question is still open,[^junius-2016] and the calibration plateau means West African dates cannot be sharpened enough to settle it. The same question was asked of Europe: Balkan copper was long assumed to be a Near Eastern import, until radiocarbon showed the smiths of south-east Europe had worked it out themselves.[^renfrew-1970] The difference is what happened next. There the assumption fell when the dates arrived; here it outlived its evidence, and the honest position is that the transmission route is unknown, not that the answer is known and disappointing.',
+    'The deeper problem is that most Nok sculpture can never be interrogated at all, and that damage was done in living memory. When the Frankfurt team located thirty previously unrecorded Nok sites with local help, every one had been looted and most had been dug out entirely.[^breunig-rupp-2016] Organised looting of the region began in mid-1994; by 1995 two main traders each employed around a thousand diggers, an estimated ten terracottas a day were coming out at the peak, and the pieces travelled through Togo and Benin to Brussels and Paris. Nok terracotta went onto the ICOM Red List in 2000, two years after the French president had bought two figures from a Brussels dealer, an affair settled in 2002 by an arrangement in which Nigeria loaned France its own antiquities for a renewable twenty-five years, extended three years later to thirty-seven.[^brodie-yates-2012] A head in a museum case can be admired, measured and dated in a laboratory, and it will still never say whether it was rubbish or an offering, whether it was broken on purpose, or what lay beside it, because that was information held in the soil, and the soil was thrown aside. One such head sits in the Yale University Art Gallery, twenty-one centimetres tall and dated about 900 to 300 BCE. Its published ownership history begins with the word "reportedly", the Gallery states that its own research has been unable to corroborate that history, and it lists the piece among the objects in its collection with gaps in the record.[^yale-nok-head] The craft on that face is more than two thousand years old. The silence around it is a few decades old, and we made it.',
+  ],
+  threadsOut: [
+    {
+      to: 'bantu-and-aksum',
+      why: 'That lesson runs the same test on words: pot, goat, dog and guinea fowl reconstruct back to the parent Bantu language, while iron, forge and bellows do not, so the metal vocabulary joined the expansion later and more than once. Nok is that same negative result read from the ground rather than from vocabulary: an ironworking tradition centuries old in West Africa, and no line anyone has drawn from it reaches either the Bantu forges or Aksum.',
+    },
+    {
+      to: 'golden-sahara',
+      why: 'When caravans start hauling gold north out of West Africa, the societies they buy it from are working with more than a thousand years of local metallurgy and sculpture behind them. The caravan trade found an old, skilled region and taxed it; it did not create one.',
+    },
+    {
+      to: 'green-sahara',
+      why: 'The pearl millet the project dated directly is a Sahelian crop, and the first farmers show up in this savanna in the middle of the second millennium BCE with almost no earlier occupation found beneath them. The drying of the Sahara pushed people and their grain south, and this stretch of central Nigeria is one of the places they stopped.',
+    },
+  ],
+  questions: [
+    {
+      type: 'recall',
+      prompt: 'What did the excavators find in the two pits at Pangwari, and what told them this was not an ordinary rubbish dump?',
+      answer:
+        'Broken pieces of several terracotta figures, including a male torso that stood about 130 centimetres when whole, a bearded man with a marine shell modelled on his head, a hand still wearing a bracelet, a man with a bird’s beak, and a hooded head with a feline’s fangs. Three things mark it out. The larger pit was deliberately capped with a close layer of hand-sized granite cobbles. The figures went in already broken, with two heads smashed one vertically and one horizontally. And the fragments do not refit each other or anything else in the deposit, so only selected pieces were buried, while the torso’s head and base never arrived at all.',
+    },
+    {
+      type: 'why',
+      prompt: 'Nok sculpture is dated a century and a half or more earlier than Nok iron smelting. Why does that order matter, and what explanation does it break?',
+      answer:
+        'The standard account of early African metallurgy ran in a chain: iron makes better tools, better tools make surplus, surplus supports elites, elites commission art. At Nok the art is the older half, with the excavators putting the first sculptures around 900 BCE while the furnaces begin not much before the seventh century, so iron cannot be what produced the sculptural tradition. The dating also shows how careful the argument has to be, because the radiocarbon calibration curve runs flat from just after the millet dates until about 400 BCE, so it cannot separate those centuries; the later date for iron comes from the pottery found at furnace sites, not from radiocarbon alone.',
+    },
+    {
+      type: 'why',
+      prompt: 'Almost every Nok sculpture in the world came out of the ground with no record of where it lay. What can archaeologists say about the few figures that were properly excavated, and never say about the rest?',
+      answer:
+        'Whether the figures were treated as waste or as offerings, and how. A looted head can be admired, measured, and thermoluminescence dated, but the questions that matter are all questions about context: was it in a settlement or in a place set apart, was it whole or broken on purpose, was it covered deliberately, and what lay beside it. Every reading now on the table rests on that small number of properly excavated features: ordinary settlement rubbish, deliberate ritual deposition, and the excavators’ own preference, which is that the figures belonged to funeral rites and perhaps to ancestor ritual. They argue the last one from deposits like the Pangwari pits and from terracotta found lying beside about twenty grave features at Ifana. Had the corpus stayed in the ground, that argument would be running on thousands of contexts instead of a few, which is the real cost of the trade.',
+    },
+    {
+      type: 'callback',
+      prompt: 'Varna buried more than three thousand gold objects on a hillside with no city and no palace, and a third of them went into a single grave. Nok made sculpture more than a metre tall across a whole region for five centuries. Both sites pose the same question, whether difficult and expensive craft proves a hierarchy. Why do they answer it so differently?',
+      callbackTo: 'gold-before-kings',
+      answer:
+        'Because the answer lives in the distribution, not in the objects. At Varna the wealth is sharply concentrated, one grave holding a third of all the gold and most graves holding nothing, which is why rank there is visible even though no institution to enforce it has ever been found. At Nok the distribution is flat: terracotta makes up roughly a tenth of the finds at settlement after settlement, no house is bigger or better built than its neighbours, and the features read as graves are all equally plain. The same question therefore yields opposite results. Varna shows inequality without a state; Nok shows a shared and demanding ritual life with no traceable inequality at all, which is why its excavators reached for the phrase ritual complexity.',
+    },
+    {
+      type: 'callback',
+      prompt: 'The smelters at Tell Hammeh were working iron beside the Jordan around 930 BCE, and that lesson argued against Childe’s democratic metal: ore is not an axe, and institutions decide who ends up holding the tools. Nok furnaces start two to three centuries later, in scattered farmsteads. What does the Nok case add to that argument?',
+      callbackTo: 'iron-and-alphabet',
+      answer:
+        'It supplies the case where the social consequence is not merely uneven but invisible. Tell Hammeh showed that a metal spreads only when a whole chain of skills travels with it; Nok shows that the chain can arrive and change nothing an archaeologist can detect. Iron enters a landscape of dispersed farming households and, for the rest of the culture’s main phase, the settlement pattern, the house sizes, the graves and the sculpture carry on exactly as before. It also rules out the last role iron might have played here, since the art is older than the furnaces. If anything, ironworking may have helped end the place rather than build it: the woodland opened for fuel and fields is part of the erosion scenario proposed for the decline after 400 BCE.',
+    },
+  ],
+  deeper: [
+    {
+      title: 'Yale University Art Gallery, Human Head, Nok, Nigeria',
+      why: 'One head, photographed from every side, with the museum’s own account of an ownership history it has been unable to corroborate printed underneath it.',
+      url: 'https://artgallery.yale.edu/collections/objects/145188',
+    },
+    {
+      title: 'Breunig (ed.), Nok: African Sculpture in Archaeological Context',
+      why: 'The excavators’ own illustrated volume, three hundred pages on the whole culture rather than a single site, published as the English edition of the catalogue for the Frankfurt exhibition of the finds.',
+      url: 'https://openlibrary.org/books/OL44707366M/Nok',
+    },
+    {
+      title: 'Brodie and Yates, Nok Terracottas, Trafficking Culture',
+      why: 'A short, sourced account of how the corpus reached the world’s museums, from the first tin-mine finds to traders employing a thousand diggers apiece, and a dispute over two figures settled between two governments.',
+      url: 'https://traffickingculture.org/encyclopedia/case-studies/nok-terracottas/',
+    },
+  ],
+});

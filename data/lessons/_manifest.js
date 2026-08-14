@@ -80,6 +80,7 @@ LOOM.lessonFiles = [
   'hundred-schools',
   'tragic-stage',
   'analects-of-confucius',
+  'nok-terracotta',
   'sacred-disease',
   'socratic-turn',
   'panini-grammar',
