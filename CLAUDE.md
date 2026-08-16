@@ -130,6 +130,14 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   independent reviewers per lesson with different lenses** (sources, facts and
   dates; craft, pedagogy and graph truth), each in a fresh context. Keep both
   lenses; restore `model: 'fable'` on prose stages when Fable is available.
+- **Register verdict and names (2026-08-16).** The surgeons-papyrus full-lesson
+  A/B pilot (`docs/prose-ab/surgeons-papyrus/`) ended with Jason choosing
+  clear-close-third (candidate A) and banning pithy phrasing in the View from
+  Above by quoted example; every ancient story person now carries a personal
+  name, invented and labeled when the record is silent. Rules codified in
+  `docs/forge-spec.md` and the loom-clear-prose skill. An Era I prose rewrite
+  to this standard is underway (`docs/era-i-prose-rewrite-run.md`), commits
+  pushed per lesson at Jason's instruction.
 - **Keep the prose clean** (Jason, 2026-08-11). He rejected the dense literary
   register by name: fragment chains, stacked metaphor, aphoristic poses, objects
   granted intentions. The rule is in `docs/forge-spec.md` and overrides the

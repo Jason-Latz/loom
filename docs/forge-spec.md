@@ -70,6 +70,15 @@ just to sit inside its range while the total is comfortably in band.
 - Use a real, named person when the record allows. When it does not, build a
   composite from real archaeology or documents, and let `storyContext` say so
   plainly ("a composite drawn from the excavations at ...").
+- **Every ancient person in the story carries a personal name** (Jason,
+  2026-08-16). A real recorded name always wins. Where the record keeps no
+  name (a composite, or a real but anonymous individual like the Smith
+  papyrus copyist), invent one: period-plausible, drawn from attested names
+  of that time and language where a corpus exists, and never the name of a
+  real attested person in a similar role, so an invented figure cannot be
+  mistaken for a documented one. `storyContext` must say plainly that the
+  name is ours, not the record's. The rule retires itself as the atlas moves
+  forward: the moment the record supplies a name, use it.
 - Concrete and sensory: what the ochre smells like, what the tax tablet weighs.
   Specificity is the whole trick; generic scene-setting is the failure mode.
 - The story must dramatize the node's core mechanism, not just decorate it.
@@ -175,6 +184,14 @@ rather than a database annotation.
   real, and most sentences need none. Where the exemplar's own style
   conflicts with this rule, this rule wins. Beautiful means clear, specific,
   and quietly vivid, never dense, clever, or breathless.
+- **The View from Above reads plain** (Jason, 2026-08-16, surgeons-papyrus
+  A/B pilot). Nuance, named debate, and real argument are welcome; pithy
+  phrasing is not. Ban the quotable landing: balanced antitheses, compressed
+  formulas ("the same problem sorted the same way twice"), any sentence a
+  reader must decode before it informs. Jason chose the clear-close-third
+  story register and rejected exactly these shapes by name as clichés. When
+  a sentence sounds composed for quotation, state the literal claim in
+  natural order instead.
 - Never use em dashes or en dashes anywhere; use commas, colons, periods,
   parentheses, or the word "to" in ranges. The check gate enforces this.
 - **Write normal possessives and contractions.** Two forge agents once stripped
