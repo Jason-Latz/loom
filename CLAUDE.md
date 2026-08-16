@@ -117,7 +117,7 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-08-12, Era III complete)
+## State (2026-08-16, Era I register pass complete)
 
 - **116 lessons, every one with per-claim citations**: 1,298 sources and 1,630
   markers. Gate: `OK: 365 nodes, 802 wires, 10 eras, 116 lessons. 0 warning(s).`
@@ -135,9 +135,10 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   clear-close-third (candidate A) and banning pithy phrasing in the View from
   Above by quoted example; every ancient story person now carries a personal
   name, invented and labeled when the record is silent. Rules codified in
-  `docs/forge-spec.md` and the loom-clear-prose skill. An Era I prose rewrite
-  to this standard is underway (`docs/era-i-prose-rewrite-run.md`), commits
-  pushed per lesson at Jason's instruction.
+  `docs/forge-spec.md` and the loom-clear-prose skill. All 20 Era I lessons
+  were rewritten to this standard the same day (`docs/era-i-prose-rewrite-run.md`),
+  one commit per lesson; Eras II to VI still carry the old register and should
+  get the same pass before new forging resumes.
 - **Keep the prose clean** (Jason, 2026-08-11). He rejected the dense literary
   register by name: fragment chains, stacked metaphor, aphoristic poses, objects
   granted intentions. The rule is in `docs/forge-spec.md` and overrides the
@@ -162,6 +163,24 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
 
 ## Change log
 
+- **2026-08-16:** The register day. The surgeons-papyrus full-lesson A/B pilot
+  ran two Fable-written candidates from one verified evidence ledger; Jason
+  chose A (clear-close-third), rejected B's free-indirect register, and banned
+  pithy View-from-Above phrasing by quoted example. Candidate A, de-clichéd
+  and with the copyist named Senebtifi under the new every-person-gets-a-name
+  rule, replaced the active lesson. All 20 Era I lessons were then rewritten
+  to the new register in four Workflow waves (Fable writers, Opus adversarial
+  reviewers, Fable fixers), one pushed commit per lesson, with marker
+  multisets and shared blocks proven byte-stable against HEAD per lesson. The
+  reviewers caught three genuine blockers the writers introduced (a
+  recalculation misdescribed as a new method, a named debate pre-empted in
+  the narrator's voice, an illness-duration claim contradicting the lesson's
+  own arithmetic), which is the pipeline working as designed. Wave 4 died
+  once to a session usage limit mid-write; the partial files were reverted,
+  not harvested, and the wave re-run clean after reset. Also that day: the
+  A/B pilot's ledger and both candidates archived under `docs/prose-ab/`,
+  and the roll-length conflict resolved (4.68 m surviving vs Breasted's
+  five-metre original minimum, now stated separately).
 - **2026-08-12:** Era III completed, the third fully charted era. All 21 lessons
   forged: seven singly, then concurrent batches at Jason's request. Fable's
   usage limit moved the run to Opus mid-flight, answered with two diverse
