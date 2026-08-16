@@ -22,6 +22,11 @@ citation invariants, pipeline stages, model pins, harvest-on-death rule).
   Enheduanna. Existing composite names in Era II lessons (Iddin-Sin,
   Lamassi, Uda, and others) are retained unless a reviewer shows a
   collision with a documented person.
+- **Invented names are unique across the atlas** (added after wave 2, when
+  a writer reused Sena from village-before-the-farm for a second invented
+  grandmother). Before choosing an invented name, check it is unused:
+  `grep -rlw '<name>' data/lessons/`. Real recorded names are exempt; only
+  inventions must not repeat.
 - **Known writer failure modes**, from Era I's review record, now warned
   against in the rewrite prompt itself: do not strengthen or weaken any
   claim (a register pass moves no claim's certainty in either direction);
