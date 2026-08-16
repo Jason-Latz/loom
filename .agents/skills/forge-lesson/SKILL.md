@@ -36,11 +36,38 @@ is the ten-minute reading experience behind one node of the 365-node graph.
 ## Batch mode
 
 Prepare one self-contained research and architecture brief per lesson, then
-hand the prose and substantive literary revision to Fable. Fable follows steps
-1-5 and runs the single-file check (`node scripts/check.mjs
-data/lessons/<id>.js`). Tell Fable NOT to touch the manifest. Codex remains
-responsible for graph edits, adversarial review, validation, manifest updates,
-commits, and deployment.
+hand the prose and substantive literary revision to Claude Fable 5, with Claude
+Opus 5 as the fallback. The premium writer follows steps 1-5 and runs the
+single-file check (`node scripts/check.mjs data/lessons/<id>.js`). Tell the
+writer NOT to touch the manifest. Codex remains responsible for graph edits,
+adversarial review, validation, manifest updates, commits, and deployment.
+
+### Costed model split
+
+Use GPT-5.6 Luna for bounded reconnaissance: graph extraction, chronology,
+source discovery, DOI and URL verification, evidence ledgers, callback
+eligibility, and mechanical audits. Pin Luna explicitly and verify the model in
+the resulting session metadata; never assume an unpinned subagent was routed to
+Luna. If the installed native `spawn_agent` runtime rejects Luna, use an
+explicit `codex exec -m gpt-5.6-luna` worker instead.
+
+Keep each Luna run short and disposable, normally one node per run at medium
+effort. Feed it a compact extract containing the node, its outgoing targets,
+the earlier manifested IDs, and the packet schema. Do not make a reconnaissance
+worker reread the full exemplar or unrelated lesson files: Luna is not writing
+prose, and long multi-node sessions repeatedly carry an expanding tool history.
+Prefer deterministic scripts for seed extraction, sequence checks, URL status,
+and DOI metadata wherever possible so model tokens are spent on interpretation.
+
+Escalate a packet or disputed claim to GPT-5.6 Terra when it needs stronger
+cross-source interpretation. Do not use Luna or Terra to draft sample openings,
+scenes, transitions, lesson paragraphs, questions, `threadsOut` language, or
+sentence-level rewrites that a premium writer could merely polish.
+
+The Fable 5 or Opus 5 handoff must include the node seed, forge spec, exemplar,
+the completed reconnaissance packet, and every unresolved verification flag.
+The writer must independently open any source it actually cites; a packet is
+scaffolding, not citation authority.
 
 **Then verify adversarially.** The gate only checks structure, so pair every
 lesson with a reviewer agent that reads the spec, the exemplar, and the node,
@@ -65,6 +92,13 @@ each commit.
   JS string. The gate fails prose containing no apostrophe at all.
 - Exactly 5 questions; callbacks only to earlier nodes.
 - storyContext labels composite characters as composites.
+- Every ancient person in the story carries a personal name: the real one when
+  the record has it, otherwise a period-plausible invented one that
+  storyContext plainly labels as ours (full rule in docs/forge-spec.md).
+- A labeled composite or reconstruction may use plausible connective action,
+  sensory experience, and interior response grounded in the documented setting.
+  Do not mistake this permission for license to invent quotations, measurements,
+  biographies, motives, or historical claims.
 - Prose stays in the 1,500-2,200 word aim (story + significance).
 - Treat each lesson as artwork: make the prose engaging, the pedagogy elegant,
   and the whole piece aesthetically coherent.

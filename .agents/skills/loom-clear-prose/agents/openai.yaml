@@ -1,0 +1,4 @@
+interface:
+  display_name: "Loom Clear Prose"
+  short_description: "Revise Loom prose with clarity and close-third voice"
+  default_prompt: "Use $loom-clear-prose to revise this Loom passage with clear close-third voice and concrete imagery."
