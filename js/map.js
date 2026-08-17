@@ -223,7 +223,7 @@ LOOM.map = (function () {
     t.textContent = n.title;
     var d = document.createElement('div');
     d.className = 'tip-date';
-    d.textContent = n.date + (LOOM.lessons[n.id] ? ' · lesson ready' : ' · not yet charted');
+    d.textContent = n.date + (LOOM.hasLesson(n.id) ? ' · lesson ready' : ' · not yet charted');
     tip.appendChild(t); tip.appendChild(d);
     tip.hidden = false;
     var pad = 14;
@@ -277,7 +277,7 @@ LOOM.map = (function () {
   function refreshStates(readMap, nextId) {
     LOOM.nodes.forEach(function (n) {
       var g = nodeEls[n.id];
-      var written = !!LOOM.lessons[n.id];
+      var written = LOOM.hasLesson(n.id);
       g.classList.toggle('seed', !written);
       g.classList.toggle('written', written);
       g.classList.toggle('read', !!readMap[n.id]);

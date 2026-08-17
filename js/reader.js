@@ -271,6 +271,13 @@ LOOM.reader = (function () {
   }
 
   // ---------------- dossier ----------------
+  function paintOpenLabel(btn, id, isRead) {
+    var l = LOOM.lessons[id];
+    btn.textContent = isRead
+      ? 'Read the lesson again'
+      : 'Open the lesson · ' + ((l && l.readingMinutes) || 10) + ' min';
+  }
+
   function showDossier(id) {
     var n = node(id);
     dossier.innerHTML = '';
@@ -292,13 +299,20 @@ LOOM.reader = (function () {
     dossier.appendChild(h('p', 'dos-summary', n.summary));
 
     var cta = h('div', 'dos-cta');
-    var lesson = LOOM.lessons[id];
     var isRead = LOOM.app.isRead(id);
-    if (lesson) {
-      var btn = h('button', 'btn btn-gilt', isRead ? 'Read the lesson again' : 'Open the lesson · ' + (lesson.readingMinutes || 10) + ' min');
+    if (LOOM.hasLesson(id)) {
+      var btn = h('button', 'btn btn-gilt');
+      paintOpenLabel(btn, id, isRead);
       btn.addEventListener('click', function () { openLesson(id, btn); });
       cta.appendChild(btn);
       if (isRead) cta.appendChild(h('div', 'dos-charted', '✦ charted ✦'));
+      // Fetch the body while the reader is still on the dossier, so pressing the
+      // button opens the lesson with no wait at all. Nearly every lesson runs
+      // ten minutes, so the label is right before it lands; correct the few
+      // that are not once the real figure is here.
+      LOOM.lessonLoader.load(id, function () {
+        if (btn.isConnected) paintOpenLabel(btn, id, isRead);
+      });
     } else {
       var forge = h('div', 'dos-forge');
       forge.appendChild(document.createTextNode('This territory is not yet charted. Ask Codex in this folder to forge it:'));
@@ -327,10 +341,28 @@ LOOM.reader = (function () {
   function hideDossier() { dossier.hidden = true; }
 
   // ---------------- reading room ----------------
+  // The body is normally already here, prefetched when the dossier opened. If a
+  // reader pressed faster than the network, say so on the button rather than
+  // letting the press look ignored, and open the moment it lands.
   function openLesson(id, opener) {
+    if (!LOOM.hasLesson(id)) return;
+    if (LOOM.lessons[id]) { renderLesson(id, opener); return; }
+    if (opener) {
+      opener.disabled = true;
+      opener.textContent = 'Opening the lesson…';
+    }
+    LOOM.lessonLoader.load(id, function (l) {
+      if (opener && opener.isConnected) {
+        opener.disabled = false;
+        paintOpenLabel(opener, id, LOOM.app.isRead(id));
+      }
+      if (l) renderLesson(id, opener);
+    });
+  }
+
+  function renderLesson(id, opener) {
     var n = node(id);
     var l = LOOM.lessons[id];
-    if (!l) return;
     reader.innerHTML = '';
 
     var close = h('button', 'reader-close', '✕');

@@ -56,3 +56,17 @@ LOOM.node = function (nodes) {
 LOOM.lesson = function (l) {
   LOOM.lessons[l.id] = l;
 };
+
+// Which nodes hold a written lesson is answered by the manifest alone, so the
+// chart draws its solid rings, counts its progress and picks the next lesson
+// without a single lesson body being fetched. Bodies arrive on demand
+// (js/boot.js), which keeps megabytes of prose off the first paint on a phone.
+(function () {
+  var ids = null;
+  function set() {
+    if (!ids) ids = new Set(LOOM.lessonFiles || []);
+    return ids;
+  }
+  LOOM.hasLesson = function (id) { return set().has(id); };
+  LOOM.lessonCount = function () { return set().size; };
+})();

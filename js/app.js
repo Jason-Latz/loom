@@ -89,7 +89,7 @@ LOOM.app = (function () {
     save();
   }
   function nextId() {
-    var n = LOOM.nodes.find(function (x) { return LOOM.lessons[x.id] && !state.read[x.id]; });
+    var n = LOOM.nodes.find(function (x) { return LOOM.hasLesson(x.id) && !state.read[x.id]; });
     return n ? n.id : null;
   }
   // Returns {id, forward}. forward=false means the sequence has no unread lesson
@@ -99,7 +99,7 @@ LOOM.app = (function () {
   function nextAfter(id) {
     var idx = LOOM.nodes.findIndex(function (x) { return x.id === id; });
     for (var i = idx + 1; i < LOOM.nodes.length; i++) {
-      if (LOOM.lessons[LOOM.nodes[i].id] && !state.read[LOOM.nodes[i].id]) {
+      if (LOOM.hasLesson(LOOM.nodes[i].id) && !state.read[LOOM.nodes[i].id]) {
         return { id: LOOM.nodes[i].id, forward: true };
       }
     }
@@ -108,8 +108,8 @@ LOOM.app = (function () {
   }
   function refresh() {
     LOOM.map.refreshStates(state.read, nextId());
-    var done = Object.keys(state.read).filter(function (id) { return LOOM.lessons[id]; }).length;
-    var written = Object.keys(LOOM.lessons).length;
+    var done = Object.keys(state.read).filter(function (id) { return LOOM.hasLesson(id); }).length;
+    var written = LOOM.lessonCount();
     document.getElementById('progress').textContent =
       done + ' of ' + LOOM.nodes.length + ' charted · ' + written + ' lessons ready';
     renderStreak();
@@ -213,7 +213,7 @@ LOOM.app = (function () {
         var item = h('div', 'sr-item');
         item.appendChild(h('div', 'sr-title', n.title));
         var e = LOOM.eras.find(function (x) { return x.n === n.era; });
-        item.appendChild(h('div', 'sr-meta', e.title + ' · ' + n.date + (LOOM.lessons[n.id] ? ' · lesson ready' : '')));
+        item.appendChild(h('div', 'sr-meta', e.title + ' · ' + n.date + (LOOM.hasLesson(n.id) ? ' · lesson ready' : '')));
         item.addEventListener('mousedown', function (ev) {
           ev.preventDefault();
           choose(n.id);
@@ -304,7 +304,7 @@ LOOM.app = (function () {
 
       if (ev.key === 'Enter') {
         var sel = LOOM.map.selected();
-        if (sel && LOOM.lessons[sel]) { ev.preventDefault(); LOOM.reader.openLesson(sel); }
+        if (sel && LOOM.hasLesson(sel)) { ev.preventDefault(); LOOM.reader.openLesson(sel); }
         return;
       }
       if (NAV.indexOf(ev.key) === -1) return;
@@ -345,7 +345,7 @@ LOOM.app = (function () {
       var id = nextId();
       if (!id) {
         // everything written is read: point at the first uncharted seed
-        var seed = LOOM.nodes.find(function (n) { return !LOOM.lessons[n.id]; });
+        var seed = LOOM.nodes.find(function (n) { return !LOOM.hasLesson(n.id); });
         if (seed) LOOM.map.select(seed.id);
         return;
       }
@@ -374,16 +374,5 @@ LOOM.app = (function () {
     evidenceOn: evidenceOn,
     setEvidence: setEvidence,
     nextAfter: nextAfter,
-    // called by boot.js as streamed lesson files register; refresh() is
-    // idempotent, so late arrivals just repaint rings, progress, and streak.
-    // An open dossier is re-rendered too, so a written node selected before
-    // its file arrived gains its "Open the lesson" button instead of staying
-    // stuck on the uncharted panel.
-    lessonsArrived: function () {
-      if (!ready) return;
-      refresh();
-      var sel = LOOM.map.selected();
-      if (sel && !LOOM.reader.isLessonOpen()) LOOM.reader.showDossier(sel);
-    },
   };
 })();
