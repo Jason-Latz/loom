@@ -241,11 +241,13 @@ LOOM.map = (function () {
     if (id) {
       nodeEls[id].classList.add('selected');
       applyFocus(id);
-      if (opts.pan !== false) panToNode(id);
     } else {
       clearFocus();
     }
+    // The dossier opens before the pan, not after, so panToNode can measure how
+    // much of the chart the panel covers and aim for what is left.
     if (api.onSelect) api.onSelect(id);
+    if (id && opts.pan !== false) panToNode(id);
   }
 
   // Arrow-key traversal. Up and down walk the main reading sequence, and since
@@ -398,11 +400,28 @@ LOOM.map = (function () {
     var needW = Math.max(W, (b.h + 120) / aspect());
     animateTo({ w: needW, x: (W - needW) / 2, y: b.center - (needW * aspect()) / 2 });
   }
+  // Where down the viewport a selected node should land. Normally the middle,
+  // but on a phone the dossier is a sheet across the bottom two thirds of the
+  // screen, and centering there slides the node the reader just tapped straight
+  // underneath it. Aim at the middle of the strip that stays visible instead.
+  // A desktop dossier is a narrow side panel, so it leaves the centre alone.
+  function selectionFraction() {
+    var h = wrap.clientHeight;
+    var panel = document.getElementById('dossier');
+    if (!h || !panel || panel.hidden) return 0.5;
+    var d = panel.getBoundingClientRect();
+    var c = wrap.getBoundingClientRect();
+    if (!d.height || d.width < c.width * 0.6) return 0.5; // side panel, not a sheet
+    var top = d.top - c.top;
+    if (top >= h - 40) return 0.5;                        // sheet sits below the chart
+    return Math.max(0.12, Math.min(0.5, top / 2 / h));
+  }
+
   function panToNode(id, targetW) {
     var p = pos[id];
     if (!p) return;
     var w = targetW || Math.min(Math.max(vb.w, 700), 1000);
-    animateTo({ w: w, x: p.x - w / 2, y: p.y - (w * aspect()) / 2 });
+    animateTo({ w: w, x: p.x - w / 2, y: p.y - (w * aspect()) * selectionFraction() });
   }
   var animating = null;
   function animateTo(target, ms) {
