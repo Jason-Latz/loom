@@ -361,9 +361,12 @@ LOOM.map = (function () {
     // repaint on every pan frame, and text is nine tenths of that frame. Judge
     // the label by the size it actually reaches the eye at. Screens 1280px and
     // wider are untouched, because .far always crosses first there.
-    var wrapW = wrap.clientWidth || 1;
-    svg.classList.toggle('tiny-labels', 12.5 * wrapW / vb.w < 8);
-    var hitR = Math.max(18, HIT_SCREEN_PX * vb.w / wrapW);
+    // A zero-width container (hidden tab, mid-layout, a phone mid-rotation) has
+    // no apparent size to judge, so hold the last verdict rather than blanking
+    // every label for the frame; the resize that follows re-decides it.
+    var wrapW = wrap.clientWidth;
+    if (wrapW) svg.classList.toggle('tiny-labels', 12.5 * wrapW / vb.w < 8);
+    var hitR = Math.max(18, HIT_SCREEN_PX * vb.w / (wrapW || 1));
     if (Math.abs(hitR - lastHitR) > 1) {
       lastHitR = hitR;
       svg.style.setProperty('--hit-r', hitR.toFixed(1) + 'px');
