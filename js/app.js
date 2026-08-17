@@ -3,7 +3,6 @@ LOOM.app = (function () {
   var h = LOOM.ui.h;
   var KEY = 'loom.v1';
   var state = { read: {}, marks: {}, filters: [], lamplight: false, introSeen: false, streak: null, evidence: false };
-  var ready = false;
 
   // ---------------- streak ----------------
   // Consecutive days on which you charted something. Kept deliberately quiet: a
@@ -362,7 +361,6 @@ LOOM.app = (function () {
     document.getElementById('zoom-fit').addEventListener('click', LOOM.map.fitAll);
 
     if (!state.introSeen) showIntro();
-    ready = true;
   }
 
   return {
