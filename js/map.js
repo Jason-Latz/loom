@@ -345,7 +345,16 @@ LOOM.map = (function () {
     vb.y = Math.max(minY, Math.min(maxY, vb.y));
     svg.setAttribute('viewBox', vb.x + ' ' + vb.y + ' ' + vb.w + ' ' + vb.h);
     svg.classList.toggle('far', vb.w > 2000);
-    var hitR = Math.max(18, HIT_SCREEN_PX * vb.w / (wrap.clientWidth || 1));
+    // .far is a proxy for "labels too small to read", but it measures the
+    // viewBox, which only tracks apparent size on a wide screen. A phone shows
+    // the same viewBox across 375px, where a 12.5-unit label lands at under
+    // three screen pixels: an illegible smudge that still costs a full text
+    // repaint on every pan frame, and text is nine tenths of that frame. Judge
+    // the label by the size it actually reaches the eye at. Screens 1280px and
+    // wider are untouched, because .far always crosses first there.
+    var wrapW = wrap.clientWidth || 1;
+    svg.classList.toggle('tiny-labels', 12.5 * wrapW / vb.w < 8);
+    var hitR = Math.max(18, HIT_SCREEN_PX * vb.w / wrapW);
     if (Math.abs(hitR - lastHitR) > 1) {
       lastHitR = hitR;
       svg.style.setProperty('--hit-r', hitR.toFixed(1) + 'px');

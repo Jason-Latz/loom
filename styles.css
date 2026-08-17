@@ -204,8 +204,10 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
    floor for browsers without SVG geometry-property support */
 .node .hit { fill: transparent; r: var(--hit-r, 18px); }
 
-/* zoom tiers: hide labels when far out */
-#chart.far .label { display: none; }
+/* zoom tiers: hide labels when far out, or when the screen is too narrow to
+   render them at a readable size (js/map.js sets .tiny-labels) */
+#chart.far .label,
+#chart.tiny-labels .label { display: none; }
 #chart.far .wire { stroke-width: 2; }
 
 /* focus mode: hovering/selecting a node dims the rest of the world */
@@ -213,7 +215,8 @@ body.lamplight .world-land { fill-opacity: 0.11; stroke-opacity: 0.45; }
 #chart.focused .wire.lit { opacity: 0.95; stroke-width: 2; }
 #chart.focused .node { opacity: 0.3; }
 #chart.focused .node.lit { opacity: 1; }
-#chart.focused.far .node.lit .label { display: block; }
+#chart.focused.far .node.lit .label,
+#chart.focused.tiny-labels .node.lit .label { display: block; }
 
 /* thread filters */
 #chart.filtered .node:not(.th-match) { opacity: 0.16; }
