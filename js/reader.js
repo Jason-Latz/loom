@@ -73,6 +73,7 @@ LOOM.reader = (function () {
   var h = LOOM.ui.h;
   var dossier, reader;
   var incomingIndex = null;
+  var opening = null; // lesson whose body the reader is waiting on, if any
 
   var OUT_LABEL = { enables: 'enables', transforms: 'becomes', collides: 'collides with', echoes: 'echoes onward in' };
   var IN_LABEL = { enables: 'woven from', transforms: 'grew from', collides: 'struck by', echoes: 'echo of' };
@@ -279,6 +280,9 @@ LOOM.reader = (function () {
   }
 
   function showDossier(id) {
+    // Turning to another node abandons a body still in flight for the last one;
+    // coming back to the same node leaves the reader's request standing.
+    if (opening && opening !== id) opening = null;
     var n = node(id);
     dossier.innerHTML = '';
     dossier.scrollTop = 0;
@@ -338,15 +342,26 @@ LOOM.reader = (function () {
     dossier.hidden = false;
   }
 
-  function hideDossier() { dossier.hidden = true; }
+  function hideDossier() {
+    opening = null;
+    dossier.hidden = true;
+  }
 
   // ---------------- reading room ----------------
   // The body is normally already here, prefetched when the dossier opened. If a
   // reader pressed faster than the network, say so on the button rather than
   // letting the press look ignored, and open the moment it lands.
+  //
+  // A slow body must not arrive to a changed screen. On a phone a reader can
+  // press, wait, give up and go elsewhere long before the file lands, and
+  // rendering it then would throw the reading room open over whatever they had
+  // moved on to. So remember what was asked for, drop the answer if it is no
+  // longer wanted, and clear it on render so three impatient presses rebuild
+  // the page once rather than three times.
   function openLesson(id, opener) {
     if (!LOOM.hasLesson(id)) return;
-    if (LOOM.lessons[id]) { renderLesson(id, opener); return; }
+    if (LOOM.lessons[id]) { opening = null; renderLesson(id, opener); return; }
+    opening = id;
     if (opener) {
       opener.disabled = true;
       opener.textContent = 'Opening the lesson…';
@@ -356,7 +371,10 @@ LOOM.reader = (function () {
         opener.disabled = false;
         paintOpenLabel(opener, id, LOOM.app.isRead(id));
       }
-      if (l) renderLesson(id, opener);
+      if (l && opening === id) {
+        opening = null;
+        renderLesson(id, opener);
+      }
     });
   }
 
@@ -497,7 +515,10 @@ LOOM.reader = (function () {
     return box;
   }
 
-  function closeLesson() { LOOM.ui.modal.close(reader); }
+  function closeLesson() {
+    opening = null;
+    LOOM.ui.modal.close(reader);
+  }
 
   function init() {
     dossier = document.getElementById('dossier');
