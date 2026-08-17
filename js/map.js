@@ -7,6 +7,7 @@ LOOM.map = (function () {
   var ROMAN = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X', 'XI', 'XII'];
 
   var svg, wrap, tip;
+  var CAN_HOVER = !(window.matchMedia && window.matchMedia('(hover: none)').matches);
   var H = 0;
   // The chart is bookended by the world: an engraved map band below the oldest
   // era and another above the newest, so all of history sits between two earths.
@@ -176,9 +177,15 @@ LOOM.map = (function () {
       el('circle', { r: 18, 'class': 'hit' }, g);
       nodeEls[n.id] = g;
 
-      g.addEventListener('mouseenter', function () { hover(n.id, true); });
-      g.addEventListener('mouseleave', function () { hover(n.id, false); });
-      g.addEventListener('mousemove', function (ev) { moveTip(ev, n); });
+      // A phone has no hover, but it still fires the compatibility mouse events
+      // on a tap, which raised a tooltip beside the reader's finger that then
+      // sat over the chart until some other node was touched. The dossier the
+      // same tap opens says all of it and more, so there is nothing to show.
+      if (CAN_HOVER) {
+        g.addEventListener('mouseenter', function () { hover(n.id, true); });
+        g.addEventListener('mouseleave', function () { hover(n.id, false); });
+        g.addEventListener('mousemove', function (ev) { moveTip(ev, n); });
+      }
     });
   }
 
