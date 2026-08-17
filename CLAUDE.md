@@ -117,7 +117,7 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
 
-## State (2026-08-16, Era I register pass complete)
+## State (2026-08-16, Era I and II register passes complete)
 
 - **116 lessons, every one with per-claim citations**: 1,298 sources and 1,630
   markers. Gate: `OK: 365 nodes, 802 wires, 10 eras, 116 lessons. 0 warning(s).`
@@ -136,9 +136,15 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   Above by quoted example; every ancient story person now carries a personal
   name, invented and labeled when the record is silent. Rules codified in
   `docs/forge-spec.md` and the loom-clear-prose skill. All 20 Era I lessons
-  were rewritten to this standard the same day (`docs/era-i-prose-rewrite-run.md`),
-  one commit per lesson; Eras II to VI still carry the old register and should
-  get the same pass before new forging resumes.
+  and all 31 Era II lessons were rewritten to this standard the same day
+  (`docs/era-i-prose-rewrite-run.md`, `docs/era-ii-prose-rewrite-run.md`),
+  one commit per lesson; Eras III to VI still carry the old register and
+  should get the same pass before new forging resumes. Invented names are
+  unique across the atlas and drawn from attested period name stock where a
+  corpus exists. Flagged for a future fact pass, not register work: the
+  Kuahuqiao "about two centuries" sentence (rice-and-the-yangtze), the
+  hand-span gloss on 42 25 35 (counting-in-sixties), and the "four lines"
+  reading of the Guabba booking (empire-of-wool).
 - **Keep the prose clean** (Jason, 2026-08-11). He rejected the dense literary
   register by name: fragment chains, stacked metaphor, aphoristic poses, objects
   granted intentions. The rule is in `docs/forge-spec.md` and overrides the
@@ -180,7 +186,14 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   not harvested, and the wave re-run clean after reset. Also that day: the
   A/B pilot's ledger and both candidates archived under `docs/prose-ab/`,
   and the roll-length conflict resolved (4.68 m surviving vs Breasted's
-  five-metre original minimum, now stated separately).
+  five-metre original minimum, now stated separately). Era II followed the
+  same day at Jason's instruction: all 31 lessons (surgeons-papyrus already
+  done) in six waves, with the reviewers again catching real blockers
+  (Enheduanna's contested authorship asserted flat, a citation's scope
+  silently broadened in empire-of-wool, a stranger-premise contradiction in
+  poverty-point), an invented-name uniqueness rule added mid-run after two
+  writers coined the same name, and three pre-existing factual loosenesses
+  logged for a future fact pass rather than silently rewritten.
 - **2026-08-12:** Era III completed, the third fully charted era. All 21 lessons
   forged: seven singly, then concurrent batches at Jason's request. Fable's
   usage limit moved the run to Opus mid-flight, answered with two diverse
