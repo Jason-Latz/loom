@@ -33,7 +33,10 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
 - `data/graph-core.js` — LOOM registry: threads, regions (map meridians), era/node/lesson tables.
 - `data/worldmap.js` — Natural Earth 110m land as one SVG path (public domain), equirectangular 2000x1000, drawn as the map bands that bookend the chart.
 - `data/eras/01..10-*.js` — the graph. Nodes carry id/title/date/sort/region/x/threads/hook/summary/edges. Node array order per era = reading order = main sequence. Edges point FORWARD in that sequence only.
-- `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which exist (js/boot.js starts the app, then streams them in; nodes light up as files register).
+- `data/lessons/<id>.js` — one written lesson per file; `_manifest.js` lists which
+  exist, which is all the chart itself needs (`LOOM.hasLesson`/`lessonCount`).
+  `js/boot.js` starts the app and fetches a body only when a reader opens one;
+  the dossier prefetches on open, so the press still feels instant.
 - `js/map.js` — SVG chart: time rises bottom→top, era bands, region meridians, bezier wires colored by source node's first thread, pan/zoom, focus/dim, filters, path highlighting, and the two world-map bands.
 - `js/reader.js` — dossier panel + lesson reading room + questions UI + the citation apparatus (marker splitting, the evidence switch, the sources cartouche).
 - `js/paths.js` — the other traversals: thread paths (one pigment end to end) and roots paths (walk backward from the present). Always a subset of the real graph.
@@ -116,8 +119,22 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   when driven from javascript_tool. Take a screenshot to wake the tab, or assert
   on `LOOM.map.bands()` math instead of the viewBox. The pane also caches JS
   hard; refetch with `{cache:'reload'}` after editing, or you will QA stale code.
+  **CSS animations freeze there too**, so an element measured right after it is
+  shown is stuck at its opening keyframe (the dossier reads 24px to the right of
+  where it lands). To assert on a finished pan, drive the easing yourself: stub
+  `requestAnimationFrame` to call back with `performance.now() + 10000` and the
+  animation completes in one synchronous tick. **And take a screenshot before
+  believing any layout claim**: a bad `position` override moved the dossier's
+  close mark to the opposite corner while every number still looked right.
 
-## State (2026-08-16, Era I and II register passes complete)
+## State (2026-08-17, mobile pass; Eras I and II at the new register)
+
+- **Mobile pass done 2026-08-17.** Phone first load went from 137 requests and
+  3.85 MB to 21 and 570 KB, the JS heap 11.8 to 4.9 MB, a pan frame 6.12 to
+  0.48 ms. **Only `js/reader.js` may touch a lesson body**; everything else asks
+  `LOOM.hasLesson`, so never reintroduce an eager lesson load. Labels hide below
+  8 screen pixels (`.tiny-labels`), which is also why the phone chart is clean
+  dots until you zoom or select.
 
 - **116 lessons, every one with per-claim citations**: 1,298 sources and 1,630
   markers. Gate: `OK: 365 nodes, 802 wires, 10 eras, 116 lessons. 0 warning(s).`
@@ -169,6 +186,18 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
 
 ## Change log
 
+- **2026-08-17:** The mobile pass. Six commits, no content touched. Every page
+  load fetched all 116 lesson bodies (3.2 MB) before the reader opened
+  anything, because the chart asked `LOOM.lessons` a question the manifest
+  already answered; splitting presence from content took first load from 137
+  requests and 3.85 MB to 21 and 570 KB. The second win was measured, not
+  guessed: **SVG text is nine tenths of every pan frame**, and at 375px those
+  labels render at 2.9px, so the chart paid its largest rendering cost for an
+  illegible smudge. Hiding them below 8 screen pixels took a pan frame from
+  6.12ms to 0.48ms. Culling offscreen nodes, the obvious fix, was tried first
+  and did nothing: the cost is not proportional to how many labels show. Three
+  interaction bugs went with it (tapped node panned under the dossier sheet, a
+  stuck hover tooltip on touch, overlays chaining their scroll to the page).
 - **2026-08-16:** The register day. The surgeons-papyrus full-lesson A/B pilot
   ran two Fable-written candidates from one verified evidence ledger; Jason
   chose A (clear-close-third), rejected B's free-indirect register, and banned
