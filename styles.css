@@ -624,6 +624,31 @@ button, .chip, .rail-era, .sr-item {
   touch-action: manipulation;
 }
 
+/* A scrolling overlay must not hand its momentum to what is behind it: reaching
+   the end of a lesson otherwise carries on into the page and drags the chart
+   out from under the panel. */
+#reader, #dossier, #intro, #search-results, .paths-card {
+  overscroll-behavior: contain;
+}
+
+/* Fingertip hit areas for the small isolated controls, grown with a pseudo
+   element so the glyph and the spacing around it are untouched (the same trick
+   the citation markers use). Vertical only on the header pair, which sit close
+   enough that a wider target would poach its neighbour's taps. */
+@media (pointer: coarse) {
+  /* .dos-close is already absolutely positioned, so it is its own containing
+     block; giving it position:relative here would drop it back into the flow
+     and move the glyph to the corner opposite the one it belongs in. */
+  .bar-tools .btn-ghost { position: relative; }
+  .dos-close::before {
+    content: ''; position: absolute; top: 50%; left: 50%;
+    width: 44px; height: 44px; transform: translate(-50%, -50%);
+  }
+  .bar-tools .btn-ghost::before {
+    content: ''; position: absolute; inset: -6px -2px;
+  }
+}
+
 /* notched phones: keep the fixed chrome out of the sensor and home areas */
 @supports (padding: max(0px)) {
   #bar {
