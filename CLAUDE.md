@@ -20,11 +20,11 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
   https://loomhistory.com and https://loom-gray.vercel.app. `.vercelignore`
   keeps `.claude`, `.agents`, scripts, docs, `assets` and the markdown out.
 - Analytics: two deferred script tags at the foot of `index.html`, from the
-  site's own origin. Speed Insights is live. **Web Analytics still needs its
-  one-click Enable in the Vercel dashboard** (project `loom`, Analytics tab),
-  which no CLI or API can do; until then `/_vercel/insights/script.js` 404s and
-  nothing is recorded. Both 404 on localhost and `file://`, the only local
-  console noise.
+  site's own origin. **Both are live in production** as of 2026-08-18
+  (`/_vercel/insights/script.js` and `/_vercel/speed-insights/script.js` each
+  return 200 and real script), so the Web Analytics dashboard Enable that was
+  outstanding has since been done. Both still 404 on localhost and `file://`,
+  the only local console noise.
 
 ## Architecture
 
@@ -129,9 +129,10 @@ dependencies, works from `file://`. Jason reads it; agents forge lessons into it
 
 ## State (2026-08-17, mobile pass; Eras I and II at the new register)
 
-- **Mobile pass done 2026-08-17.** Phone first load went from 137 requests and
-  3.85 MB to 21 and 570 KB, the JS heap 11.8 to 4.9 MB, a pan frame 6.12 to
-  0.48 ms. **Only `js/reader.js` may touch a lesson body**; everything else asks
+- **Mobile pass done 2026-08-17, live 2026-08-18.** Measured on production and
+  compressed, phone first load went from 137 requests and 1.43 MB to 21 and
+  227 KB; uncompressed the atlas stopped shipping 3.2 MB of lesson prose it had
+  not been asked for. JS heap 11.8 to 4.9 MB, a pan frame 6.12 to 0.48 ms. **Only `js/reader.js` may touch a lesson body**; everything else asks
   `LOOM.hasLesson`, so never reintroduce an eager lesson load. Labels hide below
   8 screen pixels (`.tiny-labels`), which is also why the phone chart is clean
   dots until you zoom or select.
